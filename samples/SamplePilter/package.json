@@ -1,0 +1,17 @@
+{
+  "name": "@tds/community-sample-pilter",
+  "version": "0.1.0",
+  "description": "A branded pilter showcasing our practices",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "dependencies": {
+    "@tds/core-box": "^1.0.1",
+    "@tds/core-colours": "^1.0.0",
+    "@tds/core-text": "^1.0.0",
+    "prop-types": "^15.6.1"
+  }
+}

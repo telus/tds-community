@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 
-import styles from './SampleComponent.modules.scss'
+import styles from './SampleComponent.scss'
 
 /**
  * Pilter example
@@ -14,8 +14,8 @@ const SamplePilter = ({ children, a11yText, ...rest }) => {
   <button
     {...rest}
     className={styles.base}
-    role="button"
-    aria-label={`${a11yText}${children}`}
+    type="button"
+    aria-label={`${a11yText} ${children}`}
   >
     <Box vertical={2} horizontal={3}>
       <Text>{children}</Text>

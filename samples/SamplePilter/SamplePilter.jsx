@@ -37,3 +37,5 @@ SamplePilter.propTypes = {
 SamplePilter.defaulProps = {
   a11yText: 'Filter by'
 }
+
+export default SamplePilter

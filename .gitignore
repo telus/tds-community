@@ -17,7 +17,6 @@ coverage
 
 # TDS build artifacts
 dist/
-guide/_book/
 build/
 # Include the styleguide build directory, but not the StyleGuide component
 styleguide/

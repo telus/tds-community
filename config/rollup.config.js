@@ -3,18 +3,9 @@ import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
 
-import sass from 'node-sass'
-import tildeImporter from 'node-sass-tilde-importer'
+// also requires node-sass since we use SCSS
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
-
-const cssExportMap = {}
-
-const sassPreprocessor = (content, id) =>
-  new Promise(resolve => {
-    const result = sass.renderSync({ file: id, importer: tildeImporter })
-    resolve({ code: result.css.toString() })
-  })
 
 export default opts => {
   const options = Object.assign(
@@ -49,10 +40,6 @@ export default opts => {
           extract: './dist/index.css',
           sourceMap: true,
           plugins: [autoprefixer()],
-          getExportNamed: false,
-          getExport(id) {
-            return cssExportMap[id]
-          },
           modules: {
             generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           },

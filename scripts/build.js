@@ -14,8 +14,6 @@ getUpdatedPackageNames(packageNames => {
       'exec',
       '--scope',
       scopeGlob,
-      '--ignore',
-      '@tds/shared-*',
       '--',
       '$LERNA_ROOT_PATH/scripts/build.sh',
     ],
@@ -25,7 +23,7 @@ getUpdatedPackageNames(packageNames => {
   )
   spawnSync(
     './node_modules/.bin/lerna',
-    ['run', '--scope', scopeGlob, '--ignore', '@tds/shared-*', 'build'],
+    ['run', '--scope', scopeGlob, 'build'],
     {
       stdio: 'inherit',
     }

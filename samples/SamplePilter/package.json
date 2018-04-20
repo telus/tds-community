@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "A branded pilter showcasing our practices",
   "license": "MIT",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
   "private": true,
   "dependencies": {
     "@tds/core-box": "^1.0.1",

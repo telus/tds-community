@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 
-import styles from './SampleComponent.scss'
+import styles from './SamplePilter.scss'
 
 /**
  * Pilter example
  */
 
-const SamplePilter = ({ children, a11yText, ...rest }) => {
+const SamplePilter = ({ children, a11yText, ...rest }) => (
   <button
     {...rest}
     className={styles.base}
@@ -21,7 +21,7 @@ const SamplePilter = ({ children, a11yText, ...rest }) => {
       <Text>{children}</Text>
     </Box>
   </button>
-}
+)
 
 SamplePilter.propTypes = {
   /**

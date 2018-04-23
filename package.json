@@ -8,9 +8,11 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "samples/*"
   ],
   "scripts": {
+    "build": "node scripts/build.js",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
     "dev": "styleguidist server --config config/styleguide.config.js"
   },
@@ -37,6 +39,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "case": "^1.5.4",
     "lerna": "^2.10.2",
     "minimist": "^1.2.0",
     "node-sass": "^4.8.3",

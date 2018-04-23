@@ -1,27 +1,8 @@
 const path = require("path");
+const casing = require("case");
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || "dev"; // dev, staging, production
 
-// Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = [];
-
-/* eslint-disable no-unused-vars */
-const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
-  switch (styleguidistEnv) {
-    case "dev":
-      return toggledOffValue;
-    case "staging":
-      return enabledInStaging.includes(component)
-        ? toggledOffValue
-        : toggledOnValue;
-    case "production":
-      return toggledOnValue;
-    default:
-      return toggledOnValue;
-  }
-};
-
-const compact = array => array.filter(element => element !== undefined);
 /* eslint-enable no-unused-vars */
 
 const devTemplate = {
@@ -74,10 +55,7 @@ module.exports = {
 
     const componentDirectory = path.dirname(componentPath);
 
-    let kebabizeName = name
-      .split(/(?=[A-Z])/)
-      .join("-")
-      .toLowerCase();
+    let kebabizeName = casing.kebab(name);
 
     return `import ${name} from '@tds/community-${kebabizeName}'`;
   },
@@ -90,7 +68,16 @@ module.exports = {
       {
         name: "TELUS Design System Community",
         content: path.resolve("docs/intro/welcome.md"),
-        components: '../packages/*/*.jsx',
+        sections: [
+          {
+            name: "Community Components",
+            components: path.resolve('packages/**/*.jsx'),
+          },
+          {
+            name: "Sample Components",
+            components: path.resolve('samples/**/*.jsx'),
+          }
+        ]
       },
     ],
 
@@ -101,7 +88,7 @@ module.exports = {
   require: [
     '@tds/core-css-reset/dist/index.css',
     path.resolve("docs/scss/styleguide.scss"),
-    path.resolve("docs/components/custom/TdsCore/TdsCore.jsx")
+    path.resolve("docs/setup/tds-core-globals.js")
   ],
   styleguideComponents: {
     Editor: path.resolve("docs/components/overrides/Editor/Editor"),
@@ -129,8 +116,7 @@ module.exports = {
     ),
     TableOfContentsRenderer: path.resolve(
       "docs/components/custom/TableOfContents/TableOfContentsRenderer"
-    ),
-    TdsCore: path.resolve("docs/components/custom/TdsCore/TdsCore")
+    )
   },
   theme: {
     fontFamily: {
@@ -209,7 +195,7 @@ module.exports = {
           use: "babel-loader"
         },
         {
-          test: /(\.modules\.scss|flexboxgrid)/,
+          test: /\.scss$/,
           use: [
             "style-loader",
             {
@@ -231,13 +217,7 @@ module.exports = {
           ]
         },
         {
-          test: /\.scss$/,
-          exclude: /\.modules.scss$/,
-          use: ["style-loader", "css-loader", "sass-loader"]
-        },
-        {
           test: /\.css$/,
-          exclude: /flexboxgrid/,
           use: ["style-loader", "css-loader"]
         },
         {

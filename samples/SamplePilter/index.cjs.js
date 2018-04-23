@@ -1,4 +1,4 @@
 require('./dist/index.css')
-const Button = require('./dist/index.cjs')
+const SamplePilter = require('./dist/index.cjs')
 
-module.exports = Button
+module.exports = SamplePilter

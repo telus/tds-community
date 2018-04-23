@@ -1,4 +1,4 @@
 import './dist/index.css'
-import Button from './dist/index.es'
+import SamplePilter from './dist/index.es'
 
-export default Button
+export default SamplePilter

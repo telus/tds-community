@@ -10,6 +10,7 @@ import styles from './SamplePilter.scss'
  * Pilter example
  */
 
+<<<<<<< HEAD:packages/SamplePilter/SamplePilter.jsx
 const SamplePilter = ({ children, a11yText, ...rest }) => {
   return(
       <button
@@ -24,6 +25,20 @@ const SamplePilter = ({ children, a11yText, ...rest }) => {
     </button>
   )
 }
+=======
+const SamplePilter = ({ children, a11yText, ...rest }) => (
+  <button
+    {...rest}
+    className={styles.base}
+    type="button"
+    aria-label={`${a11yText} ${children}`}
+  >
+    <Box vertical={2} horizontal={3}>
+      <Text>{children}</Text>
+    </Box>
+  </button>
+)
+>>>>>>> master:samples/SamplePilter/SamplePilter.jsx
 
 SamplePilter.propTypes = {
   /**

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHeadingRenderer renders 1`] = `
+<Box
+  below={3}
+  inline={false}
+  tag="div"
+>
+  <Heading
+    id="a-section"
+    invert={false}
+    level="h2"
+  >
+    <Flexbox
+      direction="row"
+    >
+      A Section
+      <div
+        className="toolbar"
+      >
+        <Toolbar />
+      </div>
+    </Flexbox>
+  </Heading>
+</Box>
+`;

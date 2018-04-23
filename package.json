@@ -10,5 +10,39 @@
   "workspaces": [
     "packages/*",
     "samples/*"
-  ]
+  ],
+  "scripts": {
+    "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
+    "dev": "styleguidist server --config config/styleguide.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@tds/core-box": "^1.0.1",
+    "@tds/core-chevron-link": "^1.0.2",
+    "@tds/core-colours": "^1.0.0",
+    "@tds/core-css-reset": "^1.0.0",
+    "@tds/core-flex-grid": "^1.2.0",
+    "@tds/core-hairline-divider": "^1.0.0",
+    "@tds/core-heading": "^1.0.1",
+    "@tds/core-input": "^1.0.3",
+    "@tds/core-link": "^1.0.1",
+    "@tds/core-ordered-list": "^1.0.1",
+    "@tds/core-paragraph": "^1.0.0",
+    "@tds/core-strong": "^1.0.0",
+    "@tds/core-text": "^1.0.0",
+    "@tds/core-unordered-list": "^1.0.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.4",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-styleguidist": "^7.0.7",
+    "sass-loader": "^7.0.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0"
+  }
 }

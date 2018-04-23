@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box renders 1`] = `
+<div
+  className="betweenBottomMargin-3 stack"
+>
+  Some content
+</div>
+`;

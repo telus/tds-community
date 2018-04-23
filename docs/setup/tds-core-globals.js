@@ -1,7 +1,5 @@
 import Box from "@tds/core-box";
 import ChevronLink from "@tds/core-chevron-link";
-import CoreColours from "@tds/core-colours";
-import CssReset from "@tds/core-css-reset";
 import FlexGrid from "@tds/core-flex-grid";
 import HairlineDivider from "@tds/core-hairline-divider";
 import Heading from "@tds/core-heading";
@@ -16,8 +14,6 @@ import UnorderedList from "@tds/core-unordered-list";
 Object.assign(global, {
   Box,
   ChevronLink,
-  CoreColours,
-  CssReset,
   FlexGrid,
   HairlineDivider,
   Heading,

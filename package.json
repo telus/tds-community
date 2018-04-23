@@ -8,8 +8,7 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "samples/*"
+    "packages/*"
   ],
   "scripts": {
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",

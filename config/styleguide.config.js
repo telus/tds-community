@@ -130,7 +130,7 @@ module.exports = {
     TableOfContentsRenderer: path.resolve(
       "docs/components/custom/TableOfContents/TableOfContentsRenderer"
     ),
-    Box: path.resolve("docs/components/custom/TdsCore/TdsCore")
+    TdsCore: path.resolve("docs/components/custom/TdsCore/TdsCore")
   },
   theme: {
     fontFamily: {

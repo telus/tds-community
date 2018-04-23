@@ -18,7 +18,7 @@ import styles from './SamplePilter.scss'
      aria-label={`${a11yText} ${children}`}
    >
      <Box vertical={2} horizontal={3}>
-       <Text>{children}</Text>
+       <Text invert>{children}</Text>
      </Box>
    </button>
  )

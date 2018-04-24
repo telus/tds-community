@@ -2,9 +2,7 @@
 
 import PropTypes from 'prop-types';
 import { compiler } from 'markdown-to-jsx';
-// import Link from 'rsg-components/Link';
 import Text from 'rsg-components/Text';
-// import Para from 'rsg-components/Para';
 import MarkdownHeading from 'rsg-components/Markdown/MarkdownHeading';
 import List from 'rsg-components/Markdown/List';
 import Blockquote from 'rsg-components/Markdown/Blockquote';
@@ -67,12 +65,6 @@ const baseOverrides = {
       level: 6,
     },
   },
-  // p: {
-  //   component: Para,
-  //   props: {
-  //     semantic: 'p',
-  //   },
-  // },
   p: {
     component: MarkdownParagraph,
   },
@@ -82,12 +74,6 @@ const baseOverrides = {
       semantic: 'em',
     },
   },
-  // strong: {
-  //   component: Text,
-  //   props: {
-  //     semantic: 'strong',
-  //   },
-  // },
   strong: {
     component: Strong
   },
@@ -140,9 +126,6 @@ const baseOverrides = {
 
 const inlineOverrides = {
   ...baseOverrides,
-  // p: {
-  //   component: Text,
-  // },
   p: {
     component: TdsText,
   },

@@ -1,8 +1,11 @@
 const path = require('path')
 
 module.exports = {
-  rootDir: path.resolve('packages'),
-  roots: ['<rootDir>', path.resolve('samples')],
+  roots: [
+    '<rootDir>',
+    path.resolve('samples'),
+    path.resolve('packages')
+  ],
   moduleNameMapper: {
     '^.+\\.(css|scss)$': path.resolve('config/jest/__mocks__/styleMock.js'),
     '^.+\\.(svg)$': path.resolve('config/jest/__mocks__/fileMock.js'),

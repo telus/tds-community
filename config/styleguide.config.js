@@ -74,9 +74,9 @@ module.exports = {
     }
   ],
 
-  template: styleguidistEnv === "production" ? productionTemplate : devTemplate,
+  template: devTemplate,
   assetsDir: path.resolve("docs/assets/"),
-  styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
+  styleguideDir: path.resolve(`styleguide/dev`),
   require: [
     "@tds/core-css-reset/dist/index.css",
     path.resolve("docs/scss/styleguide.scss"),

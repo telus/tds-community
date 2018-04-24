@@ -3,9 +3,10 @@ import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
 
-// also requires node-sass since we use SCSS
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
+
+import CssModulesSassLoader from './CssModulesSassLoader'
 
 export default opts => {
   const options = Object.assign(
@@ -41,6 +42,7 @@ export default opts => {
           sourceMap: true,
           plugins: [autoprefixer()],
           modules: {
+            Loader: CssModulesSassLoader,
             generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           },
         }),

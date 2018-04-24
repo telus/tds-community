@@ -14,7 +14,10 @@
   "scripts": {
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
-    "dev": "styleguidist server --config config/styleguide.config.js"
+    "dev": "styleguidist server --config config/styleguide.config.js",
+    "test": "jest --config config/jest.config.js",
+    "test:u": "yarn test -u",
+    "test:watch": "yarn test --watch"
   },
   "dependencies": {},
   "devDependencies": {
@@ -40,6 +43,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-modules-loader-core": "^1.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "jest-enzyme": "^6.0.0",
     "lerna": "^2.10.2",
     "minimist": "^1.2.0",
     "node-sass": "^4.8.3",

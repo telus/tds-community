@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "node scripts/build.js",
-    "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
+    "build-docs": "styleguidist build --config config/styleguide.config.js",
     "dev": "styleguidist server --config config/styleguide.config.js"
   },
   "dependencies": {},

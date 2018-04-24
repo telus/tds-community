@@ -1,8 +1,6 @@
 const path = require("path");
 const casing = require("case");
 
-const styleguidistEnv = process.env.STYLEGUIDIST_ENV || "dev"; // dev, staging, production
-
 /* eslint-enable no-unused-vars */
 
 const devTemplate = {
@@ -51,11 +49,9 @@ module.exports = {
     return componentPath.replace(/\.jsx?$/, ".md");
   },
   getComponentPathLine(componentPath) {
-    let name = path.basename(componentPath, ".jsx");
+    const name = path.basename(componentPath, ".jsx");
 
-    const componentDirectory = path.dirname(componentPath);
-
-    let kebabizeName = casing.kebab(name);
+    const kebabizeName = casing.kebab(name);
 
     return `import ${name} from '@tds/community-${kebabizeName}'`;
   },

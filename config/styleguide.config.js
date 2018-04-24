@@ -1,8 +1,6 @@
 const path = require("path");
 const casing = require("case");
 
-/* eslint-enable no-unused-vars */
-
 const devTemplate = {
   lang: "en",
   favicon: "favicon.ico",
@@ -59,30 +57,28 @@ module.exports = {
   showUsage: false,
   showCode: false,
 
-
-    sections: [
-      {
-        name: "TELUS Design System Community",
-        content: path.resolve("docs/intro/welcome.md"),
-        sections: [
-          {
-            name: "Community Components",
-            components: path.resolve('packages/**/*.jsx'),
-          },
-          {
-            name: "Sample Components",
-            components: path.resolve('samples/**/*.jsx'),
-          }
-        ]
-      },
-    ],
-
+  sections: [
+    {
+      name: "TELUS Design System Community",
+      content: path.resolve("docs/intro/welcome.md"),
+      sections: [
+        {
+          name: "Community Components",
+          components: path.resolve("packages/**/*.jsx")
+        },
+        {
+          name: "Sample Components",
+          components: path.resolve("samples/**/*.jsx")
+        }
+      ]
+    }
+  ],
 
   template: styleguidistEnv === "production" ? productionTemplate : devTemplate,
   assetsDir: path.resolve("docs/assets/"),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
-    '@tds/core-css-reset/dist/index.css',
+    "@tds/core-css-reset/dist/index.css",
     path.resolve("docs/scss/styleguide.scss"),
     path.resolve("docs/setup/tds-core-globals.js")
   ],

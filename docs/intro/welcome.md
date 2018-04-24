@@ -12,15 +12,15 @@ aesthetics of the TELUS brand. We embed the brand into React components which ar
 To learn more about the design system, design principles, contribution flow, or our support channels, you can get started:
 
 ```jsx noeditor
-<ChevronLink variant="secondary" href="../getting-started/designers.html">For designers</ChevronLink>
+<ChevronLink variant="secondary" href="https://tds.telus.com/getting-started/designers.html">For designers</ChevronLink>
 ```
 
 ```jsx noeditor
-<ChevronLink variant="secondary" href="../getting-started/developers.html">For developers</ChevronLink>
+<ChevronLink variant="secondary" href="https://tds.telus.com/getting-started/developers.html">For developers</ChevronLink>
 ```
 
 ```jsx noeditor
-<ChevronLink variant="secondary" href="http://tds.telus.com">TDS Core</ChevronLink>
+<ChevronLink variant="secondary" href="https://tds.telus.com/components/index.html">TDS Core</ChevronLink>
 ```
 
 ```jsx noeditor

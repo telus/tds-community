@@ -3,6 +3,7 @@
 exports[`SamplePilter renders 1`] = `
 <button
   aria-label="undefined Some Content"
+  class="base"
   type="button"
 >
   <div

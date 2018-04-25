@@ -23,4 +23,21 @@ describe('SamplePilter', () => {
 
     expect(pilter).toHaveProp('type', 'button')
   })
+
+  it('passes additional attributes to the element', () => {
+    const pilter = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+
+    expect(pilter).toHaveProp('id', 'the-id')
+    expect(pilter).toHaveProp('data-some-attr', 'some value')
+  })
+
+  it('does not allow custom CSS', () => {
+    const pilter = doShallow({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
+
+    expect(pilter).not.toHaveProp('className', 'my-custom-class')
+    expect(pilter).not.toHaveProp('style')
+  })
 })

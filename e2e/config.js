@@ -11,14 +11,6 @@ const envConfig = {
     launchUrl: 'http://localhost:6060',
     healthCheckUrl: 'http://localhost:6060',
   },
-  // staging: {
-  //   launchUrl: '',
-  //   healthCheckUrl: '',
-  // },
-  // production: {
-  //   launchUrl: '',
-  //   healthCheckUrl: '',
-  // },
 }
 
 module.exports = Object.assign(config, envConfig[process.env.APP_ENV || 'development'])

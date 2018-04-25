@@ -8,6 +8,7 @@ import styles from './SamplePilter.scss'
 
 /**
  * Pilter example
+ * @version ./package.json
  */
 
  const SamplePilter = ({ children, a11yText, ...rest }) => (

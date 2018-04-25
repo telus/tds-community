@@ -6,7 +6,7 @@ const devTemplate = {
   head: {
     scripts: [
       {
-        src: "//cdn.polyfill.io/v2/polyfill.min.js?features=Set"
+        src: "//cdn.polyfill.io/v2/polyfill.min.js?features=Set,Object.assign"
       }
     ]
   }

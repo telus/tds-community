@@ -1,21 +1,32 @@
 {
   "name": "tds-community",
   "version": "1.0.0",
-  "description": "The TELUS Design System community featuring shared React components",
+  "description":
+    "The TELUS Design System community featuring shared React components",
   "main": "n/a",
   "repository": "git@github.com:telusdigital/tds-community.git",
   "author": "TELUS digital",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "samples/*"
-  ],
+  "workspaces": ["packages/*", "samples/*"],
   "scripts": {
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "dev": "styleguidist server --config config/styleguide.config.js"
+    "cz": "git-cz",
+    "dev": "styleguidist server --config config/styleguide.config.js",
+    "lint:js":
+      "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
+    "lint:scss":
+      "stylelint '{packages,samples}/**/*.scss' --config config/stylelint.config.js",
+    "lint:ec": "echint",
+    "lint": "npm-run-all --paralYlel lint:*",
+    "precommit": "lint-staged && yarn test",
+    "prepr":
+      "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
+    "prepush": "npm-run-all --parallel build test build-docs",
+    "test": "",
+    "test:e2e": ""
   },
   "dependencies": {},
   "devDependencies": {
@@ -37,8 +48,10 @@
     "@tds/core-strong": "^1.0.0",
     "@tds/core-text": "^1.0.0",
     "@tds/core-unordered-list": "^1.0.1",
+    "@telusdigital/eslint-config": "^1.2.0",
     "autoprefixer": "^8.3.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
@@ -47,11 +60,24 @@
     "case": "^1.5.4",
     "commitizen": "^2.9.6",
     "css-modules-loader-core": "^1.1.0",
+    "echint": "^4.0.1",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
     "lerna": "^2.10.2",
+    "lint-staged": "^7.0.4",
     "minimist": "^1.2.0",
+    "node-emoji": "^1.8.1",
     "node-sass": "^4.8.3",
     "node-sass-tilde-importer": "^1.0.2",
+    "npm-run-all": "^4.1.2",
     "postcss-loader": "^2.1.4",
+    "prettier": "^1.12.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-styleguidist": "^7.0.7",
@@ -61,7 +87,48 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-postcss": "^1.6.1",
     "sass-loader": "^7.0.1",
+    "stylelint": "^9.1.1",
+    "stylelint-config-prettier": "^3.0.4",
+    "stylelint-config-recommended-scss": "^3.1.0",
+    "stylelint-scss": "^3.0.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix",
+      "git add"
+    ],
+    "*.scss": "stylelint --config config/stylelint.config.js",
+    "*.md": ["prettier --write", "git add"],
+    "*": "echint"
+  },
+  "echint": {
+    "ignore": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/**.svg",
+      "**/**.log",
+      "**/__snapshots__/**",
+      "**/**.tgz",
+      "guide/components/**",
+      "guide/_book/**",
+      "build/**",
+      "styleguide/**",
+      "**/reports/*.xml",
+      "**/**.png"
+    ]
   }
 }

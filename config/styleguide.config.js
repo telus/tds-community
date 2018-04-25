@@ -1,5 +1,4 @@
 const path = require("path");
-const casing = require("case");
 
 const devTemplate = {
   lang: "en",
@@ -47,11 +46,20 @@ module.exports = {
     return componentPath.replace(/\.jsx?$/, ".md");
   },
   getComponentPathLine(componentPath) {
-    const name = path.basename(componentPath, ".jsx");
+    // Note, this does NOT detect packages' named exports
 
-    const kebabizeName = casing.kebab(name);
+    const name = path.basename(componentPath, '.jsx')
+    const packageJSON = `${path.dirname(componentPath)}/package.json`
+    let packageName = ''
 
-    return `import ${name} from '@tds/community-${kebabizeName}'`;
+    try {
+      packageName = require(packageJSON).name
+    } catch(err) {
+      console.warn('package.json not found', packageJSON)
+      packageName = ''
+    }
+
+    return packageName ? `import ${name} from '${packageName}'` : ''
   },
 
   showUsage: false,
@@ -61,16 +69,14 @@ module.exports = {
     {
       name: "TELUS Design System Community",
       content: path.resolve("docs/intro/welcome.md"),
-      sections: [
-        {
-          name: "Community Components",
-          components: path.resolve("packages/**/*.jsx")
-        },
-        {
-          name: "Sample Components",
-          components: path.resolve("samples/**/*.jsx")
-        }
-      ]
+    },
+    {
+      name: "Community Components",
+      components: path.resolve("packages/**/*.jsx")
+    },
+    {
+      name: "Sample Components",
+      components: path.resolve("samples/**/*.jsx")
     }
   ],
 

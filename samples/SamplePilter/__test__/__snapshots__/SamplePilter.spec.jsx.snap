@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SamplePilter renders 1`] = `
+<button
+  aria-label="undefined Some Content"
+  class="base"
+  type="button"
+>
+  <div
+    class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T"
+  >
+    <span
+      class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__invertedColor___EXfdx"
+    >
+      Some Content
+    </span>
+  </div>
+</button>
+`;

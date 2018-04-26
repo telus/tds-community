@@ -9,12 +9,17 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "samples/*"
+    "samples/*",
+    "shared/*"
   ],
   "scripts": {
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
-    "dev": "styleguidist server --config config/styleguide.config.js"
+    "dev": "styleguidist server --config config/styleguide.config.js",
+    "test": "jest --config config/jest.config.js",
+    "test:e2e": "node scripts/e2e.js",
+    "test:u": "yarn test -u",
+    "test:watch": "yarn test --watch"
   },
   "dependencies": {},
   "devDependencies": {
@@ -39,15 +44,27 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "case": "^1.5.4",
+    "chromedriver": "^2.38.0",
     "css-modules-loader-core": "^1.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.3",
+    "jest-enzyme": "^6.0.0",
     "lerna": "^2.10.2",
     "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "nightwatch": "^0.9.21",
+    "nightwatch-accessibility": "^1.6.0",
+    "node-resemble-js": "^0.2.0",
     "node-sass": "^4.8.3",
     "node-sass-tilde-importer": "^1.0.2",
     "postcss-loader": "^2.1.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-styleguidist": "^7.0.7",
+    "request": "^2.85.0",
     "rollup": "^0.58.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^9.1.0",

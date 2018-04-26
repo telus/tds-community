@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 
+import safeRest from '@tds/shared-safe-rest'
+
 import styles from './SamplePilter.scss'
 
 /**
@@ -13,7 +15,7 @@ import styles from './SamplePilter.scss'
 
  const SamplePilter = ({ children, a11yText, ...rest }) => (
    <button
-     {...rest}
+     {...safeRest(rest)}
      className={styles.base}
      type="button"
      aria-label={`${a11yText} ${children}`}

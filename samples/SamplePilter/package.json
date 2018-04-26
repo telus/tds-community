@@ -16,6 +16,7 @@
     "react-dom": ">=15"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^1.0.0",
+    "@tds/shared-safe-rest": "^1.0.0"
   }
 }

@@ -13,10 +13,10 @@ const SectionHeadingRenderer = ({ id, depth, toolbar, children }) => {
   return (
     <Box below={3}>
       <Heading level={`h${level}`} id={id}>
-        <FlexGrid>
+        <FlexGrid gutter={false}>
           <FlexGrid.Row>
-            <FlexGrid.Col>
-              {children}
+            <FlexGrid.Col>{children}</FlexGrid.Col>
+            <FlexGrid.Col xs={1}>
               <div className={styles.toolbar}>{toolbar}</div>
             </FlexGrid.Col>
           </FlexGrid.Row>

@@ -4,24 +4,27 @@ import PropTypes from 'prop-types'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 
+import safeRest from '@tds/shared-safe-rest'
+
 import styles from './SamplePilter.scss'
 
 /**
  * Pilter example
+ * @version ./package.json
  */
 
- const SamplePilter = ({ children, a11yText, ...rest }) => (
-   <button
-     {...rest}
-     className={styles.base}
-     type="button"
-     aria-label={`${a11yText} ${children}`}
-   >
-     <Box vertical={2} horizontal={3}>
-       <Text invert>{children}</Text>
-     </Box>
-   </button>
- )
+const SamplePilter = ({ children, a11yText, ...rest }) => (
+  <button
+    {...safeRest(rest)}
+    className={styles.base}
+    type="button"
+    aria-label={`${a11yText} ${children}`}
+  >
+    <Box vertical={2} horizontal={3}>
+      <Text invert>{children}</Text>
+    </Box>
+  </button>
+)
 
 SamplePilter.propTypes = {
   /**
@@ -31,11 +34,11 @@ SamplePilter.propTypes = {
   /**
    * The label
    */
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 }
 
 SamplePilter.defaulProps = {
-  a11yText: 'Filter by'
+  a11yText: 'Filter by',
 }
 
 export default SamplePilter

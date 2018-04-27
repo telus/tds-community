@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable import/no-dynamic-require */
 const path = require('path')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
@@ -57,9 +55,8 @@ module.exports = {
     let packageName = ''
 
     try {
-      packageName = require(packageJSON).name
+      packageName = require(packageJSON).name // eslint-disable-line import/no-dynamic-require
     } catch (err) {
-      console.warn('package.json not found', packageJSON)
       packageName = ''
     }
 
@@ -164,7 +161,7 @@ module.exports = {
 
     if (updatedDocs.doclets.version) {
       const versionFilePath = path.resolve(path.dirname(file), updatedDocs.doclets.version)
-      const version = require(versionFilePath).version
+      const version = require(versionFilePath).version // eslint-disable-line import/no-dynamic-require
 
       updatedDocs.doclets.version = version
       updatedDocs.tags.version[0].description = version

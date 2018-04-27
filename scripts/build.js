@@ -10,22 +10,12 @@ getUpdatedPackageNames(packageNames => {
 
   spawnSync(
     './node_modules/.bin/lerna',
-    [
-      'exec',
-      '--scope',
-      scopeGlob,
-      '--',
-      '$LERNA_ROOT_PATH/scripts/build.sh',
-    ],
+    ['exec', '--scope', scopeGlob, '--', '$LERNA_ROOT_PATH/scripts/build.sh'],
     {
       stdio: 'inherit',
     }
   )
-  spawnSync(
-    './node_modules/.bin/lerna',
-    ['run', '--scope', scopeGlob, 'build'],
-    {
-      stdio: 'inherit',
-    }
-  )
+  spawnSync('./node_modules/.bin/lerna', ['run', '--scope', scopeGlob, 'build'], {
+    stdio: 'inherit',
+  })
 })

@@ -37,7 +37,7 @@ SamplePilter.propTypes = {
   children: PropTypes.string.isRequired,
 }
 
-SamplePilter.defaulProps = {
+SamplePilter.defaultProps = {
   a11yText: 'Filter by',
 }
 

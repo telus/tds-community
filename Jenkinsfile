@@ -22,19 +22,19 @@ try {
     node {
       String currentBranch = sh(
         returnStdout: true,
-        script: "oc get bc tds-pipeline -o='jsonpath={.spec.source.git.ref}'"
+        script: "oc get bc tds-community-pipeline -o='jsonpath={.spec.source.git.ref}'"
       ).trim()
 
       sh("""
         oc apply -f openshift/openshift-template.yml
-        oc process tds-pipeline BRANCH=${currentBranch} | oc apply -f -
+        oc process tds-community-pipeline BRANCH=${currentBranch} | oc apply -f -
       """)
     }
   }
 
   stage('Build') {
     build(
-      name: 'tds',
+      name: 'tds-community',
       buildVersion: buildVersion,
       gitCommitId: gitCommitId
     )
@@ -42,14 +42,14 @@ try {
 
   stage('Test') {
     test(
-      name: 'tds',
+      name: 'tds-community',
       buildVersion: buildVersion
     )
   }
 
   stage('Deploy Staging') {
     deploy(
-      name: 'tds',
+      name: 'tds-community',
       buildVersion: buildVersion,
       environment: 'staging'
     )
@@ -69,7 +69,7 @@ try {
 
   stage('Deploy Production') {
     deploy(
-      name: 'tds',
+      name: 'tds-community',
       buildVersion: buildVersion,
       environment: 'production'
     )
@@ -152,7 +152,7 @@ def notifyBuild(Map attrs) {
       color: attrs.color,
       message: "${env.JOB_NAME} [${attrs.buildVersion}]\n${attrs.message}",
       teamDomain: 'telusdigital',
-      channel: 'tds-updates',
+      channel: 'tds-community-updates',
       token: env.SLACK_TOKEN
     )
   }

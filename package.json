@@ -14,6 +14,7 @@
     "build-docs": "styleguidist build --config config/styleguide.config.js",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "cz": "git-cz",
+    "cz:retry": "git-cz --retry",
     "dev": "styleguidist server --config config/styleguide.config.js",
     "lint:js":
       "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
@@ -136,8 +137,6 @@
       "**/**.log",
       "**/__snapshots__/**",
       "**/**.tgz",
-      "guide/components/**",
-      "guide/_book/**",
       "build/**",
       "styleguide/**",
       "**/reports/*.xml",

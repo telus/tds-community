@@ -15,6 +15,11 @@
   "scripts": {
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
+    "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
+    "ci:build": "lerna exec -- \\$LERNA_ROOT_PATH/scripts/build.sh && lerna run build",
+    "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging yarn run build-docs:styleguide",
+    "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
+    "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-*",
     "dev": "styleguidist server --config config/styleguide.config.js",
     "test": "jest --config config/jest.config.js",
     "test:e2e": "node scripts/e2e.js",

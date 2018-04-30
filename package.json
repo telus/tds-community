@@ -16,6 +16,7 @@
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
     "dev": "styleguidist server --config config/styleguide.config.js",
+    "scaffold": "node scripts/scaffold.js",
     "test": "jest --config config/jest.config.js",
     "test:e2e": "node scripts/e2e.js",
     "test:u": "yarn test -u",

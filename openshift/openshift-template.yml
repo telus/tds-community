@@ -12,9 +12,9 @@ items:
 - kind: ImageStream
   apiVersion: v1
   metadata:
-    name: tds
+    name: tds-community
     labels:
-      app: tds
+      app: tds-community
 
 # Configure our build pipeline template
 # https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
@@ -35,7 +35,7 @@ items:
     metadata:
       name: tds-community-pipeline
       labels:
-        app: tds
+        app: tds-community
     spec:
       source:
         type: Git

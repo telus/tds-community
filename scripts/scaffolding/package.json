@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-$COMPONENT_KEBAB$",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
+  },
+  "devDependencies": {
     "@tds/shared-safe-rest": "^1.0.0"
   }
 }

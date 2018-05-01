@@ -8,7 +8,7 @@ import styles from './$COMPONENT$.modules.scss'
 /**
  * @version ./package.json
  */
-const $COMPONENT$ = ({ ...rest }) => <div {...safeRest(rest)} />
+const $COMPONENT$ = ({ ...rest }) => <div className={styles.container} {...safeRest(rest)} />
 
 $COMPONENT$.propTypes = {}
 

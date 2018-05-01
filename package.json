@@ -21,6 +21,8 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",
+    "deploy:docs": "node ./scripts/deploy-docs.js",
+    "deploy:package": "scripts/publish.sh",
     "dev": "styleguidist server --config config/styleguide.config.js",
     "lerna:bootstrap": "lerna bootstrap",
     "lint:js":

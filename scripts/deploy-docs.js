@@ -75,11 +75,11 @@ const deployToS3Deprecated = () => {
 }
 
 if (env === 'production') {
-  deployToS3('latest')
-    .then(() => deployToS3(`v${version}`))
+  deployToS3('latest/community')
+    .then(() => deployToS3(`v${version}/community`))
     // Continue to deploy to the thorium bucket because http://tds.telus.com points there
     // TODO: Rip this out when the domain name is pointed at the new bucket: TDS-286
     .then(() => deployToS3Deprecated())
 } else {
-  deployToS3('staging')
+  deployToS3('staging/community')
 }

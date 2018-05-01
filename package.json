@@ -17,6 +17,7 @@
     "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging yarn run build-docs:styleguide",
     "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
     "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-*",
+    "ci:test": "npm-run-all --parallel lint test",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",

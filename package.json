@@ -146,7 +146,8 @@
       "**/**.tgz",
       "styleguide/**",
       "**/reports/*.xml",
-      "**/**.png"
+      "**/**.png",
+      "build/**"
     ]
   }
 }

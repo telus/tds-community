@@ -12,10 +12,15 @@
   "scripts": {
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
+    "ci:build": "lerna exec -- \\$LERNA_ROOT_PATH/scripts/build.sh && lerna run build",
+    "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging yarn run build-docs:styleguide",
+    "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
+    "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-*",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",
     "dev": "styleguidist server --config config/styleguide.config.js",
+    "lerna:bootstrap": "lerna bootstrap",
     "lint:js":
       "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss":

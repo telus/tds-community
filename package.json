@@ -1,14 +1,17 @@
 {
   "name": "tds-community",
   "version": "1.0.0",
-  "description":
-    "The TELUS Design System community featuring shared React components",
+  "description": "The TELUS Design System community featuring shared React components",
   "main": "n/a",
   "repository": "git@github.com:telusdigital/tds-community.git",
   "author": "TELUS digital",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*", "samples/*", "shared/*"],
+  "workspaces": [
+    "packages/*",
+    "samples/*",
+    "shared/*"
+  ],
   "scripts": {
     "build": "node scripts/build.js",
     "build-docs": "styleguidist build --config config/styleguide.config.js",
@@ -25,15 +28,12 @@
     "deploy:package": "scripts/publish.sh",
     "dev": "styleguidist server --config config/styleguide.config.js",
     "lerna:bootstrap": "lerna bootstrap",
-    "lint:js":
-      "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
-    "lint:scss":
-      "stylelint '{packages,samples}/**/*.scss' --config config/stylelint.config.js",
+    "lint:js": "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
+    "lint:scss": "stylelint '{packages,samples}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
     "lint": "npm-run-all --parallel lint:*",
     "precommit": "lint-staged && yarn test",
-    "prepr":
-      "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
+    "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
     "prepush": "npm-run-all --parallel build test build-docs",
     "test": "jest --config config/jest.config.js",
     "test:e2e": "node scripts/e2e.js",
@@ -62,6 +62,7 @@
     "@tds/core-unordered-list": "^1.0.1",
     "@telusdigital/eslint-config": "^1.2.0",
     "autoprefixer": "^8.3.0",
+    "aws-sdk": "^2.230.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
@@ -70,8 +71,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "case": "^1.5.4",
-    "commitizen": "^2.9.6",
     "chromedriver": "^2.38.0",
+    "commitizen": "^2.9.6",
     "css-modules-loader-core": "^1.1.0",
     "echint": "^4.0.1",
     "enzyme": "^3.3.0",
@@ -109,6 +110,7 @@
     "rollup-plugin-commonjs": "^9.1.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-postcss": "^1.6.1",
+    "s3-website": "^3.3.0",
     "sass-loader": "^7.0.1",
     "stylelint": "^9.1.1",
     "stylelint-config-prettier": "^3.0.4",
@@ -135,7 +137,10 @@
       "git add"
     ],
     "*.scss": "stylelint --config config/stylelint.config.js",
-    "*.md": ["prettier --write", "git add"],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ],
     "*": "echint"
   },
   "echint": {

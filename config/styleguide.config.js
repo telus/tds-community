@@ -1,28 +1,30 @@
-const path = require("path");
+const path = require('path')
+
+const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
 const devTemplate = {
-  lang: "en",
-  favicon: "favicon.ico",
+  lang: 'en',
+  favicon: 'favicon.ico',
   head: {
     scripts: [
       {
-        src: "//cdn.polyfill.io/v2/polyfill.min.js?features=Set,Object.assign"
-      }
-    ]
-  }
-};
+        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set,Object.assign',
+      },
+    ],
+  },
+}
 const productionTemplate = {
-  lang: "en",
-  favicon: "favicon.ico",
+  lang: 'en',
+  favicon: 'favicon.ico',
   head: {
     scripts: [
       {
-        src: "//cdn.polyfill.io/v2/polyfill.min.js?features=Set"
+        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
       },
       {
         src:
-          "https://assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e.js"
-      }
+          'https://assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e.js',
+      },
     ],
     raw: `
 <script>
@@ -31,19 +33,19 @@ const productionTemplate = {
       name: 'TELUS Design System Community'
     }
   }
-</script>`
+</script>`,
   },
   body: {
-    raw: `<script type="text/javascript">_satellite.pageBottom();</script>`
-  }
-};
+    raw: `<script type="text/javascript">_satellite.pageBottom();</script>`,
+  },
+}
 
 module.exports = {
-  title: "TELUS Design System Community",
+  title: 'TELUS Design System Community',
 
   skipComponentsWithoutExample: true,
   getExampleFilename(componentPath) {
-    return componentPath.replace(/\.jsx?$/, ".md");
+    return componentPath.replace(/\.jsx?$/, '.md')
   },
   getComponentPathLine(componentPath) {
     // Note, this does NOT detect packages' named exports
@@ -53,9 +55,8 @@ module.exports = {
     let packageName = ''
 
     try {
-      packageName = require(packageJSON).name
-    } catch(err) {
-      console.warn('package.json not found', packageJSON)
+      packageName = require(packageJSON).name // eslint-disable-line import/no-dynamic-require
+    } catch (err) {
       packageName = ''
     }
 
@@ -67,162 +68,149 @@ module.exports = {
 
   sections: [
     {
-      name: "TELUS Design System Community",
-      content: path.resolve("docs/intro/welcome.md"),
+      name: 'TELUS Design System Community',
+      content: path.resolve('docs/intro/welcome.md'),
     },
     {
-      name: "Community Components",
-      components: path.resolve("packages/**/*.jsx")
+      name: 'Community Components',
+      components: path.resolve('packages/**/*.jsx'),
     },
     {
-      name: "Sample Components",
-      components: path.resolve("samples/**/*.jsx")
-    }
+      name: 'Sample Components',
+      components: path.resolve('samples/**/*.jsx'),
+    },
   ],
 
-  template: devTemplate,
-  assetsDir: path.resolve("docs/assets/"),
-  styleguideDir: path.resolve(`styleguide/dev`),
+  template: styleguidistEnv === 'production' ? productionTemplate : devTemplate,
+  assetsDir: path.resolve('docs/assets/'),
+  styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
-    "@tds/core-css-reset/dist/index.css",
-    path.resolve("docs/scss/styleguide.scss"),
-    path.resolve("docs/setup/tds-core-globals.js")
+    '@tds/core-css-reset/dist/index.css',
+    path.resolve('docs/scss/styleguide.scss'),
+    path.resolve('docs/setup/tds-core-globals.js'),
   ],
   styleguideComponents: {
-    Editor: path.resolve("docs/components/overrides/Editor/Editor"),
-    Logo: path.resolve("docs/components/custom/Logo/Logo"),
-    "Markdown/List": path.resolve(
-      "docs/components/custom/MarkdownList/MarkdownList"
+    Editor: path.resolve('docs/components/overrides/Editor/Editor'),
+    Logo: path.resolve('docs/components/custom/Logo/Logo'),
+    'Markdown/List': path.resolve('docs/components/custom/MarkdownList/MarkdownList'),
+    'Markdown/MarkdownHeading': path.resolve(
+      'docs/components/custom/MarkdownHeading/MarkdownHeading'
     ),
-    "Markdown/MarkdownHeading": path.resolve(
-      "docs/components/custom/MarkdownHeading/MarkdownHeading"
-    ),
-    "Markdown/Markdown": path.resolve(
-      "docs/components/overrides/Markdown/Markdown"
-    ),
-    PathlineRenderer: path.resolve(
-      "docs/components/overrides/Pathline/PathlineRenderer"
-    ),
+    'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
+    PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
     SectionHeadingRenderer: path.resolve(
-      "docs/components/custom/SectionHeading/SectionHeadingRenderer"
+      'docs/components/custom/SectionHeading/SectionHeadingRenderer'
     ),
-    StyleGuideRenderer: path.resolve(
-      "docs/components/overrides/StyleGuide/StyleGuideRenderer"
-    ),
-    TabButtonRenderer: path.resolve(
-      "docs/components/overrides/TabButton/TabButtonRenderer"
-    ),
+    StyleGuideRenderer: path.resolve('docs/components/overrides/StyleGuide/StyleGuideRenderer'),
+    TabButtonRenderer: path.resolve('docs/components/overrides/TabButton/TabButtonRenderer'),
     TableOfContentsRenderer: path.resolve(
-      "docs/components/custom/TableOfContents/TableOfContentsRenderer"
-    )
+      'docs/components/custom/TableOfContents/TableOfContentsRenderer'
+    ),
   },
   theme: {
     fontFamily: {
-      base: ["TELUS-Web", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"]
+      base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
     },
     color: {
-      link: "#4B286D",
-      linkHover: "#54595F",
-      sidebarBackground: "#ffffff",
-      codeBackground: "#ffffff"
+      link: '#4B286D',
+      linkHover: '#54595F',
+      sidebarBackground: '#ffffff',
+      codeBackground: '#ffffff',
     },
-    sidebarWidth: 240
+    sidebarWidth: 240,
   },
   styles: {
     // Fixing mobile overflow of code examples
     Markdown: {
       pre: {
-        "overflow-x": "auto"
-      }
+        'overflow-x': 'auto',
+      },
     },
     ReactComponent: {
       tabs: {
-        "overflow-x": "auto"
-      }
+        'overflow-x': 'auto',
+      },
     },
     // [TDS-381] Increase font size in props tables to match default Paragraph size.
     Table: {
       cell: {
-        fontSize: "1rem"
+        fontSize: '1rem',
       },
       cellHeading: {
-        fontSize: "1rem"
-      }
+        fontSize: '1rem',
+      },
     },
     Name: {
       name: {
-        fontSize: "inherit"
-      }
+        fontSize: 'inherit',
+      },
     },
     Type: {
       type: {
-        fontSize: "inherit"
-      }
+        fontSize: 'inherit',
+      },
     },
     Text: {
       text: {
-        fontSize: "inherit"
-      }
-    }
+        fontSize: 'inherit',
+      },
+    },
   },
   updateDocs(docs, file) {
-    const updatedDocs = Object.assign({}, docs);
+    const updatedDocs = Object.assign({}, docs)
 
     if (updatedDocs.doclets.version) {
-      const versionFilePath = path.resolve(
-        path.dirname(file),
-        updatedDocs.doclets.version
-      );
-      const version = require(versionFilePath).version; // eslint-disable-line import/no-dynamic-require
+      const versionFilePath = path.resolve(path.dirname(file), updatedDocs.doclets.version)
+      const version = require(versionFilePath).version // eslint-disable-line import/no-dynamic-require
 
-      updatedDocs.doclets.version = version;
-      updatedDocs.tags.version[0].description = version;
+      updatedDocs.doclets.version = version
+      updatedDocs.tags.version[0].description = version
     }
 
-    return updatedDocs;
+    return updatedDocs
   },
   webpackConfig: {
     devServer: {
-      disableHostCheck: true
+      disableHostCheck: true,
     },
     module: {
       rules: [
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
-          use: "babel-loader"
+          use: 'babel-loader',
         },
         {
           test: /\.scss$/,
           use: [
-            "style-loader",
+            'style-loader',
             {
-              loader: "css-loader",
+              loader: 'css-loader',
               options: {
                 modules: true,
-                localIdentName: "TDS_[name]__[local]___[hash:base64:5]",
-                importLoaders: 2 // Number of loaders applied before CSS loader
-              }
+                localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
+                importLoaders: 2, // Number of loaders applied before CSS loader
+              },
             },
             {
-              loader: "postcss-loader",
+              loader: 'postcss-loader',
               options: {
-                ident: "postcss",
-                plugins: [require("autoprefixer")()]
-              }
+                ident: 'postcss',
+                plugins: [require('autoprefixer')()],
+              },
             },
-            "sass-loader"
-          ]
+            'sass-loader',
+          ],
         },
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader"]
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|jpg|svg)$/,
-          use: "url-loader"
-        }
-      ]
-    }
-  }
-};
+          use: 'url-loader',
+        },
+      ],
+    },
+  },
+}

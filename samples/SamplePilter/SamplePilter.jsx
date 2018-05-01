@@ -13,18 +13,18 @@ import styles from './SamplePilter.scss'
  * @version ./package.json
  */
 
- const SamplePilter = ({ children, a11yText, ...rest }) => (
-   <button
-     {...safeRest(rest)}
-     className={styles.base}
-     type="button"
-     aria-label={`${a11yText} ${children}`}
-   >
-     <Box vertical={2} horizontal={3}>
-       <Text invert>{children}</Text>
-     </Box>
-   </button>
- )
+const SamplePilter = ({ children, a11yText, ...rest }) => (
+  <button
+    {...safeRest(rest)}
+    className={styles.base}
+    type="button"
+    aria-label={`${a11yText} ${children}`}
+  >
+    <Box vertical={2} horizontal={3}>
+      <Text invert>{children}</Text>
+    </Box>
+  </button>
+)
 
 SamplePilter.propTypes = {
   /**
@@ -34,11 +34,11 @@ SamplePilter.propTypes = {
   /**
    * The label
    */
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 }
 
-SamplePilter.defaulProps = {
-  a11yText: 'Filter by'
+SamplePilter.defaultProps = {
+  a11yText: 'Filter by',
 }
 
 export default SamplePilter

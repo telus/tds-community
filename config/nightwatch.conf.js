@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const path = require('path')
 const config = require('../e2e/config')
 

@@ -33,7 +33,7 @@ export default opts => {
         extensions: ['.js', '.jsx'],
       }),
       commonjs({
-        include: '../../node_modules/**'
+        include: '../../node_modules/**',
       }),
       options.css &&
         postcss({

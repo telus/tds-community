@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import MarkdownHeading from '../MarkdownHeading'
 import Heading from '@tds/core-heading'
+import MarkdownHeading from '../MarkdownHeading'
 
 describe('MarkdownHeading', () => {
   it('renders', () => {

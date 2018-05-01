@@ -1,9 +1,9 @@
 import React from 'react'
 
-import logo from './Logo.svg'
-
 import Box from '@tds/core-box'
 import ChevronLink from '@tds/core-chevron-link'
+
+import logo from './Logo.svg'
 
 const Logo = () => (
   <div>

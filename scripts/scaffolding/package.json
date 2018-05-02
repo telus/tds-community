@@ -25,7 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "@tds/shared-safe-rest": "^1.0.0"

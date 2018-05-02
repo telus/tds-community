@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 
 import safeRest from '@tds/shared-safe-rest'
 
-import styles from './$COMPONENT$.modules.scss'
+import styles from './$COMPONENT$.scss'
 
 /**
  * @version ./package.json
  */
-const $COMPONENT$ = ({ ...rest }) => <div className={styles.container} {...safeRest(rest)} />
+const $COMPONENT$ = ({ ...rest }) => <div {...safeRest(rest)} className={styles.container} />
 
 $COMPONENT$.propTypes = {}
 

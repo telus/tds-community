@@ -35,6 +35,7 @@
     "precommit": "lint-staged && yarn test",
     "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
     "prepush": "npm-run-all --parallel build test build-docs",
+    "scaffold": "node scripts/scaffold.js",
     "test": "jest --config config/jest.config.js",
     "test:e2e": "node scripts/e2e.js",
     "test:u": "yarn test -u",

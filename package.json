@@ -1,6 +1,6 @@
 {
   "name": "tds-community",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The TELUS Design System community featuring shared React components",
   "main": "n/a",
   "repository": "git@github.com:telusdigital/tds-community.git",

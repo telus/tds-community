@@ -11,5 +11,5 @@ mkdir -p build/staging
 mkdir -p build/production
 
 # 2
-cp -R styleguide/staging/ build/staging/community
-cp -R styleguide/production/ build/production/community
+cp -R styleguide/staging/* build/staging
+cp -R styleguide/production/* build/production

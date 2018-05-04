@@ -60,7 +60,7 @@ const deployToS3 = prefix =>
 const deployToS3Deprecated = () => {
   const deployConfig = Object.assign(config, {
     domain: `cdn.telus-thorium-doc-${env}`,
-    prefix: env === 'production' ? undefined : 'latest',
+    prefix: env === 'production' ? 'community' : 'latest',
   })
 
   console.log(`Deploying to s3: ${deployConfig.domain}/${deployConfig.prefix}...`)

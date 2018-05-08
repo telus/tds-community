@@ -1,21 +1,33 @@
 #!/usr/bin/env node
 
+/*
+Usage: yarn build [component name...] [options] [lerna options]
+
+  By default, only updated packages will be built.
+  All lerna options will be forwarded onto lerna commands.
+
+  Options:
+
+    [component name...]       space separated list of package names to build
+    -a, --all                 build all packages
+*/
+
 const { spawnSync } = require('child_process')
 
-const getUpdatedPackageNames = require('./utils/getUpdatedPackageNames')
+const getPackageNames = require('./utils/getPackageNames')
 const arrayToGlob = require('./utils/arrayToGlob')
 
-getUpdatedPackageNames(packageNames => {
+getPackageNames(packageNames => {
   const scopeGlob = arrayToGlob(packageNames)
 
   spawnSync(
-    './node_modules/.bin/lerna',
-    ['exec', '--scope', scopeGlob, '--', '$LERNA_ROOT_PATH/scripts/build.sh'],
+    'npx',
+    ['lerna', 'exec', '--scope', scopeGlob, '--', '$LERNA_ROOT_PATH/scripts/build.sh'],
     {
       stdio: 'inherit',
     }
   )
-  spawnSync('./node_modules/.bin/lerna', ['run', '--scope', scopeGlob, 'build'], {
+  spawnSync('npx', ['lerna', 'run', '--scope', scopeGlob, 'build'], {
     stdio: 'inherit',
   })
 })

@@ -1,0 +1,46 @@
+{
+  "projectName": "tds-community",
+  "projectOwner": "telusdigital",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "types": {
+    "tds": {
+      "symbol": "",
+      "description": ""
+    }
+  },
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "marcod1419",
+      "name": "Marco Donnici",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10531523?v=4",
+      "profile": "https://github.com/marcod1419",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "ryanoglesby08",
+      "name": "Ryan Oglesby",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1375942?v=4",
+      "profile": "http://ryanogles.by",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "theetrain",
+      "name": "Enrico Sacchetti",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/12798751?v=4",
+      "profile": "http://theetrain.ca",
+      "contributions": [
+        "tds"
+      ]
+    }
+  ]
+}

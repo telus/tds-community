@@ -10,20 +10,21 @@ Thank you for your interest in contributing! There are a few ways you can help:
 ## Table of contents
 
 * [Community component criteria](#community-component-criteria)
+* [What makes a good community component?](#what-makes-a-good-community-component)
 * [Process](#process)
 * [Designer guide](#designer-guide)
 * [Developer guide](#developer-guide)
   * [Codebase overview](#codebase-overview)
   * [Environment setup](#environment-setup)
-  * [Versioning packages](#versioning-packages)
+  * [Making commits and versioning packages](#making-commits-and-versioning-packages)
 * [Making pull requests](#making-pull-requests)
 
 ## Community component criteria
 
-Before contributing new components, confirm the following criteria in order to qualify
+Before designing or contributing new components, confirm the following criteria in order to qualify
 a viable community component.
 
-A community component...
+A community component:
 
 1.  **Must** have an identified use case in at least 2 unique applications
     * Community components have the most impact when shared across multiple situations in many applications.
@@ -32,7 +33,7 @@ A community component...
 3.  **Must** not include business logic or proprietary information
     * The presence of these things limits the breadth of reuse for a component.
     * Design system components are focused on reusable user experience patterns. Keep business logic, API calls, content, or other application-specific behaviour in the application.
-    * Any user-facing copy, such as English phrases, must have the ability to be overridden in order to support multilingual applications
+    * Any user-facing copy, such as English phrases, must have the ability to be overridden in order to support multilingual applications or changes in content direction
 4.  **Must** be sufficiently different than other available shared components
     * Community components reduce duplication by promoting flexibility and reuse of existing code.
     * Before creating a new component, consider whether an existing pattern and component is sufficient. If not, consider extending or adding features to an existing component before creating a new one.
@@ -41,14 +42,36 @@ A community component...
 
 Note, this criteria should be interpreted as described in [RFC2119](https://tools.ietf.org/html/rfc2119).
 
+## What makes a good community component?
+
+Writing components for a widely used design system has more considerations than writing components for an application.
+Extra care is necessary to ensure quality, reusability, and maintainability.
+
+### Principles
+
+All TELUS Design System components follow these core principles.
+
+1.  Composable
+    * Components are most effective when they can be combined to form more complex patterns.
+2.  Accessible
+    * WCAG AAA. Semantic markup. Screen reader friendly.
+3.  Responsive
+    * Mobile-first. Works on any viewport size.
+4.  Quality
+    * Thorough testing is a first class concern.
+5.  Cross-browser
+    * See [supported browsers](../browserslist)
+
+We have incorporated tooling to bake-in and automate as many of these principles as possible.
+
 ## Process
 
 When developing or maintaining community components, they typically undergo the following process:
 
 1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a developer to pick up and contribute
-2.  A Digital Platform Ambassador (DPA) who requires a feature for an existing component or a new component can select from the existing list of GitHub issues and assign it to themselves or a volunteer to contribute
+2.  A [Digital Platform Ambassador](https://github.com/orgs/telusdigital/teams/digital-platform-ambassadors) (DPA) who requires a feature for an existing component or a new component can select from the existing list of GitHub issues and assign it to themselves or a volunteer to contribute
 3.  Following the [developer guide](#developer-guide) below, a developer builds a component and then submits a pull request
-4.  Once all checks and criteria are met, a DPA member merges the pull request and the changes are automatically deployed to its respective package on npmjs.org
+4.  Once all checks and criteria are met, a DPA member merges the pull request and the changes are automatically deployed to its respective package on npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue]()
 
 ## Designer guide
 
@@ -59,13 +82,20 @@ _This section will be completed soon._
 
 ### Codebase overview
 
+Components are implemented in ECMAScript 6+ and React using JSX syntax, mostly following the comprehensive AirBnb style
+guides for [JavaScript](https://github.com/airbnb/javascript) and [React](https://github.com/airbnb/javascript/tree/master/react).
+Styles are written in [Sass](https://sass-lang.com/), using the [CSS Modules](https://github.com/css-modules/css-modules) specification. All of this is
+grounded in the practices and standards set forth in the TELUS digital [reference architecture](https://github.com/telusdigital/reference-architecture).
+
 For information on file structure, technologies used, and writing tests, see our [codebase overview](https://tds.telus.com/contributing/codebase-overview.html).
 
 ### Environment setup
 
 Setting up TDS Community on your development environment is identical to TDS Core. Learn more on our [developer guide](https://tds.telus.com/contributing/developer-guide.html).
 
-### Versioning packages
+### Making commits and versioning packages
+
+If you have organization access to this repository, please create a branch. Otherwise, you may create a fork.
 
 This repository uses lerna with [conventional commits](https://conventionalcommits.org/) to automate package versioning.
 TDS Components must follow [semantic versioning](https://semver.org/) in order for consumers of these components to predictably determine breaking changes as they upgrade over time. When making commits, use `yarn cz` to run commitizen.
@@ -108,3 +138,8 @@ Here are some dos and don'ts to consider when writing code.
 
 If this is your first time contributing to TDS Community, you can see some [sample
 components](https://github.com/telusdigital/tds-community/tree/master/samples) as inspiration.
+
+## Making pull requests
+
+When changes to the codebase are ready for review by a member of the DPA, you may submit a pull request. Once a pull request
+is approved, a DPA member may merge your branch to `master` and changes will be automatically deployed.

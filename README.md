@@ -1,4 +1,4 @@
-# TELUS Design System Community
+# TELUS Design System Community <sup>beta</sup>
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for
@@ -15,8 +15,8 @@ maintenance workflow differs. Here is a high level summary:
 
 | Feature               | TDS Core      | TDS Community                |
 | --------------------- | ------------- | ---------------------------- |
-| Component Reusability | High          | Moderate                     |
-| Release frequency     | Low           | High                         |
+| Component reusability | High          | Moderate                     |
+| Rate of change        | Low           | High                         |
 | Contribution speed    | Moderate      | High                         |
 | Review board          | TDS Core Team | Digital Platform Ambassadors |
 
@@ -46,13 +46,6 @@ to consume community or core components:
 ## Contributing
 
 To learn how to make contributions to TDS Community, See the [contributing guide](https://tds.telus.com/contributing/contributing.html).
-
-## Roadmap
-
-Q2 2018
-
-* TDS Community beta launch with a few vetted components
-* Full launch
 
 ## Contributors
 

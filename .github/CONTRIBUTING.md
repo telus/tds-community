@@ -17,6 +17,9 @@ Thank you for your interest in contributing! There are a few ways you can help:
   * [Codebase overview](#codebase-overview)
   * [Environment setup](#environment-setup)
   * [Making commits and versioning packages](#making-commits-and-versioning-packages)
+  * [Code style and conventions](#code-style-and-conventions)
+  * [Documenting components](#documenting-components)
+  * [Samples](#samples)
 * [Making pull requests](#making-pull-requests)
 
 ## Community component criteria
@@ -33,7 +36,6 @@ A community component:
 3.  **Must** not include business logic or proprietary information
     * The presence of these things limits the breadth of reuse for a component.
     * Design system components are focused on reusable user experience patterns. Keep business logic, API calls, content, or other application-specific behaviour in the application.
-    * Any user-facing copy, such as English phrases, must have the ability to be overridden in order to support multilingual applications or changes in content direction
 4.  **Must** be sufficiently different than other available shared components
     * Community components reduce duplication by promoting flexibility and reuse of existing code.
     * Before creating a new component, consider whether an existing pattern and component is sufficient. If not, consider extending or adding features to an existing component before creating a new one.
@@ -71,7 +73,7 @@ When developing or maintaining community components, they typically undergo the 
 1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a developer to pick up and contribute
 2.  A [Digital Platform Ambassador](https://github.com/orgs/telusdigital/teams/digital-platform-ambassadors) (DPA) who requires a feature for an existing component or a new component can select from the existing list of GitHub issues and assign it to themselves or a volunteer to contribute
 3.  Following the [developer guide](#developer-guide) below, a developer builds a component and then submits a pull request
-4.  Once all checks and criteria are met, a DPA member merges the pull request and the changes are automatically deployed to its respective package on npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue]()
+4.  Once all checks and criteria are met, a DPA member merges the pull request and updated packages can get deployed to npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue](https://tds.telus.com/community/index.html)
 
 ## Designer guide
 
@@ -134,12 +136,42 @@ Here are some dos and don'ts to consider when writing code.
 * DO add them to the `/shared` directory with its own `package.json` file
 * DO configure `private: true` within package.json
 
+### Documenting components
+
+TDS Community uses [React Styleguidist](https://react-styleguidist.js.org/) to generate documentation. In general, components
+should have a combination of the following:
+
+* A **ComponentName.md** to complement its **ComponentName.jsx**
+* Use of doclet tags to document the component's version and props. Visit the React Styleguidist page on [documenting components](https://react-styleguidist.js.org/docs/documenting.html#external-examples-using-doclet-tags) to learn more
+
+  * Use the `@version` doclet tag to extract the component's version from **package.json**. For example:
+
+  ```jsx
+  /**
+   * Pilter example
+   * @version ./package.json
+   */
+
+  const SamplePilter = ({ children, a11yText, ...rest }) => (
+  ```
+
+  * Add comments above prop names to provide a brief explanation. For example:
+
+  ```jsx
+  /**
+   * Label to be read by screen readers
+   */
+  a11yText: PropTypes.string,
+  ```
+
+  * See [samples](#samples) for more examples
+
 ### Samples
 
-If this is your first time contributing to TDS Community, you can see some [sample
+When developing or documenting components, you can see some [sample
 components](https://github.com/telusdigital/tds-community/tree/master/samples) as inspiration.
 
 ## Making pull requests
 
 When changes to the codebase are ready for review by a member of the DPA, you may submit a pull request. Once a pull request
-is approved, a DPA member may merge your branch to `master` and changes will be automatically deployed.
+is approved, a DPA member may merge your branch to `master` and changes can be deployed.

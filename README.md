@@ -45,7 +45,7 @@ to consume community or core components:
 
 ## Contributing
 
-To learn how to make contributions to TDS Community, See the [contributing guide](https://tds.telus.com/contributing/contributing.html).
+To learn how to make contributions to TDS Community, See the [contributing guide](./.github/CONTRIBUTING.md).
 
 ## Contributors
 

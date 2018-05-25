@@ -8,7 +8,7 @@ about: Create a report to help us improve
 
   When opening issues, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
-  data retrieval. 
+  data retrieval.
 -->
 
 ## Description

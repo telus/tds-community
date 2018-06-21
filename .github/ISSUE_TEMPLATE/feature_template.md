@@ -13,7 +13,7 @@ about: Suggest an additional feature for a tds-community component
 
 ## Problem statement
 
-* As a _ , I would like to _ , so that I can _
+* As a _ , I would like to _ , so that I can \_
 
 ## Recommendation
 
@@ -30,6 +30,6 @@ about: Suggest an additional feature for a tds-community component
 * Willing to design solution: Yes/No
 * Willing to develop solution: Yes/No
 * Has workaround: Yes/No
-* Do any similar components already exist: Yes/No (link)
+* Do any similar components already exist in TDS (core or community): Yes/No (link)
 * Which teams/applications do you think would use this improvement?
 * High impact: Yes/No

@@ -1,0 +1,57 @@
+@import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+
+.container {
+  display: inline-block;
+  position: relative;
+  background: #ffff;
+  width: 100%;
+  border-width: thin;
+  border-style: solid;
+  border-color: $color-gainsboro;
+  border-radius: 500px;
+  @extend %progress-bar-height;
+  @extend %progress-bar-padding;
+  @extend %progress-bar-radius;
+
+  .progress {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: $color-accessible-green;
+    @extend %progress-bar-radius;
+  }
+}
+
+%progress-bar-height {
+  @include mq($until: md) {
+    height: 20px;
+  }
+  @include mq($from: md ) {
+    height: 30px;
+  }
+}
+
+%progress-bar-padding {
+  @include mq($until: md) {
+    padding: 7.5px;
+  }
+  @include mq($from: md ) {
+    padding: 12.5px;
+  }
+}
+%progress-bar-radius {
+  @include mq($until: md) {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+  }
+  @include mq($from: md ) {
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+  }
+}

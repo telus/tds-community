@@ -42,7 +42,9 @@
     "test:u": "yarn test -u",
     "test:watch": "yarn test --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@tds/core-responsive": "^1.1.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^6.1.3",
     "@commitlint/config-conventional": "^6.1.3",

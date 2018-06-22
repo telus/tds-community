@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress renders 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="progress"
+    style={
+      Object {
+        "width": "0%",
+      }
+    }
+  />
+</div>
+`;

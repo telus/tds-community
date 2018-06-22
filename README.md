@@ -9,7 +9,7 @@ digital design guidelines, code patterns and UI elements.
 The TDS Community is a collaborative platform where TELUS designers and developers can rapidly discover, share, and consume
 their modules as part of the TELUS Design System. This includes React components, the [component library for designers](https://tds.telus.com/getting-started/designers.html), and their documentation.
 
-TDS Community is similar to [TDS Core](https://github.com/telusdigital/tds-core) since community components
+TDS Community is similar to [TDS Core](https://github.com/telus/tds-core) since community components
 have the same technical and branding foundations as core components, however the underlying governance model and
 maintenance workflow differs. Here is a high level summary:
 

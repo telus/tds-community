@@ -71,7 +71,7 @@ We have incorporated tooling to bake-in and automate as many of these principles
 
 When developing or maintaining community components, they typically undergo the following process:
 
-1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a member of the [Digital Platform Ambassadors](https://github.com/orgs/telusdigital/teams/digital-platform-ambassadors) (DPA) to delegate to someone to develop **after designs are approved by the DPA**. Note, anyone can open an issue for defects or feature requests.
+1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a member of the [Digital Platform Ambassadors](https://github.com/orgs/telus/teams/digital-platform-ambassadors) (DPA) to delegate to someone to develop **after designs are approved by the DPA**. Note, anyone can open an issue for defects or feature requests.
 2.  Following the [developer guide](#developer-guide) below, a developer builds a component and then submits a pull request
 3.  Once all checks and criteria are met, a DPA member merges the pull request and updated packages can get deployed to npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue](https://tds.telus.com/community/index.html)
 

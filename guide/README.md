@@ -15,7 +15,7 @@ TDS Community is similar to [TDS Core](https://github.com/telus/tds-core) since 
 | Contribution speed    | Moderate      | High                         |
 | Review board          | TDS Core Team | Digital Platform Ambassadors |
 
-The [Digital Platform Ambassadors](https://github.com/orgs/telusdigital/teams/digital-platform-ambassadors) are a team of representatives from every tribe at TELUS digital. They help grow the digital platform and will actively review contributions for the TDS Community to ensure quality standards are met.
+The [Digital Platform Ambassadors](https://github.com/orgs/telus/teams/digital-platform-ambassadors) are a team of representatives from every tribe at TELUS digital. They help grow the digital platform and will actively review contributions for the TDS Community to ensure quality standards are met.
 
 ## Contributing
 

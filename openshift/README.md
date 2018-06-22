@@ -2,19 +2,19 @@
 
 We use OpenShift to orchestrate the deployment of our Docker containers. It uses shared swarm of "minion" hosts as generic infrastructure for our autoscaling applications. This makes it quick to deploy and scale these containers ephemerally. Every time a new application is deployed, its running as if it is an entirely new application "server", built from scratch.
 
-The script and configuration for the initial deployment to OpenShift is [install.sh](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/openshift/install.sh). It sets up the jenkins server, templates, builds and secrets necessary for exposing our application to consumers.
+The script and configuration for the initial deployment to OpenShift is [install.sh](https://github.com/telus/telus-isomorphic-starter-kit/blob/master/openshift/install.sh). It sets up the jenkins server, templates, builds and secrets necessary for exposing our application to consumers.
 
 After installation, we can use our newly created Jenkins pipeline to build and deploy the docker image to staging and production environments. We can also use our templates to create ephemeral/disposable testing environments, pinned to a specific version or custom builds of a docker container.
 
 #### Get access
 
-To use OpenShift, you will need a TELUS Google account. If you have one, [edit this file](https://github.com/telusdigital/openshift-cluster-provisioning/blob/master/dp/data.yaml#L58), add yourself to your respective outcome team, and submit a pull request (for faster results, notify us in #g-delivery on slack).
+To use OpenShift, you will need a TELUS Google account. If you have one, [edit this file](https://github.com/telus/openshift-cluster-provisioning/blob/master/dp/data.yaml#L58), add yourself to your respective outcome team, and submit a pull request (for faster results, notify us in #g-delivery on slack).
 
 ## Quickstart
 
 ### Dependencies
 
-This application requires `openshift-cli` & `vault`. Either install them with `brew` on Mac or `apt-get` on Linux. Also install [ship.py](https://github.com/telusdigital/ship.py).
+This application requires `openshift-cli` & `vault`. Either install them with `brew` on Mac or `apt-get` on Linux. Also install [ship.py](https://github.com/telus/ship.py).
 
 ### Login
 
@@ -22,7 +22,7 @@ This application requires `openshift-cli` & `vault`. Either install them with `b
 
 In order to kick off the initial installation of a project, or to add or edit any application secrets, you'll need to log in with HashiCorp Vault.
 
-Use our [ship.py](https://github.com/telusdigital/ship.py) utility command line tool to log into vault.
+Use our [ship.py](https://github.com/telus/ship.py) utility command line tool to log into vault.
 
 It will ask for your github credentials, create an access token, and use it to authenticate you. You should now be able to read secrets:
 
@@ -54,7 +54,7 @@ Each outcome team also gets an `o-outcome-team` namespace. Only users who are ad
 
 ### Install Jenkins
 
-First your project will need Jenkins. We can clone the [default Jenkins starter kit](https://github.com/telusdigital/openshift-jenkins-starter-kit):
+First your project will need Jenkins. We can clone the [default Jenkins starter kit](https://github.com/telus/openshift-jenkins-starter-kit):
 
 > `git clone git@github.com:telusdigital/openshift-jenkins-starter-kit.git`
 
@@ -88,13 +88,13 @@ Add an `application/json` webhook and paste in your web hook URL e.g.:
 
 ## Configuration
 
-* [Reference Architecture OpenShift standards](https://github.com/telusdigital/reference-architecture/blob/master/delivery/openshift.md)
-* [Reference Architecture Kubernetes standards](https://github.com/telusdigital/reference-architecture/blob/master/delivery/kubernetes.md)
+* [Reference Architecture OpenShift standards](https://github.com/telus/reference-architecture/blob/master/delivery/openshift.md)
+* [Reference Architecture Kubernetes standards](https://github.com/telus/reference-architecture/blob/master/delivery/kubernetes.md)
 
 * [OpenShift documentation](https://docs.openshift.com/container-platform/3.4/dev_guide/index.html)
 * [Kubernetes documentation](https://kubernetes.io/docs/home/)
 
-Our [openshift-template.yml](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/openshift/openshift-template.yml) sets up the jenkins server, templates, builds and secrets necessary for exposing our application to consumers. In order to run this, you must first log in to OpenShift with `oc login` and create or select an existing OpenShift project namespace with `oc project`.
+Our [openshift-template.yml](https://github.com/telus/telus-isomorphic-starter-kit/blob/master/openshift/openshift-template.yml) sets up the jenkins server, templates, builds and secrets necessary for exposing our application to consumers. In order to run this, you must first log in to OpenShift with `oc login` and create or select an existing OpenShift project namespace with `oc project`.
 
 ## Local testing
 

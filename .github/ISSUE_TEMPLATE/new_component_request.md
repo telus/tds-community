@@ -4,7 +4,7 @@ about: Request a new component for tds-community
 ---
 
 <!--
-  ### IMPORTANT SECURITY NOTE ###
+  ## IMPORTANT SECURITY NOTE
 
   When opening issues, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
@@ -18,6 +18,14 @@ about: Request a new component for tds-community
 ## Recommendation
 
 * Description of the proposed solution
+
+<!--
+  Note: designs must be approved by the Digital Platform Ambassadors
+  Before any code or pull requests can be submitted
+
+  See the contributing guide for details:
+  https://github.com/telus/tds-community/blob/master/.github/CONTRIBUTING.md#process
+-->
 
 ## Designs
 
@@ -33,3 +41,10 @@ about: Request a new component for tds-community
 * Does this pattern exist already but isn’t a community component? (include url)
 * Which teams/applications do you think would use this improvement?
 * High impact: Yes/No
+
+<!--
+  ## NOTE REGARDING LABELS
+
+  Please do not label GitHub issues yourself. A member of the
+  Digital Platform Ambassadors will label your issue accordingly.
+-->

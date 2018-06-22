@@ -2,9 +2,9 @@
 
 Thank you for your interest in contributing! There are a few ways you can help:
 
-* Comment on [existing issues](https://github.com/telusdigital/tds-community/issues) or [open a new one](https://github.com/telusdigital/tds-community/issues/new)
+* Comment on [existing issues](https://github.com/telus/tds-community/issues) or [open a new one](https://github.com/telus/tds-community/issues/new)
 * Propose changes to documentation. (Did you know, you can propose changes [without leaving GitHub](https://help.github.com/articles/editing-files-in-your-repository/)?)
-* Add features or patches to [existing components](https://github.com/telusdigital/tds-community/tree/master/packages)
+* Add features or patches to [existing components](https://github.com/telus/tds-community/tree/master/packages)
 * Add new components! _Read on_
 
 ## Table of contents
@@ -14,6 +14,7 @@ Thank you for your interest in contributing! There are a few ways you can help:
 * [Process](#process)
 * [Designer guide](#designer-guide)
 * [Developer guide](#developer-guide)
+  * [Before your begin](#before-you-begin)
   * [Codebase overview](#codebase-overview)
   * [Environment setup](#environment-setup)
   * [Making commits and versioning packages](#making-commits-and-versioning-packages)
@@ -70,10 +71,9 @@ We have incorporated tooling to bake-in and automate as many of these principles
 
 When developing or maintaining community components, they typically undergo the following process:
 
-1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a developer to pick up and contribute
-2.  A [Digital Platform Ambassador](https://github.com/orgs/telusdigital/teams/digital-platform-ambassadors) (DPA) who requires a feature for an existing component or a new component can select from the existing list of GitHub issues and assign it to themselves or a volunteer to contribute
-3.  Following the [developer guide](#developer-guide) below, a developer builds a component and then submits a pull request
-4.  Once all checks and criteria are met, a DPA member merges the pull request and updated packages can get deployed to npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue](https://tds.telus.com/community/index.html)
+1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a member of the [Digital Platform Ambassadors](https://github.com/orgs/telusdigital/teams/digital-platform-ambassadors) (DPA) to delegate to someone to develop **after designs are approved by the DPA**. Note, anyone can open an issue for defects or feature requests.
+2.  Following the [developer guide](#developer-guide) below, a developer builds a component and then submits a pull request
+3.  Once all checks and criteria are met, a DPA member merges the pull request and updated packages can get deployed to npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue](https://tds.telus.com/community/index.html)
 
 ## Designer guide
 
@@ -82,12 +82,16 @@ _This section will be completed soon._
 
 ## Developer guide
 
+### Before you begin
+
+Before writing any code or submitting a pull request, please assure the [contribution process](#process) is being followed.
+
 ### Codebase overview
 
 Components are implemented in ECMAScript 6+ and React using JSX syntax, mostly following the comprehensive AirBnb style
 guides for [JavaScript](https://github.com/airbnb/javascript) and [React](https://github.com/airbnb/javascript/tree/master/react).
 Styles are written in [Sass](https://sass-lang.com/), using the [CSS Modules](https://github.com/css-modules/css-modules) specification. All of this is
-grounded in the practices and standards set forth in the TELUS digital [reference architecture](https://github.com/telusdigital/reference-architecture).
+grounded in the practices and standards set forth in the TELUS digital [reference architecture](https://github.com/telus/reference-architecture).
 
 For information on file structure, technologies used, and writing tests, see our [codebase overview](https://tds.telus.com/contributing/codebase-overview.html).
 
@@ -169,7 +173,7 @@ should have a combination of the following:
 ### Samples
 
 When developing or documenting components, you can see some [sample
-components](https://github.com/telusdigital/tds-community/tree/master/samples) as inspiration.
+components](https://github.com/telus/tds-community/tree/master/samples) as inspiration.
 
 ## Making pull requests
 

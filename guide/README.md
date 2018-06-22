@@ -1,14 +1,13 @@
-# TELUS Design System Community  <sup>beta</sup>
+# TELUS Design System Community <sup>beta</sup>
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences. It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for digital design guidelines, code patterns and UI elements.
 
 ## Introduction
 
-The TDS Community is a collaborative platform where TELUS designers and developers can rapidly discover, share, and consume their modules as part of the TELUS Design System. This includes React components, the  [component library for designers](https://tds.telus.com/getting-started/designers.html), and their documentation.
+The TDS Community is a collaborative platform where TELUS designers and developers can rapidly discover, share, and consume their modules as part of the TELUS Design System. This includes React components, the [component library for designers](https://tds.telus.com/getting-started/designers.html), and their documentation.
 
-TDS Community is similar to  [TDS Core](https://github.com/telusdigital/tds-core)  since community components have the same technical and branding foundations as core components, however the underlying governance model and maintenance workflow differs.
+TDS Community is similar to [TDS Core](https://github.com/telus/tds-core) since community components have the same technical and branding foundations as core components, however the underlying governance model and maintenance workflow differs.
 
-  
 | Feature               | TDS Core      | TDS Community                |
 | --------------------- | ------------- | ---------------------------- |
 | Component reusability | High          | Moderate                     |
@@ -24,11 +23,11 @@ To learn how to make contributions to TDS Community, See the [community governan
 
 ## Further Documentation
 
-- Background
-- Principles & Guidelines
-- Why Community
-- TDS Community vs TDS Core
-- Community Governance Process
-- Digital Platform Ambassadors
-- How to Guides
-- Support
+* Background
+* Principles & Guidelines
+* Why Community
+* TDS Community vs TDS Core
+* Community Governance Process
+* Digital Platform Ambassadors
+* How to Guides
+* Support

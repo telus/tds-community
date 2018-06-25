@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress renders 1`] = `
+<div
+  className="progressBar primary"
+  style={
+    Object {
+      "width": "5%",
+      "zIndex": 95,
+    }
+  }
+/>
+`;

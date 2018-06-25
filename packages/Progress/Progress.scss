@@ -1,7 +1,7 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
 
-.container {
+.progressBarContainer {
   display: inline-block;
   position: relative;
   background: #ffff;
@@ -9,20 +9,38 @@
   border-width: thin;
   border-style: solid;
   border-color: $color-gainsboro;
-  border-radius: 500px;
   @extend %progress-bar-height;
   @extend %progress-bar-padding;
   @extend %progress-bar-radius;
 
-  .progress {
+  .progressBar {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
     height: 100%;
-    background-color: $color-accessible-green;
     @extend %progress-bar-radius;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+
+  }
+  .primary {
+    background-color: $color-accessible-green;
+  }
+  .secondary {
+    background: repeating-linear-gradient(
+      -60deg,
+      #A9ACAF,
+      #A9ACAF 2px,
+      $color-gainsboro 1px,
+      $color-gainsboro 3px
+    );
+  }
+  .error {
+    background-color: $color-cardinal
+  }
+  .disabled {
+    background-color: $color-gainsboro
   }
 }
 

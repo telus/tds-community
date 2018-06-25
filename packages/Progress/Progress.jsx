@@ -5,38 +5,21 @@ import safeRest from '@tds/shared-safe-rest'
 
 import styles from './Progress.scss'
 
+import Bar from './Bar/Bar'
+
 /**
  * @version ./package.json
  */
 
-const percentString = (value, max) => {
-  if ( value >= 0 && max > 0 )
-    return `${(value / max) * 100}%`
-  else {
-    return '0%'
-  }
-}
-
-const Progress = ({value, max, ...rest }) => (
-  <div {...safeRest(rest)} className={styles.container} >
-    <div className = {styles.progress} style={{width: percentString(value,max)}} />
+const Progress = ({ children, ...rest }) => (
+  <div {...safeRest(rest)} className={styles.progressBarContainer}>
+    {children}
   </div>
 )
 
 Progress.propTypes = {
-  /**
-   * Specifies how much of the task has been completed
-   */
-  value: PropTypes.number,
-  /**
-   * Specifies how much of the task requires in total
-   */
-  max: PropTypes.number
+  children: PropTypes.element.isRequired,
 }
 
-Progress.defaultProps = {
-  value: 0,
-  max: 0
-}
-
+Progress.Bar = Bar
 export default Progress

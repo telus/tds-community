@@ -2,15 +2,11 @@
 
 exports[`Progress renders 1`] = `
 <div
-  className="container"
+  className="progressBarContainer"
 >
-  <div
-    className="progress"
-    style={
-      Object {
-        "width": "0%",
-      }
-    }
+  <Bar
+    percentage={0}
+    variant="primary"
   />
 </div>
 `;

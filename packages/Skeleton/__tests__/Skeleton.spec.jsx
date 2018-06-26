@@ -30,13 +30,6 @@ describe('Skeleton', () => {
     })
   })
 
-  it('should have default size when invalid attribute specified', () => {
-    const invalidSize = 'rubbish'
-    const skeleton = doShallow({ size: invalidSize })
-
-    expect(skeleton).toHaveClassName(styles['variant-default'])
-  })
-
   it('should have default variant when attribute not specified', () => {
     const skeleton = doShallow()
 
@@ -52,13 +45,6 @@ describe('Skeleton', () => {
 
       expect(skeleton).toHaveClassName(styles[`variant-${VARIANTS[variant]}`])
     })
-  })
-
-  it('should have default size when invalid attribute specified', () => {
-    const invalidVariant = 'nonsense'
-    const skeleton = doShallow({ variant: invalidVariant })
-
-    expect(skeleton).toHaveClassName(styles['variant-default'])
   })
 
   it('passes additional attributes to the element', () => {

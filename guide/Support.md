@@ -6,7 +6,7 @@
 
 - #tds-guild for general discussions, announcements, and Design System related questions
 
-- #tds-support for fast support directly related to components or code within the TDS-Core or Community repositories. If you do not require immediate support, it is preferred to [open a GitHub issue](https://github.com/telusdigital/tds-community/issues/new/choose).
+- #tds-support for fast support directly related to components or code within the TDS-Core or Community repositories. If you do not require immediate support, it is preferred to [open a GitHub issue](https://github.com/telus/tds-community/issues/new/choose).
 
 - Anonymous form: We would rather you use Github for logging all issues, however, you can [submit anonymous feedback](https://goo.gl/forms/8g8n7BMjvLJN7bDr1).
 

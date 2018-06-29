@@ -6,7 +6,7 @@ TELUS leadership believes that sometimes you have to slow down to go faster, and
 
 **Platform thinking**
 
-The secret to platform thinking is asking ‘Could anyone else benefit from this?’. If the answer is yes, then [submit an issue to TDS Community](https://docs.google.com/presentation/d/1IedSwywxFQKwf9XfP3TcOneQwzILqPSW1WMqVCIZZKw/edit#slide=id.g3ae2c0916b_0_169).
+The secret to platform thinking is asking ‘Could anyone else benefit from this?’. If the answer is yes, then [submit an issue to TDS Community](https://github.com/telus/tds-community/issues/new/choose).
 
 The DPA will let you know if something similar already exists, and your leads can help you prepare it for the community. They might offer design or development assistance, ask you to add a few additional requirements, or simply give the green light to put your component straight into the repo.
 

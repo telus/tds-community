@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress renders 1`] = `
+<div
+  className="progressBarContainer"
+>
+  <Bar
+    percentage={0}
+    variant="primary"
+  />
+</div>
+`;

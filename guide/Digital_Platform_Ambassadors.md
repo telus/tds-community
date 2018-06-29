@@ -2,25 +2,7 @@
  
 The DPA has 12 inaugural members. Ahmad Nassri and Steve Fisher will oversee the smooth administration and a clear agenda. Its initial focus is on front-end consistency of the central TELUS experience. As needs change other members may be invited and ceremonies may change.
 
-- Mobility
-
-- TBD/ Wasim H
-
-- Home Solutions
-
-- Ally N / Mike Bunce / Nathan Marshall
-
-- Business
-
-- Doug L / Jamie W
-
-- My Account
-
-- Berjesty K / Jesse P
-
-- Platform
-
-- TDS / CPP / CONTENT / GE / API
+See the [DPA members](https://github.com/orgs/telus/teams/dpa-developers)
 
   
 

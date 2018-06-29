@@ -22,4 +22,4 @@ In response to feedback from our early adopters we split TDS into individually v
 To create the flexible, scalable solution that helps unlock each teams creativity we had to open up. Over the last 3 months we have put the following pieces in place:
     - Developed community github Repo
     - Created Digital Platform Ambassadors to oversee ‘Open Governance’
-    - Helped facilitate initial TDS Community processes/docs
+    - Helped facilitate initial TDS Community processes

@@ -2,7 +2,7 @@
 
 These 5 principles can be used to evaluate a component’s fit for TELUS Design System community components.
 
-1. Must follow [digital design principles](https://docs.google.com/presentation/d/1C1pyN2dfaIYOz0_3SscfoDcbkbIIGLecWZorBB-SfU8/edit#slide=id.g335f368764_1_799)
+1. Must follow [digital design principles](https://tds.telus.com/design/principles.html)
 
 2. Must have an identified use case in at least 2 unique applications
 

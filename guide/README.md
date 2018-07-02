@@ -23,11 +23,9 @@ To learn how to make contributions to TDS Community, See the [community governan
 
 ## Further Documentation
 
-* Background
-* Principles & Guidelines
-* Why Community
-* TDS Community vs TDS Core
-* Community Governance Process
-* Digital Platform Ambassadors
-* How to Guides
-* Support
+* [Principles & Guidelines](https://github.com/telus/tds-community/blob/master/guide/PrinciplesGuidelines.md)
+* [Why Community](https://github.com/telus/tds-community/blob/master/guide/Why_community.md)
+* [TDS Community vs TDS Core](https://github.com/telus/tds-community/blob/master/guide/community_vs_core.md)
+* [Digital Platform Ambassadors](https://github.com/telus/tds-community/blob/master/guide/Digital_Platform_Ambassadors.md)
+* [How to Guides](https://github.com/telus/tds-community/blob/master/guide/How_to_guides.md)
+* [Support](https://github.com/telus/tds-community/blob/master/guide/Support.md)

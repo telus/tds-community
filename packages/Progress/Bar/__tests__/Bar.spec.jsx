@@ -4,7 +4,8 @@ import { shallow } from 'enzyme'
 import Bar from '../Bar'
 
 describe('Progress', () => {
-  const doShallow = (props = { percentage: 5 }) => shallow(<Bar {...props} />)
+  const defaultProps = { percentage: 3 }
+  const doShallow = (overrides = {}) => shallow(<Bar {...defaultProps} {...overrides} />)
 
   it('renders', () => {
     const progressBar = doShallow()

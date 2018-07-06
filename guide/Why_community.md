@@ -1,6 +1,6 @@
 ## Why invest in community
 
- We recognize that the current business climate is about quicker and quicker releases. However, this can lead to an environment where short term thinking becomes the new normal.
+We recognize that the current business climate is about quicker and quicker releases. However, this can lead to an environment where short term thinking becomes the new normal.
 
 TELUS leadership believes that sometimes you have to slow down to go faster, and that the Design System is one of those initiatives. They are asking you to invest up front in building Community components, knowing that later on the rewards to the entire TELUS ecosystem will be much greater.
 

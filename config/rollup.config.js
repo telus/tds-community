@@ -22,8 +22,8 @@ export default opts => {
   return {
     input: options.input,
     output: [
-      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: true },
-      { format: 'es', file: './dist/index.es.js', sourcemap: true },
+      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: true, exports: 'named' },
+      { format: 'es', file: './dist/index.es.js', sourcemap: true, exports: 'named' },
     ],
 
     external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),

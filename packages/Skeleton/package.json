@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-skeleton",
-  "version": "0.1.0",
+  "version": "1.0.0-preview",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,7 +25,9 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-colours": "^1.0.0",
     "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "@tds/core-colours": "^1.0.0"
   }
 }

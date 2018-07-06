@@ -47,6 +47,16 @@ to consume community or core components:
 
 To learn how to make contributions to TDS Community, See the [contributing guide](./.github/CONTRIBUTING.md).
 
+## Further Documentation
+
+* [Background](https://github.com/telus/tds-community/blob/master/guide/history.md)
+* [Principles & Guidelines](https://github.com/telus/tds-community/blob/master/guide/PrinciplesGuidelines.md)
+* [Why Community](https://github.com/telus/tds-community/blob/master/guide/Why_community.md)
+* [TDS Community vs TDS Core](https://github.com/telus/tds-community/blob/master/guide/community_vs_core.md)
+* [Digital Platform Ambassadors](https://github.com/telus/tds-community/blob/master/guide/Digital_Platform_Ambassadors.md)
+* [How to Guides](https://github.com/telus/tds-community/blob/master/guide/How_to_guides.md)
+* [Support](https://github.com/telus/tds-community/blob/master/guide/Support.md)
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

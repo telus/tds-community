@@ -48,19 +48,30 @@ module.exports = {
     return componentPath.replace(/\.jsx?$/, '.md')
   },
   getComponentPathLine(componentPath) {
-    // Note, this does NOT detect packages' named exports
+    let name = path.basename(componentPath, '.jsx')
 
-    const name = path.basename(componentPath, '.jsx')
-    const packageJSON = `${path.dirname(componentPath)}/package.json`
-    let packageName = ''
-
-    try {
-      packageName = require(packageJSON).name // eslint-disable-line import/no-dynamic-require
-    } catch (err) {
-      packageName = ''
+    // Add other namespaced components here.
+    // key is a path to match, value is the name to show in the styleguide for the import statement
+    const namespacedComponents = {
+      Progress: 'Progress',
     }
 
-    return packageName ? `import ${name} from '${packageName}'` : ''
+    const componentDirectory = path.dirname(componentPath)
+
+    const componentPathTest = Object.keys(namespacedComponents).find(pathTest =>
+      componentDirectory.includes(pathTest)
+    )
+
+    if (componentPathTest) {
+      name = namespacedComponents[componentPathTest]
+    }
+
+    const kebabizeName = name
+      .split(/(?=[A-Z])/)
+      .join('-')
+      .toLowerCase()
+
+    return `import ${name} from '@tds/community-${kebabizeName}'`
   },
 
   showUsage: false,
@@ -74,6 +85,18 @@ module.exports = {
     {
       name: 'Community Components',
       components: path.resolve('packages/**/*.jsx'),
+      ignore: [path.resolve('packages/Progress/**/*.jsx')],
+      sections: [
+        {
+          name: 'Progress',
+          components() {
+            return [
+              path.resolve('packages/Progress/Progress.jsx'),
+              path.resolve('packages/Progress/Bar/Bar.jsx'),
+            ]
+          },
+        },
+      ],
     },
     {
       name: 'Sample Components',

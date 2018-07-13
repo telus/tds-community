@@ -75,10 +75,6 @@ module.exports = {
       name: 'Community Components',
       components: path.resolve('packages/**/*.jsx'),
     },
-    {
-      name: 'Sample Components',
-      components: path.resolve('samples/**/*.jsx'),
-    },
   ],
 
   template: styleguidistEnv === 'production' ? productionTemplate : devTemplate,

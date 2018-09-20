@@ -7,7 +7,12 @@ import Box from '@tds/core-box'
 
 import styles from './ToggleSwitch.scss'
 
-/** @version ./package.json */
+/** ToggleSwitch is an alternate to using a checkbox, and manitains a similar component interface to [@tds/core-checkbox](https://tds.telus.com/components/index.html#checkbox).
+
+   This component will _only_ maintain internal state when an `onChange` handler is _not_ provided.
+   When an `onChange` handler is passed, it becomes the app's responsibility to manage this component's state through props.
+   This behaviour differs from `@tds/core-checkbox`.
+ */
 class ToggleSwitch extends Component {
   componentWillMount() {
     const { checked = false } = this.props

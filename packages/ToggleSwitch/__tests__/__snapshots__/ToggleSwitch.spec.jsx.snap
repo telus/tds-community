@@ -24,7 +24,6 @@ exports[`ToggleSwitch renders 1`] = `
       <span
         aria-checked={false}
         className="switch"
-        role="checkbox"
       >
         <span
           className="slider"

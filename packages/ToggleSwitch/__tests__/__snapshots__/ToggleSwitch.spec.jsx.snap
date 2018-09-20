@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch renders 1`] = `
+<label
+  htmlFor="123"
+>
+  <Box
+    between={3}
+    inline={true}
+    tag="span"
+  >
+    <span>
+      <input
+        aria-labelledby="123-label"
+        checked={false}
+        id="123"
+        name="name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+        value="value"
+      />
+      <span
+        aria-checked={false}
+        className="switch"
+        role="checkbox"
+      >
+        <span
+          className="slider"
+        />
+      </span>
+    </span>
+    <Text
+      block={false}
+      bold={false}
+      id="123-label"
+      invert={false}
+      size="medium"
+    >
+      label
+    </Text>
+  </Box>
+</label>
+`;

@@ -483,6 +483,12 @@
   dependencies:
     prop-types "^15.5.10"
 
+"@tds/core-text@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@tds/core-text/-/core-text-1.0.2.tgz#3b725a3cbaa444d3e0b0cec42b03577ae72b66c5"
+  dependencies:
+    prop-types "^15.5.10"
+
 "@tds/core-unordered-list@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@tds/core-unordered-list/-/core-unordered-list-1.0.1.tgz#917c0feb9d7b12730a1540937ae14d7c32207306"

@@ -25,6 +25,8 @@
     "react-dom": ">=15"
   },
   "dependencies": {
+    "@tds/core-box": "^1.0.1",
+    "@tds/core-text": "^1.0.2",
     "prop-types": "^15.6.0"
   },
   "devDependencies": {

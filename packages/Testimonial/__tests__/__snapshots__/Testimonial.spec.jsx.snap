@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testimonial renders 1`] = `
+<Card
+  variant="white"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <Paragraph
+      align="left"
+      bold={false}
+      invert={false}
+      size="medium"
+    >
+      "
+      My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.
+      "
+    </Paragraph>
+    <Box
+      dangerouslyAddClassName="testimonial-author"
+      inline={3}
+      tag="div"
+    >
+      <Image
+        alt="Robot Avatar"
+        height={60}
+        rounded="circle"
+        src="//via.placeholder.com/60x60"
+        width={60}
+      />
+      <Box
+        horizontal={3}
+        inline={false}
+        tag="div"
+      >
+        <Paragraph
+          align="left"
+          bold={true}
+          invert={false}
+          size="medium"
+        >
+          Dave Smith, Foreman
+        </Paragraph>
+        <Paragraph
+          align="left"
+          bold={false}
+          invert={false}
+          size="medium"
+        >
+          Pinnacle Reforestation
+        </Paragraph>
+      </Box>
+    </Box>
+  </Box>
+</Card>
+`;

@@ -381,6 +381,13 @@
   dependencies:
     prop-types "^15.5.10"
 
+"@tds/core-card@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@tds/core-card/-/core-card-1.0.1.tgz#8f55a09b064182a2fbe5a0fda5e59c1e586e37bc"
+  dependencies:
+    "@tds/core-box" "^1.0.1"
+    prop-types "^15.5.10"
+
 "@tds/core-chevron-link@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@tds/core-chevron-link/-/core-chevron-link-1.0.2.tgz#2556ef3e4837c620cbc36409790f67a879aec698"
@@ -421,6 +428,12 @@
   dependencies:
     prop-types "^15.5.10"
 
+"@tds/core-image@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tds/core-image/-/core-image-1.0.0.tgz#dcbacea47a6853c4dfbde209f342bf5e689b3cce"
+  dependencies:
+    prop-types "^15.5.10"
+
 "@tds/core-input-feedback@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@tds/core-input-feedback/-/core-input-feedback-1.0.1.tgz#14783828cf411063b5135521e9fc3ebc766b1ce2"
@@ -455,6 +468,12 @@
 "@tds/core-paragraph@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tds/core-paragraph/-/core-paragraph-1.0.0.tgz#2c919539e7cfc7ccfff415a2554ec5a72b7b224f"
+  dependencies:
+    prop-types "^15.5.10"
+
+"@tds/core-paragraph@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tds/core-paragraph/-/core-paragraph-1.0.2.tgz#9aee98727fa9fc7e106580fb616848fa50c90f77"
   dependencies:
     prop-types "^15.5.10"
 

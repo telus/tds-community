@@ -2,7 +2,7 @@
 
 exports[`ToggleSwitch renders 1`] = `
 <label
-  htmlFor="123"
+  htmlFor="my-id-123"
 >
   <Box
     between={3}
@@ -11,11 +11,11 @@ exports[`ToggleSwitch renders 1`] = `
   >
     <span>
       <input
-        aria-labelledby="123-label"
+        aria-labelledby="my-id-123-label"
         checked={false}
         className="hiddenInput"
         disabled={false}
-        id="123"
+        id="my-id-123"
         name="name"
         onBlur={[Function]}
         onChange={[Function]}
@@ -26,6 +26,7 @@ exports[`ToggleSwitch renders 1`] = `
       <span
         aria-checked={false}
         className="switch switchOff"
+        data-testid="my-id-123-switch"
       >
         <span
           className="slider"
@@ -35,7 +36,7 @@ exports[`ToggleSwitch renders 1`] = `
     <Text
       block={false}
       bold={false}
-      id="123-label"
+      id="my-id-123-label"
       invert={false}
       size="medium"
     >

@@ -11,14 +11,6 @@
   background-color: $color-gainsboro;
 }
 
-.switch [data-testid="fake-input"] {
-  height: 22px;
-  width: 44px;
-  min-width: 44px;
-  display: inline-block;
-  opacity: 0.1;
-}
-
 .slider {
   position: absolute;
   width: 18px;
@@ -30,23 +22,30 @@
   transition: left 0.25s;
 }
 
-.switch[aria-checked="true"] {
+.switchOn {
   background-color: $color-accessible-green;
   .slider {
-    position: absolute;
-    top: 2px;
     left: 24px;
   }
 }
 
-.switch[aria-disabled="true"] * {
-  cursor: not-allowed;
+.switchOff {
+  background-color: $color-gainsboro;
+  .slider {
+    left: 2px;
+  }
 }
 
-input {
+.switchDisabled {
+  background-color: $color-gainsboro;
+}
+.switchDisabled * {
+  cursor: not-allowed !important;
+}
+
+.hiddenInput {
   opacity: 0;
 }
-
-input:focus + .switch {
+.hiddenInput:focus + .switch {
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }

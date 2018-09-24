@@ -4,7 +4,8 @@ import { shallow } from 'enzyme'
 import ToggleSwitch from '../ToggleSwitch'
 
 describe('ToggleSwitch', () => {
-  const defaultProps = { id: '123', label: 'label', name: 'name', value: 'value' }
+  const defaultProps = { id: 'my-id-123', label: 'label', name: 'name', value: 'value' }
+
   const doShallow = props => shallow(<ToggleSwitch {...defaultProps} {...props} />)
 
   it('renders', () => {
@@ -29,19 +30,19 @@ describe('ToggleSwitch', () => {
 
     expect(
       toggleSwitch
-        .find('label Box span input[type="checkbox"]')
+        .find(`#${defaultProps.id}`)
         .at(0)
         .prop('aria-labelledby')
     ).toEqual(`${defaultProps.id}-label`)
 
     expect(
       toggleSwitch
-        .find('label Box span input[type="checkbox"]')
+        .find(`#${defaultProps.id}`)
         .at(0)
         .prop('aria-labelledby')
     ).toEqual(
       toggleSwitch
-        .find('label Box Text')
+        .find(`#${defaultProps.id}-label`)
         .at(0)
         .prop('id')
     )
@@ -52,15 +53,15 @@ describe('ToggleSwitch', () => {
 
     expect(
       toggleSwitch
-        .find('label Box span input')
+        .find('.hiddenInput')
         .at(0)
         .prop('checked')
     ).toEqual(false)
 
     expect(
       toggleSwitch
-        .find('label Box span')
-        .at(1)
+        .find(`[data-testid="${defaultProps.id}-switch"]`)
+        .at(0)
         .prop('aria-checked')
     ).toEqual(false)
   })
@@ -69,15 +70,15 @@ describe('ToggleSwitch', () => {
     const toggleSwitch = doShallow({ checked: true })
     expect(
       toggleSwitch
-        .find('label Box span input')
+        .find(`#${defaultProps.id}`)
         .at(0)
         .prop('checked')
     ).toEqual(true)
 
     expect(
       toggleSwitch
-        .find('label Box span')
-        .at(1)
+        .find(`[data-testid="${defaultProps.id}-switch"]`)
+        .at(0)
         .prop('aria-checked')
     ).toEqual(true)
   })
@@ -86,21 +87,21 @@ describe('ToggleSwitch', () => {
     const toggleSwitch = doShallow()
 
     toggleSwitch
-      .find('label Box span input')
+      .find(`#${defaultProps.id}`)
       .at(0)
       .simulate('change')
 
     expect(
       toggleSwitch
-        .find('label Box span input')
+        .find(`#${defaultProps.id}`)
         .at(0)
         .prop('checked')
     ).toEqual(true)
 
     expect(
       toggleSwitch
-        .find('label Box span')
-        .at(1)
+        .find(`[data-testid="${defaultProps.id}-switch"]`)
+        .at(0)
         .prop('aria-checked')
     ).toEqual(true)
   })
@@ -111,22 +112,22 @@ describe('ToggleSwitch', () => {
     const toggleSwitch = doShallow({ checked: false, onChange: mockOnChange })
 
     toggleSwitch
-      .find('label Box span input')
+      .find(`#${defaultProps.id}`)
       .at(0)
       .simulate('change', mockEvent)
 
     // Checked state should remain false instead of toggling
     expect(
       toggleSwitch
-        .find('label Box span input')
+        .find(`#${defaultProps.id}`)
         .at(0)
         .prop('checked')
     ).toEqual(false)
 
     expect(
       toggleSwitch
-        .find('label Box span')
-        .at(1)
+        .find(`[data-testid="${defaultProps.id}-switch"]`)
+        .at(0)
         .prop('aria-checked')
     ).toEqual(false)
 
@@ -140,7 +141,7 @@ describe('ToggleSwitch', () => {
     const toggleSwitch = doShallow({ checked: false, onFocus: mockOnFocus })
 
     toggleSwitch
-      .find('label Box span input')
+      .find(`#${defaultProps.id}`)
       .at(0)
       .simulate('focus', mockEvent)
 
@@ -153,7 +154,7 @@ describe('ToggleSwitch', () => {
     const toggleSwitch = doShallow({ checked: false, onBlur: mockOnBlur })
 
     toggleSwitch
-      .find('label Box span input')
+      .find(`#${defaultProps.id}`)
       .at(0)
       .simulate('blur', mockEvent)
 
@@ -163,6 +164,9 @@ describe('ToggleSwitch', () => {
   it('passes additional attributes to the element', () => {
     const toggleSwitch = doShallow({ 'data-some-attr': 'some value' })
 
-    expect(toggleSwitch.find('input').at(0)).toHaveProp('data-some-attr', 'some value')
+    expect(toggleSwitch.find(`#${defaultProps.id}`).at(0)).toHaveProp(
+      'data-some-attr',
+      'some value'
+    )
   })
 })

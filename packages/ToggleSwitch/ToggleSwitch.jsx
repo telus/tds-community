@@ -86,7 +86,11 @@ class ToggleSwitch extends Component {
               onBlur={this.onBlur}
             />
 
-            <span aria-checked={this.state.checked} className={switchClasses.join(' ')}>
+            <span
+              data-testid={`${id}-switch`}
+              aria-checked={this.state.checked}
+              className={switchClasses.join(' ')}
+            >
               <span className={styles.slider} />
             </span>
           </span>

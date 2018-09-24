@@ -4,8 +4,8 @@ import { shallow } from 'enzyme'
 import ToggleSwitch from '../ToggleSwitch'
 
 describe('ToggleSwitch', () => {
-  const MANDATORY_PROPS = { id: '123', label: 'label', name: 'name', value: 'value' }
-  const doShallow = (props = MANDATORY_PROPS) => shallow(<ToggleSwitch {...props} />)
+  const defaultProps = { id: '123', label: 'label', name: 'name', value: 'value' }
+  const doShallow = props => shallow(<ToggleSwitch {...defaultProps} {...props} />)
 
   it('renders', () => {
     const toggleSwitch = doShallow()
@@ -21,7 +21,7 @@ describe('ToggleSwitch', () => {
         .find('label')
         .at(0)
         .prop('htmlFor')
-    ).toEqual(MANDATORY_PROPS.id)
+    ).toEqual(defaultProps.id)
   })
 
   it('should have label text with an id that matches the checkbox aria-labelledby attribute', () => {
@@ -32,7 +32,7 @@ describe('ToggleSwitch', () => {
         .find('label Box span input[type="checkbox"]')
         .at(0)
         .prop('aria-labelledby')
-    ).toEqual(`${MANDATORY_PROPS.id}-label`)
+    ).toEqual(`${defaultProps.id}-label`)
 
     expect(
       toggleSwitch
@@ -66,7 +66,7 @@ describe('ToggleSwitch', () => {
   })
 
   it('should be checked when checked property is true', () => {
-    const toggleSwitch = doShallow({ ...MANDATORY_PROPS, checked: true })
+    const toggleSwitch = doShallow({ checked: true })
     expect(
       toggleSwitch
         .find('label Box span input')
@@ -108,7 +108,7 @@ describe('ToggleSwitch', () => {
   it('should override internal state change when onChange handler is provided ', () => {
     const mockOnChange = jest.fn()
     const mockEvent = { persist: () => {} }
-    const toggleSwitch = doShallow({ ...MANDATORY_PROPS, checked: false, onChange: mockOnChange })
+    const toggleSwitch = doShallow({ checked: false, onChange: mockOnChange })
 
     toggleSwitch
       .find('label Box span input')
@@ -137,7 +137,7 @@ describe('ToggleSwitch', () => {
   it('should call onFocus handler when provided ', () => {
     const mockOnFocus = jest.fn()
     const mockEvent = { persist: () => {} }
-    const toggleSwitch = doShallow({ ...MANDATORY_PROPS, checked: false, onFocus: mockOnFocus })
+    const toggleSwitch = doShallow({ checked: false, onFocus: mockOnFocus })
 
     toggleSwitch
       .find('label Box span input')
@@ -150,7 +150,7 @@ describe('ToggleSwitch', () => {
   it('should call onBlur handler when provided ', () => {
     const mockOnBlur = jest.fn()
     const mockEvent = { persist: () => {} }
-    const toggleSwitch = doShallow({ ...MANDATORY_PROPS, checked: false, onBlur: mockOnBlur })
+    const toggleSwitch = doShallow({ checked: false, onBlur: mockOnBlur })
 
     toggleSwitch
       .find('label Box span input')
@@ -161,7 +161,7 @@ describe('ToggleSwitch', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const toggleSwitch = doShallow({ ...MANDATORY_PROPS, 'data-some-attr': 'some value' })
+    const toggleSwitch = doShallow({ 'data-some-attr': 'some value' })
 
     expect(toggleSwitch.find('input').at(0)).toHaveProp('data-some-attr', 'some value')
   })

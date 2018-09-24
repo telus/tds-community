@@ -8,7 +8,7 @@ import Box from '@tds/core-box'
 import styles from './ToggleSwitch.scss'
 
 /**
-  * ToggleSwitch is an alternate to using a checkbox, and manitains a similar component interface to [@tds/core-checkbox](https://tds.telus.com/components/index.html#checkbox).
+  * ToggleSwitch is an alternative to using a checkbox, and manitains a similar component interface to [@tds/core-checkbox](https://tds.telus.com/components/index.html#checkbox).
 
    This component will _only_ maintain internal state when an `onChange` handler is _not_ provided.
    When an `onChange` handler is passed, it becomes the app's responsibility to manage this component's state through props.
@@ -60,6 +60,12 @@ class ToggleSwitch extends Component {
     const { id, label, name, value, checked, onBlur, onChange, onFocus, ...rest } = this.props
 
     const labelledById = `${id}-label`
+    const disabled = !!rest && !!rest.disabled
+
+    const switchStatusClass = this.state.checked ? styles.switchOn : styles.switchOff
+    const switchClasses = disabled
+      ? [styles.switch, switchStatusClass, styles.switchDisabled]
+      : [styles.switch, switchStatusClass]
 
     return (
       <label htmlFor={id}>
@@ -67,18 +73,20 @@ class ToggleSwitch extends Component {
           <span>
             <input
               {...safeRest(rest)}
+              className={styles.hiddenInput}
               id={id}
               type="checkbox"
               name={name}
               value={value}
               checked={this.state.checked}
+              disabled={disabled}
               aria-labelledby={labelledById}
               onChange={this.onChange}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
             />
 
-            <span aria-checked={this.state.checked} className={styles.switch}>
+            <span aria-checked={this.state.checked} className={switchClasses.join(' ')}>
               <span className={styles.slider} />
             </span>
           </span>

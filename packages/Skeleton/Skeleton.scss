@@ -1,13 +1,29 @@
 @import '~@tds/core-colours/colours';
 
-$color-light-gainsboro: #ebebeb;
-$color-light-telus-green: #f0faea;
-$color-light-telus-purple: #dbd4e2;
-
 .skeleton-text {
   display: inline-block;
   overflow: hidden;
   max-width: 100%;
+
+  background-color: $color-gainsboro;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  background-image: -webkit-gradient(
+    linear, left top, right top,
+    from($color-gainsboro),
+    to($color-gainsboro),
+    color-stop(.5, $color-athens-grey)
+  );
+  animation-name: skeleton-text-shimmer;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes skeleton-text-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -100% 0; }
 }
 
 .size-18 {
@@ -49,9 +65,3 @@ $color-light-telus-purple: #dbd4e2;
   -webkit-border-radius: 32px;
   border-radius: 32px;
 }
-
-.variant-default { background-color: $color-light-gainsboro; }
-
-.variant-primary { background-color: $color-light-telus-green; }
-
-.variant-secondary { background-color: $color-light-telus-purple; }

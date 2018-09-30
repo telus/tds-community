@@ -7,8 +7,6 @@ import Image from '@tds/core-image'
 import Paragraph from '@tds/core-paragraph'
 import safeRest from '@tds/shared-safe-rest'
 
-import styles from './Testimonial.scss'
-
 /**
  * @version ./package.json
  */
@@ -17,10 +15,10 @@ const Testimonial = ({ testimonial, imgSrc, imgAlt, title, additionalInfo, ...re
   return (
     <Card {...safeRest(rest)}>
       <Box between={3}>
-        <Paragraph>&quot;{testimonial}&quot;</Paragraph>
-        <Box inline={3} dangerouslyAddClassName={styles['testimonial-author']}>
+        <Paragraph>{testimonial}</Paragraph>
+        <Box inline between={3}>
           {imgSrc && <Image src={imgSrc} alt={imgAlt} width={60} height={60} rounded="circle" />}
-          <Box horizontal={imgSrc ? 3 : 0}>
+          <Box>
             <Paragraph bold>{title}</Paragraph>
             <Paragraph>{additionalInfo}</Paragraph>
           </Box>

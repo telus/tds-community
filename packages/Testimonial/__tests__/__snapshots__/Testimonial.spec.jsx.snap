@@ -15,13 +15,11 @@ exports[`Testimonial renders 1`] = `
       invert={false}
       size="medium"
     >
-      "
       My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.
-      "
     </Paragraph>
     <Box
-      dangerouslyAddClassName="testimonial-author"
-      inline={3}
+      between={3}
+      inline={true}
       tag="div"
     >
       <Image
@@ -32,7 +30,6 @@ exports[`Testimonial renders 1`] = `
         width={60}
       />
       <Box
-        horizontal={3}
         inline={false}
         tag="div"
       >

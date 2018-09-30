@@ -29,16 +29,12 @@ describe('Testimonial', () => {
 
   it('renders without an image', () => {
     const testimonial = doShallow({ ...props, imgSrc: null })
-    expect(
-      testimonial.find({ dangerouslyAddClassName: 'testimonial-author' }).children().length
-    ).toEqual(1)
+    expect(testimonial.find({ inline: true }).children().length).toEqual(1)
   })
 
   it('renders with an image', () => {
     const testimonial = doShallow({ ...props })
-    expect(
-      testimonial.find({ dangerouslyAddClassName: 'testimonial-author' }).children().length
-    ).toEqual(2)
+    expect(testimonial.find({ inline: true }).children().length).toEqual(2)
   })
 
   it('passes additional attributes to the element', () => {

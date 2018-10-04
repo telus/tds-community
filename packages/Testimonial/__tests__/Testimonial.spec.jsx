@@ -21,20 +21,14 @@ describe('Testimonial', () => {
     expect(testimonial).toMatchSnapshot()
   })
 
-  it('does other things', () => {
-    const testimonial = doShallow({ ...props })
-
-    expect(testimonial).toExist()
-  })
-
   it('renders without an image', () => {
     const testimonial = doShallow({ ...props, imgSrc: null })
-    expect(testimonial.find({ inline: true }).children().length).toEqual(1)
+    expect(testimonial.find('.image').length).toEqual(0)
   })
 
   it('renders with an image', () => {
     const testimonial = doShallow({ ...props })
-    expect(testimonial.find({ inline: true }).children().length).toEqual(2)
+    expect(testimonial.find('.image').exists()).toEqual(true)
   })
 
   it('passes additional attributes to the element', () => {

@@ -8,9 +8,9 @@ import Paragraph from '@tds/core-paragraph'
 import safeRest from '@tds/shared-safe-rest'
 
 /**
+ * Testimonial component for displaying testimonial in a standalone, pre-styled component.
  * @version ./package.json
  */
-/** Testimonial component for displaying testimonial in a standalone, pre-styled component so all testimonials look consistent across the website */
 const Testimonial = ({ testimonial, imgSrc, imgAlt, title, additionalInfo, ...rest }) => {
   return (
     <Card {...safeRest(rest)}>
@@ -39,6 +39,11 @@ Testimonial.propTypes = {
   title: PropTypes.string.isRequired,
   /** Testimonial author credentials - more info - normal weight */
   additionalInfo: PropTypes.string.isRequired,
+}
+
+Testimonial.defaultProps = {
+  imgSrc: undefined,
+  imgAlt: undefined,
 }
 
 export default Testimonial

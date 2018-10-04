@@ -7,6 +7,8 @@ import Image from '@tds/core-image'
 import Paragraph from '@tds/core-paragraph'
 import safeRest from '@tds/shared-safe-rest'
 
+import styles from './Testimonial.scss'
+
 /**
  * Testimonial component for displaying testimonial in a standalone, pre-styled component.
  * @version ./package.json
@@ -16,13 +18,17 @@ const Testimonial = ({ testimonial, imgSrc, imgAlt, title, additionalInfo, ...re
     <Card {...safeRest(rest)}>
       <Box between={3}>
         <Paragraph>{testimonial}</Paragraph>
-        <Box inline between={3}>
-          {imgSrc && <Image src={imgSrc} alt={imgAlt} width={60} height={60} rounded="circle" />}
-          <Box>
+        <div className={styles.imageAndQuote}>
+          {imgSrc && (
+            <div className={styles.image}>
+              <Image src={imgSrc} alt={imgAlt} width={60} height={60} />
+            </div>
+          )}
+          <div>
             <Paragraph bold>{title}</Paragraph>
             <Paragraph>{additionalInfo}</Paragraph>
-          </Box>
-        </Box>
+          </div>
+        </div>
       </Box>
     </Card>
   )

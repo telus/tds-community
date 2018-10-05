@@ -1,6 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
+import Image from '@tds/core-image'
+
 import Testimonial from '../Testimonial'
 
 describe('Testimonial', () => {
@@ -9,8 +11,15 @@ describe('Testimonial', () => {
   const props = {
     testimonial:
       "My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.",
-    imgAlt: 'Robot Avatar',
-    imgSrc: '//via.placeholder.com/60x60',
+    image: (
+      <Image
+        src="image-example.jpg"
+        rounded="circle"
+        width={60}
+        height={60}
+        alt="Image of co-workers collaborating"
+      />
+    ),
     title: 'Dave Smith, Foreman',
     additionalInfo: 'Pinnacle Reforestation',
   }
@@ -22,7 +31,7 @@ describe('Testimonial', () => {
   })
 
   it('renders without an image', () => {
-    const testimonial = doShallow({ ...props, imgSrc: null })
+    const testimonial = doShallow({ ...props, image: null })
     expect(testimonial.find('.image').length).toEqual(0)
   })
 

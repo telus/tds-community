@@ -24,9 +24,10 @@ exports[`Testimonial renders 1`] = `
         className="image"
       >
         <Image
-          alt="Robot Avatar"
+          alt="Image of co-workers collaborating"
           height={60}
-          src="//via.placeholder.com/60x60"
+          rounded="circle"
+          src="image-example.jpg"
           width={60}
         />
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Skeleton, { SIZES, VARIANTS } from '../Skeleton'
+import Skeleton, { SIZES } from '../Skeleton'
 import styles from '../Skeleton.scss'
 
 const doShallow = (props = {}) => shallow(<Skeleton {...props} />)
@@ -14,36 +14,14 @@ describe('Skeleton', () => {
     expect(skeleton).toMatchSnapshot()
   })
 
-  it('should have default size when attribute not specified', () => {
-    const skeleton = doShallow()
-
-    expect(skeleton).toHaveClassName(styles['variant-default'])
-  })
-
   it('should set correct class based on size attribute, for all sizes', () => {
     const sizes = Object.keys(SIZES)
 
     expect.assertions(sizes.length)
     sizes.forEach(size => {
       const skeleton = doShallow({ size })
+
       expect(skeleton).toHaveClassName(styles[`size-${SIZES[size]}`])
-    })
-  })
-
-  it('should have default variant when attribute not specified', () => {
-    const skeleton = doShallow()
-
-    expect(skeleton).toHaveClassName(styles['size-18'])
-  })
-
-  it('should set correct class based on size attribute, for all sizes', () => {
-    const variants = Object.keys(VARIANTS)
-
-    expect.assertions(variants.length)
-    variants.forEach(variant => {
-      const skeleton = doShallow({ variant })
-
-      expect(skeleton).toHaveClassName(styles[`variant-${VARIANTS[variant]}`])
     })
   })
 

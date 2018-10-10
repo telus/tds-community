@@ -88,7 +88,7 @@ module.exports = {
       ignore: [path.resolve('packages/Progress/**/*.jsx')],
       sections: [
         {
-          name: 'Progress',
+          name: 'Progress Bar',
           components() {
             return [
               path.resolve('packages/Progress/Progress.jsx'),

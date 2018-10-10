@@ -19,7 +19,9 @@ const getPackageNames = require('./utils/getPackageNames')
 
 getPackageNames(packageNames => {
   const onlyCommunityPackages = packageNames
-    .filter(name => name.startsWith('@tds/community-'))
+    .filter(
+      name => name.startsWith('@tds/community-') && !name.startsWith('@tds/community-sample-')
+    )
     .join(' ')
 
   const { status } = spawnSync(

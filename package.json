@@ -10,7 +10,7 @@
   "workspaces": [
     "packages/*",
     "samples/*",
-    "shared/*"
+    "shared/**"
   ],
   "scripts": {
     "bootstrap": "yarn install && lerna bootstrap && yarn build --all",

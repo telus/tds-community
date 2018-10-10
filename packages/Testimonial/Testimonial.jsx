@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { componentWithName } from 'airbnb-prop-types'
 
 import Box from '@tds/core-box'
 import Card from '@tds/core-card'
 import Paragraph from '@tds/core-paragraph'
 import safeRest from '@tds/shared-safe-rest'
+
+import { componentWithName } from '../../shared/utils/propTypes'
 
 import styles from './Testimonial.scss'
 

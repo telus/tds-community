@@ -13,25 +13,33 @@ about: Create a report to help us improve
 
 ## Description
 
-* Description of the defect
+Description of the defect
 
-## Reproduction Steps
-<!-- You can desribe how to reproduce the issue here
-For example:
-* Click this thing
-* Now click this
-* Observe this happens
+<!--
+  Please link to any related GitHub issues
 
+  For example:
+  See #29
 -->
 
+## Reproduction Steps
+
+<!--
+  You can desribe how to reproduce the issue here
+  
+  For example:
+  * Click this thing
+  * Now click this
+  * Observe this happens
+-->
 
 ## Reproduction Percentage (if applicable)
 
-* 0/10 times
+0/10 times
 
 ## Meta
 
-* TDS version: vX.Y.Z
+* TDS version (npm or DSM): vX.Y.Z
 * Willing to develop solution: Yes/No
 * Has workaround: Yes/No
 * High impact: Yes/No

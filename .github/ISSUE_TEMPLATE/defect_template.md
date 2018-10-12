@@ -16,10 +16,14 @@ about: Create a report to help us improve
 * Description of the defect
 
 ## Reproduction Steps
-
+<!-- You can desribe how to reproduce the issue here
+For example:
 * Click this thing
 * Now click this
 * Observe this happens
+
+-->
+
 
 ## Reproduction Percentage (if applicable)
 

@@ -1,0 +1,5 @@
+/* Disable page animations */
+
+* {
+  animation-play-state: paused !important;
+}

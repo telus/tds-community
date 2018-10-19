@@ -29,6 +29,7 @@
     "deploy:docs": "node ./scripts/deploy-docs.js",
     "deploy:package": "scripts/publish.sh",
     "dev": "styleguidist server --config config/styleguide.config.js",
+    "dev:e2e": "STYLEGUIDIST_ENV=e2e styleguidist server --config config/styleguide.config.js",
     "lerna:publish": "node scripts/publish.js",
     "lint:js": "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,samples}/**/*.scss' --config config/stylelint.config.js",

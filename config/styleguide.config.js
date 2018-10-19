@@ -1,6 +1,6 @@
 const path = require('path')
 
-const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
+const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, e2e, staging, production
 
 const devTemplate = {
   lang: 'en',
@@ -107,7 +107,7 @@ module.exports = {
     '@tds/core-css-reset/dist/index.css',
     path.resolve('docs/scss/styleguide.scss'),
     path.resolve('docs/setup/tds-core-globals.js'),
-  ],
+  ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
   styleguideComponents: {
     Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),

@@ -5,7 +5,7 @@ import styles from './Skeleton.scss'
 
 export const SIZES = { xs: 18, sm: 24, md: 36, lg: 48, xl: 64 }
 
-/** Skeleton component for mocking content while it is loaded.
+/** Skeleton component for mocking content while it is loading.
  * @version ./package.json
  */
 const Skeleton = props => {

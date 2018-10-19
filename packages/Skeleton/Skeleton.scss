@@ -9,11 +9,11 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 200% 100%;
-  background-image: -webkit-gradient(
-    linear, left top, right top,
-    from($color-gainsboro),
-    to($color-gainsboro),
-    color-stop(.5, $color-athens-grey)
+  background-image: linear-gradient(
+    to right,
+    $color-gainsboro,
+    $color-athens-grey,
+    $color-gainsboro
   );
   animation-name: skeleton-text-shimmer;
   animation-duration: 2s;
@@ -22,46 +22,40 @@
 }
 
 @keyframes skeleton-text-shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -100% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 .size-18 {
   height: 18px;
   min-width: 18px;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px;
   border-radius: 9px;
 }
 
 .size-24 {
   height: 24px;
   min-width: 24px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
   border-radius: 12px;
 }
 
 .size-36 {
   height: 36px;
   min-width: 36px;
-  -moz-border-radius: 18px;
-  -webkit-border-radius: 18px;
   border-radius: 18px;
 }
 
 .size-48 {
   height: 48px;
   min-width: 48px;
-  -moz-border-radius: 24px;
-  -webkit-border-radius: 24px;
   border-radius: 24px;
 }
 
 .size-64 {
   height: 64px;
   min-width: 64px;
-  -moz-border-radius: 32px;
-  -webkit-border-radius: 32px;
   border-radius: 32px;
 }

@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-sample-pilter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A branded pilter showcasing our practices",
   "license": "MIT",
   "main": "index.cjs.js",

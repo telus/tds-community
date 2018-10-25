@@ -9,15 +9,17 @@ about: Request a new component for tds-community
   When opening issues, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
   data retrieval.
+
+  Also, do not include links to sites on staging.
 -->
 
 ## Problem Statement
 
-* As a _ , I would like to _ , so that I can \_
+- As a _ , I would like to _ , so that I can \_
 
 ## Recommendation
 
-* Description of the proposed solution
+- Description of the proposed solution
 
 <!--
   Note: designs must be approved by the Digital Platform Ambassadors
@@ -29,18 +31,18 @@ about: Request a new component for tds-community
 
 ## Designs
 
-* Screenshots
-* Sketch file
+- Screenshots
+- Sketch file
 
 ## Meta
 
-* Willing to design solution: Yes/No
-* Willing to develop solution: Yes/No
-* Has workaround: Yes/No
-* Do any similar components already exist in TDS (core or community): Yes/No
-* Does this pattern exist already but isn’t a community component? (include url)
-* Which teams/applications do you think would use this improvement?
-* High impact: Yes/No
+- Willing to design solution: Yes/No
+- Willing to develop solution: Yes/No
+- Has workaround: Yes/No
+- Do any similar components already exist in TDS (core or community): Yes/No
+- Does this pattern exist already but isn’t a community component? (include url)
+- Which teams/applications do you think would use this improvement?
+- High impact: Yes/No
 
 <!--
   ## NOTE REGARDING LABELS

@@ -9,6 +9,8 @@ about: Create a report to help us improve
   When opening issues, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
   data retrieval.
+
+  Also, do not include links to sites on staging.
 -->
 
 ## Description
@@ -25,8 +27,8 @@ Description of the defect
 ## Reproduction Steps
 
 <!--
-  You can desribe how to reproduce the issue here
-  
+  You can describe how to reproduce the issue here
+
   For example:
   * Click this thing
   * Now click this
@@ -39,11 +41,11 @@ Description of the defect
 
 ## Meta
 
-* TDS version (npm or DSM): vX.Y.Z
-* Willing to develop solution: Yes/No
-* Has workaround: Yes/No
-* High impact: Yes/No
+- TDS version (npm or DSM): vX.Y.Z
+- Willing to develop solution: Yes/No
+- Has workaround: Yes/No
+- High impact: Yes/No
 
 ## Screenshots
 
-* Include any relevant screenshots
+- Include any relevant screenshots

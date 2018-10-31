@@ -21,12 +21,6 @@ See <!-- put issue number here, or delete this section -->
 - Patch 1
 - Patch 2
 
-## Package changes
-
-```
-Run `yarn prepr` locally and paste its output here, even when there are no changes
-```
-
 ## Checklist before submitting pull request
 
 - Commits follow our [Developer Guide](https://github.com/telus/tds-community/blob/chore/template-hints/.github/CONTRIBUTING.md)

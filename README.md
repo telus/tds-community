@@ -1,5 +1,7 @@
 # TELUS Design System Community <sup>beta</sup>
 
+[![Build Status](https://travis-ci.com/telus/tds-community.svg?branch=master)](https://travis-ci.com/telus/tds-community)
+
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for
 digital design guidelines, code patterns and UI elements.
@@ -49,13 +51,13 @@ To learn how to make contributions to TDS Community, See the [contributing guide
 
 ## Further Documentation
 
-* [Background](https://github.com/telus/tds-community/blob/master/guide/history.md)
-* [Principles & Guidelines](https://github.com/telus/tds-community/blob/master/guide/PrinciplesGuidelines.md)
-* [Why Community](https://github.com/telus/tds-community/blob/master/guide/Why_community.md)
-* [TDS Community vs TDS Core](https://github.com/telus/tds-community/blob/master/guide/community_vs_core.md)
-* [Digital Platform Ambassadors](https://github.com/telus/tds-community/blob/master/guide/Digital_Platform_Ambassadors.md)
-* [How to Guides](https://github.com/telus/tds-community/blob/master/guide/How_to_guides.md)
-* [Support](https://github.com/telus/tds-community/blob/master/guide/Support.md)
+- [Background](https://github.com/telus/tds-community/blob/master/guide/history.md)
+- [Principles & Guidelines](https://github.com/telus/tds-community/blob/master/guide/PrinciplesGuidelines.md)
+- [Why Community](https://github.com/telus/tds-community/blob/master/guide/Why_community.md)
+- [TDS Community vs TDS Core](https://github.com/telus/tds-community/blob/master/guide/community_vs_core.md)
+- [Digital Platform Ambassadors](https://github.com/telus/tds-community/blob/master/guide/Digital_Platform_Ambassadors.md)
+- [How to Guides](https://github.com/telus/tds-community/blob/master/guide/How_to_guides.md)
+- [Support](https://github.com/telus/tds-community/blob/master/guide/Support.md)
 
 ## Contributors
 

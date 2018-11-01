@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavigation.SubMenu renders 1`] = `
+<div
+  className="mainDiv"
+>
+  <button
+    className="active"
+    onClick={[Function]}
+  >
+    <Box
+      inline={false}
+      tag="div"
+      vertical={3}
+    >
+      <FlexGrid
+        gutter={false}
+        limitWidth={false}
+      >
+        <Row$$1
+          horizontalAlign="start"
+        >
+          <Col$$1
+            xs={9}
+          >
+            <Box
+              dangerouslyAddClassName="label"
+              horizontal={2}
+              inline={false}
+              tag="div"
+            >
+              <ColoredTextProvider>
+                <Text
+                  block={false}
+                  bold={true}
+                  invert={false}
+                  size="medium"
+                >
+                  Threefdsfdsfds
+                </Text>
+              </ColoredTextProvider>
+            </Box>
+          </Col$$1>
+          <Col$$1>
+            <Box
+              dangerouslyAddClassName="floatIcon"
+              inline={false}
+              tag="div"
+            >
+              <DecorativeIcon
+                size={16}
+                symbol="caretDown"
+                variant="secondary"
+              />
+            </Box>
+          </Col$$1>
+        </Row$$1>
+      </FlexGrid>
+    </Box>
+  </button>
+</div>
+`;

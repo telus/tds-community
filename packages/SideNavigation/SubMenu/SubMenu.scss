@@ -1,0 +1,47 @@
+@import '~@tds/core-colours/colours';
+
+$font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+.mainDiv {
+  cursor: pointer;
+}
+
+.floatIcon {
+  float: right;
+  padding-left: 10px;
+}
+
+.label {
+  display: inline-block;
+}
+
+.boxShadow {
+  background: radial-gradient(
+    ellipse at top,
+    rgba(150, 150, 150, 0.1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+.active {
+  border: none;
+  border-left: 4px solid $color-telus-purple;
+  color: $color-telus-purple;
+  width: 100%;
+  &:hover {
+    background-color: $color-white-lilac;
+    cursor: pointer;
+  }
+}
+
+.button {
+  border: none;
+  width: 100%;
+  font-family: $font-telus;
+  color: $color-shuttle-grey;
+  &:hover {
+    background-color: $color-white-lilac;
+    color: $color-telus-purple;
+    cursor: pointer;
+  }
+}

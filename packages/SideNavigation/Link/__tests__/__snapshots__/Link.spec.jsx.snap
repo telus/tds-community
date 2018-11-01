@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavigation.Link renders 1`] = `
+<a
+  className="link"
+  href="#"
+  to={null}
+>
+  <Box
+    dangerouslyAddClassName="box"
+    horizontal={3}
+    inline={false}
+    tag="div"
+    vertical={3}
+  >
+    <ColoredTextProvider
+      colorClassName="hover"
+    >
+      <Text
+        block={false}
+        bold={false}
+        invert={false}
+        size="medium"
+      >
+        Home
+      </Text>
+    </ColoredTextProvider>
+  </Box>
+</a>
+`;

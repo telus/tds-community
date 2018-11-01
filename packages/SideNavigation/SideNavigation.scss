@@ -1,0 +1,93 @@
+@import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+
+$spacing-base: 1rem; // 16px
+
+$mobile: (
+  1: $spacing-base * 0.25,
+  2: $spacing-base * 0.5,
+  3: $spacing-base,
+  4: $spacing-base * 1.5,
+  5: $spacing-base * 2,
+  6: $spacing-base * 2.5,
+  7: $spacing-base * 3,
+  8: $spacing-base * 4
+);
+
+$desktop: (
+  1: $spacing-base * 0.25,
+  2: $spacing-base * 0.5,
+  3: $spacing-base,
+  4: $spacing-base * 2,
+  5: $spacing-base * 3,
+  6: $spacing-base * 4,
+  7: $spacing-base * 4.5,
+  8: $spacing-base * 6
+);
+
+@mixin spacingClasses ($level, $mobileValue, $desktopValue) {
+  .verticalPadding-#{$level} {
+    padding-top: $mobileValue;
+    @include mq($from: md) {
+      padding-top: $desktopValue;
+    }
+  }
+}
+
+@each $level, $value in $mobile {
+  @include spacingClasses($level, $value, map-get($desktop, $level));
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.spaced {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  border-top: 1px solid $color-gainsboro;
+}
+
+.navLi {
+  border-bottom: 1px solid $color-gainsboro;
+  align-items: center;
+}
+
+.active {
+  border-left: 4px solid $color-telus-purple;
+}
+
+li.active a {
+  color: $color-telus-purple;
+}
+
+.topPosition {
+  position: relative;
+  max-width: inherit;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.fixedPosition {
+  position: fixed;
+  max-width: inherit;
+  top: 0px;
+  width: inherit;
+}
+
+.bottomPosition {
+  position: absolute;
+  bottom: 0px;
+}
+
+.removeBottomPadding {
+  padding-bottom: 0px;
+}
+
+.removeTopPadding {
+  padding-top: 0px;
+}

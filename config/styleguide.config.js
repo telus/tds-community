@@ -54,6 +54,7 @@ module.exports = {
     // key is a path to match, value is the name to show in the styleguide for the import statement
     const namespacedComponents = {
       Progress: 'Progress',
+      SideNavigation: 'SideNavigation',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -85,7 +86,10 @@ module.exports = {
     {
       name: 'Community Components',
       components: path.resolve('packages/**/*.jsx'),
-      ignore: [path.resolve('packages/Progress/**/*.jsx')],
+      ignore: [
+        path.resolve('packages/Progress/**/*.jsx'),
+        path.resolve('packages/SideNavigation/**/*.jsx'),
+      ],
       sections: [
         {
           name: 'Progress Bar',
@@ -93,6 +97,16 @@ module.exports = {
             return [
               path.resolve('packages/Progress/Progress.jsx'),
               path.resolve('packages/Progress/Bar/Bar.jsx'),
+            ]
+          },
+        },
+        {
+          name: 'Side Navigation',
+          components() {
+            return [
+              path.resolve('packages/SideNavigation/SideNavigation.jsx'),
+              path.resolve('packages/SideNavigation/Link/Link.jsx'),
+              path.resolve('packages/SideNavigation/SubMenu/SubMenu.jsx'),
             ]
           },
         },
@@ -204,6 +218,7 @@ module.exports = {
         },
         {
           test: /\.scss$/,
+          exclude: /docs/,
           use: [
             'style-loader',
             {
@@ -223,6 +238,11 @@ module.exports = {
             },
             'sass-loader',
           ],
+        },
+        {
+          test: /\.scss$/,
+          exclude: /packages/,
+          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
           test: /\.css$/,

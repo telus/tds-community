@@ -1,0 +1,108 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import DecorativeIcon from '@tds/core-decorative-icon'
+import Box from '@tds/core-box'
+import FlexGrid from '@tds/core-flex-grid'
+import Text from '@tds/core-text'
+import { componentWithName } from '@tds/util-prop-types'
+
+import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
+
+import styles from './SubMenu.scss'
+
+/**
+ * Expandable content areas for use with the `SideNavigation`
+ *
+ * _This component can only be accessed as a name-spaced component: `SideNavigation.SubMenu`._
+ */
+const SubMenu = ({ children, label, onClick, id, isOpen, active }) => {
+  const options = {
+    subMenuLink: true,
+  }
+
+  return (
+    <div className={styles.mainDiv}>
+      <button
+        onClick={() => {
+          onClick(id)
+        }}
+        className={active ? styles.active : styles.button}
+      >
+        <Box vertical={3}>
+          <FlexGrid limitWidth={false} gutter={false}>
+            <FlexGrid.Row horizontalAlign="start">
+              <FlexGrid.Col xs={9}>
+                <Box horizontal={2} dangerouslyAddClassName={styles.label}>
+                  <ColoredTextProvider>
+                    <Text size="medium" bold={active}>
+                      {label}
+                    </Text>
+                  </ColoredTextProvider>
+                </Box>
+              </FlexGrid.Col>
+              <FlexGrid.Col>
+                <Box dangerouslyAddClassName={styles.floatIcon}>
+                  <DecorativeIcon
+                    symbol={isOpen ? 'caretUp' : 'caretDown'}
+                    variant="secondary"
+                    size={16}
+                  />
+                </Box>
+              </FlexGrid.Col>
+            </FlexGrid.Row>
+          </FlexGrid>
+        </Box>
+      </button>
+      {isOpen ? (
+        <ul className={styles.boxShadow}>
+          {React.Children.map(children, child => (
+            <li>{React.cloneElement(child, options)}</li>
+          ))}
+        </ul>
+      ) : (
+        false
+      )}
+    </div>
+  )
+}
+
+SubMenu.propTypes = {
+  /**
+   * An array of `SideNavigation.Link`
+   */
+  children: componentWithName('Link'),
+  /**
+   * Label of the SubMenu
+   */
+  label: PropTypes.string.isRequired,
+  /**
+   * Behaviour when clicking the SubMenu. Passed from <SideNavigation> to toggle open or close the SubMenu
+   *
+   * @ignore
+   */
+  onClick: PropTypes.func,
+  /**
+   * ID of the SubMenu, must be unique when using multiple SubMenus within the same SideNavigation component
+   */
+  id: PropTypes.string.isRequired,
+  /**
+   * Describes whether this SubMenu is open or not. Used in conjunction with ID so that only one SubMenu is open at a time
+   *
+   * @ignore
+   */
+  isOpen: PropTypes.bool,
+  /**
+   * State of whether user is in one of the links in the SubMenu
+   */
+  active: PropTypes.bool,
+}
+
+SubMenu.defaultProps = {
+  onClick: undefined,
+  isOpen: false,
+  active: false,
+  children: undefined,
+}
+
+export default SubMenu

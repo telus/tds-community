@@ -1,0 +1,30 @@
+@import '~@tds/core-colours/colours';
+
+.link {
+  color: black;
+  text-decoration: none;
+  background: none !important;
+}
+
+.active {
+  border-left: 4px solid $color-telus-purple;
+  color: $color-telus-purple;
+}
+
+.activeText {
+  font-weight: bold;
+  color: $color-telus-purple !important;
+}
+
+.box {
+  &:hover {
+    background-color: $color-white-lilac;
+  }
+}
+
+.hover {
+  color: $color-shuttle-grey;
+  &:hover {
+    color: $color-telus-purple;
+  }
+}

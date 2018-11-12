@@ -410,9 +410,9 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-flex-grid@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-flex-grid/-/core-flex-grid-1.2.0.tgz#b3f87da2095a32ac5e9968d830fb2f1017474a32"
+"@tds/core-flex-grid@^2.0.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@tds/core-flex-grid/-/core-flex-grid-2.2.0.tgz#ea7efd95c9931478fca802980ec92530ba709304"
   dependencies:
     prop-types "^15.5.10"
 

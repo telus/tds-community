@@ -56,7 +56,7 @@
     "@tds/core-chevron-link": "^1.0.2",
     "@tds/core-colours": "^1.0.0",
     "@tds/core-css-reset": "^1.0.0",
-    "@tds/core-flex-grid": "^1.2.0",
+    "@tds/core-flex-grid": "^2.0.0",
     "@tds/core-hairline-divider": "^1.0.0",
     "@tds/core-heading": "^1.0.1",
     "@tds/core-image": "^1.0.0",

@@ -410,9 +410,9 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-flex-grid@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-flex-grid/-/core-flex-grid-1.2.0.tgz#b3f87da2095a32ac5e9968d830fb2f1017474a32"
+"@tds/core-flex-grid@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@tds/core-flex-grid/-/core-flex-grid-2.2.0.tgz#ea7efd95c9931478fca802980ec92530ba709304"
   dependencies:
     prop-types "^15.5.10"
 
@@ -452,9 +452,9 @@
     "@tds/core-text" "^1.0.0"
     prop-types "^15.5.10"
 
-"@tds/core-link@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@tds/core-link/-/core-link-1.0.2.tgz#82afe2fe2a148f7757dc2e54abef07017ea92204"
+"@tds/core-link@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tds/core-link/-/core-link-1.0.3.tgz#54fe1966cc588b5ba8c5e4291cdd1fab7ba2bf80"
   dependencies:
     prop-types "^15.5.10"
 
@@ -6357,7 +6357,7 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
-  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
 js-yaml@^3.4.3, js-yaml@^3.7.0, js-yaml@^3.9.0, js-yaml@^3.9.1:
   version "3.11.0"
@@ -7197,7 +7197,7 @@ longest@^1.0.1:
 
 loose-envify@^1.0.0, loose-envify@^1.3.1:
   version "1.4.0"
-  resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
@@ -8065,7 +8065,7 @@ oauth-sign@~0.8.1, oauth-sign@~0.8.2:
 
 object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
 object-copy@^0.1.0:
   version "0.1.0"
@@ -9011,7 +9011,7 @@ promise@^7.1.1:
 
 prop-types@^15.5.10, prop-types@^15.6.2:
   version "15.6.2"
-  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"

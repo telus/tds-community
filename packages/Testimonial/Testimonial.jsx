@@ -5,8 +5,7 @@ import Box from '@tds/core-box'
 import Card from '@tds/core-card'
 import Paragraph from '@tds/core-paragraph'
 import safeRest from '@tds/shared-safe-rest'
-
-import { componentWithName } from '../../shared/utils/propTypes'
+import { componentWithName } from '@tds/util-prop-types'
 
 import styles from './Testimonial.scss'
 

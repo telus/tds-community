@@ -22,7 +22,6 @@
     "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
     "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-*",
     "ci:test": "npm-run-all --parallel lint test",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "contributors:update": "node scripts/update-contributors.js",
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",
@@ -35,9 +34,7 @@
     "lint:scss": "stylelint '{packages,samples}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
     "lint": "npm-run-all --parallel lint:*",
-    "precommit": "lint-staged && yarn test && yarn contributors:update",
     "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
-    "prepush": "yarn ci:build && npm-run-all --parallel test lint build-docs",
     "scaffold": "node scripts/scaffold.js",
     "test": "jest --config config/jest.config.js",
     "test:e2e": "node scripts/e2e.js",
@@ -170,5 +167,12 @@
       "**/**.png",
       "build/**"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged && yarn test && yarn contributors:update",
+      "pre-push": "yarn ci:build && npm-run-all --parallel test lint build-docs"
+    }
   }
 }

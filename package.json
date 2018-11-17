@@ -98,7 +98,7 @@
     "jest-enzyme": "^6.0.0",
     "lerna": "^2.10.2",
     "lerna-update-wizard": "^0.9.4",
-    "lint-staged": "^7.0.4",
+    "lint-staged": "^8.0.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "nightwatch": "^0.9.21",

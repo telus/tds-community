@@ -458,11 +458,13 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-ordered-list@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tds/core-ordered-list/-/core-ordered-list-1.0.1.tgz#814c0aa5f56625ad7c37b945f76527fb8abecb49"
+"@tds/core-ordered-list@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@tds/core-ordered-list/-/core-ordered-list-2.0.0.tgz#543fad43c044f258f6b5b5a316109cf953b2ecc1"
   dependencies:
     "@tds/core-box" "^1.0.1"
+    "@tds/core-text" "^1.0.2"
+    "@tds/util-prop-types" "^1.0.0"
     prop-types "^15.5.10"
 
 "@tds/core-paragraph@^1.0.0":

@@ -62,7 +62,7 @@
     "@tds/core-image": "^1.0.0",
     "@tds/core-input": "^1.0.3",
     "@tds/core-link": "^1.0.3",
-    "@tds/core-ordered-list": "^1.0.1",
+    "@tds/core-ordered-list": "^2.0.0",
     "@tds/core-paragraph": "^1.0.2",
     "@tds/core-strong": "^1.0.0",
     "@tds/core-text": "^1.0.2",

@@ -508,11 +508,13 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-unordered-list@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tds/core-unordered-list/-/core-unordered-list-1.0.1.tgz#917c0feb9d7b12730a1540937ae14d7c32207306"
+"@tds/core-unordered-list@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@tds/core-unordered-list/-/core-unordered-list-2.0.0.tgz#b13fcf52b1b6cfffbbcbdbc85ebfbb724cb943f7"
   dependencies:
     "@tds/core-box" "^1.0.1"
+    "@tds/core-text" "^1.0.2"
+    "@tds/util-prop-types" "^1.0.0"
     prop-types "^15.5.10"
 
 "@tds/util-prop-types@^1.0.0":

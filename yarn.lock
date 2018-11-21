@@ -515,6 +515,10 @@
     "@tds/core-box" "^1.0.1"
     prop-types "^15.5.10"
 
+"@tds/util-prop-types@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tds/util-prop-types/-/util-prop-types-1.0.0.tgz#1d937e2fc377ea766ed7c07d37ef187005b88895"
+
 "@telusdigital/eslint-config@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@telusdigital/eslint-config/-/eslint-config-1.2.0.tgz#27725b873e3f9f0f811ebb78bce12cb9252935f8"

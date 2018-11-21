@@ -86,6 +86,42 @@
       "contributions": [
         "tds"
       ]
+    },
+    {
+      "login": "Andrew-K-Lam",
+      "name": "Andrew Lam",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/931411?v=4",
+      "profile": "https://github.com/Andrew-K-Lam",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "jraff",
+      "name": "Jordan Raffoul",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1036187?v=4",
+      "profile": "http://jordanraffoul.com",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "nicmak",
+      "name": "Nicholas Mak",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22725151?v=4",
+      "profile": "https://github.com/nicmak",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "renovate[bot]",
+      "name": "renovate[bot]",
+      "avatar_url": "https://avatars1.githubusercontent.com/in/2740?v=4",
+      "profile": "https://github.com/apps/renovate",
+      "contributions": [
+        "tds"
+      ]
     }
   ]
 }

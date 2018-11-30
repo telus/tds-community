@@ -25,6 +25,5 @@ See <!-- put issue number here, or delete this section -->
 
 - Commits follow our [Developer Guide](https://github.com/telus/tds-community/blob/chore/template-hints/.github/CONTRIBUTING.md)
 - [ ] New code is unit tested
-- [ ] For code changes, run `yarn prepr` locally
-  - make sure visual and accessibility tests pass
-  - paste the lerna version output
+- [ ] make sure visual and accessibility tests pass
+- [ ] make sure code builds

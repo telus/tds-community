@@ -79,7 +79,7 @@ When developing or maintaining community components, they typically undergo the 
 
 ## Designer guide
 
-Before transforming designs into code, they must be audited. Please speak to your team's DPA designer representative for more information.
+Before transforming designs into code, they must be audited. Please speak to your team's design lead for more information.
 
 _This section will be completed soon._
 
@@ -124,8 +124,8 @@ type(scope): commit message here
 This format always includes:
 
 - Commit type
-- Commit scope in brackets, followed by a colon
-- A message describing what the commit is, preferably written in present tense with no capital letters
+- Commit scope in parentheses, followed by a colon
+- A message describing what the commit is, preferably written in present simple tense with no capital letters
 
 #### Commit types
 
@@ -140,7 +140,7 @@ This format always includes:
 
 #### Commit scopes
 
-There are two things that could be used as a commit scope:
+The following could be used as a commit scope:
 
 - If modifying a component, use the full package name of said component. Example: `(community-sample-pilter)`.
 - If modifying TDS Community tooling or docs unrelated to one component, use the name of the root folder being edited. For example, a commit that edits a file in `/scripts/utils` will use the scope `(scripts)`.

@@ -1586,10 +1586,6 @@
     "@tds/util-prop-types" "^1.1.0"
     prop-types "^15.5.10"
 
-"@tds/util-prop-types@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tds/util-prop-types/-/util-prop-types-1.0.0.tgz#1d937e2fc377ea766ed7c07d37ef187005b88895"
-
 "@tds/util-prop-types@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@tds/util-prop-types/-/util-prop-types-1.1.0.tgz#12df4129930373a1383f85bc24c72f0ac98fce4d"

@@ -71,17 +71,19 @@ We have incorporated tooling to bake-in and automate as many of these principles
 
 ## Process
 
-When developing or maintaining community components, they typically undergo the following process:
-
-1.  Commonly-used components are identified by design leads and an issue is opened on GitHub for a member of the [Digital Platform Ambassadors](https://github.com/orgs/telus/teams/digital-platform-ambassadors) (DPA) to delegate to someone to develop **after designs are approved by the DPA**. Note, anyone can open an issue for defects or feature requests.
-2.  Following the [developer guide](#developer-guide) below, a developer builds a component and then submits a pull request
-3.  Once all checks and criteria are met, a DPA member merges the pull request and updated packages can get deployed to npmjs.org; documentation for components are also updated and published to the [TDS Community Catalogue](https://tds.telus.com/community/index.html)
+When developing or maintaining community components, they typically undergo a set of phases as represented by the [Community Backlog](https://github.com/telus/tds-community/projects/1) project board. When viewing or managing the project board, please follow the [Community Backlog project board guide](../guide/Community_Backlog.md).
 
 ## Designer guide
 
 Before transforming designs into code, they must be audited. Please speak to your team's design lead for more information.
 
-_This section will be completed soon._
+When creating components for Sketch and Invision DSM, the following criteria must be met:
+
+- Components need to be responsive and able to resize where possible
+- Components need to be smart so all variants can change with overrides (where possible)
+- Put the Sketch component in the TDS-community DSM library under the correct folder/category
+- Add documentation in the description of the component in DSM as well as the name of the designer who designed the component
+- Add references to published documentation rather than duplicate content (eg. link to the tds.telus.com). This can only be done after coded component documentation has been released.
 
 ## Developer guide
 

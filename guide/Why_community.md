@@ -4,9 +4,9 @@ We recognize that the current business climate is about quicker and quicker rele
 
 TELUS leadership believes that sometimes you have to slow down to go faster, and that the Design System is one of those initiatives. They are asking you to invest up front in building Community components, knowing that later on the rewards to the entire TELUS ecosystem will be much greater.
 
-**Platform thinking**
+## Platform thinking
 
-The secret to platform thinking is asking ‘Could anyone else benefit from this?’. If the answer is yes, then [submit an issue to TDS Community](https://github.com/telus/tds-community/issues/new/choose).
+The secret to platform thinking is asking 'Could anyone else benefit from this?'. If the answer is yes, then [submit an issue to TDS Community](https://github.com/telus/tds-community/issues/new/choose).
 
 The DPA will let you know if something similar already exists, and your leads can help you prepare it for the community. They might offer design or development assistance, ask you to add a few additional requirements, or simply give the green light to put your component straight into the repo.
 

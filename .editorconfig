@@ -13,3 +13,5 @@ trim_trailing_whitespace = true
 # Disable trailing whitespace for Markdown files to make it easier to format them
 [*.md]
 trim_trailing_whitespace = false
+# Included as a temporary measure until https://github.com/prettier/prettier/issues/5635 is addressed
+indent_size = unset

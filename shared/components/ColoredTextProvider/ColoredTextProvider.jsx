@@ -10,14 +10,20 @@ class ColoredTextProvider extends React.Component {
 
   render() {
     const { colorClassName, children } = this.props
-
+    if (colorClassName === null) {
+      return <div>{children}</div>
+    }
     return <div className={colorClassName}>{children}</div>
   }
 }
 
 ColoredTextProvider.propTypes = {
-  colorClassName: PropTypes.string.isRequired,
+  colorClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
+}
+
+ColoredTextProvider.defaultProps = {
+  colorClassName: null,
 }
 
 ColoredTextProvider.childContextTypes = {

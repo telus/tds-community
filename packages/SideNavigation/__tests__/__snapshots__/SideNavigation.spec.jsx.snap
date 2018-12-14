@@ -241,7 +241,9 @@ exports[`SideNavigation renders 1`] = `
                                             <div
                                               className="TDS_Box-modules__horizontalPadding-2___3hmwJ label"
                                             >
-                                              <ColoredTextProvider>
+                                              <ColoredTextProvider
+                                                colorClassName={null}
+                                              >
                                                 <div>
                                                   <Text
                                                     block={false}
@@ -462,7 +464,9 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                             <div
                                               className="TDS_Box-modules__horizontalPadding-2___3hmwJ label"
                                             >
-                                              <ColoredTextProvider>
+                                              <ColoredTextProvider
+                                                colorClassName={null}
+                                              >
                                                 <div>
                                                   <Text
                                                     block={false}

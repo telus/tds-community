@@ -218,7 +218,6 @@ module.exports = {
         },
         {
           test: /\.scss$/,
-          exclude: /docs/,
           use: [
             'style-loader',
             {
@@ -238,11 +237,6 @@ module.exports = {
             },
             'sass-loader',
           ],
-        },
-        {
-          test: /\.scss$/,
-          exclude: /packages/,
-          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
           test: /\.css$/,

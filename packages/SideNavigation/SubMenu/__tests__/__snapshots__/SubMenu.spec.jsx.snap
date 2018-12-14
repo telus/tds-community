@@ -29,7 +29,9 @@ exports[`SideNavigation.SubMenu renders 1`] = `
               inline={false}
               tag="div"
             >
-              <ColoredTextProvider>
+              <ColoredTextProvider
+                colorClassName={null}
+              >
                 <Text
                   block={false}
                   bold={true}

@@ -45,23 +45,23 @@ const Link = ({ reactRouterLinkComponent, children, active, subMenuLink, ...rest
 
 Link.propTypes = {
   /**
-   * Text of the Link
+   * Text of the Link.
    */
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+  children: PropTypes.string.isRequired,
   /**
-   * Target URL
+   * Target URL.
    */
   href: PropTypes.string,
   /**
-   * Optional function call for the Link.  Used mainly to handle drop down for SubMenu
+   * Optional function call for the Link.  Used mainly to handle drop down for SubMenu.
    */
   onClick: PropTypes.func,
   /**
-   * Active state for the link (if you are on the current URL of the link)
+   * Active state for the link (if you are on the current URL of the link).
    */
   active: PropTypes.bool,
   /**
-   * Describes whether think link is used as a SubMenu header or not
+   * Describes whether the link is used as a SubMenu header or not.
    */
   subMenuLink: PropTypes.bool,
   /**
@@ -69,7 +69,7 @@ Link.propTypes = {
    */
   reactRouterLinkComponent: PropTypes.func,
   /**
-   * Target URL (if using 'reactRouterLinkComponent')
+   * Target URL (if using 'reactRouterLinkComponent').
    */
   to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 }

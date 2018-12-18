@@ -10,7 +10,7 @@ import SubMenu from './SubMenu/SubMenu'
 import styles from './SideNavigation.scss'
 
 /**
- * The SideNavigation component is used to display a large mass of educational / informational content,
+ * The SideNavigation component is used in conjuntion with a large mass of educational / informational content,
  * allowing the user to navigate between options frequently and efficiently.
  * @version ./package.json
  */
@@ -93,11 +93,11 @@ class SideNavigation extends Component {
 
     return (
       <div
+        {...safeRest(rest)}
         ref={c => {
           this._sideNavContainer = c
         }}
         className={styles.container}
-        {...safeRest(rest)}
       >
         <nav
           ref={c => {

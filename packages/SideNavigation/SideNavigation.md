@@ -1,4 +1,4 @@
-Displays multiple links on a page for easier navigation
+Displays multiple links on a page for easier navigation.
 
 ### Usage Criteria
 
@@ -6,7 +6,7 @@ Displays multiple links on a page for easier navigation
 - Use when content priority is neutral
 - Use when the IA for transactional & informational experiences calls for 7+ categories
 - Flexible character count for category and link titles
-- We do not recommend using in conjunction with `Breadcrumbs`
+- We do not recommend using in conjunction with [Breadcrumbs](https://tds.telus.com/components/index.html#breadcrumbs)
 
 ```
 <FlexGrid limitWidth={false} gutter={false}>

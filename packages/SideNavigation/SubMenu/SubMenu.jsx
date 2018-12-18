@@ -54,14 +54,12 @@ const SubMenu = ({ children, label, onClick, id, isOpen, active }) => {
           </FlexGrid>
         </Box>
       </button>
-      {isOpen ? (
+      {isOpen && (
         <ul className={styles.boxShadow}>
           {React.Children.map(children, child => (
             <li>{React.cloneElement(child, options)}</li>
           ))}
         </ul>
-      ) : (
-        false
       )}
     </div>
   )
@@ -69,31 +67,31 @@ const SubMenu = ({ children, label, onClick, id, isOpen, active }) => {
 
 SubMenu.propTypes = {
   /**
-   * An array of `SideNavigation.Link`
+   * An array of `SideNavigation.Link`.
    */
   children: componentWithName('Link'),
   /**
-   * Label of the SubMenu
+   * Label of the SubMenu.
    */
   label: PropTypes.string.isRequired,
   /**
-   * Behaviour when clicking the SubMenu. Passed from <SideNavigation> to toggle open or close the SubMenu
+   * Behaviour when clicking the SubMenu. Passed from <SideNavigation> to toggle open or close the SubMenu.
    *
    * @ignore
    */
   onClick: PropTypes.func,
   /**
-   * ID of the SubMenu, must be unique when using multiple SubMenus within the same SideNavigation component
+   * ID of the SubMenu, must be unique when using multiple SubMenus within the same SideNavigation component.
    */
   id: PropTypes.string.isRequired,
   /**
-   * Describes whether this SubMenu is open or not. Used in conjunction with ID so that only one SubMenu is open at a time
+   * Describes whether this SubMenu is open or not. Used in conjunction with ID so that only one SubMenu is open at a time.
    *
    * @ignore
    */
   isOpen: PropTypes.bool,
   /**
-   * State of whether user is in one of the links in the SubMenu
+   * State of whether user is in one of the links in the SubMenu.
    */
   active: PropTypes.bool,
 }

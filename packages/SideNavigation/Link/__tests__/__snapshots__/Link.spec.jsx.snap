@@ -28,3 +28,32 @@ exports[`SideNavigation.Link renders 1`] = `
   </Box>
 </a>
 `;
+
+exports[`SideNavigation.Link renders with active styles 1`] = `
+<a
+  className="link"
+  href="#"
+  to={null}
+>
+  <Box
+    dangerouslyAddClassName="box active"
+    horizontal={3}
+    inline={false}
+    tag="div"
+    vertical={3}
+  >
+    <ColoredTextProvider
+      colorClassName="hover activeText"
+    >
+      <Text
+        block={false}
+        bold={true}
+        invert={false}
+        size="medium"
+      >
+        Home
+      </Text>
+    </ColoredTextProvider>
+  </Box>
+</a>
+`;

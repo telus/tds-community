@@ -20,6 +20,16 @@ describe('SideNavigation.Link', () => {
     expect(link).toMatchSnapshot()
   })
 
+  it('renders with active styles', () => {
+    const link = shallow(
+      <Link href="#" active>
+        Home
+      </Link>
+    )
+
+    expect(link).toMatchSnapshot()
+  })
+
   it('must use `reactRouterLinkComponent` and `to` props together', () => {
     const doShallowLink = (overrides = {}) => shallow(<Link {...overrides}>Go home</Link>)
     const MyLink = () => <span />

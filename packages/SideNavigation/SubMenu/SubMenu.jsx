@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 import Box from '@tds/core-box'
-import FlexGrid from '@tds/core-flex-grid'
 import Text from '@tds/core-text'
 import { componentWithName } from '@tds/util-prop-types'
 
@@ -29,29 +28,13 @@ const SubMenu = ({ children, label, onClick, id, isOpen, active }) => {
         }}
         className={active ? styles.active : styles.button}
       >
-        <Box vertical={3}>
-          <FlexGrid limitWidth={false} gutter={false}>
-            <FlexGrid.Row horizontalAlign="start">
-              <FlexGrid.Col xs={9}>
-                <Box horizontal={2} dangerouslyAddClassName={styles.label}>
-                  <ColoredTextProvider>
-                    <Text size="medium" bold={active}>
-                      {label}
-                    </Text>
-                  </ColoredTextProvider>
-                </Box>
-              </FlexGrid.Col>
-              <FlexGrid.Col>
-                <Box dangerouslyAddClassName={styles.floatIcon}>
-                  <DecorativeIcon
-                    symbol={isOpen ? 'caretUp' : 'caretDown'}
-                    variant="secondary"
-                    size={16}
-                  />
-                </Box>
-              </FlexGrid.Col>
-            </FlexGrid.Row>
-          </FlexGrid>
+        <Box vertical={3} inline horizontal={2} dangerouslyAddClassName={styles.space}>
+          <ColoredTextProvider>
+            <Text size="medium" bold={active}>
+              {label}
+            </Text>
+          </ColoredTextProvider>
+          <DecorativeIcon symbol={isOpen ? 'caretUp' : 'caretDown'} variant="secondary" size={16} />
         </Box>
       </button>
       {isOpen && (

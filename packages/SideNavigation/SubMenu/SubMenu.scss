@@ -45,3 +45,10 @@ $font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     cursor: pointer;
   }
 }
+
+.space {
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  display: flex;
+}

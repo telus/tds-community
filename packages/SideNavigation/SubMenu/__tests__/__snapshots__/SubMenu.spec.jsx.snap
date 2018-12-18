@@ -9,55 +9,29 @@ exports[`SideNavigation.SubMenu renders 1`] = `
     onClick={[Function]}
   >
     <Box
-      inline={false}
+      dangerouslyAddClassName="space"
+      horizontal={2}
+      inline={true}
       tag="div"
       vertical={3}
     >
-      <FlexGrid
-        gutter={false}
-        limitWidth={false}
+      <ColoredTextProvider
+        colorClassName={null}
       >
-        <Row$$1
-          horizontalAlign="start"
+        <Text
+          block={false}
+          bold={true}
+          invert={false}
+          size="medium"
         >
-          <Col$$1
-            xs={9}
-          >
-            <Box
-              dangerouslyAddClassName="label"
-              horizontal={2}
-              inline={false}
-              tag="div"
-            >
-              <ColoredTextProvider
-                colorClassName={null}
-              >
-                <Text
-                  block={false}
-                  bold={true}
-                  invert={false}
-                  size="medium"
-                >
-                  Threefdsfdsfds
-                </Text>
-              </ColoredTextProvider>
-            </Box>
-          </Col$$1>
-          <Col$$1>
-            <Box
-              dangerouslyAddClassName="floatIcon"
-              inline={false}
-              tag="div"
-            >
-              <DecorativeIcon
-                size={16}
-                symbol="caretDown"
-                variant="secondary"
-              />
-            </Box>
-          </Col$$1>
-        </Row$$1>
-      </FlexGrid>
+          Threefdsfdsfds
+        </Text>
+      </ColoredTextProvider>
+      <DecorativeIcon
+        size={16}
+        symbol="caretDown"
+        variant="secondary"
+      />
     </Box>
   </button>
 </div>

@@ -61,7 +61,6 @@ describe('SideNavigation', () => {
     sideNavigation
       .find('SubMenu')
       .find('button')
-      .first()
       .simulate('click')
     expect(sideNavigation.state('open')).toEqual(null)
   })

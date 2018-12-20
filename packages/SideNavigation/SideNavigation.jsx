@@ -20,14 +20,13 @@ class SideNavigation extends Component {
     this.state = {
       open: [],
       variant: 'top',
-      accordion: true,
+      accordion: this.props.accordion,
     }
     this.adjustWidth = this.adjustWidth.bind(this)
     this.removeEventListeners = this.removeEventListeners.bind(this)
   }
 
   componentDidMount() {
-    this.setState({ accordion: this.props.accordion })
     this.checkOffset()
     window.addEventListener('scroll', this.checkOffset)
     window.addEventListener('click', this.checkOffset)

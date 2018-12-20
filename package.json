@@ -1,12 +1,12 @@
 {
-  "name": "tds-community",
+  "name": "@telus/tds-community",
   "version": "1.0.0",
   "description": "The TELUS Design System community featuring shared React components",
-  "main": "n/a",
-  "repository": "git@github.com:telusdigital/tds-community.git",
-  "author": "TELUS digital",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telus/tds-community.git"
+  },
   "license": "MIT",
-  "private": true,
   "workspaces": [
     "packages/*",
     "samples/*",
@@ -30,10 +30,18 @@
     "dev": "styleguidist server --config config/styleguide.config.js",
     "dev:e2e": "STYLEGUIDIST_ENV=e2e styleguidist server --config config/styleguide.config.js",
     "lerna:publish": "node scripts/publish.js",
-    "lint:js": "eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
+    "lint:js": "npx eslint packages samples config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,samples}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
-    "lint": "npm-run-all --parallel lint:*",
+    "lint": "npx npm-run-all -p -c -l lint:*",
+    "lint:md": "npx remark --quiet --frail .",
+    "lint:audit": "npm audit",
+    "lint:deps": "npx updated",
+    "coverage": "opener coverage/lcov-report/index.html",
+    "setup-local": "npx install-group peer --package @telus/build-essential --no-save",
+    "fix:js": "npm run lint:js -- --fix",
+    "fix:md": "npm run lint:md -- -o",
+    "fix:deps": "npm run lint:deps -- --update",
     "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
     "scaffold": "node scripts/scaffold.js",
     "test": "jest --config config/jest.config.js",
@@ -64,12 +72,10 @@
     "@tds/core-strong": "^1.0.0",
     "@tds/core-text": "^1.0.2",
     "@tds/core-unordered-list": "^1.0.1",
-    "@telusdigital/eslint-config": "^1.2.0",
     "all-contributors-cli": "^4.11.1",
     "autoprefixer": "^8.3.0",
     "aws-sdk": "^2.230.1",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
@@ -82,13 +88,8 @@
     "echint": "^4.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.17.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jest": "^21.12.2",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.7.0",
     "husky": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.3",
@@ -140,7 +141,7 @@
   "lint-staged": {
     "linters": {
       "*.{js,jsx}": [
-        "eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix",
+        "npx eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix",
         "git add"
       ],
       "*.scss": "stylelint --config config/stylelint.config.js",
@@ -168,6 +169,17 @@
       "build/**"
     ]
   },
+  "keywords": [
+    "telus",
+    "tds"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telus/tds-community/issues"
+  },
+  "homepage": "https://github.com/telus/tds-community",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",

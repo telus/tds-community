@@ -75,6 +75,11 @@ $desktop: (
   width: inherit;
 }
 
+.fixedOverflow {
+  overflow-y: auto;
+  bottom: 0px;
+}
+
 .bottomPosition {
   position: absolute;
   bottom: 0px;

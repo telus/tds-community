@@ -2,6 +2,7 @@
 
 exports[`SideNavigation renders 1`] = `
 <SideNavigation
+  accordion={true}
   verticalSpacing={3}
 >
   <div
@@ -172,7 +173,7 @@ exports[`SideNavigation renders 1`] = `
         >
           <SubMenu
             active={true}
-            id="Three"
+            id="TDS-SideNavigation-3"
             isOpen={false}
             label="Threefdsfdsfds"
             onClick={[Function]}
@@ -242,7 +243,9 @@ exports[`SideNavigation renders 1`] = `
 `;
 
 exports[`SideNavigation renders without vertical spacing 1`] = `
-<SideNavigation>
+<SideNavigation
+  accordion={true}
+>
   <div
     className="container"
   >
@@ -309,7 +312,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
         >
           <SubMenu
             active={true}
-            id="Three"
+            id="TDS-SideNavigation-1"
             isOpen={false}
             label="Threefdsfdsfds"
             onClick={[Function]}

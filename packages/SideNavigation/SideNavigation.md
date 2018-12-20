@@ -12,12 +12,12 @@ Displays multiple links on a page for easier navigation.
 <FlexGrid limitWidth={false} gutter={false}>
   <FlexGrid.Row>
     <FlexGrid.Col xs={5}>
-      <SideNavigation verticalSpacing={3}>
+      <SideNavigation accordion={true} verticalSpacing={3}>
         <SideNavigation.Link href="#">Top of the page</SideNavigation.Link>
-        <SideNavigation.SubMenu label="Overview" active id="introduction">
+        <SideNavigation.SubMenu label="Overview" active>
           <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
         </SideNavigation.SubMenu>
-        <SideNavigation.SubMenu label="Reference Architecture" id="reference-arch">
+        <SideNavigation.SubMenu label="Reference Architecture">
           <SideNavigation.Link href="#reference">Overview</SideNavigation.Link>
         </SideNavigation.SubMenu>
       </SideNavigation>

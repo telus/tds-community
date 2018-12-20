@@ -9,13 +9,7 @@ describe('SideNavigation', () => {
       <SideNavigation.Link href="#">Home</SideNavigation.Link>
       <SideNavigation.Link href="#one">One</SideNavigation.Link>
       <SideNavigation.Link href="#two">Two</SideNavigation.Link>
-      <SideNavigation.SubMenu
-        active
-        label="Threefdsfdsfds"
-        id="Three"
-        onClick={() => {}}
-        isOpen={false}
-      >
+      <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
         <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
         <SideNavigation.Link href="#">Option 2</SideNavigation.Link>
         <SideNavigation.Link href="#">Option 3</SideNavigation.Link>
@@ -34,13 +28,7 @@ describe('SideNavigation', () => {
     const childrenNoSpacing = (
       <SideNavigation>
         <SideNavigation.Link href="#">Home</SideNavigation.Link>
-        <SideNavigation.SubMenu
-          active
-          label="Threefdsfdsfds"
-          id="Three"
-          onClick={() => {}}
-          isOpen={false}
-        >
+        <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
           <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
         </SideNavigation.SubMenu>
       </SideNavigation>
@@ -57,12 +45,76 @@ describe('SideNavigation', () => {
       .find('SubMenu')
       .find('button')
       .simulate('click')
-    expect(sideNavigation.state('open')).toEqual('Three')
+    expect(sideNavigation.state('open')).toEqual(['TDS-SideNavigation-3'])
     sideNavigation
       .find('SubMenu')
       .find('button')
       .simulate('click')
-    expect(sideNavigation.state('open')).toEqual(null)
+    expect(sideNavigation.state('open')).toEqual([])
+  })
+
+  it('toggles open multiple submenus', () => {
+    const childrenAccordionFalse = (
+      <SideNavigation accordion={false}>
+        <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
+          <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
+        </SideNavigation.SubMenu>
+        <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
+          <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
+        </SideNavigation.SubMenu>
+      </SideNavigation>
+    )
+    const sideNavigation = mount(childrenAccordionFalse)
+
+    sideNavigation
+      .find('SubMenu')
+      .find('button')
+      .at(0)
+      .simulate('click')
+    expect(sideNavigation.state('open')).toEqual(['TDS-SideNavigation-0'])
+    sideNavigation
+      .find('SubMenu')
+      .find('button')
+      .at(1)
+      .simulate('click')
+    expect(sideNavigation.state('open')).toEqual(['TDS-SideNavigation-0', 'TDS-SideNavigation-1'])
+    sideNavigation
+      .find('SubMenu')
+      .find('button')
+      .at(0)
+      .simulate('click')
+    expect(sideNavigation.state('open')).toEqual(['TDS-SideNavigation-1'])
+    sideNavigation
+      .find('SubMenu')
+      .find('button')
+      .at(1)
+      .simulate('click')
+    expect(sideNavigation.state('open')).toEqual([])
+  })
+
+  it('toggles does not allow custom props', () => {
+    const childrenAccordionFalse = (
+      <SideNavigation accordion={false}>
+        <SideNavigation.SubMenu
+          active
+          label="Threefdsfdsfds"
+          onClick={() => {}}
+          isOpen={false}
+          id="321321"
+        >
+          <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
+        </SideNavigation.SubMenu>
+        <SideNavigation.Link href="#">Option 2</SideNavigation.Link>
+      </SideNavigation>
+    )
+    const sideNavigation = mount(childrenAccordionFalse)
+
+    sideNavigation
+      .find('SubMenu')
+      .find('button')
+      .at(0)
+      .simulate('click')
+    expect(sideNavigation.state('open')).toEqual(['TDS-SideNavigation-0'])
   })
 
   it('does not allow custom CSS', () => {

@@ -18,14 +18,16 @@ class SideNavigation extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      open: null,
+      open: [],
       variant: 'top',
+      accordion: true,
     }
     this.adjustWidth = this.adjustWidth.bind(this)
     this.removeEventListeners = this.removeEventListeners.bind(this)
   }
 
   componentDidMount() {
+    this.setState({ accordion: this.props.accordion })
     this.checkOffset()
     window.addEventListener('scroll', this.checkOffset)
     window.addEventListener('click', this.checkOffset)
@@ -44,7 +46,18 @@ class SideNavigation extends Component {
   }
 
   toggleOpen = id => {
-    this.setState({ open: id !== this.state.open ? id : null })
+    if (this.checkAccordion(id, this.state.accordion)) {
+      const array = [...this.state.open]
+      const index = array.indexOf(id)
+      if (index !== -1) {
+        array.splice(index, 1)
+        this.setState({ open: array })
+      }
+    } else if (this.state.accordion) {
+      this.setState({ open: [id] })
+    } else {
+      this.setState({ open: [...this.state.open, id] })
+    }
   }
 
   removeEventListeners() {
@@ -78,9 +91,16 @@ class SideNavigation extends Component {
     }
   }
 
+  checkAccordion = id => {
+    return this.state.open.some(el => {
+      return el === id
+    })
+  }
+
   render() {
-    const { children, verticalSpacing, ...rest } = this.props
-    const { open, variant } = this.state
+    const { children, verticalSpacing, accordion, ...rest } = this.props
+    const { variant } = this.state
+
     let classes = joinClassNames(
       verticalSpacing ? styles[`verticalPadding-${verticalSpacing}`] : undefined,
       styles.topPosition
@@ -106,13 +126,15 @@ class SideNavigation extends Component {
           className={classes}
         >
           <ul className={styles.spaced}>
-            {React.Children.map(children, child => {
+            {React.Children.map(children, (child, index) => {
               let options = {}
+              const id = `TDS-SideNavigation-${index}`
               if (child.type.name === 'SubMenu') {
                 options = {
                   onClick: this.toggleOpen,
-                  isOpen: child.props.id === open,
+                  isOpen: this.checkAccordion(id),
                   active: child.props.active,
+                  id,
                 }
               }
               return <li className={styles.navLi}>{React.cloneElement(child, options)}</li>
@@ -133,10 +155,15 @@ SideNavigation.propTypes = {
    * Indent content from the container's top edge by applying padding.
    */
   verticalSpacing: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
+   * Identifies if only one `SideNavigation.SubMenu` should be open at a time.
+   */
+  accordion: PropTypes.bool,
 }
 
 SideNavigation.defaultProps = {
   verticalSpacing: undefined,
+  accordion: true,
 }
 
 SideNavigation.Link = Link

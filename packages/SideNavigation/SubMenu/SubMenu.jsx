@@ -65,8 +65,9 @@ SubMenu.propTypes = {
   onClick: PropTypes.func,
   /**
    * ID of the SubMenu, must be unique when using multiple SubMenus within the same SideNavigation component.
+   * @ignore
    */
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   /**
    * Describes whether this SubMenu is open or not. Used in conjunction with ID so that only one SubMenu is open at a time.
    *
@@ -84,6 +85,7 @@ SubMenu.defaultProps = {
   isOpen: false,
   active: false,
   children: undefined,
+  id: undefined,
 }
 
 export default SubMenu

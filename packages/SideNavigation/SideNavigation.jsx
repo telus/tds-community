@@ -80,6 +80,13 @@ class SideNavigation extends Component {
     ) {
       this.setState({ variant: 'bottom' })
     } else if (
+      this.checkOverflow(this._sideNav) &&
+      sideNavRect.bottom <= containerRect.bottom &&
+      this.state.variant !== 'bottom' &&
+      sideNavRect.height < containerRect.height
+    ) {
+      this.setState({ variant: 'fixedOverflow' })
+    } else if (
       ((sideNavRect.top < 0 &&
         containerRect.top < 0 &&
         sideNavRect.bottom <= containerRect.bottom &&
@@ -97,6 +104,10 @@ class SideNavigation extends Component {
     })
   }
 
+  checkOverflow = element => {
+    return element.scrollHeight > window.innerHeight
+  }
+
   render() {
     const { children, verticalSpacing, accordion, ...rest } = this.props
     const { variant } = this.state
@@ -109,6 +120,8 @@ class SideNavigation extends Component {
       classes = styles.bottomPosition
     } else if (variant === 'fixed') {
       classes = styles.fixedPosition
+    } else if (variant === 'fixedOverflow') {
+      classes = joinClassNames(styles.fixedPosition, styles.fixedOverflow)
     }
 
     return (

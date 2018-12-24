@@ -19,13 +19,11 @@ const Link = ({ reactRouterLinkComponent, children, active, subMenuLink, ...rest
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 
-  const textClasses = joinClassNames(styles.hover, active && styles.activeText)
-
   const boxClasses = joinClassNames(styles.box, active && styles.active)
 
   const innerLink = (
     <Box vertical={subMenuLink ? 2 : 3} horizontal={3} dangerouslyAddClassName={boxClasses}>
-      <ColoredTextProvider colorClassName={textClasses}>
+      <ColoredTextProvider colorClassName={active ? styles.activeText : styles.hover}>
         <Text size="medium" bold={active}>
           {children}
         </Text>

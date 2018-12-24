@@ -20,8 +20,16 @@ if (
   process.exit(1)
 }
 
-const { output } = spawnSync('node', ['scripts/prePr.js', '--conventional-commits', '--yes'])
-const changes = output[1].toString('utf8')
+const { output } = spawnSync('scripts/prePr.sh')
+
+const formattedVersions = (output[1].toString('utf8').match(/(\s-.*)*/g) || [])
+  .join('')
+  .replace(/\s-\s/g, '\n- ')
+
+const changes =
+  'Packages pending updates:\n' +
+  formattedVersions +
+  '\n\nIf this is not what you expected, ensure that your commit messages follow the TDS commit types guide on this page: https://tds.telus.com/contributing/developer-guide.html and try again.'
 
 request.post({
   url: `https://api.github.com/repos/${process.env.TRAVIS_REPO_SLUG}/issues/${

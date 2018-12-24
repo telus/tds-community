@@ -43,7 +43,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
     vertical={3}
   >
     <ColoredTextProvider
-      colorClassName="hover activeText"
+      colorClassName="activeText"
     >
       <Text
         block={false}

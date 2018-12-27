@@ -94,7 +94,7 @@
     "eslint-plugin-react": "^7.7.0",
     "husky": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.4.3",
+    "jest": "^23.0.0",
     "jest-enzyme": "^7.0.0",
     "lerna": "^2.10.2",
     "lerna-update-wizard": "^0.9.4",

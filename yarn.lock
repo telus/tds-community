@@ -9407,10 +9407,10 @@ left-pad@^1.2.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lerna-update-wizard@^0.9.4:
-  version "0.9.4"
-  resolved "https://registry.npmjs.org/lerna-update-wizard/-/lerna-update-wizard-0.9.4.tgz#dfcfb00aeafd7749e590e389c2a6d405f7bdc9b3"
-  integrity sha512-1Mg4YnZjrFfiJ/xu2df0Y9aguS3ZwYLRSTH8sgCkLDBueDNf/a4+XiYlV7/cTucnY3gJNP/k2cIDCuyMtD17vg==
+lerna-update-wizard@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/lerna-update-wizard/-/lerna-update-wizard-0.11.0.tgz#c66cdacf53528e0cc6a56896d164964582a22cdf"
+  integrity sha512-gLoWi+O8F2HXPIIBhfw/NUbGuYswSbJqKlROi87o42KSVO7B2imYCma7+AMVtmI3Z0UOafYIY8kNGPrBsEaIWw==
   dependencies:
     chalk "^2.3.0"
     execution-time "^1.2.0"

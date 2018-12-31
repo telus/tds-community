@@ -5070,7 +5070,7 @@ eslint-config-airbnb@^16.0.0:
   dependencies:
     eslint-config-airbnb-base "^12.1.0"
 
-eslint-config-prettier@^3.0.0:
+eslint-config-prettier@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-3.3.0.tgz#41afc8d3b852e757f06274ed6c44ca16f939a57d"
   dependencies:
@@ -8232,7 +8232,6 @@ left-pad@^1.2.0:
 lerna-update-wizard@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/lerna-update-wizard/-/lerna-update-wizard-0.11.0.tgz#c66cdacf53528e0cc6a56896d164964582a22cdf"
-  integrity sha512-gLoWi+O8F2HXPIIBhfw/NUbGuYswSbJqKlROi87o42KSVO7B2imYCma7+AMVtmI3Z0UOafYIY8kNGPrBsEaIWw==
   dependencies:
     chalk "^2.3.0"
     execution-time "^1.2.0"

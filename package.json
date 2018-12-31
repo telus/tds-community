@@ -70,7 +70,7 @@
     "@tds/core-text": "^1.0.2",
     "@tds/core-unordered-list": "^2.0.0",
     "@telusdigital/eslint-config": "^1.2.0",
-    "all-contributors-cli": "^4.11.1",
+    "all-contributors-cli": "^5.0.0",
     "autoprefixer": "^8.3.0",
     "aws-sdk": "^2.230.1",
     "babel-core": "^6.26.0",

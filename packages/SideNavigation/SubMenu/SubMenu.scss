@@ -23,20 +23,22 @@ $font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   );
 }
 
-.active {
+button {
+  background-color: white;
   border: none;
+  width: 100%;
+}
+
+.active {
   border-left: 4px solid $color-telus-purple;
   color: $color-telus-purple;
-  width: 100%;
   &:hover {
     background-color: $color-white-lilac;
     cursor: pointer;
   }
 }
 
-.button {
-  border: none;
-  width: 100%;
+.buttonDefault {
   font-family: $font-telus;
   color: $color-shuttle-grey;
   &:hover {

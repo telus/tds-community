@@ -74,11 +74,6 @@ class SideNavigation extends Component {
     ) {
       this.setState({ variant: 'top' })
     } else if (
-      (sideNavRect.bottom > containerRect.bottom || sideNavRect.bottom <= 0) &&
-      sideNavRect.height <= containerRect.height
-    ) {
-      this.setState({ variant: 'bottom' })
-    } else if (
       this.checkOverflow(this._sideNav) &&
       sideNavRect.bottom <= containerRect.bottom &&
       this.state.variant !== 'bottom' &&
@@ -94,6 +89,11 @@ class SideNavigation extends Component {
       sideNavRect.height < containerRect.height
     ) {
       this.setState({ variant: 'fixed' })
+    } else if (
+      (sideNavRect.bottom > containerRect.bottom || sideNavRect.bottom <= 0) &&
+      sideNavRect.height <= containerRect.height
+    ) {
+      this.setState({ variant: 'bottom' })
     }
   }
 

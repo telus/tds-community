@@ -51,15 +51,13 @@ Link.propTypes = {
    */
   href: PropTypes.string,
   /**
-   * Optional function call for the Link.  Used mainly to handle drop down for SubMenu.
-   */
-  onClick: PropTypes.func,
-  /**
    * Active state for the link (if you are on the current URL of the link).
    */
   active: PropTypes.bool,
   /**
    * Describes whether the link is used as a SubMenu header or not.
+   *
+   * @ignore
    */
   subMenuLink: PropTypes.bool,
   /**
@@ -74,7 +72,6 @@ Link.propTypes = {
 
 Link.defaultProps = {
   href: undefined,
-  onClick: undefined,
   active: false,
   subMenuLink: false,
   reactRouterLinkComponent: null,

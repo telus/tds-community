@@ -32,6 +32,7 @@ class SideNavigation extends Component {
     window.addEventListener('click', this.checkOffset)
     this.adjustWidth()
     window.addEventListener('resize', this.adjustWidth)
+    this.checkActiveState()
   }
 
   componentWillUnmount() {
@@ -105,6 +106,15 @@ class SideNavigation extends Component {
 
   checkOverflow = element => {
     return element.scrollHeight > window.innerHeight
+  }
+
+  checkActiveState = () => {
+    React.Children.map(this.props.children, (child, index) => {
+      const id = `TDS-SideNavigation-${index}`
+      if (child.type.name === 'SubMenu' && child.props.active) {
+        this.toggleOpen(id)
+      }
+    })
   }
 
   render() {

@@ -172,7 +172,7 @@ exports[`SideNavigation renders 1`] = `
           key=".3"
         >
           <SubMenu
-            active={true}
+            active={false}
             id="TDS-SideNavigation-3"
             isOpen={false}
             label="Threefdsfdsfds"
@@ -182,7 +182,7 @@ exports[`SideNavigation renders 1`] = `
               className="mainDiv"
             >
               <button
-                className="active"
+                className="buttonDefault"
                 onClick={[Function]}
               >
                 <Box
@@ -201,12 +201,12 @@ exports[`SideNavigation renders 1`] = `
                       <div>
                         <Text
                           block={false}
-                          bold={true}
+                          bold={false}
                           invert={false}
                           size="medium"
                         >
                           <span
-                            className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__inheritColor___3YAyL"
+                            className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
                           >
                             Threefdsfdsfds
                           </span>
@@ -313,7 +313,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
           <SubMenu
             active={true}
             id="TDS-SideNavigation-1"
-            isOpen={false}
+            isOpen={true}
             label="Threefdsfdsfds"
             onClick={[Function]}
           >
@@ -354,24 +354,78 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                     </ColoredTextProvider>
                     <DecorativeIcon
                       size={16}
-                      symbol="caretDown"
+                      symbol="caretUp"
                       variant="secondary"
                     >
                       <Icon
                         aria-hidden="true"
                         size={16}
-                        symbol="caretDown"
+                        symbol="caretUp"
                         variant="secondary"
                       >
                         <i
                           aria-hidden="true"
-                          className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
+                          className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
                         />
                       </Icon>
                     </DecorativeIcon>
                   </div>
                 </Box>
               </button>
+              <ul
+                className="boxShadow"
+              >
+                <li
+                  key=".0"
+                >
+                  <Link
+                    active={false}
+                    href="#"
+                    reactRouterLinkComponent={null}
+                    subMenuLink={true}
+                    to={null}
+                  >
+                    <a
+                      className="link"
+                      href="#"
+                      to={null}
+                    >
+                      <Box
+                        dangerouslyAddClassName="box"
+                        horizontal={3}
+                        inline={false}
+                        tag="div"
+                        vertical={2}
+                      >
+                        <div
+                          className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T box"
+                        >
+                          <ColoredTextProvider
+                            colorClassName="hover"
+                          >
+                            <div
+                              className="hover"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="medium"
+                              >
+                                <span
+                                  className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                >
+                                  Option 1
+                                </span>
+                              </Text>
+                            </div>
+                          </ColoredTextProvider>
+                        </div>
+                      </Box>
+                    </a>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </SubMenu>
         </li>

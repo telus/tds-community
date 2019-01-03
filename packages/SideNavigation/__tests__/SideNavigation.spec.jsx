@@ -9,7 +9,7 @@ describe('SideNavigation', () => {
       <SideNavigation.Link href="#">Home</SideNavigation.Link>
       <SideNavigation.Link href="#one">One</SideNavigation.Link>
       <SideNavigation.Link href="#two">Two</SideNavigation.Link>
-      <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
+      <SideNavigation.SubMenu label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
         <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
         <SideNavigation.Link href="#">Option 2</SideNavigation.Link>
         <SideNavigation.Link href="#">Option 3</SideNavigation.Link>
@@ -56,10 +56,10 @@ describe('SideNavigation', () => {
   it('toggles open multiple submenus', () => {
     const childrenAccordionFalse = (
       <SideNavigation accordion={false}>
-        <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
+        <SideNavigation.SubMenu label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
           <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
         </SideNavigation.SubMenu>
-        <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
+        <SideNavigation.SubMenu label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
           <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
         </SideNavigation.SubMenu>
       </SideNavigation>
@@ -96,7 +96,6 @@ describe('SideNavigation', () => {
     const childrenAccordionFalse = (
       <SideNavigation accordion={false}>
         <SideNavigation.SubMenu
-          active
           label="Threefdsfdsfds"
           onClick={() => {}}
           isOpen={false}

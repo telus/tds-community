@@ -1,5 +1,3 @@
-Displays multiple links on a page for easier navigation.
-
 ### Usage Criteria
 
 - The `SideNavigation` component is for desktop viewports only

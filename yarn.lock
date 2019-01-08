@@ -1535,9 +1535,10 @@
     "@tds/core-box" "^1.0.1"
     prop-types "^15.5.10"
 
-"@tds/core-chevron-link@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@tds/core-chevron-link/-/core-chevron-link-1.0.2.tgz#2556ef3e4837c620cbc36409790f67a879aec698"
+"@tds/core-chevron-link@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@tds/core-chevron-link/-/core-chevron-link-1.1.2.tgz#d77bb9069c58c68a36de3d5d165425f87081f80c"
+  integrity sha512-NrgtBMsTjGisGFL+2IVW/S6guWWSnahfXK30lvWg3uE1JtIPw33nuU8a0gM/ic1h+pkfOgk0ZckSD312VNw+kA==
   dependencies:
     "@tds/core-box" "^1.0.1"
     "@tds/core-decorative-icon" "^1.0.0"
@@ -1547,9 +1548,10 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tds/core-colours/-/core-colours-1.0.0.tgz#4365f95784700934bdf62bb204ed93a850ec4358"
 
-"@tds/core-css-reset@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-css-reset/-/core-css-reset-1.0.0.tgz#3a0e1834585de8d890b64bd3eb8e46b034459850"
+"@tds/core-css-reset@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@tds/core-css-reset/-/core-css-reset-1.1.1.tgz#aa340b456cb9c4dc463a4ff273a696fbaed3ff3b"
+  integrity sha512-iC2RkRR2TT1g3BYXQLb3TCqOOgwnUQeLi18Kf2j7v0MYLABBXethe5qTpIAvfRpACDHJMNq4+oQDByRf9KAaNA==
 
 "@tds/core-decorative-icon@^1.0.0":
   version "1.0.0"
@@ -1557,21 +1559,25 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-flex-grid@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-flex-grid/-/core-flex-grid-2.2.0.tgz#ea7efd95c9931478fca802980ec92530ba709304"
+"@tds/core-flex-grid@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.npmjs.org/@tds/core-flex-grid/-/core-flex-grid-2.3.2.tgz#9867ee8a9ce840108f013a7772a11dacdf91c16d"
+  integrity sha512-LOs18z21BlVmf/RgfJi21H6YKJBxawhhTKLDD04m2xJbOH/Oe26+QmP2Csh6D/q7wI3ZuH/2EL1sYuk5vxyuMw==
   dependencies:
+    "@tds/util-prop-types" "^1.1.0"
     prop-types "^15.5.10"
 
-"@tds/core-hairline-divider@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-hairline-divider/-/core-hairline-divider-1.0.0.tgz#8b67735660dd836e5756ab18f835d6c3406b5db6"
-  dependencies:
-    prop-types "^15.5.10"
-
-"@tds/core-heading@^1.0.1":
+"@tds/core-hairline-divider@^1.0.1":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tds/core-heading/-/core-heading-1.0.1.tgz#f8aff400da265810661583e56701c429d1952205"
+  resolved "https://registry.npmjs.org/@tds/core-hairline-divider/-/core-hairline-divider-1.0.1.tgz#fa79e9ac63c5d40c83574bc4c00786ce59a0152b"
+  integrity sha512-YuIDBPNlu/zIiAumIceC26Oq40shTkNo2oJL9H72+nrSbnPndluWQFvtSDU3pxQ5E6MxTxpSsdlKDOf/H3aJgA==
+  dependencies:
+    prop-types "^15.5.10"
+
+"@tds/core-heading@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.npmjs.org/@tds/core-heading/-/core-heading-1.1.5.tgz#67c0ee5415488b48f05532495df9fda6349ef02e"
+  integrity sha512-+9s0FT2ZJd/trfeFLvEqtR54gGgZrqUJOGfgQe3K0dHqZDpO3ygrzpccfN/iUKVRn+mrODrbl/pCUaz5eYnnkA==
   dependencies:
     prop-types "^15.5.10"
 
@@ -1581,22 +1587,24 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-input-feedback@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tds/core-input-feedback/-/core-input-feedback-1.0.1.tgz#14783828cf411063b5135521e9fc3ebc766b1ce2"
+"@tds/core-input-feedback@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@tds/core-input-feedback/-/core-input-feedback-1.0.2.tgz#834b8078823260150e398d9e4323efd3c1ca2973"
+  integrity sha1-g0uAeIIyYBUOOY2eQyPv08HKKXM=
   dependencies:
     "@tds/core-box" "^1.0.1"
     prop-types "^15.5.10"
 
-"@tds/core-input@^1.0.3":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@tds/core-input/-/core-input-1.0.5.tgz#e0d90a40b7a2d765cd0001eb1d3e215f6b940a7a"
+"@tds/core-input@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/@tds/core-input/-/core-input-1.0.12.tgz#ba8a56a7867e04fc291eba7e87eff5bcc8668464"
+  integrity sha512-EbzIsckGFQU8bm74UL9zpZ4JgwVdI7AZBJQC9IJpWggj5CJlHmgksww1+M4TNtc+clCZ0Jipsz6mvhkX9WmK5w==
   dependencies:
     "@tds/core-box" "^1.0.1"
-    "@tds/core-input-feedback" "^1.0.1"
-    "@tds/core-paragraph" "^1.0.0"
+    "@tds/core-input-feedback" "^1.0.2"
+    "@tds/core-paragraph" "^1.0.4"
     "@tds/core-standalone-icon" "^1.0.0"
-    "@tds/core-text" "^1.0.0"
+    "@tds/core-text" "^1.0.4"
     prop-types "^15.5.10"
 
 "@tds/core-link@^1.0.3":
@@ -1614,15 +1622,10 @@
     "@tds/util-prop-types" "^1.1.0"
     prop-types "^15.5.10"
 
-"@tds/core-paragraph@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-paragraph/-/core-paragraph-1.0.0.tgz#2c919539e7cfc7ccfff415a2554ec5a72b7b224f"
-  dependencies:
-    prop-types "^15.5.10"
-
-"@tds/core-paragraph@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@tds/core-paragraph/-/core-paragraph-1.0.2.tgz#9aee98727fa9fc7e106580fb616848fa50c90f77"
+"@tds/core-paragraph@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@tds/core-paragraph/-/core-paragraph-1.0.4.tgz#c9756fbba147acf930e43c98f94206f67da28307"
+  integrity sha512-ewWmcKWnZnF+NY9EXwYfn8BaYMrzoQZRp5vOScCc5N2C0QF0tS2eXFxTJs/h7WSQfFhQdY1KJXju6sxNLu2f2Q==
   dependencies:
     prop-types "^15.5.10"
 
@@ -1639,15 +1642,10 @@
   dependencies:
     prop-types "^15.5.10"
 
-"@tds/core-strong@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-strong/-/core-strong-1.0.0.tgz#59274286846b098bf2336707e12146d46907f56b"
-  dependencies:
-    prop-types "^15.5.10"
-
-"@tds/core-text@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tds/core-text/-/core-text-1.0.0.tgz#90ba365ed9a438bb7a1c38e7c8f2d7d31388df20"
+"@tds/core-strong@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@tds/core-strong/-/core-strong-1.0.4.tgz#0edce1e9d9b4df12e7ce4f0d5477c5501ee5564b"
+  integrity sha512-2eVpgUpl+/6igJNYTaeFAWuH50vp4Y4cu006U2/PbB/nsxkxco/rVdABfIP3ReeGbT8C7Z8i0Qo94+H6r4fAaA==
   dependencies:
     prop-types "^15.5.10"
 
@@ -1659,7 +1657,8 @@
 
 "@tds/core-text@^1.0.4":
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tds/core-text/-/core-text-1.0.4.tgz#0dc064cc67d3e72e259d63a3f3788119c70fbc3a"
+  resolved "https://registry.npmjs.org/@tds/core-text/-/core-text-1.0.4.tgz#0dc064cc67d3e72e259d63a3f3788119c70fbc3a"
+  integrity sha512-DrDK4Thd3BPjMavEEZZPJIKaWEMmodHYxzE+SWkNOdUThgd3IZUSkodEUiZR3pf8h5tB8n7p1BIyqU/yZ0/M+w==
   dependencies:
     prop-types "^15.5.10"
 
@@ -7969,7 +7968,8 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
 js-yaml@^3.12.0:
   version "3.12.0"
@@ -8226,10 +8226,10 @@ left-pad@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
 
-lerna-update-wizard@^0.9.4:
-  version "0.9.4"
-  resolved "https://registry.npmjs.org/lerna-update-wizard/-/lerna-update-wizard-0.9.4.tgz#dfcfb00aeafd7749e590e389c2a6d405f7bdc9b3"
-  integrity sha512-1Mg4YnZjrFfiJ/xu2df0Y9aguS3ZwYLRSTH8sgCkLDBueDNf/a4+XiYlV7/cTucnY3gJNP/k2cIDCuyMtD17vg==
+lerna-update-wizard@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npmjs.org/lerna-update-wizard/-/lerna-update-wizard-0.11.0.tgz#c66cdacf53528e0cc6a56896d164964582a22cdf"
+  integrity sha512-gLoWi+O8F2HXPIIBhfw/NUbGuYswSbJqKlROi87o42KSVO7B2imYCma7+AMVtmI3Z0UOafYIY8kNGPrBsEaIWw==
   dependencies:
     chalk "^2.3.0"
     execution-time "^1.2.0"
@@ -8849,7 +8849,8 @@ longest@^1.0.1:
 
 loose-envify@^1.0.0, loose-envify@^1.3.1:
   version "1.4.0"
-  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
@@ -9920,7 +9921,8 @@ oauth-sign@~0.9.0:
 
 object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 object-copy@^0.1.0:
   version "0.1.0"
@@ -11018,7 +11020,8 @@ promzard@^0.3.0:
 
 prop-types@^15.5.10, prop-types@^15.6.2:
   version "15.6.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
   dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"

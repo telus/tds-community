@@ -75,8 +75,8 @@ module.exports = {
     return `import ${name} from '@tds/community-${kebabizeName}'`
   },
 
-  showUsage: false,
-  showCode: false,
+  usageMode: 'collapse',
+  exampleMode: 'collapse',
 
   sections: [
     {

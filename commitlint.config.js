@@ -7,6 +7,7 @@
 // If nothing else fits, use "other": chore(other): ...
 
 const packages = require('@commitlint/config-lerna-scopes')
+const conventionalConfig = require('@commitlint/config-conventional')
 
 const applyCustomScope = () => {
   return Promise.resolve(
@@ -22,17 +23,26 @@ const applyCustomScope = () => {
         'openshift',
         'other',
         'scripts',
-        'shared'
+        'shared',
+        'packages'
       )
       return config
     })
   )
 }
 
+const applyCustomType = () => {
+  const config = conventionalConfig.rules['type-enum']
+  config[2].push('publish')
+
+  return config
+}
+
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   utils: { applyCustomScope },
   rules: {
+    'type-enum': applyCustomType(),
     'scope-enum': () => applyCustomScope(),
     'scope-empty': [2, 'never'],
   },

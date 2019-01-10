@@ -80,7 +80,7 @@ Output:
 
 No work is done at this phase.
 
-Items are moved from Story Writing to this column when they are ready to be picked up by a developer and designer.
+Items are moved from Story Writing to this column when they are ready to be picked up by a developer or designer.
 
 #### 7. In development
 
@@ -88,9 +88,9 @@ During this phase, a designer or developer may pull the ticket from the Dev Queu
 
 **Step 1 of 2: Development**
 
-Developers producing code must follow our [developer guide](../.github/CONTRIBUTING.md#developer-guide).
+**Developers** producing code must follow our [developer guide](../.github/CONTRIBUTING.md#developer-guide).
 
-Designers producing or enhancing components for Sketch must following our [designer guide](../.github/CONTRIBUTING.md#designer-guide).
+**Designers** producing or enhancing components for Sketch must follow our [designer guide](../.github/CONTRIBUTING.md#designer-guide).
 
 Potential output from this step, if applicable, may include:
 

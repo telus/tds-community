@@ -151,7 +151,8 @@ class SideNavigation extends Component {
             {React.Children.map(children, (child, index) => {
               let options = {}
               const id = `TDS-SideNavigation-${index}`
-              if (child.type.name === 'SubMenu') {
+              // check if href is in props to figure out if child is SubMenu or Link
+              if (!('href' in child.props)) {
                 options = {
                   onClick: this.toggleOpen,
                   isOpen: this.checkAccordion(id),

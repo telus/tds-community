@@ -20,14 +20,13 @@ const SubMenu = ({ children, label, onClick, id, isOpen, active }) => {
     subMenuLink: true,
   }
 
+  const onSubMenuClick = () => {
+    onClick(id)
+  }
+
   return (
     <div className={styles.mainDiv}>
-      <button
-        onClick={() => {
-          onClick(id)
-        }}
-        className={active ? styles.active : styles.buttonDefault}
-      >
+      <button onClick={onSubMenuClick} className={active ? styles.active : styles.buttonDefault}>
         <Box vertical={3} inline horizontal={2} dangerouslyAddClassName={styles.space}>
           <ColoredTextProvider>
             <Text size="medium" bold={active}>

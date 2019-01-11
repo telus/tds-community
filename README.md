@@ -1,4 +1,4 @@
-# TELUS Design System Community <sup>beta</sup>
+# TELUS Design System Community
 
 [![Build Status](https://travis-ci.com/telus/tds-community.svg?branch=master)](https://travis-ci.com/telus/tds-community)
 

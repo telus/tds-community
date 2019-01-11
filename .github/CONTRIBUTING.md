@@ -59,7 +59,7 @@ All TELUS Design System components follow these core principles.
 1.  Composable
     - Components are most effective when they can be combined to form more complex patterns.
 2.  Accessible
-    - WCAG AAA. Semantic markup. Screen reader friendly.
+    - WCAG AA. Semantic markup. Screen reader friendly.
 3.  Responsive
     - Mobile-first. Works on any viewport size.
 4.  Quality

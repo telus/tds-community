@@ -41,8 +41,9 @@ A designer pulls in a ticket from the top of the _Design queue_ and deliberates 
 
 Output:
 
-- During this phase, designers research the functionality, appearance, and intent for the ticket. They also establish preliminary designs.
-- Research material and any preliminary designs should be linked/attached to the ticket.
+- During this phase, designers research the functionality, appearance, and intent for the ticket. They also establish preliminary designs
+- Research material and any preliminary designs should be linked/attached to the ticket
+- The original GitHub issue is updated with new information under the _Design intent_ heading. See the [feature template](https://github.com/telus/tds-community/blob/master/.github/ISSUE_TEMPLATE/feature_template.md) as a reference
 
 #### 4. Design review
 
@@ -72,7 +73,7 @@ A DPA member or assignee defines the acceptance criteria for the ticket.
 
 Output:
 
-- The ticket has a written story
+- The original GitHub ticket has a written story under the _Acceptance criteria_ heading. See the [feature template](https://github.com/telus/tds-community/blob/master/.github/ISSUE_TEMPLATE/feature_template.md) as a reference
 - **DPA Developer Approved** label is applied
 - Ticket is moved to _Dev Queue_
 

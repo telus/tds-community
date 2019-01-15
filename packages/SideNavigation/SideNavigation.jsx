@@ -111,7 +111,7 @@ class SideNavigation extends Component {
   checkActiveState = () => {
     React.Children.map(this.props.children, (child, index) => {
       const id = `TDS-SideNavigation-${index}`
-      if (child.type.name === 'SubMenu' && child.props.active) {
+      if (!('href' in child.props) && child.props.active) {
         this.toggleOpen(id)
       }
     })

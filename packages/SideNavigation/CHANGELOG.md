@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@1.0.1...@tds/community-side-navigation@1.0.2) (2019-01-16)
+
+### Bug Fixes
+
+- **community-side-navigation:** active submenu auto open in site builder ([9a87220](https://github.com/telus/tds-community/commit/9a87220))
+- **community-side-navigation:** fixes global buttons being overwritten ([a003e1f](https://github.com/telus/tds-community/commit/a003e1f))
+
 ## [1.0.1](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@1.0.0...@tds/community-side-navigation@1.0.1) (2019-01-15)
 
 ### Bug Fixes

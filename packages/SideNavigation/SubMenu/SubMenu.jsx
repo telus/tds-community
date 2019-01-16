@@ -7,6 +7,7 @@ import Text from '@tds/core-text'
 import { componentWithName } from '@tds/util-prop-types'
 
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
+import joinClassNames from '../../../shared/utils/joinClassNames'
 
 import styles from './SubMenu.scss'
 
@@ -20,13 +21,18 @@ const SubMenu = ({ children, label, onClick, id, isOpen, active }) => {
     subMenuLink: true,
   }
 
+  const subMenuClasses = joinClassNames(
+    styles.buttonSubMenu,
+    active ? styles.active : styles.buttonDefault
+  )
+
   const onSubMenuClick = () => {
     onClick(id)
   }
 
   return (
     <div className={styles.mainDiv}>
-      <button onClick={onSubMenuClick} className={active ? styles.active : styles.buttonDefault}>
+      <button onClick={onSubMenuClick} className={subMenuClasses}>
         <Box vertical={3} inline horizontal={2} dangerouslyAddClassName={styles.space}>
           <ColoredTextProvider>
             <Text size="medium" bold={active}>

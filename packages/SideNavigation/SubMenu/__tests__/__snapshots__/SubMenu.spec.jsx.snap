@@ -5,7 +5,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   className="mainDiv"
 >
   <button
-    className="active"
+    className="buttonSubMenu active"
     onClick={[Function]}
   >
     <Box

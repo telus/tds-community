@@ -182,7 +182,7 @@ exports[`SideNavigation renders 1`] = `
               className="mainDiv"
             >
               <button
-                className="buttonDefault"
+                className="buttonSubMenu buttonDefault"
                 onClick={[Function]}
               >
                 <Box
@@ -321,7 +321,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
               className="mainDiv"
             >
               <button
-                className="active"
+                className="buttonSubMenu active"
                 onClick={[Function]}
               >
                 <Box

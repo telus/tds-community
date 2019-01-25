@@ -1,6 +1,6 @@
 ## Digital Platform Ambassadors
 
-The DPA has 12 inaugural members. Ahmad Nassri and Steve Fisher will oversee the smooth administration and a clear agenda. Its initial focus is on front-end consistency of the central TELUS experience. As needs change other members may be invited and ceremonies may change.
+The DPA has 17 inaugural members. Varun Jain will oversee the smooth administration and a clear agenda. Its initial focus is on front-end consistency of the central TELUS experience. As needs change other members may be invited and ceremonies may change.
 
 See the [DPA members](https://github.com/orgs/telus/teams/dpa-developers)
 

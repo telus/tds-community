@@ -35,6 +35,16 @@ To learn more about the design system, design principles, contribution flow, or 
 </Box>
 ```
 
+## Community Heroes
+
+TDS Community depends on your valuable contributions in order to evolve into a beautiful, robust and efficient design system.
+This makes all of our contributors nothing short of Heroes to us.
+Check out who our Community Heroes are, and find out how you too can get featured on our [Community Heroes](https://tds.telus.com/community-heroes) page.
+
+### It's more than just bragging rights
+
+TELUS employees that work at the Toronto or Vancouver offices are eligible to redeem **swag** based on their contributions.
+
 ## Want to contribute?
 
 To learn about how to contribute to TDS Community, take a look at the following resources:

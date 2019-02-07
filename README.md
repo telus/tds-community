@@ -54,10 +54,10 @@ To learn how to make contributions to TDS Community, See the [contributing guide
 - [Background](./guide/history.md)
 - [Community governance process](./guide/GovernanceProcess.md)
 - [Principles & Guidelines](./guide/PrinciplesGuidelines.md)
-- [Why Community](./guide/Why_community.md)
-- [TDS Community vs TDS Core](./guide/community_vs_core.md)
-- [Digital Platform Ambassadors](./guide/Digital_Platform_Ambassadors.md)
-- [How to Guides](./guide/How_to_guides.md)
+- [Why Community](./guide/WhyCommunity.md)
+- [TDS Community vs TDS Core](./guide/communityVsCore.md)
+- [Digital Platform Ambassadors](./guide/DigitalPlatformAmbassadors.md)
+- [How to Guides](./guide/HowToGuides.md)
 - [Support](./guide/Support.md)
 
 ## Contributors

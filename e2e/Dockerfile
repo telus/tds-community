@@ -4,7 +4,7 @@
 # We also have a docker-compose.yml file, which is used to build and run this Docker image.
 
 
-# Start from the official Node 8 alpine image. https://hub.docker.com/_/node/
+# Start from the official Node 8 image. https://hub.docker.com/_/node/
 FROM node:8
 
 # Disable update check

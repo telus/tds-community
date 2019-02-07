@@ -6,7 +6,7 @@
 - Flexible character count for category and link titles
 - We do not recommend using in conjunction with [Breadcrumbs](https://tds.telus.com/components/index.html#breadcrumbs)
 
-```
+```jsx
 <FlexGrid limitWidth={false} gutter={false}>
   <FlexGrid.Row>
     <FlexGrid.Col xs={5}>
@@ -22,19 +22,15 @@
     </FlexGrid.Col>
     <FlexGrid.Col xs={5} xsOffset={1}>
       <Box id="introduction" vertical={3}>
-        <Heading level="h2">
-          Overview
-        </Heading>
-        <Text>
-          This is an introduction to the Side Navigation component
-        </Text>
+        <Heading level="h2">Overview</Heading>
+        <Text>This is an introduction to the Side Navigation component</Text>
       </Box>
       <Box id="reference" vertical={3}>
-        <Heading level="h2">
-          Reference Architecture
-        </Heading>
+        <Heading level="h2">Reference Architecture</Heading>
         <Text>
-          Our software and technical standards are communicated through our reference architecture. The Reference Architecture serves as a source of truth for all the technical knowledge, software specifications, standards and architecture evolution.
+          Our software and technical standards are communicated through our reference architecture.
+          The Reference Architecture serves as a source of truth for all the technical knowledge,
+          software specifications, standards and architecture evolution.
         </Text>
       </Box>
     </FlexGrid.Col>

@@ -10,16 +10,16 @@ To cultivate a community and encourage a culture of sharing at TELUS by identify
 
 **Mission**
 
-1.  Alignment across tribe
-2.  Visual and UX consistency; More efficiency
-3.  Encourage communication across teams, functions, geographies
-4.  Empower team member to raise workflow challenges to ambassadors, to be brought up to the larger group for discussion
+1. Alignment across tribe
+2. Visual and UX consistency; More efficiency
+3. Encourage communication across teams, functions, geographies
+4. Empower team member to raise workflow challenges to ambassadors, to be brought up to the larger group for discussion
 
 **Ambassador Duties**
 
-1.  Surfacing possible contributions from their tribe
-2.  Requesting submissions from other teams
-3.  Align on who carries out what work
-4.  Suggest requirements to improve contributions
-5.  Attend meetings or delegate representative
-6.  Participate in the overall community
+1. Surfacing possible contributions from their tribe
+2. Requesting submissions from other teams
+3. Align on who carries out what work
+4. Suggest requirements to improve contributions
+5. Attend meetings or delegate representative
+6. Participate in the overall community

@@ -144,7 +144,7 @@ For coded components or documentation:
 
 A DPA member must perform releases for code and DSM respectively by following these steps:
 
-1. Documentation and coded components are deployed to npm and the (published catalogue)[https://tds.telus.com/community/index.html]. It is necessary to perform this step before deploying to DSM in order to gather appropriate URLs for documentation
+1. Documentation and coded components are deployed to npm and the [published catalogue](https://tds.telus.com/community/index.html). It is necessary to perform this step before deploying to DSM in order to gather appropriate URLs for documentation
 2. After deploying documentation, link to them from the respective DSM components and then release a new DSM version
 3. Copy changelogs for affected components into release notes for their git tags
 4. If a feature release or major bug fix, communicate the changes on Slack in #tds-guild and in the release/history notes in the versions

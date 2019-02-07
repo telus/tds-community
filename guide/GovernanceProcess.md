@@ -29,4 +29,4 @@ The TDS Community backlog is managed through GitHub Projects.
 
 [https://github.com/telus/tds-community/projects/1](https://github.com/telus/tds-community/projects/1)
 
-All issues are placed on a Kanban style board for maximum transparency. As issues are processed by the leads and the DPA they will flow through each of the columns. Staff members and discussions will take place on the individual issues themselves. To learn more about the process of tickets flowing through the project board, see the [community backlog process](./Community_Backlog.md)
+All issues are placed on a Kanban style board for maximum transparency. As issues are processed by the leads and the DPA they will flow through each of the columns. Staff members and discussions will take place on the individual issues themselves. To learn more about the process of tickets flowing through the project board, see the [community backlog process](./CommunityBacklog.md)

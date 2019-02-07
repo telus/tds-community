@@ -8,8 +8,8 @@ const config = {
 
 const envConfig = {
   development: {
-    launchUrl: 'http://localhost:6060',
-    healthCheckUrl: 'http://localhost:6060',
+    launchUrl: 'http://localhost:6061',
+    healthCheckUrl: 'http://localhost:6061',
   },
 }
 

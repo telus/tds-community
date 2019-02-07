@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 // Need to debug this? Set 'silent' to false under test_settings.default.
 const path = require('path')
-const config = require('../e2e/config')
 const chromedriver = require('chromedriver')
+const config = require('../e2e/config')
 
 const GLOBALS_PATH = path.resolve('e2e/globals.js')
 const REPORT_PATH = path.resolve('e2e/output/reports/')
@@ -30,6 +30,7 @@ module.exports = {
     start_process: true,
     server_path: chromedriver.path,
     port: 9515,
+    log_path: false,
   },
   test_settings: {
     default: {
@@ -39,7 +40,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['no-sandbox', 'window-size=1280,3000'],
+          args: ['--no-sandbox', 'window-size=1280,3000'],
         },
         javascriptEnabled: true,
         acceptSslCerts: true,
@@ -52,7 +53,12 @@ module.exports = {
     headless: {
       desiredCapabilities: {
         chromeOptions: {
-          args: ['no-sandbox', 'headless', 'window-size=1280,3000', 'force-device-scale-factor=1'],
+          args: [
+            '--no-sandbox',
+            '--headless',
+            'window-size=1280,3000',
+            'force-device-scale-factor=1',
+          ],
         },
       },
     },

@@ -249,4 +249,5 @@ module.exports = {
       ],
     },
   },
+  serverPort: 6061,
 }

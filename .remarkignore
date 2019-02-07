@@ -1,0 +1,5 @@
+README.md
+CHANGELOG.md
+packages/**/CHANGELOG.md
+shared/components/**/CHANGELOG.md
+guide/announcements.md

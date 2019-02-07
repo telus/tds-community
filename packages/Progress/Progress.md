@@ -3,7 +3,7 @@ The Progress component is a wrapper-container for an number of Progress.Bar comp
 A Progress component can contain any number of progress bars, which will be
 stacked where shorter bars appears in front of longer bars.
 
-```
+```jsx
 <Progress>
   <Progress.Bar percentage={20} variant="error" />
 </Progress>

@@ -71,7 +71,7 @@ We have incorporated tooling to bake-in and automate as many of these principles
 
 ## Process
 
-When developing or maintaining community components, they typically undergo a set of phases as represented by the [Community Backlog](https://github.com/telus/tds-community/projects/1) project board. When viewing or managing the project board, please follow the [Community Backlog project board guide](../guide/Community_Backlog.md).
+When developing or maintaining community components, they typically undergo a set of phases as represented by the [Community Backlog](https://github.com/telus/tds-community/projects/1) project board. When viewing or managing the project board, please follow the [Community Backlog project board guide](../guide/CommunityBacklog.md).
 
 ## Designer guide
 
@@ -109,7 +109,7 @@ Setting up TDS Community on your development environment is identical to TDS Cor
 If you have organization access to this repository, please create a branch. Otherwise, you may create a fork.
 
 This repository uses lerna with [conventional commits](https://conventionalcommits.org/) to automate package versioning.
-TDS Components must follow [semantic versioning](https://semver.org/) in order for consumers of these components to predictably determine breaking changes as they upgrade over time. When making commits, use `yarn cz` to run commitizen.
+TDS Components must follow [semantic versioning](https://semver.org/) in order for consumers of these components to predictably determine breaking changes as they upgrade over time. When making commits, use `npm run cz` to run commitizen.
 
 Due to the subjectivity of versioning front-end components, keep these suggestions in mind when making conventional commits:
 

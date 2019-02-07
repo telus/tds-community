@@ -22,8 +22,8 @@ export default opts => {
   return {
     input: options.input,
     output: [
-      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: true, exports: 'named' },
-      { format: 'es', file: './dist/index.es.js', sourcemap: true, exports: 'named' },
+      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: false, exports: 'named' },
+      { format: 'es', file: './dist/index.es.js', sourcemap: false, exports: 'named' },
     ],
 
     external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),
@@ -38,7 +38,7 @@ export default opts => {
       options.css &&
         postcss({
           extract: './dist/index.css',
-          sourceMap: true,
+          sourceMap: false,
           plugins: [autoprefixer()],
           modules: {
             generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',

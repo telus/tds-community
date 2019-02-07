@@ -10,6 +10,6 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(css|scss)$': 'identity-obj-proxy',
   },
-  setupTestFrameworkScriptFile: path.resolve('node_modules/jest-enzyme/lib/index.js'),
+  setupFilesAfterEnv: [path.resolve('node_modules/jest-enzyme/lib/index.js')],
   testEnvironment: 'enzyme',
 }

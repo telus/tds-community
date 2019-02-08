@@ -29,6 +29,16 @@ about: Request a new component for tds-community
 
   See the community backlog guide for details on design intent:
   https://github.com/telus/tds-community/blob/master/guie/Community_Backlog.md#3-design-intent
+
+  Describe the value of the new feature from the customer's POV.
+
+  As a ...
+  I want ...
+  So that ...
+
+  Narrative
+
+  [Optional] Longer form description of the feature to add additional context to how this feature fits into the overall product.
 -->
 
 (This space is intentionally left blank. The motivation and design intent go here.)
@@ -45,7 +55,46 @@ about: Request a new component for tds-community
   TELUS guideline on writing acceptance criteria for development and QA
   Can be found on the Reference Architecture:
   https://github.com/telus/reference-architecture/blob/master/process/user-stories.md#how
+
+  DO NOT REMOVE THIS SECTION
+
+  Things to consider when writing acceptance criteria (ACs):
+
+  Things to think about:
+
+  -> What needs to be done to make this accessible?
+  -> Visual properties
+  -> Interactions
+  -> Documentation
+  -> Considerations if changes need to be mirrored to tds-core and tds-community
+  -> Are there any responsive behaviours or visual differences?
+  -> French considerations, do symbols or text need to be rendered in a certain order or manner?
+  -> Text considerations, do we need SVGs, symbols, superscript text, or other special formatting?
+  -> Make sure the ACs do not overly specify names of props. Try to stay generic and descriptive. Describe the interactions and behaviours of your component.
+
+  Given...
+  When...
+  (And...)
+  Then...
+  (And...)
+
+  Example:
+
+    Given I am displaying the community-testimonial component
+
+      When I supply an image
+      And I supply testimonial text
+      And I supply info
+      Then the testimonial is displayed within a card with testimonial text
+      And the testimonial image is displayed to the left of its info
+
+      When I do not supply an image
+      And I supply testimonial text
+      And I supply info
+      Then the testimonial is displayed within a card with testimonial text
 -->
+
+This section is intentionally left blank. See [story writing process](https://github.com/telus/tds-community/blob/master/guide/Community_Backlog.md#5-story-writing).
 
 ### User stories
 

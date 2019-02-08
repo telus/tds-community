@@ -41,7 +41,8 @@ COPY . /app
 # Build the app.
 RUN npm run gitbook:install && \
   npx lerna bootstrap --hoist && \
-  npm run build -- --all
+  npm run build -- --all && \
+  ./scripts/ci-build-docs.sh
 
 # Set the container's user to the newly created one.
 USER node

@@ -1,6 +1,6 @@
 # TELUS Design System Community ![license](https://img.shields.io/github/license/telus/tds-community.svg?style=flat-square)
 
-![Build Status](https://img.shields.io/circleci/project/github/telus/tds-community/master.svg?style=for-the-badge)
+[![Build Status][circle-image]][circle-url]
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for
@@ -68,3 +68,6 @@ To learn how to make contributions to TDS Community, See the [contributing guide
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [<img src="https://avatars3.githubusercontent.com/u/42220619?v=4" width="100px;"/><br /><sub><b>Christina L.</b></sub>](https://github.com/Christina-Lo)<br />[](#tds-Christina-Lo "") | [<img src="https://avatars0.githubusercontent.com/u/931411?v=4" width="100px;"/><br /><sub><b>Andrew Lam</b></sub>](https://github.com/Andrew-K-Lam)<br />[](#tds-Andrew-K-Lam "") | [<img src="https://avatars0.githubusercontent.com/u/1036187?v=4" width="100px;"/><br /><sub><b>Jordan Raffoul</b></sub>](http://jordanraffoul.com)<br />[](#tds-jraff "") | [<img src="https://avatars2.githubusercontent.com/u/22725151?v=4" width="100px;"/><br /><sub><b>Nicholas Mak</b></sub>](https://github.com/nicmak)<br />[](#tds-nicmak "") | [<img src="https://avatars1.githubusercontent.com/in/2740?v=4" width="100px;"/><br /><sub><b>renovate[bot]</b></sub>](https://github.com/apps/renovate)<br />[](#tds-renovate[bot] "") | [<img src="https://avatars1.githubusercontent.com/u/3803746?v=4" width="100px;"/><br /><sub><b>Mike Bunce</b></sub>](https://github.com/sketchidea)<br />[](#tds-sketchidea "") | [<img src="https://avatars2.githubusercontent.com/u/2739819?v=4" width="100px;"/><br /><sub><b>Ani</b></sub>](https://github.com/simpleimpulse)<br />[](#tds-simpleimpulse "") |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+[circle-url]: https://circleci.com/gh/telus/tds-community
+[circle-image]: https://img.shields.io/circleci/project/github/telus/tds-community/master.svg?style=for-the-badge&logo=circleci

@@ -45,7 +45,8 @@
     "test": "jest --config config/jest.config.js"
   },
   "engines": {
-    "node": ">=8"
+    "node": "^8.11.3",
+    "npm": ">=6"
   },
   "dependencies": {
     "@tds/core-responsive": "^1.1.0"

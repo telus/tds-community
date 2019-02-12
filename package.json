@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build",
+    "bootstrap": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose -f docker-compose.e2e.yml build ciboot && docker-compose -f docker-compose.e2e.yml build e2e",
     "bootstrap:ci": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all",
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
@@ -24,7 +24,7 @@
     "deploy:package": "scripts/publish.sh",
     "contributors:update": "node scripts/update-contributors.js",
     "dev": "styleguidist server --config config/styleguide.config.js",
-    "dev:e2e": "docker-compose up ciboot",
+    "dev:e2e": "docker-compose -f docker-compose.e2e.yml --rm up ciboot",
     "dev:e2e-direct": "npm rebuild node-sass && STYLEGUIDIST_ENV=e2e styleguidist server --config config/styleguide.config.js",
     "gitbook": "gitbook serve guide",
     "gitbook:install": "gitbook install guide",

@@ -30,17 +30,15 @@ RUN apt-get update && \
   apt-get install git
 
 # Install dependencies.
-# `npm run gitbook:install` will happen in the "prepare" hook, right after `npm ci`
 RUN set -ex && \
-npm ci
+  npm ci
 
 # Copy all source and test files into the working directory.
 # We use a .dockerignore file to prevent unnecessary or large files from being inadvertently copied.
 COPY . /app
 
 # Build the app.
-RUN npm run gitbook:install && \
-  npx lerna bootstrap --hoist && \
+RUN npx lerna bootstrap --hoist && \
   npm run build -- --all && \
   ./scripts/ci-build-docs.sh
 

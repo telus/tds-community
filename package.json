@@ -41,7 +41,7 @@
     "prepare": "npm run gitbook:install",
     "prepr": "npm run test:e2e && scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
-    "test:e2e": "scripts/docker-e2e.sh",
+    "test:e2e": "docker-compose -f docker-compose.e2e.yml up --abort-on-container-exit",
     "test:e2e-direct": "node scripts/e2e.js",
     "test:u": "npm run test -u",
     "test:watch": "npm run test --watch",

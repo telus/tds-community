@@ -176,7 +176,7 @@ workflows:
 
       - approve-release:
           type: approval
-          requires: [build, lint, unit, e2e]
+          requires: [build, lint, unit, e2e, prepr-log]
           filters:
             branches:
               only: master

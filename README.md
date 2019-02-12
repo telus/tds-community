@@ -1,6 +1,6 @@
-# TELUS Design System Community
+# TELUS Design System Community ![license](https://img.shields.io/github/license/telus/tds-community.svg?style=flat-square)
 
-[![Build Status](https://travis-ci.com/telus/tds-community.svg?branch=master)](https://travis-ci.com/telus/tds-community)
+![Build Status](https://img.shields.io/circleci/project/github/telus/tds-community/master.svg?style=for-the-badge)
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for

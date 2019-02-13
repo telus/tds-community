@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import momentPropTypes from 'react-moment-proptypes'
+
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 import 'react-dates/lib/css/_datepicker.css'
-import momentPropTypes from 'react-moment-proptypes'
+
+import safeRest from '@tds/shared-safe-rest'
+
 import DecorativeIcon from '@tds/core-decorative-icon'
 
 import { CalendarContainer, LabelText } from './styles'
@@ -27,7 +31,7 @@ class Calendar extends Component {
 
     /* eslint-disable jsx-a11y/label-has-for */
     return (
-      <CalendarContainer {...propsWithoutStyling}>
+      <CalendarContainer {...safeRest(propsWithoutStyling)}>
         <label htmlFor={id}>
           <LabelText>{label}</LabelText>
           <SingleDatePicker

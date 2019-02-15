@@ -5,6 +5,10 @@
 # `docker-compose build` --> Build the image. Do this first.
 # `docker images` --> View the image you just built
 
+# `docker-compose run lib <command>` --> <command> and any arguments will be forwarded onto the Dockerfile entrypoint, "yarn".
+# `docker-compose run lib test` --> Run tests.
+# `docker-compose run --service-ports -d lib test:e2e -- -a` --> Start the styleguidist dev server.
+
 version: '3'
 services:
   lib:
@@ -14,3 +18,35 @@ services:
       dockerfile: openshift/Dockerfile
     ports:
       - '6061:6061'
+  ciboot:
+    container_name: tds-community
+    build: .
+    ports:
+      - 6061:6061
+    volumes:
+      - './:/tds-community/'
+  e2e:
+    container_name: tds-community-e2e
+    build:
+      context: .
+      dockerfile: e2e/Dockerfile
+    entrypoint:
+      - npm
+      - run
+      - test:e2e-direct
+      - --
+      - $mode
+    network_mode: host
+    ports:
+      - 6061:6061
+    depends_on:
+      - ciboot
+    volumes:
+      - './e2e/.:/tds-community/e2e/'
+      - './scripts/.:/tds-community/scripts/'
+      - './config/.:/tds-community/config/'
+      - './packages/.:/tds-community/packages/'
+      - './shared/.:/tds-community/shared/'
+      - './.git/.:/tds-community/.git/'
+      - '${PWD}/lerna.json:/tds-community/lerna.json'
+      - '${PWD}/babel.config.js:/tds-community/babel.config.js'

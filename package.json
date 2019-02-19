@@ -52,7 +52,8 @@
     "node": ">=8"
   },
   "dependencies": {
-    "@tds/core-responsive": "^1.1.0"
+    "@tds/core-responsive": "^1.1.0",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

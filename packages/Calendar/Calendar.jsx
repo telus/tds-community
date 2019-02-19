@@ -36,7 +36,7 @@ class Calendar extends Component {
           <LabelText>{label}</LabelText>
           <SingleDatePicker
             id={id}
-            date={this.state.date}
+            date={date}
             onDateChange={onDateChange}
             focused={this.state.focused}
             onFocusChange={this.onFocusChange}

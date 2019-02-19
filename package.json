@@ -77,7 +77,6 @@
     "@tds/core-text": "^1.0.4",
     "@tds/core-unordered-list": "^2.0.0",
     "@telus/remark-config": "^1.2.0",
-    "@telus/remark-preset-lint-markdown": "^1.1.0",
     "@telusdigital/eslint-config": "^1.2.0",
     "all-contributors-cli": "^4.11.1",
     "autoprefixer": "^8.3.0",

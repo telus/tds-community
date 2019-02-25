@@ -28,8 +28,10 @@ $desktop: (
 @mixin spacingClasses ($level, $mobileValue, $desktopValue) {
   .verticalPadding-#{$level} {
     padding-top: $mobileValue;
+    padding-bottom: $mobileValue;
     @include mq($from: md) {
       padding-top: $desktopValue;
+      padding-bottom: $desktopValue;
     }
   }
 }

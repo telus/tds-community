@@ -6,6 +6,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
 >
   <button
     className="buttonSubMenu active"
+    id="Three"
     onClick={[Function]}
   >
     <Box
@@ -34,5 +35,13 @@ exports[`SideNavigation.SubMenu renders 1`] = `
       />
     </Box>
   </button>
+  <Reveal
+    duration={500}
+    height={0}
+    in={false}
+    timeout={0}
+  >
+    <Component />
+  </Reveal>
 </div>
 `;

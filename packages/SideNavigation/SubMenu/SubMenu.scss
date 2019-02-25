@@ -15,7 +15,8 @@ $font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: inline-block;
 }
 
-.boxShadow {
+.subMenuDropDown {
+  padding: 1rem 0;
   background: radial-gradient(
     ellipse at top,
     rgba(150, 150, 150, 0.1) 0%,

@@ -45,7 +45,7 @@ class SideNavigation extends Component {
     sideNav.style.width = `${parentWidth}px`
   }
 
-  toggleOpen = id => {
+  toggleSubMenu = id => {
     if (this.checkAccordion(id, this.state.accordion)) {
       const array = [...this.state.open]
       const index = array.indexOf(id)
@@ -112,7 +112,7 @@ class SideNavigation extends Component {
     React.Children.map(this.props.children, (child, index) => {
       const id = `TDS-SideNavigation-${index}`
       if (!('href' in child.props) && child.props.active) {
-        this.toggleOpen(id)
+        this.toggleSubMenu(id)
       }
     })
   }
@@ -154,7 +154,7 @@ class SideNavigation extends Component {
               // check if href is in props to figure out if child is SubMenu or Link
               if (!('href' in child.props)) {
                 options = {
-                  onClick: this.toggleOpen,
+                  handleToggleSubMenu: this.toggleSubMenu,
                   isOpen: this.checkAccordion(id),
                   active: child.props.active,
                   id,

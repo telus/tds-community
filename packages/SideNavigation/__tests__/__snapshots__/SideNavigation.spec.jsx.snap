@@ -173,6 +173,7 @@ exports[`SideNavigation renders 1`] = `
         >
           <SubMenu
             active={false}
+            handleToggleSubMenu={[Function]}
             id="TDS-SideNavigation-3"
             isOpen={false}
             label="Threefdsfdsfds"
@@ -183,6 +184,8 @@ exports[`SideNavigation renders 1`] = `
             >
               <button
                 className="buttonSubMenu buttonDefault"
+                handleToggleSubMenu={[Function]}
+                id="TDS-SideNavigation-3"
                 onClick={[Function]}
               >
                 <Box
@@ -233,6 +236,197 @@ exports[`SideNavigation renders 1`] = `
                   </div>
                 </Box>
               </button>
+              <Reveal
+                duration={500}
+                height={0}
+                in={false}
+                timeout={0}
+              >
+                <Transition
+                  appear={false}
+                  duration={500}
+                  enter={true}
+                  exit={true}
+                  in={false}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={0}
+                  unmountOnExit={false}
+                >
+                  <div
+                    aria-hidden={true}
+                    data-testid="childrenContainer"
+                    style={
+                      Object {
+                        "height": 0,
+                        "overflow": "hidden",
+                        "transition": "height 500ms",
+                        "visibility": "hidden",
+                      }
+                    }
+                  >
+                    <ul
+                      className="subMenuDropDown"
+                    >
+                      <li
+                        key=".0"
+                      >
+                        <Link
+                          active={false}
+                          href="#"
+                          reactRouterLinkComponent={null}
+                          subMenuLink={true}
+                          to={null}
+                        >
+                          <a
+                            className="link"
+                            href="#"
+                            to={null}
+                          >
+                            <Box
+                              dangerouslyAddClassName="box"
+                              horizontal={3}
+                              inline={false}
+                              tag="div"
+                              vertical={2}
+                            >
+                              <div
+                                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T box"
+                              >
+                                <ColoredTextProvider
+                                  colorClassName="hover"
+                                >
+                                  <div
+                                    className="hover"
+                                  >
+                                    <Text
+                                      block={false}
+                                      bold={false}
+                                      invert={false}
+                                      size="medium"
+                                    >
+                                      <span
+                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                      >
+                                        Option 1
+                                      </span>
+                                    </Text>
+                                  </div>
+                                </ColoredTextProvider>
+                              </div>
+                            </Box>
+                          </a>
+                        </Link>
+                      </li>
+                      <li
+                        key=".1"
+                      >
+                        <Link
+                          active={false}
+                          href="#"
+                          reactRouterLinkComponent={null}
+                          subMenuLink={true}
+                          to={null}
+                        >
+                          <a
+                            className="link"
+                            href="#"
+                            to={null}
+                          >
+                            <Box
+                              dangerouslyAddClassName="box"
+                              horizontal={3}
+                              inline={false}
+                              tag="div"
+                              vertical={2}
+                            >
+                              <div
+                                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T box"
+                              >
+                                <ColoredTextProvider
+                                  colorClassName="hover"
+                                >
+                                  <div
+                                    className="hover"
+                                  >
+                                    <Text
+                                      block={false}
+                                      bold={false}
+                                      invert={false}
+                                      size="medium"
+                                    >
+                                      <span
+                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                      >
+                                        Option 2
+                                      </span>
+                                    </Text>
+                                  </div>
+                                </ColoredTextProvider>
+                              </div>
+                            </Box>
+                          </a>
+                        </Link>
+                      </li>
+                      <li
+                        key=".2"
+                      >
+                        <Link
+                          active={false}
+                          href="#"
+                          reactRouterLinkComponent={null}
+                          subMenuLink={true}
+                          to={null}
+                        >
+                          <a
+                            className="link"
+                            href="#"
+                            to={null}
+                          >
+                            <Box
+                              dangerouslyAddClassName="box"
+                              horizontal={3}
+                              inline={false}
+                              tag="div"
+                              vertical={2}
+                            >
+                              <div
+                                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T box"
+                              >
+                                <ColoredTextProvider
+                                  colorClassName="hover"
+                                >
+                                  <div
+                                    className="hover"
+                                  >
+                                    <Text
+                                      block={false}
+                                      bold={false}
+                                      invert={false}
+                                      size="medium"
+                                    >
+                                      <span
+                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                      >
+                                        Option 3
+                                      </span>
+                                    </Text>
+                                  </div>
+                                </ColoredTextProvider>
+                              </div>
+                            </Box>
+                          </a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </Transition>
+              </Reveal>
             </div>
           </SubMenu>
         </li>
@@ -312,6 +506,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
         >
           <SubMenu
             active={true}
+            handleToggleSubMenu={[Function]}
             id="TDS-SideNavigation-1"
             isOpen={true}
             label="Threefdsfdsfds"
@@ -322,6 +517,8 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
             >
               <button
                 className="buttonSubMenu active"
+                handleToggleSubMenu={[Function]}
+                id="TDS-SideNavigation-1"
                 onClick={[Function]}
               >
                 <Box
@@ -372,60 +569,96 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                   </div>
                 </Box>
               </button>
-              <ul
-                className="boxShadow"
+              <Reveal
+                duration={500}
+                height={0}
+                in={true}
+                timeout={500}
               >
-                <li
-                  key=".0"
+                <Transition
+                  appear={false}
+                  duration={500}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={500}
+                  unmountOnExit={false}
                 >
-                  <Link
-                    active={false}
-                    href="#"
-                    reactRouterLinkComponent={null}
-                    subMenuLink={true}
-                    to={null}
+                  <div
+                    aria-hidden={false}
+                    data-testid="childrenContainer"
+                    style={
+                      Object {
+                        "height": "0px",
+                        "overflow": "hidden",
+                        "transition": "height 500ms",
+                      }
+                    }
                   >
-                    <a
-                      className="link"
-                      href="#"
-                      to={null}
+                    <ul
+                      className="subMenuDropDown"
                     >
-                      <Box
-                        dangerouslyAddClassName="box"
-                        horizontal={3}
-                        inline={false}
-                        tag="div"
-                        vertical={2}
+                      <li
+                        key=".0"
                       >
-                        <div
-                          className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T box"
+                        <Link
+                          active={false}
+                          href="#"
+                          reactRouterLinkComponent={null}
+                          subMenuLink={true}
+                          to={null}
                         >
-                          <ColoredTextProvider
-                            colorClassName="hover"
+                          <a
+                            className="link"
+                            href="#"
+                            to={null}
                           >
-                            <div
-                              className="hover"
+                            <Box
+                              dangerouslyAddClassName="box"
+                              horizontal={3}
+                              inline={false}
+                              tag="div"
+                              vertical={2}
                             >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="medium"
+                              <div
+                                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T box"
                               >
-                                <span
-                                  className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                <ColoredTextProvider
+                                  colorClassName="hover"
                                 >
-                                  Option 1
-                                </span>
-                              </Text>
-                            </div>
-                          </ColoredTextProvider>
-                        </div>
-                      </Box>
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+                                  <div
+                                    className="hover"
+                                  >
+                                    <Text
+                                      block={false}
+                                      bold={false}
+                                      invert={false}
+                                      size="medium"
+                                    >
+                                      <span
+                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                      >
+                                        Option 1
+                                      </span>
+                                    </Text>
+                                  </div>
+                                </ColoredTextProvider>
+                              </div>
+                            </Box>
+                          </a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </Transition>
+              </Reveal>
             </div>
           </SubMenu>
         </li>

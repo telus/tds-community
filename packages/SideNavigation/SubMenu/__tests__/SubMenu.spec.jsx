@@ -1,22 +1,56 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
-import SubMenu from '../SubMenu'
-import Link from '../../Link/Link'
+import SideNavigation from '../../SideNavigation'
 
 describe('SideNavigation.SubMenu', () => {
-  const children = (
-    <SubMenu active label="Threefdsfdsfds" id="Three" onClick={() => {}} isOpen={false}>
-      <Link href="#">Option 1</Link>
-      <Link href="#">Option 2</Link>
-      <Link href="#">Option 3</Link>
-    </SubMenu>
+  const onClickFunction = jest.fn()
+  const SubMenu = (
+    <SideNavigation.SubMenu
+      active
+      label="Threefdsfdsfds"
+      id="Three"
+      onClick={onClickFunction}
+      isOpen={false}
+    >
+      <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
+      <SideNavigation.Link href="#">Option 2</SideNavigation.Link>
+      <SideNavigation.Link href="#">Option 3</SideNavigation.Link>
+    </SideNavigation.SubMenu>
   )
-  const doShallow = () => shallow(children)
+
+  const SideNav = (
+    <SideNavigation>
+      <SideNavigation.SubMenu
+        label="Threefdsfdsfds"
+        id="Three"
+        onClick={onClickFunction}
+        isOpen={false}
+      >
+        <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
+        <SideNavigation.Link href="#">Option 2</SideNavigation.Link>
+        <SideNavigation.Link href="#">Option 3</SideNavigation.Link>
+      </SideNavigation.SubMenu>
+    </SideNavigation>
+  )
 
   it('renders', () => {
-    const subMenu = doShallow()
+    const subMenu = shallow(SubMenu)
 
     expect(subMenu).toMatchSnapshot()
+  })
+
+  it('calls onClick and internal click function', () => {
+    const sideNav = mount(SideNav)
+
+    sideNav.find('button').simulate('click')
+
+    expect(onClickFunction).toHaveBeenCalledTimes(1)
+    expect(sideNav.state('open')).toEqual(['TDS-SideNavigation-0'])
+
+    sideNav.find('button').simulate('click')
+
+    expect(onClickFunction).toHaveBeenCalledTimes(2)
+    expect(sideNav.state('open')).toEqual([])
   })
 })

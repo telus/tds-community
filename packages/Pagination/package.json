@@ -25,8 +25,11 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/shared-safe-rest": "^1.0.0",
     "pagination": "^0.4.6",
     "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "@tds/shared-safe-rest": "^1.0.0",
+    "airbnb-prop-types": "^2.12.0"
   }
 }

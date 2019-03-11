@@ -1,3 +1,59 @@
 .container {
   opacity: 1;
 }
+
+.controls {
+  clear: both;
+  display: flex;
+  margin-top: 20px;
+}
+
+.next, .previous {
+  color: #4B286D;
+  padding: 0 8px;
+  font-size: 16px;
+  button {
+    color: #4B286D;
+    background: none;
+    border: none;
+  }
+}
+
+.pagination {
+  display: flex;
+  li {
+    color: #4B286D;
+    background-color: #F2EFF4;
+    width: 24px;
+    height: 24px;
+    list-style: none;
+    margin-right: 4px;
+    text-align: center;
+    line-height: 24px;
+    button {
+      background: none;
+      border: none;
+      color: #4B286D;
+      cursor: pointer;
+    }
+    &:hover {
+      border: 1px solid #4B286D;
+      line-height: 22px;
+    }
+  }
+  li.ellipsis {
+    background-color: inherit;
+    line-height: 15px;
+    &:hover {
+      border: none;
+    }
+  }
+  li.current {
+    color: #ffffff;
+    button {
+      color: #ffffff;
+      cursor: default;
+    }
+    background-color: #4B286D;
+  }
+}

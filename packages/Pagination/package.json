@@ -1,0 +1,32 @@
+{
+  "name": "@tds/community-pagination",
+  "version": "1.0.0-preview",
+  "description": "",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telus/tds-community.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telus/tds-community/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "@tds/shared-safe-rest": "^1.0.0",
+    "pagination": "^0.4.6",
+    "prop-types": "^15.6.2"
+  }
+}

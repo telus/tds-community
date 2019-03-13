@@ -85,6 +85,24 @@ jobs:
     steps:
       - attach
       - expect
+      - add_ssh_keys:
+          fingerprints:
+            - '75:7e:bf:a6:df:5a:2a:4d:bd:a0:8c:a6:fa:4f:d7:dd'
+      - run:
+          name: Add Github Key
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run:
+          name: Configure Git Config & Branch
+          command: |
+            git status
+            git config --global user.email "tds.github.bot@gmail.com"
+            git config --global user.name "TDSBot"
+      - run:
+          name: Rebase branch
+          command: |
+            git checkout master
+            git stash
+            git pull --rebase
       - run:
           name: TDS Bot output
           command: if [ "$CI_PULL_REQUEST" != "" ]; then node ./scripts/circleci/github-pr.js; fi

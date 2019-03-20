@@ -1,16 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination renders 1`] = `
-<Pagination>
+<Pagination
+  language="english"
+>
   <div
     className="container"
   >
     <Panels
-      key="1_1552339326738"
+      key="1_1553122471220"
     >
       <div>
         <div
-          key="0_1552339326740"
+          key="0_1553122471220"
         >
           <p>
             This is panels
@@ -33,15 +35,16 @@ exports[`Pagination renders 1`] = `
       >
         <li
           className="current"
-          key="0_1552339326738"
+          key="0_1553122471220"
         >
           1
         </li>
         <li
           className="regular"
-          key="1_1552339326738"
+          key="1_1553122471220"
         >
           <button
+            aria-label="Go to panel number 2"
             onClick={[Function]}
             value={2}
           >
@@ -50,9 +53,10 @@ exports[`Pagination renders 1`] = `
         </li>
         <li
           className="regular"
-          key="2_1552339326739"
+          key="2_1553122471220"
         >
           <button
+            aria-label="Go to panel number 3"
             onClick={[Function]}
             value={3}
           >
@@ -61,9 +65,10 @@ exports[`Pagination renders 1`] = `
         </li>
         <li
           className="regular"
-          key="3_1552339326739"
+          key="3_1553122471220"
         >
           <button
+            aria-label="Go to panel number 4"
             onClick={[Function]}
             value={4}
           >
@@ -72,13 +77,13 @@ exports[`Pagination renders 1`] = `
         </li>
         <li
           className="ellipsis"
-          key="4_1552339326739"
+          key="4_1553122471220"
         >
           ...
         </li>
         <li
           className="regular"
-          key="8_1552339326739"
+          key="8_1553122471220"
         >
           <button
             onClick={[Function]}
@@ -92,22 +97,28 @@ exports[`Pagination renders 1`] = `
         className="next"
       >
         <button
+          aria-label="Go to next panel"
           onClick={[Function]}
           value={2}
         >
-          Next 
+          <span
+            className="buttonLabel"
+          >
+            Next
+          </span>
+           
           <DecorativeIcon
-            size={24}
+            size={16}
             symbol="chevron"
           >
             <Icon
               aria-hidden="true"
-              size={24}
+              size={16}
               symbol="chevron"
             >
               <i
                 aria-hidden="true"
-                className="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
+                className="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
               />
             </Icon>
           </DecorativeIcon>

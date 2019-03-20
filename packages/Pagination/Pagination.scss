@@ -1,3 +1,5 @@
+@import '~@tds/core-responsive/responsive';
+
 .container {
   opacity: 1;
 }
@@ -14,8 +16,22 @@
   font-size: 16px;
   button {
     color: #4B286D;
-    background: none;
     border: none;
+    background-color: #F2EFF4;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    @include mq($from: md) {
+      background: none;
+      width: auto;
+      height: auto;
+    }
+    span.buttonLabel {
+      display: none;
+      @include mq($from: md) {
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -24,12 +40,18 @@
   li {
     color: #4B286D;
     background-color: #F2EFF4;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
+    line-height: 29px;
+    @include mq($from: md) {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+    }
     list-style: none;
     margin-right: 4px;
     text-align: center;
-    line-height: 24px;
+
     button {
       background: none;
       border: none;
@@ -38,7 +60,10 @@
     }
     &:hover {
       border: 1px solid #4B286D;
-      line-height: 22px;
+      line-height: 27px;
+      @include mq($from: md) {
+        line-height: 22px;
+      }
     }
   }
   li.ellipsis {

@@ -64,7 +64,11 @@ class Pagination extends Component {
       ) {
         return (
           <li key={this.generateKey(i)} className={styles.regular}>
-            <button value={index} onClick={e => this.handleClick(e)}>
+            <button
+              value={index}
+              onClick={e => this.handleClick(e)}
+              aria-label={`Go to panel number ${index}`}
+            >
               {index}
             </button>
           </li>
@@ -89,7 +93,7 @@ class Pagination extends Component {
 
   handleClick = e => {
     e.preventDefault()
-    const value = parseInt(e.target.value, 10) || 0
+    const value = parseInt(e.currentTarget.value, 10) || 0
     if (value > this.state.panels || value < 1) {
       return null
     }
@@ -110,10 +114,15 @@ class Pagination extends Component {
   }
 
   render() {
-    const { children, ...rest } = this.props
+    const { children, language, ...rest } = this.props
     const { current } = this.state
     const increaseNumber = parseInt(current + 1, 10)
     const decreaseNumber = parseInt(current - 1, 10)
+    const PreviousText = language !== 'french' ? 'Previous' : 'Précédent'
+    const NextText = language !== 'french' ? 'Next' : 'Suivant'
+    const PreviousLabel =
+      language !== 'french' ? 'Go to previous panel' : 'Aller au panneau précédent'
+    const NextLabel = language !== 'french' ? 'Go to next panel' : 'Aller au prochain panneau'
     return (
       <div {...safeRest(rest)} className={styles.container}>
         <Panels {...rest} key={this.generateKey(current)}>
@@ -122,16 +131,26 @@ class Pagination extends Component {
         <div className={styles.controls}>
           {this.state.showPrevious && (
             <p className={styles.previous}>
-              <button value={decreaseNumber} onClick={e => this.handleClick(e)}>
-                <DecorativeIcon symbol="leftChevron" /> Previous
+              <button
+                value={decreaseNumber}
+                onClick={e => this.handleClick(e)}
+                aria-label={PreviousLabel}
+              >
+                <DecorativeIcon symbol="leftChevron" size={16} />{' '}
+                <span className={styles.buttonLabel}>{PreviousText}</span>
               </button>
             </p>
           )}
           <ul className={styles.pagination}>{this.mapNumeric()}</ul>
           {this.state.showNext && (
             <p className={styles.next}>
-              <button value={increaseNumber} onClick={e => this.handleClick(e)}>
-                Next <DecorativeIcon symbol="chevron" />
+              <button
+                value={increaseNumber}
+                onClick={e => this.handleClick(e)}
+                aria-label={NextLabel}
+              >
+                <span className={styles.buttonLabel}>{NextText}</span>{' '}
+                <DecorativeIcon symbol="chevron" size={16} />
               </button>
             </p>
           )}
@@ -143,6 +162,11 @@ class Pagination extends Component {
 
 Pagination.propTypes = {
   children: PropTypes.node.isRequired,
+  language: PropTypes.string,
+}
+
+Pagination.defaultProps = {
+  language: 'english',
 }
 
 Pagination.Panel = Panel

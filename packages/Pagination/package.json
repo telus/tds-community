@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "pagination": "^0.4.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "string-hash": "^1.1.3"
   },
   "devDependencies": {
     "@tds/shared-safe-rest": "^1.0.0",

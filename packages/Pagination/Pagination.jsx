@@ -6,6 +6,7 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import Panels from './Panels'
 import Panel from './Panel/Panel'
 import styles from './Pagination.scss'
+import hash from './hash'
 
 /**
  * @version ./package.json
@@ -28,10 +29,6 @@ class Pagination extends Component {
     this.handleButtonState()
   }
 
-  generateKey = pre => {
-    return `${pre}_${new Date().getTime()}`
-  }
-
   mapNumeric = () => {
     return this.props.children.map((item, i) => {
       const index = i + 1
@@ -40,7 +37,7 @@ class Pagination extends Component {
       current = parseInt(current, 10) || 0
       if (current === index) {
         return (
-          <li key={this.generateKey(i)} className={styles.current}>
+          <li key={hash(`${i}-1`)} className={styles.current}>
             {index}
           </li>
         )
@@ -48,7 +45,7 @@ class Pagination extends Component {
 
       if (panels < 7 || index === 1 || index === panels) {
         return (
-          <li key={this.generateKey(i)} className={styles.regular}>
+          <li key={hash(`${i}-2`)} className={styles.regular}>
             <button value={index} onClick={e => this.handleClick(e)}>
               {index}
             </button>
@@ -63,7 +60,7 @@ class Pagination extends Component {
         (current > panels - 2 && index > panels - 4)
       ) {
         return (
-          <li key={this.generateKey(i)} className={styles.regular}>
+          <li key={hash(`${i}-3`)} className={styles.regular}>
             <button
               value={index}
               onClick={e => this.handleClick(e)}
@@ -81,7 +78,7 @@ class Pagination extends Component {
         (current > panels - 2 && index === panels - 5)
       ) {
         return (
-          <li key={this.generateKey(i)} className={styles.ellipsis}>
+          <li key={hash(`${i}-4`)} className={styles.ellipsis}>
             ...
           </li>
         )
@@ -125,9 +122,7 @@ class Pagination extends Component {
     const NextLabel = language !== 'french' ? 'Go to next panel' : 'Aller au prochain panneau'
     return (
       <div {...safeRest(rest)} className={styles.container}>
-        <Panels {...rest} key={this.generateKey(current)}>
-          {children[current - 1] && children[current - 1]}
-        </Panels>
+        <Panels {...rest}>{children[current - 1] && children[current - 1]}</Panels>
         <div className={styles.controls}>
           {this.state.showPrevious && (
             <p className={styles.previous}>

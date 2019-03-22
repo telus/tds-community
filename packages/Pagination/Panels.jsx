@@ -2,24 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '@tds/shared-safe-rest'
-
-// import styles from './ExpandCollapse.modules.scss'
-
-const generateKey = pre => {
-  return `${pre}_${new Date().getTime()}`
-}
+import hash from './hash'
 
 const Panels = ({ children, ...rest }) => (
   <div {...safeRest(rest)}>
     {React.Children.toArray(children)
       .filter(Boolean)
       .map((panel, i) => {
-        return (
-          <div key={generateKey(i)}>
-            <p>This is panels</p>
-            {panel}
-          </div>
-        )
+        return <div key={hash(`${i}-contentpanel`)}>{panel}</div>
       })}
   </div>
 )

@@ -7,16 +7,11 @@ exports[`Pagination renders 1`] = `
   <div
     className="container"
   >
-    <Panels
-      key="1_1553122471220"
-    >
+    <Panels>
       <div>
         <div
-          key="0_1553122471220"
+          key="1763044743"
         >
-          <p>
-            This is panels
-          </p>
           <Panel
             key=".0"
           >
@@ -35,13 +30,13 @@ exports[`Pagination renders 1`] = `
       >
         <li
           className="current"
-          key="0_1553122471220"
+          key="193359721"
         >
           1
         </li>
         <li
           className="regular"
-          key="1_1553122471220"
+          key="193361898"
         >
           <button
             aria-label="Go to panel number 2"
@@ -53,7 +48,7 @@ exports[`Pagination renders 1`] = `
         </li>
         <li
           className="regular"
-          key="2_1553122471220"
+          key="193361897"
         >
           <button
             aria-label="Go to panel number 3"
@@ -65,7 +60,7 @@ exports[`Pagination renders 1`] = `
         </li>
         <li
           className="regular"
-          key="3_1553122471220"
+          key="193361896"
         >
           <button
             aria-label="Go to panel number 4"
@@ -77,13 +72,13 @@ exports[`Pagination renders 1`] = `
         </li>
         <li
           className="ellipsis"
-          key="4_1553122471220"
+          key="193354536"
         >
           ...
         </li>
         <li
           className="regular"
-          key="8_1553122471220"
+          key="193360802"
         >
           <button
             onClick={[Function]}

@@ -25,6 +25,37 @@ exports[`Pagination renders 1`] = `
     <div
       className="controls"
     >
+      <p
+        className="previousHidden"
+      >
+        <button
+          aria-label="Go to previous panel"
+          onClick={[Function]}
+          value={0}
+        >
+          <DecorativeIcon
+            size={16}
+            symbol="leftChevron"
+          >
+            <Icon
+              aria-hidden="true"
+              size={16}
+              symbol="leftChevron"
+            >
+              <i
+                aria-hidden="true"
+                className="TDS_Icon-modules__iconLeftChevron___37tW0 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+              />
+            </Icon>
+          </DecorativeIcon>
+           
+          <span
+            className="buttonLabel"
+          >
+            Previous
+          </span>
+        </button>
+      </p>
       <ul
         className="pagination"
       >

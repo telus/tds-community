@@ -8,9 +8,12 @@
   clear: both;
   display: flex;
   margin-top: 20px;
+  position: relative;
+  justify-content: center;
+  width: 100%;
 }
 
-.next, .previous {
+.next, .nextHidden, .previous, .previousHidden {
   color: #4B286D;
   padding: 0 8px;
   font-size: 16px;
@@ -33,6 +36,10 @@
       }
     }
   }
+}
+
+.nextHidden, .previousHidden {
+  visibility: hidden;
 }
 
 .pagination {

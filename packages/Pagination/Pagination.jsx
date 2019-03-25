@@ -20,7 +20,7 @@ class Pagination extends Component {
       showPrevious: false,
       showNext: true,
     }
-    this.mapNumeric = this.mapNumeric.bind(this)
+    this.mapTabs = this.mapTabs.bind(this)
     this.handleButtonState = this.handleButtonState.bind(this)
     this.handleClick = this.handleClick.bind(this)
   }
@@ -29,7 +29,7 @@ class Pagination extends Component {
     this.handleButtonState()
   }
 
-  mapNumeric = () => {
+  mapTabs = () => {
     return this.props.children.map((item, i) => {
       const index = i + 1
       let { current } = this.state
@@ -124,31 +124,27 @@ class Pagination extends Component {
       <div {...safeRest(rest)} className={styles.container}>
         <Panels {...rest}>{children[current - 1] && children[current - 1]}</Panels>
         <div className={styles.controls}>
-          {this.state.showPrevious && (
-            <p className={styles.previous}>
-              <button
-                value={decreaseNumber}
-                onClick={e => this.handleClick(e)}
-                aria-label={PreviousLabel}
-              >
-                <DecorativeIcon symbol="leftChevron" size={16} />{' '}
-                <span className={styles.buttonLabel}>{PreviousText}</span>
-              </button>
-            </p>
-          )}
-          <ul className={styles.pagination}>{this.mapNumeric()}</ul>
-          {this.state.showNext && (
-            <p className={styles.next}>
-              <button
-                value={increaseNumber}
-                onClick={e => this.handleClick(e)}
-                aria-label={NextLabel}
-              >
-                <span className={styles.buttonLabel}>{NextText}</span>{' '}
-                <DecorativeIcon symbol="chevron" size={16} />
-              </button>
-            </p>
-          )}
+          <p className={this.state.showPrevious ? styles.previous : styles.previousHidden}>
+            <button
+              value={decreaseNumber}
+              onClick={e => this.handleClick(e)}
+              aria-label={PreviousLabel}
+            >
+              <DecorativeIcon symbol="leftChevron" size={16} />{' '}
+              <span className={styles.buttonLabel}>{PreviousText}</span>
+            </button>
+          </p>
+          <ul className={styles.pagination}>{this.mapTabs()}</ul>
+          <p className={this.state.showNext ? styles.next : styles.nextHidden}>
+            <button
+              value={increaseNumber}
+              onClick={e => this.handleClick(e)}
+              aria-label={NextLabel}
+            >
+              <span className={styles.buttonLabel}>{NextText}</span>{' '}
+              <DecorativeIcon symbol="chevron" size={16} />
+            </button>
+          </p>
         </div>
       </div>
     )

@@ -24,7 +24,7 @@ const Link = ({ reactRouterLinkComponent, children, active, subMenuLink, ...rest
   const innerLink = (
     <Box vertical={subMenuLink ? 2 : 3} horizontal={3} dangerouslyAddClassName={boxClasses}>
       <ColoredTextProvider colorClassName={active ? styles.activeText : styles.hover}>
-        <Text size="medium" bold={active}>
+        <Text size={subMenuLink ? 'small' : 'medium'} bold={active}>
           {children}
         </Text>
       </ColoredTextProvider>

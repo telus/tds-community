@@ -29,12 +29,45 @@ class Pagination extends Component {
     this.handleButtonState()
   }
 
+  checkForRegularTabs = index => {
+    const { current } = this.state
+    const { panels } = this.state
+    // Check if there are less than 7 panels,
+    // if the index is at the first panel
+    // if the index is next to the first panel
+    // if current is less than three and index is less than five
+    // and the inverse if current within two of total and index is greater than minus 4 of total
+    return (
+      panels < 7 ||
+      index === 1 ||
+      index === panels ||
+      index === current + 1 ||
+      index === current - 1 ||
+      (current < 3 && index < 5) ||
+      (current > panels - 2 && index > panels - 4)
+    )
+  }
+
+  checkForEllipsis = index => {
+    const { current } = this.state
+    const { panels } = this.state
+    // Check if we should render an ellipsis
+    // if index is less than two or greater than two of current
+    // if current is less than three and index is five
+    // and the inverse if current is within two of total and index is total minus 5
+    return (
+      index === current - 2 ||
+      index === current + 2 ||
+      (current < 3 && index === 5) ||
+      (current > panels - 2 && index === panels - 5)
+    )
+  }
+
   mapTabs = () => {
     const goToText = this.props.language === 'french' ? 'Aller au panneau n°' : 'Go to panel number'
     return this.props.children.map((item, i) => {
       const index = i + 1
       let { current } = this.state
-      const { panels } = this.state
       current = parseInt(current, 10) || 0
       if (current === index) {
         return (
@@ -43,23 +76,7 @@ class Pagination extends Component {
           </li>
         )
       }
-
-      if (panels < 7 || index === 1 || index === panels) {
-        return (
-          <li key={hash(`${i}-2`)} className={styles.regular}>
-            <button value={index} onClick={e => this.handleClick(e)}>
-              {index}
-            </button>
-          </li>
-        )
-      }
-      if (
-        index === current ||
-        index === current + 1 ||
-        index === current - 1 ||
-        (current < 3 && index < 5) ||
-        (current > panels - 2 && index > panels - 4)
-      ) {
+      if (this.checkForRegularTabs(index)) {
         return (
           <li key={hash(`${i}-3`)} className={styles.regular}>
             <button
@@ -72,12 +89,7 @@ class Pagination extends Component {
           </li>
         )
       }
-      if (
-        index === current - 2 ||
-        index === current + 2 ||
-        (current < 3 && index === 5) ||
-        (current > panels - 2 && index === panels - 5)
-      ) {
+      if (this.checkForEllipsis(index)) {
         return (
           <li key={hash(`${i}-4`)} className={styles.ellipsis}>
             ...

@@ -19,13 +19,15 @@
   font-size: 16px;
   button {
     color: #4B286D;
-    border: none;
+    border: 1px solid #F2EFF4;
     background-color: #F2EFF4;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     text-align: center;
+    cursor: pointer;
     @include mq($from: md) {
       background: none;
+      border: none;
       width: auto;
       height: auto;
     }
@@ -47,13 +49,15 @@
   li {
     color: #4B286D;
     background-color: #F2EFF4;
-    width: 32px;
-    height: 32px;
-    line-height: 29px;
+    border: 1px solid #F2EFF4;
+    height: 30px;
+    line-height: 27px;
+    width: auto;
+    min-width: 30px;
     @include mq($from: md) {
-      width: 24px;
+      min-width: 24px;
       height: 24px;
-      line-height: 24px;
+      line-height: 22px;
     }
     list-style: none;
     margin-right: 4px;
@@ -64,28 +68,24 @@
       border: none;
       color: #4B286D;
       cursor: pointer;
+      padding: 0 5px;
     }
     &:hover {
       border: 1px solid #4B286D;
-      line-height: 27px;
-      @include mq($from: md) {
-        line-height: 22px;
-      }
     }
   }
   li.ellipsis {
     background-color: inherit;
     line-height: 15px;
+    border: none;
     &:hover {
       border: none;
     }
   }
   li.current {
     color: #ffffff;
-    button {
-      color: #ffffff;
-      cursor: default;
-    }
+    border: 1px solid #4B286D;
+    padding: 0 5px;
     background-color: #4B286D;
   }
 }

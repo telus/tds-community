@@ -1,5 +1,5 @@
 {
-  "name": "@tds/community-calendar",
+  "name": "@tds/community-calendar-picker",
   "version": "1.0.0-preview",
   "description": "",
   "main": "index.cjs.js",
@@ -21,10 +21,11 @@
   },
   "homepage": "http://tds.telus.com",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "dependencies": {
+    "@tds/core-decorative-icon": "^1.0.0",
     "moment": "^2.24.0",
     "prop-types": "^15.6.2",
     "react-dates": "^19.0.3",

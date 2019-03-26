@@ -30,6 +30,7 @@ class Pagination extends Component {
   }
 
   mapTabs = () => {
+    const goToText = this.props.language === 'french' ? 'Aller au panneau n°' : 'Go to panel number'
     return this.props.children.map((item, i) => {
       const index = i + 1
       let { current } = this.state
@@ -64,7 +65,7 @@ class Pagination extends Component {
             <button
               value={index}
               onClick={e => this.handleClick(e)}
-              aria-label={`Go to panel number ${index}`}
+              aria-label={`${goToText} ${index}`}
             >
               {index}
             </button>

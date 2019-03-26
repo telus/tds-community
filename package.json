@@ -48,10 +48,7 @@
     "node": "^8.11.3",
     "npm": ">=6"
   },
-  "dependencies": {
-    "@tds/core-responsive": "^1.1.0",
-    "moment": "^2.24.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
@@ -74,6 +71,7 @@
     "@tds/core-link": "^1.0.3",
     "@tds/core-ordered-list": "^2.0.0",
     "@tds/core-paragraph": "^1.0.4",
+    "@tds/core-responsive": "^1.1.0",
     "@tds/core-strong": "^1.0.4",
     "@tds/core-text": "^1.0.4",
     "@tds/core-unordered-list": "^2.0.0",
@@ -110,6 +108,7 @@
     "lint-staged": "^7.0.4",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
+    "moment": "^2.24.0",
     "nightwatch": "^1.0.0",
     "nightwatch-accessibility": "^1.6.0",
     "node-emoji": "^1.8.1",

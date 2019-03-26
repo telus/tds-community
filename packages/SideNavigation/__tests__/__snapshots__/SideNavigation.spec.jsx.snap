@@ -308,10 +308,10 @@ exports[`SideNavigation renders 1`] = `
                                       block={false}
                                       bold={false}
                                       invert={false}
-                                      size="medium"
+                                      size="small"
                                     >
                                       <span
-                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                        className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__inheritColor___3YAyL"
                                       >
                                         Option 1
                                       </span>
@@ -358,10 +358,10 @@ exports[`SideNavigation renders 1`] = `
                                       block={false}
                                       bold={false}
                                       invert={false}
-                                      size="medium"
+                                      size="small"
                                     >
                                       <span
-                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                        className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__inheritColor___3YAyL"
                                       >
                                         Option 2
                                       </span>
@@ -408,10 +408,10 @@ exports[`SideNavigation renders 1`] = `
                                       block={false}
                                       bold={false}
                                       invert={false}
-                                      size="medium"
+                                      size="small"
                                     >
                                       <span
-                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                        className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__inheritColor___3YAyL"
                                       >
                                         Option 3
                                       </span>
@@ -640,10 +640,10 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                       block={false}
                                       bold={false}
                                       invert={false}
-                                      size="medium"
+                                      size="small"
                                     >
                                       <span
-                                        className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__inheritColor___3YAyL"
+                                        className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__inheritColor___3YAyL"
                                       >
                                         Option 1
                                       </span>

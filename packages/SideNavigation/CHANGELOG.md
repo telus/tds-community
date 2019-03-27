@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@1.0.2...@tds/community-side-navigation@1.1.0) (2019-03-27)
+
+
+### Bug Fixes
+
+* **community-side-navigation:** updated designs for smaller submenu text ([e0bc865](https://github.com/telus/tds-community/commit/e0bc865))
+
+
+### Features
+
+* **community-side-navigation:** enhancements to side nav ([9da1782](https://github.com/telus/tds-community/commit/9da1782))
+
+
+
+
+
 ## [1.0.2](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@1.0.1...@tds/community-side-navigation@1.0.2) (2019-01-16)
 
 ### Bug Fixes

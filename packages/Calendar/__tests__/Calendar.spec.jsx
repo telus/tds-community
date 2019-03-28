@@ -3,13 +3,11 @@ import { shallow, mount } from 'enzyme'
 import moment from 'moment'
 import Calendar from '../Calendar'
 
-const tz = require('moment-timezone') //eslint-disable-line
-
 describe('Calendar', () => {
   const defaultProps = {
     id: 'appointment_calendar',
     label: 'Book an appointment',
-    date: moment('12-25-2020', 'MM-DD-YYYY').tz('America/Toronto'),
+    date: moment(1608924597000),
   }
   const doShallow = (props = defaultProps) => shallow(<Calendar {...props} />)
   const doMount = (props = defaultProps) => mount(<Calendar {...props} />)

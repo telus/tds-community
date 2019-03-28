@@ -1,26 +1,17 @@
 import styled from 'styled-components'
-
-const theme = {
-  colors: {
-    telusPurple: '#4B286D',
-    shark: '#2A2C2E',
-    shuttleGrey: '#54595F',
-    white: '#FFF',
-    gainsboro: '#D8D8D8',
-  },
-  fontWeights: {
-    thin: 300,
-    light: 400,
-    roman: 500,
-    medium: 700,
-  },
-  breakPoints: {
-    xs: '576px',
-    sm: '769px',
-    md: '993px',
-    lg: '1200px',
-  },
-}
+import { media } from '@tds/core-responsive'
+import {
+  colorShuttleGrey,
+  colorShark,
+  colorGainsboro,
+  colorWhite,
+  colorTelusPurple,
+} from '@tds/core-colours'
+import {
+  helveticaNeueLight45,
+  helveticaNeueRoman55,
+  helveticaNeueMedium65,
+} from '@tds/shared-typography/typography'
 
 export const CalendarContainer = styled.div`
   .SingleDatePicker,
@@ -30,7 +21,7 @@ export const CalendarContainer = styled.div`
 
   .SingleDatePicker_picker {
     box-shadow: none;
-    border: 1px solid ${theme.colors.shuttleGrey};
+    border: 1px solid ${colorShuttleGrey};
     border-radius: 4px;
     z-index: 3;
   }
@@ -45,11 +36,11 @@ export const CalendarContainer = styled.div`
 
   .DateInput_input {
     padding: 0.5rem 1rem;
-    border: 1px solid ${theme.colors.shuttleGrey};
+    border: 1px solid ${colorShuttleGrey};
     border-radius: 4px;
     min-height: 3.25rem;
-    color: ${theme.colors.shuttleGrey};
-    font-weight: ${theme.fontWeights.roman};
+    color: ${colorShuttleGrey};
+    font-weight: ${helveticaNeueRoman55.fontWeight};
     font-size: 1rem;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   }
@@ -60,11 +51,11 @@ export const CalendarContainer = styled.div`
   }
 
   .DateInput_fangStroke {
-    stroke: ${theme.colors.shuttleGrey};
+    stroke: ${colorShuttleGrey};
   }
 
   .CalendarMonth_caption {
-    font-weight: ${theme.fontWeights.medium};
+    font-weight: ${helveticaNeueMedium65.fontWeight};
     padding-bottom: 48px;
   }
 
@@ -73,7 +64,7 @@ export const CalendarContainer = styled.div`
   }
 
   .DayPickerNavigation_button {
-    border: 1px solid ${theme.colors.shark};
+    border: 1px solid ${colorShark};
     border-radius: 2px;
     position: absolute;
     top: 18px;
@@ -109,23 +100,23 @@ export const CalendarContainer = styled.div`
 
   .DayPickerNavigation_button__default:focus,
   .DayPickerNavigation_button__default:hover {
-    border: 1px solid ${theme.colors.gainsboro};
+    border: 1px solid ${colorGainsboro};
   }
 
   .DayPickerNavigation_svg__horizontal {
-    fill: ${theme.colors.shark};
+    fill: ${colorShark};
   }
 
   .DayPicker_weekHeader {
-    color: ${theme.colors.shark};
+    color: ${colorShark};
   }
 
   .CalendarDay__default {
     position: relative;
-    border: 1px solid ${theme.colors.gainsboro};
+    border: 1px solid ${colorGainsboro};
     vertical-align: middle;
-    font-weight: ${theme.fontWeights.medium};
-    color: ${theme.colors.shark};
+    font-weight: ${helveticaNeueMedium65.fontWeight};
+    color: ${colorShark};
     text-decoration: underline;
     transition: all 0.3s;
     &:before {
@@ -140,10 +131,10 @@ export const CalendarContainer = styled.div`
       background: transparent;
       transition: all 0.3s;
       z-index: -1;
-      @media screen and (min-width: ${theme.breakPoints.md}) {
-        height: 2.25rem;
-        width: 2.25rem;
-      }
+      ${media.from('md').css({
+        height: '2.25rem',
+        width: '2.25rem',
+      })}
     }
   }
 
@@ -152,21 +143,21 @@ export const CalendarContainer = styled.div`
   .CalendarDay__selected:active,
   .CalendarDay__selected:hover {
     background: none;
-    border: 1px solid ${theme.colors.gainsboro};
+    border: 1px solid ${colorGainsboro};
     z-index: 0;
     text-decoration: underline;
     &:before {
-      background: ${theme.colors.gainsboro};
+      background: ${colorGainsboro};
     }
   }
 
   .CalendarDay__default.CalendarDay__selected,
   .CalendarDay__default.CalendarDay__selected:active
     .CalendarDay__default.CalendarDay__selected:hover {
-    color: ${theme.colors.white};
+    color: ${colorWhite};
     text-decoration: none;
     &:before {
-      background: ${theme.colors.telusPurple};
+      background: ${colorTelusPurple};
     }
   }
 
@@ -176,9 +167,9 @@ export const CalendarContainer = styled.div`
   .CalendarDay__blocked_calendar,
   .CalendarDay__blocked_calendar:active,
   .CalendarDay__blocked_calendar:hover {
-    font-weight: ${theme.fontWeights.light};
-    background: ${theme.colors.white};
-    color: ${theme.colors.shuttleGrey};
+    font-weight: ${helveticaNeueLight45.fontWeight};
+    background: ${colorWhite};
+    color: ${colorShuttleGrey};
     text-decoration: none;
     &:before {
       content: none;
@@ -188,7 +179,7 @@ export const CalendarContainer = styled.div`
 
 export const LabelText = styled.div`
   margin-bottom: 0.5rem;
-  font-weight: ${theme.fontWeights.medium};
+  font-weight: ${helveticaNeueMedium65.fontWeight};
 `
 
 export default {

@@ -11,7 +11,7 @@ import {
   helveticaNeueLight45,
   helveticaNeueRoman55,
   helveticaNeueMedium65,
-} from '@tds/shared-typography/typography'
+} from '@tds/shared-typography'
 
 export const CalendarContainer = styled.div`
   .SingleDatePicker,

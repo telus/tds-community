@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewCard renders with all props 1`] = `
+<styled.a
+  href="#"
+>
+  <styled.div>
+    <styled.div>
+      <Image
+        alt="Image of co-workers collaborating"
+        height={300}
+        src="blog-example.jpg"
+        width={300}
+      />
+    </styled.div>
+    <Box
+      horizontal={4}
+      inline={false}
+      tag="div"
+      vertical={5}
+    >
+      <styled.div
+        id="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <Text
+            block={false}
+            bold={true}
+            invert={false}
+            size="small"
+          >
+            development · April 1st, 2019
+          </Text>
+        </Box>
+        <Box
+          inline={false}
+          tag="div"
+          vertical={3}
+        >
+          <styled.p
+            alt="Hello world!"
+          >
+            Hello world!
+          </styled.p>
+        </Box>
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <Text
+            block={false}
+            bold={false}
+            invert={false}
+            size="small"
+          >
+            By Halo
+          </Text>
+        </Box>
+      </styled.div>
+    </Box>
+  </styled.div>
+</styled.a>
+`;
+
+exports[`PreviewCard renders with category and other 1`] = `
+<styled.a
+  href="#"
+>
+  <styled.div>
+    <styled.div>
+      <Image
+        alt="Image of co-workers collaborating"
+        height={300}
+        src="blog-example.jpg"
+        width={300}
+      />
+    </styled.div>
+    <Box
+      horizontal={4}
+      inline={false}
+      tag="div"
+      vertical={5}
+    >
+      <styled.div
+        id="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <Text
+            block={false}
+            bold={true}
+            invert={false}
+            size="small"
+          >
+            development · April 1st, 2019
+          </Text>
+        </Box>
+        <Box
+          inline={false}
+          tag="div"
+          vertical={3}
+        >
+          <styled.p
+            alt="Hello world!"
+          >
+            Hello world!
+          </styled.p>
+        </Box>
+      </styled.div>
+    </Box>
+  </styled.div>
+</styled.a>
+`;
+
+exports[`PreviewCard renders with footer 1`] = `
+<styled.a
+  href="#"
+>
+  <styled.div>
+    <styled.div>
+      <Image
+        alt="Image of co-workers collaborating"
+        height={300}
+        src="blog-example.jpg"
+        width={300}
+      />
+    </styled.div>
+    <Box
+      horizontal={4}
+      inline={false}
+      tag="div"
+      vertical={5}
+    >
+      <styled.div
+        id="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <styled.p
+            alt="Hello world!"
+          >
+            Hello world!
+          </styled.p>
+        </Box>
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <Text
+            block={false}
+            bold={false}
+            invert={false}
+            size="small"
+          >
+            By Halo
+          </Text>
+        </Box>
+      </styled.div>
+    </Box>
+  </styled.div>
+</styled.a>
+`;
+
+exports[`PreviewCard renders with long body text 1`] = `
+<styled.a
+  href="#"
+>
+  <styled.div>
+    <styled.div>
+      <Image
+        alt="Image of co-workers collaborating"
+        height={300}
+        src="blog-example.jpg"
+        width={300}
+      />
+    </styled.div>
+    <Box
+      horizontal={3}
+      inline={false}
+      tag="div"
+      vertical={3}
+    >
+      <styled.div
+        id="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <styled.p
+            alt="Hello world, this preview card has all the props and has text that is over 70 characters in length"
+          >
+            Hello world, this preview card has all the props and has text that is ...
+          </styled.p>
+        </Box>
+      </styled.div>
+    </Box>
+  </styled.div>
+</styled.a>
+`;
+
+exports[`PreviewCard renders with only Required props 1`] = `
+<styled.a
+  href="#"
+>
+  <styled.div>
+    <styled.div>
+      <Image
+        alt="Image of co-workers collaborating"
+        height={300}
+        src="blog-example.jpg"
+        width={300}
+      />
+    </styled.div>
+    <Box
+      horizontal={3}
+      inline={false}
+      tag="div"
+      vertical={3}
+    >
+      <styled.div
+        id="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <styled.p
+            alt="Hello world!"
+          >
+            Hello world!
+          </styled.p>
+        </Box>
+      </styled.div>
+    </Box>
+  </styled.div>
+</styled.a>
+`;

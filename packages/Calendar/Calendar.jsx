@@ -60,10 +60,10 @@ Calendar.propTypes = {
   /** A unique identifier */
   id: PropTypes.string.isRequired,
 
-  /** A Moment instance representing the currently selected date, i.e. <code>moment() </code> */
+  /** A Moment instance representing the currently selected date, i.e. `moment()` */
   date: momentPropTypes.momentObj,
 
-  /** Event triggered every time a new date is selected on
+  /** Event triggered every time a new date is clicked on
   @param {Moment} date The new date that was selected */
   onDateChange: PropTypes.func,
 

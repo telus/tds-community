@@ -21,16 +21,19 @@
   },
   "homepage": "http://tds.telus.com",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15",
-    "styled-components": "^4.2.0"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "styled-components": "^4.1.3"
   },
   "dependencies": {
+    "@tds/core-box": "^1.0.1",
     "@tds/core-colours": "^1.1.1",
-    "jest-styled-components": "^6.3.1",
+    "@tds/core-text": "^1.0.4",
+    "@tds/util-prop-types": "1.3.0",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@tds/shared-safe-rest": "^1.0.0"
+    "@tds/shared-safe-rest": "^1.0.0",
+    "jest-styled-components": "^6.3.1"
   }
 }

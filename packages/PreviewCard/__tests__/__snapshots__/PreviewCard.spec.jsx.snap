@@ -20,7 +20,7 @@ exports[`PreviewCard renders with all props 1`] = `
       vertical={5}
     >
       <styled.div
-        id="contentContainer"
+        data-testid="contentContainer"
       >
         <Box
           inline={false}
@@ -85,7 +85,7 @@ exports[`PreviewCard renders with category and other 1`] = `
       vertical={5}
     >
       <styled.div
-        id="contentContainer"
+        data-testid="contentContainer"
       >
         <Box
           inline={false}
@@ -137,7 +137,7 @@ exports[`PreviewCard renders with footer 1`] = `
       vertical={5}
     >
       <styled.div
-        id="contentContainer"
+        data-testid="contentContainer"
       >
         <Box
           inline={false}
@@ -188,7 +188,7 @@ exports[`PreviewCard renders with long body text 1`] = `
       vertical={3}
     >
       <styled.div
-        id="contentContainer"
+        data-testid="contentContainer"
       >
         <Box
           inline={false}
@@ -226,7 +226,7 @@ exports[`PreviewCard renders with only Required props 1`] = `
       vertical={3}
     >
       <styled.div
-        id="contentContainer"
+        data-testid="contentContainer"
       >
         <Box
           inline={false}

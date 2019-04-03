@@ -4,8 +4,14 @@ exports[`PreviewCard renders with all props 1`] = `
 <styled.a
   href="#"
 >
-  <styled.div>
-    <styled.div>
+  <styled.div
+    footer="By Halo"
+    header="development · April 1st, 2019"
+  >
+    <styled.div
+      footer="By Halo"
+      header="development · April 1st, 2019"
+    >
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -21,6 +27,8 @@ exports[`PreviewCard renders with all props 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
+        footer="By Halo"
+        header="development · April 1st, 2019"
       >
         <Box
           inline={false}
@@ -69,8 +77,12 @@ exports[`PreviewCard renders with category and other 1`] = `
 <styled.a
   href="#"
 >
-  <styled.div>
-    <styled.div>
+  <styled.div
+    header="development · April 1st, 2019"
+  >
+    <styled.div
+      header="development · April 1st, 2019"
+    >
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -86,6 +98,7 @@ exports[`PreviewCard renders with category and other 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
+        header="development · April 1st, 2019"
       >
         <Box
           inline={false}
@@ -121,8 +134,12 @@ exports[`PreviewCard renders with footer 1`] = `
 <styled.a
   href="#"
 >
-  <styled.div>
-    <styled.div>
+  <styled.div
+    footer="By Halo"
+  >
+    <styled.div
+      footer="By Halo"
+    >
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -138,10 +155,12 @@ exports[`PreviewCard renders with footer 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
+        footer="By Halo"
       >
         <Box
           inline={false}
           tag="div"
+          vertical={3}
         >
           <styled.p
             alt="Hello world!"

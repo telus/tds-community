@@ -8,70 +8,74 @@ import Text from '@tds/core-text'
 import { componentWithName } from '@tds/util-prop-types'
 import { colorTelusPurple, colorWhiteLilac } from '@tds/core-colours'
 
+const Anchor = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+`
+
+const BoxContainer = styled.div`
+  opacity: 1;
+  border: 1px solid ${colorWhiteLilac};
+  border-radius: 4px;
+  width: ${props => (props.header || props.footer ? '100%' : '269px')};
+  max-width: 346px;
+  height: ${props => (props.header || props.footer ? '465px' : '305px')};
+  @media (max-width: 576px) {
+    height: auto;
+    width: 100%;
+  }
+  overflow: hidden;
+  &:hover {
+    box-shadow: 0 0 16px 0 rgba(213, 213, 213, 0.5);
+  }
+`
+
+const ContentContainer = styled.div`
+  line-height: ${props => (props.header && props.footer ? '21px' : undefined)};
+`
+
+const ImageContainer = styled.div`
+  border-radius: 4px 4px 0 0;
+  width: ${props => (props.header || props.footer ? '100%' : '268px')};
+  overflow: hidden;
+  line-height: 0px;
+  & > img {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+`
+
+const P = styled.p`
+  color: ${colorTelusPurple};
+`
+
 /**
  * The PreviewCard component creates the appearance of a page snippet, and can be used in a list format.
  * @version ./package.json
  */
 const PreviewCard = ({ category, other, image, body, footer, ...rest }) => {
-  let header = category || other
-  if (category && other) {
-    header = `${category} \u00B7 ${other}`
-  }
-
   let newBody = body
   if (body.length > 70) {
     newBody = `${body.substr(0, 70)}...`
   }
 
-  const Anchor = styled.a`
-    text-decoration: none;
-    cursor: pointer;
-  `
-
-  const BoxContainer = styled.div`
-    opacity: 1;
-    border: 1px solid ${colorWhiteLilac};
-    border-radius: 4px;
-    width: ${header || footer ? '100%' : '269px'};
-    max-width: 346px;
-    height: ${header || footer ? '465px' : '305px'};
-    @media (max-width: 576px) {
-      height: auto;
-      width: 100%;
-    }
-    overflow: hidden;
-    &:hover {
-      box-shadow: 0 0 16px 0 rgba(213, 213, 213, 0.5);
-    }
-  `
-
-  const ContentContainer = styled.div`
-    line-height: ${header && footer && '21px'};
-  `
-
-  const ImageContainer = styled.div`
-    border-radius: 4px 4px 0 0;
-    width: ${header || footer ? '100%' : '268px'};
-    overflow: hidden;
-    line-height: 0px;
-    & > img {
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        transform: scale(1.03);
-      }
-    }
-  `
-
-  const P = styled.p`
-    color: ${colorTelusPurple};
-  `
+  let header = category || other
+  if (category && other) {
+    header = `${category} \u00B7 ${other}`
+  }
 
   return (
     <Anchor {...safeRest(rest)}>
-      <BoxContainer>
-        {image && <ImageContainer>{image}</ImageContainer>}
+      <BoxContainer header={header} footer={footer}>
+        {image && (
+          <ImageContainer header={header} footer={footer}>
+            {image}
+          </ImageContainer>
+        )}
         <Box horizontal={header || footer ? 4 : 3} vertical={header || footer ? 5 : 3}>
-          <ContentContainer data-testid="contentContainer">
+          <ContentContainer header={header} footer={footer} data-testid="contentContainer">
             {header && (
               <Box>
                 <Text size="small" bold>
@@ -79,7 +83,7 @@ const PreviewCard = ({ category, other, image, body, footer, ...rest }) => {
                 </Text>
               </Box>
             )}
-            <Box vertical={header && 3}>
+            <Box vertical={header || footer ? 3 : undefined}>
               <P alt={body}>{newBody}</P>
             </Box>
             {footer && (

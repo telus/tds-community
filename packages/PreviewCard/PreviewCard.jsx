@@ -71,7 +71,7 @@ const PreviewCard = ({ category, other, image, body, footer, ...rest }) => {
       <BoxContainer>
         {image && <ImageContainer>{image}</ImageContainer>}
         <Box horizontal={header || footer ? 4 : 3} vertical={header || footer ? 5 : 3}>
-          <ContentContainer id="contentContainer">
+          <ContentContainer data-testid="contentContainer">
             {header && (
               <Box>
                 <Text size="small" bold>

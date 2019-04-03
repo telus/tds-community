@@ -104,8 +104,8 @@ describe('PreviewCard', () => {
         footer="By Halo"
         {...requiredProps}
       />
-    )
+    ).find('[data-testid="contentContainer"]')
 
-    expect(previewCard.find('#contentContainer')).toHaveStyleRule('line-height', '21px')
+    expect(previewCard).toHaveStyleRule('line-height', '21px')
   })
 })

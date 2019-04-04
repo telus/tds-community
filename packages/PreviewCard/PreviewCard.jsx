@@ -28,6 +28,7 @@ const BoxContainer = styled.div`
   &:hover {
     box-shadow: 0 0 16px 0 rgba(213, 213, 213, 0.5);
   }
+  display: inline-block;
 `
 
 const ContentContainer = styled.div`
@@ -39,6 +40,11 @@ const ImageContainer = styled.div`
   width: ${props => (props.header || props.footer ? '100%' : '268px')};
   overflow: hidden;
   line-height: 0px;
+  max-height: 250px;
+  @media (max-width: 992px) {
+    height: auto;
+    width: 100%;
+  }
   & > img {
     transition: all 0.3s ease-in-out;
     &:hover {

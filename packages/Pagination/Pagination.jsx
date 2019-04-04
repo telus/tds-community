@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import safeRest from '@tds/shared-safe-rest'
 import DecorativeIcon from '@tds/core-decorative-icon'
-import Panels from './Panels'
 import Panel from './Panel/Panel'
 import styles from './Pagination.scss'
 import hash from './hash'
@@ -20,9 +19,6 @@ class Pagination extends Component {
       showPrevious: false,
       showNext: true,
     }
-    this.mapTabs = this.mapTabs.bind(this)
-    this.handleButtonState = this.handleButtonState.bind(this)
-    this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount() {
@@ -30,8 +26,7 @@ class Pagination extends Component {
   }
 
   checkForRegularTabs = index => {
-    const { current } = this.state
-    const { panels } = this.state
+    const { current, panels } = this.state
     // Check if there are less than 7 panels,
     // if the index is at the first panel
     // if the index is next to the first panel
@@ -49,8 +44,7 @@ class Pagination extends Component {
   }
 
   checkForEllipsis = index => {
-    const { current } = this.state
-    const { panels } = this.state
+    const { current, panels } = this.state
     // Check if we should render an ellipsis
     // if index is less than two or greater than two of current
     // if current is less than three and index is five
@@ -64,11 +58,11 @@ class Pagination extends Component {
   }
 
   mapTabs = () => {
-    const goToText = this.props.language === 'french' ? 'Aller au panneau n°' : 'Go to panel number'
+    const goToText = this.props.language === 'French' ? 'Aller au panneau n°' : 'Go to panel number'
+    let { current } = this.state
+    current = parseInt(current, 10) || 0
     return this.props.children.map((item, i) => {
       const index = i + 1
-      let { current } = this.state
-      current = parseInt(current, 10) || 0
       if (current === index) {
         return (
           <li key={hash(`${i}-1`)} className={styles.current}>
@@ -128,23 +122,23 @@ class Pagination extends Component {
     const { current } = this.state
     const increaseNumber = parseInt(current + 1, 10)
     const decreaseNumber = parseInt(current - 1, 10)
-    const PreviousText = language !== 'french' ? 'Previous' : 'Précédent'
-    const NextText = language !== 'french' ? 'Next' : 'Suivant'
-    const PreviousLabel =
-      language !== 'french' ? 'Go to previous panel' : 'Aller au panneau précédent'
-    const NextLabel = language !== 'french' ? 'Go to next panel' : 'Aller au prochain panneau'
+    const previousText = language !== 'French' ? 'Previous' : 'Précédent'
+    const nextText = language !== 'French' ? 'Next' : 'Suivant'
+    const previousLabel =
+      language !== 'French' ? 'Go to previous panel' : 'Aller au panneau précédent'
+    const NextLabel = language !== 'French' ? 'Go to next panel' : 'Aller au prochain panneau'
     return (
       <div {...safeRest(rest)} className={styles.container}>
-        <Panels {...rest}>{children[current - 1] && children[current - 1]}</Panels>
+        <Panel {...rest}>{children[current - 1]}</Panel>
         <div className={styles.controls}>
           <p className={this.state.showPrevious ? styles.previous : styles.previousHidden}>
             <button
               value={decreaseNumber}
               onClick={e => this.handleClick(e)}
-              aria-label={PreviousLabel}
+              aria-label={previousLabel}
             >
               <DecorativeIcon symbol="leftChevron" size={16} />{' '}
-              <span className={styles.buttonLabel}>{PreviousText}</span>
+              <span className={styles.buttonLabel}>{previousText}</span>
             </button>
           </p>
           <ul className={styles.pagination}>{this.mapTabs()}</ul>
@@ -154,7 +148,7 @@ class Pagination extends Component {
               onClick={e => this.handleClick(e)}
               aria-label={NextLabel}
             >
-              <span className={styles.buttonLabel}>{NextText}</span>{' '}
+              <span className={styles.buttonLabel}>{nextText}</span>{' '}
               <DecorativeIcon symbol="chevron" size={16} />
             </button>
           </p>
@@ -170,7 +164,7 @@ Pagination.propTypes = {
 }
 
 Pagination.defaultProps = {
-  language: 'english',
+  language: 'English',
 }
 
 Pagination.Panel = Panel

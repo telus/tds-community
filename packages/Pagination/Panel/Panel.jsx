@@ -2,13 +2,14 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import safeRest from '@tds/shared-safe-rest'
 
 /**
  * Page-able content panels for use with `Pagination`
  *
  * _This component can only be accessed as a name-spaced component: `Pagination.Panel` ._
  */
-const Panel = ({ children }) => <div>{children}</div>
+const Panel = ({ children, ...rest }) => <div {...safeRest(rest)}>{children}</div>
 
 Panel.propTypes = {
   /**

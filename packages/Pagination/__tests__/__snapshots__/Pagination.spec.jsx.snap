@@ -2,26 +2,20 @@
 
 exports[`Pagination renders 1`] = `
 <Pagination
-  language="english"
+  language="English"
 >
   <div
     className="container"
   >
-    <Panels>
+    <Panel>
       <div>
-        <div
-          key="1763044743"
-        >
-          <Panel
-            key=".0"
-          >
-            <div>
-              Content 1
-            </div>
-          </Panel>
-        </div>
+        <Panel>
+          <div>
+            Content 1
+          </div>
+        </Panel>
       </div>
-    </Panels>
+    </Panel>
     <div
       className="controls"
     >

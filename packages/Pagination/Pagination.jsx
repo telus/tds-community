@@ -122,7 +122,7 @@ class Pagination extends Component {
     const { current } = this.state
     const increaseNumber = parseInt(current + 1, 10)
     const decreaseNumber = parseInt(current - 1, 10)
-    const previousText = language !== 'French' ? 'Previous' : 'Précédent'
+    const previousText = language !== 'French' ? 'Prev' : 'Précédent'
     const nextText = language !== 'French' ? 'Next' : 'Suivant'
     const previousLabel =
       language !== 'French' ? 'Go to previous panel' : 'Aller au panneau précédent'

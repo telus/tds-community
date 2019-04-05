@@ -3,6 +3,7 @@
 exports[`PreviewCard renders with all props 1`] = `
 <styled.a
   href="#"
+  to={null}
 >
   <styled.div
     footer="By Halo"
@@ -76,6 +77,7 @@ exports[`PreviewCard renders with all props 1`] = `
 exports[`PreviewCard renders with category and other 1`] = `
 <styled.a
   href="#"
+  to={null}
 >
   <styled.div
     header="development · April 1st, 2019"
@@ -133,6 +135,7 @@ exports[`PreviewCard renders with category and other 1`] = `
 exports[`PreviewCard renders with footer 1`] = `
 <styled.a
   href="#"
+  to={null}
 >
   <styled.div
     footer="By Halo"
@@ -190,6 +193,7 @@ exports[`PreviewCard renders with footer 1`] = `
 exports[`PreviewCard renders with long body text 1`] = `
 <styled.a
   href="#"
+  to={null}
 >
   <styled.div>
     <styled.div>
@@ -228,6 +232,7 @@ exports[`PreviewCard renders with long body text 1`] = `
 exports[`PreviewCard renders with only Required props 1`] = `
 <styled.a
   href="#"
+  to={null}
 >
   <styled.div>
     <styled.div>

@@ -18,14 +18,14 @@
     <FlexGrid.Col xs={12} md={6} lg={4}>
       <PreviewCard
         category="Data Intelligence"
-        image={<Image src="blog-example.jpg" alt="Image of co-workers collaborating" />}
+        image={<img src="blog-example.jpg" alt="Image of co-workers collaborating" width="100%" />}
         body="Hello world, this preview card has a category"
         href="#"
       />
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} md={6} lg={4}>
       <PreviewCard
-        image={<Image src="blog-example.jpg" alt="Image of co-workers collaborating" />}
+        image={<img src="blog-example.jpg" alt="Image of co-workers collaborating" width="100%" />}
         body="Hello world, this preview card has no category nor footer"
         href="#"
       />

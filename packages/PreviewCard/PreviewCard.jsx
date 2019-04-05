@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import safeRest from '@tds/shared-safe-rest'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
-import { componentWithName } from '@tds/util-prop-types'
 import { colorTelusPurple, colorWhiteLilac } from '@tds/core-colours'
+import safeRest from '@tds/shared-safe-rest'
+
+import warn from '../../shared/utils/warn'
 
 const Anchor = styled.a`
   text-decoration: none;
@@ -42,11 +43,11 @@ const ImageContainer = styled.div`
   @media (max-width: 992px) {
     height: auto;
   }
-  & > img {
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.03);
-    }
+  img {
+    transition: all 0.3s ease-in-out !important;
+  }
+  &:hover img {
+    transform: scale(1.03);
   }
 `
 
@@ -58,7 +59,11 @@ const P = styled.p`
  * The PreviewCard component creates the appearance of a page snippet, and can be used in a list format.
  * @version ./package.json
  */
-const PreviewCard = ({ category, other, image, body, footer, ...rest }) => {
+const PreviewCard = ({ category, other, image, body, footer, href, linkComponent, ...rest }) => {
+  if (rest.to && !(linkComponent && rest.to)) {
+    warn('Link', 'The props `linkComponent` and `to` must be used together.')
+  }
+
   let newBody = body
   if (body.length > 70) {
     newBody = `${body.substr(0, 70)}...`
@@ -69,35 +74,42 @@ const PreviewCard = ({ category, other, image, body, footer, ...rest }) => {
     header = `${category} \u00B7 ${other}`
   }
 
-  return (
-    <Anchor {...safeRest(rest)}>
-      <BoxContainer header={header} footer={footer}>
-        {image && (
-          <ImageContainer header={header} footer={footer}>
-            {image}
-          </ImageContainer>
-        )}
-        <Box horizontal={header || footer ? 4 : 3} vertical={header || footer ? 5 : 3}>
-          <ContentContainer header={header} footer={footer} data-testid="contentContainer">
-            {header && (
-              <Box>
-                <Text size="small" bold>
-                  {header}
-                </Text>
-              </Box>
-            )}
-            <Box vertical={header || footer ? 3 : undefined}>
-              <P alt={body}>{newBody}</P>
+  const innerCard = (
+    <BoxContainer header={header} footer={footer}>
+      {image && (
+        <ImageContainer header={header} footer={footer}>
+          {image}
+        </ImageContainer>
+      )}
+      <Box horizontal={header || footer ? 4 : 3} vertical={header || footer ? 5 : 3}>
+        <ContentContainer header={header} footer={footer} data-testid="contentContainer">
+          {header && (
+            <Box>
+              <Text size="small" bold>
+                {header}
+              </Text>
             </Box>
-            {footer && (
-              <Box>
-                <Text size="small">{footer}</Text>
-              </Box>
-            )}
-          </ContentContainer>
-        </Box>
-      </BoxContainer>
-    </Anchor>
+          )}
+          <Box vertical={header || footer ? 3 : undefined}>
+            <P alt={body}>{newBody}</P>
+          </Box>
+          {footer && (
+            <Box>
+              <Text size="small">{footer}</Text>
+            </Box>
+          )}
+        </ContentContainer>
+      </Box>
+    </BoxContainer>
+  )
+
+  return React.createElement(
+    linkComponent || Anchor,
+    {
+      ...safeRest(rest),
+      href,
+    },
+    innerCard
   )
 }
 
@@ -105,7 +117,7 @@ PreviewCard.propTypes = {
   /**
    * Image component that will appear at the top of the card, above the content section.  Recommended dimensions is 369x269px.
    */
-  image: componentWithName('Image').isRequired,
+  image: PropTypes.node.isRequired,
   /**
    * Text that will appear at the top of the content section.  Recommended to be only one or two words.
    */
@@ -125,13 +137,24 @@ PreviewCard.propTypes = {
   /**
    * Target URL.
    */
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
+  /**
+   * Link component.
+   */
+  linkComponent: PropTypes.func,
+  /**
+   * Target URL (if using 'Link from 'react-router').
+   */
+  to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 }
 
 PreviewCard.defaultProps = {
   category: undefined,
   other: undefined,
   footer: undefined,
+  href: undefined,
+  linkComponent: null,
+  to: null,
 }
 
 export default PreviewCard

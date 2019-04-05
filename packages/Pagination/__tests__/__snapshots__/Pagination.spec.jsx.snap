@@ -46,7 +46,7 @@ exports[`Pagination renders 1`] = `
           <span
             className="buttonLabel"
           >
-            Previous
+            Prev
           </span>
         </button>
       </p>

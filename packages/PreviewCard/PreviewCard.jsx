@@ -14,15 +14,14 @@ const Anchor = styled.a`
 `
 
 const BoxContainer = styled.div`
+  background-color: white;
+  width: 100%;
   opacity: 1;
   border: 1px solid ${colorWhiteLilac};
   border-radius: 4px;
-  width: ${props => (props.header || props.footer ? '100%' : '269px')};
-  max-width: 346px;
-  height: ${props => (props.header || props.footer ? '465px' : '305px')};
+  height: ${props => (props.header || props.footer ? '465px' : '350px')};
   @media (max-width: 576px) {
     height: auto;
-    width: 100%;
   }
   overflow: hidden;
   &:hover {
@@ -37,13 +36,11 @@ const ContentContainer = styled.div`
 
 const ImageContainer = styled.div`
   border-radius: 4px 4px 0 0;
-  width: ${props => (props.header || props.footer ? '100%' : '268px')};
   overflow: hidden;
   line-height: 0px;
   max-height: 250px;
   @media (max-width: 992px) {
     height: auto;
-    width: 100%;
   }
   & > img {
     transition: all 0.3s ease-in-out;

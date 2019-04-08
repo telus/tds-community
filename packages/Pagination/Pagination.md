@@ -1,9 +1,10 @@
 ### Usage Criteria
 
-- The `Pagination` component can take any content as children inside a Panel
+- `Pagination` can be used in content heavy pages to divide content and present in a limited and digestible manner
+- The component can take any content as children inside a Panel
 - Any number of panels can be used to paginate
 - Style your content within Panel however you wish
-- Language can be passed in as a prop, english is set as default
+- Language can be passed in as a prop, English is set as default
 
 ```jsx
 <Pagination language="English">

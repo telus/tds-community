@@ -4,6 +4,7 @@ import momentPropTypes from 'react-moment-proptypes'
 
 import 'react-dates/initialize'
 import SingleDatePicker from 'react-dates/lib/components/SingleDatePicker'
+import DayPickerSingleDateController from 'react-dates/lib/components/DayPickerSingleDateController'
 import 'react-dates/lib/css/_datepicker.css'
 
 import safeRest from '@tds/shared-safe-rest'
@@ -27,15 +28,26 @@ class Calendar extends Component {
   }
 
   render() {
-    const { id, date, onDateChange, isDayDisabled, label, ...props } = this.props
+    const { id, date, onDateChange, isDayDisabled, inline, label, ...props } = this.props
     const { className, style, ...propsWithoutStyling } = safeRest(props)
+    const DatePickerVariant = inline ? DayPickerSingleDateController : SingleDatePicker
+
+    /* Determine daySize based on window.outerWidth and `inline` */
+    let responsiveDaySize = 40
+    if (window) {
+      if (inline) {
+        responsiveDaySize = window.outerWidth > 720 ? 60 : 40
+      } else {
+        responsiveDaySize = window.outerWidth > 720 ? 48 : 40
+      }
+    }
 
     /* eslint-disable jsx-a11y/label-has-for */
     return (
       <CalendarContainer {...safeRest(propsWithoutStyling)}>
         <label htmlFor={id} />
         <LabelText>{label}</LabelText>
-        <SingleDatePicker
+        <DatePickerVariant
           id={id}
           date={date}
           onDateChange={onDateChange}
@@ -47,7 +59,7 @@ class Calendar extends Component {
           placeholder="DD / MM / YYYY"
           isDayBlocked={isDayDisabled}
           keepOpenOnDateSelect={false}
-          daySize={window && window.outerWidth > 720 ? 44 : 39}
+          daySize={responsiveDaySize}
           navPrev={<DecorativeIcon symbol="leftChevron" size={16} />}
           navNext={<DecorativeIcon symbol="chevron" size={16} />}
         />
@@ -74,12 +86,16 @@ Calendar.propTypes = {
 
   /** The field label to be displayed above the calendar */
   label: PropTypes.string.isRequired,
+
+  /** A flag determining if the calendar picker is standalone or an input with overlay  */
+  inline: PropTypes.bool,
 }
 
 Calendar.defaultProps = {
   isDayDisabled: undefined,
   date: undefined,
   onDateChange: () => {},
+  inline: false,
 }
 
 export default Calendar

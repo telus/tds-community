@@ -16,11 +16,12 @@
 
 .next, .nextHidden, .previous, .previousHidden {
   color: $color-telus-purple;
-  padding: 0 8px;
+  padding: 0 4px 0 0;
   font-size: 1rem;
   line-height: 16px;
   @include mq($from: md) {
     line-height: 22px;
+    padding: 0 8px 0 4px;
   }
   button {
     color: $color-telus-purple;
@@ -29,6 +30,7 @@
     width: 32px;
     height: 32px;
     text-align: center;
+    padding: 0;
     cursor: pointer;
     @include mq($from: md) {
       background: none;

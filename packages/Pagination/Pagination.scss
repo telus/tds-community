@@ -91,6 +91,8 @@
     }
   }
   li.ellipsis {
+    width: 16px;
+    min-width: 16px;
     background-color: inherit;
     line-height: 22px;
     @include mq($from: md) {

@@ -161,7 +161,13 @@ class Pagination extends Component {
 }
 
 Pagination.propTypes = {
+  /**
+   * The pagination panels. Must be at least one Pagination.Panel.
+   */
   children: PropTypes.node.isRequired,
+  /**
+   * The default copy to be used.
+   */
   copy: PropTypes.oneOf(['en', 'fr']),
 }
 

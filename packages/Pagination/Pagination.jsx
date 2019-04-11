@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '@tds/shared-safe-rest'
 import DecorativeIcon from '@tds/core-decorative-icon'
+import A11yContent from '@tds/core-a11y-content'
 import Panel from './Panel/Panel'
 import styles from './Pagination.scss'
 import hash from './hash'
@@ -59,6 +60,7 @@ class Pagination extends Component {
 
   mapTabs = () => {
     const goToText = this.props.language === 'French' ? 'Aller au panneau n°' : 'Go to panel number'
+    const currentText = this.props.language === 'French' ? '(page actuelle)' : '(current)'
     let { current } = this.state
     current = parseInt(current, 10) || 0
     return this.props.children.map((item, i) => {
@@ -67,6 +69,7 @@ class Pagination extends Component {
         return (
           <li key={hash(`${i}-1`)} className={styles.current}>
             {index}
+            <A11yContent>{currentText}</A11yContent>
           </li>
         )
       }

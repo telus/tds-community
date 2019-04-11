@@ -26,7 +26,7 @@ export default opts => {
       { format: 'es', file: './dist/index.es.js', sourcemap: false, exports: 'named' },
     ],
 
-    external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),
+    external: ['react', 'react-dom', 'prop-types', 'styled-components'].concat(tdsExternals),
 
     plugins: [
       nodeResolve({

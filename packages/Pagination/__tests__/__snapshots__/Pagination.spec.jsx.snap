@@ -2,7 +2,7 @@
 
 exports[`Pagination renders 1`] = `
 <Pagination
-  language="English"
+  copy="en"
 >
   <div
     className="container"
@@ -58,6 +58,41 @@ exports[`Pagination renders 1`] = `
           key="193359721"
         >
           1
+          <A11yContent>
+            <A11yContent__StyledA11yContent>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                      "isStatic": true,
+                      "lastClassName": "jjotyj",
+                      "rules": Array [
+                        "position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);",
+                      ],
+                    },
+                    "displayName": "A11yContent__StyledA11yContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <span
+                  className="A11yContent__StyledA11yContent-sc-15wexwk-0 jjotyj"
+                >
+                  (current)
+                </span>
+              </StyledComponent>
+            </A11yContent__StyledA11yContent>
+          </A11yContent>
         </li>
         <li
           className="regular"

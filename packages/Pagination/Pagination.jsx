@@ -59,8 +59,8 @@ class Pagination extends Component {
   }
 
   mapTabs = () => {
-    const goToText = this.props.language === 'French' ? 'Aller au panneau n°' : 'Go to panel number'
-    const currentText = this.props.language === 'French' ? '(page actuelle)' : '(current)'
+    const goToText = this.props.copy === 'fr' ? 'Aller au panneau n°' : 'Go to panel number'
+    const currentText = this.props.copy === 'fr' ? '(page actuelle)' : '(current)'
     let { current } = this.state
     current = parseInt(current, 10) || 0
     return this.props.children.map((item, i) => {
@@ -121,15 +121,14 @@ class Pagination extends Component {
   }
 
   render() {
-    const { children, language, ...rest } = this.props
+    const { children, copy, ...rest } = this.props
     const { current } = this.state
     const increaseNumber = parseInt(current + 1, 10)
     const decreaseNumber = parseInt(current - 1, 10)
-    const previousText = language !== 'French' ? 'Prev' : 'Précédent'
-    const nextText = language !== 'French' ? 'Next' : 'Suivant'
-    const previousLabel =
-      language !== 'French' ? 'Go to previous panel' : 'Aller au panneau précédent'
-    const NextLabel = language !== 'French' ? 'Go to next panel' : 'Aller au prochain panneau'
+    const previousText = copy !== 'fr' ? 'Prev' : 'Précédent'
+    const nextText = copy !== 'fr' ? 'Next' : 'Suivant'
+    const previousLabel = copy !== 'fr' ? 'Go to previous panel' : 'Aller au panneau précédent'
+    const NextLabel = copy !== 'fr' ? 'Go to next panel' : 'Aller au prochain panneau'
     return (
       <div {...safeRest(rest)} className={styles.container}>
         <Panel {...rest}>{children[current - 1]}</Panel>
@@ -163,11 +162,11 @@ class Pagination extends Component {
 
 Pagination.propTypes = {
   children: PropTypes.node.isRequired,
-  language: PropTypes.string,
+  copy: PropTypes.oneOf(['en', 'fr']),
 }
 
 Pagination.defaultProps = {
-  language: 'English',
+  copy: 'en',
 }
 
 Pagination.Panel = Panel

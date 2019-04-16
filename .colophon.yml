@@ -1,0 +1,87 @@
+version: 2.0
+
+id: tds-community
+
+about:
+  title: tds-community
+  description: TELUS Design System community components
+
+contacts:
+  - type: Development Collective
+    name: Digital Platform Ambassadors
+    slackChannel: dpa-community
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Product Owner
+    name: Varun Jain
+    slack: varunjain
+    github: varunj90
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Lead Developer
+    name: Anirudh Swaminathan
+    slack: ani
+    github: simpleimpulse
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Developer
+    name: Enrico Sacchetti
+    slack: enrico
+    github: theetrain
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Developer
+    name: Marco Donnici
+    slack: marcod
+    github: marcod1419
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Developer
+    name: Jordan Raffoul
+    slack: Jordan Raffoul
+    github: jraff
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Designer
+    name: Christina Lo
+    slack: Christina L.
+    github: Christina-Lo
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Designer
+    name: Donna Vitan
+    slack: donnavitan
+    github: donnavitan
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Development Team
+    name: TDS Core Team
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Tribe
+    name: Digital Platform & Services
+    slackChannel: dps-all
+    email: not.applicable.see.slack.channel@telus.com
+
+schedule:
+  launch: 2018-04-30T00:00:00.000Z
+
+environments:
+  - type: git
+    title: Source Code
+    uri: https://github.com/telus/tds-community
+
+  - type: production
+    title: TDS Homepage
+    description: TDS Homepage, featuring documentation on contributing to TDS or interacting with TDS
+    uri: https://tds.telus.com/
+
+  - type: production
+    title: TDS Community Components
+    description: TDS Community Components documentation
+    uri: https://tds.telus.com/community/index.html
+
+references:
+  - title: Github Issue Tracker
+    description: TDS Community Issue Tracker board. Post bug reports or feature suggestions here!
+    uri: https://github.com/telus/tds-community/issues

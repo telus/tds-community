@@ -29,6 +29,7 @@
     border: none;
     width: 32px;
     height: 32px;
+    margin: 0;
     text-align: center;
     padding: 0;
     cursor: pointer;
@@ -77,6 +78,7 @@
       cursor: pointer;
       padding: 0 5px;
       min-width: 32px;
+      margin: 0;
       width: auto;
       height: 32px;
       @include mq($from: md) {

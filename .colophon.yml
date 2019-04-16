@@ -65,6 +65,7 @@ contacts:
 
 schedule:
   launch: 2018-04-30T00:00:00.000Z
+  public-launch: 2018-10-30T00:00:00.000Z
 
 environments:
   - type: git

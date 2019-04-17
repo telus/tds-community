@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ribbon matches snapshot with empty ribbonCopy prop 1`] = `
+<Fragment>
+  <div
+    className="ribbonStyle"
+  />
+</Fragment>
+`;
+
+exports[`Ribbon matches snapshot with ribbonCopy prop 1`] = `
+<Fragment>
+  <div
+    className="ribbonStyle"
+  >
+    Prop Text
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,24 @@
+.ribbonStyle {
+  background: #4B286D;
+  color: #FFFFFF;
+  padding: 8px 30px 8px 15px;
+  margin: 16px 0;
+  position: relative;
+  font-size: 1rem;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 126px;
+  min-height: 40px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 13px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  };
+};

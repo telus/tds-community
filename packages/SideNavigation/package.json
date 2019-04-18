@@ -33,7 +33,7 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0",
+    "@tds/core-colours": "^1.1.1",
     "@tds/shared-safe-rest": "^1.0.0"
   }
 }

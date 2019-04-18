@@ -110,6 +110,9 @@ jobs:
           name: Setup .npmrc
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
       - run:
+          name: Reset package lock
+          command: git checkout -- package-lock.json
+      - run:
           name: Lerna Publish
           command: npm run lerna:cipublish
 

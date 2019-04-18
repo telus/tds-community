@@ -64,7 +64,7 @@
     "@lerna/publish": "^3.13.3",
     "@tds/core-box": "^1.0.1",
     "@tds/core-chevron-link": "^1.1.2",
-    "@tds/core-colours": "^1.0.0",
+    "@tds/core-colours": "^1.1.1",
     "@tds/core-css-reset": "^1.1.1",
     "@tds/core-flex-grid": "^2.3.2",
     "@tds/core-hairline-divider": "^1.0.1",

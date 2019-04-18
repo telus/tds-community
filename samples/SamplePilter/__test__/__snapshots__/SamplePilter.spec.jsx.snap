@@ -10,7 +10,7 @@ exports[`SamplePilter renders 1`] = `
     class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T"
   >
     <span
-      class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__invertedColor___2axxL"
+      class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__invertedColor___2tTa_"
     >
       Some Content
     </span>

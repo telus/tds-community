@@ -80,9 +80,11 @@ exports[`PreviewCard renders with category and other 1`] = `
   to={null}
 >
   <styled.div
+    footer={null}
     header="development · April 1st, 2019"
   >
     <styled.div
+      footer={null}
       header="development · April 1st, 2019"
     >
       <Image
@@ -100,6 +102,7 @@ exports[`PreviewCard renders with category and other 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
+        footer={null}
         header="development · April 1st, 2019"
       >
         <Box
@@ -139,9 +142,11 @@ exports[`PreviewCard renders with footer 1`] = `
 >
   <styled.div
     footer="By Halo"
+    header={null}
   >
     <styled.div
       footer="By Halo"
+      header={null}
     >
       <Image
         alt="Image of co-workers collaborating"
@@ -159,6 +164,7 @@ exports[`PreviewCard renders with footer 1`] = `
       <styled.div
         data-testid="contentContainer"
         footer="By Halo"
+        header={null}
       >
         <Box
           inline={false}
@@ -195,8 +201,14 @@ exports[`PreviewCard renders with long body text 1`] = `
   href="#"
   to={null}
 >
-  <styled.div>
-    <styled.div>
+  <styled.div
+    footer={null}
+    header={null}
+  >
+    <styled.div
+      footer={null}
+      header={null}
+    >
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -212,6 +224,8 @@ exports[`PreviewCard renders with long body text 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
+        footer={null}
+        header={null}
       >
         <Box
           inline={false}
@@ -234,8 +248,14 @@ exports[`PreviewCard renders with only Required props 1`] = `
   href="#"
   to={null}
 >
-  <styled.div>
-    <styled.div>
+  <styled.div
+    footer={null}
+    header={null}
+  >
+    <styled.div
+      footer={null}
+      header={null}
+    >
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -251,6 +271,8 @@ exports[`PreviewCard renders with only Required props 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
+        footer={null}
+        header={null}
       >
         <Box
           inline={false}

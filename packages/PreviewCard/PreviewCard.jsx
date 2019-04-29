@@ -149,10 +149,10 @@ PreviewCard.propTypes = {
 }
 
 PreviewCard.defaultProps = {
-  category: undefined,
-  other: undefined,
-  footer: undefined,
-  href: undefined,
+  category: null,
+  other: null,
+  footer: null,
+  href: null,
   linkComponent: null,
   to: null,
 }

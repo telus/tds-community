@@ -7,8 +7,7 @@
   <FlexGrid.Row>
     <FlexGrid.Col xs={12} md={6} lg={4}>
       <PreviewCard
-        category="Data Intelligence"
-        other="March 21, 2019"
+        header="Data Intelligence \u00B7 March 21, 2019"
         image={<img src="blog-example.jpg" alt="Image of co-workers collaborating" width="100%" />}
         body="Hello world, this preview card has all the props and has text that is over 70 characters in length"
         footer="By Emelyn Ticong"
@@ -17,7 +16,7 @@
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} md={6} lg={4}>
       <PreviewCard
-        category="Data Intelligence"
+        header="Data Intelligence"
         image={<img src="blog-example.jpg" alt="Image of co-workers collaborating" width="100%" />}
         body="Hello world, this preview card has a category"
         href="#"

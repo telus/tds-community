@@ -28,11 +28,10 @@ describe('PreviewCard', () => {
     expect(previewCard).toMatchSnapshot()
   })
 
-  it('renders with category and other', () => {
+  it('renders with header', () => {
     const previewCard = doShallow({
       ...requiredProps,
-      category: 'development',
-      other: 'April 1st, 2019',
+      header: 'development \u00B7 April 1st, 2019',
     })
 
     expect(previewCard).toMatchSnapshot()
@@ -47,8 +46,7 @@ describe('PreviewCard', () => {
   it('renders with all props', () => {
     const previewCard = doShallow({
       ...requiredProps,
-      category: 'development',
-      other: 'April 1st, 2019',
+      header: 'development \u00B7 April 1st, 2019',
       footer: 'By Halo',
     })
 
@@ -99,8 +97,7 @@ describe('PreviewCard', () => {
   it('renders with line height of 21px', () => {
     const previewCard = mount(
       <PreviewCard
-        category="development"
-        other="April 1st, 2019"
+        header="development \u00B7 April 1st, 2019"
         footer="By Halo"
         {...requiredProps}
       />

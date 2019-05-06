@@ -21,8 +21,8 @@
   },
   "homepage": "http://tds.telus.com",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
   },
   "dependencies": {
     "prop-types": "^15.6.2"

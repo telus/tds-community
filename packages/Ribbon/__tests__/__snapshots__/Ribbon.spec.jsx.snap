@@ -2,18 +2,14 @@
 
 exports[`Ribbon matches snapshot with empty ribbonCopy prop 1`] = `
 <Fragment>
-  <div
-    className="ribbonStyle"
-  />
+  <styled.div />
 </Fragment>
 `;
 
 exports[`Ribbon matches snapshot with ribbonCopy prop 1`] = `
 <Fragment>
-  <div
-    className="ribbonStyle"
-  >
+  <styled.div>
     Prop Text
-  </div>
+  </styled.div>
 </Fragment>
 `;

@@ -1,6 +1,8 @@
-.ribbonStyle {
-  background: #4B286D;
-  color: #FFFFFF;
+import styled from 'styled-components'
+
+const RibbonWrapper = styled.div`
+  background: #4b286d;
+  color: #ffffff;
   padding: 8px 30px 8px 15px;
   margin: 16px 0;
   position: relative;
@@ -8,8 +10,7 @@
   display: inline-block;
   max-width: 100%;
   min-width: 126px;
-  min-height: 40px;
-
+  height: 40px;
   &:after {
     content: '';
     position: absolute;
@@ -20,5 +21,7 @@
     border-right: 13px solid white;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-  };
-};
+  }
+`
+
+export default RibbonWrapper

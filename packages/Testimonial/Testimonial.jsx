@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Box from '@tds/core-box'
-import Card from '@tds/core-card'
 import Paragraph from '@tds/core-paragraph'
 import safeRest from '@tds/shared-safe-rest'
 import { componentWithName } from '@tds/util-prop-types'
@@ -15,18 +14,16 @@ import styles from './Testimonial.scss'
  */
 const Testimonial = ({ testimonial, image, title, additionalInfo, ...rest }) => {
   return (
-    <Card {...safeRest(rest)}>
-      <Box between={3}>
-        <Paragraph>{testimonial}</Paragraph>
-        <div className={styles.imageAndQuote}>
-          {image && <div className={styles.image}>{image}</div>}
-          <div>
-            <Paragraph bold>{title}</Paragraph>
-            <Paragraph>{additionalInfo}</Paragraph>
-          </div>
+    <Box {...safeRest(rest)} between={3}>
+      <Paragraph>{testimonial}</Paragraph>
+      <div className={styles.imageAndQuote}>
+        {image && <div className={styles.image}>{image}</div>}
+        <div>
+          <Paragraph bold>{title}</Paragraph>
+          <Paragraph>{additionalInfo}</Paragraph>
         </div>
-      </Box>
-    </Card>
+      </div>
+    </Box>
   )
 }
 

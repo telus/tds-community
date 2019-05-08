@@ -1,55 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testimonial renders 1`] = `
-<Card
-  variant="white"
+<Box
+  between={3}
+  inline={false}
+  tag="div"
 >
-  <Box
-    between={3}
-    inline={false}
-    tag="div"
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
   >
-    <Paragraph
-      align="left"
-      bold={false}
-      invert={false}
-      size="medium"
-    >
-      My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.
-    </Paragraph>
+    My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.
+  </Paragraph>
+  <div
+    className="imageAndQuote"
+  >
     <div
-      className="imageAndQuote"
+      className="image"
     >
-      <div
-        className="image"
-      >
-        <Image
-          alt="Image of co-workers collaborating"
-          height={60}
-          rounded="circle"
-          src="image-example.jpg"
-          width={60}
-        />
-      </div>
-      <div>
-        <Paragraph
-          align="left"
-          bold={true}
-          invert={false}
-          size="medium"
-        >
-          Dave Smith, Foreman
-        </Paragraph>
-        <Paragraph
-          align="left"
-          bold={false}
-          invert={false}
-          size="medium"
-        >
-          Pinnacle Reforestation
-        </Paragraph>
-      </div>
+      <Image
+        alt="Image of co-workers collaborating"
+        height={60}
+        rounded="circle"
+        src="image-example.jpg"
+        width={60}
+      />
     </div>
-  </Box>
-</Card>
+    <div>
+      <Paragraph
+        align="left"
+        bold={true}
+        invert={false}
+        size="medium"
+      >
+        Dave Smith, Foreman
+      </Paragraph>
+      <Paragraph
+        align="left"
+        bold={false}
+        invert={false}
+        size="medium"
+      >
+        Pinnacle Reforestation
+      </Paragraph>
+    </div>
+  </div>
+</Box>
 `;

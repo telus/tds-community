@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockQuote renders 1`] = `
+<styled.blockquote>
+  <Box
+    inline={false}
+    tag="div"
+    vertical={4}
+  >
+    <Heading
+      invert={false}
+      level="h2"
+      tag="span"
+    >
+      <ColoredTextProvider
+        colorClassName={null}
+      >
+        This is an example of BlockQuote
+      </ColoredTextProvider>
+    </Heading>
+  </Box>
+</styled.blockquote>
+`;

@@ -3,7 +3,6 @@
 exports[`PreviewCard renders with all props 1`] = `
 <styled.a
   href="#"
-  to={null}
 >
   <styled.div
     isLarge="development · April 1st, 2019"
@@ -75,7 +74,6 @@ exports[`PreviewCard renders with all props 1`] = `
 exports[`PreviewCard renders with footer 1`] = `
 <styled.a
   href="#"
-  to={null}
 >
   <styled.div
     isLarge="By Halo"
@@ -99,7 +97,6 @@ exports[`PreviewCard renders with footer 1`] = `
       <styled.div
         data-testid="contentContainer"
         footer="By Halo"
-        header={null}
       >
         <Box
           inline={false}
@@ -134,7 +131,6 @@ exports[`PreviewCard renders with footer 1`] = `
 exports[`PreviewCard renders with header 1`] = `
 <styled.a
   href="#"
-  to={null}
 >
   <styled.div
     isLarge="development · April 1st, 2019"
@@ -157,7 +153,6 @@ exports[`PreviewCard renders with header 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
-        footer={null}
         header="development · April 1st, 2019"
       >
         <Box
@@ -193,14 +188,9 @@ exports[`PreviewCard renders with header 1`] = `
 exports[`PreviewCard renders with long body text 1`] = `
 <styled.a
   href="#"
-  to={null}
 >
-  <styled.div
-    isLarge={null}
-  >
-    <styled.div
-      isLarge={null}
-    >
+  <styled.div>
+    <styled.div>
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -216,8 +206,6 @@ exports[`PreviewCard renders with long body text 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
-        footer={null}
-        header={null}
       >
         <Box
           inline={false}
@@ -238,14 +226,9 @@ exports[`PreviewCard renders with long body text 1`] = `
 exports[`PreviewCard renders with only Required props 1`] = `
 <styled.a
   href="#"
-  to={null}
 >
-  <styled.div
-    isLarge={null}
-  >
-    <styled.div
-      isLarge={null}
-    >
+  <styled.div>
+    <styled.div>
       <Image
         alt="Image of co-workers collaborating"
         height={300}
@@ -261,8 +244,6 @@ exports[`PreviewCard renders with only Required props 1`] = `
     >
       <styled.div
         data-testid="contentContainer"
-        footer={null}
-        header={null}
       >
         <Box
           inline={false}

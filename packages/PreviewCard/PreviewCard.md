@@ -1,6 +1,7 @@
 ### Usage Criteria
 
 - Use when you want to showcase and guide your users to a webpage.
+- Using an image is a design requirement and is strongly recommended.
 
 ```jsx
 <FlexGrid limitWidth={false} gutter={true}>

@@ -69,7 +69,7 @@ const PreviewCard = ({ header, image, body, footer, href, linkComponent, ...rest
     newBody = `${body.substr(0, 70)}...`
   }
 
-  const hasHeaderOrFooter = header || footer
+  const hasHeaderOrFooter = body && (header || footer)
 
   const innerCard = (
     <BoxContainer isLarge={hasHeaderOrFooter}>
@@ -108,17 +108,19 @@ const PreviewCard = ({ header, image, body, footer, href, linkComponent, ...rest
 
 PreviewCard.propTypes = {
   /**
+   * It is strongly suggested to provide this prop.
    * Image component that will appear at the top of the card, above the content section.  Recommended dimensions is 369x269px.
    */
-  image: PropTypes.node.isRequired,
+  image: PropTypes.node,
   /**
    * Text that will appear at the top of the content section.  Recommended to be only 5 words or less.
    */
   header: PropTypes.string,
   /**
+   * It is strongly suggested to provide this prop.
    * Purple text that will appear in the middle of the content section.  Recommended amount of characters is 70 or less.
    */
-  body: PropTypes.string.isRequired,
+  body: PropTypes.string,
   /**
    * Text that will appear at the bottom of the content section.  Recommended to be 3 or less words.
    */
@@ -138,11 +140,13 @@ PreviewCard.propTypes = {
 }
 
 PreviewCard.defaultProps = {
-  header: null,
-  footer: null,
-  href: null,
-  linkComponent: null,
-  to: null,
+  header: undefined,
+  footer: undefined,
+  href: undefined,
+  linkComponent: undefined,
+  to: undefined,
+  image: undefined,
+  body: '',
 }
 
 export default PreviewCard

@@ -2,4 +2,4 @@
 <Ribbon ribbonCopy="Telus Ribbon" />
 ```
 
-- `Ribbon` is a fixed width element and will take a string as a prop to display its content.
+- `Ribbon` is an element that takes a string as a prop to display its content, where the Ribbon's width will adjust for.

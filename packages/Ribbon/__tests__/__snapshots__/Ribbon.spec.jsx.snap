@@ -9,7 +9,7 @@ exports[`Ribbon matches snapshot with empty ribbonCopy prop 1`] = `
 exports[`Ribbon matches snapshot with ribbonCopy prop 1`] = `
 <Fragment>
   <styled.div>
-    Prop Text
+    TDS Ribbon
   </styled.div>
 </Fragment>
 `;

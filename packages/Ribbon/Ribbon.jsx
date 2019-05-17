@@ -11,7 +11,7 @@ import RibbonWrapper from './styles'
 const Ribbon = ({ ribbonCopy, ...rest }) => {
   return (
     <React.Fragment>
-      {<RibbonWrapper {...safeRest(rest)}>{ribbonCopy}</RibbonWrapper>}
+      <RibbonWrapper {...safeRest(rest)}>{ribbonCopy}</RibbonWrapper>
     </React.Fragment>
   )
 }

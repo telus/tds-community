@@ -33,7 +33,6 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@tds/shared-safe-rest": "^1.0.0",
-    "jest-styled-components": "^6.3.1"
+    "@tds/shared-safe-rest": "^1.0.0"
   }
 }

@@ -40,58 +40,7 @@ $desktop: (
   @include spacingClasses($level, $value, map-get($desktop, $level));
 }
 
-.container {
-  position: relative;
-  height: 100%;
-}
-
-.spaced {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
-  border-top: 1px solid $color-gainsboro;
-}
-
-.navLi {
-  border-bottom: 1px solid $color-gainsboro;
-  align-items: center;
-  font-size: 0;
-}
-
-.active {
-  border-left: 4px solid $color-telus-purple;
-}
-
-.topPosition {
-  position: relative;
-  max-width: inherit;
-  width: 100%;
-  overflow-y: auto;
-}
-
-.fixedPosition {
-  position: fixed;
-  max-width: inherit;
-  top: 0px;
-  width: inherit;
-}
-
 .fixedOverflow {
   overflow-y: auto;
   bottom: 0px;
-}
-
-.bottomPosition {
-  position: absolute;
-  bottom: 0px;
-}
-
-.removeBottomPadding {
-  padding-bottom: 0px;
-}
-
-.removeTopPadding {
-  padding-top: 0px;
 }

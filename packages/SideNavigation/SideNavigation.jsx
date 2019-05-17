@@ -1,13 +1,64 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import safeRest from '@tds/shared-safe-rest'
+import { colorGainsboro } from '@tds/core-colours'
+
 import joinClassNames from '../../shared/utils/joinClassNames'
 
 import Link from './Link/Link'
 import SubMenu from './SubMenu/SubMenu'
 
 import styles from './SideNavigation.scss'
+
+const DivContainer = styled.div({
+  position: 'relative',
+  height: '100%',
+})
+
+const NavContainer = styled.nav(props => ({
+  position: props.theme.position,
+  maxWidth: props.theme.maxWidth,
+  top: props.theme.top,
+  width: props.theme.width,
+  overflowY: props.theme.overflowY,
+  bottom: props.theme.bottom,
+}))
+
+const StyledUl = styled.ul({
+  listStyle: 'none',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-around',
+  margin: '0',
+  borderTop: `1px solid ${colorGainsboro}`,
+})
+
+const StyledLi = styled.li({
+  borderBottom: `1px solid ${colorGainsboro}`,
+  alignItems: 'center',
+  fontSize: '0',
+})
+
+const topPosition = {
+  position: 'relative',
+  maxWidth: 'inherit',
+  width: '50%',
+  overflowY: 'auto',
+}
+
+const fixedPosition = {
+  position: 'fixed',
+  maxWidth: 'inherit',
+  top: '0px',
+  width: 'inherit',
+}
+
+const bottomPosition = {
+  position: 'absolute',
+  bottom: '0px',
+}
 
 /**
  * The SideNavigation component is used in conjuntion with a large amount of educational / informational content,
@@ -121,33 +172,41 @@ class SideNavigation extends Component {
     const { children, verticalSpacing, accordion, ...rest } = this.props
     const { variant } = this.state
 
-    let classes = joinClassNames(
-      verticalSpacing ? styles[`verticalPadding-${verticalSpacing}`] : undefined,
-      styles.topPosition
-    )
+    // let classes = joinClassNames(
+    //   verticalSpacing ? styles[`verticalPadding-${verticalSpacing}`] : undefined,
+    //   styles.topPosition
+    // )
+    // if (variant === 'bottom') {
+    //   classes = styles.bottomPosition
+    // } else if (variant === 'fixed') {
+    //   classes = styles.fixedPosition
+    // } else if (variant === 'fixedOverflow') {
+    //   classes = joinClassNames(styles.fixedPosition, styles.fixedOverflow)
+    // }
+
+    let classes = topPosition // Need verticalSpacing
     if (variant === 'bottom') {
-      classes = styles.bottomPosition
+      classes = bottomPosition
     } else if (variant === 'fixed') {
-      classes = styles.fixedPosition
+      classes = fixedPosition
     } else if (variant === 'fixedOverflow') {
       classes = joinClassNames(styles.fixedPosition, styles.fixedOverflow)
     }
 
     return (
-      <div
+      <DivContainer
         {...safeRest(rest)}
         ref={c => {
           this._sideNavContainer = c
         }}
-        className={styles.container}
       >
-        <nav
+        <NavContainer
           ref={c => {
             this._sideNav = c
           }}
-          className={classes}
+          theme={classes}
         >
-          <ul className={styles.spaced}>
+          <StyledUl>
             {React.Children.map(children, (child, index) => {
               let options = {}
               const id = `TDS-SideNavigation-${index}`
@@ -160,11 +219,11 @@ class SideNavigation extends Component {
                   id,
                 }
               }
-              return <li className={styles.navLi}>{React.cloneElement(child, options)}</li>
+              return <StyledLi>{React.cloneElement(child, options)}</StyledLi>
             })}
-          </ul>
-        </nav>
-      </div>
+          </StyledUl>
+        </NavContainer>
+      </DivContainer>
     )
   }
 }

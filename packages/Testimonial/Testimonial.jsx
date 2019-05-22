@@ -15,7 +15,7 @@ import styles from './Testimonial.scss'
 const Testimonial = ({ testimonial, image, title, additionalInfo, ...rest }) => {
   return (
     <Box {...safeRest(rest)} between={3}>
-      <Paragraph>{testimonial}</Paragraph>
+      <Paragraph size="large">{testimonial}</Paragraph>
       <div className={styles.imageAndQuote}>
         {image && <div className={styles.image}>{image}</div>}
         <div>

@@ -10,7 +10,7 @@ exports[`Testimonial renders 1`] = `
     align="left"
     bold={false}
     invert={false}
-    size="medium"
+    size="large"
   >
     My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.
   </Paragraph>

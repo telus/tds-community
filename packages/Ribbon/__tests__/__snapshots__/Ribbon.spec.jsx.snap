@@ -2,14 +2,28 @@
 
 exports[`Ribbon matches snapshot with empty ribbonCopy prop 1`] = `
 <Fragment>
-  <styled.div />
+  <styled.div>
+    <Text
+      block={false}
+      bold={false}
+      invert={true}
+      size="small"
+    />
+  </styled.div>
 </Fragment>
 `;
 
 exports[`Ribbon matches snapshot with ribbonCopy prop 1`] = `
 <Fragment>
   <styled.div>
-    TDS Ribbon
+    <Text
+      block={false}
+      bold={false}
+      invert={true}
+      size="small"
+    >
+      TDS Ribbon
+    </Text>
   </styled.div>
 </Fragment>
 `;

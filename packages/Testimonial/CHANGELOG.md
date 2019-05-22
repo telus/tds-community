@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-testimonial@1.0.5...@tds/community-testimonial@2.0.0) (2019-05-22)
+
+
+### Bug Fixes
+
+* **community-testimonial:** changes paragraph size on body text ([9c9ecb8](https://github.com/telus/tds-community/commit/9c9ecb8))
+
+
+### Features
+
+* **community-testimonial:** remove card from community-testimonial ([48158ca](https://github.com/telus/tds-community/commit/48158ca)), closes [#192](https://github.com/telus/tds-community/issues/192)
+
+
+### BREAKING CHANGES
+
+* **community-testimonial:** removes card from community-testimonial component
+
+
+
+
+
 ## [1.0.5](https://github.com/telus/tds-community/compare/@tds/community-testimonial@1.0.4...@tds/community-testimonial@1.0.5) (2019-05-17)
 
 **Note:** Version bump only for package @tds/community-testimonial

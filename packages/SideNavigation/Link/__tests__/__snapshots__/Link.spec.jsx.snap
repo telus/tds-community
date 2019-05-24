@@ -1,20 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNavigation.Link renders 1`] = `
-<a
-  className="link"
+<styled.a
   href="#"
   to={null}
 >
-  <Box
-    dangerouslyAddClassName="box"
+  <Styled(Box)
     horizontal={3}
-    inline={false}
-    tag="div"
     vertical={3}
   >
-    <ColoredTextProvider
-      colorClassName="hover"
+    <Styled(ColoredTextProvider)
+      active={false}
     >
       <Text
         block={false}
@@ -24,26 +20,23 @@ exports[`SideNavigation.Link renders 1`] = `
       >
         Home
       </Text>
-    </ColoredTextProvider>
-  </Box>
-</a>
+    </Styled(ColoredTextProvider)>
+  </Styled(Box)>
+</styled.a>
 `;
 
 exports[`SideNavigation.Link renders with active styles 1`] = `
-<a
-  className="link"
+<styled.a
   href="#"
   to={null}
 >
-  <Box
-    dangerouslyAddClassName="box active"
+  <Styled(Box)
+    active={true}
     horizontal={3}
-    inline={false}
-    tag="div"
     vertical={3}
   >
-    <ColoredTextProvider
-      colorClassName="activeText"
+    <Styled(ColoredTextProvider)
+      active={true}
     >
       <Text
         block={false}
@@ -53,7 +46,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
       >
         Home
       </Text>
-    </ColoredTextProvider>
-  </Box>
-</a>
+    </Styled(ColoredTextProvider)>
+  </Styled(Box)>
+</styled.a>
 `;

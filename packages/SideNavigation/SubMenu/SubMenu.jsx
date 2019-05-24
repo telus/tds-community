@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 import Box from '@tds/core-box'
@@ -7,11 +8,38 @@ import Text from '@tds/core-text'
 import safeRest from '@tds/shared-safe-rest'
 import { Reveal } from '@tds/shared-animation'
 import { componentWithName } from '@tds/util-prop-types'
+import { colorTelusPurple, colorWhiteLilac, colorShuttleGrey } from '@tds/core-colours'
 
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
-import joinClassNames from '../../../shared/utils/joinClassNames'
 
-import styles from './SubMenu.scss'
+const SubMenuContainer = styled.ul({
+  padding: '1rem 0',
+  background: `radial-gradient(
+    ellipse at top,
+    rgba(150, 150, 150, 0.1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  )`,
+})
+
+const ButtonSubMenu = styled.button(props => ({
+  backgroundColor: 'white',
+  border: 'none',
+  width: '100%',
+  color: props.active ? `${colorTelusPurple}` : `${colorShuttleGrey}`,
+  borderLeft: props.active ? `4px solid ${colorTelusPurple}` : 'none',
+  '&:hover': {
+    backgroundColor: `${colorWhiteLilac}`,
+    color: `${colorTelusPurple}`,
+    cursor: 'pointer',
+  },
+}))
+
+const SpaceBox = styled(Box)({
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  textAlign: 'left',
+  display: 'flex',
+})
 
 /**
  * Expandable content areas for use with the `SideNavigation`
@@ -50,18 +78,13 @@ class SubMenu extends React.Component {
     subMenuLink: true,
   }
 
-  subMenuClasses = joinClassNames(
-    styles.buttonSubMenu,
-    this.props.active ? styles.active : styles.buttonDefault
-  )
-
   render() {
     const { children, label, isOpen, active, ...rest } = this.props
 
     return (
-      <div className={styles.mainDiv}>
-        <button {...safeRest(rest)} onClick={this.handleClick} className={this.subMenuClasses}>
-          <Box vertical={3} inline horizontal={2} dangerouslyAddClassName={styles.space}>
+      <div>
+        <ButtonSubMenu {...safeRest(rest)} onClick={this.handleClick} active={active}>
+          <SpaceBox vertical={3} inline horizontal={2}>
             <ColoredTextProvider>
               <Text size="medium" bold={active}>
                 {label}
@@ -72,8 +95,8 @@ class SubMenu extends React.Component {
               variant="secondary"
               size={16}
             />
-          </Box>
-        </button>
+          </SpaceBox>
+        </ButtonSubMenu>
         <Reveal
           timeout={isOpen ? 500 : 0}
           duration={500}
@@ -81,16 +104,15 @@ class SubMenu extends React.Component {
           height={this.state.subMenuHeight}
         >
           {() => (
-            <ul
+            <SubMenuContainer
               ref={c => {
                 this.subMenu = c
               }}
-              className={styles.subMenuDropDown}
             >
               {React.Children.map(children, child => (
                 <li>{React.cloneElement(child, this.options)}</li>
               ))}
-            </ul>
+            </SubMenuContainer>
           )}
         </Reveal>
       </div>

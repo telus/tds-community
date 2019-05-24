@@ -14,19 +14,6 @@
         <SideNavigation.Link href="#">Top of the page</SideNavigation.Link>
         <SideNavigation.SubMenu label="Overview" active>
           <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
         </SideNavigation.SubMenu>
         <SideNavigation.SubMenu label="Reference Architecture">
           <SideNavigation.Link href="#reference">Overview</SideNavigation.Link>
@@ -34,66 +21,6 @@
       </SideNavigation>
     </FlexGrid.Col>
     <FlexGrid.Col xs={5} xsOffset={1}>
-      <Box id="introduction" vertical={3}>
-        <Heading level="h2">Overview</Heading>
-        <Text>This is an introduction to the Side Navigation component</Text>
-      </Box>
-      <Box id="reference" vertical={3}>
-        <Heading level="h2">Reference Architecture</Heading>
-        <Text>
-          Our software and technical standards are communicated through our reference architecture.
-          The Reference Architecture serves as a source of truth for all the technical knowledge,
-          software specifications, standards and architecture evolution.
-        </Text>
-      </Box>
-      <Box id="introduction" vertical={3}>
-        <Heading level="h2">Overview</Heading>
-        <Text>This is an introduction to the Side Navigation component</Text>
-      </Box>
-      <Box id="reference" vertical={3}>
-        <Heading level="h2">Reference Architecture</Heading>
-        <Text>
-          Our software and technical standards are communicated through our reference architecture.
-          The Reference Architecture serves as a source of truth for all the technical knowledge,
-          software specifications, standards and architecture evolution.
-        </Text>
-      </Box>
-      <Box id="introduction" vertical={3}>
-        <Heading level="h2">Overview</Heading>
-        <Text>This is an introduction to the Side Navigation component</Text>
-      </Box>
-      <Box id="reference" vertical={3}>
-        <Heading level="h2">Reference Architecture</Heading>
-        <Text>
-          Our software and technical standards are communicated through our reference architecture.
-          The Reference Architecture serves as a source of truth for all the technical knowledge,
-          software specifications, standards and architecture evolution.
-        </Text>
-      </Box>
-      <Box id="introduction" vertical={3}>
-        <Heading level="h2">Overview</Heading>
-        <Text>This is an introduction to the Side Navigation component</Text>
-      </Box>
-      <Box id="reference" vertical={3}>
-        <Heading level="h2">Reference Architecture</Heading>
-        <Text>
-          Our software and technical standards are communicated through our reference architecture.
-          The Reference Architecture serves as a source of truth for all the technical knowledge,
-          software specifications, standards and architecture evolution.
-        </Text>
-      </Box>
-      <Box id="introduction" vertical={3}>
-        <Heading level="h2">Overview</Heading>
-        <Text>This is an introduction to the Side Navigation component</Text>
-      </Box>
-      <Box id="reference" vertical={3}>
-        <Heading level="h2">Reference Architecture</Heading>
-        <Text>
-          Our software and technical standards are communicated through our reference architecture.
-          The Reference Architecture serves as a source of truth for all the technical knowledge,
-          software specifications, standards and architecture evolution.
-        </Text>
-      </Box>
       <Box id="introduction" vertical={3}>
         <Heading level="h2">Overview</Heading>
         <Text>This is an introduction to the Side Navigation component</Text>

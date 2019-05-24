@@ -1,15 +1,46 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import safeRest from '@tds/shared-safe-rest'
+import { colorWhiteLilac, colorTelusPurple, colorShuttleGrey } from '@tds/core-colours'
 
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 import warn from '../../../shared/utils/warn'
-import joinClassNames from '../../../shared/utils/joinClassNames'
 
-import styles from './Link.scss'
+const activeContainer = {
+  borderLeft: `4px solid ${colorTelusPurple}`,
+  color: `${colorTelusPurple}`,
+}
+
+const activeText = {
+  fontWeight: 'bold',
+  color: `${colorTelusPurple}`,
+}
+
+const hover = {
+  color: `${colorShuttleGrey}`,
+  '&:hover': {
+    color: `${colorTelusPurple}`,
+  },
+}
+
+const BoxContainer = styled(Box)(props => ({
+  '&:hover': {
+    backgroundColor: `${colorWhiteLilac}`,
+  },
+  ...(props.active ? activeContainer : undefined),
+}))
+
+const StyledTextProvider = styled(ColoredTextProvider)(props => ({
+  ...(props.active ? activeText : hover),
+}))
+
+const StyledAnchor = styled.a({
+  textDecoration: 'none',
+})
 
 /**
  * _This component can only be accessed as a name-spaced component: `SideNavigation.Link`._
@@ -19,23 +50,20 @@ const Link = ({ reactRouterLinkComponent, children, active, subMenuLink, ...rest
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 
-  const boxClasses = joinClassNames(styles.box, active && styles.active)
-
   const innerLink = (
-    <Box vertical={subMenuLink ? 2 : 3} horizontal={3} dangerouslyAddClassName={boxClasses}>
-      <ColoredTextProvider colorClassName={active ? styles.activeText : styles.hover}>
+    <BoxContainer vertical={subMenuLink ? 2 : 3} horizontal={3} active={active || undefined}>
+      <StyledTextProvider active={active}>
         <Text size={subMenuLink ? 'small' : 'medium'} bold={active}>
           {children}
         </Text>
-      </ColoredTextProvider>
-    </Box>
+      </StyledTextProvider>
+    </BoxContainer>
   )
 
   return React.createElement(
-    reactRouterLinkComponent || 'a',
+    reactRouterLinkComponent || StyledAnchor,
     {
       ...safeRest(rest),
-      className: styles.link,
     },
     innerLink
   )

@@ -4,26 +4,46 @@ import styled from 'styled-components'
 
 import safeRest from '@tds/shared-safe-rest'
 import { colorGainsboro } from '@tds/core-colours'
-
-import joinClassNames from '../../shared/utils/joinClassNames'
+import Box from '@tds/core-box'
 
 import Link from './Link/Link'
 import SubMenu from './SubMenu/SubMenu'
-
-import styles from './SideNavigation.scss'
 
 const DivContainer = styled.div({
   position: 'relative',
   height: '100%',
 })
 
-const NavContainer = styled.nav(props => ({
-  position: props.theme.position,
-  maxWidth: props.theme.maxWidth,
-  top: props.theme.top,
-  width: props.theme.width,
-  overflowY: props.theme.overflowY,
-  bottom: props.theme.bottom,
+const topPosition = {
+  position: 'relative',
+  maxWidth: 'inherit',
+  width: '100%',
+  overflowY: 'auto',
+}
+
+const fixedPosition = {
+  position: 'fixed',
+  maxWidth: 'inherit',
+  top: '0px',
+  width: 'inherit',
+  clear: 'both',
+}
+
+const bottomPosition = {
+  position: 'absolute',
+  bottom: '0px',
+}
+
+const fixedOverflow = {
+  overflowY: 'auto',
+  bottom: '0px',
+}
+
+const NavContainer = styled.div(props => ({
+  ...(props.variant === 'top' && topPosition),
+  ...(props.variant === 'bottom' && bottomPosition),
+  ...(props.variant === 'fixed' && fixedPosition),
+  ...(props.variant === 'fixedOverflow' && Object.assign({}, fixedPosition, fixedOverflow)),
 }))
 
 const StyledUl = styled.ul({
@@ -41,25 +61,6 @@ const StyledLi = styled.li({
   fontSize: '0',
 })
 
-const topPosition = {
-  position: 'relative',
-  maxWidth: 'inherit',
-  width: '50%',
-  overflowY: 'auto',
-}
-
-const fixedPosition = {
-  position: 'fixed',
-  maxWidth: 'inherit',
-  top: '0px',
-  width: 'inherit',
-}
-
-const bottomPosition = {
-  position: 'absolute',
-  bottom: '0px',
-}
-
 /**
  * The SideNavigation component is used in conjuntion with a large amount of educational / informational content,
  * allowing the user to navigate between options frequently and efficiently.
@@ -75,6 +76,7 @@ class SideNavigation extends Component {
     }
     this.adjustWidth = this.adjustWidth.bind(this)
     this.removeEventListeners = this.removeEventListeners.bind(this)
+    this._sideNav = React.createRef()
   }
 
   componentDidMount() {
@@ -92,7 +94,7 @@ class SideNavigation extends Component {
 
   adjustWidth() {
     const parentWidth = this._sideNavContainer.offsetWidth
-    const sideNav = this._sideNav
+    const sideNav = this._sideNav.current
     sideNav.style.width = `${parentWidth}px`
   }
 
@@ -118,15 +120,16 @@ class SideNavigation extends Component {
   }
 
   checkOffset = () => {
-    const sideNavRect = this._sideNav.getBoundingClientRect()
+    const sideNavRect = this._sideNav.current.getBoundingClientRect()
     const containerRect = this._sideNavContainer.getBoundingClientRect()
+
     if (
       (sideNavRect.top >= 0 && containerRect.top >= 0) ||
       sideNavRect.height > containerRect.height
     ) {
       this.setState({ variant: 'top' })
     } else if (
-      this.checkOverflow(this._sideNav) &&
+      this.checkOverflow(this._sideNav.current) &&
       sideNavRect.bottom <= containerRect.bottom &&
       this.state.variant !== 'bottom' &&
       sideNavRect.height < containerRect.height
@@ -143,7 +146,8 @@ class SideNavigation extends Component {
       this.setState({ variant: 'fixed' })
     } else if (
       (sideNavRect.bottom > containerRect.bottom || sideNavRect.bottom <= 0) &&
-      sideNavRect.height <= containerRect.height
+      sideNavRect.height <= containerRect.height &&
+      this.state.variant !== 'top'
     ) {
       this.setState({ variant: 'bottom' })
     }
@@ -172,27 +176,6 @@ class SideNavigation extends Component {
     const { children, verticalSpacing, accordion, ...rest } = this.props
     const { variant } = this.state
 
-    // let classes = joinClassNames(
-    //   verticalSpacing ? styles[`verticalPadding-${verticalSpacing}`] : undefined,
-    //   styles.topPosition
-    // )
-    // if (variant === 'bottom') {
-    //   classes = styles.bottomPosition
-    // } else if (variant === 'fixed') {
-    //   classes = styles.fixedPosition
-    // } else if (variant === 'fixedOverflow') {
-    //   classes = joinClassNames(styles.fixedPosition, styles.fixedOverflow)
-    // }
-
-    let classes = topPosition // Need verticalSpacing
-    if (variant === 'bottom') {
-      classes = bottomPosition
-    } else if (variant === 'fixed') {
-      classes = fixedPosition
-    } else if (variant === 'fixedOverflow') {
-      classes = joinClassNames(styles.fixedPosition, styles.fixedOverflow)
-    }
-
     return (
       <DivContainer
         {...safeRest(rest)}
@@ -200,28 +183,25 @@ class SideNavigation extends Component {
           this._sideNavContainer = c
         }}
       >
-        <NavContainer
-          ref={c => {
-            this._sideNav = c
-          }}
-          theme={classes}
-        >
-          <StyledUl>
-            {React.Children.map(children, (child, index) => {
-              let options = {}
-              const id = `TDS-SideNavigation-${index}`
-              // check if href is in props to figure out if child is SubMenu or Link
-              if (!('href' in child.props)) {
-                options = {
-                  handleToggleSubMenu: this.toggleSubMenu,
-                  isOpen: this.checkAccordion(id),
-                  active: child.props.active,
-                  id,
+        <NavContainer ref={this._sideNav} variant={variant}>
+          <Box vertical={variant === 'bottom' || variant === 'fixed' ? undefined : verticalSpacing}>
+            <StyledUl>
+              {React.Children.map(children, (child, index) => {
+                let options = {}
+                const id = `TDS-SideNavigation-${index}`
+                // check if href is in props to figure out if child is SubMenu or Link
+                if (!('href' in child.props)) {
+                  options = {
+                    handleToggleSubMenu: this.toggleSubMenu,
+                    isOpen: this.checkAccordion(id),
+                    active: child.props.active,
+                    id,
+                  }
                 }
-              }
-              return <StyledLi>{React.cloneElement(child, options)}</StyledLi>
-            })}
-          </StyledUl>
+                return <StyledLi>{React.cloneElement(child, options)}</StyledLi>
+              })}
+            </StyledUl>
+          </Box>
         </NavContainer>
       </DivContainer>
     )
@@ -232,7 +212,7 @@ SideNavigation.propTypes = {
   /**
    * Specifies the links and sub-menus required in the Side Navigation.
    */
-  children: PropTypes.array.isRequired,
+  children: PropTypes.node.isRequired,
   /**
    * Indent content from the container's top edge by applying padding.
    */

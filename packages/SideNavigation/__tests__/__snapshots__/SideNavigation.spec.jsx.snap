@@ -156,17 +156,25 @@ exports[`SideNavigation renders 1`] = `
   background-color: #f2eff4;
 }
 
+.c5 {
+  color: #54595f;
+}
+
+.c5:hover {
+  color: #4b286d;
+}
+
 .c3 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 {
+.c8 {
   padding: 1rem 0;
   background: radial-gradient( ellipse at top, rgba(150,150,150,0.1) 0%, rgba(0,0,0,0) 70% );
 }
 
-.c5 {
+.c6 {
   background-color: white;
   border: none;
   width: 100%;
@@ -174,13 +182,13 @@ exports[`SideNavigation renders 1`] = `
   border-left: none;
 }
 
-.c5:hover {
+.c6:hover {
   background-color: #f2eff4;
   color: #4b286d;
   cursor: pointer;
 }
 
-.c6 {
+.c7 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -249,7 +257,9 @@ exports[`SideNavigation renders 1`] = `
                           <div
                             class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c4"
                           >
-                            <div>
+                            <div
+                              class="c5"
+                            >
                               <span
                                 class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                               >
@@ -269,7 +279,9 @@ exports[`SideNavigation renders 1`] = `
                           <div
                             class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c4"
                           >
-                            <div>
+                            <div
+                              class="c5"
+                            >
                               <span
                                 class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                               >
@@ -289,7 +301,9 @@ exports[`SideNavigation renders 1`] = `
                           <div
                             class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c4"
                           >
-                            <div>
+                            <div
+                              class="c5"
+                            >
                               <span
                                 class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                               >
@@ -304,11 +318,11 @@ exports[`SideNavigation renders 1`] = `
                       >
                         <div>
                           <button
-                            class="c5"
+                            class="c6"
                             id="TDS-SideNavigation-3"
                           >
                             <div
-                              class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c6"
+                              class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c7"
                             >
                               <div>
                                 <span
@@ -329,7 +343,7 @@ exports[`SideNavigation renders 1`] = `
                             style="transition: height 500ms; height: 0px; overflow: hidden; visibility: hidden;"
                           >
                             <ul
-                              class="c7"
+                              class="c8"
                             >
                               <li>
                                 <a
@@ -339,7 +353,9 @@ exports[`SideNavigation renders 1`] = `
                                   <div
                                     class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c4"
                                   >
-                                    <div>
+                                    <div
+                                      class="c5"
+                                    >
                                       <span
                                         class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                       >
@@ -357,7 +373,9 @@ exports[`SideNavigation renders 1`] = `
                                   <div
                                     class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c4"
                                   >
-                                    <div>
+                                    <div
+                                      class="c5"
+                                    >
                                       <span
                                         class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                       >
@@ -375,7 +393,9 @@ exports[`SideNavigation renders 1`] = `
                                   <div
                                     class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c4"
                                   >
-                                    <div>
+                                    <div
+                                      class="c5"
+                                    >
                                       <span
                                         class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                       >
@@ -583,9 +603,10 @@ exports[`SideNavigation renders 1`] = `
                                                   <ColoredTextProvider
                                                     active={false}
                                                     className="c6"
-                                                    colorClassName={null}
                                                   >
-                                                    <div>
+                                                    <div
+                                                      className="c6"
+                                                    >
                                                       <Text
                                                         block={false}
                                                         bold={false}
@@ -760,9 +781,10 @@ exports[`SideNavigation renders 1`] = `
                                                   <ColoredTextProvider
                                                     active={false}
                                                     className="c6"
-                                                    colorClassName={null}
                                                   >
-                                                    <div>
+                                                    <div
+                                                      className="c6"
+                                                    >
                                                       <Text
                                                         block={false}
                                                         bold={false}
@@ -937,9 +959,10 @@ exports[`SideNavigation renders 1`] = `
                                                   <ColoredTextProvider
                                                     active={false}
                                                     className="c6"
-                                                    colorClassName={null}
                                                   >
-                                                    <div>
+                                                    <div
+                                                      className="c6"
+                                                    >
                                                       <Text
                                                         block={false}
                                                         bold={false}
@@ -1091,7 +1114,7 @@ exports[`SideNavigation renders 1`] = `
                                                 className="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c8"
                                               >
                                                 <ColoredTextProvider
-                                                  colorClassName={null}
+                                                  className={null}
                                                 >
                                                   <div>
                                                     <Text
@@ -1318,9 +1341,10 @@ exports[`SideNavigation renders 1`] = `
                                                                     <ColoredTextProvider
                                                                       active={false}
                                                                       className="c6"
-                                                                      colorClassName={null}
                                                                     >
-                                                                      <div>
+                                                                      <div
+                                                                        className="c6"
+                                                                      >
                                                                         <Text
                                                                           block={false}
                                                                           bold={false}
@@ -1465,9 +1489,10 @@ exports[`SideNavigation renders 1`] = `
                                                                     <ColoredTextProvider
                                                                       active={false}
                                                                       className="c6"
-                                                                      colorClassName={null}
                                                                     >
-                                                                      <div>
+                                                                      <div
+                                                                        className="c6"
+                                                                      >
                                                                         <Text
                                                                           block={false}
                                                                           bold={false}
@@ -1612,9 +1637,10 @@ exports[`SideNavigation renders 1`] = `
                                                                     <ColoredTextProvider
                                                                       active={false}
                                                                       className="c6"
-                                                                      colorClassName={null}
                                                                     >
-                                                                      <div>
+                                                                      <div
+                                                                        className="c6"
+                                                                      >
                                                                         <Text
                                                                           block={false}
                                                                           bold={false}
@@ -1820,17 +1846,25 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
+.c5 {
+  color: #54595f;
+}
+
+.c5:hover {
+  color: #4b286d;
+}
+
 .c3 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 {
+.c8 {
   padding: 1rem 0;
   background: radial-gradient( ellipse at top, rgba(150,150,150,0.1) 0%, rgba(0,0,0,0) 70% );
 }
 
-.c5 {
+.c6 {
   background-color: white;
   border: none;
   width: 100%;
@@ -1838,13 +1872,13 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   border-left: 4px solid #4b286d;
 }
 
-.c5:hover {
+.c6:hover {
   background-color: #f2eff4;
   color: #4b286d;
   cursor: pointer;
 }
 
-.c6 {
+.c7 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1913,7 +1947,9 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                           <div
                             class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c4"
                           >
-                            <div>
+                            <div
+                              class="c5"
+                            >
                               <span
                                 class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                               >
@@ -1928,11 +1964,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                       >
                         <div>
                           <button
-                            class="c5"
+                            class="c6"
                             id="TDS-SideNavigation-1"
                           >
                             <div
-                              class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c6"
+                              class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c7"
                             >
                               <div>
                                 <span
@@ -1953,7 +1989,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                             style="transition: height 500ms; height: 0px; overflow: hidden;"
                           >
                             <ul
-                              class="c7"
+                              class="c8"
                             >
                               <li>
                                 <a
@@ -1963,7 +1999,9 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                   <div
                                     class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c4"
                                   >
-                                    <div>
+                                    <div
+                                      class="c5"
+                                    >
                                       <span
                                         class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                       >
@@ -2170,9 +2208,10 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                   <ColoredTextProvider
                                                     active={false}
                                                     className="c6"
-                                                    colorClassName={null}
                                                   >
-                                                    <div>
+                                                    <div
+                                                      className="c6"
+                                                    >
                                                       <Text
                                                         block={false}
                                                         bold={false}
@@ -2324,7 +2363,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                 className="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c8"
                                               >
                                                 <ColoredTextProvider
-                                                  colorClassName={null}
+                                                  className={null}
                                                 >
                                                   <div>
                                                     <Text
@@ -2550,9 +2589,10 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                     <ColoredTextProvider
                                                                       active={false}
                                                                       className="c6"
-                                                                      colorClassName={null}
                                                                     >
-                                                                      <div>
+                                                                      <div
+                                                                        className="c6"
+                                                                      >
                                                                         <Text
                                                                           block={false}
                                                                           bold={false}

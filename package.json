@@ -72,7 +72,7 @@
     "@tds/core-hairline-divider": "^1.0.1",
     "@tds/core-heading": "^1.1.5",
     "@tds/core-image": "^1.0.0",
-    "@tds/core-input": "^1.0.12",
+    "@tds/core-input": "^2.0.0",
     "@tds/core-link": "^1.0.3",
     "@tds/core-ordered-list": "^2.0.0",
     "@tds/core-paragraph": "^1.0.11",

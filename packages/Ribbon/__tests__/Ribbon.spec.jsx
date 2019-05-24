@@ -11,8 +11,8 @@ describe('Ribbon', () => {
     expect(ribbon).toMatchSnapshot()
   })
 
-  it('matches snapshot with empty ribbonCopy prop', () => {
-    const ribbon = doShallow({ ribbonCopy: '' })
+  it('matches snapshot with no props', () => {
+    const ribbon = doShallow({})
     expect(ribbon).toMatchSnapshot()
   })
 

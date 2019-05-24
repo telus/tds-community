@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ribbon matches snapshot with empty ribbonCopy prop 1`] = `
+exports[`Ribbon matches snapshot with no props 1`] = `
 <Fragment>
   <styled.div>
     <Text

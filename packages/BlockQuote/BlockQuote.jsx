@@ -10,10 +10,10 @@ import ColoredTextProvider from '../../shared/components/ColoredTextProvider/Col
 const Wrapper = styled.blockquote({
   borderLeft: '4px solid purple',
   ...media.until('md').css({
-    paddingLeft: '32px',
+    paddingLeft: '2rem',
   }),
   ...media.from('md').css({
-    paddingLeft: '48px',
+    paddingLeft: '3rem',
   }),
 })
 

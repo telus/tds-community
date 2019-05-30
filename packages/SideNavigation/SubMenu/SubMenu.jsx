@@ -83,7 +83,12 @@ class SubMenu extends React.Component {
 
     return (
       <div>
-        <ButtonSubMenu {...safeRest(rest)} onClick={this.handleClick} active={active}>
+        <ButtonSubMenu
+          {...safeRest(rest)}
+          onClick={this.handleClick}
+          active={active}
+          aria-expanded={isOpen}
+        >
           <SpaceBox vertical={3} inline horizontal={2}>
             <ColoredTextProvider>
               <Text size="medium" bold={active}>

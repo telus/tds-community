@@ -2,12 +2,12 @@ The `BlockQuote` component wraps content in an HTML `<blockquote>` and `<span>` 
 
 ### Usage Criteria
 
-- use to highlight text to the user.
-- if using as a quote, always attribute a name to your quote
-- always include the correct quotation marks for EN (“”) and FR («»)
-- if you’re quoting from an external source, include the source as a hyperlink
-- if using a link within `BlockQuote`, use `Link` from `@tds/core-link`
-- indicate cuts to quotes with ellipses (...) and edits with square brackets `[`...`]`
+- Use to highlight text to the user
+- If using as a quote, always attribute a name to your quote
+- Always include the correct quotation marks for EN (“”) and FR («»)
+- If you’re quoting from an external source, include the source as a hyperlink
+- If using a link within `BlockQuote`, use `Link` from `@tds/core-link`
+- Indicate cuts to quotes with ellipses (...) and edits with square brackets `[`...`]`
 
 ```jsx
 <BlockQuote>

@@ -318,6 +318,7 @@ exports[`SideNavigation renders 1`] = `
                       >
                         <div>
                           <button
+                            aria-expanded="false"
                             class="c6"
                             id="TDS-SideNavigation-3"
                           >
@@ -1032,12 +1033,14 @@ exports[`SideNavigation renders 1`] = `
                                 <div>
                                   <styled.button
                                     active={false}
+                                    aria-expanded={false}
                                     handleToggleSubMenu={[Function]}
                                     id="TDS-SideNavigation-3"
                                     onClick={[Function]}
                                   >
                                     <StyledComponent
                                       active={false}
+                                      aria-expanded={false}
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
@@ -1066,6 +1069,7 @@ exports[`SideNavigation renders 1`] = `
                                       onClick={[Function]}
                                     >
                                       <button
+                                        aria-expanded={false}
                                         className="c7"
                                         id="TDS-SideNavigation-3"
                                         onClick={[Function]}
@@ -1964,6 +1968,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                       >
                         <div>
                           <button
+                            aria-expanded="true"
                             class="c6"
                             id="TDS-SideNavigation-1"
                           >
@@ -2281,12 +2286,14 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                 <div>
                                   <styled.button
                                     active={true}
+                                    aria-expanded={true}
                                     handleToggleSubMenu={[Function]}
                                     id="TDS-SideNavigation-1"
                                     onClick={[Function]}
                                   >
                                     <StyledComponent
                                       active={true}
+                                      aria-expanded={true}
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
@@ -2315,6 +2322,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                       onClick={[Function]}
                                     >
                                       <button
+                                        aria-expanded={true}
                                         className="c7"
                                         id="TDS-SideNavigation-1"
                                         onClick={[Function]}

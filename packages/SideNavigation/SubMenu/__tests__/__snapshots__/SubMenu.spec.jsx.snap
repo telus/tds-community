@@ -4,6 +4,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
 <div>
   <styled.button
     active={true}
+    aria-expanded={false}
     id="Three"
     onClick={[Function]}
   >

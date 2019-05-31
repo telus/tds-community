@@ -11,17 +11,22 @@ The [Community Backlog](https://github.com/telus/tds-community/projects/1) is a 
 
 Board phases are represented by columns on GitHub. The following sections describe what process and what output occurs during their respective phases.
 
-1. [To do](#1-to-do)
-2. [Design queue](#2-design-queue)
-3. [Design intent](#3-design-intent)
-4. [Design review](#4-design-review)
-5. [Story writing](#5-story-writing)
-6. [Dev queue](#6-dev-queue)
-7. [In development](#7-in-development)
-8. [Ready for QA](#8-ready-for-qa)
-9. [In QA](#9-in-qa)
-10. [Ready for release](#10-ready-for-release)
-11. [Released](#11-released)
+- [Community Backlog process](#community-backlog-process)
+  - [General guideline](#general-guideline)
+  - [Board phases](#board-phases)
+    - [1. To do](#1-to-do)
+    - [2. Design queue](#2-design-queue)
+    - [3. Design intent](#3-design-intent)
+    - [4. Design review](#4-design-review)
+    - [5. Story writing](#5-story-writing)
+    - [6. Dev queue](#6-dev-queue)
+    - [7. In development](#7-in-development)
+      - [Step 1 of 2: Development](#step-1-of-2-development)
+      - [Step 2 of 2: Review (for pull requests)](#step-2-of-2-review-for-pull-requests)
+    - [8. Ready for QA](#8-ready-for-qa)
+    - [9. In QA](#9-in-qa)
+    - [10. Ready for release](#10-ready-for-release)
+    - [11. Released](#11-released)
 
 #### 1. To do
 
@@ -87,7 +92,7 @@ Items are moved from Story Writing to this column when they are ready to be pick
 
 During this phase, a designer or developer may pull the ticket from the Dev Queue and start working on it.
 
-**Step 1 of 2: Development**
+##### Step 1 of 2: Development
 
 **Developers** producing code must follow our [developer guide](../.github/CONTRIBUTING.md#developer-guide).
 
@@ -95,11 +100,16 @@ During this phase, a designer or developer may pull the ticket from the Dev Queu
 
 Potential output from this step, if applicable, may include:
 
-- (Code) A pull request featuring new enhancements to components, fixes to components, net-new components, or documentation
-  - Code-related work should follow the acceptance criteria outlined in the user story
-- (Design) A component for Sketch
+Code output:
 
-**Step 2 of 2: Review (for pull requests)**
+- A pull request featuring new enhancements to components, fixes to components, net-new components, or documentation
+- Code-related work should follow the acceptance criteria outlined in the user story
+
+Designer output
+
+- (Design) A new or enhanced component added to Invision DSM's \_tds_community library under the 'Not coded' section
+
+##### Step 2 of 2: Review (for pull requests)
 
 For pull requests, a DPA developer assigns themselves or a delegate to the GitHub pull request and issue tickets.
 

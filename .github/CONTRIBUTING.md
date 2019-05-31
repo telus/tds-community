@@ -11,19 +11,28 @@ Thank you for your interest in contributing! There are a few ways you can help:
 
 ## Table of contents
 
-- [Community component criteria](#community-component-criteria)
-- [What makes a good community component?](#what-makes-a-good-community-component)
-- [Process](#process)
-- [Designer guide](#designer-guide)
-- [Developer guide](#developer-guide)
-  - [Before your begin](#before-you-begin)
-  - [Codebase overview](#codebase-overview)
-  - [Environment setup](#environment-setup)
-  - [Making commits and versioning packages](#making-commits-and-versioning-packages)
-  - [Code style and conventions](#code-style-and-conventions)
-  - [Documenting components](#documenting-components)
-  - [Samples](#samples)
-- [Making pull requests](#making-pull-requests)
+- [Contributing to TDS Community](#contributing-to-tds-community)
+  - [Table of contents](#table-of-contents)
+  - [Community component criteria](#community-component-criteria)
+  - [What makes a good community component?](#what-makes-a-good-community-component)
+    - [Principles](#principles)
+  - [Process](#process)
+  - [Designer guide](#designer-guide)
+    - [When building components for InVision DSM](#when-building-components-for-invision-dsm)
+  - [Developer guide](#developer-guide)
+    - [Before you begin](#before-you-begin)
+    - [Codebase overview](#codebase-overview)
+    - [Environment setup](#environment-setup)
+    - [Making commits and versioning packages](#making-commits-and-versioning-packages)
+      - [Commit types](#commit-types)
+      - [Commit scopes](#commit-scopes)
+    - [Code style and conventions](#code-style-and-conventions)
+      - [React](#react)
+      - [Styling (CSS Modules, Sass)](#styling-css-modules-sass)
+      - [Utility modules](#utility-modules)
+    - [Documenting components](#documenting-components)
+    - [Samples](#samples)
+  - [Making pull requests](#making-pull-requests)
 
 ## Community component criteria
 
@@ -75,15 +84,23 @@ When developing or maintaining community components, they typically undergo a se
 
 ## Designer guide
 
+When contributing designs to TDS Community, a designer's involvement occurs during certain steps in the entire contribution process:
+
+1. A GitHub issue is created (by anyone)
+2. 
+
 Before transforming designs into code, they must be audited. Please speak to your team's design lead for more information.
 
-When creating components for Sketch and Invision DSM, the following criteria must be met:
-
-- Components need to be responsive and able to resize where possible
-- Components need to be smart so all variants can change with overrides (where possible)
 - Put the Sketch component in the TDS-community DSM library under the correct folder/category
+
+- Throughout every step of the contribution process, be sure to document major design iterations on the corresponding GitHub issue. This includes design research and intent, as well as a complete design to hand off to developers
+
+### When building components for InVision DSM
+
+- Sketch components need to be responsive and able to resize where possible
+- Sketch components need to be smart so all variants can change with overrides (where possible)
 - Add documentation in the description of the component in DSM as well as the name of the designer who designed the component
-- Add references to published documentation rather than duplicate content (eg. link to the tds.telus.com). This can only be done after coded component documentation has been released.
+- Add links to the component's location on the [community component catalogue](https://tds.telus.com/community/index.html) rather than duplicate content (eg. link to the tds.telus.com). This can only be done after coded component documentation has been released
 
 ## Developer guide
 

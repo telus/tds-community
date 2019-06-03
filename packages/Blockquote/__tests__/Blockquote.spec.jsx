@@ -1,14 +1,16 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
 
-import BlockQuote from '../BlockQuote'
+import Blockquote from '../Blockquote'
 
-describe('BlockQuote', () => {
-  const doMount = (props = {}) =>
-    mount(<BlockQuote {...props}>This is an example of BlockQuote</BlockQuote>)
+describe('Blockquote', () => {
+  const defaultProps = {
+    children: 'This is an example of Blockquote',
+  }
 
-  const doShallow = (props = {}) =>
-    shallow(<BlockQuote {...props}>This is an example of BlockQuote</BlockQuote>)
+  const doMount = (props = {}) => mount(<Blockquote {...defaultProps} {...props} />)
+
+  const doShallow = (props = {}) => shallow(<Blockquote {...defaultProps} {...props} />)
 
   it('renders', () => {
     const blockQuote = doMount()

@@ -1,26 +1,29 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 import BlockQuote from '../BlockQuote'
 
 describe('BlockQuote', () => {
+  const doMount = (props = {}) =>
+    mount(<BlockQuote {...props}>This is an example of BlockQuote</BlockQuote>)
+
   const doShallow = (props = {}) =>
     shallow(<BlockQuote {...props}>This is an example of BlockQuote</BlockQuote>)
 
   it('renders', () => {
-    const blockQuote = doShallow()
+    const blockQuote = doMount()
 
     expect(blockQuote).toMatchSnapshot()
   })
 
   it('does other things', () => {
-    const blockQuote = doShallow()
+    const blockQuote = doMount()
 
     expect(blockQuote).toExist()
   })
 
   it('passes additional attributes to the element', () => {
-    const blockQuote = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const blockQuote = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(blockQuote).toHaveProp('id', 'the-id')
     expect(blockQuote).toHaveProp('data-some-attr', 'some value')

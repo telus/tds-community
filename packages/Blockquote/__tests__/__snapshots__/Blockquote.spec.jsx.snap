@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BlockQuote renders 1`] = `
+exports[`Blockquote renders 1`] = `
 .c0 {
   border-left: 4px solid purple;
 }
@@ -17,7 +17,7 @@ exports[`BlockQuote renders 1`] = `
   }
 }
 
-<BlockQuote>
+<Blockquote>
   <styled.blockquote>
     <StyledComponent
       forwardedComponent={
@@ -71,7 +71,7 @@ exports[`BlockQuote renders 1`] = `
                   colorClassName={null}
                 >
                   <div>
-                    This is an example of BlockQuote
+                    This is an example of Blockquote
                   </div>
                 </ColoredTextProvider>
               </span>
@@ -81,5 +81,5 @@ exports[`BlockQuote renders 1`] = `
       </blockquote>
     </StyledComponent>
   </styled.blockquote>
-</BlockQuote>
+</Blockquote>
 `;

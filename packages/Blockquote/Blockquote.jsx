@@ -18,11 +18,11 @@ const Wrapper = styled.blockquote({
 })
 
 /**
- * The BlockQuote component is used to highlight text as a `blockquote` html tag.
+ * The Blockquote component is used to highlight text as a `blockquote` html tag.
  *
  * @version ./package.json
  */
-const BlockQuote = ({ children, ...rest }) => (
+const Blockquote = ({ children, ...rest }) => (
   <Wrapper {...safeRest(rest)}>
     <Box vertical={4}>
       <Heading level="h2" tag="span">
@@ -32,11 +32,11 @@ const BlockQuote = ({ children, ...rest }) => (
   </Wrapper>
 )
 
-BlockQuote.propTypes = {
+Blockquote.propTypes = {
   /**
-   * Specifies the text to be displayed within BlockQuote.
+   * Specifies the text to be displayed within Blockquote.
    */
   children: PropTypes.node.isRequired,
 }
 
-export default BlockQuote
+export default Blockquote

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blockquote renders 1`] = `
+.c0 {
+  border-left: 4px solid purple;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 3rem;
+  }
+}
+
+<Blockquote>
+  <styled.blockquote>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border-left: 4px solid purple; @media (max-width: 768px) {
+  padding-left: 2rem;
+} @media (min-width: 768px) {
+  padding-left: 3rem;
+}",
+            ],
+          },
+          "displayName": "styled.blockquote",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "blockquote",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <blockquote
+        className="c0"
+      >
+        <Box
+          inline={false}
+          tag="div"
+          vertical={4}
+        >
+          <div
+            className="TDS_Box-modules__verticalPadding-4___QMNNa"
+          >
+            <Heading
+              invert={false}
+              level="h2"
+              tag="span"
+            >
+              <span
+                className="TDS_Heading-modules__h2___l3LmI TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
+              >
+                <ColoredTextProvider
+                  colorClassName={null}
+                >
+                  <div>
+                    This is an example of Blockquote
+                  </div>
+                </ColoredTextProvider>
+              </span>
+            </Heading>
+          </div>
+        </Box>
+      </blockquote>
+    </StyledComponent>
+  </styled.blockquote>
+</Blockquote>
+`;

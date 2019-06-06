@@ -4,7 +4,7 @@ import FlexGrid from '@tds/core-flex-grid'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Heading from '@tds/core-heading'
 import Input from '@tds/core-input'
-import Link from '@tds/core-link'
+import TdsLink from '@tds/core-link'
 import OrderedList from '@tds/core-ordered-list'
 import Paragraph from '@tds/core-paragraph'
 import Strong from '@tds/core-strong'
@@ -19,7 +19,7 @@ Object.assign(global, {
   HairlineDivider,
   Heading,
   Input,
-  Link,
+  TdsLink,
   OrderedList,
   Paragraph,
   Strong,

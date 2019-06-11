@@ -7,6 +7,8 @@ import babel from 'rollup-plugin-babel'
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 
+import cleaner from './rollup/rollup-plugin-cleaner'
+
 export default opts => {
   const options = Object.assign(
     {
@@ -29,6 +31,9 @@ export default opts => {
     external: ['react', 'react-dom', 'prop-types', 'styled-components'].concat(tdsExternals),
 
     plugins: [
+      cleaner({
+        targets: ['./dist/'],
+      }),
       nodeResolve({
         extensions: ['.js', '.jsx'],
       }),

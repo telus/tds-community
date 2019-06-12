@@ -28,6 +28,6 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.1"
+    "@tds/core-colours": "^1.1.2"
   }
 }

@@ -9,6 +9,10 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(css|scss)$': 'identity-obj-proxy',
   },
+  setupFiles: [
+    path.resolve('config/jest/setupEnzyme.js'),
+    path.resolve('config/jest/setupGlobals.js'),
+  ],
   setupFilesAfterEnv: [
     path.resolve('node_modules/jest-enzyme/lib/index.js'),
     path.resolve('node_modules/jest-styled-components/src/index.js'),

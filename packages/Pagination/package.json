@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@tds/core-a11y-content": "^2.0.3",
-    "@tds/core-colours": "^1.1.1",
+    "@tds/core-colours": "^1.1.2",
     "@tds/core-decorative-icon": "^1.2.0",
     "prop-types": "^15.6.2",
     "string-hash": "^1.1.3"

@@ -1,5 +1,5 @@
-```jsx
-<Ribbon ribbonCopy="Telus Ribbon" />
-```
+`Ribbon` displays promotional content.
 
-- `Ribbon` is an element that takes a string as a prop to display its content, where the Ribbon's width will adjust for.
+```jsx
+<Ribbon>Telus Ribbon</Ribbon>
+```

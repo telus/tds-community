@@ -1,29 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ribbon matches snapshot with no props 1`] = `
-<Fragment>
-  <styled.div>
-    <Text
-      block={false}
-      bold={false}
-      invert={true}
-      size="small"
-    />
-  </styled.div>
-</Fragment>
-`;
+exports[`Ribbon renders 1`] = `
+.c0 {
+  background-color: #4b286d;
+  padding: 0px 24px 0px 16px;
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 126px;
+  height: 24px;
+  font-weight: 500;
+}
 
-exports[`Ribbon matches snapshot with ribbonCopy prop 1`] = `
-<Fragment>
+.c0:after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-right: 13px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.c0 > span {
+  line-height: 1 !important;
+}
+
+<Ribbon>
   <styled.div>
-    <Text
-      block={false}
-      bold={false}
-      invert={true}
-      size="small"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color: #4b286d; padding: 0px 24px 0px 16px; position: relative; font-size: 16px; display: inline-block; max-width: 100%; min-width: 126px; height: 24px; font-weight: 500; &:after {
+  content: \\"\\"; position: absolute; right: -5px; bottom: -8px; width: 0; height: 0; border-right: 13px solid white; border-top: 20px solid transparent; border-bottom: 20px solid transparent;
+} > span {
+  line-height: 1 !important;
+}",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      TDS Ribbon
-    </Text>
+      <div
+        className="c0"
+      >
+        <Text
+          block={false}
+          bold={true}
+          invert={true}
+          size="small"
+        >
+          <span
+            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__invertedColor___2tTa_"
+          >
+            2 year plan
+          </span>
+        </Text>
+      </div>
+    </StyledComponent>
   </styled.div>
-</Fragment>
+</Ribbon>
 `;

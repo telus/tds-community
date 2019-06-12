@@ -1,21 +1,15 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Ribbon from '../Ribbon'
 
 describe('Ribbon', () => {
-  const doShallow = props => shallow(<Ribbon {...props} />)
+  const doShallow = props => shallow(<Ribbon {...props}>I am a ribbon</Ribbon>)
 
-  it('matches snapshot with ribbonCopy prop', () => {
-    const ribbon = doShallow({ ribbonCopy: 'TDS Ribbon' })
+  it('renders', () => {
+    const ribbon = mount(<Ribbon>2 year plan</Ribbon>)
     expect(ribbon).toMatchSnapshot()
   })
-
-  it('matches snapshot with no props', () => {
-    const ribbon = doShallow({})
-    expect(ribbon).toMatchSnapshot()
-  })
-
   it('does not allow custom CSS', () => {
     const ribbon = doShallow({
       className: 'my-custom-class',

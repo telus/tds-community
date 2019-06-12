@@ -3,26 +3,25 @@
 exports[`Ribbon renders 1`] = `
 .c0 {
   background-color: #4b286d;
-  padding: 0px 24px 0px 16px;
+  padding: 0px 1.5rem 0px 1rem;
   position: relative;
-  font-size: 16px;
   display: inline-block;
   max-width: 100%;
-  min-width: 126px;
-  height: 24px;
+  min-width: 7.875rem;
+  height: 1.5rem;
   font-weight: 500;
 }
 
 .c0:after {
   content: "";
   position: absolute;
-  right: -5px;
-  bottom: -8px;
+  right: -0.3125rem;
+  bottom: -0.5rem;
   width: 0;
   height: 0;
-  border-right: 13px solid white;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-right: 0.8125rem solid white;
+  border-top: 1.25rem solid transparent;
+  border-bottom: 1.25rem solid transparent;
 }
 
 .c0 > span {
@@ -41,8 +40,8 @@ exports[`Ribbon renders 1`] = `
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "background-color: #4b286d; padding: 0px 24px 0px 16px; position: relative; font-size: 16px; display: inline-block; max-width: 100%; min-width: 126px; height: 24px; font-weight: 500; &:after {
-  content: \\"\\"; position: absolute; right: -5px; bottom: -8px; width: 0; height: 0; border-right: 13px solid white; border-top: 20px solid transparent; border-bottom: 20px solid transparent;
+              "background-color: #4b286d; padding: 0px 1.5rem 0px 1rem; position: relative; display: inline-block; max-width: 100%; min-width: 7.875rem; height: 1.5rem; font-weight: 500; &:after {
+  content: \\"\\"; position: absolute; right: -0.3125rem; bottom: -0.5rem; width: 0; height: 0; border-right: 0.8125rem solid white; border-top: 1.25rem solid transparent; border-bottom: 1.25rem solid transparent;
 } > span {
   line-height: 1 !important;
 }",

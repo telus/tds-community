@@ -37,6 +37,12 @@ describe('PreviewCard', () => {
     expect(previewCard).toMatchSnapshot()
   })
 
+  it('renders with hrefText', () => {
+    const previewCard = doShallow({ ...requiredProps, hrefText: 'View story' })
+
+    expect(previewCard).toMatchSnapshot()
+  })
+
   it('renders with footer', () => {
     const previewCard = doShallow({ ...requiredProps, footer: 'By Halo' })
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
+import ChevronLink from '@tds/core-chevron-link'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import { colorTelusPurple, colorWhiteLilac } from '@tds/core-colours'
@@ -29,6 +29,10 @@ const BoxContainer = styled.div`
     box-shadow: 0 0 16px 0 rgba(213, 213, 213, 0.5);
   }
   display: inline-block;
+`
+
+const HrefTextSmall = styled.span`
+  font-size: 14px;
 `
 
 const ContentContainer = styled.div`
@@ -59,7 +63,7 @@ const P = styled.p`
  * The PreviewCard component creates the appearance of a page snippet, and can be used in a list format.
  * @version ./package.json
  */
-const PreviewCard = ({ header, image, body, footer, href, linkComponent, ...rest }) => {
+const PreviewCard = ({ header, image, body, footer, href, hrefText, linkComponent, ...rest }) => {
   if (rest.to && !(linkComponent && rest.to)) {
     warn('Link', 'The props `linkComponent` and `to` must be used together.')
   }
@@ -83,8 +87,16 @@ const PreviewCard = ({ header, image, body, footer, href, linkComponent, ...rest
               </Text>
             </Box>
           )}
-          <Box vertical={hasHeaderOrFooter ? 3 : undefined}>
+          <Box
+            vertical={hasHeaderOrFooter ? 3 : undefined}
+            between={hasHeaderOrFooter ? 3 : undefined}
+          >
             <P alt={body}>{newBody}</P>
+            {hrefText && (
+              <ChevronLink href={href}>
+                <HrefTextSmall>{hrefText}</HrefTextSmall>
+              </ChevronLink>
+            )}
           </Box>
           {footer && (
             <Box>
@@ -130,6 +142,10 @@ PreviewCard.propTypes = {
    */
   href: PropTypes.string,
   /**
+   * Text associated with Target URL.
+   */
+  hrefText: PropTypes.string,
+  /**
    * Link component.
    */
   linkComponent: PropTypes.func,
@@ -143,6 +159,7 @@ PreviewCard.defaultProps = {
   header: undefined,
   footer: undefined,
   href: undefined,
+  hrefText: undefined,
   linkComponent: undefined,
   to: undefined,
   image: undefined,

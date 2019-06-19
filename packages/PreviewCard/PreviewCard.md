@@ -13,7 +13,7 @@
         body="Hello world, this preview card has all the props and has text that is over 70 characters in length"
         footer="By Emelyn Ticong"
         href="#"
-        hrefText="View Story"
+        linkText="View Story"
       />
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} md={6} lg={4}>

@@ -188,10 +188,9 @@ exports[`PreviewCard renders with header 1`] = `
 </styled.a>
 `;
 
-exports[`PreviewCard renders with hrefText 1`] = `
+exports[`PreviewCard renders with linkText 1`] = `
 <styled.a
   href="#"
-  hrefText="View story"
 >
   <styled.div>
     <styled.div>
@@ -220,6 +219,22 @@ exports[`PreviewCard renders with hrefText 1`] = `
           >
             Hello world!
           </styled.p>
+          <Paragraph
+            align="left"
+            bold={false}
+            invert={false}
+            size="medium"
+          >
+            <ChevronLink
+              direction="right"
+              href="#"
+              reactRouterLinkComponent={null}
+              to={null}
+              variant="primary"
+            >
+              View story
+            </ChevronLink>
+          </Paragraph>
         </Box>
       </styled.div>
     </Box>

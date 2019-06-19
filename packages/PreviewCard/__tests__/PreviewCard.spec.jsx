@@ -37,8 +37,8 @@ describe('PreviewCard', () => {
     expect(previewCard).toMatchSnapshot()
   })
 
-  it('renders with hrefText', () => {
-    const previewCard = doShallow({ ...requiredProps, hrefText: 'View story' })
+  it('renders with linkText', () => {
+    const previewCard = doShallow({ ...requiredProps, linkText: 'View story' })
 
     expect(previewCard).toMatchSnapshot()
   })

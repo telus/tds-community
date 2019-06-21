@@ -63,6 +63,76 @@ contacts:
     slackChannel: dps-all
     email: not.applicable.see.slack.channel@telus.com
 
+  - type: dpa
+    name: apurvray
+    github: apurvray
+    githubId: 32710185
+
+  - type: dpa
+    name: Berjesty Kozanoglu
+    github: Berjesty
+    githubId: 25160096
+
+  - type: dpa
+    name: Charlie Hay
+    github: charliehay
+    githubId: 43853551
+
+  - type: dpa
+    name: Tyler Dewald
+    github: DewaldoDev
+    githubId: 10473576
+
+  - type: dpa
+    name: DougL
+    github: DougTelus
+    githubId: 32107656
+
+  - type: dpa
+    name: Gary Chow
+    github: gkychow
+    githubId: 16300159
+
+  - type: dpa
+    name: abdul khan
+    github: invalidred
+    githubId: 5270458
+
+  - type: dpa
+    name: Jamie Weir
+    github: JamieWeir
+    githubId: 5140968
+
+  - type: dpa
+    name: Kitty Bourne
+    github: kittybourne
+    githubId: 6434886
+
+  - type: dpa
+    name: Brian Marchand
+    github: marshjr
+    githubId: 42357996
+
+  - type: dpa
+    name: Nathan
+    github: nathanmarshall
+    githubId: 4328036
+
+  - type: dpa
+    name: Seb Barre
+    github: sbarre
+    githubId: 104985
+
+  - type: dpa
+    name: Mike Bunce
+    github: sketchidea
+    githubId: 3803746
+
+  - type: dpa
+    name: Laurel Terlesky
+    github: twirlingsky
+    github_id: 22402633
+
 schedule:
   launch: 2018-04-30T00:00:00.000Z
   public-launch: 2018-10-30T00:00:00.000Z

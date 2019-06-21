@@ -25,7 +25,8 @@ const applyCustomScope = () => {
         'shared',
         'packages',
         'publish',
-        'samples'
+        'samples',
+        'vscode'
       )
       return config
     })

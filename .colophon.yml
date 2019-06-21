@@ -19,12 +19,6 @@ contacts:
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Lead Developer
-    name: Anirudh Swaminathan
-    slack: ani
-    github: simpleimpulse
-    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
-  - type: Developer
     name: Enrico Sacchetti
     slack: enrico
     github: theetrain
@@ -40,6 +34,12 @@ contacts:
     name: Jordan Raffoul
     slack: Jordan Raffoul
     github: jraff
+    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
+
+  - type: Developer
+    name: Anatolii Gorovyi
+    slack: agorovyi
+    github: agorovyi
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Designer

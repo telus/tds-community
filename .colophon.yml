@@ -84,6 +84,21 @@ contacts:
     githubId: 10473576
 
   - type: dpa
+    name: Bilal Nadeem
+    github: bnadeem-telus
+    githubId: 45402130
+    
+  - type: dpa
+    name: Aprile Bansil
+    github: abansil
+    githubId: 37587197
+    
+  - type: dpa
+    name: Phil Roberto
+    github: philroberto
+    githubId: 43078726
+    
+  - type: dpa
     name: DougL
     github: DougTelus
     githubId: 32107656

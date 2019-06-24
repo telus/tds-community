@@ -146,7 +146,7 @@ contacts:
   - type: dpa
     name: Laurel Terlesky
     github: twirlingsky
-    github_id: 22402633
+    githubId: 22402633
 
 schedule:
   launch: 2018-04-30T00:00:00.000Z

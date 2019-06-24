@@ -68,7 +68,7 @@ exports[`Blockquote renders 1`] = `
                 className="TDS_Heading-modules__h2___l3LmI TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
               >
                 <ColoredTextProvider
-                  colorClassName={null}
+                  className={null}
                 >
                   <div>
                     This is an example of Blockquote

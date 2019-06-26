@@ -82,7 +82,7 @@ class SubMenu extends React.Component {
     const { children, label, isOpen, active, ...rest } = this.props
 
     return (
-      <div>
+      <React.Fragment>
         <ButtonSubMenu
           {...safeRest(rest)}
           onClick={this.handleClick}
@@ -120,7 +120,7 @@ class SubMenu extends React.Component {
             </SubMenuContainer>
           )}
         </Reveal>
-      </div>
+      </React.Fragment>
     )
   }
 }

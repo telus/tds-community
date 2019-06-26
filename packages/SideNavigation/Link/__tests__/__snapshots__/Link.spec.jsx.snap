@@ -1,52 +1,339 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNavigation.Link renders 1`] = `
-<styled.a
+.c1:hover {
+  background-color: #f2eff4;
+}
+
+.c2 {
+  color: #54595f;
+}
+
+.c2:hover {
+  color: #4b286d;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Link
+  active={false}
   href="#"
+  reactRouterLinkComponent={null}
+  subMenuLink={false}
   to={null}
 >
-  <Styled(Box)
-    horizontal={3}
-    vertical={3}
+  <styled.a
+    href="#"
+    to={null}
   >
-    <Styled(ColoredTextProvider)
-      active={false}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "text-decoration: none;",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="#"
+      to={null}
     >
-      <Text
-        block={false}
-        bold={false}
-        invert={false}
-        size="medium"
+      <a
+        className="c0"
+        href="#"
+        to={null}
       >
-        Home
-      </Text>
-    </Styled(ColoredTextProvider)>
-  </Styled(Box)>
-</styled.a>
+        <Styled(Box)
+          active={0}
+          horizontal={3}
+          vertical={3}
+        >
+          <StyledComponent
+            active={0}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    [Function],
+                  ],
+                },
+                "displayName": "Styled(Box)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            horizontal={3}
+            vertical={3}
+          >
+            <Box
+              active={0}
+              className="c1"
+              horizontal={3}
+              inline={false}
+              tag="div"
+              vertical={3}
+            >
+              <div
+                active={0}
+                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
+              >
+                <Styled(ColoredTextProvider)
+                  active={false}
+                >
+                  <StyledComponent
+                    active={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Styled(ColoredTextProvider)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <ColoredTextProvider
+                      active={false}
+                      className="c2"
+                    >
+                      <div
+                        className="c2"
+                      >
+                        <Text
+                          block={false}
+                          bold={false}
+                          invert={false}
+                          size="medium"
+                        >
+                          <span
+                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
+                          >
+                            Home
+                          </span>
+                        </Text>
+                      </div>
+                    </ColoredTextProvider>
+                  </StyledComponent>
+                </Styled(ColoredTextProvider)>
+              </div>
+            </Box>
+          </StyledComponent>
+        </Styled(Box)>
+      </a>
+    </StyledComponent>
+  </styled.a>
+</Link>
 `;
 
 exports[`SideNavigation.Link renders with active styles 1`] = `
-<styled.a
+.c1 {
+  border-left: 4px solid #4b286d;
+  color: #4b286d;
+}
+
+.c1:hover {
+  background-color: #f2eff4;
+}
+
+.c2 {
+  font-weight: bold;
+  color: #4b286d;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Link
+  active={true}
   href="#"
+  reactRouterLinkComponent={null}
+  subMenuLink={false}
   to={null}
 >
-  <Styled(Box)
-    active={true}
-    horizontal={3}
-    vertical={3}
+  <styled.a
+    href="#"
+    to={null}
   >
-    <Styled(ColoredTextProvider)
-      active={true}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "text-decoration: none;",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="#"
+      to={null}
     >
-      <Text
-        block={false}
-        bold={true}
-        invert={false}
-        size="medium"
+      <a
+        className="c0"
+        href="#"
+        to={null}
       >
-        Home
-      </Text>
-    </Styled(ColoredTextProvider)>
-  </Styled(Box)>
-</styled.a>
+        <Styled(Box)
+          active={1}
+          horizontal={3}
+          vertical={3}
+        >
+          <StyledComponent
+            active={1}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    [Function],
+                  ],
+                },
+                "displayName": "Styled(Box)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            horizontal={3}
+            vertical={3}
+          >
+            <Box
+              active={1}
+              className="c1"
+              horizontal={3}
+              inline={false}
+              tag="div"
+              vertical={3}
+            >
+              <div
+                active={1}
+                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
+              >
+                <Styled(ColoredTextProvider)
+                  active={true}
+                >
+                  <StyledComponent
+                    active={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Styled(ColoredTextProvider)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <ColoredTextProvider
+                      active={true}
+                      className="c2"
+                    >
+                      <div
+                        className="c2"
+                      >
+                        <Text
+                          block={false}
+                          bold={true}
+                          invert={false}
+                          size="medium"
+                        >
+                          <span
+                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
+                          >
+                            Home
+                          </span>
+                        </Text>
+                      </div>
+                    </ColoredTextProvider>
+                  </StyledComponent>
+                </Styled(ColoredTextProvider)>
+              </div>
+            </Box>
+          </StyledComponent>
+        </Styled(Box)>
+      </a>
+    </StyledComponent>
+  </styled.a>
+</Link>
 `;

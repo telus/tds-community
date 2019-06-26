@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import warn from '../../../../shared/utils/warn'
 import Link from '../Link'
@@ -8,20 +8,19 @@ jest.mock('../../../../shared/utils/warn')
 
 describe('SideNavigation.Link', () => {
   const children = <Link href="#">Home</Link>
-  const doShallow = () => shallow(children)
+  const doMount = () => mount(children)
 
   afterEach(() => {
     jest.clearAllMocks()
   })
 
   it('renders', () => {
-    const link = doShallow()
-
+    const link = doMount()
     expect(link).toMatchSnapshot()
   })
 
   it('renders with active styles', () => {
-    const link = shallow(
+    const link = mount(
       <Link href="#" active>
         Home
       </Link>

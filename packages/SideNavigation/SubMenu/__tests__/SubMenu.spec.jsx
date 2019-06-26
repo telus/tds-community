@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { mount } from 'enzyme'
 
 import SideNavigation from '../../SideNavigation'
 
@@ -35,7 +35,7 @@ describe('SideNavigation.SubMenu', () => {
   )
 
   it('renders', () => {
-    const subMenu = shallow(SubMenu)
+    const subMenu = mount(SubMenu)
 
     expect(subMenu).toMatchSnapshot()
   })

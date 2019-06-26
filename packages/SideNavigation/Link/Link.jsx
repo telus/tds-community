@@ -51,7 +51,7 @@ const Link = ({ reactRouterLinkComponent, children, active, subMenuLink, ...rest
   }
 
   const innerLink = (
-    <BoxContainer vertical={subMenuLink ? 2 : 3} horizontal={3} active={active || undefined}>
+    <BoxContainer vertical={subMenuLink ? 2 : 3} horizontal={3} active={active ? 1 : 0}>
       <StyledTextProvider active={active}>
         <Text size={subMenuLink ? 'small' : 'medium'} bold={active}>
           {children}

@@ -25,7 +25,7 @@ exports[`SideNavigation.Link renders 1`] = `
   subMenuLink={false}
   to={null}
 >
-  <styled.a
+  <Link__StyledAnchor
     href="#"
     to={null}
   >
@@ -35,17 +35,17 @@ exports[`SideNavigation.Link renders 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "Link__StyledAnchor-gur8v7-2",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
               "text-decoration: none;",
             ],
           },
-          "displayName": "styled.a",
+          "displayName": "Link__StyledAnchor",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "Link__StyledAnchor-gur8v7-2",
           "target": "a",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -61,7 +61,7 @@ exports[`SideNavigation.Link renders 1`] = `
         href="#"
         to={null}
       >
-        <Styled(Box)
+        <Link__BoxContainer
           active={0}
           horizontal={3}
           vertical={3}
@@ -73,17 +73,17 @@ exports[`SideNavigation.Link renders 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "Link__BoxContainer-gur8v7-0",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     [Function],
                   ],
                 },
-                "displayName": "Styled(Box)",
+                "displayName": "Link__BoxContainer",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "Link__BoxContainer-gur8v7-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -106,7 +106,7 @@ exports[`SideNavigation.Link renders 1`] = `
                 active={0}
                 className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
               >
-                <Styled(ColoredTextProvider)
+                <Link__StyledTextProvider
                   active={false}
                 >
                   <StyledComponent
@@ -116,17 +116,17 @@ exports[`SideNavigation.Link renders 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
+                          "componentId": "Link__StyledTextProvider-gur8v7-1",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Styled(ColoredTextProvider)",
+                        "displayName": "Link__StyledTextProvider",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
+                        "styledComponentId": "Link__StyledTextProvider-gur8v7-1",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -157,14 +157,14 @@ exports[`SideNavigation.Link renders 1`] = `
                       </div>
                     </ColoredTextProvider>
                   </StyledComponent>
-                </Styled(ColoredTextProvider)>
+                </Link__StyledTextProvider>
               </div>
             </Box>
           </StyledComponent>
-        </Styled(Box)>
+        </Link__BoxContainer>
       </a>
     </StyledComponent>
-  </styled.a>
+  </Link__StyledAnchor>
 </Link>
 `;
 
@@ -195,7 +195,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
   subMenuLink={false}
   to={null}
 >
-  <styled.a
+  <Link__StyledAnchor
     href="#"
     to={null}
   >
@@ -205,17 +205,17 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "Link__StyledAnchor-gur8v7-2",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
               "text-decoration: none;",
             ],
           },
-          "displayName": "styled.a",
+          "displayName": "Link__StyledAnchor",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "Link__StyledAnchor-gur8v7-2",
           "target": "a",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -231,7 +231,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
         href="#"
         to={null}
       >
-        <Styled(Box)
+        <Link__BoxContainer
           active={1}
           horizontal={3}
           vertical={3}
@@ -243,17 +243,17 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "Link__BoxContainer-gur8v7-0",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     [Function],
                   ],
                 },
-                "displayName": "Styled(Box)",
+                "displayName": "Link__BoxContainer",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "Link__BoxContainer-gur8v7-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -276,7 +276,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                 active={1}
                 className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
               >
-                <Styled(ColoredTextProvider)
+                <Link__StyledTextProvider
                   active={true}
                 >
                   <StyledComponent
@@ -286,17 +286,17 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
+                          "componentId": "Link__StyledTextProvider-gur8v7-1",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Styled(ColoredTextProvider)",
+                        "displayName": "Link__StyledTextProvider",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
+                        "styledComponentId": "Link__StyledTextProvider-gur8v7-1",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -327,13 +327,13 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                       </div>
                     </ColoredTextProvider>
                   </StyledComponent>
-                </Styled(ColoredTextProvider)>
+                </Link__StyledTextProvider>
               </div>
             </Box>
           </StyledComponent>
-        </Styled(Box)>
+        </Link__BoxContainer>
       </a>
     </StyledComponent>
-  </styled.a>
+  </Link__StyledAnchor>
 </Link>
 `;

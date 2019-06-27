@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@1.1.3...@tds/community-side-navigation@2.0.0) (2019-06-27)
+
+
+### Bug Fixes
+
+* **community-side-navigation:** fix accessibility voice over issue ([c64800a](https://github.com/telus/tds-community/commit/c64800a))
+
+
+### Features
+
+* **community-side-navigation:** change to styled components ([4e76645](https://github.com/telus/tds-community/commit/4e76645))
+* **community-side-navigation:** upgrade to styled components ([cffe35d](https://github.com/telus/tds-community/commit/cffe35d))
+
+
+### BREAKING CHANGES
+
+* **community-side-navigation:** add styled-components as a peerDependency, increase minimum version of react dependency
+
+
+
+
+
 ## [1.1.3](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@1.1.2...@tds/community-side-navigation@1.1.3) (2019-06-13)
 
 **Note:** Version bump only for package @tds/community-side-navigation

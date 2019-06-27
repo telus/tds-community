@@ -18,14 +18,14 @@ exports[`Blockquote renders 1`] = `
 }
 
 <Blockquote>
-  <styled.blockquote>
+  <Blockquote__Wrapper>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Blockquote__Wrapper-gnvw5h-0",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -36,10 +36,10 @@ exports[`Blockquote renders 1`] = `
 }",
             ],
           },
-          "displayName": "styled.blockquote",
+          "displayName": "Blockquote__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Blockquote__Wrapper-gnvw5h-0",
           "target": "blockquote",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -80,6 +80,6 @@ exports[`Blockquote renders 1`] = `
         </Box>
       </blockquote>
     </StyledComponent>
-  </styled.blockquote>
+  </Blockquote__Wrapper>
 </Blockquote>
 `;

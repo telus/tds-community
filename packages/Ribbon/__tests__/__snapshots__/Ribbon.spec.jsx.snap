@@ -29,14 +29,14 @@ exports[`Ribbon renders 1`] = `
 }
 
 <Ribbon>
-  <styled.div>
+  <Ribbon__StyledRibbon>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Ribbon__StyledRibbon-sc-1qcqwhs-0",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -47,10 +47,10 @@ exports[`Ribbon renders 1`] = `
 }",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Ribbon__StyledRibbon",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Ribbon__StyledRibbon-sc-1qcqwhs-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -76,6 +76,6 @@ exports[`Ribbon renders 1`] = `
         </Text>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Ribbon__StyledRibbon>
 </Ribbon>
 `;

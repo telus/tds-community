@@ -35,9 +35,19 @@ Description of the defect
   * Observe this happens
 -->
 
-## Reproduction Percentage (if applicable)
+## Workaround details
 
-0/10 times
+<!--
+  Optionally provide guidance on any available workaround.
+-->
+
+## Recommendation
+
+ <!--
+  Optionally include any recommendation you may have to remedy the issue
+-->
+
+- Your recommendation here
 
 ## Meta
 

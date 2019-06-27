@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PreviewCard renders with all props 1`] = `
-<styled.a
+<PreviewCard__Anchor
   href="#"
 >
-  <styled.div
+  <PreviewCard__BoxContainer
     isLarge="development · April 1st, 2019"
   >
-    <styled.div
+    <PreviewCard__ImageContainer
       isLarge="development · April 1st, 2019"
     >
       <Image
@@ -16,14 +16,14 @@ exports[`PreviewCard renders with all props 1`] = `
         src="blog-example.jpg"
         width={300}
       />
-    </styled.div>
+    </PreviewCard__ImageContainer>
     <Box
       horizontal={4}
       inline={false}
       tag="div"
       vertical={5}
     >
-      <styled.div
+      <PreviewCard__ContentContainer
         data-testid="contentContainer"
         footer="By Halo"
         header="development · April 1st, 2019"
@@ -46,11 +46,11 @@ exports[`PreviewCard renders with all props 1`] = `
           tag="div"
           vertical={3}
         >
-          <styled.p
+          <PreviewCard__P
             alt="Hello world!"
           >
             Hello world!
-          </styled.p>
+          </PreviewCard__P>
         </Box>
         <Box
           inline={false}
@@ -65,20 +65,20 @@ exports[`PreviewCard renders with all props 1`] = `
             By Halo
           </Text>
         </Box>
-      </styled.div>
+      </PreviewCard__ContentContainer>
     </Box>
-  </styled.div>
-</styled.a>
+  </PreviewCard__BoxContainer>
+</PreviewCard__Anchor>
 `;
 
 exports[`PreviewCard renders with footer 1`] = `
-<styled.a
+<PreviewCard__Anchor
   href="#"
 >
-  <styled.div
+  <PreviewCard__BoxContainer
     isLarge="By Halo"
   >
-    <styled.div
+    <PreviewCard__ImageContainer
       isLarge="By Halo"
     >
       <Image
@@ -87,14 +87,14 @@ exports[`PreviewCard renders with footer 1`] = `
         src="blog-example.jpg"
         width={300}
       />
-    </styled.div>
+    </PreviewCard__ImageContainer>
     <Box
       horizontal={4}
       inline={false}
       tag="div"
       vertical={5}
     >
-      <styled.div
+      <PreviewCard__ContentContainer
         data-testid="contentContainer"
         footer="By Halo"
       >
@@ -103,11 +103,11 @@ exports[`PreviewCard renders with footer 1`] = `
           tag="div"
           vertical={3}
         >
-          <styled.p
+          <PreviewCard__P
             alt="Hello world!"
           >
             Hello world!
-          </styled.p>
+          </PreviewCard__P>
         </Box>
         <Box
           inline={false}
@@ -122,20 +122,20 @@ exports[`PreviewCard renders with footer 1`] = `
             By Halo
           </Text>
         </Box>
-      </styled.div>
+      </PreviewCard__ContentContainer>
     </Box>
-  </styled.div>
-</styled.a>
+  </PreviewCard__BoxContainer>
+</PreviewCard__Anchor>
 `;
 
 exports[`PreviewCard renders with header 1`] = `
-<styled.a
+<PreviewCard__Anchor
   href="#"
 >
-  <styled.div
+  <PreviewCard__BoxContainer
     isLarge="development · April 1st, 2019"
   >
-    <styled.div
+    <PreviewCard__ImageContainer
       isLarge="development · April 1st, 2019"
     >
       <Image
@@ -144,14 +144,14 @@ exports[`PreviewCard renders with header 1`] = `
         src="blog-example.jpg"
         width={300}
       />
-    </styled.div>
+    </PreviewCard__ImageContainer>
     <Box
       horizontal={4}
       inline={false}
       tag="div"
       vertical={5}
     >
-      <styled.div
+      <PreviewCard__ContentContainer
         data-testid="contentContainer"
         header="development · April 1st, 2019"
       >
@@ -173,90 +173,90 @@ exports[`PreviewCard renders with header 1`] = `
           tag="div"
           vertical={3}
         >
-          <styled.p
+          <PreviewCard__P
             alt="Hello world!"
           >
             Hello world!
-          </styled.p>
+          </PreviewCard__P>
         </Box>
-      </styled.div>
+      </PreviewCard__ContentContainer>
     </Box>
-  </styled.div>
-</styled.a>
+  </PreviewCard__BoxContainer>
+</PreviewCard__Anchor>
 `;
 
 exports[`PreviewCard renders with long body text 1`] = `
-<styled.a
+<PreviewCard__Anchor
   href="#"
 >
-  <styled.div>
-    <styled.div>
+  <PreviewCard__BoxContainer>
+    <PreviewCard__ImageContainer>
       <Image
         alt="Image of co-workers collaborating"
         height={300}
         src="blog-example.jpg"
         width={300}
       />
-    </styled.div>
+    </PreviewCard__ImageContainer>
     <Box
       horizontal={3}
       inline={false}
       tag="div"
       vertical={3}
     >
-      <styled.div
+      <PreviewCard__ContentContainer
         data-testid="contentContainer"
       >
         <Box
           inline={false}
           tag="div"
         >
-          <styled.p
+          <PreviewCard__P
             alt="Hello world, this preview card has all the props and has text that is over 70 characters in length"
           >
             Hello world, this preview card has all the props and has text that is ...
-          </styled.p>
+          </PreviewCard__P>
         </Box>
-      </styled.div>
+      </PreviewCard__ContentContainer>
     </Box>
-  </styled.div>
-</styled.a>
+  </PreviewCard__BoxContainer>
+</PreviewCard__Anchor>
 `;
 
 exports[`PreviewCard renders with only Required props 1`] = `
-<styled.a
+<PreviewCard__Anchor
   href="#"
 >
-  <styled.div>
-    <styled.div>
+  <PreviewCard__BoxContainer>
+    <PreviewCard__ImageContainer>
       <Image
         alt="Image of co-workers collaborating"
         height={300}
         src="blog-example.jpg"
         width={300}
       />
-    </styled.div>
+    </PreviewCard__ImageContainer>
     <Box
       horizontal={3}
       inline={false}
       tag="div"
       vertical={3}
     >
-      <styled.div
+      <PreviewCard__ContentContainer
         data-testid="contentContainer"
       >
         <Box
           inline={false}
           tag="div"
         >
-          <styled.p
+          <PreviewCard__P
             alt="Hello world!"
           >
             Hello world!
-          </styled.p>
+          </PreviewCard__P>
         </Box>
-      </styled.div>
+      </PreviewCard__ContentContainer>
     </Box>
-  </styled.div>
-</styled.a>
+  </PreviewCard__BoxContainer>
+</PreviewCard__Anchor>
 `;

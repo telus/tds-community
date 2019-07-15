@@ -10,17 +10,12 @@ const ImageSkeleton = ({ skeleton, ...rest }) => {
   }
 
   const baseClass = styles['skeleton-image']
-  const cornersClass = styles.rounded
   const circularClass = styles.circular
 
   const cssWidth = `${rest.width * 0.8}px`
   const cssHeight = `${rest.height * 0.8}px`
 
-  const classes = [
-    baseClass,
-    rest.rounded === 'corners' ? cornersClass : '',
-    rest.rounded === 'circle' ? circularClass : '',
-  ].join(' ')
+  const classes = [baseClass, circularClass].join(' ')
 
   return <div className={classes} style={{ width: cssWidth, height: cssHeight }} />
 }

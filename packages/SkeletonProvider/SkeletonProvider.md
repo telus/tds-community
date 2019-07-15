@@ -9,7 +9,7 @@ with options to customize how the skeleton will appear.
 | **Text**    | lines            | number | 1         | Number of lines to appear as a skeleton           |
 |             | characters       | number | undefined | Character width of skeleton (default is full row) |
 | **Heading** | characters       | number | undefined | Character width of skeleton (default is full row) |
-| **Image**   | none             | n/a    | n/a       |                                                   |
+| **Image**   | none             | n/a    | n/a       | Images always appear as a circle in skeleton form |
 
 ### Example
 

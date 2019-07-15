@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkeletonProvider should render children as is if the show prop == false 1`] = `
+<div>
+  <h1
+    class="TDS_Heading-modules__h1___1iaO2 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
+  >
+    Hello
+  </h1>
+  <img
+    alt="image"
+    class="TDS_Image-modules__fluid___1qw3M"
+    corners="rounded"
+    height="60"
+    src=""
+    width="60"
+  />
+  <span
+    class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+  >
+    Hello
+  </span>
+</div>
+`;
+
+exports[`SkeletonProvider should render children as skeletons 1`] = `
+<div>
+  <h1
+    class="TDS_Heading-modules__h1___1iaO2 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
+  >
+    Hello
+  </h1>
+  <img
+    alt="skeleton image"
+    class="TDS_Image-modules__fluid___1qw3M"
+    corners="rounded"
+    height="60"
+    src=""
+    width="60"
+  />
+  <span
+    class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+  >
+    Hello
+  </span>
+</div>
+`;

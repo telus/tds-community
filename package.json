@@ -67,6 +67,7 @@
     "@commitlint/prompt": "^7.6.1",
     "@lerna/publish": "^3.14.1",
     "@tds/core-box": "^1.0.1",
+    "@tds/core-card": "^2.0.1",
     "@tds/core-chevron-link": "^1.1.2",
     "@tds/core-colours": "^1.1.2",
     "@tds/core-css-reset": "^1.1.1",

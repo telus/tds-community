@@ -16,7 +16,7 @@ exports[`SkeletonProvider should render children as is if the show prop == false
     width="60"
   />
   <span
-    class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
   >
     Hello
   </span>
@@ -39,7 +39,7 @@ exports[`SkeletonProvider should render children as skeletons 1`] = `
     width="60"
   />
   <span
-    class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
   >
     Hello
   </span>

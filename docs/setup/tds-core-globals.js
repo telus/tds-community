@@ -1,4 +1,5 @@
 import Box from '@tds/core-box'
+import Card from '@tds/core-card'
 import ChevronLink from '@tds/core-chevron-link'
 import FlexGrid from '@tds/core-flex-grid'
 import HairlineDivider from '@tds/core-hairline-divider'
@@ -14,6 +15,7 @@ import Image from '@tds/core-image'
 
 Object.assign(global, {
   Box,
+  Card,
   ChevronLink,
   FlexGrid,
   HairlineDivider,

@@ -1,0 +1,38 @@
+{
+  "name": "@tds/community-skeleton-provider",
+  "version": "1.0.0-dev",
+  "description": "",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telus/tds-community.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telus/tds-community/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "peerDependencies": {
+    "@tds/core-heading": ">=1.1.5",
+    "@tds/core-image": ">=1.0.0",
+    "@tds/core-text": ">=1.0.4",
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "recompose": "^0.30.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@tds/core-colours": "^1.0.0"
+  }
+}

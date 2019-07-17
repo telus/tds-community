@@ -126,15 +126,14 @@ For coded components or documentation:
 
 1. Once a pull request is made, it is assigned to a developer (DPA helps find reviewers, or performs reviews themselves) who did not make commits to the PR
 2. The PR is merged to master and deployed to our staging server
-3. Visual QA (code)
-   - Coded component is tested on the staging site
-   - Coded component is tested on the isomorphic starter kit
+3. Manual QA (code)
+   - Follow our [quality checklist](https://tds.telus.com/contributing/developer-guide.html#quality-checklist)
 4. Visual QA (design)
    - DSM design library component is observed within the shared draft
    - Make sure it’s responsive
    - Variations can be changed with overrides in Sketch or props in code
 5. Review the documentation in DSM and on staging
-6. Merge code to master, and delete branch
+6. 'Rebase and merge' code to master, and delete branch
 7. Verify the completion of ACs and overall functionality for the pulled in ticket.
 8. All items should be tested both in the TDS Community docs and Isomorphic Starter Kit on all supported browsers.
 9. If problems are found, notify the ticket’s developer or designer and move back to In Dev for correction

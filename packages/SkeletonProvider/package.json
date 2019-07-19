@@ -24,7 +24,7 @@
     "@tds/core-heading": ">=1.1.5",
     "@tds/core-image": ">=1.0.0",
     "@tds/core-text": ">=1.0.4",
-    "react": ">=15",
+    "react": ">=16.2",
     "react-dom": ">=15"
   },
   "dependencies": {

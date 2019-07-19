@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-skeleton-provider",
-  "version": "1.0.0-dev",
+  "version": "1.0.0-0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -33,6 +33,6 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^1.1.2"
   }
 }

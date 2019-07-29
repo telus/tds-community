@@ -27,6 +27,7 @@ const ButtonSubMenu = styled.button(props => ({
   width: '100%',
   color: props.active ? `${colorTelusPurple}` : `${colorShuttleGrey}`,
   borderLeft: props.active ? `4px solid ${colorTelusPurple}` : 'none',
+  fontFamily: 'TELUS-Web, "Helvetica Neue", Helvetica, Arial, sans-serif',
   '&:hover': {
     backgroundColor: `${colorWhiteLilac}`,
     color: `${colorTelusPurple}`,

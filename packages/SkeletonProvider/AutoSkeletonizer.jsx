@@ -9,6 +9,10 @@ const AutoSkeletonizer = children => {
   const skeletonChildren = React.Children.map(children, childElement => {
     let child = childElement
 
+    if (child === null) {
+      return null
+    }
+
     if (child.props && 'children' in child.props) {
       child = React.cloneElement(child, {
         children: AutoSkeletonizer(child.props.children),

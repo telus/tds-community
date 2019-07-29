@@ -29,6 +29,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   width: 100%;
   color: #4b286d;
   border-left: 4px solid #4b286d;
+  font-family: TELUS-Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .c0:hover {

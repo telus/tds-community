@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@1.0.0...@tds/community-skeleton-provider@1.0.1) (2019-07-29)
+
+
+### Bug Fixes
+
+* **community-skeleton-provider:** skip skeleton of childless components ([78f9383](https://github.com/telus/tds-community/commit/78f9383))
+
+
+
+
+
 # 1.0.0 (2019-07-19)
 
 **Note:** Version bump only for package @tds/community-skeleton-provider

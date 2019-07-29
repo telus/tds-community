@@ -29,6 +29,7 @@ exports[`SideNavigation renders 1`] = `
   width: 100%;
   color: #54595f;
   border-left: none;
+  font-family: TELUS-Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .c7:hover {
@@ -180,6 +181,7 @@ exports[`SideNavigation renders 1`] = `
   width: 100%;
   color: #54595f;
   border-left: none;
+  font-family: TELUS-Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .c6:hover {
@@ -1750,6 +1752,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   width: 100%;
   color: #4b286d;
   border-left: 4px solid #4b286d;
+  font-family: TELUS-Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .c7:hover {
@@ -1900,6 +1903,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   width: 100%;
   color: #4b286d;
   border-left: 4px solid #4b286d;
+  font-family: TELUS-Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .c6:hover {

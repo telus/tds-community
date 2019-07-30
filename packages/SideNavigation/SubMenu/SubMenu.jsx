@@ -9,6 +9,7 @@ import safeRest from '@tds/shared-safe-rest'
 import { Reveal } from '@tds/shared-animation'
 import { componentWithName } from '@tds/util-prop-types'
 import { colorTelusPurple, colorWhiteLilac, colorShuttleGrey } from '@tds/core-colours'
+import { fontTelus } from '@tds/shared-typography'
 
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
@@ -27,7 +28,7 @@ const ButtonSubMenu = styled.button(props => ({
   width: '100%',
   color: props.active ? `${colorTelusPurple}` : `${colorShuttleGrey}`,
   borderLeft: props.active ? `4px solid ${colorTelusPurple}` : 'none',
-  fontFamily: 'TELUS-Web, "Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontFamily: `${fontTelus}`,
   '&:hover': {
     backgroundColor: `${colorWhiteLilac}`,
     color: `${colorTelusPurple}`,

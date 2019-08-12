@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@2.0.1...@tds/community-side-navigation@2.0.2) (2019-08-12)
+
+
+### Bug Fixes
+
+* **community-side-navigation:** fix button font override on site builder ([b23beac](https://github.com/telus/tds-community/commit/b23beac))
+* **community-side-navigation:** use telus font from shared typography ([e209edf](https://github.com/telus/tds-community/commit/e209edf))
+
+
+
+
+
 ## [2.0.1](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@2.0.0...@tds/community-side-navigation@2.0.1) (2019-07-19)
 
 **Note:** Version bump only for package @tds/community-side-navigation

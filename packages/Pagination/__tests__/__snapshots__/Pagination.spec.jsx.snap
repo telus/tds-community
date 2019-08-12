@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination renders 1`] = `
-.c0 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -10,186 +10,1133 @@ exports[`Pagination renders 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
+.c0 {
+  opacity: 1;
+}
+
+.c2 {
+  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3 {
+  color: #4b286d;
+  padding: 0 4px 0 0;
+  font-size: 1rem;
+  line-height: 16px;
+  visibility: hidden;
+}
+
+.c12 {
+  color: #4b286d;
+  padding: 0 4px 0 0;
+  font-size: 1rem;
+  line-height: 16px;
+  visibility: visible;
+}
+
+.c4 {
+  color: #4b286d;
+  background-color: #f2eff4;
+  border: none;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c5 {
+  display: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 {
+  background: none;
+  border: none;
+  color: #4b286d;
+  cursor: pointer;
+  padding: 0 5px;
+  min-width: 32px;
+  margin: 0;
+  width: auto;
+  height: 32px;
+}
+
+.c9 {
+  display: inline-block;
+  color: #4b286d;
+  background-color: #f2eff4;
+  height: 32px;
+  line-height: 29px;
+  width: auto;
+  min-width: 32px;
+  list-style: none;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.c11 {
+  display: inline-block;
+  color: #4b286d;
+  background-color: #f2eff4;
+  height: 32px;
+  line-height: 29px;
+  width: auto;
+  min-width: 32px;
+  list-style: none;
+  margin-right: 4px;
+  text-align: center;
+  width: 16px;
+  min-width: 16px;
+  background-color: inherit;
+  line-height: 22px;
+  border: none;
+}
+
+.c7 {
+  display: inline-block;
+  color: #4b286d;
+  background-color: #f2eff4;
+  height: 32px;
+  line-height: 29px;
+  width: auto;
+  min-width: 32px;
+  list-style: none;
+  margin-right: 4px;
+  text-align: center;
+  color: #f2eff4;
+  line-height: 31px;
+  padding: 0 5px;
+  background-color: #4b286d;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    line-height: 22px;
+    padding: 0 8px 0 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    line-height: 22px;
+    padding: 0 8px 0 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: inline-block;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    min-width: 22px;
+    height: 24px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    border: 1px solid #f2eff4;
+    min-width: 22px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .c9:hover {
+    border: 1px solid #4b286d;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    border: 1px solid #f2eff4;
+    min-width: 22px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .c11:hover {
+    border: 1px solid #4b286d;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    line-height: 15px;
+    border: none;
+  }
+
+  .c11:hover {
+    border: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    border: 1px solid #f2eff4;
+    min-width: 22px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .c7:hover {
+    border: 1px solid #4b286d;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    border: 1px solid #4b286d;
+    line-height: 23px;
+    min-width: 24px;
+  }
+}
+
 <Pagination
   copy="en"
 >
-  <div
-    className="container"
-  >
-    <Panel>
-      <div>
-        <Panel>
-          <div>
-            Content 1
-          </div>
-        </Panel>
-      </div>
-    </Panel>
-    <div
-      className="controls"
+  <styles__PaginationContainer>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styles__PaginationContainer-sc-1afeh49-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "opacity: 1;",
+            ],
+          },
+          "displayName": "styles__PaginationContainer",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styles__PaginationContainer-sc-1afeh49-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <p
-        className="previousHidden"
+      <div
+        className="c0"
       >
-        <button
-          aria-label="Go to previous panel"
-          onClick={[Function]}
-          value={0}
-        >
-          <DecorativeIcon
-            size={16}
-            symbol="leftChevron"
-          >
-            <Icon
-              aria-hidden="true"
-              size={16}
-              symbol="leftChevron"
-            >
-              <i
-                aria-hidden="true"
-                className="TDS_Icon-modules__iconLeftChevron___37tW0 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
-              />
-            </Icon>
-          </DecorativeIcon>
-           
-          <span
-            className="buttonLabel"
-          >
-            Prev
-          </span>
-        </button>
-      </p>
-      <ul
-        className="pagination"
-      >
-        <li
-          className="current"
-          key="193359721"
-        >
-          1
-          <A11yContent>
-            <A11yContent__StyledA11yContent>
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                      "isStatic": true,
-                      "lastClassName": "c0",
-                      "rules": Array [
-                        "position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);",
-                      ],
-                    },
-                    "displayName": "A11yContent__StyledA11yContent",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                    "target": "span",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
+        <Panel>
+          <styles__PanelContainer>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styles__PanelContainer-sc-1afeh49-12",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "display: flex; justify-content: center;",
+                    ],
+                  },
+                  "displayName": "styles__PanelContainer",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styles__PanelContainer-sc-1afeh49-12",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
                 }
-                forwardedRef={null}
-              >
-                <span
-                  className="c0"
-                >
-                  (current)
-                </span>
-              </StyledComponent>
-            </A11yContent__StyledA11yContent>
-          </A11yContent>
-        </li>
-        <li
-          className="regular"
-          key="193361898"
-        >
-          <button
-            aria-label="Go to panel number 2"
-            onClick={[Function]}
-            value={2}
-          >
-            2
-          </button>
-        </li>
-        <li
-          className="regular"
-          key="193361897"
-        >
-          <button
-            aria-label="Go to panel number 3"
-            onClick={[Function]}
-            value={3}
-          >
-            3
-          </button>
-        </li>
-        <li
-          className="regular"
-          key="193361896"
-        >
-          <button
-            aria-label="Go to panel number 4"
-            onClick={[Function]}
-            value={4}
-          >
-            4
-          </button>
-        </li>
-        <li
-          className="ellipsis"
-          key="193354536"
-        >
-          ...
-        </li>
-        <li
-          className="regular"
-          key="193361891"
-        >
-          <button
-            aria-label="Go to panel number 9"
-            onClick={[Function]}
-            value={9}
-          >
-            9
-          </button>
-        </li>
-      </ul>
-      <p
-        className="next"
-      >
-        <button
-          aria-label="Go to next panel"
-          onClick={[Function]}
-          value={2}
-        >
-          <span
-            className="buttonLabel"
-          >
-            Next
-          </span>
-           
-          <DecorativeIcon
-            size={16}
-            symbol="chevron"
-          >
-            <Icon
-              aria-hidden="true"
-              size={16}
-              symbol="chevron"
+              }
+              forwardedRef={null}
             >
-              <i
-                aria-hidden="true"
-                className="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
-              />
-            </Icon>
-          </DecorativeIcon>
-        </button>
-      </p>
-    </div>
-  </div>
+              <div
+                className="c1"
+              >
+                <Panel>
+                  <styles__PanelContainer>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "styles__PanelContainer-sc-1afeh49-12",
+                            "isStatic": true,
+                            "lastClassName": "c1",
+                            "rules": Array [
+                              "display: flex; justify-content: center;",
+                            ],
+                          },
+                          "displayName": "styles__PanelContainer",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "styles__PanelContainer-sc-1afeh49-12",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c1"
+                      >
+                        Content 1
+                      </div>
+                    </StyledComponent>
+                  </styles__PanelContainer>
+                </Panel>
+              </div>
+            </StyledComponent>
+          </styles__PanelContainer>
+        </Panel>
+        <styles__Controls>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "styles__Controls-sc-1afeh49-1",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "clear: both; display: flex; margin-top: 20px; position: relative; justify-content: center; @media (min-width: 768px) {
+  justify-content: left;
+} width: 100%;",
+                  ],
+                },
+                "displayName": "styles__Controls",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "styles__Controls-sc-1afeh49-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            >
+              <styles__PrevPaginationContainer
+                showPrevious={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "styles__PrevPaginationContainer-sc-1afeh49-3",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          "color: #4b286d; padding: 0 4px 0 0; font-size: 1rem; line-height: 16px; @media (min-width: 768px) {
+  line-height: 22px; padding: 0 8px 0 4px;
+}",
+                          [Function],
+                        ],
+                      },
+                      "displayName": "styles__PrevPaginationContainer",
+                      "foldedComponentIds": Array [
+                        "styles__BasePaginationContainer-sc-1afeh49-2",
+                      ],
+                      "render": [Function],
+                      "styledComponentId": "styles__PrevPaginationContainer-sc-1afeh49-3",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  showPrevious={false}
+                >
+                  <p
+                    className="c3"
+                  >
+                    <styles__PaginationButtonStyle
+                      aria-label="Go to previous panel"
+                      onClick={[Function]}
+                      value={0}
+                    >
+                      <StyledComponent
+                        aria-label="Go to previous panel"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__PaginationButtonStyle-sc-1afeh49-5",
+                              "isStatic": true,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "color: #4b286d; background-color: #f2eff4; border: none; width: 32px; height: 32px; margin: 0; text-align: center; padding: 0; cursor: pointer; @media (min-width: 768px) {
+  background: none; width: auto; height: auto;
+}",
+                              ],
+                            },
+                            "displayName": "styles__PaginationButtonStyle",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__PaginationButtonStyle-sc-1afeh49-5",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onClick={[Function]}
+                        value={0}
+                      >
+                        <button
+                          aria-label="Go to previous panel"
+                          className="c4"
+                          onClick={[Function]}
+                          value={0}
+                        >
+                          <DecorativeIcon
+                            size={16}
+                            symbol="leftChevron"
+                          >
+                            <Icon
+                              aria-hidden="true"
+                              size={16}
+                              symbol="leftChevron"
+                            >
+                              <i
+                                aria-hidden="true"
+                                className="TDS_Icon-modules__iconLeftChevron___37tW0 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+                              />
+                            </Icon>
+                          </DecorativeIcon>
+                           
+                          <styles__ButtonLabel>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__ButtonLabel-sc-1afeh49-6",
+                                    "isStatic": true,
+                                    "lastClassName": "c5",
+                                    "rules": Array [
+                                      "display: none; @media (min-width: 768px) {
+  display: inline-block;
+}",
+                                    ],
+                                  },
+                                  "displayName": "styles__ButtonLabel",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__ButtonLabel-sc-1afeh49-6",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c5"
+                              >
+                                Prev
+                              </span>
+                            </StyledComponent>
+                          </styles__ButtonLabel>
+                        </button>
+                      </StyledComponent>
+                    </styles__PaginationButtonStyle>
+                  </p>
+                </StyledComponent>
+              </styles__PrevPaginationContainer>
+              <styles__PaginationList>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "styles__PaginationList-sc-1afeh49-7",
+                        "isStatic": true,
+                        "lastClassName": "c6",
+                        "rules": Array [
+                          "display: flex;",
+                        ],
+                      },
+                      "displayName": "styles__PaginationList",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "styles__PaginationList-sc-1afeh49-7",
+                      "target": "ul",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <ul
+                    className="c6"
+                  >
+                    <styles__PaginationCurrent
+                      key="193359721"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__PaginationCurrent-sc-1afeh49-11",
+                              "isStatic": true,
+                              "lastClassName": "c7",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 32px; line-height: 29px; width: auto; min-width: 32px; @media (min-width: 768px) {
+  border: 1px solid #f2eff4; min-width: 22px; height: 24px; line-height: 24px; &:hover {
+  border: 1px solid #4b286d;
+}
+} list-style: none; margin-right: 4px; text-align: center;",
+                                "color: #f2eff4; line-height: 31px; padding: 0 5px; background-color: #4b286d; @media (min-width: 768px) {
+  border: 1px solid #4b286d; line-height: 23px; min-width: 24px;
+}",
+                              ],
+                            },
+                            "displayName": "styles__PaginationCurrent",
+                            "foldedComponentIds": Array [
+                              "styles__GeneralPagination-sc-1afeh49-9",
+                            ],
+                            "render": [Function],
+                            "styledComponentId": "styles__PaginationCurrent-sc-1afeh49-11",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c7"
+                        >
+                          1
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c8",
+                                      "rules": Array [
+                                        "position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);",
+                                      ],
+                                    },
+                                    "displayName": "A11yContent__StyledA11yContent",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c8"
+                                >
+                                  (current)
+                                </span>
+                              </StyledComponent>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                        </li>
+                      </StyledComponent>
+                    </styles__PaginationCurrent>
+                    <styles__GeneralPagination
+                      key="193361898"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__GeneralPagination-sc-1afeh49-9",
+                              "isStatic": true,
+                              "lastClassName": "c9",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 32px; line-height: 29px; width: auto; min-width: 32px; @media (min-width: 768px) {
+  border: 1px solid #f2eff4; min-width: 22px; height: 24px; line-height: 24px; &:hover {
+  border: 1px solid #4b286d;
+}
+} list-style: none; margin-right: 4px; text-align: center;",
+                              ],
+                            },
+                            "displayName": "styles__GeneralPagination",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__GeneralPagination-sc-1afeh49-9",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c9"
+                        >
+                          <styles__GeneralPaginationButton
+                            aria-label="Go to panel number 2"
+                            onClick={[Function]}
+                            value={2}
+                          >
+                            <StyledComponent
+                              aria-label="Go to panel number 2"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                    "isStatic": true,
+                                    "lastClassName": "c10",
+                                    "rules": Array [
+                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
+  min-width: 22px; height: 24px;
+}",
+                                    ],
+                                  },
+                                  "displayName": "styles__GeneralPaginationButton",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              value={2}
+                            >
+                              <button
+                                aria-label="Go to panel number 2"
+                                className="c10"
+                                onClick={[Function]}
+                                value={2}
+                              >
+                                2
+                              </button>
+                            </StyledComponent>
+                          </styles__GeneralPaginationButton>
+                        </li>
+                      </StyledComponent>
+                    </styles__GeneralPagination>
+                    <styles__GeneralPagination
+                      key="193361897"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__GeneralPagination-sc-1afeh49-9",
+                              "isStatic": true,
+                              "lastClassName": "c9",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 32px; line-height: 29px; width: auto; min-width: 32px; @media (min-width: 768px) {
+  border: 1px solid #f2eff4; min-width: 22px; height: 24px; line-height: 24px; &:hover {
+  border: 1px solid #4b286d;
+}
+} list-style: none; margin-right: 4px; text-align: center;",
+                              ],
+                            },
+                            "displayName": "styles__GeneralPagination",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__GeneralPagination-sc-1afeh49-9",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c9"
+                        >
+                          <styles__GeneralPaginationButton
+                            aria-label="Go to panel number 3"
+                            onClick={[Function]}
+                            value={3}
+                          >
+                            <StyledComponent
+                              aria-label="Go to panel number 3"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                    "isStatic": true,
+                                    "lastClassName": "c10",
+                                    "rules": Array [
+                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
+  min-width: 22px; height: 24px;
+}",
+                                    ],
+                                  },
+                                  "displayName": "styles__GeneralPaginationButton",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              value={3}
+                            >
+                              <button
+                                aria-label="Go to panel number 3"
+                                className="c10"
+                                onClick={[Function]}
+                                value={3}
+                              >
+                                3
+                              </button>
+                            </StyledComponent>
+                          </styles__GeneralPaginationButton>
+                        </li>
+                      </StyledComponent>
+                    </styles__GeneralPagination>
+                    <styles__GeneralPagination
+                      key="193361896"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__GeneralPagination-sc-1afeh49-9",
+                              "isStatic": true,
+                              "lastClassName": "c9",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 32px; line-height: 29px; width: auto; min-width: 32px; @media (min-width: 768px) {
+  border: 1px solid #f2eff4; min-width: 22px; height: 24px; line-height: 24px; &:hover {
+  border: 1px solid #4b286d;
+}
+} list-style: none; margin-right: 4px; text-align: center;",
+                              ],
+                            },
+                            "displayName": "styles__GeneralPagination",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__GeneralPagination-sc-1afeh49-9",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c9"
+                        >
+                          <styles__GeneralPaginationButton
+                            aria-label="Go to panel number 4"
+                            onClick={[Function]}
+                            value={4}
+                          >
+                            <StyledComponent
+                              aria-label="Go to panel number 4"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                    "isStatic": true,
+                                    "lastClassName": "c10",
+                                    "rules": Array [
+                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
+  min-width: 22px; height: 24px;
+}",
+                                    ],
+                                  },
+                                  "displayName": "styles__GeneralPaginationButton",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              value={4}
+                            >
+                              <button
+                                aria-label="Go to panel number 4"
+                                className="c10"
+                                onClick={[Function]}
+                                value={4}
+                              >
+                                4
+                              </button>
+                            </StyledComponent>
+                          </styles__GeneralPaginationButton>
+                        </li>
+                      </StyledComponent>
+                    </styles__GeneralPagination>
+                    <styles__PaginationEllipsis
+                      key="193354536"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__PaginationEllipsis-sc-1afeh49-10",
+                              "isStatic": true,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 32px; line-height: 29px; width: auto; min-width: 32px; @media (min-width: 768px) {
+  border: 1px solid #f2eff4; min-width: 22px; height: 24px; line-height: 24px; &:hover {
+  border: 1px solid #4b286d;
+}
+} list-style: none; margin-right: 4px; text-align: center;",
+                                "width: 16px; min-width: 16px; background-color: inherit; line-height: 22px; border: none; @media (min-width: 768px) {
+  line-height: 15px; border: none; &:hover {
+  border: none;
+}
+}",
+                              ],
+                            },
+                            "displayName": "styles__PaginationEllipsis",
+                            "foldedComponentIds": Array [
+                              "styles__GeneralPagination-sc-1afeh49-9",
+                            ],
+                            "render": [Function],
+                            "styledComponentId": "styles__PaginationEllipsis-sc-1afeh49-10",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c11"
+                        >
+                          ...
+                        </li>
+                      </StyledComponent>
+                    </styles__PaginationEllipsis>
+                    <styles__GeneralPagination
+                      key="193361891"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__GeneralPagination-sc-1afeh49-9",
+                              "isStatic": true,
+                              "lastClassName": "c9",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 32px; line-height: 29px; width: auto; min-width: 32px; @media (min-width: 768px) {
+  border: 1px solid #f2eff4; min-width: 22px; height: 24px; line-height: 24px; &:hover {
+  border: 1px solid #4b286d;
+}
+} list-style: none; margin-right: 4px; text-align: center;",
+                              ],
+                            },
+                            "displayName": "styles__GeneralPagination",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__GeneralPagination-sc-1afeh49-9",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c9"
+                        >
+                          <styles__GeneralPaginationButton
+                            aria-label="Go to panel number 9"
+                            onClick={[Function]}
+                            value={9}
+                          >
+                            <StyledComponent
+                              aria-label="Go to panel number 9"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                    "isStatic": true,
+                                    "lastClassName": "c10",
+                                    "rules": Array [
+                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
+  min-width: 22px; height: 24px;
+}",
+                                    ],
+                                  },
+                                  "displayName": "styles__GeneralPaginationButton",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__GeneralPaginationButton-sc-1afeh49-8",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              value={9}
+                            >
+                              <button
+                                aria-label="Go to panel number 9"
+                                className="c10"
+                                onClick={[Function]}
+                                value={9}
+                              >
+                                9
+                              </button>
+                            </StyledComponent>
+                          </styles__GeneralPaginationButton>
+                        </li>
+                      </StyledComponent>
+                    </styles__GeneralPagination>
+                  </ul>
+                </StyledComponent>
+              </styles__PaginationList>
+              <styles__NextPaginationContainer
+                showNext={true}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "styles__NextPaginationContainer-sc-1afeh49-4",
+                        "isStatic": false,
+                        "lastClassName": "c12",
+                        "rules": Array [
+                          "color: #4b286d; padding: 0 4px 0 0; font-size: 1rem; line-height: 16px; @media (min-width: 768px) {
+  line-height: 22px; padding: 0 8px 0 4px;
+}",
+                          [Function],
+                        ],
+                      },
+                      "displayName": "styles__NextPaginationContainer",
+                      "foldedComponentIds": Array [
+                        "styles__BasePaginationContainer-sc-1afeh49-2",
+                      ],
+                      "render": [Function],
+                      "styledComponentId": "styles__NextPaginationContainer-sc-1afeh49-4",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  showNext={true}
+                >
+                  <p
+                    className="c12"
+                  >
+                    <styles__PaginationButtonStyle
+                      aria-label="Go to next panel"
+                      onClick={[Function]}
+                      value={2}
+                    >
+                      <StyledComponent
+                        aria-label="Go to next panel"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__PaginationButtonStyle-sc-1afeh49-5",
+                              "isStatic": true,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "color: #4b286d; background-color: #f2eff4; border: none; width: 32px; height: 32px; margin: 0; text-align: center; padding: 0; cursor: pointer; @media (min-width: 768px) {
+  background: none; width: auto; height: auto;
+}",
+                              ],
+                            },
+                            "displayName": "styles__PaginationButtonStyle",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__PaginationButtonStyle-sc-1afeh49-5",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onClick={[Function]}
+                        value={2}
+                      >
+                        <button
+                          aria-label="Go to next panel"
+                          className="c4"
+                          onClick={[Function]}
+                          value={2}
+                        >
+                          <styles__ButtonLabel>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__ButtonLabel-sc-1afeh49-6",
+                                    "isStatic": true,
+                                    "lastClassName": "c5",
+                                    "rules": Array [
+                                      "display: none; @media (min-width: 768px) {
+  display: inline-block;
+}",
+                                    ],
+                                  },
+                                  "displayName": "styles__ButtonLabel",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__ButtonLabel-sc-1afeh49-6",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c5"
+                              >
+                                Next
+                              </span>
+                            </StyledComponent>
+                          </styles__ButtonLabel>
+                           
+                          <DecorativeIcon
+                            size={16}
+                            symbol="chevron"
+                          >
+                            <Icon
+                              aria-hidden="true"
+                              size={16}
+                              symbol="chevron"
+                            >
+                              <i
+                                aria-hidden="true"
+                                className="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+                              />
+                            </Icon>
+                          </DecorativeIcon>
+                        </button>
+                      </StyledComponent>
+                    </styles__PaginationButtonStyle>
+                  </p>
+                </StyledComponent>
+              </styles__NextPaginationContainer>
+            </div>
+          </StyledComponent>
+        </styles__Controls>
+      </div>
+    </StyledComponent>
+  </styles__PaginationContainer>
 </Pagination>
 `;

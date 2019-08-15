@@ -1,5 +1,6 @@
 ```jsx
 <Testimonial
+  testimonialStyle="heading2"
   testimonial={`“My office is where ever my customers are. TELUS helps me stay connected whether I'm making a sale or doing payroll.”`}
   image={
     <Image

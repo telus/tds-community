@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import Box from '@tds/core-box'
 import Paragraph from '@tds/core-paragraph'
+import Heading from '@tds/core-heading'
 import safeRest from '@tds/shared-safe-rest'
 import { componentWithName } from '@tds/util-prop-types'
 
@@ -12,10 +12,18 @@ import styles from './Testimonial.scss'
  * Testimonial component for displaying testimonial in a standalone, pre-styled component.
  * @version ./package.json
  */
-const Testimonial = ({ testimonial, image, title, additionalInfo, ...rest }) => {
+const Testimonial = ({ testimonialStyle, testimonial, image, title, additionalInfo, ...rest }) => {
   return (
     <Box {...safeRest(rest)} between={3}>
-      <Paragraph size="large">{testimonial}</Paragraph>
+      {testimonialStyle === 'heading2' ? (
+        <Paragraph>
+          <Heading level="h2" tag="span">
+            {testimonial}
+          </Heading>
+        </Paragraph>
+      ) : (
+        <Paragraph size="large">{testimonial}</Paragraph>
+      )}
       <div className={styles.imageAndQuote}>
         {image && <div className={styles.image}>{image}</div>}
         <div>
@@ -28,6 +36,12 @@ const Testimonial = ({ testimonial, image, title, additionalInfo, ...rest }) => 
 }
 
 Testimonial.propTypes = {
+  /**
+   * Renders the testimonial text in the specified style, as a semantic paragraph.
+   *
+   * @since 2.1.0
+   */
+  testimonialStyle: PropTypes.oneOf(['largeText', 'heading2']),
   /** Testimonial main text */
   testimonial: PropTypes.string.isRequired,
   /** Image Component - suggested & max size is 60x60px. */
@@ -39,6 +53,7 @@ Testimonial.propTypes = {
 }
 
 Testimonial.defaultProps = {
+  testimonialStyle: 'largeText',
   image: undefined,
 }
 

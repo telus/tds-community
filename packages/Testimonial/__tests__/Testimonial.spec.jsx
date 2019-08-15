@@ -35,6 +35,16 @@ describe('Testimonial', () => {
     expect(testimonial.find('.image').length).toEqual(0)
   })
 
+  it('renders testimonial text as a large paragraph by default', () => {
+    const testimonial = doShallow({ ...props })
+    expect(testimonial.find('Paragraph').first()).toHaveProp('size', 'large')
+  })
+
+  it('renders testimonial text as a level h2 heading when testimonialStyle is heading2', () => {
+    const testimonial = doShallow({ ...props, testimonialStyle: 'heading2' })
+    expect(testimonial.find('Heading').first()).toHaveProp('level', 'h2')
+  })
+
   it('renders with an image', () => {
     const testimonial = doShallow({ ...props })
     expect(testimonial.find('.image').exists()).toEqual(true)

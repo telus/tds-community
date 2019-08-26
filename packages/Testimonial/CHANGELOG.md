@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telus/tds-community/compare/@tds/community-testimonial@2.0.0...@tds/community-testimonial@2.1.0) (2019-08-26)
+
+
+### Features
+
+* **community-testimonial:** add testimonialStyle prop ([d1b5eb2](https://github.com/telus/tds-community/commit/d1b5eb2))
+
+
+
+
+
 # [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-testimonial@1.0.5...@tds/community-testimonial@2.0.0) (2019-05-22)
 
 

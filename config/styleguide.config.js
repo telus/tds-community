@@ -8,7 +8,7 @@ const devTemplate = {
   head: {
     scripts: [
       {
-        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set,Object.assign',
+        src: '//cdn.polyfill.io/v3/polyfill.min.js?features=Set,Object.assign',
       },
     ],
   },
@@ -19,7 +19,7 @@ const productionTemplate = {
   head: {
     scripts: [
       {
-        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
+        src: '//cdn.polyfill.io/v3/polyfill.min.js?features=Set,Object.assign',
       },
       {
         src:

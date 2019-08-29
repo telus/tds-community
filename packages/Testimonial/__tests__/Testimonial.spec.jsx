@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Image from '@tds/core-image'
 
@@ -7,6 +7,7 @@ import Testimonial from '../Testimonial'
 
 describe('Testimonial', () => {
   const doShallow = (props = {}) => shallow(<Testimonial {...props} />)
+  const doMount = (props = {}) => mount(<Testimonial {...props} />)
 
   const props = {
     testimonial:
@@ -25,14 +26,14 @@ describe('Testimonial', () => {
   }
 
   it('renders', () => {
-    const testimonial = doShallow({ ...props })
+    const testimonial = doMount({ ...props })
 
     expect(testimonial).toMatchSnapshot()
   })
 
   it('renders without an image', () => {
     const testimonial = doShallow({ ...props, image: null })
-    expect(testimonial.find('.image').length).toEqual(0)
+    expect(testimonial.find('Image').exists()).toEqual(false)
   })
 
   it('renders testimonial text as a large paragraph by default', () => {
@@ -47,7 +48,7 @@ describe('Testimonial', () => {
 
   it('renders with an image', () => {
     const testimonial = doShallow({ ...props })
-    expect(testimonial.find('.image').exists()).toEqual(true)
+    expect(testimonial.find('Image').exists()).toEqual(true)
   })
 
   it('passes additional attributes to the element', () => {

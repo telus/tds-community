@@ -1,31 +1,73 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from './Skeleton.scss'
+import { colorGainsboro, colorAthensGrey } from '@tds/core-colours'
+import safeRest from '@tds/shared-safe-rest'
+
+const keyframes = require('styled-components').keyframes
 
 export const SIZES = { xs: 18, sm: 24, md: 36, lg: 48, xl: 64 }
 
-/** Skeleton component for mocking content while it is loading.
+const skeletonTextShimmer = keyframes`
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+`
+// Not using object notation as styled-components does not currently support animations in objects
+const StyledSkeleton = styled.span`
+${({ safeSize }) => `
+  height: ${safeSize}px;
+  min-width: ${safeSize}px;
+  border-radius: ${safeSize / 2}px;`}
+
+  width: ${({ isFixedCharacterWidth, characters, safeSize }) =>
+    `${isFixedCharacterWidth ? `${characters * safeSize}px` : '100%'}`};
+
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+
+  background-color: ${colorGainsboro};
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    ${colorGainsboro},
+    ${colorAthensGrey},
+    ${colorGainsboro}
+  );
+
+  animation-name: ${skeletonTextShimmer};
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+`
+/**
+ * Skeleton component for mocking content while it is loading.
+ *
  * @version ./package.json
  */
-const Skeleton = props => {
-  const { characters, size } = props
-
+const Skeleton = ({ characters, size, ...rest }) => {
   const parsedCharacters = parseInt(characters, 10)
   const safeCharacters = parsedCharacters || 0
   const safeSize = SIZES[size] || SIZES.xs
 
   const isFixedCharacterWidth = safeCharacters > 0
 
-  const baseClass = styles['skeleton-text']
-  const sizeClass = styles[`size-${safeSize}`]
-  const classNames = [baseClass, sizeClass].join(' ')
-
-  const calculatedWidthStyle = isFixedCharacterWidth
-    ? { width: `${characters * safeSize}px` }
-    : { width: '100%' }
-
-  return <span {...props} className={classNames} style={calculatedWidthStyle} aria-busy="true" />
+  return (
+    <StyledSkeleton
+      {...safeRest(rest)}
+      characters={characters}
+      safeSize={safeSize}
+      isFixedCharacterWidth={isFixedCharacterWidth}
+      aria-busy="true"
+    />
+  )
 }
 
 Skeleton.propTypes = {

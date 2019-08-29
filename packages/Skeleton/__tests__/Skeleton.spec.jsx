@@ -1,10 +1,10 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Skeleton, { SIZES } from '../Skeleton'
-import styles from '../Skeleton.scss'
 
 const doShallow = (props = {}) => shallow(<Skeleton {...props} />)
+const doMount = (props = {}) => mount(<Skeleton {...props} />)
 
 describe('Skeleton', () => {
   it('renders', () => {
@@ -19,9 +19,9 @@ describe('Skeleton', () => {
 
     expect.assertions(sizes.length)
     sizes.forEach(size => {
-      const skeleton = doShallow({ size })
+      const skeleton = doMount({ size })
 
-      expect(skeleton).toHaveClassName(styles[`size-${SIZES[size]}`])
+      expect(skeleton).toMatchSnapshot()
     })
   })
 
@@ -35,17 +35,13 @@ describe('Skeleton', () => {
     expect(skeleton).toHaveProp('data-test', 'automated-e2e-ftw')
   })
 
-  it('does not allow custom className', () => {
-    const skeleton = doShallow({ className: 'my-custom-class' })
+  it('does not allow custom CSS', () => {
+    const skeleton = doShallow({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
     expect(skeleton).not.toHaveProp('className', 'my-custom-class')
-  })
-
-  it('does allow custom style', () => {
-    const skeleton = doShallow({ style: { color: 'hotpink' } })
-    const { style: skeletonStyle } = skeleton.get(0).props
-
-    expect(skeleton).toHaveProp('style')
-    expect(skeletonStyle.color).not.toEqual('hotpink')
+    expect(skeleton).not.toHaveProp('style')
   })
 })

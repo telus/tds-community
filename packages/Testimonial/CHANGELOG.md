@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds-community/compare/@tds/community-testimonial@2.1.0...@tds/community-testimonial@3.0.0) (2019-08-29)
+
+
+### Features
+
+* **community-testimonial:** upgrade to styled-components ([518c30b](https://github.com/telus/tds-community/commit/518c30b))
+
+
+### BREAKING CHANGES
+
+* **community-testimonial:** styled-components now a peer dependency
+
+
+
+
+
 # [2.1.0](https://github.com/telus/tds-community/compare/@tds/community-testimonial@2.0.0...@tds/community-testimonial@2.1.0) (2019-08-26)
 
 

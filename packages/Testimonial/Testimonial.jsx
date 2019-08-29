@@ -5,8 +5,34 @@ import Paragraph from '@tds/core-paragraph'
 import Heading from '@tds/core-heading'
 import safeRest from '@tds/shared-safe-rest'
 import { componentWithName } from '@tds/util-prop-types'
+import { media } from '@tds/core-responsive'
+import styled from 'styled-components'
 
-import styles from './Testimonial.scss'
+const StyledImageAndQuote = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+
+  ...media.from('sm').css({
+    flexDirection: 'row',
+    alignItems: 'center',
+  }),
+})
+
+const StyledImage = styled.div({
+  fontSize: 0,
+  marginBottom: '1rem',
+  maxWidth: '60px',
+  maxHeight: '60px',
+
+  ...media.from('sm').css({
+    display: 'flex',
+    alignItems: 'center',
+    maxHeight: '60px',
+    maxWidth: '60px',
+    marginRight: '1rem',
+    marginBottom: 0,
+  }),
+})
 
 /**
  * Testimonial component for displaying testimonial in a standalone, pre-styled component.
@@ -24,13 +50,13 @@ const Testimonial = ({ testimonialStyle, testimonial, image, title, additionalIn
       ) : (
         <Paragraph size="large">{testimonial}</Paragraph>
       )}
-      <div className={styles.imageAndQuote}>
-        {image && <div className={styles.image}>{image}</div>}
+      <StyledImageAndQuote>
+        {image && <StyledImage>{image}</StyledImage>}
         <div>
           <Paragraph bold>{title}</Paragraph>
           <Paragraph>{additionalInfo}</Paragraph>
         </div>
-      </div>
+      </StyledImageAndQuote>
     </Box>
   )
 }

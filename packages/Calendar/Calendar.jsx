@@ -26,20 +26,24 @@ class Calendar extends Component {
   onFocusChange = ({ focused }) => {
     this.setState({ focused })
   }
-
   render() {
     const { id, date, onDateChange, isDayDisabled, inline, label, ...props } = this.props
     const { className, style, ...propsWithoutStyling } = safeRest(props)
     const DatePickerVariant = inline ? DayPickerSingleDateController : SingleDatePicker
 
     /* Determine daySize based on window.outerWidth and `inline` */
-    let responsiveDaySize = 40
-    if (window) {
-      if (inline) {
-        responsiveDaySize = window.outerWidth > 720 ? 60 : 40
+    const getResponsiveDaySize = () => {
+      let responsiveDaySize = 40
+      if (window) {
+        if (window.outerWidth >= 432) {
+          responsiveDaySize = inline ? 60 : 48
+        } else {
+          responsiveDaySize = window.outerWidth >= 376 ? 40 : 32
+        }
       } else {
-        responsiveDaySize = window.outerWidth > 720 ? 48 : 40
+        return responsiveDaySize
       }
+      return responsiveDaySize
     }
 
     /* eslint-disable jsx-a11y/label-has-for */
@@ -59,7 +63,7 @@ class Calendar extends Component {
           placeholder="DD / MM / YYYY"
           isDayBlocked={isDayDisabled}
           keepOpenOnDateSelect={false}
-          daySize={responsiveDaySize}
+          daySize={getResponsiveDaySize()}
           navPrev={<DecorativeIcon symbol="leftChevron" size={16} />}
           navNext={<DecorativeIcon symbol="chevron" size={16} />}
         />

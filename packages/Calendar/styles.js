@@ -65,6 +65,7 @@ export const CalendarContainer = styled.div`
 
   .DayPickerNavigation_button {
     border: 1px solid ${colorShark};
+    background-color: ${colorWhite};
     border-radius: 2px;
     position: absolute;
     top: 18px;

@@ -14,20 +14,15 @@ import { fontTelus } from '@tds/shared-typography'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const SubMenuContainer = styled.ul({
-  padding: '1rem 0',
-  background: `radial-gradient(
-    ellipse at top,
-    rgba(150, 150, 150, 0.1) 0%,
-    rgba(0, 0, 0, 0) 70%
-  )`,
+  marginBottom: '1rem',
 })
 
 const ButtonSubMenu = styled.button(props => ({
   backgroundColor: 'white',
   border: 'none',
   width: '100%',
-  color: props.active ? `${colorTelusPurple}` : `${colorShuttleGrey}`,
-  borderLeft: props.active ? `4px solid ${colorTelusPurple}` : 'none',
+  color: props.active && !props.isOpen ? `${colorTelusPurple}` : `${colorShuttleGrey}`,
+  borderLeft: props.active && !props.isOpen ? `4px solid ${colorTelusPurple}` : 'none',
   fontFamily: `${fontTelus}`,
   '&:hover': {
     backgroundColor: `${colorWhiteLilac}`,
@@ -90,6 +85,7 @@ class SubMenu extends React.Component {
           onClick={this.handleClick}
           active={active}
           aria-expanded={isOpen}
+          isOpen={isOpen}
         >
           <SpaceBox vertical={3} inline horizontal={2}>
             <ColoredTextProvider>

@@ -10,10 +10,14 @@
 <FlexGrid limitWidth={false} gutter={false}>
   <FlexGrid.Row>
     <FlexGrid.Col xs={5}>
-      <SideNavigation accordion={true} verticalSpacing={3}>
+      <SideNavigation accordion={true} verticalSpacing={3} category="Optional Category Title">
         <SideNavigation.Link href="#">Top of the page</SideNavigation.Link>
         <SideNavigation.SubMenu label="Overview" active>
-          <SideNavigation.Link href="#introduction">Introduction</SideNavigation.Link>
+          <SideNavigation.Link href="#introduction" active>
+            Link 1
+          </SideNavigation.Link>
+          <SideNavigation.Link href="#introduction">Link 2</SideNavigation.Link>
+          <SideNavigation.Link href="#introduction">Link 3</SideNavigation.Link>
         </SideNavigation.SubMenu>
         <SideNavigation.SubMenu label="Reference Architecture">
           <SideNavigation.Link href="#reference">Overview</SideNavigation.Link>

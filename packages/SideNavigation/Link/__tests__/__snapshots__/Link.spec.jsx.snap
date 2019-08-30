@@ -1,15 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNavigation.Link renders 1`] = `
-.c1:hover {
-  background-color: #f2eff4;
-}
-
 .c2 {
-  color: #54595f;
+  margin-left: 0;
+  border-left: none;
 }
 
 .c2:hover {
+  background-color: #f2eff4;
+}
+
+.c1 {
+  background-color: none;
+}
+
+.c3 {
+  border-left: none;
+  margin-left: 0px;
+}
+
+.c4 {
+  color: #54595f;
+}
+
+.c4:hover {
   color: #4b286d;
 }
 
@@ -35,7 +49,7 @@ exports[`SideNavigation.Link renders 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Link__StyledAnchor-gur8v7-2",
+            "componentId": "Link__StyledAnchor-gur8v7-4",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -45,7 +59,7 @@ exports[`SideNavigation.Link renders 1`] = `
           "displayName": "Link__StyledAnchor",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Link__StyledAnchor-gur8v7-2",
+          "styledComponentId": "Link__StyledAnchor-gur8v7-4",
           "target": "a",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -61,10 +75,8 @@ exports[`SideNavigation.Link renders 1`] = `
         href="#"
         to={null}
       >
-        <Link__BoxContainer
+        <Link__BoxWrapper
           active={0}
-          horizontal={3}
-          vertical={3}
         >
           <StyledComponent
             active={0}
@@ -73,17 +85,17 @@ exports[`SideNavigation.Link renders 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Link__BoxContainer-gur8v7-0",
+                  "componentId": "Link__BoxWrapper-gur8v7-1",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     [Function],
                   ],
                 },
-                "displayName": "Link__BoxContainer",
+                "displayName": "Link__BoxWrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Link__BoxContainer-gur8v7-0",
+                "styledComponentId": "Link__BoxWrapper-gur8v7-1",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -91,42 +103,40 @@ exports[`SideNavigation.Link renders 1`] = `
               }
             }
             forwardedRef={null}
-            horizontal={3}
-            vertical={3}
           >
             <Box
               active={0}
               className="c1"
-              horizontal={3}
               inline={false}
               tag="div"
-              vertical={3}
             >
               <div
                 active={0}
-                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
+                className="c1"
               >
-                <Link__StyledTextProvider
-                  active={false}
+                <Link__BoxContainer
+                  active={0}
+                  subMenuLink={0}
+                  vertical={3}
                 >
                   <StyledComponent
-                    active={false}
+                    active={0}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "Link__StyledTextProvider-gur8v7-1",
+                          "componentId": "Link__BoxContainer-gur8v7-0",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Link__StyledTextProvider",
+                        "displayName": "Link__BoxContainer",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "Link__StyledTextProvider-gur8v7-1",
+                        "styledComponentId": "Link__BoxContainer-gur8v7-0",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -134,34 +144,132 @@ exports[`SideNavigation.Link renders 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    subMenuLink={0}
+                    vertical={3}
                   >
-                    <ColoredTextProvider
-                      active={false}
+                    <Box
+                      active={0}
                       className="c2"
+                      inline={false}
+                      subMenuLink={0}
+                      tag="div"
+                      vertical={3}
                     >
                       <div
-                        className="c2"
+                        active={0}
+                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c2"
+                        subMenuLink={0}
                       >
-                        <Text
-                          block={false}
-                          bold={false}
-                          invert={false}
-                          size="medium"
+                        <Link__BoxActive
+                          active={0}
+                          horizontal={3}
+                          subMenuLink={0}
                         >
-                          <span
-                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
+                          <StyledComponent
+                            active={0}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Link__BoxActive-gur8v7-2",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "Link__BoxActive",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Link__BoxActive-gur8v7-2",
+                                "target": [Function],
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            horizontal={3}
+                            subMenuLink={0}
                           >
-                            Home
-                          </span>
-                        </Text>
+                            <Box
+                              active={0}
+                              className="c3"
+                              horizontal={3}
+                              inline={false}
+                              subMenuLink={0}
+                              tag="div"
+                            >
+                              <div
+                                active={0}
+                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c3"
+                                subMenuLink={0}
+                              >
+                                <Link__StyledTextProvider
+                                  active={false}
+                                >
+                                  <StyledComponent
+                                    active={false}
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Link__StyledTextProvider-gur8v7-3",
+                                          "isStatic": false,
+                                          "lastClassName": "c4",
+                                          "rules": Array [
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Link__StyledTextProvider",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Link__StyledTextProvider-gur8v7-3",
+                                        "target": [Function],
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <ColoredTextProvider
+                                      active={false}
+                                      className="c4"
+                                    >
+                                      <div
+                                        className="c4"
+                                      >
+                                        <Text
+                                          block={false}
+                                          bold={false}
+                                          invert={false}
+                                          size="medium"
+                                        >
+                                          <span
+                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
+                                          >
+                                            Home
+                                          </span>
+                                        </Text>
+                                      </div>
+                                    </ColoredTextProvider>
+                                  </StyledComponent>
+                                </Link__StyledTextProvider>
+                              </div>
+                            </Box>
+                          </StyledComponent>
+                        </Link__BoxActive>
                       </div>
-                    </ColoredTextProvider>
+                    </Box>
                   </StyledComponent>
-                </Link__StyledTextProvider>
+                </Link__BoxContainer>
               </div>
             </Box>
           </StyledComponent>
-        </Link__BoxContainer>
+        </Link__BoxWrapper>
       </a>
     </StyledComponent>
   </Link__StyledAnchor>
@@ -169,16 +277,27 @@ exports[`SideNavigation.Link renders 1`] = `
 `;
 
 exports[`SideNavigation.Link renders with active styles 1`] = `
-.c1 {
+.c2 {
+  margin-left: 0;
   border-left: 4px solid #4b286d;
   color: #4b286d;
-}
-
-.c1:hover {
   background-color: #f2eff4;
 }
 
-.c2 {
+.c2:hover {
+  background-color: #f2eff4;
+}
+
+.c1 {
+  background-color: #f2eff4;
+}
+
+.c3 {
+  border-left: none;
+  margin-left: 0px;
+}
+
+.c4 {
   font-weight: bold;
   color: #4b286d;
 }
@@ -205,7 +324,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Link__StyledAnchor-gur8v7-2",
+            "componentId": "Link__StyledAnchor-gur8v7-4",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -215,7 +334,7 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
           "displayName": "Link__StyledAnchor",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Link__StyledAnchor-gur8v7-2",
+          "styledComponentId": "Link__StyledAnchor-gur8v7-4",
           "target": "a",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -231,10 +350,8 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
         href="#"
         to={null}
       >
-        <Link__BoxContainer
+        <Link__BoxWrapper
           active={1}
-          horizontal={3}
-          vertical={3}
         >
           <StyledComponent
             active={1}
@@ -243,17 +360,17 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Link__BoxContainer-gur8v7-0",
+                  "componentId": "Link__BoxWrapper-gur8v7-1",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     [Function],
                   ],
                 },
-                "displayName": "Link__BoxContainer",
+                "displayName": "Link__BoxWrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Link__BoxContainer-gur8v7-0",
+                "styledComponentId": "Link__BoxWrapper-gur8v7-1",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -261,42 +378,40 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
               }
             }
             forwardedRef={null}
-            horizontal={3}
-            vertical={3}
           >
             <Box
               active={1}
               className="c1"
-              horizontal={3}
               inline={false}
               tag="div"
-              vertical={3}
             >
               <div
                 active={1}
-                className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
+                className="c1"
               >
-                <Link__StyledTextProvider
-                  active={true}
+                <Link__BoxContainer
+                  active={1}
+                  subMenuLink={0}
+                  vertical={3}
                 >
                   <StyledComponent
-                    active={true}
+                    active={1}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "Link__StyledTextProvider-gur8v7-1",
+                          "componentId": "Link__BoxContainer-gur8v7-0",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Link__StyledTextProvider",
+                        "displayName": "Link__BoxContainer",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "Link__StyledTextProvider-gur8v7-1",
+                        "styledComponentId": "Link__BoxContainer-gur8v7-0",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -304,34 +419,132 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    subMenuLink={0}
+                    vertical={3}
                   >
-                    <ColoredTextProvider
-                      active={true}
+                    <Box
+                      active={1}
                       className="c2"
+                      inline={false}
+                      subMenuLink={0}
+                      tag="div"
+                      vertical={3}
                     >
                       <div
-                        className="c2"
+                        active={1}
+                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c2"
+                        subMenuLink={0}
                       >
-                        <Text
-                          block={false}
-                          bold={true}
-                          invert={false}
-                          size="medium"
+                        <Link__BoxActive
+                          active={1}
+                          horizontal={3}
+                          subMenuLink={0}
                         >
-                          <span
-                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
+                          <StyledComponent
+                            active={1}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Link__BoxActive-gur8v7-2",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "Link__BoxActive",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Link__BoxActive-gur8v7-2",
+                                "target": [Function],
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            horizontal={3}
+                            subMenuLink={0}
                           >
-                            Home
-                          </span>
-                        </Text>
+                            <Box
+                              active={1}
+                              className="c3"
+                              horizontal={3}
+                              inline={false}
+                              subMenuLink={0}
+                              tag="div"
+                            >
+                              <div
+                                active={1}
+                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c3"
+                                subMenuLink={0}
+                              >
+                                <Link__StyledTextProvider
+                                  active={true}
+                                >
+                                  <StyledComponent
+                                    active={true}
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Link__StyledTextProvider-gur8v7-3",
+                                          "isStatic": false,
+                                          "lastClassName": "c4",
+                                          "rules": Array [
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Link__StyledTextProvider",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Link__StyledTextProvider-gur8v7-3",
+                                        "target": [Function],
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <ColoredTextProvider
+                                      active={true}
+                                      className="c4"
+                                    >
+                                      <div
+                                        className="c4"
+                                      >
+                                        <Text
+                                          block={false}
+                                          bold={true}
+                                          invert={false}
+                                          size="medium"
+                                        >
+                                          <span
+                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
+                                          >
+                                            Home
+                                          </span>
+                                        </Text>
+                                      </div>
+                                    </ColoredTextProvider>
+                                  </StyledComponent>
+                                </Link__StyledTextProvider>
+                              </div>
+                            </Box>
+                          </StyledComponent>
+                        </Link__BoxActive>
                       </div>
-                    </ColoredTextProvider>
+                    </Box>
                   </StyledComponent>
-                </Link__StyledTextProvider>
+                </Link__BoxContainer>
               </div>
             </Box>
           </StyledComponent>
-        </Link__BoxContainer>
+        </Link__BoxWrapper>
       </a>
     </StyledComponent>
   </Link__StyledAnchor>

@@ -13,6 +13,7 @@ import warn from '../../../shared/utils/warn'
 const activeContainer = {
   borderLeft: `4px solid ${colorTelusPurple}`,
   color: `${colorTelusPurple}`,
+  backgroundColor: `${colorWhiteLilac}`,
 }
 
 const activeText = {
@@ -31,7 +32,18 @@ const BoxContainer = styled(Box)(props => ({
   '&:hover': {
     backgroundColor: `${colorWhiteLilac}`,
   },
-  ...(props.active ? activeContainer : undefined),
+  marginLeft: props.subMenuLink ? '1rem' : '0',
+  borderLeft: props.subMenuLink ? `4px solid ${colorWhiteLilac}` : 'none',
+  ...(props.active && !props.subMenuLink ? activeContainer : undefined),
+}))
+
+const BoxWrapper = styled(Box)(props => ({
+  backgroundColor: props.active ? `${colorWhiteLilac}` : 'none',
+}))
+
+const BoxActive = styled(Box)(props => ({
+  borderLeft: props.active && props.subMenuLink ? `4px solid ${colorTelusPurple}` : 'none',
+  marginLeft: props.subMenuLink ? '-0.25rem' : '0px',
 }))
 
 const StyledTextProvider = styled(ColoredTextProvider)(props => ({
@@ -51,13 +63,21 @@ const Link = ({ reactRouterLinkComponent, children, active, subMenuLink, ...rest
   }
 
   const innerLink = (
-    <BoxContainer vertical={subMenuLink ? 2 : 3} horizontal={3} active={active ? 1 : 0}>
-      <StyledTextProvider active={active}>
-        <Text size={subMenuLink ? 'small' : 'medium'} bold={active}>
-          {children}
-        </Text>
-      </StyledTextProvider>
-    </BoxContainer>
+    <BoxWrapper active={active ? 1 : 0}>
+      <BoxContainer
+        vertical={subMenuLink ? 3 : 3}
+        subMenuLink={subMenuLink ? 1 : 0}
+        active={active ? 1 : 0}
+      >
+        <BoxActive active={active ? 1 : 0} horizontal={3} subMenuLink={subMenuLink ? 1 : 0}>
+          <StyledTextProvider active={active}>
+            <Text size={subMenuLink ? 'small' : 'medium'} bold={active}>
+              {children}
+            </Text>
+          </StyledTextProvider>
+        </BoxActive>
+      </BoxContainer>
+    </BoxWrapper>
   )
 
   return React.createElement(

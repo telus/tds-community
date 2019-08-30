@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import safeRest from '@tds/shared-safe-rest'
 import { colorGainsboro } from '@tds/core-colours'
 import Box from '@tds/core-box'
+import Text from '@tds/core-text'
 
 import Link from './Link/Link'
 import SubMenu from './SubMenu/SubMenu'
@@ -43,7 +44,10 @@ const NavContainer = styled.div(props => ({
   ...(props.variant === 'top' && topPosition),
   ...(props.variant === 'bottom' && bottomPosition),
   ...(props.variant === 'fixed' && fixedPosition),
-  ...(props.variant === 'fixedOverflow' && Object.assign({}, fixedPosition, fixedOverflow)),
+  ...(props.variant === 'fixedOverflow' && {
+    ...fixedPosition,
+    ...fixedOverflow,
+  }),
 }))
 
 const StyledUl = styled.ul({
@@ -173,7 +177,7 @@ class SideNavigation extends Component {
   }
 
   render() {
-    const { children, verticalSpacing, accordion, ...rest } = this.props
+    const { children, verticalSpacing, accordion, category, ...rest } = this.props
     const { variant } = this.state
 
     return (
@@ -185,6 +189,13 @@ class SideNavigation extends Component {
       >
         <NavContainer ref={this._sideNav} variant={variant}>
           <Box vertical={variant === 'bottom' || variant === 'fixed' ? undefined : verticalSpacing}>
+            {category && (
+              <Box vertical={3} horizontal={3}>
+                <Text size="large" bold>
+                  {category}
+                </Text>
+              </Box>
+            )}
             <StyledUl>
               {React.Children.map(children, (child, index) => {
                 let options = {}
@@ -210,6 +221,10 @@ class SideNavigation extends Component {
 
 SideNavigation.propTypes = {
   /**
+   * Specifies the label at the top of the Side Navigation.
+   */
+  category: PropTypes.string,
+  /**
    * Specifies the links and sub-menus required in the Side Navigation.
    */
   children: PropTypes.node.isRequired,
@@ -226,6 +241,7 @@ SideNavigation.propTypes = {
 SideNavigation.defaultProps = {
   verticalSpacing: undefined,
   accordion: true,
+  category: undefined,
 }
 
 SideNavigation.Link = Link

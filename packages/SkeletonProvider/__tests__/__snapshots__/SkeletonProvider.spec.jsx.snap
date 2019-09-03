@@ -9,8 +9,7 @@ exports[`SkeletonProvider should render children as is if the show prop == false
   </h1>
   <img
     alt="image"
-    class="TDS_Image-modules__fluid___1qw3M"
-    corners="rounded"
+    class="TDS_Image-modules__fluid___1qw3M TDS_Borders-modules__rounded___3df1Q"
     height="60"
     src=""
     width="60"
@@ -24,24 +23,117 @@ exports[`SkeletonProvider should render children as is if the show prop == false
 `;
 
 exports[`SkeletonProvider should render children as skeletons 1`] = `
+.c1 {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #d8d8d8;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  background-image: linear-gradient( to right,#d8d8d8,#f7f7f8,#d8d8d8 );
+  -webkit-animation-name: gaOlHX;
+  animation-name: gaOlHX;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.c4 {
+  height: 18px;
+  min-width: 18px;
+  border-radius: 9px;
+  width: 72px;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #d8d8d8;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  background-image: linear-gradient( to right,#d8d8d8,#f7f7f8,#d8d8d8 );
+  -webkit-animation-name: gaOlHX;
+  animation-name: gaOlHX;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.c0 {
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.c3 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.c2 {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  background-image: linear-gradient( to right,#d8d8d8,#f7f7f8,#d8d8d8 );
+  -webkit-animation-name: gaOlHX;
+  animation-name: gaOlHX;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 <div>
-  <h1
-    class="TDS_Heading-modules__h1___1iaO2 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
+  <div
+    class="c0"
   >
-    Hello
-  </h1>
-  <img
+    <span
+      aria-busy="true"
+      class="c1"
+    />
+  </div>
+  <div
     alt="skeleton image"
-    class="TDS_Image-modules__fluid___1qw3M"
-    corners="rounded"
+    class="c2"
     height="60"
     src=""
     width="60"
   />
-  <span
-    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
+  <div
+    class="c3"
   >
-    Hello
-  </span>
+    <div>
+      <span
+        aria-busy="true"
+        class="c4"
+      />
+    </div>
+    <div>
+      <span
+        aria-busy="true"
+        class="c4"
+      />
+    </div>
+  </div>
 </div>
 `;

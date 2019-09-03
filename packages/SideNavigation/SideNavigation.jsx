@@ -205,7 +205,6 @@ class SideNavigation extends Component {
                   options = {
                     handleToggleSubMenu: this.toggleSubMenu,
                     isOpen: this.checkAccordion(id),
-                    active: child.props.active,
                     id,
                   }
                 }

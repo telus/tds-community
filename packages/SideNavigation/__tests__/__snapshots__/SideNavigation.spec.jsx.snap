@@ -704,7 +704,7 @@ exports[`SideNavigation renders 1`] = `
                                             >
                                               <Link__BoxContainer
                                                 active={0}
-                                                subMenuLink={0}
+                                                submenulink={0}
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -732,26 +732,26 @@ exports[`SideNavigation renders 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  subMenuLink={0}
+                                                  submenulink={0}
                                                   vertical={3}
                                                 >
                                                   <Box
                                                     active={0}
                                                     className="c6"
                                                     inline={false}
-                                                    subMenuLink={0}
+                                                    submenulink={0}
                                                     tag="div"
                                                     vertical={3}
                                                   >
                                                     <div
                                                       active={0}
                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
-                                                      subMenuLink={0}
+                                                      submenulink={0}
                                                     >
                                                       <Link__BoxActive
                                                         active={0}
                                                         horizontal={3}
-                                                        subMenuLink={0}
+                                                        submenulink={0}
                                                       >
                                                         <StyledComponent
                                                           active={0}
@@ -779,20 +779,20 @@ exports[`SideNavigation renders 1`] = `
                                                           }
                                                           forwardedRef={null}
                                                           horizontal={3}
-                                                          subMenuLink={0}
+                                                          submenulink={0}
                                                         >
                                                           <Box
                                                             active={0}
                                                             className="c7"
                                                             horizontal={3}
                                                             inline={false}
-                                                            subMenuLink={0}
+                                                            submenulink={0}
                                                             tag="div"
                                                           >
                                                             <div
                                                               active={0}
                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
-                                                              subMenuLink={0}
+                                                              submenulink={0}
                                                             >
                                                               <Link__StyledTextProvider
                                                                 active={false}
@@ -980,7 +980,7 @@ exports[`SideNavigation renders 1`] = `
                                             >
                                               <Link__BoxContainer
                                                 active={0}
-                                                subMenuLink={0}
+                                                submenulink={0}
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -1008,26 +1008,26 @@ exports[`SideNavigation renders 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  subMenuLink={0}
+                                                  submenulink={0}
                                                   vertical={3}
                                                 >
                                                   <Box
                                                     active={0}
                                                     className="c6"
                                                     inline={false}
-                                                    subMenuLink={0}
+                                                    submenulink={0}
                                                     tag="div"
                                                     vertical={3}
                                                   >
                                                     <div
                                                       active={0}
                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
-                                                      subMenuLink={0}
+                                                      submenulink={0}
                                                     >
                                                       <Link__BoxActive
                                                         active={0}
                                                         horizontal={3}
-                                                        subMenuLink={0}
+                                                        submenulink={0}
                                                       >
                                                         <StyledComponent
                                                           active={0}
@@ -1055,20 +1055,20 @@ exports[`SideNavigation renders 1`] = `
                                                           }
                                                           forwardedRef={null}
                                                           horizontal={3}
-                                                          subMenuLink={0}
+                                                          submenulink={0}
                                                         >
                                                           <Box
                                                             active={0}
                                                             className="c7"
                                                             horizontal={3}
                                                             inline={false}
-                                                            subMenuLink={0}
+                                                            submenulink={0}
                                                             tag="div"
                                                           >
                                                             <div
                                                               active={0}
                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
-                                                              subMenuLink={0}
+                                                              submenulink={0}
                                                             >
                                                               <Link__StyledTextProvider
                                                                 active={false}
@@ -1256,7 +1256,7 @@ exports[`SideNavigation renders 1`] = `
                                             >
                                               <Link__BoxContainer
                                                 active={0}
-                                                subMenuLink={0}
+                                                submenulink={0}
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -1284,26 +1284,26 @@ exports[`SideNavigation renders 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  subMenuLink={0}
+                                                  submenulink={0}
                                                   vertical={3}
                                                 >
                                                   <Box
                                                     active={0}
                                                     className="c6"
                                                     inline={false}
-                                                    subMenuLink={0}
+                                                    submenulink={0}
                                                     tag="div"
                                                     vertical={3}
                                                   >
                                                     <div
                                                       active={0}
                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
-                                                      subMenuLink={0}
+                                                      submenulink={0}
                                                     >
                                                       <Link__BoxActive
                                                         active={0}
                                                         horizontal={3}
-                                                        subMenuLink={0}
+                                                        submenulink={0}
                                                       >
                                                         <StyledComponent
                                                           active={0}
@@ -1331,20 +1331,20 @@ exports[`SideNavigation renders 1`] = `
                                                           }
                                                           forwardedRef={null}
                                                           horizontal={3}
-                                                          subMenuLink={0}
+                                                          submenulink={0}
                                                         >
                                                           <Box
                                                             active={0}
                                                             className="c7"
                                                             horizontal={3}
                                                             inline={false}
-                                                            subMenuLink={0}
+                                                            submenulink={0}
                                                             tag="div"
                                                           >
                                                             <div
                                                               active={0}
                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
-                                                              subMenuLink={0}
+                                                              submenulink={0}
                                                             >
                                                               <Link__StyledTextProvider
                                                                 active={false}
@@ -1449,7 +1449,6 @@ exports[`SideNavigation renders 1`] = `
                               className="c3"
                             >
                               <SubMenu
-                                active={false}
                                 handleToggleSubMenu={[Function]}
                                 id="TDS-SideNavigation-3"
                                 isOpen={false}
@@ -1457,7 +1456,6 @@ exports[`SideNavigation renders 1`] = `
                                 onClick={[Function]}
                               >
                                 <SubMenu__ButtonSubMenu
-                                  active={false}
                                   aria-expanded={false}
                                   handleToggleSubMenu={[Function]}
                                   id="TDS-SideNavigation-3"
@@ -1465,7 +1463,6 @@ exports[`SideNavigation renders 1`] = `
                                   onClick={[Function]}
                                 >
                                   <StyledComponent
-                                    active={false}
                                     aria-expanded={false}
                                     forwardedComponent={
                                       Object {
@@ -1736,7 +1733,7 @@ exports[`SideNavigation renders 1`] = `
                                                             >
                                                               <Link__BoxContainer
                                                                 active={0}
-                                                                subMenuLink={1}
+                                                                submenulink={1}
                                                                 vertical={3}
                                                               >
                                                                 <StyledComponent
@@ -1764,26 +1761,26 @@ exports[`SideNavigation renders 1`] = `
                                                                     }
                                                                   }
                                                                   forwardedRef={null}
-                                                                  subMenuLink={1}
+                                                                  submenulink={1}
                                                                   vertical={3}
                                                                 >
                                                                   <Box
                                                                     active={0}
                                                                     className="c12"
                                                                     inline={false}
-                                                                    subMenuLink={1}
+                                                                    submenulink={1}
                                                                     tag="div"
                                                                     vertical={3}
                                                                   >
                                                                     <div
                                                                       active={0}
                                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
-                                                                      subMenuLink={1}
+                                                                      submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
                                                                         active={0}
                                                                         horizontal={3}
-                                                                        subMenuLink={1}
+                                                                        submenulink={1}
                                                                       >
                                                                         <StyledComponent
                                                                           active={0}
@@ -1811,20 +1808,20 @@ exports[`SideNavigation renders 1`] = `
                                                                           }
                                                                           forwardedRef={null}
                                                                           horizontal={3}
-                                                                          subMenuLink={1}
+                                                                          submenulink={1}
                                                                         >
                                                                           <Box
                                                                             active={0}
                                                                             className="c13"
                                                                             horizontal={3}
                                                                             inline={false}
-                                                                            subMenuLink={1}
+                                                                            submenulink={1}
                                                                             tag="div"
                                                                           >
                                                                             <div
                                                                               active={0}
                                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
-                                                                              subMenuLink={1}
+                                                                              submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
                                                                                 active={false}
@@ -1982,7 +1979,7 @@ exports[`SideNavigation renders 1`] = `
                                                             >
                                                               <Link__BoxContainer
                                                                 active={0}
-                                                                subMenuLink={1}
+                                                                submenulink={1}
                                                                 vertical={3}
                                                               >
                                                                 <StyledComponent
@@ -2010,26 +2007,26 @@ exports[`SideNavigation renders 1`] = `
                                                                     }
                                                                   }
                                                                   forwardedRef={null}
-                                                                  subMenuLink={1}
+                                                                  submenulink={1}
                                                                   vertical={3}
                                                                 >
                                                                   <Box
                                                                     active={0}
                                                                     className="c12"
                                                                     inline={false}
-                                                                    subMenuLink={1}
+                                                                    submenulink={1}
                                                                     tag="div"
                                                                     vertical={3}
                                                                   >
                                                                     <div
                                                                       active={0}
                                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
-                                                                      subMenuLink={1}
+                                                                      submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
                                                                         active={0}
                                                                         horizontal={3}
-                                                                        subMenuLink={1}
+                                                                        submenulink={1}
                                                                       >
                                                                         <StyledComponent
                                                                           active={0}
@@ -2057,20 +2054,20 @@ exports[`SideNavigation renders 1`] = `
                                                                           }
                                                                           forwardedRef={null}
                                                                           horizontal={3}
-                                                                          subMenuLink={1}
+                                                                          submenulink={1}
                                                                         >
                                                                           <Box
                                                                             active={0}
                                                                             className="c13"
                                                                             horizontal={3}
                                                                             inline={false}
-                                                                            subMenuLink={1}
+                                                                            submenulink={1}
                                                                             tag="div"
                                                                           >
                                                                             <div
                                                                               active={0}
                                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
-                                                                              subMenuLink={1}
+                                                                              submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
                                                                                 active={false}
@@ -2228,7 +2225,7 @@ exports[`SideNavigation renders 1`] = `
                                                             >
                                                               <Link__BoxContainer
                                                                 active={0}
-                                                                subMenuLink={1}
+                                                                submenulink={1}
                                                                 vertical={3}
                                                               >
                                                                 <StyledComponent
@@ -2256,26 +2253,26 @@ exports[`SideNavigation renders 1`] = `
                                                                     }
                                                                   }
                                                                   forwardedRef={null}
-                                                                  subMenuLink={1}
+                                                                  submenulink={1}
                                                                   vertical={3}
                                                                 >
                                                                   <Box
                                                                     active={0}
                                                                     className="c12"
                                                                     inline={false}
-                                                                    subMenuLink={1}
+                                                                    submenulink={1}
                                                                     tag="div"
                                                                     vertical={3}
                                                                   >
                                                                     <div
                                                                       active={0}
                                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
-                                                                      subMenuLink={1}
+                                                                      submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
                                                                         active={0}
                                                                         horizontal={3}
-                                                                        subMenuLink={1}
+                                                                        submenulink={1}
                                                                       >
                                                                         <StyledComponent
                                                                           active={0}
@@ -2303,20 +2300,20 @@ exports[`SideNavigation renders 1`] = `
                                                                           }
                                                                           forwardedRef={null}
                                                                           horizontal={3}
-                                                                          subMenuLink={1}
+                                                                          submenulink={1}
                                                                         >
                                                                           <Box
                                                                             active={0}
                                                                             className="c13"
                                                                             horizontal={3}
                                                                             inline={false}
-                                                                            subMenuLink={1}
+                                                                            submenulink={1}
                                                                             tag="div"
                                                                           >
                                                                             <div
                                                                               active={0}
                                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
-                                                                              subMenuLink={1}
+                                                                              submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
                                                                                 active={false}
@@ -2421,12 +2418,12 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
-.c12 {
+.c13 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c12:hover {
+.c13:hover {
   background-color: #f2eff4;
 }
 
@@ -2434,13 +2431,17 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: none;
 }
 
+.c12 {
+  background-color: #f2eff4;
+}
+
 .c7 {
   border-left: none;
   margin-left: 0px;
 }
 
-.c13 {
-  border-left: none;
+.c14 {
+  border-left: 4px solid #4b286d;
   margin-left: -0.25rem;
 }
 
@@ -2449,6 +2450,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 .c8:hover {
+  color: #4b286d;
+}
+
+.c15 {
+  font-weight: bold;
   color: #4b286d;
 }
 
@@ -2599,12 +2605,12 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
-.c11 {
+.c12 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c11:hover {
+.c12:hover {
   background-color: #f2eff4;
 }
 
@@ -2612,13 +2618,17 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: none;
 }
 
+.c11 {
+  background-color: #f2eff4;
+}
+
 .c6 {
   border-left: none;
   margin-left: 0px;
 }
 
-.c12 {
-  border-left: none;
+.c13 {
+  border-left: 4px solid #4b286d;
   margin-left: -0.25rem;
 }
 
@@ -2627,6 +2637,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 .c7:hover {
+  color: #4b286d;
+}
+
+.c14 {
+  font-weight: bold;
   color: #4b286d;
 }
 
@@ -2786,24 +2801,24 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                 href="#"
                               >
                                 <div
-                                  active="0"
-                                  class="c4"
+                                  active="1"
+                                  class="c11"
                                 >
                                   <div
-                                    active="0"
-                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c11"
+                                    active="1"
+                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
                                     submenulink="1"
                                   >
                                     <div
-                                      active="0"
-                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c12"
+                                      active="1"
+                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
                                       submenulink="1"
                                     >
                                       <div
-                                        class="c7"
+                                        class="c14"
                                       >
                                         <span
-                                          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
+                                          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
                                         >
                                           Option 1
                                         </span>
@@ -2948,7 +2963,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "Link__BoxWrapper-gur8v7-1",
                                                 "isStatic": false,
-                                                "lastClassName": "c5",
+                                                "lastClassName": "c12",
                                                 "rules": Array [
                                                   [Function],
                                                 ],
@@ -2977,7 +2992,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                             >
                                               <Link__BoxContainer
                                                 active={0}
-                                                subMenuLink={0}
+                                                submenulink={0}
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -2989,7 +3004,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c12",
+                                                        "lastClassName": "c13",
                                                         "rules": Array [
                                                           [Function],
                                                         ],
@@ -3005,26 +3020,26 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  subMenuLink={0}
+                                                  submenulink={0}
                                                   vertical={3}
                                                 >
                                                   <Box
                                                     active={0}
                                                     className="c6"
                                                     inline={false}
-                                                    subMenuLink={0}
+                                                    submenulink={0}
                                                     tag="div"
                                                     vertical={3}
                                                   >
                                                     <div
                                                       active={0}
                                                       className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
-                                                      subMenuLink={0}
+                                                      submenulink={0}
                                                     >
                                                       <Link__BoxActive
                                                         active={0}
                                                         horizontal={3}
-                                                        subMenuLink={0}
+                                                        submenulink={0}
                                                       >
                                                         <StyledComponent
                                                           active={0}
@@ -3035,7 +3050,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c13",
+                                                                "lastClassName": "c14",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -3052,20 +3067,20 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                           }
                                                           forwardedRef={null}
                                                           horizontal={3}
-                                                          subMenuLink={0}
+                                                          submenulink={0}
                                                         >
                                                           <Box
                                                             active={0}
                                                             className="c7"
                                                             horizontal={3}
                                                             inline={false}
-                                                            subMenuLink={0}
+                                                            submenulink={0}
                                                             tag="div"
                                                           >
                                                             <div
                                                               active={0}
                                                               className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
-                                                              subMenuLink={0}
+                                                              submenulink={0}
                                                             >
                                                               <Link__StyledTextProvider
                                                                 active={false}
@@ -3079,7 +3094,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c8",
+                                                                        "lastClassName": "c15",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -3170,7 +3185,6 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                               className="c3"
                             >
                               <SubMenu
-                                active={true}
                                 handleToggleSubMenu={[Function]}
                                 id="TDS-SideNavigation-1"
                                 isOpen={true}
@@ -3373,7 +3387,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                               key=".0"
                                             >
                                               <Link
-                                                active={false}
+                                                active={true}
                                                 href="#"
                                                 reactRouterLinkComponent={null}
                                                 subMenuLink={true}
@@ -3416,10 +3430,10 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                       to={null}
                                                     >
                                                       <Link__BoxWrapper
-                                                        active={0}
+                                                        active={1}
                                                       >
                                                         <StyledComponent
-                                                          active={0}
+                                                          active={1}
                                                           forwardedComponent={
                                                             Object {
                                                               "$$typeof": Symbol(react.forward_ref),
@@ -3427,7 +3441,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxWrapper-gur8v7-1",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c5",
+                                                                "lastClassName": "c12",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -3445,22 +3459,22 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                           forwardedRef={null}
                                                         >
                                                           <Box
-                                                            active={0}
-                                                            className="c5"
+                                                            active={1}
+                                                            className="c12"
                                                             inline={false}
                                                             tag="div"
                                                           >
                                                             <div
-                                                              active={0}
-                                                              className="c5"
+                                                              active={1}
+                                                              className="c12"
                                                             >
                                                               <Link__BoxContainer
-                                                                active={0}
-                                                                subMenuLink={1}
+                                                                active={1}
+                                                                submenulink={1}
                                                                 vertical={3}
                                                               >
                                                                 <StyledComponent
-                                                                  active={0}
+                                                                  active={1}
                                                                   forwardedComponent={
                                                                     Object {
                                                                       "$$typeof": Symbol(react.forward_ref),
@@ -3468,7 +3482,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c12",
+                                                                        "lastClassName": "c13",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -3484,29 +3498,29 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                     }
                                                                   }
                                                                   forwardedRef={null}
-                                                                  subMenuLink={1}
+                                                                  submenulink={1}
                                                                   vertical={3}
                                                                 >
                                                                   <Box
-                                                                    active={0}
-                                                                    className="c12"
+                                                                    active={1}
+                                                                    className="c13"
                                                                     inline={false}
-                                                                    subMenuLink={1}
+                                                                    submenulink={1}
                                                                     tag="div"
                                                                     vertical={3}
                                                                   >
                                                                     <div
-                                                                      active={0}
-                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
-                                                                      subMenuLink={1}
+                                                                      active={1}
+                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c13"
+                                                                      submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
-                                                                        active={0}
+                                                                        active={1}
                                                                         horizontal={3}
-                                                                        subMenuLink={1}
+                                                                        submenulink={1}
                                                                       >
                                                                         <StyledComponent
-                                                                          active={0}
+                                                                          active={1}
                                                                           forwardedComponent={
                                                                             Object {
                                                                               "$$typeof": Symbol(react.forward_ref),
@@ -3514,7 +3528,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c13",
+                                                                                "lastClassName": "c14",
                                                                                 "rules": Array [
                                                                                   [Function],
                                                                                 ],
@@ -3531,26 +3545,26 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                           }
                                                                           forwardedRef={null}
                                                                           horizontal={3}
-                                                                          subMenuLink={1}
+                                                                          submenulink={1}
                                                                         >
                                                                           <Box
-                                                                            active={0}
-                                                                            className="c13"
+                                                                            active={1}
+                                                                            className="c14"
                                                                             horizontal={3}
                                                                             inline={false}
-                                                                            subMenuLink={1}
+                                                                            submenulink={1}
                                                                             tag="div"
                                                                           >
                                                                             <div
-                                                                              active={0}
-                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
-                                                                              subMenuLink={1}
+                                                                              active={1}
+                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c14"
+                                                                              submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
-                                                                                active={false}
+                                                                                active={true}
                                                                               >
                                                                                 <StyledComponent
-                                                                                  active={false}
+                                                                                  active={true}
                                                                                   forwardedComponent={
                                                                                     Object {
                                                                                       "$$typeof": Symbol(react.forward_ref),
@@ -3558,7 +3572,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                       "componentStyle": ComponentStyle {
                                                                                         "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                                         "isStatic": false,
-                                                                                        "lastClassName": "c8",
+                                                                                        "lastClassName": "c15",
                                                                                         "rules": Array [
                                                                                           [Function],
                                                                                         ],
@@ -3576,20 +3590,20 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                   forwardedRef={null}
                                                                                 >
                                                                                   <ColoredTextProvider
-                                                                                    active={false}
-                                                                                    className="c8"
+                                                                                    active={true}
+                                                                                    className="c15"
                                                                                   >
                                                                                     <div
-                                                                                      className="c8"
+                                                                                      className="c15"
                                                                                     >
                                                                                       <Text
                                                                                         block={false}
-                                                                                        bold={false}
+                                                                                        bold={true}
                                                                                         invert={false}
                                                                                         size="small"
                                                                                       >
                                                                                         <span
-                                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
+                                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
                                                                                         >
                                                                                           Option 1
                                                                                         </span>

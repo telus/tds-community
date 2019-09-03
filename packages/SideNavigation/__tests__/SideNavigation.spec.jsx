@@ -28,8 +28,10 @@ describe('SideNavigation', () => {
     const childrenNoSpacing = (
       <SideNavigation>
         <SideNavigation.Link href="#">Home</SideNavigation.Link>
-        <SideNavigation.SubMenu active label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
-          <SideNavigation.Link href="#">Option 1</SideNavigation.Link>
+        <SideNavigation.SubMenu label="Threefdsfdsfds" onClick={() => {}} isOpen={false}>
+          <SideNavigation.Link href="#" active>
+            Option 1
+          </SideNavigation.Link>
         </SideNavigation.SubMenu>
       </SideNavigation>
     )

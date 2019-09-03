@@ -52,6 +52,17 @@ class SubMenu extends React.Component {
 
   state = {
     subMenuHeight: 0,
+    active: undefined,
+  }
+
+  componentWillMount() {
+    this.checkActiveChildren()
+  }
+
+  componentDidMount() {
+    if (this.state.active) {
+      this.props.handleToggleSubMenu(this.props.id)
+    }
   }
 
   componentDidUpdate() {
@@ -71,25 +82,34 @@ class SubMenu extends React.Component {
     }
   }
 
+  checkActiveChildren = () => {
+    React.Children.map(this.props.children, child => {
+      if (child.props.active) {
+        this.setState({ active: true })
+      }
+    })
+  }
+
   options = {
     subMenuLink: true,
   }
 
   render() {
-    const { children, label, isOpen, active, ...rest } = this.props
+    const { children, label, isOpen, ...rest } = this.props
 
+    const activeChild = this.state.active
     return (
       <React.Fragment>
         <ButtonSubMenu
           {...safeRest(rest)}
           onClick={this.handleClick}
-          active={active}
+          active={activeChild}
           aria-expanded={isOpen}
           isOpen={isOpen}
         >
           <SpaceBox vertical={3} inline horizontal={2}>
             <ColoredTextProvider>
-              <Text size="medium" bold={active}>
+              <Text size="medium" bold={activeChild}>
                 {label}
               </Text>
             </ColoredTextProvider>
@@ -150,10 +170,6 @@ SubMenu.propTypes = {
    */
   isOpen: PropTypes.bool,
   /**
-   * State of whether user is in one of the links in the SubMenu.
-   */
-  active: PropTypes.bool,
-  /**
    * Click handler.
    *
    * @ignore
@@ -164,7 +180,6 @@ SubMenu.propTypes = {
 SubMenu.defaultProps = {
   handleToggleSubMenu: undefined,
   isOpen: false,
-  active: false,
   children: undefined,
   id: undefined,
   onClick: undefined,

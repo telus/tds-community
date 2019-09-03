@@ -1,8 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Heading from '@tds/core-heading'
+import styled from 'styled-components'
 import Skeleton from '../../Skeleton/Skeleton'
 import withSkeleton from '../withSkeleton'
+
+const StyledHeadingSkeleton = styled.div({
+  maxWidth: '100%',
+  display: 'inline-block',
+  overflow: 'hidden',
+})
 
 const HeadingSkeleton = ({ skeleton, ...rest }) => {
   if (!skeleton) {
@@ -25,9 +32,9 @@ const HeadingSkeleton = ({ skeleton, ...rest }) => {
   }
 
   return (
-    <div style={{ maxWidth: '100%', display: 'inline-block', overflow: 'hidden' }}>
+    <StyledHeadingSkeleton>
       <Skeleton characters={characters} size={level ? levels[level] : 'md'} />
-    </div>
+    </StyledHeadingSkeleton>
   )
 }
 

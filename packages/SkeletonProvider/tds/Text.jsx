@@ -2,8 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Text from '@tds/core-text'
 import uuid from 'uuid/v1'
+import styled from 'styled-components'
 import Skeleton from '../../Skeleton/Skeleton'
 import withSkeleton from '../withSkeleton'
+
+const StyledTextSkeleton = styled.div({
+  width: '100%',
+  display: 'inline-block',
+  overflow: 'hidden',
+})
 
 const TextSkeleton = ({ skeleton, ...rest }) => {
   if (!skeleton) {
@@ -36,13 +43,13 @@ const TextSkeleton = ({ skeleton, ...rest }) => {
   }
 
   return (
-    <div style={{ width: '100%', display: 'inline-block', overflow: 'hidden' }}>
+    <StyledTextSkeleton>
       {[...Array(lines)].map(() => (
         <div key={uuid()}>
           <Skeleton size={skSize} characters={characters} />
         </div>
       ))}
-    </div>
+    </StyledTextSkeleton>
   )
 }
 

@@ -5,7 +5,20 @@ import safeRest from '@tds/shared-safe-rest'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import A11yContent from '@tds/core-a11y-content'
 import Panel from './Panel/Panel'
-import styles from './Pagination.scss'
+import {
+  PaginationContainer,
+  Controls,
+  PaginationButtonStyle,
+  ButtonLabel,
+  PaginationList,
+  PaginationListMobile,
+  GeneralPagination,
+  GeneralPaginationButton,
+  PaginationCurrent,
+  PaginationEllipsis,
+  PrevPaginationContainer,
+  NextPaginationContainer,
+} from './styles'
 import hash from './hash'
 
 /**
@@ -62,36 +75,34 @@ class Pagination extends Component {
     const goToText = this.props.copy === 'fr' ? 'Aller au panneau n°' : 'Go to panel number'
     const currentText = this.props.copy === 'fr' ? '(page actuelle)' : '(current)'
     let { current } = this.state
+    // new set of rules, under mobile view , right before Tablet,
+    // only show first, current, last, else, in between show ellipsis, only apply these rules under mobile view
     current = parseInt(current, 10) || 0
     return this.props.children.map((item, i) => {
       const index = i + 1
       if (current === index) {
         return (
-          <li key={hash(`${i}-1`)} className={styles.current}>
+          <PaginationCurrent key={hash(`${i}-1`)}>
             {index}
             <A11yContent>{currentText}</A11yContent>
-          </li>
+          </PaginationCurrent>
         )
       }
       if (this.checkForRegularTabs(index)) {
         return (
-          <li key={hash(`${i}-3`)} className={styles.regular}>
-            <button
+          <GeneralPagination key={hash(`${i}-3`)}>
+            <GeneralPaginationButton
               value={index}
               onClick={e => this.handleClick(e)}
               aria-label={`${goToText} ${index}`}
             >
               {index}
-            </button>
-          </li>
+            </GeneralPaginationButton>
+          </GeneralPagination>
         )
       }
       if (this.checkForEllipsis(index)) {
-        return (
-          <li key={hash(`${i}-4`)} className={styles.ellipsis}>
-            ...
-          </li>
-        )
+        return <PaginationEllipsis key={hash(`${i}-4`)}>...</PaginationEllipsis>
       }
 
       return null
@@ -120,6 +131,81 @@ class Pagination extends Component {
     }
   }
 
+  renderMobileTabs = () => {
+    let { current } = this.state
+    const goToText = this.props.copy === 'fr' ? 'Aller au panneau n°' : 'Go to panel number'
+    const currentText = this.props.copy === 'fr' ? '(page actuelle)' : '(current)'
+    current = parseInt(current, 10) || 0
+    if (current === 1) {
+      return (
+        <React.Fragment>
+          <PaginationCurrent>
+            {current}
+            <A11yContent>{currentText}</A11yContent>
+          </PaginationCurrent>
+          <PaginationEllipsis>...</PaginationEllipsis>
+          <GeneralPagination>
+            <GeneralPaginationButton
+              value={this.props.children && this.props.children.length}
+              onClick={e => this.handleClick(e)}
+              aria-label={`${goToText} ${this.props.children.length}`}
+            >
+              {this.props.children && this.props.children.length}
+            </GeneralPaginationButton>
+          </GeneralPagination>
+        </React.Fragment>
+      )
+    }
+    if (current === this.props.children.length) {
+      return (
+        <React.Fragment>
+          <GeneralPagination>
+            <GeneralPaginationButton
+              value="1"
+              onClick={e => this.handleClick(e)}
+              aria-label={`${goToText} 1`}
+            >
+              1
+            </GeneralPaginationButton>
+          </GeneralPagination>
+          <PaginationEllipsis>...</PaginationEllipsis>
+          <PaginationCurrent>
+            {current}
+            <A11yContent>{currentText}</A11yContent>
+          </PaginationCurrent>
+        </React.Fragment>
+      )
+    }
+    return (
+      <React.Fragment>
+        <GeneralPagination>
+          <GeneralPaginationButton
+            value="1"
+            onClick={e => this.handleClick(e)}
+            aria-label={`${goToText} 1`}
+          >
+            1
+          </GeneralPaginationButton>
+        </GeneralPagination>
+        <PaginationEllipsis>...</PaginationEllipsis>
+        <PaginationCurrent>
+          {current}
+          <A11yContent>{currentText}</A11yContent>
+        </PaginationCurrent>
+        <PaginationEllipsis>...</PaginationEllipsis>
+        <GeneralPagination>
+          <GeneralPaginationButton
+            value={this.props.children && this.props.children.length}
+            onClick={e => this.handleClick(e)}
+            aria-label={`${goToText} ${this.props.children.length}`}
+          >
+            {this.props.children && this.props.children.length}
+          </GeneralPaginationButton>
+        </GeneralPagination>
+      </React.Fragment>
+    )
+  }
+
   render() {
     const { children, copy, ...rest } = this.props
     const { current } = this.state
@@ -130,32 +216,32 @@ class Pagination extends Component {
     const previousLabel = copy !== 'fr' ? 'Go to previous panel' : 'Aller au panneau précédent'
     const NextLabel = copy !== 'fr' ? 'Go to next panel' : 'Aller au prochain panneau'
     return (
-      <div {...safeRest(rest)} className={styles.container}>
+      <PaginationContainer {...safeRest(rest)}>
         <Panel {...rest}>{children[current - 1]}</Panel>
-        <div className={styles.controls}>
-          <p className={this.state.showPrevious ? styles.previous : styles.previousHidden}>
-            <button
+        <Controls>
+          <PrevPaginationContainer showPrevious={this.state.showPrevious}>
+            <PaginationButtonStyle
               value={decreaseNumber}
               onClick={e => this.handleClick(e)}
               aria-label={previousLabel}
             >
               <DecorativeIcon symbol="leftChevron" size={16} />{' '}
-              <span className={styles.buttonLabel}>{previousText}</span>
-            </button>
-          </p>
-          <ul className={styles.pagination}>{this.mapTabs()}</ul>
-          <p className={this.state.showNext ? styles.next : styles.nextHidden}>
-            <button
+              <ButtonLabel>{previousText}</ButtonLabel>
+            </PaginationButtonStyle>
+          </PrevPaginationContainer>
+          <PaginationList>{this.mapTabs()}</PaginationList>
+          <PaginationListMobile>{this.renderMobileTabs()}</PaginationListMobile>
+          <NextPaginationContainer showNext={this.state.showNext}>
+            <PaginationButtonStyle
               value={increaseNumber}
               onClick={e => this.handleClick(e)}
               aria-label={NextLabel}
             >
-              <span className={styles.buttonLabel}>{nextText}</span>{' '}
-              <DecorativeIcon symbol="chevron" size={16} />
-            </button>
-          </p>
-        </div>
-      </div>
+              <ButtonLabel>{nextText}</ButtonLabel> <DecorativeIcon symbol="chevron" size={16} />
+            </PaginationButtonStyle>
+          </NextPaginationContainer>
+        </Controls>
+      </PaginationContainer>
     )
   }
 }
@@ -171,9 +257,7 @@ Pagination.propTypes = {
   copy: PropTypes.oneOf(['en', 'fr']),
 }
 
-Pagination.defaultProps = {
-  copy: 'en',
-}
+Pagination.defaultProps = { copy: 'en' }
 
 Pagination.Panel = Panel
 

@@ -110,6 +110,7 @@
     "eslint-plugin-react": "^7.7.0",
     "husky": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
+    "moment": "^2.24.0",
     "jest": "^24.0.0",
     "jest-environment-enzyme": "^7.0.0",
     "jest-enzyme": "^7.0.0",
@@ -169,7 +170,6 @@
       ],
       "*.scss": "stylelint --config config/stylelint.config.js",
       "*.md": [
-        "remark --quiet --frail .",
         "prettier --write",
         "git add"
       ],

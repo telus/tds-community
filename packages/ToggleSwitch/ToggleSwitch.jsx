@@ -4,8 +4,16 @@ import PropTypes from 'prop-types'
 import { safeRest } from '@tds/util-helpers'
 import Text from '@tds/core-text'
 import Box from '@tds/core-box'
-
-import styles from './ToggleSwitch.scss'
+import Tooltip from '@tds/core-tooltip'
+import Spinner from '@tds/core-spinner'
+import {
+  HiddenInput,
+  Slider,
+  Switch,
+  InputSwitchWrapper,
+  SwitchWrapper,
+  SpinnerWrapper,
+} from './styles'
 
 /**
   * ToggleSwitch is an alternative to using a checkbox, and maintains a similar component interface to [@tds/core-checkbox](https://tds.telus.com/components/index.html#checkbox).
@@ -57,23 +65,34 @@ class ToggleSwitch extends Component {
   }
 
   render() {
-    const { id, label, name, value, checked, onBlur, onChange, onFocus, ...rest } = this.props
-
+    const {
+      id,
+      label,
+      name,
+      value,
+      toolTipText,
+      checked,
+      onBlur,
+      onChange,
+      onFocus,
+      toolTipCopy,
+      isLoading,
+      ...rest
+    } = this.props
     const labelledById = `${id}-label`
     const disabled = !!rest && !!rest.disabled
 
-    const switchStatusClass = this.state.checked ? styles.switchOn : styles.switchOff
-    const switchClasses = disabled
-      ? [styles.switch, switchStatusClass, styles.switchDisabled]
-      : [styles.switch, switchStatusClass]
-
+    /* eslint-disable jsx-a11y/label-has-for */
     return (
       <label htmlFor={id}>
         <Box tag="span" inline between={3}>
-          <span>
-            <input
+          <Text id={labelledById} size="medium">
+            {label}
+          </Text>
+          {toolTipText && <Tooltip copy={toolTipCopy}>{toolTipText}</Tooltip>}
+          <InputSwitchWrapper>
+            <HiddenInput
               {...safeRest(rest)}
-              className={styles.hiddenInput}
               id={id}
               type="checkbox"
               name={name}
@@ -85,19 +104,21 @@ class ToggleSwitch extends Component {
               onFocus={this.onFocus}
               onBlur={this.onBlur}
             />
-
-            <span
-              data-testid={`${id}-switch`}
-              aria-checked={this.state.checked}
-              className={switchClasses.join(' ')}
-            >
-              <span className={styles.slider} />
-            </span>
-          </span>
-
-          <Text id={labelledById} size="medium">
-            {label}
-          </Text>
+            <SwitchWrapper>
+              <Switch
+                data-testid={`${id}-switch`}
+                aria-checked={this.state.checked}
+                switchDisabled={disabled}
+                switchOn={this.state.checked}
+                isLoading={isLoading}
+              >
+                <Slider switchOn={this.state.checked} />
+              </Switch>
+              <SpinnerWrapper switchOn={this.state.checked && isLoading}>
+                <Spinner tag="span" spinning size="small" />
+              </SpinnerWrapper>
+            </SwitchWrapper>
+          </InputSwitchWrapper>
         </Box>
       </label>
     )
@@ -120,6 +141,15 @@ ToggleSwitch.propTypes = {
   /** The checked state. */
   checked: PropTypes.bool,
 
+  /** Text written for TDS ToolTip. */
+  toolTipText: PropTypes.string,
+
+  /** Language provided to the copy prop in TDS ToolTip (en, fr). */
+  toolTipCopy: PropTypes.string,
+
+  /** Spinner will be present when selecting toggle */
+  isLoading: PropTypes.bool,
+
   /** A callback function to be invoked when the checkbox loses focus.
    @param {SyntheticEvent} event The React `SyntheticEvent` */
   onBlur: PropTypes.func,
@@ -138,6 +168,9 @@ ToggleSwitch.defaultProps = {
   onBlur: undefined,
   onChange: undefined,
   onFocus: undefined,
+  toolTipText: '',
+  toolTipCopy: 'en',
+  isLoading: false,
 }
 
 export default ToggleSwitch

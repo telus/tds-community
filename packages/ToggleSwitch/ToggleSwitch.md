@@ -1,3 +1,3 @@
 ```jsx
-<ToggleSwitch id="42" name="name" value="value" label="Enable data" />
+<ToggleSwitch id="42" name="name" value="value" label="Enable data" toolTipText="Tool Tip Text" />
 ```

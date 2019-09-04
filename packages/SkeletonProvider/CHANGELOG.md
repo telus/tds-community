@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@1.0.1...@tds/community-skeleton-provider@2.0.0) (2019-09-04)
+
+
+### Features
+
+* **community-skeleton-provider:** upgrade to styled components ([92c8b51](https://github.com/telus/tds-community/commit/92c8b51))
+
+
+### BREAKING CHANGES
+
+* **community-skeleton-provider:** styled components now a peer dependency
+
+
+
+
+
 ## [1.0.1](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@1.0.0...@tds/community-skeleton-provider@1.0.1) (2019-07-29)
 
 

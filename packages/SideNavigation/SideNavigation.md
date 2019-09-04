@@ -5,6 +5,7 @@
 - Use when the IA for transactional & informational experiences calls for 7+ categories
 - Flexible character count for category and link titles
 - We do not recommend using in conjunction with [Breadcrumbs](https://tds.telus.com/components/index.html#breadcrumbs)
+- Only one `SideNavigation.Link` should be active at a time
 
 ```jsx
 <FlexGrid limitWidth={false} gutter={false}>
@@ -28,6 +29,14 @@
       <Box id="introduction" vertical={3}>
         <Heading level="h2">Overview</Heading>
         <Text>This is an introduction to the Side Navigation component</Text>
+      </Box>
+      <Box id="linktwo" vertical={3}>
+        <Heading level="h2">Link 2</Heading>
+        <Text>An example of in-page navigation</Text>
+      </Box>
+      <Box id="linkthree" vertical={3}>
+        <Heading level="h2">Link 3</Heading>
+        <Text>Additional content for the SideNavigation component</Text>
       </Box>
       <Box id="reference" vertical={3}>
         <Heading level="h2">Reference Architecture</Heading>

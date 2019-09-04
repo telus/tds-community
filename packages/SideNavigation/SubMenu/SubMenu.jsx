@@ -47,22 +47,16 @@ class SubMenu extends React.Component {
   constructor(props) {
     super(props)
 
+    this.state = {
+      subMenuHeight: 0,
+      active: undefined,
+    }
+
     this.subMenu = null
   }
 
-  state = {
-    subMenuHeight: 0,
-    active: undefined,
-  }
-
-  componentWillMount() {
-    this.checkActiveChildren()
-  }
-
   componentDidMount() {
-    if (this.state.active) {
-      this.props.handleToggleSubMenu(this.props.id)
-    }
+    this.checkActiveChildren()
   }
 
   componentDidUpdate() {
@@ -86,6 +80,7 @@ class SubMenu extends React.Component {
     React.Children.map(this.props.children, child => {
       if (child.props.active) {
         this.setState({ active: true })
+        this.props.handleToggleSubMenu(this.props.id)
       }
     })
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import ToggleSwitch from '../ToggleSwitch'
 
@@ -9,7 +9,7 @@ describe('ToggleSwitch', () => {
   const doShallow = props => shallow(<ToggleSwitch {...defaultProps} {...props} />)
 
   it('renders', () => {
-    const toggleSwitch = doShallow()
+    const toggleSwitch = mount(<ToggleSwitch {...defaultProps} />)
 
     expect(toggleSwitch).toMatchSnapshot()
   })
@@ -49,12 +49,11 @@ describe('ToggleSwitch', () => {
   })
 
   it('should be default unchecked', () => {
-    const toggleSwitch = doShallow()
-
+    const toggleSwitch = mount(<ToggleSwitch {...defaultProps} />)
     expect(
       toggleSwitch
-        .find('.hiddenInput')
-        .at(0)
+        .find(`styles__HiddenInput#${defaultProps.id}`)
+        .children(0)
         .prop('checked')
     ).toEqual(false)
 

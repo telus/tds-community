@@ -6,6 +6,7 @@ import Text from '@tds/core-text'
 import Box from '@tds/core-box'
 import Tooltip from '@tds/core-tooltip'
 import Spinner from '@tds/core-spinner'
+import FlexGrid from '@tds/core-flex-grid'
 import {
   HiddenInput,
   Slider,
@@ -85,41 +86,49 @@ class ToggleSwitch extends Component {
     /* eslint-disable jsx-a11y/label-has-for */
     return (
       <label htmlFor={id}>
-        <Box tag="span" inline between={3}>
-          <Text id={labelledById} size="medium">
-            {label}
-          </Text>
-          {toolTipText && <Tooltip copy={toolTipCopy}>{toolTipText}</Tooltip>}
-          <InputSwitchWrapper>
-            <HiddenInput
-              {...safeRest(rest)}
-              id={id}
-              type="checkbox"
-              name={name}
-              value={value}
-              checked={this.state.checked}
-              disabled={disabled}
-              aria-labelledby={labelledById}
-              onChange={this.onChange}
-              onFocus={this.onFocus}
-              onBlur={this.onBlur}
-            />
-            <SwitchWrapper>
-              <Switch
-                data-testid={`${id}-switch`}
-                aria-checked={this.state.checked}
-                switchDisabled={disabled}
-                switchOn={this.state.checked}
-                isLoading={isLoading}
-              >
-                <Slider switchOn={this.state.checked} />
-              </Switch>
-              <SpinnerWrapper switchOn={this.state.checked && isLoading}>
-                <Spinner tag="span" spinning size="small" />
-              </SpinnerWrapper>
-            </SwitchWrapper>
-          </InputSwitchWrapper>
-        </Box>
+        <FlexGrid>
+          <FlexGrid.Row>
+            <FlexGrid.Col xs={7}>
+              <Box inline between={2}>
+                <Text id={labelledById} size="medium">
+                  {label}
+                </Text>
+                {toolTipText && <Tooltip copy={toolTipCopy}>{toolTipText}</Tooltip>}
+              </Box>
+            </FlexGrid.Col>
+            <FlexGrid.Col xs={1} xsOffset={2} mdOffset={3} lgOffset={3} xlOffset={4}>
+              <InputSwitchWrapper>
+                <HiddenInput
+                  {...safeRest(rest)}
+                  id={id}
+                  type="checkbox"
+                  name={name}
+                  value={value}
+                  checked={this.state.checked}
+                  disabled={disabled}
+                  aria-labelledby={labelledById}
+                  onChange={this.onChange}
+                  onFocus={this.onFocus}
+                  onBlur={this.onBlur}
+                />
+                <SwitchWrapper>
+                  <Switch
+                    data-testid={`${id}-switch`}
+                    aria-checked={this.state.checked}
+                    switchDisabled={disabled}
+                    switchOn={this.state.checked}
+                    isLoading={isLoading}
+                  >
+                    <Slider switchOn={this.state.checked} />
+                  </Switch>
+                  <SpinnerWrapper switchOn={this.state.checked && isLoading}>
+                    <Spinner tag="span" spinning size="small" />
+                  </SpinnerWrapper>
+                </SwitchWrapper>
+              </InputSwitchWrapper>
+            </FlexGrid.Col>
+          </FlexGrid.Row>
+        </FlexGrid>
       </label>
     )
   }

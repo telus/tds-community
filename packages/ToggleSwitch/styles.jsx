@@ -32,7 +32,7 @@ export const Switch = styled.span(props => ({
   top: '3px',
 }))
 
-export const InputSwitchWrapper = styled.span({ display: 'flex' })
+export const InputSwitchWrapper = styled.div({ display: 'flex', justifyContent: 'center' })
 
 export const SwitchWrapper = styled.span({
   display: 'flex',

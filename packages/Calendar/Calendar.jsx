@@ -33,16 +33,17 @@ class Calendar extends Component {
 
     /* Determine daySize based on window.outerWidth and `inline` */
     const getResponsiveDaySize = () => {
-      let responsiveDaySize = 40
+      let responsiveDaySize
       if (window) {
-        if (window.outerWidth >= 432) {
+        if (window.innerWidth >= 432) {
           responsiveDaySize = inline ? 60 : 48
+        } else if (window.innerWidth >= 376) {
+          responsiveDaySize = 40
         } else {
-          responsiveDaySize = window.outerWidth >= 376 ? 40 : 32
+          responsiveDaySize = inline ? undefined : 33
         }
-      } else {
-        return responsiveDaySize
       }
+
       return responsiveDaySize
     }
 

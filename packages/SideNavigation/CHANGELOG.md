@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@2.0.2...@tds/community-side-navigation@3.0.0) (2019-09-10)
+
+
+### Features
+
+* **community-side-navigation:** add category prop and update submenu ([0ce5f33](https://github.com/telus/tds-community/commit/0ce5f33))
+* **community-side-navigation:** update ui for sidenav ([a8c6903](https://github.com/telus/tds-community/commit/a8c6903))
+* **community-testimonial:** add testimonialStyle prop ([d1b5eb2](https://github.com/telus/tds-community/commit/d1b5eb2))
+
+
+### BREAKING CHANGES
+
+* **community-side-navigation:** remove active prop from SubMenu
+
+
+
+
+
 ## [2.0.2](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@2.0.1...@tds/community-side-navigation@2.0.2) (2019-08-12)
 
 

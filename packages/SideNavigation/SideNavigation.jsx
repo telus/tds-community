@@ -62,7 +62,7 @@ const StyledUl = styled.ul({
 const StyledLi = styled.li({
   borderBottom: `1px solid ${colorGainsboro}`,
   alignItems: 'center',
-  fontSize: '0',
+  lineHeight: '0',
 })
 
 /**

@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNavigation.Link renders 1`] = `
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c2 {
   margin-left: 0;
   border-left: none;
@@ -248,11 +269,58 @@ exports[`SideNavigation.Link renders 1`] = `
                                           invert={false}
                                           size="medium"
                                         >
-                                          <span
-                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
+                                          <Text__StyledText
+                                            block={false}
+                                            bold={false}
+                                            inheritColor={true}
+                                            invert={false}
+                                            size="medium"
                                           >
-                                            Home
-                                          </span>
+                                            <StyledComponent
+                                              block={false}
+                                              bold={false}
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      "sup {
+  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
+}",
+                                                    ],
+                                                  },
+                                                  "displayName": "Text__StyledText",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                                  "target": "span",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              inheritColor={true}
+                                              invert={false}
+                                              size="medium"
+                                            >
+                                              <span
+                                                className="c5"
+                                                size="medium"
+                                              >
+                                                Home
+                                              </span>
+                                            </StyledComponent>
+                                          </Text__StyledText>
                                         </Text>
                                       </div>
                                     </ColoredTextProvider>
@@ -277,6 +345,28 @@ exports[`SideNavigation.Link renders 1`] = `
 `;
 
 exports[`SideNavigation.Link renders with active styles 1`] = `
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c2 {
   margin-left: 0;
   border-left: 4px solid #4b286d;
@@ -523,11 +613,58 @@ exports[`SideNavigation.Link renders with active styles 1`] = `
                                           invert={false}
                                           size="medium"
                                         >
-                                          <span
-                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
+                                          <Text__StyledText
+                                            block={false}
+                                            bold={true}
+                                            inheritColor={true}
+                                            invert={false}
+                                            size="medium"
                                           >
-                                            Home
-                                          </span>
+                                            <StyledComponent
+                                              block={false}
+                                              bold={true}
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      "sup {
+  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
+}",
+                                                    ],
+                                                  },
+                                                  "displayName": "Text__StyledText",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                                  "target": "span",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              inheritColor={true}
+                                              invert={false}
+                                              size="medium"
+                                            >
+                                              <span
+                                                className="c5"
+                                                size="medium"
+                                              >
+                                                Home
+                                              </span>
+                                            </StyledComponent>
+                                          </Text__StyledText>
                                         </Text>
                                       </div>
                                     </ColoredTextProvider>

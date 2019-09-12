@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 import { colorWhiteLilac, colorTelusPurple, colorShuttleGrey } from '@tds/core-colours'
 
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'

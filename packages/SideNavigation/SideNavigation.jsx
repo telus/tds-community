@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 import { colorGainsboro } from '@tds/core-colours'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Image from '@tds/core-image'
 import styled from 'styled-components'
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 import { colorGainsboro, colorAthensGrey } from '@tds/core-colours'
 
 import withSkeleton from '../withSkeleton'

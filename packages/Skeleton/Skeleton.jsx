@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { colorGainsboro, colorAthensGrey } from '@tds/core-colours'
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 
 const keyframes = require('styled-components').keyframes
 

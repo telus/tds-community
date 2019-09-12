@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Text from '@tds/core-text'
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 
 import { colorTelusPurple } from '@tds/core-colours'
 

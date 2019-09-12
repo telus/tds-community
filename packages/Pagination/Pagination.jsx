@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import A11yContent from '@tds/core-a11y-content'
 import Panel from './Panel/Panel'

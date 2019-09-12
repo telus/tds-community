@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Heading from '@tds/core-heading'
 import Box from '@tds/core-box'
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 import { media } from '@tds/core-responsive'
 import ColoredTextProvider from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 

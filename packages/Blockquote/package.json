@@ -29,9 +29,7 @@
     "@tds/core-box": "^1.0.1",
     "@tds/core-heading": "^1.1.5",
     "@tds/core-responsive": "^1.1.0",
+    "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.6.2"
-  },
-  "devDependencies": {
-    "@tds/shared-safe-rest": "^1.0.0"
   }
 }

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 
-import safeRest from '../../shared/safe-rest/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import styles from './SamplePilter.scss'
 

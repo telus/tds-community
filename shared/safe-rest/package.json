@@ -1,6 +1,0 @@
-{
-  "name": "@tds/shared-safe-rest",
-  "version": "1.0.0",
-  "main": "safeRest.js",
-  "private": true
-}

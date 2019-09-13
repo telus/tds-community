@@ -52,7 +52,7 @@ describe('ToggleSwitch', () => {
     const toggleSwitch = mount(<ToggleSwitch {...defaultProps} />)
     expect(
       toggleSwitch
-        .find(`styles__HiddenInput#${defaultProps.id}`)
+        .find(`styles__Button#${defaultProps.id}`)
         .children(0)
         .prop('checked')
     ).toEqual(false)
@@ -88,7 +88,7 @@ describe('ToggleSwitch', () => {
     toggleSwitch
       .find(`#${defaultProps.id}`)
       .at(0)
-      .simulate('change')
+      .simulate('click')
 
     expect(
       toggleSwitch
@@ -113,7 +113,7 @@ describe('ToggleSwitch', () => {
     toggleSwitch
       .find(`#${defaultProps.id}`)
       .at(0)
-      .simulate('change', mockEvent)
+      .simulate('click', mockEvent)
 
     // Checked state should remain false instead of toggling
     expect(

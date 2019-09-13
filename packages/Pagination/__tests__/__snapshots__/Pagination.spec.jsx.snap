@@ -33,14 +33,13 @@ exports[`Pagination renders 1`] = `
   color: #4b286d;
   font-size: 1rem;
   line-height: 42px;
-  visibility: hidden;
+  display: none;
 }
 
 .c12 {
   color: #4b286d;
   font-size: 1rem;
   line-height: 42px;
-  visibility: visible;
 }
 
 .c3 {
@@ -257,9 +256,7 @@ exports[`Pagination renders 1`] = `
   }
 }
 
-<Pagination
-  copy="en"
->
+<Pagination>
   <styles__PaginationContainer>
     <StyledComponent
       forwardedComponent={

@@ -7,14 +7,7 @@ import Box from '@tds/core-box'
 import Tooltip from '@tds/core-tooltip'
 import Spinner from '@tds/core-spinner'
 import FlexGrid from '@tds/core-flex-grid'
-import {
-  HiddenInput,
-  Slider,
-  Switch,
-  InputSwitchWrapper,
-  SwitchWrapper,
-  SpinnerWrapper,
-} from './styles'
+import { Button, Slider, Switch, InputSwitchWrapper, SpinnerWrapper } from './styles'
 
 /**
   * ToggleSwitch is an alternative to using a checkbox, and maintains a similar component interface to [@tds/core-checkbox](https://tds.telus.com/components/index.html#checkbox).
@@ -38,7 +31,6 @@ class ToggleSwitch extends Component {
 
   onChange = event => {
     const { onChange } = this.props
-
     if (onChange) {
       event.persist()
       onChange(event)
@@ -98,20 +90,22 @@ class ToggleSwitch extends Component {
             </FlexGrid.Col>
             <FlexGrid.Col xs={1} xsOffset={2} mdOffset={3} lgOffset={3} xlOffset={4}>
               <InputSwitchWrapper>
-                <HiddenInput
+                <Button
                   {...safeRest(rest)}
                   id={id}
-                  type="checkbox"
+                  role="switch"
+                  aria-checked={this.state.checked}
                   name={name}
                   value={value}
                   checked={this.state.checked}
+                  isLoading={isLoading}
                   disabled={disabled}
                   aria-labelledby={labelledById}
-                  onChange={this.onChange}
+                  data-testid={`${id}-switch`}
+                  onClick={this.onChange}
                   onFocus={this.onFocus}
                   onBlur={this.onBlur}
-                />
-                <SwitchWrapper>
+                >
                   <Switch
                     data-testid={`${id}-switch`}
                     aria-checked={this.state.checked}
@@ -124,7 +118,7 @@ class ToggleSwitch extends Component {
                   <SpinnerWrapper switchOn={this.state.checked && isLoading}>
                     <Spinner tag="span" spinning size="small" />
                   </SpinnerWrapper>
-                </SwitchWrapper>
+                </Button>
               </InputSwitchWrapper>
             </FlexGrid.Col>
           </FlexGrid.Row>

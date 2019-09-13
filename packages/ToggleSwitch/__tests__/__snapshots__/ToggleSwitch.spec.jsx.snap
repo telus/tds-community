@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToggleSwitch renders 1`] = `
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -15,26 +15,32 @@ exports[`ToggleSwitch renders 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c6 {
   -webkit-animation: cZxgpV 1.8s linear infinite;
   animation: cZxgpV 1.8s linear infinite;
 }
 
-.c8 {
+.c7 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
   stroke: #2B8000;
 }
 
 .c1 {
-  opacity: 0;
+  position: relative;
+  border: none;
+  margin: 0 5rem;
+  padding: 0;
 }
 
 .c1:focus {
   box-shadow: 0 0 4px 1px #54595f;
+  outline: auto;
+  outline-color: rgb(59,153,252);
+  outline-width: 5px;
 }
 
-.c4 {
+.c3 {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -46,7 +52,7 @@ exports[`ToggleSwitch renders 1`] = `
   transition: left 0.25s;
 }
 
-.c3 {
+.c2 {
   cursor: pointer;
   display: inline-block;
   visibility: none;
@@ -70,19 +76,7 @@ exports[`ToggleSwitch renders 1`] = `
   justify-content: center;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  position: relative;
-}
-
-.c5 {
+.c4 {
   position: absolute;
   display: none;
   top: -11px;
@@ -218,41 +212,44 @@ exports[`ToggleSwitch renders 1`] = `
                               <div
                                 className="c0"
                               >
-                                <styles__HiddenInput
+                                <styles__Button
+                                  aria-checked={false}
                                   aria-labelledby="my-id-123-label"
                                   checked={false}
+                                  data-testid="my-id-123-switch"
                                   disabled={false}
                                   id="my-id-123"
+                                  isLoading={false}
                                   name="name"
                                   onBlur={[Function]}
-                                  onChange={[Function]}
+                                  onClick={[Function]}
                                   onFocus={[Function]}
-                                  type="checkbox"
+                                  role="switch"
                                   value="value"
                                 >
                                   <StyledComponent
+                                    aria-checked={false}
                                     aria-labelledby="my-id-123-label"
                                     checked={false}
+                                    data-testid="my-id-123-switch"
                                     disabled={false}
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "styles__HiddenInput-i9h5g3-0",
-                                          "isStatic": true,
+                                          "componentId": "styles__Button-i9h5g3-0",
+                                          "isStatic": false,
                                           "lastClassName": "c1",
                                           "rules": Array [
-                                            "opacity: 0; &:focus {
-  box-shadow: 0 0 4px 1px #54595f;
-}",
+                                            [Function],
                                           ],
                                         },
-                                        "displayName": "styles__HiddenInput",
+                                        "displayName": "styles__Button",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "styles__HiddenInput-i9h5g3-0",
-                                        "target": "input",
+                                        "styledComponentId": "styles__Button-i9h5g3-0",
+                                        "target": "button",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
@@ -260,56 +257,28 @@ exports[`ToggleSwitch renders 1`] = `
                                     }
                                     forwardedRef={null}
                                     id="my-id-123"
+                                    isLoading={false}
                                     name="name"
                                     onBlur={[Function]}
-                                    onChange={[Function]}
+                                    onClick={[Function]}
                                     onFocus={[Function]}
-                                    type="checkbox"
+                                    role="switch"
                                     value="value"
                                   >
-                                    <input
+                                    <button
+                                      aria-checked={false}
                                       aria-labelledby="my-id-123-label"
                                       checked={false}
                                       className="c1"
+                                      data-testid="my-id-123-switch"
                                       disabled={false}
                                       id="my-id-123"
                                       name="name"
                                       onBlur={[Function]}
-                                      onChange={[Function]}
+                                      onClick={[Function]}
                                       onFocus={[Function]}
-                                      type="checkbox"
+                                      role="switch"
                                       value="value"
-                                    />
-                                  </StyledComponent>
-                                </styles__HiddenInput>
-                                <styles__SwitchWrapper>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "styles__SwitchWrapper-i9h5g3-4",
-                                          "isStatic": true,
-                                          "lastClassName": "c2",
-                                          "rules": Array [
-                                            "display: flex; align-items: flex-start; position: relative;",
-                                          ],
-                                        },
-                                        "displayName": "styles__SwitchWrapper",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "styles__SwitchWrapper-i9h5g3-4",
-                                        "target": "span",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <span
-                                      className="c2"
                                     >
                                       <styles__Switch
                                         aria-checked={false}
@@ -328,7 +297,7 @@ exports[`ToggleSwitch renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "styles__Switch-i9h5g3-2",
                                                 "isStatic": false,
-                                                "lastClassName": "c3",
+                                                "lastClassName": "c2",
                                                 "rules": Array [
                                                   [Function],
                                                 ],
@@ -350,7 +319,7 @@ exports[`ToggleSwitch renders 1`] = `
                                         >
                                           <span
                                             aria-checked={false}
-                                            className="c3"
+                                            className="c2"
                                             data-testid="my-id-123-switch"
                                           >
                                             <styles__Slider
@@ -364,7 +333,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "styles__Slider-i9h5g3-1",
                                                       "isStatic": false,
-                                                      "lastClassName": "c4",
+                                                      "lastClassName": "c3",
                                                       "rules": Array [
                                                         [Function],
                                                       ],
@@ -383,7 +352,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                 switchOn={false}
                                               >
                                                 <span
-                                                  className="c4"
+                                                  className="c3"
                                                 />
                                               </StyledComponent>
                                             </styles__Slider>
@@ -399,9 +368,9 @@ exports[`ToggleSwitch renders 1`] = `
                                               "$$typeof": Symbol(react.forward_ref),
                                               "attrs": Array [],
                                               "componentStyle": ComponentStyle {
-                                                "componentId": "styles__SpinnerWrapper-i9h5g3-5",
+                                                "componentId": "styles__SpinnerWrapper-i9h5g3-4",
                                                 "isStatic": false,
-                                                "lastClassName": "c5",
+                                                "lastClassName": "c4",
                                                 "rules": Array [
                                                   [Function],
                                                 ],
@@ -409,8 +378,8 @@ exports[`ToggleSwitch renders 1`] = `
                                               "displayName": "styles__SpinnerWrapper",
                                               "foldedComponentIds": Array [],
                                               "render": [Function],
-                                              "styledComponentId": "styles__SpinnerWrapper-i9h5g3-5",
-                                              "target": "div",
+                                              "styledComponentId": "styles__SpinnerWrapper-i9h5g3-4",
+                                              "target": "span",
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
@@ -419,8 +388,8 @@ exports[`ToggleSwitch renders 1`] = `
                                           forwardedRef={null}
                                           switchOn={false}
                                         >
-                                          <div
-                                            className="c5"
+                                          <span
+                                            className="c4"
                                           >
                                             <Spinner
                                               a11yLabel="A spinner is active. Please wait while the page completes a task."
@@ -452,7 +421,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "SpinnerSvg__SvgContainer-sc-6yts5w-0",
                                                           "isStatic": false,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c5",
                                                           "rules": Array [
                                                             [Function],
                                                           ],
@@ -471,7 +440,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                     overlay={false}
                                                   >
                                                     <div
-                                                      className="c6"
+                                                      className="c5"
                                                       data-testid="spinner"
                                                     >
                                                       <SpinnerSvg__StyledSvg
@@ -495,7 +464,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "SpinnerSvg__StyledSvg-sc-6yts5w-1",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c7",
+                                                                "lastClassName": "c6",
                                                                 "rules": Array [
                                                                   "animation:",
                                                                   Keyframes {
@@ -534,7 +503,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                           <svg
                                                             aria-labelledby="spinner-title-1"
                                                             aria-live="assertive"
-                                                            className="c7"
+                                                            className="c6"
                                                             data-testid="svg"
                                                             height="50"
                                                             role="alert"
@@ -568,7 +537,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "SpinnerSvg__SvgCircle-sc-6yts5w-2",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c8",
+                                                                      "lastClassName": "c7",
                                                                       "rules": Array [
                                                                         "animation:",
                                                                         Keyframes {
@@ -606,7 +575,7 @@ exports[`ToggleSwitch renders 1`] = `
                                                                 variant="primary"
                                                               >
                                                                 <circle
-                                                                  className="c8"
+                                                                  className="c7"
                                                                   cx="50"
                                                                   cy="50"
                                                                   fill="none"
@@ -626,12 +595,12 @@ exports[`ToggleSwitch renders 1`] = `
                                                 </SpinnerSvg__SvgContainer>
                                               </SpinnerSvg>
                                             </Spinner>
-                                          </div>
+                                          </span>
                                         </StyledComponent>
                                       </styles__SpinnerWrapper>
-                                    </span>
+                                    </button>
                                   </StyledComponent>
-                                </styles__SwitchWrapper>
+                                </styles__Button>
                               </div>
                             </StyledComponent>
                           </styles__InputSwitchWrapper>

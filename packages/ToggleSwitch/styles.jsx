@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 import { colorAccessibleGreen, colorGainsboro, colorShuttleGrey } from '@tds/core-colours'
 
-export const HiddenInput = styled.input({
-  opacity: '0',
+export const Button = styled.button(props => ({
+  position: 'relative',
+  border: 'none',
+  margin: '0 5rem',
+  padding: '0',
   '&:focus': {
     boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
+    outline: props.isLoading ? 'none' : 'auto',
+    outlineColor: 'rgb(59, 153, 252)',
+    outlineWidth: '5px',
   },
-})
+}))
 
 export const Slider = styled.span(props => ({
   position: 'absolute',
@@ -32,15 +38,12 @@ export const Switch = styled.span(props => ({
   top: '3px',
 }))
 
-export const InputSwitchWrapper = styled.div({ display: 'flex', justifyContent: 'center' })
-
-export const SwitchWrapper = styled.span({
+export const InputSwitchWrapper = styled.div({
   display: 'flex',
-  alignItems: 'flex-start',
-  position: 'relative',
+  justifyContent: 'center',
 })
 
-export const SpinnerWrapper = styled.div(props => ({
+export const SpinnerWrapper = styled.span(props => ({
   position: 'absolute',
   display: props.switchOn ? 'block' : 'none',
   top: '-11px',

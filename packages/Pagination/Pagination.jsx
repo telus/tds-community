@@ -254,10 +254,8 @@ Pagination.propTypes = {
   /**
    * The default copy to be used.
    */
-  copy: PropTypes.oneOf(['en', 'fr']),
+  copy: PropTypes.oneOf(['en', 'fr']).isRequired,
 }
-
-Pagination.defaultProps = { copy: 'en' }
 
 Pagination.Panel = Panel
 

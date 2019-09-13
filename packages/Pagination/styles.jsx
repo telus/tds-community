@@ -27,11 +27,11 @@ const BasePaginationContainer = styled.p({
 })
 
 export const PrevPaginationContainer = styled(BasePaginationContainer)(props => ({
-  visibility: props.showPrevious ? 'visible' : 'hidden',
+  display: !props.showPrevious && 'none',
 }))
 
 export const NextPaginationContainer = styled(BasePaginationContainer)(props => ({
-  visibility: props.showNext ? 'visible' : 'hidden',
+  display: !props.showNext && 'none',
 }))
 
 export const PaginationButtonStyle = styled.button({

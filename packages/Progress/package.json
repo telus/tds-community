@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-progress",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A progress indicator.  Can be used to indicated usage for example.",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,6 +27,5 @@
   "dependencies": {
     "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.6.2"
-
   }
 }

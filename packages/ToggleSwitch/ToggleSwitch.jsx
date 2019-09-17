@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { safeRest } from '@tds/util-helpers'
@@ -16,103 +16,86 @@ import { StyledLabel, Button, Slider, Switch, InputSwitchWrapper } from './style
    This behaviour differs from `@tds/core-checkbox`.
   * @version ./package.json
   */
-class ToggleSwitch extends Component {
-  componentWillMount() {
-    const { checked } = this.props
-    this.setState({ checked })
-  }
+const ToggleSwitch = ({
+  id,
+  label,
+  name,
+  value,
+  toolTipText,
+  checked,
+  onBlur,
+  onClick,
+  onFocus,
+  toolTipCopy,
+  isLoading,
+  spinnerLabel,
+  ...rest
+}) => {
+  const [isChecked, setIsChecked] = useState(checked)
 
-  componentWillReceiveProps(nextProps) {
-    if (this.state.checked !== nextProps.checked) {
-      this.setState({ checked: nextProps.checked })
-    }
-  }
+  const labelledById = `${id}-label`
 
-  onClick = event => {
-    const { onClick } = this.props
+  const handleClick = event => {
     if (onClick) {
       event.persist()
       onClick(event)
     } else {
-      this.setState(({ checked }) => ({ checked: !checked }))
+      setIsChecked(!isChecked)
     }
   }
 
-  onFocus = event => {
-    const { onFocus } = this.props
-
+  const handleFocus = event => {
     if (onFocus) {
       event.persist()
       onFocus(event)
     }
   }
 
-  onBlur = event => {
-    const { onBlur } = this.props
-
+  const handleBlur = event => {
     if (onBlur) {
       event.persist()
       onBlur(event)
     }
   }
 
-  render() {
-    const {
-      id,
-      label,
-      name,
-      value,
-      toolTipText,
-      checked,
-      onBlur,
-      onClick,
-      onFocus,
-      toolTipCopy,
-      isLoading,
-      spinnerLabel,
-      ...rest
-    } = this.props
-    const labelledById = `${id}-label`
-
-    return (
-      <StyledLabel htmlFor={id}>
-        <Box inline between={2}>
-          <Text id={labelledById} size="medium">
-            {label}
-          </Text>
-          {toolTipText && <Tooltip copy={toolTipCopy}>{toolTipText}</Tooltip>}
-        </Box>
-        <InputSwitchWrapper>
-          <Spinner tag="span" spinning={isLoading} label={spinnerLabel} size="small" inline>
-            <Button
-              {...safeRest(rest)}
-              id={id}
-              role="switch"
-              aria-checked={this.state.checked}
-              name={name}
-              value={value}
-              checked={this.state.checked}
-              isLoading={isLoading}
-              aria-labelledby={labelledById}
+  return (
+    <StyledLabel htmlFor={id}>
+      <Box inline between={2}>
+        <Text id={labelledById} size="medium">
+          {label}
+        </Text>
+        {toolTipText && <Tooltip copy={toolTipCopy}>{toolTipText}</Tooltip>}
+      </Box>
+      <InputSwitchWrapper>
+        <Spinner tag="span" spinning={isLoading} label={spinnerLabel} size="small" inline>
+          <Button
+            {...safeRest(rest)}
+            id={id}
+            role="switch"
+            aria-checked={isChecked}
+            name={name}
+            value={value}
+            checked={isChecked}
+            isLoading={isLoading}
+            aria-labelledby={labelledById}
+            data-testid={`${id}-switch`}
+            onClick={!isLoading ? handleClick : null}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+          >
+            <Switch
               data-testid={`${id}-switch`}
-              onClick={!isLoading ? this.onClick : null}
-              onFocus={this.onFocus}
-              onBlur={this.onBlur}
+              aria-checked={isChecked}
+              switchOn={isChecked}
+              isLoading={isLoading}
             >
-              <Switch
-                data-testid={`${id}-switch`}
-                aria-checked={this.state.checked}
-                switchOn={this.state.checked}
-                isLoading={isLoading}
-              >
-                <Slider switchOn={this.state.checked} />
-              </Switch>
-            </Button>
-          </Spinner>
-        </InputSwitchWrapper>
-      </StyledLabel>
-    )
-  }
+              <Slider switchOn={isChecked} />
+            </Switch>
+          </Button>
+        </Spinner>
+      </InputSwitchWrapper>
+    </StyledLabel>
+  )
 }
 
 ToggleSwitch.propTypes = {

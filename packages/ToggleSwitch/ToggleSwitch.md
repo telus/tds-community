@@ -10,7 +10,7 @@ It is recommended to maintain a close enough distance for better user experience
   <FlexGrid.Row>
     <FlexGrid.Col xs={3}>
       <ToggleSwitch
-        id="42"
+        id="toggle-default"
         name="name"
         value="value"
         label="Enable data"
@@ -32,7 +32,7 @@ See example below that demonstrates it.
   <FlexGrid.Row>
     <FlexGrid.Col xs={3}>
       <ToggleSwitch
-        id="42"
+        id="toggle-accessibility"
         name="name"
         value="value"
         label="Enable data"

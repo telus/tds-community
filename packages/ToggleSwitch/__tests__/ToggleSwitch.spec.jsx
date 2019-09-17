@@ -17,12 +17,7 @@ describe('ToggleSwitch', () => {
   it('should have for attribute matching passed id', () => {
     const toggleSwitch = doShallow()
 
-    expect(
-      toggleSwitch
-        .find('label')
-        .at(0)
-        .prop('htmlFor')
-    ).toEqual(defaultProps.id)
+    expect(toggleSwitch.find('StyledLabel').prop('htmlFor')).toEqual(defaultProps.id)
   })
 
   it('should have label text with an id that matches the checkbox aria-labelledby attribute', () => {
@@ -105,10 +100,10 @@ describe('ToggleSwitch', () => {
     ).toEqual(true)
   })
 
-  it('should override internal state change when onChange handler is provided ', () => {
-    const mockOnChange = jest.fn()
+  it('should override internal state change when onClick handler is provided ', () => {
+    const mockOnClick = jest.fn()
     const mockEvent = { persist: () => {} }
-    const toggleSwitch = doShallow({ checked: false, onChange: mockOnChange })
+    const toggleSwitch = doShallow({ checked: false, onClick: mockOnClick })
 
     toggleSwitch
       .find(`#${defaultProps.id}`)
@@ -131,7 +126,7 @@ describe('ToggleSwitch', () => {
     ).toEqual(false)
 
     // Custom onChange handler should get event delgated to it instead
-    expect(mockOnChange).toHaveBeenCalledWith(mockEvent)
+    expect(mockOnClick).toHaveBeenCalledWith(mockEvent)
   })
 
   it('should call onFocus handler when provided ', () => {

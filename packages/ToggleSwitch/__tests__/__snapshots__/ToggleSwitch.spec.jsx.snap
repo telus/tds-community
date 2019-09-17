@@ -1,71 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToggleSwitch renders 1`] = `
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c6 {
-  -webkit-animation: cZxgpV 1.8s linear infinite;
-  animation: cZxgpV 1.8s linear infinite;
-}
-
-.c7 {
-  -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
-  animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #2B8000;
-}
-
-.c1 {
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
   position: relative;
   border: none;
-  margin: 0 5rem;
+  height: 26px;
   padding: 0;
 }
 
-.c1:focus {
-  box-shadow: 0 0 4px 1px #54595f;
+.c2:focus {
   outline: auto;
   outline-color: rgb(59,153,252);
   outline-width: 5px;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 2px;
-  left: 2px;
+  top: 3px;
+  left: 3px;
   border-radius: 18px;
   background-color: white;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
+  box-shadow: 0 0 2px 0 #000;
 }
 
-.c2 {
-  cursor: pointer;
+.c3 {
+  position: relative;
+  top: 2px;
   display: inline-block;
-  visibility: none;
-  width: 44px;
-  min-width: 44px;
-  height: 22px;
-  border-radius: 22px;
+  width: 40px;
+  height: 24px;
+  border-radius: 24px;
   background-color: #d8d8d8;
-  position: absolute;
-  top: 3px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,545 +64,268 @@ exports[`ToggleSwitch renders 1`] = `
   justify-content: center;
 }
 
-.c4 {
-  position: absolute;
-  display: none;
-  top: -11px;
-  left: -1px;
-}
-
 <ToggleSwitch
   checked={false}
   id="my-id-123"
   isLoading={false}
   label="label"
   name="name"
+  onBlur={null}
+  onClick={null}
+  onFocus={null}
+  spinnerLabel={null}
   toolTipCopy="en"
   toolTipText=""
   value="value"
 >
-  <label
+  <StyledLabel
     htmlFor="my-id-123"
   >
-    <FlexGrid
-      gutter={true}
-      limitWidth={true}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styles__StyledLabel-i9h5g3-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display: flex; justify-content: space-between;",
+            ],
+          },
+          "displayName": "StyledLabel",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styles__StyledLabel-i9h5g3-0",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      htmlFor="my-id-123"
     >
-      <Broadcast
-        channel="flex-grid"
-        compareValues={[Function]}
-        value={true}
+      <label
+        className="c0"
+        htmlFor="my-id-123"
       >
-        <Grid
-          className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
-          fluid={true}
+        <Box
+          between={2}
+          inline={true}
+          tag="div"
         >
           <div
-            className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+            className="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
           >
-            <Row>
-              <Row
-                className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+            <Text
+              block={false}
+              bold={false}
+              id="my-id-123-label"
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+                id="my-id-123-label"
               >
-                <div
-                  className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                label
+              </span>
+            </Text>
+          </div>
+        </Box>
+        <styles__InputSwitchWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "styles__InputSwitchWrapper-i9h5g3-4",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "display: flex; justify-content: center;",
+                  ],
+                },
+                "displayName": "styles__InputSwitchWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "styles__InputSwitchWrapper-i9h5g3-4",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <Spinner
+                a11yLabel="A spinner is active. Please wait while the page completes a task."
+                dangerouslyHideVisibleLabel={false}
+                fullScreen={false}
+                inline={true}
+                label={null}
+                size="small"
+                spinning={false}
+                tag="span"
+                variant="primary"
+              >
+                <styles__Button
+                  aria-checked={false}
+                  aria-labelledby="my-id-123-label"
+                  checked={false}
+                  data-testid="my-id-123-switch"
+                  id="my-id-123"
+                  isLoading={false}
+                  name="name"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="switch"
+                  value="value"
                 >
-                  <Col
-                    xs={7}
+                  <StyledComponent
+                    aria-checked={false}
+                    aria-labelledby="my-id-123-label"
+                    checked={false}
+                    data-testid="my-id-123-switch"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styles__Button-i9h5g3-1",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "styles__Button",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styles__Button-i9h5g3-1",
+                        "target": "button",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    id="my-id-123"
+                    isLoading={false}
+                    name="name"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    role="switch"
+                    value="value"
                   >
-                    <Subscriber
-                      channel="flex-grid"
-                      quiet={false}
+                    <button
+                      aria-checked={false}
+                      aria-labelledby="my-id-123-label"
+                      checked={false}
+                      className="c2"
+                      data-testid="my-id-123-switch"
+                      id="my-id-123"
+                      name="name"
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      role="switch"
+                      value="value"
                     >
-                      <Col
-                        className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                        xs={7}
+                      <styles__Switch
+                        aria-checked={false}
+                        data-testid="my-id-123-switch"
+                        isLoading={false}
+                        switchOn={false}
                       >
-                        <div
-                          className="TDS_flexboxgrid2__col-xs-7___2xd_5 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                        <StyledComponent
+                          aria-checked={false}
+                          data-testid="my-id-123-switch"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styles__Switch-i9h5g3-3",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "styles__Switch",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styles__Switch-i9h5g3-3",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          isLoading={false}
+                          switchOn={false}
                         >
-                          <Box
-                            between={2}
-                            inline={true}
-                            tag="div"
+                          <span
+                            aria-checked={false}
+                            className="c3"
+                            data-testid="my-id-123-switch"
                           >
-                            <div
-                              className="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+                            <styles__Slider
+                              switchOn={false}
                             >
-                              <Text
-                                block={false}
-                                bold={false}
-                                id="my-id-123-label"
-                                invert={false}
-                                size="medium"
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "styles__Slider-i9h5g3-2",
+                                      "isStatic": false,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "styles__Slider",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "styles__Slider-i9h5g3-2",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                switchOn={false}
                               >
                                 <span
-                                  className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-                                  id="my-id-123-label"
-                                >
-                                  label
-                                </span>
-                              </Text>
-                            </div>
-                          </Box>
-                        </div>
-                      </Col>
-                    </Subscriber>
-                  </Col>
-                  <Col
-                    lgOffset={3}
-                    mdOffset={3}
-                    xlOffset={4}
-                    xs={1}
-                    xsOffset={2}
-                  >
-                    <Subscriber
-                      channel="flex-grid"
-                      quiet={false}
-                    >
-                      <Col
-                        className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                        lgOffset={3}
-                        mdOffset={3}
-                        xlOffset={4}
-                        xs={1}
-                        xsOffset={2}
-                      >
-                        <div
-                          className="TDS_flexboxgrid2__col-xs-1___1QbPp TDS_flexboxgrid2__col-xs-offset-2___2eMUl TDS_flexboxgrid2__col-md-offset-3___1PyfI TDS_flexboxgrid2__col-lg-offset-3___3ZciT TDS_flexboxgrid2__col-xl-offset-4___19VST TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                        >
-                          <styles__InputSwitchWrapper>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "styles__InputSwitchWrapper-i9h5g3-3",
-                                    "isStatic": true,
-                                    "lastClassName": "c0",
-                                    "rules": Array [
-                                      "display: flex; justify-content: center;",
-                                    ],
-                                  },
-                                  "displayName": "styles__InputSwitchWrapper",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "styles__InputSwitchWrapper-i9h5g3-3",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <div
-                                className="c0"
-                              >
-                                <styles__Button
-                                  aria-checked={false}
-                                  aria-labelledby="my-id-123-label"
-                                  checked={false}
-                                  data-testid="my-id-123-switch"
-                                  disabled={false}
-                                  id="my-id-123"
-                                  isLoading={false}
-                                  name="name"
-                                  onBlur={[Function]}
-                                  onClick={[Function]}
-                                  onFocus={[Function]}
-                                  role="switch"
-                                  value="value"
-                                >
-                                  <StyledComponent
-                                    aria-checked={false}
-                                    aria-labelledby="my-id-123-label"
-                                    checked={false}
-                                    data-testid="my-id-123-switch"
-                                    disabled={false}
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "styles__Button-i9h5g3-0",
-                                          "isStatic": false,
-                                          "lastClassName": "c1",
-                                          "rules": Array [
-                                            [Function],
-                                          ],
-                                        },
-                                        "displayName": "styles__Button",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "styles__Button-i9h5g3-0",
-                                        "target": "button",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    id="my-id-123"
-                                    isLoading={false}
-                                    name="name"
-                                    onBlur={[Function]}
-                                    onClick={[Function]}
-                                    onFocus={[Function]}
-                                    role="switch"
-                                    value="value"
-                                  >
-                                    <button
-                                      aria-checked={false}
-                                      aria-labelledby="my-id-123-label"
-                                      checked={false}
-                                      className="c1"
-                                      data-testid="my-id-123-switch"
-                                      disabled={false}
-                                      id="my-id-123"
-                                      name="name"
-                                      onBlur={[Function]}
-                                      onClick={[Function]}
-                                      onFocus={[Function]}
-                                      role="switch"
-                                      value="value"
-                                    >
-                                      <styles__Switch
-                                        aria-checked={false}
-                                        data-testid="my-id-123-switch"
-                                        isLoading={false}
-                                        switchDisabled={false}
-                                        switchOn={false}
-                                      >
-                                        <StyledComponent
-                                          aria-checked={false}
-                                          data-testid="my-id-123-switch"
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "styles__Switch-i9h5g3-2",
-                                                "isStatic": false,
-                                                "lastClassName": "c2",
-                                                "rules": Array [
-                                                  [Function],
-                                                ],
-                                              },
-                                              "displayName": "styles__Switch",
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "styles__Switch-i9h5g3-2",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                          isLoading={false}
-                                          switchDisabled={false}
-                                          switchOn={false}
-                                        >
-                                          <span
-                                            aria-checked={false}
-                                            className="c2"
-                                            data-testid="my-id-123-switch"
-                                          >
-                                            <styles__Slider
-                                              switchOn={false}
-                                            >
-                                              <StyledComponent
-                                                forwardedComponent={
-                                                  Object {
-                                                    "$$typeof": Symbol(react.forward_ref),
-                                                    "attrs": Array [],
-                                                    "componentStyle": ComponentStyle {
-                                                      "componentId": "styles__Slider-i9h5g3-1",
-                                                      "isStatic": false,
-                                                      "lastClassName": "c3",
-                                                      "rules": Array [
-                                                        [Function],
-                                                      ],
-                                                    },
-                                                    "displayName": "styles__Slider",
-                                                    "foldedComponentIds": Array [],
-                                                    "render": [Function],
-                                                    "styledComponentId": "styles__Slider-i9h5g3-1",
-                                                    "target": "span",
-                                                    "toString": [Function],
-                                                    "warnTooManyClasses": [Function],
-                                                    "withComponent": [Function],
-                                                  }
-                                                }
-                                                forwardedRef={null}
-                                                switchOn={false}
-                                              >
-                                                <span
-                                                  className="c3"
-                                                />
-                                              </StyledComponent>
-                                            </styles__Slider>
-                                          </span>
-                                        </StyledComponent>
-                                      </styles__Switch>
-                                      <styles__SpinnerWrapper
-                                        switchOn={false}
-                                      >
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "styles__SpinnerWrapper-i9h5g3-4",
-                                                "isStatic": false,
-                                                "lastClassName": "c4",
-                                                "rules": Array [
-                                                  [Function],
-                                                ],
-                                              },
-                                              "displayName": "styles__SpinnerWrapper",
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "styles__SpinnerWrapper-i9h5g3-4",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                          switchOn={false}
-                                        >
-                                          <span
-                                            className="c4"
-                                          >
-                                            <Spinner
-                                              a11yLabel="A spinner is active. Please wait while the page completes a task."
-                                              dangerouslyHideVisibleLabel={false}
-                                              fullScreen={false}
-                                              inline={false}
-                                              size="small"
-                                              spinning={true}
-                                              tag="span"
-                                              variant="primary"
-                                            >
-                                              <SpinnerSvg
-                                                a11yLabel="A spinner is active. Please wait while the page completes a task."
-                                                overlay={false}
-                                                size="small"
-                                                tag="span"
-                                                variant="primary"
-                                              >
-                                                <SpinnerSvg__SvgContainer
-                                                  data-testid="spinner"
-                                                  overlay={false}
-                                                >
-                                                  <StyledComponent
-                                                    data-testid="spinner"
-                                                    forwardedComponent={
-                                                      Object {
-                                                        "$$typeof": Symbol(react.forward_ref),
-                                                        "attrs": Array [],
-                                                        "componentStyle": ComponentStyle {
-                                                          "componentId": "SpinnerSvg__SvgContainer-sc-6yts5w-0",
-                                                          "isStatic": false,
-                                                          "lastClassName": "c5",
-                                                          "rules": Array [
-                                                            [Function],
-                                                          ],
-                                                        },
-                                                        "displayName": "SpinnerSvg__SvgContainer",
-                                                        "foldedComponentIds": Array [],
-                                                        "render": [Function],
-                                                        "styledComponentId": "SpinnerSvg__SvgContainer-sc-6yts5w-0",
-                                                        "target": "div",
-                                                        "toString": [Function],
-                                                        "warnTooManyClasses": [Function],
-                                                        "withComponent": [Function],
-                                                      }
-                                                    }
-                                                    forwardedRef={null}
-                                                    overlay={false}
-                                                  >
-                                                    <div
-                                                      className="c5"
-                                                      data-testid="spinner"
-                                                    >
-                                                      <SpinnerSvg__StyledSvg
-                                                        aria-labelledby="spinner-title-1"
-                                                        aria-live="assertive"
-                                                        data-testid="svg"
-                                                        height="50"
-                                                        role="alert"
-                                                        tag="span"
-                                                        viewBox="0 0 100 100"
-                                                        width="50"
-                                                      >
-                                                        <StyledComponent
-                                                          aria-labelledby="spinner-title-1"
-                                                          aria-live="assertive"
-                                                          data-testid="svg"
-                                                          forwardedComponent={
-                                                            Object {
-                                                              "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [],
-                                                              "componentStyle": ComponentStyle {
-                                                                "componentId": "SpinnerSvg__StyledSvg-sc-6yts5w-1",
-                                                                "isStatic": false,
-                                                                "lastClassName": "c6",
-                                                                "rules": Array [
-                                                                  "animation:",
-                                                                  Keyframes {
-                                                                    "id": "sc-keyframes-cZxgpV",
-                                                                    "inject": [Function],
-                                                                    "name": "cZxgpV",
-                                                                    "rules": Array [
-                                                                      "@-webkit-keyframes cZxgpV{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                                                                      "@keyframes cZxgpV{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                                                                    ],
-                                                                    "toString": [Function],
-                                                                  },
-                                                                  " 1.8s linear infinite;",
-                                                                  [Function],
-                                                                  " ",
-                                                                  [Function],
-                                                                ],
-                                                              },
-                                                              "displayName": "SpinnerSvg__StyledSvg",
-                                                              "foldedComponentIds": Array [],
-                                                              "render": [Function],
-                                                              "styledComponentId": "SpinnerSvg__StyledSvg-sc-6yts5w-1",
-                                                              "target": "svg",
-                                                              "toString": [Function],
-                                                              "warnTooManyClasses": [Function],
-                                                              "withComponent": [Function],
-                                                            }
-                                                          }
-                                                          forwardedRef={null}
-                                                          height="50"
-                                                          role="alert"
-                                                          tag="span"
-                                                          viewBox="0 0 100 100"
-                                                          width="50"
-                                                        >
-                                                          <svg
-                                                            aria-labelledby="spinner-title-1"
-                                                            aria-live="assertive"
-                                                            className="c6"
-                                                            data-testid="svg"
-                                                            height="50"
-                                                            role="alert"
-                                                            viewBox="0 0 100 100"
-                                                            width="50"
-                                                          >
-                                                            <title
-                                                              id="spinner-title-1"
-                                                            >
-                                                              A spinner is active. Please wait while the page completes a task.
-                                                            </title>
-                                                            <SpinnerSvg__SvgCircle
-                                                              cx="50"
-                                                              cy="50"
-                                                              fill="none"
-                                                              r="20"
-                                                              strokeDasharray="89, 200"
-                                                              strokeDashoffset="0"
-                                                              strokeLinecap="round"
-                                                              strokeWidth="4"
-                                                              variant="primary"
-                                                            >
-                                                              <StyledComponent
-                                                                cx="50"
-                                                                cy="50"
-                                                                fill="none"
-                                                                forwardedComponent={
-                                                                  Object {
-                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                    "attrs": Array [],
-                                                                    "componentStyle": ComponentStyle {
-                                                                      "componentId": "SpinnerSvg__SvgCircle-sc-6yts5w-2",
-                                                                      "isStatic": false,
-                                                                      "lastClassName": "c7",
-                                                                      "rules": Array [
-                                                                        "animation:",
-                                                                        Keyframes {
-                                                                          "id": "sc-keyframes-drFgOE",
-                                                                          "inject": [Function],
-                                                                          "name": "drFgOE",
-                                                                          "rules": Array [
-                                                                            "@-webkit-keyframes drFgOE{0%{stroke-dasharray:1,200;stroke-dashoffset:0;}50%{stroke-dasharray:89,200;stroke-dashoffset:-35;}100%{stroke-dasharray:89,200;stroke-dashoffset:-124;}}",
-                                                                            "@keyframes drFgOE{0%{stroke-dasharray:1,200;stroke-dashoffset:0;}50%{stroke-dasharray:89,200;stroke-dashoffset:-35;}100%{stroke-dasharray:89,200;stroke-dashoffset:-124;}}",
-                                                                          ],
-                                                                          "toString": [Function],
-                                                                        },
-                                                                        " 1.7s ease-in-out infinite 0s;",
-                                                                        [Function],
-                                                                        " ",
-                                                                        [Function],
-                                                                      ],
-                                                                    },
-                                                                    "displayName": "SpinnerSvg__SvgCircle",
-                                                                    "foldedComponentIds": Array [],
-                                                                    "render": [Function],
-                                                                    "styledComponentId": "SpinnerSvg__SvgCircle-sc-6yts5w-2",
-                                                                    "target": "circle",
-                                                                    "toString": [Function],
-                                                                    "warnTooManyClasses": [Function],
-                                                                    "withComponent": [Function],
-                                                                  }
-                                                                }
-                                                                forwardedRef={null}
-                                                                r="20"
-                                                                strokeDasharray="89, 200"
-                                                                strokeDashoffset="0"
-                                                                strokeLinecap="round"
-                                                                strokeWidth="4"
-                                                                variant="primary"
-                                                              >
-                                                                <circle
-                                                                  className="c7"
-                                                                  cx="50"
-                                                                  cy="50"
-                                                                  fill="none"
-                                                                  r="20"
-                                                                  strokeDasharray="89, 200"
-                                                                  strokeDashoffset="0"
-                                                                  strokeLinecap="round"
-                                                                  strokeWidth="4"
-                                                                />
-                                                              </StyledComponent>
-                                                            </SpinnerSvg__SvgCircle>
-                                                          </svg>
-                                                        </StyledComponent>
-                                                      </SpinnerSvg__StyledSvg>
-                                                    </div>
-                                                  </StyledComponent>
-                                                </SpinnerSvg__SvgContainer>
-                                              </SpinnerSvg>
-                                            </Spinner>
-                                          </span>
-                                        </StyledComponent>
-                                      </styles__SpinnerWrapper>
-                                    </button>
-                                  </StyledComponent>
-                                </styles__Button>
-                              </div>
-                            </StyledComponent>
-                          </styles__InputSwitchWrapper>
-                        </div>
-                      </Col>
-                    </Subscriber>
-                  </Col>
-                </div>
-              </Row>
-            </Row>
-          </div>
-        </Grid>
-      </Broadcast>
-    </FlexGrid>
-  </label>
+                                  className="c4"
+                                />
+                              </StyledComponent>
+                            </styles__Slider>
+                          </span>
+                        </StyledComponent>
+                      </styles__Switch>
+                    </button>
+                  </StyledComponent>
+                </styles__Button>
+              </Spinner>
+            </div>
+          </StyledComponent>
+        </styles__InputSwitchWrapper>
+      </label>
+    </StyledComponent>
+  </StyledLabel>
 </ToggleSwitch>
 `;

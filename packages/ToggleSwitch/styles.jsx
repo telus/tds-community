@@ -1,13 +1,22 @@
 import styled from 'styled-components'
-import { colorAccessibleGreen, colorGainsboro, colorShuttleGrey } from '@tds/core-colours'
+import { colorAccessibleGreen, colorGainsboro } from '@tds/core-colours'
+
+export const StyledLabel = styled.label({
+  display: 'flex',
+  justifyContent: 'space-between',
+})
+
+StyledLabel.displayName = 'StyledLabel'
 
 export const Button = styled.button(props => ({
+  appearance: 'none',
+  background: 'none',
+  boxShadow: 'none',
   position: 'relative',
   border: 'none',
-  margin: '0 5rem',
+  height: '26px',
   padding: '0',
   '&:focus': {
-    boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
     outline: props.isLoading ? 'none' : 'auto',
     outlineColor: 'rgb(59, 153, 252)',
     outlineWidth: '5px',
@@ -18,34 +27,25 @@ export const Slider = styled.span(props => ({
   position: 'absolute',
   width: '18px',
   height: '18px',
-  top: '2px',
-  left: props.switchOn ? '24px' : '2px',
+  top: '3px',
+  left: props.switchOn ? '20px' : '3px',
   borderRadius: '18px',
   backgroundColor: 'white',
   transition: 'left 0.25s',
+  boxShadow: '0 0 2px 0 #000',
 }))
 
 export const Switch = styled.span(props => ({
-  cursor: props.switchDisabled ? 'not-allowed' : 'pointer',
+  position: 'relative',
+  top: '2px',
   display: 'inline-block',
-  visibility: props.switchOn && props.isLoading ? 'hidden' : 'none',
-  width: '44px',
-  minWidth: '44px',
-  height: '22px',
-  borderRadius: '22px',
+  width: '40px',
+  height: '24px',
+  borderRadius: '24px',
   backgroundColor: props.switchOn ? colorAccessibleGreen : colorGainsboro,
-  position: 'absolute',
-  top: '3px',
 }))
 
 export const InputSwitchWrapper = styled.div({
   display: 'flex',
   justifyContent: 'center',
 })
-
-export const SpinnerWrapper = styled.span(props => ({
-  position: 'absolute',
-  display: props.switchOn ? 'block' : 'none',
-  top: '-11px',
-  left: '-1px',
-}))

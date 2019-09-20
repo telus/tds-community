@@ -14,8 +14,11 @@ export const Button = styled.button(props => ({
   boxShadow: 'none',
   position: 'relative',
   border: 'none',
-  height: '26px',
   padding: '0',
+  width: '40px',
+  height: '24px',
+  borderRadius: '24px',
+  backgroundColor: props['aria-checked'] ? colorAccessibleGreen : colorGainsboro,
   '&:focus': {
     outline: props.isLoading ? 'none' : 'auto',
     outlineColor: 'rgb(59, 153, 252)',
@@ -28,21 +31,11 @@ export const Slider = styled.span(props => ({
   width: '18px',
   height: '18px',
   top: '3px',
-  left: props.switchOn ? '20px' : '3px',
+  left: props.pressed ? '20px' : '3px',
   borderRadius: '18px',
   backgroundColor: 'white',
   transition: 'left 0.25s',
   boxShadow: '0 0 2px 0 #000',
-}))
-
-export const Switch = styled.span(props => ({
-  position: 'relative',
-  top: '2px',
-  display: 'inline-block',
-  width: '40px',
-  height: '24px',
-  borderRadius: '24px',
-  backgroundColor: props.switchOn ? colorAccessibleGreen : colorGainsboro,
 }))
 
 export const InputSwitchWrapper = styled.div({

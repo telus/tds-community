@@ -20,8 +20,11 @@ exports[`ToggleSwitch renders 1`] = `
   box-shadow: none;
   position: relative;
   border: none;
-  height: 26px;
   padding: 0;
+  width: 40px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #d8d8d8;
 }
 
 .c2:focus {
@@ -30,7 +33,7 @@ exports[`ToggleSwitch renders 1`] = `
   outline-width: 5px;
 }
 
-.c4 {
+.c3 {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -41,16 +44,6 @@ exports[`ToggleSwitch renders 1`] = `
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
   box-shadow: 0 0 2px 0 #000;
-}
-
-.c3 {
-  position: relative;
-  top: 2px;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-  border-radius: 24px;
-  background-color: #d8d8d8;
 }
 
 .c1 {
@@ -67,13 +60,10 @@ exports[`ToggleSwitch renders 1`] = `
 <ToggleSwitch
   checked={false}
   id="my-id-123"
-  isLoading={false}
   label="label"
   name="name"
-  onBlur={null}
-  onClick={null}
-  onFocus={null}
-  spinnerLabel={null}
+  onClick={[MockFunction]}
+  spinnerLabel="Request is processing."
   toolTipCopy="en"
   toolTipText=""
   value="value"
@@ -142,7 +132,7 @@ exports[`ToggleSwitch renders 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "styles__InputSwitchWrapper-i9h5g3-4",
+                  "componentId": "styles__InputSwitchWrapper-i9h5g3-3",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -152,7 +142,7 @@ exports[`ToggleSwitch renders 1`] = `
                 "displayName": "styles__InputSwitchWrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "styles__InputSwitchWrapper-i9h5g3-4",
+                "styledComponentId": "styles__InputSwitchWrapper-i9h5g3-3",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -169,7 +159,7 @@ exports[`ToggleSwitch renders 1`] = `
                 dangerouslyHideVisibleLabel={false}
                 fullScreen={false}
                 inline={true}
-                label={null}
+                label="Request is processing."
                 size="small"
                 spinning={false}
                 tag="span"
@@ -178,21 +168,16 @@ exports[`ToggleSwitch renders 1`] = `
                 <styles__Button
                   aria-checked={false}
                   aria-labelledby="my-id-123-label"
-                  checked={false}
                   data-testid="my-id-123-switch"
                   id="my-id-123"
-                  isLoading={false}
                   name="name"
-                  onBlur={[Function]}
                   onClick={[Function]}
-                  onFocus={[Function]}
                   role="switch"
                   value="value"
                 >
                   <StyledComponent
                     aria-checked={false}
                     aria-labelledby="my-id-123-label"
-                    checked={false}
                     data-testid="my-id-123-switch"
                     forwardedComponent={
                       Object {
@@ -218,53 +203,42 @@ exports[`ToggleSwitch renders 1`] = `
                     }
                     forwardedRef={null}
                     id="my-id-123"
-                    isLoading={false}
                     name="name"
-                    onBlur={[Function]}
                     onClick={[Function]}
-                    onFocus={[Function]}
                     role="switch"
                     value="value"
                   >
                     <button
                       aria-checked={false}
                       aria-labelledby="my-id-123-label"
-                      checked={false}
                       className="c2"
                       data-testid="my-id-123-switch"
                       id="my-id-123"
                       name="name"
-                      onBlur={[Function]}
                       onClick={[Function]}
-                      onFocus={[Function]}
                       role="switch"
                       value="value"
                     >
-                      <styles__Switch
-                        aria-checked={false}
-                        data-testid="my-id-123-switch"
-                        isLoading={false}
-                        switchOn={false}
+                      <styles__Slider
+                        pressed={false}
                       >
                         <StyledComponent
-                          aria-checked={false}
-                          data-testid="my-id-123-switch"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__Switch-i9h5g3-3",
+                                "componentId": "styles__Slider-i9h5g3-2",
                                 "isStatic": false,
                                 "lastClassName": "c3",
                                 "rules": Array [
                                   [Function],
                                 ],
                               },
-                              "displayName": "styles__Switch",
+                              "displayName": "styles__Slider",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "styles__Switch-i9h5g3-3",
+                              "styledComponentId": "styles__Slider-i9h5g3-2",
                               "target": "span",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -272,51 +246,13 @@ exports[`ToggleSwitch renders 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          isLoading={false}
-                          switchOn={false}
+                          pressed={false}
                         >
                           <span
-                            aria-checked={false}
                             className="c3"
-                            data-testid="my-id-123-switch"
-                          >
-                            <styles__Slider
-                              switchOn={false}
-                            >
-                              <StyledComponent
-                                forwardedComponent={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "styles__Slider-i9h5g3-2",
-                                      "isStatic": false,
-                                      "lastClassName": "c4",
-                                      "rules": Array [
-                                        [Function],
-                                      ],
-                                    },
-                                    "displayName": "styles__Slider",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "styledComponentId": "styles__Slider-i9h5g3-2",
-                                    "target": "span",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                forwardedRef={null}
-                                switchOn={false}
-                              >
-                                <span
-                                  className="c4"
-                                />
-                              </StyledComponent>
-                            </styles__Slider>
-                          </span>
+                          />
                         </StyledComponent>
-                      </styles__Switch>
+                      </styles__Slider>
                     </button>
                   </StyledComponent>
                 </styles__Button>

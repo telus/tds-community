@@ -9,13 +9,7 @@ It is recommended to maintain a close enough distance for better user experience
 <FlexGrid gutter={false}>
   <FlexGrid.Row>
     <FlexGrid.Col xs={3}>
-      <ToggleSwitch
-        id="toggle-default"
-        name="name"
-        value="value"
-        label="Enable data"
-        toolTipText="Tool Tip Text"
-      />
+      <ToggleSwitch id="toggle-default" label="Enable data" toolTipText="Tool Tip Text" />
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
@@ -28,20 +22,32 @@ When `ToggleSwitch` is used with `Spinner` that is triggered by `isLoading` prop
 See example below that demonstrates it.
 
 ```jsx
-<FlexGrid gutter={false}>
-  <FlexGrid.Row>
-    <FlexGrid.Col xs={3}>
-      <ToggleSwitch
-        id="toggle-accessibility"
-        name="name"
-        value="value"
-        label="Enable data"
-        toolTipText="Tool Tip Text"
-        checked
-        isLoading
-        spinnerLabel="Request is processing."
-      />
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-</FlexGrid>
+const App = () => {
+  const [isChecked, setIsChecked] = React.useState(false)
+
+  const handleClick = event => {
+    setTimeout(() => {
+      setIsChecked(!isChecked)
+    }, 2000)
+  }
+
+  return (
+    <FlexGrid gutter={false}>
+      <FlexGrid.Row>
+        <FlexGrid.Col xs={3}>
+          <ToggleSwitch
+            id="toggle-accessibility"
+            label="Enable data"
+            toolTipText="Tool Tip Text"
+            checked={isChecked}
+            spinnerLabel="Request is processing."
+            onClick={handleClick}
+          />
+        </FlexGrid.Col>
+      </FlexGrid.Row>
+    </FlexGrid>
+  )
+}
+
+;<App />
 ```

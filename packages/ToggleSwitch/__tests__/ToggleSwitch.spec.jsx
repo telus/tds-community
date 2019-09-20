@@ -4,7 +4,14 @@ import { shallow, mount } from 'enzyme'
 import ToggleSwitch from '../ToggleSwitch'
 
 describe('ToggleSwitch', () => {
-  const defaultProps = { id: 'my-id-123', label: 'label', name: 'name', value: 'value' }
+  const mockOnClick = jest.fn()
+  const defaultProps = {
+    id: 'my-id-123',
+    label: 'label',
+    name: 'name',
+    value: 'value',
+    onClick: mockOnClick,
+  }
 
   const doShallow = props => shallow(<ToggleSwitch {...defaultProps} {...props} />)
 
@@ -49,7 +56,7 @@ describe('ToggleSwitch', () => {
       toggleSwitch
         .find(`styles__Button#${defaultProps.id}`)
         .children(0)
-        .prop('checked')
+        .prop('aria-checked')
     ).toEqual(false)
 
     expect(
@@ -66,7 +73,7 @@ describe('ToggleSwitch', () => {
       toggleSwitch
         .find(`#${defaultProps.id}`)
         .at(0)
-        .prop('checked')
+        .prop('aria-checked')
     ).toEqual(true)
 
     expect(
@@ -78,18 +85,20 @@ describe('ToggleSwitch', () => {
   })
 
   it('internal state should toggle checked when the input is changed by default', () => {
-    const toggleSwitch = doShallow()
+    const toggleSwitch = doShallow({ checked: true, onClick: mockOnClick })
+
+    const mockEvent = { persist: () => {} }
 
     toggleSwitch
       .find(`#${defaultProps.id}`)
       .at(0)
-      .simulate('click')
+      .simulate('click', mockEvent)
 
     expect(
       toggleSwitch
         .find(`#${defaultProps.id}`)
         .at(0)
-        .prop('checked')
+        .prop('aria-checked')
     ).toEqual(true)
 
     expect(
@@ -101,7 +110,6 @@ describe('ToggleSwitch', () => {
   })
 
   it('should override internal state change when onClick handler is provided ', () => {
-    const mockOnClick = jest.fn()
     const mockEvent = { persist: () => {} }
     const toggleSwitch = doShallow({ checked: false, onClick: mockOnClick })
 
@@ -115,7 +123,7 @@ describe('ToggleSwitch', () => {
       toggleSwitch
         .find(`#${defaultProps.id}`)
         .at(0)
-        .prop('checked')
+        .prop('aria-checked')
     ).toEqual(false)
 
     expect(

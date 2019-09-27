@@ -29,6 +29,7 @@ const ToggleSwitch = ({
   }
 
   const labelledById = `${id}-label`
+  const buttonRef = React.useRef()
 
   const [isPressed, setIsPressed] = useState(checked)
   const [isLoading, setIsLoading] = useState(false)
@@ -47,7 +48,10 @@ const ToggleSwitch = ({
         setIsSpinning(false)
       }
     }, 250) // time needed for a slider to move
-    return () => clearTimeout(timer)
+    return () => {
+      buttonRef.current.focus()
+      clearTimeout(timer)
+    }
   }, [isLoading])
 
   const handleClick = event => {
@@ -56,13 +60,21 @@ const ToggleSwitch = ({
     onClick(event)
   }
 
+  const handleTooltipClick = event => {
+    event.preventDefault()
+  }
+
   return (
     <StyledLabel htmlFor={id}>
       <Box inline between={2}>
         <Text id={labelledById} size="medium">
           {label}
         </Text>
-        {tooltipText && tooltipCopy && <Tooltip copy={tooltipCopy}>{tooltipText}</Tooltip>}
+        {tooltipText && tooltipCopy && (
+          <Tooltip onClick={handleTooltipClick} copy={tooltipCopy}>
+            {tooltipText}
+          </Tooltip>
+        )}
       </Box>
       <InputSwitchWrapper>
         <Spinner tag="span" spinning={isSpinning} label={spinnerLabel} size="small" inline>
@@ -74,6 +86,7 @@ const ToggleSwitch = ({
             aria-labelledby={labelledById}
             data-testid={`${id}-switch`}
             onClick={!isLoading ? handleClick : null}
+            ref={buttonRef}
           >
             <Slider pressed={isPressed} />
           </Button>

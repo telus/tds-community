@@ -201,7 +201,58 @@ exports[`ToggleSwitch renders 1`] = `
                         "withComponent": [Function],
                       }
                     }
-                    forwardedRef={null}
+                    forwardedRef={
+                      Object {
+                        "current": .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #d8d8d8;
+}
+
+.c0:focus {
+  outline: auto;
+  outline-color: rgb(59,153,252);
+  outline-width: 5px;
+}
+
+.c1 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  left: 3px;
+  border-radius: 18px;
+  background-color: white;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s;
+  box-shadow: 0 0 2px 0 #000;
+}
+
+<button
+                          aria-checked="false"
+                          aria-labelledby="my-id-123-label"
+                          class="c0"
+                          data-testid="my-id-123-switch"
+                          id="my-id-123"
+                          name="name"
+                          role="switch"
+                          value="value"
+                        >
+                          <span
+                            class="c1"
+                          />
+                        </button>,
+                      }
+                    }
                     id="my-id-123"
                     name="name"
                     onClick={[Function]}

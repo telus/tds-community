@@ -7,7 +7,7 @@
   The distance between the label and the button can be controlled by the width of the container that wraps `ToggleSwitch`
   It is recommended to maintain a close enough distance for better user experience and accessibility
   `FlexGrid` can be used as a container that can control this distance. This is demonstrated in the example below
-- `ToggleSwitch` can also be used with an optional `ToolTip` to provide additional explanation or instructions. This `ToolTip` can be added by providing `toolTipText` and `toolTipCopy`
+- `ToggleSwitch` can also be used with an optional `Tooltip` to provide additional explanation or instructions. This `Tooltip` can be added by providing `tooltipText` and `tooltipCopy`
 
 ### Accessibility
 
@@ -32,8 +32,8 @@ const App = () => {
           <ToggleSwitch
             id="toggle-accessibility"
             label="Enable data"
-            toolTipCopy="en"
-            toolTipText="Tool Tip Text"
+            tooltipCopy="en"
+            tooltipText="Tool Tip Text"
             spinnerLabel="Request is processing."
             checked={isChecked}
             onClick={handleClick}

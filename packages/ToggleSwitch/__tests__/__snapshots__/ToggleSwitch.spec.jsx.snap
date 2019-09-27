@@ -65,7 +65,6 @@ exports[`ToggleSwitch renders 1`] = `
   onClick={[MockFunction]}
   spinnerLabel="Request is processing."
   toolTipCopy="en"
-  toolTipText=""
   value="value"
 >
   <StyledLabel
@@ -173,6 +172,7 @@ exports[`ToggleSwitch renders 1`] = `
                   name="name"
                   onClick={[Function]}
                   role="switch"
+                  toolTipCopy="en"
                   value="value"
                 >
                   <StyledComponent
@@ -206,6 +206,7 @@ exports[`ToggleSwitch renders 1`] = `
                     name="name"
                     onClick={[Function]}
                     role="switch"
+                    toolTipCopy="en"
                     value="value"
                   >
                     <button

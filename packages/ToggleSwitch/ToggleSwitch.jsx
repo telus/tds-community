@@ -6,7 +6,9 @@ import Text from '@tds/core-text'
 import Box from '@tds/core-box'
 import Tooltip from '@tds/core-tooltip'
 import Spinner from '@tds/core-spinner'
+
 import { StyledLabel, Button, Slider, InputSwitchWrapper } from './styles'
+import warn from '../../shared/utils/warn'
 
 /**
  * @version ./package.json
@@ -15,13 +17,17 @@ import { StyledLabel, Button, Slider, InputSwitchWrapper } from './styles'
 const ToggleSwitch = ({
   id,
   label,
-  toolTipText,
+  tooltipText,
   checked,
   onClick,
-  toolTipCopy,
+  tooltipCopy,
   spinnerLabel,
   ...rest
 }) => {
+  if (tooltipText && !tooltipCopy) {
+    warn('@tds/community-toggle-switch', 'You must provide tooltipCopy when using tooltipText')
+  }
+
   const labelledById = `${id}-label`
 
   const [isPressed, setIsPressed] = useState(checked)
@@ -56,7 +62,7 @@ const ToggleSwitch = ({
         <Text id={labelledById} size="medium">
           {label}
         </Text>
-        {toolTipText && toolTipCopy && <Tooltip copy={toolTipCopy}>{toolTipText}</Tooltip>}
+        {tooltipText && tooltipCopy && <Tooltip copy={tooltipCopy}>{tooltipText}</Tooltip>}
       </Box>
       <InputSwitchWrapper>
         <Spinner tag="span" spinning={isSpinning} label={spinnerLabel} size="small" inline>
@@ -87,11 +93,11 @@ ToggleSwitch.propTypes = {
   /** The aria-checked state of a button. */
   checked: PropTypes.bool,
 
-  /** Text written for TDS ToolTip. */
-  toolTipText: PropTypes.string,
+  /** Text written for TDS Tooltip. */
+  tooltipText: PropTypes.string,
 
-  /** Language provided to the copy prop in TDS ToolTip (en, fr). */
-  toolTipCopy: PropTypes.string,
+  /** Language provided to the copy prop in TDS Tooltip (en, fr). */
+  tooltipCopy: PropTypes.string,
 
   /** Communicates a message to assistive technology while spinner is visible. */
   spinnerLabel: PropTypes.string.isRequired,
@@ -103,8 +109,8 @@ ToggleSwitch.propTypes = {
 
 ToggleSwitch.defaultProps = {
   checked: false,
-  toolTipText: '',
-  toolTipCopy: 'en',
+  tooltipText: undefined,
+  tooltipCopy: undefined,
 }
 
 export default ToggleSwitch

@@ -28,7 +28,7 @@ const App = () => {
   return (
     <FlexGrid gutter={false}>
       <FlexGrid.Row>
-        <FlexGrid.Col xs={3}>
+        <FlexGrid.Col xs={12} md={3}>
           <ToggleSwitch
             id="toggle-accessibility"
             label="Enable data"

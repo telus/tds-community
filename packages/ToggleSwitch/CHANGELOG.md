@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-toggle-switch@1.0.4...@tds/community-toggle-switch@2.0.0) (2019-09-30)
+
+
+### Bug Fixes
+
+* **community-toggle-switch:** design changes and refactoring ([f813eeb](https://github.com/telus/tds-community/commit/f813eeb))
+* **community-toggle-switch:** making adjustments to padding ([bb20e07](https://github.com/telus/tds-community/commit/bb20e07))
+
+
+### Features
+
+* **community-toggle-switch:** new design changes for toggleSwitch ([be03ce3](https://github.com/telus/tds-community/commit/be03ce3)), closes [#112](https://github.com/telus/tds-community/issues/112)
+
+
+### BREAKING CHANGES
+
+* **community-toggle-switch:** add styled-components to peerDependencies
+* **community-toggle-switch:** default style changes
+* **community-toggle-switch:** New design layout for toggleSwitch, styled-components is now a peer dependency
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-toggle-switch@1.0.3...@tds/community-toggle-switch@1.0.4) (2019-09-17)
 
 **Note:** Version bump only for package @tds/community-toggle-switch

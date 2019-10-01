@@ -4,10 +4,11 @@ exports[`Calendar renders 1`] = `
 <styles__CalendarContainer>
   <label
     htmlFor="appointment_calendar"
-  />
-  <styles__LabelText>
-    Book an appointment
-  </styles__LabelText>
+  >
+    <styles__LabelText>
+      Book an appointment
+    </styles__LabelText>
+  </label>
   <withStyles(SingleDatePicker)
     anchorDirection="left"
     appendToBody={false}

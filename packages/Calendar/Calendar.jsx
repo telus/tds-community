@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import momentPropTypes from 'react-moment-proptypes'
+import moment from 'moment'
+import isBeforeDay from 'react-dates/lib/utils/isBeforeDay'
 
 import 'react-dates/initialize'
 import SingleDatePicker from 'react-dates/lib/components/SingleDatePicker'
 import DayPickerSingleDateController from 'react-dates/lib/components/DayPickerSingleDateController'
 import 'react-dates/lib/css/_datepicker.css'
 
-import safeRest from '@tds/shared-safe-rest'
+import { safeRest } from '@tds/util-helpers'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 
@@ -52,8 +54,9 @@ class Calendar extends Component {
     /* eslint-disable jsx-a11y/label-has-for */
     return (
       <CalendarContainer {...safeRest(propsWithoutStyling)}>
-        <label htmlFor={id} />
-        <LabelText>{label}</LabelText>
+        <label htmlFor={id}>
+          <LabelText>{label}</LabelText>
+        </label>
         <DatePickerVariant
           id={id}
           date={date}
@@ -64,11 +67,11 @@ class Calendar extends Component {
           hideKeyboardShortcutsPanel={true}
           displayFormat="DD / MM / YYYY"
           placeholder="DD / MM / YYYY"
-          isDayBlocked={isDayDisabled}
           keepOpenOnDateSelect={false}
           daySize={getResponsiveDaySize()}
           navPrev={getIcon('leftChevron')}
           navNext={getIcon('chevron')}
+          isOutsideRange={day => isBeforeDay(day, moment())}
         />
       </CalendarContainer>
     )

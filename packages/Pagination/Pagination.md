@@ -4,7 +4,21 @@
 - The component can take any content as children inside a Panel
 - Any number of panels can be used to paginate
 - Style your content within Panel however you wish
-- copy can be passed in as a prop, en is set as default
+
+### Pagination usage and length
+
+Depending on the viewport and the amount of panels, the `Pagination` component may render elipsis if there are many pages. The below two examples demonstrate this on both desktop and mobile.
+
+Note that the `copy` prop must be provided at all times for the correct accessible text.
+
+```jsx
+<Pagination copy="en">
+  <Pagination.Panel>Content 1: any type of content can be used here.</Pagination.Panel>
+  <Pagination.Panel>Content 2: use responsibly.</Pagination.Panel>
+  <Pagination.Panel>Content 3: Pagination Panels take &lt;div /&gt; tags, image tags, heading tags and so on.</Pagination.Panel>
+</Pagination>
+<Box inset={4}> </Box>
+```
 
 ```jsx
 <Pagination copy="en">

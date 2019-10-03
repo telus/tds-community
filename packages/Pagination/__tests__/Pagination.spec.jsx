@@ -5,7 +5,7 @@ import Pagination from '../Pagination'
 
 describe('Pagination', () => {
   const children = (
-    <Pagination>
+    <Pagination copy="en">
       <Pagination.Panel>Content 1</Pagination.Panel>
       <Pagination.Panel>Content 2</Pagination.Panel>
       <Pagination.Panel>Content 3</Pagination.Panel>

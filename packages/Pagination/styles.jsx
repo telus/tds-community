@@ -11,7 +11,7 @@ export const Controls = styled.div({
   position: 'relative',
   justifyContent: 'center',
   ...media.from('md').css({
-    justifyContent: 'left',
+    justifyContent: 'flex-start',
   }),
   width: '100%',
 })
@@ -43,7 +43,6 @@ export const PaginationButtonStyle = styled.button({
   margin: '0',
   textAlign: 'center',
   padding: '0',
-  cursor: 'pointer',
   borderRadius: '4px',
   ...media.from('md').css({
     background: 'none',
@@ -74,35 +73,24 @@ export const GeneralPaginationButton = styled.button({
   background: 'none',
   border: 'none',
   color: colorTelusPurple,
-  cursor: 'pointer',
   padding: '0 5px',
   minWidth: '32px',
   margin: '0',
-  width: 'auto',
-  height: '32px',
-  ...media.from('md').css({
-    minWidth: '22px',
-    height: '24px',
-  }),
+  width: '100%',
+  height: '100%',
 })
 
 export const GeneralPagination = styled.li({
   display: 'inline-block',
   color: colorTelusPurple,
-  cursor: 'pointer',
   backgroundColor: colorWhiteLilac,
   height: '44px',
   lineHeight: '41px',
   width: '44px',
   minWidth: '32px',
-  ...media.from('md').css({
-    display: 'inline-block',
-    border: `1px solid ${colorWhiteLilac}`,
-    minWidth: '22px',
-    '&:hover': {
-      border: `1px solid ${colorTelusPurple}`,
-    },
-  }),
+  '&:hover': {
+    border: `1px solid ${colorTelusPurple}`,
+  },
   listStyle: 'none',
   marginRight: '0.5rem',
   textAlign: 'center',
@@ -110,11 +98,18 @@ export const GeneralPagination = styled.li({
   '&:first-child': {
     marginLeft: '0.5rem',
   },
+  ...media.from('md').css({
+    display: 'inline-block',
+    lineHeight: '44px',
+    border: `1px solid ${colorWhiteLilac}`,
+    minWidth: '22px',
+  }),
 })
 
 export const PaginationEllipsis = styled(GeneralPagination)({
   display: 'inline-block',
   width: '16px',
+  height: '32px',
   minWidth: '16px',
   backgroundColor: 'inherit',
   lineHeight: '28px',
@@ -129,8 +124,11 @@ export const PaginationEllipsis = styled(GeneralPagination)({
 
 export const PaginationCurrent = styled(GeneralPagination)({
   color: colorWhiteLilac,
-  lineHeight: '40px',
+  lineHeight: '46px',
+  verticalAlign: 'bottom',
   padding: '0 5px',
+  border: 'none',
+  '&:hover': { border: 'none' },
   backgroundColor: colorTelusPurple,
   ...media.from('md').css({
     border: `1px solid ${colorTelusPurple}`,

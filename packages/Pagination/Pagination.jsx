@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { safeRest } from '@tds/util-helpers'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import A11yContent from '@tds/core-a11y-content'
+import { getCopy, safeRest } from '@tds/util-helpers'
+
 import Panel from './Panel/Panel'
 import {
   PaginationContainer,
@@ -20,6 +21,7 @@ import {
   NextPaginationContainer,
 } from './styles'
 import hash from './hash'
+import copyDictionary from './paginationText'
 
 /**
  * @version ./package.json
@@ -39,13 +41,23 @@ class Pagination extends Component {
     this.handleButtonState()
   }
 
-  checkForRegularTabs = index => {
+  checkForRegularTabs = (index, isMobile) => {
     const { current, panels } = this.state
     // Check if there are less than 7 panels,
     // if the index is at the first panel
     // if the index is next to the first panel
     // if current is less than three and index is less than five
     // and the inverse if current within two of total and index is greater than minus 4 of total
+    if (isMobile) {
+      return (
+        panels < 5 ||
+        index === 1 ||
+        index === panels ||
+        (current < 2 && index < 3) ||
+        (current > panels - 1 && index > panels - 2)
+      )
+    }
+
     return (
       panels < 7 ||
       index === 1 ||
@@ -57,12 +69,21 @@ class Pagination extends Component {
     )
   }
 
-  checkForEllipsis = index => {
+  checkForEllipsis = (index, isMobile) => {
     const { current, panels } = this.state
     // Check if we should render an ellipsis
     // if index is less than two or greater than two of current
     // if current is less than three and index is five
     // and the inverse if current is within two of total and index is total minus 5
+    if (isMobile) {
+      return (
+        index === current - 1 ||
+        index === current + 1 ||
+        (current < 2 && index === 2) ||
+        (current > panels - 1 && index === panels - 5) ||
+        (current === 1 && index === 3 && panels > 3)
+      )
+    }
     return (
       index === current - 2 ||
       index === current + 2 ||
@@ -71,9 +92,8 @@ class Pagination extends Component {
     )
   }
 
-  mapTabs = () => {
-    const goToText = this.props.copy === 'fr' ? 'Aller au panneau n°' : 'Go to panel number'
-    const currentText = this.props.copy === 'fr' ? '(page actuelle)' : '(current)'
+  mapTabs = isMobile => {
+    const { copy } = this.props
     let { current } = this.state
     // new set of rules, under mobile view , right before Tablet,
     // only show first, current, last, else, in between show ellipsis, only apply these rules under mobile view
@@ -84,24 +104,24 @@ class Pagination extends Component {
         return (
           <PaginationCurrent key={hash(`${i}-1`)}>
             {index}
-            <A11yContent>{currentText}</A11yContent>
+            <A11yContent>{getCopy(copyDictionary, copy).currentText}</A11yContent>
           </PaginationCurrent>
         )
       }
-      if (this.checkForRegularTabs(index)) {
+      if (this.checkForRegularTabs(index, isMobile)) {
         return (
           <GeneralPagination key={hash(`${i}-3`)}>
             <GeneralPaginationButton
               value={index}
               onClick={e => this.handleClick(e)}
-              aria-label={`${goToText} ${index}`}
+              aria-label={`${getCopy(copyDictionary, copy).goToText} ${index}`}
             >
               {index}
             </GeneralPaginationButton>
           </GeneralPagination>
         )
       }
-      if (this.checkForEllipsis(index)) {
+      if (this.checkForEllipsis(index, isMobile)) {
         return <PaginationEllipsis key={hash(`${i}-4`)}>...</PaginationEllipsis>
       }
 
@@ -119,95 +139,20 @@ class Pagination extends Component {
   }
 
   handleButtonState = () => {
-    if (this.state.current !== 1) {
-      this.setState({ showPrevious: true })
-    } else {
-      this.setState({ showPrevious: false })
-    }
-    if (this.state.current !== this.state.panels) {
-      this.setState({ showNext: true })
-    } else {
-      this.setState({ showNext: false })
-    }
-  }
-
-  renderMobileTabs = () => {
-    let { current } = this.state
-    const goToText = this.props.copy === 'fr' ? 'Aller au panneau n°' : 'Go to panel number'
-    const currentText = this.props.copy === 'fr' ? '(page actuelle)' : '(current)'
-    current = parseInt(current, 10) || 0
-    if (current === 1) {
-      return (
-        <React.Fragment>
-          <PaginationCurrent>
-            {current}
-            <A11yContent>{currentText}</A11yContent>
-          </PaginationCurrent>
-          <PaginationEllipsis>...</PaginationEllipsis>
-          <GeneralPagination>
-            <GeneralPaginationButton
-              value={this.props.children && this.props.children.length}
-              onClick={e => this.handleClick(e)}
-              aria-label={`${goToText} ${this.props.children.length}`}
-            >
-              {this.props.children && this.props.children.length}
-            </GeneralPaginationButton>
-          </GeneralPagination>
-        </React.Fragment>
-      )
-    }
-    if (current === this.props.children.length) {
-      return (
-        <React.Fragment>
-          <GeneralPagination>
-            <GeneralPaginationButton
-              value="1"
-              onClick={e => this.handleClick(e)}
-              aria-label={`${goToText} 1`}
-            >
-              1
-            </GeneralPaginationButton>
-          </GeneralPagination>
-          <PaginationEllipsis>...</PaginationEllipsis>
-          <PaginationCurrent>
-            {current}
-            <A11yContent>{currentText}</A11yContent>
-          </PaginationCurrent>
-        </React.Fragment>
-      )
-    }
-    return (
-      <React.Fragment>
-        <GeneralPagination>
-          <GeneralPaginationButton
-            value="1"
-            onClick={e => this.handleClick(e)}
-            aria-label={`${goToText} 1`}
-          >
-            1
-          </GeneralPaginationButton>
-        </GeneralPagination>
-        <PaginationEllipsis>...</PaginationEllipsis>
-        <PaginationCurrent>
-          {current}
-          <A11yContent>{currentText}</A11yContent>
-        </PaginationCurrent>
-        <PaginationEllipsis>...</PaginationEllipsis>
-        <GeneralPagination>
-          <GeneralPaginationButton
-            value={this.props.children && this.props.children.length}
-            onClick={e => this.handleClick(e)}
-            aria-label={`${goToText} ${this.props.children.length}`}
-          >
-            {this.props.children && this.props.children.length}
-          </GeneralPaginationButton>
-        </GeneralPagination>
-      </React.Fragment>
-    )
+    this.setState({
+      showPrevious: this.state.current !== 1,
+      showNext: this.state.current !== this.state.panels,
+    })
   }
 
   render() {
     const { children, copy, ...rest } = this.props
+
+    if (!Array.isArray(children) || children.length <= 1) {
+      // Pagination should not display the Controls when there is only one panel
+      return <Panel {...rest}>{children}</Panel>
+    }
+
     const { current } = this.state
     const increaseNumber = parseInt(current + 1, 10)
     const decreaseNumber = parseInt(current - 1, 10)
@@ -229,8 +174,8 @@ class Pagination extends Component {
               <ButtonLabel>{previousText}</ButtonLabel>
             </PaginationButtonStyle>
           </PrevPaginationContainer>
-          <PaginationList>{this.mapTabs()}</PaginationList>
-          <PaginationListMobile>{this.renderMobileTabs()}</PaginationListMobile>
+          <PaginationList>{this.mapTabs(false)}</PaginationList>
+          <PaginationListMobile>{this.mapTabs(true)}</PaginationListMobile>
           <NextPaginationContainer showNext={this.state.showNext}>
             <PaginationButtonStyle
               value={increaseNumber}
@@ -248,7 +193,7 @@ class Pagination extends Component {
 
 Pagination.propTypes = {
   /**
-   * The pagination panels. Must be at least one Pagination.Panel.
+   * The pagination panels. Must be at least one `<Pagination.Panel />`.
    */
   children: PropTypes.node.isRequired,
   /**

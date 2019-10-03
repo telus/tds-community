@@ -51,7 +51,6 @@ exports[`Pagination renders 1`] = `
   margin: 0;
   text-align: center;
   padding: 0;
-  cursor: pointer;
   border-radius: 4px;
 }
 
@@ -70,18 +69,16 @@ exports[`Pagination renders 1`] = `
   background: none;
   border: none;
   color: #4b286d;
-  cursor: pointer;
   padding: 0 5px;
   min-width: 32px;
   margin: 0;
-  width: auto;
-  height: 32px;
+  width: 100%;
+  height: 100%;
 }
 
 .c8 {
   display: inline-block;
   color: #4b286d;
-  cursor: pointer;
   background-color: #f2eff4;
   height: 44px;
   line-height: 41px;
@@ -93,6 +90,10 @@ exports[`Pagination renders 1`] = `
   border-radius: 4px;
 }
 
+.c8:hover {
+  border: 1px solid #4b286d;
+}
+
 .c8:first-child {
   margin-left: 0.5rem;
 }
@@ -100,7 +101,6 @@ exports[`Pagination renders 1`] = `
 .c10 {
   display: inline-block;
   color: #4b286d;
-  cursor: pointer;
   background-color: #f2eff4;
   height: 44px;
   line-height: 41px;
@@ -112,12 +112,17 @@ exports[`Pagination renders 1`] = `
   border-radius: 4px;
   display: inline-block;
   width: 16px;
+  height: 32px;
   min-width: 16px;
   background-color: inherit;
   line-height: 28px;
   margin-right: 0.25rem;
   margin-left: -0.25rem;
   border: none;
+}
+
+.c10:hover {
+  border: 1px solid #4b286d;
 }
 
 .c10:first-child {
@@ -127,7 +132,6 @@ exports[`Pagination renders 1`] = `
 .c6 {
   display: inline-block;
   color: #4b286d;
-  cursor: pointer;
   background-color: #f2eff4;
   height: 44px;
   line-height: 41px;
@@ -138,21 +142,31 @@ exports[`Pagination renders 1`] = `
   text-align: center;
   border-radius: 4px;
   color: #f2eff4;
-  line-height: 40px;
+  line-height: 46px;
+  vertical-align: bottom;
   padding: 0 5px;
+  border: none;
   background-color: #4b286d;
+}
+
+.c6:hover {
+  border: 1px solid #4b286d;
 }
 
 .c6:first-child {
   margin-left: 0.5rem;
 }
 
+.c6:hover {
+  border: none;
+}
+
 @media (min-width:768px) {
   .c1 {
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -ms-flex-pack: left;
-    justify-content: left;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 
@@ -197,33 +211,20 @@ exports[`Pagination renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
-    min-width: 22px;
-    height: 24px;
-  }
-}
-
-@media (min-width:768px) {
   .c8 {
     display: inline-block;
+    line-height: 44px;
     border: 1px solid #f2eff4;
     min-width: 22px;
-  }
-
-  .c8:hover {
-    border: 1px solid #4b286d;
   }
 }
 
 @media (min-width:768px) {
   .c10 {
     display: inline-block;
+    line-height: 44px;
     border: 1px solid #f2eff4;
     min-width: 22px;
-  }
-
-  .c10:hover {
-    border: 1px solid #4b286d;
   }
 }
 
@@ -240,12 +241,9 @@ exports[`Pagination renders 1`] = `
 @media (min-width:768px) {
   .c6 {
     display: inline-block;
+    line-height: 44px;
     border: 1px solid #f2eff4;
     min-width: 22px;
-  }
-
-  .c6:hover {
-    border: 1px solid #4b286d;
   }
 }
 
@@ -256,7 +254,9 @@ exports[`Pagination renders 1`] = `
   }
 }
 
-<Pagination>
+<Pagination
+  copy="en"
+>
   <styles__PaginationContainer>
     <StyledComponent
       forwardedComponent={
@@ -307,7 +307,7 @@ exports[`Pagination renders 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "clear: both; display: flex; margin-top: 20px; position: relative; justify-content: center; @media (min-width: 768px) {
-  justify-content: left;
+  justify-content: flex-start;
 } width: 100%;",
                   ],
                 },
@@ -379,7 +379,7 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c3",
                               "rules": Array [
-                                "color: #4b286d; background-color: #f2eff4; border: none; width: 44px; height: 44px; margin: 0; text-align: center; padding: 0; cursor: pointer; border-radius: 4px; @media (min-width: 768px) {
+                                "color: #4b286d; background-color: #f2eff4; border: none; width: 44px; height: 44px; margin: 0; text-align: center; padding: 0; border-radius: 4px; @media (min-width: 768px) {
   background: none; width: auto; height: auto;
 }",
                               ],
@@ -505,14 +505,16 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
-                                "color: #f2eff4; line-height: 40px; padding: 0 5px; background-color: #4b286d; @media (min-width: 768px) {
+                                "color: #f2eff4; line-height: 46px; vertical-align: bottom; padding: 0 5px; border: none; &:hover {
+  border: none;
+} background-color: #4b286d; @media (min-width: 768px) {
   border: 1px solid #4b286d; min-width: 24px;
 }",
                               ],
@@ -586,12 +588,12 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
                               ],
                             },
@@ -626,9 +628,7 @@ exports[`Pagination renders 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
-  min-width: 22px; height: 24px;
-}",
+                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -671,12 +671,12 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
                               ],
                             },
@@ -711,9 +711,7 @@ exports[`Pagination renders 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
-  min-width: 22px; height: 24px;
-}",
+                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -756,12 +754,12 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
                               ],
                             },
@@ -796,9 +794,7 @@ exports[`Pagination renders 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
-  min-width: 22px; height: 24px;
-}",
+                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -841,14 +837,14 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c10",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
-                                "display: inline-block; width: 16px; min-width: 16px; background-color: inherit; line-height: 28px; margin-right: 0.25rem; margin-left: -0.25rem; border: none; @media (min-width: 768px) {
+                                "display: inline-block; width: 16px; height: 32px; min-width: 16px; background-color: inherit; line-height: 28px; margin-right: 0.25rem; margin-left: -0.25rem; border: none; @media (min-width: 768px) {
   border: none; &:hover {
   border: none;
 }
@@ -889,12 +885,12 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
                               ],
                             },
@@ -929,9 +925,7 @@ exports[`Pagination renders 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
-  min-width: 22px; height: 24px;
-}",
+                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -995,7 +989,9 @@ exports[`Pagination renders 1`] = `
                   <ul
                     className="c11"
                   >
-                    <styles__PaginationCurrent>
+                    <styles__PaginationCurrent
+                      key="193359721"
+                    >
                       <StyledComponent
                         forwardedComponent={
                           Object {
@@ -1006,14 +1002,16 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
-                                "color: #f2eff4; line-height: 40px; padding: 0 5px; background-color: #4b286d; @media (min-width: 768px) {
+                                "color: #f2eff4; line-height: 46px; vertical-align: bottom; padding: 0 5px; border: none; &:hover {
+  border: none;
+} background-color: #4b286d; @media (min-width: 768px) {
   border: 1px solid #4b286d; min-width: 24px;
 }",
                               ],
@@ -1074,7 +1072,92 @@ exports[`Pagination renders 1`] = `
                         </li>
                       </StyledComponent>
                     </styles__PaginationCurrent>
-                    <styles__PaginationEllipsis>
+                    <styles__GeneralPagination
+                      key="193361898"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styles__GeneralPagination-sc-1afeh49-10",
+                              "isStatic": true,
+                              "lastClassName": "c8",
+                              "rules": Array [
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
+  border: 1px solid #4b286d;
+} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
+  margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
+}",
+                              ],
+                            },
+                            "displayName": "styles__GeneralPagination",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styles__GeneralPagination-sc-1afeh49-10",
+                            "target": "li",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <li
+                          className="c8"
+                        >
+                          <styles__GeneralPaginationButton
+                            aria-label="Go to panel number 2"
+                            onClick={[Function]}
+                            value={2}
+                          >
+                            <StyledComponent
+                              aria-label="Go to panel number 2"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
+                                    "isStatic": true,
+                                    "lastClassName": "c9",
+                                    "rules": Array [
+                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                    ],
+                                  },
+                                  "displayName": "styles__GeneralPaginationButton",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              value={2}
+                            >
+                              <button
+                                aria-label="Go to panel number 2"
+                                className="c9"
+                                onClick={[Function]}
+                                value={2}
+                              >
+                                2
+                              </button>
+                            </StyledComponent>
+                          </styles__GeneralPaginationButton>
+                        </li>
+                      </StyledComponent>
+                    </styles__GeneralPagination>
+                    <styles__PaginationEllipsis
+                      key="193354542"
+                    >
                       <StyledComponent
                         forwardedComponent={
                           Object {
@@ -1085,14 +1168,14 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c10",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
-                                "display: inline-block; width: 16px; min-width: 16px; background-color: inherit; line-height: 28px; margin-right: 0.25rem; margin-left: -0.25rem; border: none; @media (min-width: 768px) {
+                                "display: inline-block; width: 16px; height: 32px; min-width: 16px; background-color: inherit; line-height: 28px; margin-right: 0.25rem; margin-left: -0.25rem; border: none; @media (min-width: 768px) {
   border: none; &:hover {
   border: none;
 }
@@ -1120,7 +1203,9 @@ exports[`Pagination renders 1`] = `
                         </li>
                       </StyledComponent>
                     </styles__PaginationEllipsis>
-                    <styles__GeneralPagination>
+                    <styles__GeneralPagination
+                      key="193361891"
+                    >
                       <StyledComponent
                         forwardedComponent={
                           Object {
@@ -1131,12 +1216,12 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; cursor: pointer; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; @media (min-width: 768px) {
-  display: inline-block; border: 1px solid #f2eff4; min-width: 22px; &:hover {
+                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
   border: 1px solid #4b286d;
-}
 } list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
   margin-left: 0.5rem;
+} @media (min-width: 768px) {
+  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
 }",
                               ],
                             },
@@ -1171,9 +1256,7 @@ exports[`Pagination renders 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; cursor: pointer; padding: 0 5px; min-width: 32px; margin: 0; width: auto; height: 32px; @media (min-width: 768px) {
-  min-width: 22px; height: 24px;
-}",
+                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -1259,7 +1342,7 @@ exports[`Pagination renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c3",
                               "rules": Array [
-                                "color: #4b286d; background-color: #f2eff4; border: none; width: 44px; height: 44px; margin: 0; text-align: center; padding: 0; cursor: pointer; border-radius: 4px; @media (min-width: 768px) {
+                                "color: #4b286d; background-color: #f2eff4; border: none; width: 44px; height: 44px; margin: 0; text-align: center; padding: 0; border-radius: 4px; @media (min-width: 768px) {
   background: none; width: auto; height: auto;
 }",
                               ],

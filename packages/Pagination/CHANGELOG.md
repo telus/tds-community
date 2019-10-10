@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-pagination@1.0.3...@tds/community-pagination@2.0.0) (2019-10-10)
+
+
+### Bug Fixes
+
+* **community-pagination:** design changes ([c648bc3](https://github.com/telus/tds-community/commit/c648bc3))
+* **packages:** adding styled-components ([cf613ba](https://github.com/telus/tds-community/commit/cf613ba))
+
+
+### Features
+
+* **community-pagination:** design changes ([4d0d662](https://github.com/telus/tds-community/commit/4d0d662))
+
+
+### BREAKING CHANGES
+
+* **packages:** add styled-components to peerDependencies of Pagination
+* **community-pagination:** Default visual designs have changed
+
+
+
+
+
 ## [1.0.3](https://github.com/telus/tds-community/compare/@tds/community-pagination@1.0.2...@tds/community-pagination@1.0.3) (2019-09-17)
 
 **Note:** Version bump only for package @tds/community-pagination

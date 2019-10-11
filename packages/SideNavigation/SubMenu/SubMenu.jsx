@@ -90,7 +90,7 @@ class SubMenu extends React.Component {
   }
 
   render() {
-    const { children, label, isOpen, ...rest } = this.props
+    const { children, label, isOpen, callback, ...rest } = this.props
 
     const activeChild = this.state.active
     return (
@@ -120,6 +120,7 @@ class SubMenu extends React.Component {
           duration={500}
           in={isOpen}
           height={this.state.subMenuHeight}
+          onEntered={callback}
         >
           {() => (
             <SubMenuContainer
@@ -170,6 +171,12 @@ SubMenu.propTypes = {
    * @ignore
    */
   onClick: PropTypes.func,
+  /**
+   * Callback.
+   *
+   * @ignore
+   */
+  callback: PropTypes.func,
 }
 
 SubMenu.defaultProps = {
@@ -178,6 +185,7 @@ SubMenu.defaultProps = {
   children: undefined,
   id: undefined,
   onClick: undefined,
+  callback: undefined,
 }
 
 export default SubMenu

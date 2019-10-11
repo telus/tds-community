@@ -86,7 +86,6 @@ class SideNavigation extends Component {
   componentDidMount() {
     this.checkOffset()
     window.addEventListener('scroll', this.checkOffset)
-    window.addEventListener('click', this.checkOffset)
     this.adjustWidth()
     window.addEventListener('resize', this.adjustWidth)
     this.checkActiveState()
@@ -119,7 +118,6 @@ class SideNavigation extends Component {
 
   removeEventListeners() {
     window.removeEventListener('scroll', this.checkOffset)
-    window.removeEventListener('click', this.checkOffset)
     window.removeEventListener('resize', this.adjustWidth)
   }
 
@@ -143,6 +141,7 @@ class SideNavigation extends Component {
       ((sideNavRect.top < 0 &&
         containerRect.top < 0 &&
         sideNavRect.bottom <= containerRect.bottom &&
+        sideNavRect.bottom > 0 &&
         this.state.variant !== 'bottom') ||
         (sideNavRect.top > 0 && containerRect.top <= 0)) &&
       sideNavRect.height < containerRect.height
@@ -206,6 +205,7 @@ class SideNavigation extends Component {
                     handleToggleSubMenu: this.toggleSubMenu,
                     isOpen: this.checkAccordion(id),
                     id,
+                    callback: this.checkOffset,
                   }
                 }
                 return <StyledLi>{React.cloneElement(child, options)}</StyledLi>

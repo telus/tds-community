@@ -16,7 +16,7 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import { CalendarContainer, LabelText } from './styles'
 
 /**
- * The date picker component is used to select a single date. It is available as an Inline date Picker or Overlay date Picker where the customer may select a date, either by keying in (Input form field) or selecting through the overlay.
+ * The `DatePicker` component is used to select a single date. It is available as an inline date picker or overlay date picker where the customer may select a date, either by keying in (input form field) or selecting through the overlay.
  * @version ./package.json
  */
 

@@ -16,7 +16,7 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import { CalendarContainer, LabelText } from './styles'
 
 /**
- * Calendar component for choosing available dates.
+ * The date picker component is used to select a single date. It is available as an Inline date Picker or Overlay date Picker where the customer may select a date, either by keying in (Input form field) or selecting through the overlay.
  * @version ./package.json
  */
 
@@ -29,9 +29,12 @@ class Calendar extends Component {
     this.setState({ focused })
   }
   render() {
-    const { id, date, onDateChange, isDayDisabled, inline, label, ...props } = this.props
+    const { id, date, onDateChange, isDayDisabled, inline, label, lang, ...props } = this.props
     const { className, style, ...propsWithoutStyling } = safeRest(props)
     const DatePickerVariant = inline ? DayPickerSingleDateController : SingleDatePicker
+
+    /* Inititialize the moment instance here with the language passed as a prop */
+    moment.locale(lang)
 
     /* Determine daySize based on window.outerWidth and `inline` */
     const getResponsiveDaySize = () => {
@@ -99,6 +102,7 @@ Calendar.propTypes = {
 
   /** A flag determining if the calendar picker is standalone or an input with overlay  */
   inline: PropTypes.bool,
+  lang: PropTypes.string,
 }
 
 Calendar.defaultProps = {
@@ -106,6 +110,7 @@ Calendar.defaultProps = {
   date: undefined,
   onDateChange: () => {},
   inline: false,
+  lang: 'en',
 }
 
 export default Calendar

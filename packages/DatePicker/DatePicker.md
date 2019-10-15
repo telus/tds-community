@@ -1,10 +1,10 @@
 ### Usage Criteria
 
-### Overlay Date Picker
+#### Overlay Date Picker
 
-- Use the Overlay Date Picker whenever possible as it is the most accessible solution; the input form field is type-accessible and optimized for mobile customers.
-- Overlay Date Picker component includes an input form field to allow manual key-in of dates.
-- Overlay Date Picker opens when the Input form field receives focus.
+- Use the overlay DatePicker whenever possible as it is the most accessible solution; the input form field is type-accessible and optimized for mobile customers
+- The overlay DatePicker component includes an input form field to allow manual key-in of dates
+- The overlay DatePicker opens when the input form field receives focus
 
 ```jsx
 initialState = { date: moment() }
@@ -16,13 +16,12 @@ initialState = { date: moment() }
 />
 ```
 
-### Inline Date Picker
+#### Inline Date Picker
 
-- Use the Inline Date Picker when you want to display the date picker in a larger viewable area; allows the customer to quickly and easily see date availability
-- Inline Date Picker component does not include an Input form field
+- Use the inline DatePicker when you want to display the date picker in a larger viewable area; allows the customer to quickly and easily see date availability
+- The inline DatePicker component does not include an input form field
 - It is optimized for keyboard interaction and tablet touch
-- Use for viewports more than or equal to 576px (small breakpoint or larger)
-- Prop `inline` is `false` by default.
+- Use for viewports greater than or equal to 576px (small breakpoint or larger)
 
 ```jsx
 initialState = { date: moment() }

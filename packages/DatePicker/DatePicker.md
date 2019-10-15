@@ -8,7 +8,7 @@
 
 ```jsx
 initialState = { date: moment() }
-;<Datepicker
+;<DatePicker
   id="appointment_datePicker"
   label="Book an appointment"
   date={state.date}
@@ -26,7 +26,7 @@ initialState = { date: moment() }
 
 ```jsx
 initialState = { date: moment() }
-;<Datepicker
+;<DatePicker
   inline
   label="Book an appointment"
   date={state.date}

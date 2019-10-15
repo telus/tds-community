@@ -20,7 +20,7 @@ import { CalendarContainer, LabelText } from './styles'
  * @version ./package.json
  */
 
-class Datepicker extends Component {
+class DatePicker extends Component {
   state = {
     focused: false,
   }
@@ -81,7 +81,7 @@ class Datepicker extends Component {
   }
 }
 
-Datepicker.propTypes = {
+DatePicker.propTypes = {
   /** A unique identifier */
   id: PropTypes.string.isRequired,
 
@@ -105,7 +105,7 @@ Datepicker.propTypes = {
   lang: PropTypes.string,
 }
 
-Datepicker.defaultProps = {
+DatePicker.defaultProps = {
   isDayDisabled: undefined,
   date: undefined,
   onDateChange: () => {},
@@ -113,4 +113,4 @@ Datepicker.defaultProps = {
   lang: 'en',
 }
 
-export default Datepicker
+export default DatePicker

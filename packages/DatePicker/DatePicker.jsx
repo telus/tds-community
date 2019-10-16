@@ -31,7 +31,6 @@ class DatePicker extends Component {
   render() {
     const { id, date, onDateChange, isDayDisabled, inline, label, lang, ...props } = this.props
     const { className, style, ...propsWithoutStyling } = safeRest(props)
-    const DatePickerVariant = inline ? DayPickerSingleDateController : SingleDatePicker
 
     /* Inititialize the moment instance here with the language passed as a prop */
     moment.locale(lang)
@@ -61,32 +60,43 @@ class DatePicker extends Component {
           <LabelText>{label}</LabelText>
         </label>
         {inline && (
-          <HiddenInputFieldContainer>
-            <input
-              id="date-input-field"
-              type="text"
-              name="start date"
-              value={date.format('YYYY-MM-DD') || ''}
-              readOnly
+          <React.Fragment>
+            <HiddenInputFieldContainer>
+              <input id={id} type="text" value={date.format('YYYY-MM-DD') || ''} readOnly />
+            </HiddenInputFieldContainer>
+            <DayPickerSingleDateController
+              date={date}
+              onDateChange={onDateChange}
+              focused={this.state.focused}
+              onFocusChange={this.onFocusChange}
+              numberOfMonths={1}
+              hideKeyboardShortcutsPanel={true}
+              keepOpenOnDateSelect={false}
+              daySize={getResponsiveDaySize()}
+              navPrev={getIcon('leftChevron')}
+              navNext={getIcon('chevron')}
+              isOutsideRange={day => isBeforeDay(day, moment())}
             />
-          </HiddenInputFieldContainer>
+          </React.Fragment>
         )}
-        <DatePickerVariant
-          id={id}
-          date={date}
-          onDateChange={onDateChange}
-          focused={this.state.focused}
-          onFocusChange={this.onFocusChange}
-          numberOfMonths={1}
-          hideKeyboardShortcutsPanel={true}
-          displayFormat="DD / MM / YYYY"
-          placeholder="DD / MM / YYYY"
-          keepOpenOnDateSelect={false}
-          daySize={getResponsiveDaySize()}
-          navPrev={getIcon('leftChevron')}
-          navNext={getIcon('chevron')}
-          isOutsideRange={day => isBeforeDay(day, moment())}
-        />
+        {!inline && (
+          <SingleDatePicker
+            id={id}
+            date={date}
+            onDateChange={onDateChange}
+            focused={this.state.focused}
+            onFocusChange={this.onFocusChange}
+            numberOfMonths={1}
+            hideKeyboardShortcutsPanel={true}
+            displayFormat="DD / MM / YYYY"
+            placeholder="DD / MM / YYYY"
+            keepOpenOnDateSelect={false}
+            daySize={getResponsiveDaySize()}
+            navPrev={getIcon('leftChevron')}
+            navNext={getIcon('chevron')}
+            isOutsideRange={day => isBeforeDay(day, moment())}
+          />
+        )}
       </CalendarContainer>
     )
   }
@@ -94,7 +104,7 @@ class DatePicker extends Component {
 
 DatePicker.propTypes = {
   /** A unique identifier */
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
 
   /** A Moment instance representing the currently selected date, i.e. `moment()` */
   date: momentPropTypes.momentObj,
@@ -117,6 +127,7 @@ DatePicker.propTypes = {
 }
 
 DatePicker.defaultProps = {
+  id: 'date-picker',
   isDayDisabled: undefined,
   date: undefined,
   onDateChange: () => {},

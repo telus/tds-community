@@ -183,6 +183,12 @@ export const LabelText = styled.div`
   font-weight: ${helveticaNeueMedium65.fontWeight};
 `
 
+export const HiddenInputFieldContainer = styled.div({
+  height: 0,
+  width: 0,
+  overflow: 'hidden',
+})
+
 export default {
   CalendarContainer,
   LabelText,

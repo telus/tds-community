@@ -13,7 +13,7 @@ import { safeRest } from '@tds/util-helpers'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 
-import { CalendarContainer, LabelText } from './styles'
+import { CalendarContainer, LabelText, HiddenInputFieldContainer } from './styles'
 
 /**
  * The `DatePicker` component is used to select a single date. It is available as an inline date picker or overlay date picker where the customer may select a date, either by keying in (input form field) or selecting through the overlay.
@@ -60,6 +60,17 @@ class DatePicker extends Component {
         <label htmlFor={id}>
           <LabelText>{label}</LabelText>
         </label>
+        {inline && (
+          <HiddenInputFieldContainer>
+            <input
+              id="date-input-field"
+              type="text"
+              name="start date"
+              value={date.format('YYYY-MM-DD') || ''}
+              readOnly
+            />
+          </HiddenInputFieldContainer>
+        )}
         <DatePickerVariant
           id={id}
           date={date}

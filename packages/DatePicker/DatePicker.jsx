@@ -21,6 +21,12 @@ import { CalendarContainer, LabelText, HiddenInputFieldContainer } from './style
  */
 
 class DatePicker extends Component {
+  constructor(props) {
+    super(props)
+    /* Inititialize the moment instance here with the language passed as a prop */
+    moment.locale(props.copy)
+  }
+
   state = {
     focused: false,
   }
@@ -28,30 +34,28 @@ class DatePicker extends Component {
   onFocusChange = ({ focused }) => {
     this.setState({ focused })
   }
-  render() {
-    const { id, date, onDateChange, isDayDisabled, inline, label, lang, ...props } = this.props
-    const { className, style, ...propsWithoutStyling } = safeRest(props)
 
-    /* Inititialize the moment instance here with the language passed as a prop */
-    moment.locale(lang)
+  getIcon = type => <DecorativeIcon symbol={type} size={16} />
 
-    /* Determine daySize based on window.outerWidth and `inline` */
-    const getResponsiveDaySize = () => {
-      let responsiveDaySize
-      if (window) {
-        if (window.innerWidth >= 432) {
-          responsiveDaySize = inline ? 60 : 48
-        } else if (window.innerWidth >= 376) {
-          responsiveDaySize = 40
-        } else {
-          responsiveDaySize = inline ? undefined : 33
-        }
+  /* Determine daySize based on window.outerWidth and `inline` */
+  getResponsiveDaySize = inline => {
+    let responsiveDaySize
+    if (window) {
+      if (window.innerWidth >= 432) {
+        responsiveDaySize = inline ? 60 : 48
+      } else if (window.innerWidth >= 376) {
+        responsiveDaySize = 40
+      } else {
+        responsiveDaySize = inline ? undefined : 33
       }
-
-      return responsiveDaySize
     }
 
-    const getIcon = type => <DecorativeIcon symbol={type} size={16} />
+    return responsiveDaySize
+  }
+
+  render() {
+    const { id, date, onDateChange, isDayDisabled, inline, label, ...props } = this.props
+    const { className, style, copy, ...propsWithoutStyling } = safeRest(props)
 
     /* eslint-disable jsx-a11y/label-has-for */
     return (
@@ -72,9 +76,9 @@ class DatePicker extends Component {
               numberOfMonths={1}
               hideKeyboardShortcutsPanel={true}
               keepOpenOnDateSelect={false}
-              daySize={getResponsiveDaySize()}
-              navPrev={getIcon('leftChevron')}
-              navNext={getIcon('chevron')}
+              daySize={this.getResponsiveDaySize(inline)}
+              navPrev={this.getIcon('leftChevron')}
+              navNext={this.getIcon('chevron')}
               isOutsideRange={day => isBeforeDay(day, moment())}
             />
           </React.Fragment>
@@ -91,9 +95,9 @@ class DatePicker extends Component {
             displayFormat="DD / MM / YYYY"
             placeholder="DD / MM / YYYY"
             keepOpenOnDateSelect={false}
-            daySize={getResponsiveDaySize()}
-            navPrev={getIcon('leftChevron')}
-            navNext={getIcon('chevron')}
+            daySize={this.getResponsiveDaySize(inline)}
+            navPrev={this.getIcon('leftChevron')}
+            navNext={this.getIcon('chevron')}
             isOutsideRange={day => isBeforeDay(day, moment())}
           />
         )}
@@ -123,7 +127,7 @@ DatePicker.propTypes = {
 
   /** A flag determining if the calendar picker is standalone or an input with overlay  */
   inline: PropTypes.bool,
-  lang: PropTypes.string,
+  copy: PropTypes.oneOf(['en', 'fr']).isRequired,
 }
 
 DatePicker.defaultProps = {
@@ -131,7 +135,6 @@ DatePicker.defaultProps = {
   date: undefined,
   onDateChange: () => {},
   inline: false,
-  lang: 'en',
 }
 
 export default DatePicker

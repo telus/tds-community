@@ -62,45 +62,45 @@ class DatePicker extends Component {
       <CalendarContainer {...safeRest(propsWithoutStyling)}>
         <label htmlFor={id}>
           <LabelText>{label}</LabelText>
-        </label>
-        {inline && (
-          <React.Fragment>
-            <HiddenInputFieldContainer>
-              <input id={id} type="text" value={date.format('YYYY-MM-DD') || ''} readOnly />
-            </HiddenInputFieldContainer>
-            <DayPickerSingleDateController
+          {inline && (
+            <React.Fragment>
+              <HiddenInputFieldContainer>
+                <input id={id} type="text" value={date.format('YYYY-MM-DD') || ''} readOnly />
+              </HiddenInputFieldContainer>
+              <DayPickerSingleDateController
+                date={date}
+                onDateChange={onDateChange}
+                focused={this.state.focused}
+                onFocusChange={this.onFocusChange}
+                numberOfMonths={1}
+                hideKeyboardShortcutsPanel={true}
+                keepOpenOnDateSelect={false}
+                daySize={this.getResponsiveDaySize(inline)}
+                navPrev={this.getIcon('leftChevron')}
+                navNext={this.getIcon('chevron')}
+                isOutsideRange={day => isBeforeDay(day, moment())}
+              />
+            </React.Fragment>
+          )}
+          {!inline && (
+            <SingleDatePicker
+              id={id}
               date={date}
               onDateChange={onDateChange}
               focused={this.state.focused}
               onFocusChange={this.onFocusChange}
               numberOfMonths={1}
               hideKeyboardShortcutsPanel={true}
+              displayFormat="DD / MM / YYYY"
+              placeholder="DD / MM / YYYY"
               keepOpenOnDateSelect={false}
               daySize={this.getResponsiveDaySize(inline)}
               navPrev={this.getIcon('leftChevron')}
               navNext={this.getIcon('chevron')}
               isOutsideRange={day => isBeforeDay(day, moment())}
             />
-          </React.Fragment>
-        )}
-        {!inline && (
-          <SingleDatePicker
-            id={id}
-            date={date}
-            onDateChange={onDateChange}
-            focused={this.state.focused}
-            onFocusChange={this.onFocusChange}
-            numberOfMonths={1}
-            hideKeyboardShortcutsPanel={true}
-            displayFormat="DD / MM / YYYY"
-            placeholder="DD / MM / YYYY"
-            keepOpenOnDateSelect={false}
-            daySize={this.getResponsiveDaySize(inline)}
-            navPrev={this.getIcon('leftChevron')}
-            navNext={this.getIcon('chevron')}
-            isOutsideRange={day => isBeforeDay(day, moment())}
-          />
-        )}
+          )}
+        </label>
       </CalendarContainer>
     )
   }

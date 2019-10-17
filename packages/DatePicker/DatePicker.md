@@ -26,6 +26,7 @@ initialState = { date: moment() }
 ```jsx
 initialState = { date: moment() }
 ;<DatePicker
+  id="appointment_datePicker-inline"
   inline
   label="Book an appointment"
   date={state.date}

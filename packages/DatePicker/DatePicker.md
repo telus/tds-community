@@ -13,7 +13,6 @@ initialState = { date: moment() }
   label="Book an appointment"
   date={state.date}
   onDateChange={date => setState({ date })}
-  copy="en"
 />
 ```
 
@@ -32,6 +31,11 @@ initialState = { date: moment() }
   label="Book an appointment"
   date={state.date}
   onDateChange={date => setState({ date })}
-  copy="en"
 />
 ```
+
+### Localization in DatePicker
+
+- Localization can be implemented by updating the moment instance using `moment.locale(language)` in the consuming application.
+- For instance if we want a french DatePicker, just update the moment instance as `moment.locale('fr')`, it will render the DatePicker using french content.
+- Refer <https://momentjs.com/docs/#/i18n/getting-locale/> for more details on moment localization.

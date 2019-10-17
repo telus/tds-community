@@ -21,12 +21,6 @@ import { CalendarContainer, LabelText, HiddenInputFieldContainer } from './style
  */
 
 class DatePicker extends Component {
-  constructor(props) {
-    super(props)
-    /* Inititialize the moment instance here with the language passed as a prop */
-    moment.locale(props.copy)
-  }
-
   state = {
     focused: false,
   }
@@ -55,7 +49,7 @@ class DatePicker extends Component {
 
   render() {
     const { id, date, onDateChange, isDayDisabled, inline, label, ...props } = this.props
-    const { className, style, copy, ...propsWithoutStyling } = safeRest(props)
+    const { className, style, ...propsWithoutStyling } = safeRest(props)
 
     /* eslint-disable jsx-a11y/label-has-for */
     return (
@@ -127,7 +121,6 @@ DatePicker.propTypes = {
 
   /** A flag determining if the calendar picker is standalone or an input with overlay  */
   inline: PropTypes.bool,
-  copy: PropTypes.oneOf(['en', 'fr']).isRequired,
 }
 
 DatePicker.defaultProps = {

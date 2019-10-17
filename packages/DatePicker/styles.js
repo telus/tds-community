@@ -178,18 +178,13 @@ export const CalendarContainer = styled.div`
   }
 `
 
-export const LabelText = styled.div`
-  margin-bottom: 0.5rem;
-  font-weight: ${helveticaNeueMedium65.fontWeight};
-`
+export const LabelText = styled.div({
+  marginBottom: '0.5rem',
+  fontWeight: helveticaNeueMedium65.fontWeight,
+})
 
 export const HiddenInputFieldContainer = styled.div({
   height: 0,
   width: 0,
   overflow: 'hidden',
 })
-
-export default {
-  CalendarContainer,
-  LabelText,
-}

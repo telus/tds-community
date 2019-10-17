@@ -104,7 +104,7 @@ class DatePicker extends Component {
 
 DatePicker.propTypes = {
   /** A unique identifier */
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
 
   /** A Moment instance representing the currently selected date, i.e. `moment()` */
   date: momentPropTypes.momentObj,
@@ -127,7 +127,6 @@ DatePicker.propTypes = {
 }
 
 DatePicker.defaultProps = {
-  id: 'date-picker',
   isDayDisabled: undefined,
   date: undefined,
   onDateChange: () => {},

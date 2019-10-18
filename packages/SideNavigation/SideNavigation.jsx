@@ -84,15 +84,22 @@ class SideNavigation extends Component {
   }
 
   componentDidMount() {
-    this.checkOffset()
     window.addEventListener('scroll', this.checkOffset)
-    this.adjustWidth()
     window.addEventListener('resize', this.adjustWidth)
+    this.checkOffset()
+    this.adjustWidth()
     this.checkActiveState()
   }
 
   componentWillUnmount() {
     this.removeEventListeners()
+  }
+
+  onExited = () => {
+    const sideNavRect = this._sideNav.current
+    if (this.checkOverflow(sideNavRect) && this.state.variant === 'fixedOverflow') {
+      this.setState({ variant: 'fixed' })
+    }
   }
 
   adjustWidth() {
@@ -127,12 +134,13 @@ class SideNavigation extends Component {
 
     if (
       (sideNavRect.top >= 0 && containerRect.top >= 0) ||
-      sideNavRect.height > containerRect.height
+      sideNavRect.height >= containerRect.height
     ) {
       this.setState({ variant: 'top' })
     } else if (
       this.checkOverflow(this._sideNav.current) &&
       sideNavRect.bottom <= containerRect.bottom &&
+      sideNavRect.bottom >= 0 &&
       this.state.variant !== 'bottom' &&
       sideNavRect.height < containerRect.height
     ) {
@@ -148,9 +156,14 @@ class SideNavigation extends Component {
     ) {
       this.setState({ variant: 'fixed' })
     } else if (
-      (sideNavRect.bottom > containerRect.bottom || sideNavRect.bottom <= 0) &&
-      sideNavRect.height <= containerRect.height &&
-      this.state.variant !== 'top'
+      ((sideNavRect.bottom > containerRect.bottom || sideNavRect.bottom <= 0) &&
+        sideNavRect.height <= containerRect.height &&
+        this.state.variant !== 'top') ||
+      (sideNavRect.top < 0 &&
+        containerRect.top < 0 &&
+        sideNavRect.bottom <= containerRect.bottom &&
+        sideNavRect.bottom < 0 &&
+        this.state.variant !== 'bottom')
     ) {
       this.setState({ variant: 'bottom' })
     }
@@ -163,7 +176,7 @@ class SideNavigation extends Component {
   }
 
   checkOverflow = element => {
-    return element.scrollHeight > window.innerHeight
+    return element.scrollHeight >= window.innerHeight
   }
 
   checkActiveState = () => {
@@ -187,7 +200,13 @@ class SideNavigation extends Component {
         }}
       >
         <NavContainer ref={this._sideNav} variant={variant}>
-          <Box vertical={variant === 'bottom' || variant === 'fixed' ? undefined : verticalSpacing}>
+          <Box
+            vertical={
+              variant === 'bottom' || variant === 'fixed' || variant === 'fixedOverflow'
+                ? undefined
+                : verticalSpacing
+            }
+          >
             {category && (
               <Box vertical={3} horizontal={3}>
                 <Text size="large" bold>
@@ -205,7 +224,8 @@ class SideNavigation extends Component {
                     handleToggleSubMenu: this.toggleSubMenu,
                     isOpen: this.checkAccordion(id),
                     id,
-                    callback: this.checkOffset,
+                    onOpen: this.checkOffset,
+                    onExit: this.onExited,
                   }
                 }
                 return <StyledLi>{React.cloneElement(child, options)}</StyledLi>

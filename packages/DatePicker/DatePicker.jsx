@@ -9,12 +9,13 @@ import SingleDatePicker from 'react-dates/lib/components/SingleDatePicker'
 import DayPickerSingleDateController from 'react-dates/lib/components/DayPickerSingleDateController'
 import 'react-dates/lib/css/_datepicker.css'
 
-import { safeRest } from '@tds/util-helpers'
+import { safeRest, getCopy } from '@tds/util-helpers'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 
 import { CalendarContainer, LabelText, HiddenInputFieldContainer } from './styles'
 
+import copyDictionary from './datePickerText'
 /**
  * The `DatePicker` component is used to select a single date. It is available as an inline date picker or overlay date picker where the customer may select a date, either by keying in (input form field) or selecting through the overlay.
  * @version ./package.json
@@ -48,7 +49,7 @@ class DatePicker extends Component {
   }
 
   render() {
-    const { id, date, onDateChange, isDayDisabled, inline, label, ...props } = this.props
+    const { id, date, copy, onDateChange, isDayDisabled, inline, label, ...props } = this.props
     const { className, style, ...propsWithoutStyling } = safeRest(props)
 
     /* eslint-disable jsx-a11y/label-has-for */
@@ -73,6 +74,7 @@ class DatePicker extends Component {
                 navPrev={this.getIcon('leftChevron')}
                 navNext={this.getIcon('chevron')}
                 isOutsideRange={day => isBeforeDay(day, moment())}
+                phrases={getCopy(copyDictionary, copy)}
               />
             </React.Fragment>
           )}
@@ -92,6 +94,7 @@ class DatePicker extends Component {
               navPrev={this.getIcon('leftChevron')}
               navNext={this.getIcon('chevron')}
               isOutsideRange={day => isBeforeDay(day, moment())}
+              phrases={getCopy(copyDictionary, copy)}
             />
           )}
         </label>
@@ -103,6 +106,8 @@ class DatePicker extends Component {
 DatePicker.propTypes = {
   /** A unique identifier */
   id: PropTypes.string.isRequired,
+
+  copy: PropTypes.oneOf(['en', 'fr']).isRequired,
 
   /** A Moment instance representing the currently selected date, i.e. `moment()` */
   date: momentPropTypes.momentObj,

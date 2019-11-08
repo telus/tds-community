@@ -34,8 +34,12 @@ initialState = { date: moment() }
 />
 ```
 
+### Moment.js
+
+Moment.js is library that wraps the native JavaScript Date object. It provides additional features making working with dates easier. It is a requirement for the `react-dates` library which is used by the `DatePicker` component. In order to use the `DatePicker` component you must add `moment` as a dependency in your project.
+
 ### Localization in DatePicker
 
-- Localization can be implemented by updating the moment instance using `moment.locale(language)` in the consuming application.
-- For instance if we want a french DatePicker, just update the moment instance as `moment.locale('fr')`, it will render the DatePicker using french content.
-- Refer <https://momentjs.com/docs/#/i18n/getting-locale/> for more details on moment localization.
+- Localization can be implemented by updating the moment instance using `moment.locale(language)` in the consuming application
+- For instance if we want a French `DatePicker`, just update the moment instance as `moment.locale('fr')`, it will render the `DatePicker` using French content
+- Refer <https://momentjs.com/docs/#/i18n/getting-locale/> for more details on `moment` localization

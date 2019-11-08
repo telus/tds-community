@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import momentPropTypes from 'react-moment-proptypes'
 import moment from 'moment'
@@ -21,86 +21,80 @@ import copyDictionary from './datePickerText'
  * @version ./package.json
  */
 
-class DatePicker extends Component {
-  state = {
-    focused: false,
-  }
-
-  onFocusChange = ({ focused }) => {
-    this.setState({ focused })
-  }
-
-  getIcon = type => <DecorativeIcon symbol={type} size={16} />
-
-  /* Determine daySize based on window.outerWidth and `inline` */
-  getResponsiveDaySize = inline => {
-    let responsiveDaySize
-    if (window) {
-      if (window.innerWidth >= 432) {
-        responsiveDaySize = inline ? 60 : 48
-      } else if (window.innerWidth >= 376) {
-        responsiveDaySize = 40
-      } else {
-        responsiveDaySize = inline ? undefined : 33
-      }
+/* Determine daySize based on window.innerWidth and `inline` */
+const getResponsiveDaySize = inline => {
+  let responsiveDaySize
+  if (window) {
+    if (window.innerWidth >= 432) {
+      responsiveDaySize = inline ? 60 : 48
+    } else if (window.innerWidth >= 376) {
+      responsiveDaySize = 40
+    } else {
+      responsiveDaySize = inline ? undefined : 33
     }
+  }
+  return responsiveDaySize
+}
 
-    return responsiveDaySize
+const getIcon = type => <DecorativeIcon symbol={type} size={16} />
+
+const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label, ...props }) => {
+  const [isFocused, setIsFocused] = useState(false)
+
+  const onFocusChange = ({ focused }) => {
+    setIsFocused(focused)
   }
 
-  render() {
-    const { id, date, copy, onDateChange, isDayDisabled, inline, label, ...props } = this.props
-    const { className, style, ...propsWithoutStyling } = safeRest(props)
+  const { className, style, ...propsWithoutStyling } = safeRest(props)
 
-    /* eslint-disable jsx-a11y/label-has-for */
-    return (
-      <CalendarContainer {...safeRest(propsWithoutStyling)}>
-        <label htmlFor={id}>
-          <LabelText>{label}</LabelText>
-          {inline && (
-            <React.Fragment>
-              <HiddenInputFieldContainer>
-                <input id={id} type="text" value={date.format('YYYY-MM-DD') || ''} readOnly />
-              </HiddenInputFieldContainer>
-              <DayPickerSingleDateController
-                date={date}
-                onDateChange={onDateChange}
-                focused={this.state.focused}
-                onFocusChange={this.onFocusChange}
-                numberOfMonths={1}
-                hideKeyboardShortcutsPanel={true}
-                keepOpenOnDateSelect={false}
-                daySize={this.getResponsiveDaySize(inline)}
-                navPrev={this.getIcon('leftChevron')}
-                navNext={this.getIcon('chevron')}
-                isOutsideRange={day => isBeforeDay(day, moment())}
-                phrases={getCopy(copyDictionary, copy)}
-              />
-            </React.Fragment>
-          )}
-          {!inline && (
-            <SingleDatePicker
-              id={id}
+  /* eslint-disable jsx-a11y/label-has-for */
+  return (
+    <CalendarContainer {...safeRest(propsWithoutStyling)}>
+      <label htmlFor={id}>
+        <LabelText>{label}</LabelText>
+        {inline && (
+          <React.Fragment>
+            <HiddenInputFieldContainer>
+              <input id={id} type="text" value={date.format('YYYY-MM-DD') || ''} readOnly />
+            </HiddenInputFieldContainer>
+            <DayPickerSingleDateController
               date={date}
               onDateChange={onDateChange}
-              focused={this.state.focused}
-              onFocusChange={this.onFocusChange}
+              focused={isFocused}
+              onFocusChange={onFocusChange}
               numberOfMonths={1}
               hideKeyboardShortcutsPanel={true}
-              displayFormat="DD / MM / YYYY"
-              placeholder="DD / MM / YYYY"
               keepOpenOnDateSelect={false}
-              daySize={this.getResponsiveDaySize(inline)}
-              navPrev={this.getIcon('leftChevron')}
-              navNext={this.getIcon('chevron')}
+              daySize={getResponsiveDaySize(inline)}
+              navPrev={getIcon('leftChevron')}
+              navNext={getIcon('chevron')}
               isOutsideRange={day => isBeforeDay(day, moment())}
               phrases={getCopy(copyDictionary, copy)}
             />
-          )}
-        </label>
-      </CalendarContainer>
-    )
-  }
+          </React.Fragment>
+        )}
+        {!inline && (
+          <SingleDatePicker
+            id={id}
+            date={date}
+            onDateChange={onDateChange}
+            focused={isFocused}
+            onFocusChange={onFocusChange}
+            numberOfMonths={1}
+            hideKeyboardShortcutsPanel={true}
+            displayFormat="DD / MM / YYYY"
+            placeholder="DD / MM / YYYY"
+            keepOpenOnDateSelect={false}
+            daySize={getResponsiveDaySize(inline)}
+            navPrev={getIcon('leftChevron')}
+            navNext={getIcon('chevron')}
+            isOutsideRange={day => isBeforeDay(day, moment())}
+            phrases={getCopy(copyDictionary, copy)}
+          />
+        )}
+      </label>
+    </CalendarContainer>
+  )
 }
 
 DatePicker.propTypes = {

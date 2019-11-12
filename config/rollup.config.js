@@ -52,6 +52,7 @@ export default opts => {
         exclude: '../../node_modules/**',
         configFile: '../../babel.config.js',
       }),
+      ...(options.plugins ? options.plugins : []),
     ],
   }
 }

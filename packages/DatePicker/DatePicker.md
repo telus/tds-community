@@ -13,6 +13,7 @@ initialState = { date: moment() }
   label="Book an appointment"
   date={state.date}
   onDateChange={date => setState({ date })}
+  copy="en"
 />
 ```
 
@@ -31,6 +32,7 @@ initialState = { date: moment() }
   label="Book an appointment"
   date={state.date}
   onDateChange={date => setState({ date })}
+  copy="en"
 />
 ```
 

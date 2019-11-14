@@ -118,6 +118,7 @@ module.exports = {
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
+    'babel-polyfill',
     '@tds/core-css-reset/dist/index.css',
     path.resolve('docs/scss/styleguide.scss'),
     path.resolve('docs/setup/tds-core-globals.js'),

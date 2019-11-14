@@ -52,6 +52,8 @@
     "npm": ">=6"
   },
   "dependencies": {
+    "@tds/core-responsive": "^1.1.0",
+    "babel-polyfill": "^6.26.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
@@ -110,7 +112,6 @@
     "eslint-plugin-react": "^7.7.0",
     "husky": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "moment": "^2.24.0",
     "jest": "^24.0.0",
     "jest-environment-enzyme": "^7.0.0",
     "jest-enzyme": "^7.0.0",
@@ -120,6 +121,7 @@
     "lint-staged": "^7.0.4",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
+    "moment": "^2.24.0",
     "nightwatch": "^1.0.0",
     "nightwatch-accessibility": "^1.6.0",
     "node-emoji": "^1.8.1",

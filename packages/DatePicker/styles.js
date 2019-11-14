@@ -13,7 +13,8 @@ import {
   helveticaNeueMedium65,
 } from '@tds/shared-typography'
 
-export const CalendarContainer = styled.div`
+export const CalendarContainer = styled.div(
+  ({ daySize }) => `
   .SingleDatePicker,
   .SingleDatePickerInput {
     display: block;
@@ -114,12 +115,14 @@ export const CalendarContainer = styled.div`
 
   .CalendarDay__default {
     position: relative;
+    background-clip: padding-box;
     border: 1px solid ${colorGainsboro};
     vertical-align: middle;
     font-weight: ${helveticaNeueMedium65.fontWeight};
     color: ${colorShark};
     text-decoration: underline;
     transition: all 0.3s;
+    line-height: ${daySize}px;
     &:before {
       content: '';
       position: absolute;
@@ -170,6 +173,7 @@ export const CalendarContainer = styled.div`
   .CalendarDay__blocked_calendar:hover {
     font-weight: ${helveticaNeueLight45.fontWeight};
     background: ${colorWhite};
+    background-clip: padding-box;
     color: ${colorShuttleGrey};
     text-decoration: none;
     &:before {
@@ -177,6 +181,7 @@ export const CalendarContainer = styled.div`
     }
   }
 `
+)
 
 export const LabelText = styled.div({
   marginBottom: '0.5rem',

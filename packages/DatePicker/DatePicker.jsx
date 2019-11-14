@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import momentPropTypes from 'react-moment-proptypes'
 import moment from 'moment'
@@ -16,22 +16,24 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import { CalendarContainer, LabelText, HiddenInputFieldContainer } from './styles'
 
 import copyDictionary from './datePickerText'
+
 /**
  * The `DatePicker` component is used to select a single date. It is available as an inline date picker or overlay date picker where the customer may select a date, either by keying in (input form field) or selecting through the overlay.
  * @version ./package.json
  */
 
 /* Determine daySize based on window.innerWidth and `inline` */
-const getResponsiveDaySize = inline => {
+const getResponsiveDaySize = inline => () => {
   let responsiveDaySize
-  if (window) {
-    if (window.innerWidth >= 432) {
-      responsiveDaySize = inline ? 60 : 48
-    } else if (window.innerWidth >= 376) {
-      responsiveDaySize = 40
-    } else {
-      responsiveDaySize = inline ? undefined : 33
-    }
+  if (typeof window === 'undefined') {
+    return undefined
+  }
+  if (window.innerWidth >= 432) {
+    responsiveDaySize = inline ? 60 : 48
+  } else if (window.innerWidth >= 376) {
+    responsiveDaySize = 40
+  } else {
+    responsiveDaySize = inline ? undefined : 33
   }
   return responsiveDaySize
 }
@@ -41,6 +43,14 @@ const getIcon = type => <DecorativeIcon symbol={type} size={16} />
 const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label, ...props }) => {
   const [isFocused, setIsFocused] = useState(false)
 
+  useEffect(() => {
+    window.addEventListener('resize', getResponsiveDaySize(inline))
+
+    return () => {
+      window.removeEventListener('resize', getResponsiveDaySize(inline))
+    }
+  })
+
   const onFocusChange = ({ focused }) => {
     setIsFocused(focused)
   }
@@ -48,8 +58,10 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
   const { className, style, ...propsWithoutStyling } = safeRest(props)
 
   /* eslint-disable jsx-a11y/label-has-for */
+
+  const daySize = getResponsiveDaySize(inline)()
   return (
-    <CalendarContainer {...safeRest(propsWithoutStyling)}>
+    <CalendarContainer {...safeRest(propsWithoutStyling)} daySize={daySize}>
       <label htmlFor={id}>
         <LabelText>{label}</LabelText>
         {inline && (
@@ -65,7 +77,7 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
               numberOfMonths={1}
               hideKeyboardShortcutsPanel={true}
               keepOpenOnDateSelect={false}
-              daySize={getResponsiveDaySize(inline)}
+              daySize={daySize}
               navPrev={getIcon('leftChevron')}
               navNext={getIcon('chevron')}
               isOutsideRange={day => isBeforeDay(day, moment())}
@@ -85,7 +97,7 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
             displayFormat="DD / MM / YYYY"
             placeholder="DD / MM / YYYY"
             keepOpenOnDateSelect={false}
-            daySize={getResponsiveDaySize(inline)}
+            daySize={daySize}
             navPrev={getIcon('leftChevron')}
             navNext={getIcon('chevron')}
             isOutsideRange={day => isBeforeDay(day, moment())}

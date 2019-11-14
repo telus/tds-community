@@ -36,9 +36,23 @@ initialState = { date: moment() }
 />
 ```
 
-### Moment.js
+### Getting Started
+
+#### Moment.js
 
 Moment.js is library that wraps the native JavaScript Date object. It provides additional features making working with dates easier. It is a requirement for the `react-dates` library which is used by the `DatePicker` component. In order to use the `DatePicker` component you must add `moment` as a dependency in your project.
+
+#### Polyfills
+
+`DatePicker` requires a polyfill to work correctly in Internet Explorer 11. We recommend `core-js` with `regenerator-runtime`. You may need to remove polyfills from polyfill.io as they can clash. The polyfills should be imported at the top of the entry point. See the example below for the polyfill setup.
+
+```jsx static
+// entry.jsx
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
+// ...
+```
 
 ### Localization in DatePicker
 

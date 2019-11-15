@@ -173,4 +173,16 @@ describe('ToggleSwitch', () => {
       'some value'
     )
   })
+
+  it('should not show spinner when isLoading=false', () => {
+    const toggleSwitch = doShallow({ isLoading: false })
+    const spinner = toggleSwitch.find('Spinner')
+    expect(spinner.prop('spinning')).toEqual(false)
+  })
+
+  it('show spinner when isLoading=true', () => {
+    const toggleSwitch = doShallow({ isLoading: true })
+    const spinner = toggleSwitch.find('Spinner')
+    expect(spinner.prop('spinning')).toEqual(true)
+  })
 })

@@ -58,8 +58,10 @@ exports[`ToggleSwitch renders 1`] = `
 }
 
 <ToggleSwitch
+  autofocus={false}
   checked={false}
   id="my-id-123"
+  isLoading={false}
   label="label"
   name="name"
   onClick={[MockFunction]}
@@ -170,7 +172,7 @@ exports[`ToggleSwitch renders 1`] = `
                   data-testid="my-id-123-switch"
                   id="my-id-123"
                   name="name"
-                  onClick={[Function]}
+                  onClick={[MockFunction]}
                   role="switch"
                   toolTipCopy="en"
                   value="value"
@@ -255,7 +257,7 @@ exports[`ToggleSwitch renders 1`] = `
                     }
                     id="my-id-123"
                     name="name"
-                    onClick={[Function]}
+                    onClick={[MockFunction]}
                     role="switch"
                     toolTipCopy="en"
                     value="value"
@@ -267,7 +269,7 @@ exports[`ToggleSwitch renders 1`] = `
                       data-testid="my-id-123-switch"
                       id="my-id-123"
                       name="name"
-                      onClick={[Function]}
+                      onClick={[MockFunction]}
                       role="switch"
                       value="value"
                     >

@@ -37,6 +37,22 @@ const ToggleSwitch = React.forwardRef(
     const labelledById = `${id}-label`
     const buttonRef = React.useRef()
 
+    // Internal state to manage visual appearance of toggle while the user supplies the true checked status
+    const [_isChecked, _setIsChecked] = React.useState(checked)
+
+    React.useEffect(() => {
+      if (_setIsChecked) {
+        _setIsChecked(checked)
+      }
+    }, [checked])
+
+    const _onClick = event => {
+      _setIsChecked(!_isChecked)
+      setTimeout(() => {
+        onClick(event)
+      }, 250)
+    }
+
     /* The purpose of this hook is to allow the parent
     to focus on the ToggleSwitch at will by forwarding
     a ref to parent and exposing ONLY a single `focus` method
@@ -78,13 +94,13 @@ const ToggleSwitch = React.forwardRef(
               {...safeRest(rest)}
               id={id}
               role="switch"
-              aria-checked={checked}
+              aria-checked={_isChecked}
               aria-labelledby={labelledById}
               data-testid={`${id}-switch`}
-              onClick={!isLoading ? onClick : null}
+              onClick={!isLoading ? _onClick : null}
               ref={buttonRef}
             >
-              <Slider pressed={checked} />
+              <Slider pressed={_isChecked} />
             </Button>
           </Spinner>
         </InputSwitchWrapper>

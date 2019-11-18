@@ -167,3 +167,106 @@ const App = () => {
 
 ;<App />
 ```
+
+**Complete example with async first-time load, async toggle, and error handling**
+
+```jsx
+const App = () => {
+  const [isRouted, setIsRouted] = React.useState(false)
+  const [appIsLoaded, setAppIsLoaded] = React.useState(false)
+  const [showFeedbackText, setShowFeedbackText] = React.useState(false)
+  const [isChecked, setIsChecked] = React.useState(false)
+  const [isLoading, setIsLoading] = React.useState(true)
+
+  const toggleSwitchRef = React.useRef()
+  const feedbackTextRef = React.useRef()
+
+  const loadApp = () => {
+    setIsRouted(true)
+    setTimeout(() => {
+      setAppIsLoaded(true)
+      setIsLoading(false)
+      setIsChecked(true)
+    }, 2000)
+  }
+
+  const handleToggle = event => {
+    setIsLoading(true)
+    setShowFeedbackText(false)
+    setTimeout(() => {
+      setIsChecked(!isChecked)
+      setIsLoading(false)
+      setShowFeedbackText(true)
+    }, 2000)
+  }
+  const handleToggleError = event => {
+    setIsLoading(true)
+    setShowFeedbackText(false)
+    setTimeout(() => {
+      setIsChecked(!isChecked)
+      setIsLoading(false)
+      setShowFeedbackText(true)
+    }, 2000)
+  }
+
+  const getToggleLabel = () => {
+    if (!appIsLoaded) {
+      return 'Loading data setting'
+    } else if (isChecked) {
+      return 'Disable mobile data'
+    } else if (!isChecked) {
+      return 'Enable mobile data'
+    }
+  }
+
+  React.useEffect(() => {
+    if (!isLoading && feedbackTextRef.current && showFeedbackText) {
+      feedbackTextRef.current.focus()
+      // setTimeout(() => feedbackTextRef.current.focus(), 500)
+    }
+  })
+
+  if (!isRouted) {
+    return <Button onClick={loadApp}>Load example</Button>
+  }
+  return (
+    <FlexGrid gutter={false}>
+      <FlexGrid.Row>
+        <FlexGrid.Col xs={12} md={3}>
+          <Box between={4}>
+            <ToggleSwitch
+              id="sup"
+              ref={toggleSwitchRef}
+              label="Mobile data"
+              tooltipCopy="en"
+              tooltipText="Enable or disable mobile data"
+              spinnerLabel="Changing data setting."
+              checked={isChecked}
+              onClick={handleToggle}
+              isLoading={isLoading}
+            />
+            <div tabIndex="-1" ref={feedbackTextRef}>
+              {showFeedbackText && (
+                <Paragraph>{`Data has been ${
+                  isChecked ? 'enabled' : 'disabled'
+                } for this account.`}</Paragraph>
+              )}
+            </div>
+            <ToggleSwitch
+              id="sup"
+              ref={toggleSwitchRef}
+              label="Data toggle (with error)"
+              spinnerLabel="Changing data setting. This will fail."
+              checked={isChecked}
+              onClick={handleToggleError}
+              isLoading={isLoading}
+            />
+          </Box>
+        </FlexGrid.Col>
+      </FlexGrid.Row>
+    </FlexGrid>
+  )
+}
+
+;<App />
+```

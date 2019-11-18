@@ -52,6 +52,7 @@
     "npm": ">=6"
   },
   "dependencies": {
+    "@tds/core-button": "^2.1.10",
     "@tds/core-responsive": "^1.1.0",
     "styled-components": "^4.2.0"
   },

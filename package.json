@@ -52,7 +52,6 @@
     "npm": ">=6"
   },
   "dependencies": {
-    "@tds/core-responsive": "^1.1.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
@@ -69,6 +68,7 @@
     "@lerna/publish": "^3.14.1",
     "@tds/core-box": "^1.0.1",
     "@tds/core-card": "^2.0.1",
+    "@tds/core-button": "^2.1.10",
     "@tds/core-chevron-link": "^1.1.2",
     "@tds/core-colours": "^1.1.2",
     "@tds/core-css-reset": "^1.1.1",
@@ -80,6 +80,7 @@
     "@tds/core-link": "^1.0.3",
     "@tds/core-ordered-list": "^2.0.0",
     "@tds/core-paragraph": "^1.0.11",
+    "@tds/core-responsive": "^1.1.0",
     "@tds/core-strong": "^1.0.4",
     "@tds/core-text": "^1.1.0",
     "@tds/core-unordered-list": "^2.0.0",

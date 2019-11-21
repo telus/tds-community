@@ -28,9 +28,13 @@ exports[`ToggleSwitch renders 1`] = `
 }
 
 .c2:focus {
-  outline: auto;
+  outline-style: solid;
   outline-color: rgb(59,153,252);
   outline-width: 5px;
+}
+
+.c2:focus::-moz-focus-inner {
+  border: 0;
 }
 
 .c3 {
@@ -221,9 +225,13 @@ exports[`ToggleSwitch renders 1`] = `
 }
 
 .c0:focus {
-  outline: auto;
+  outline-style: solid;
   outline-color: rgb(59,153,252);
   outline-width: 5px;
+}
+
+.c0:focus::-moz-focus-inner {
+  border: 0;
 }
 
 .c1 {

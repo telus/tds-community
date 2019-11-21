@@ -24,9 +24,11 @@ Toggle switches are digital on/off switches. They prompt users to choose between
 ```jsx
 const App = () => {
   const [isChecked, setIsChecked] = React.useState(false)
+  const toggleRef = React.useRef()
 
   const handleClick = event => {
     setIsChecked(!isChecked)
+    toggleRef.current.focus()
   }
 
   return (
@@ -34,7 +36,8 @@ const App = () => {
       <FlexGrid.Row>
         <FlexGrid.Col xs={12} md={3}>
           <ToggleSwitch
-            id="toggle-accessibility"
+            ref={toggleRef}
+            id="toggle-basic"
             label="Enable data"
             tooltipCopy="en"
             tooltipText="Tool Tip Text"
@@ -73,7 +76,7 @@ const App = () => {
       <FlexGrid.Row>
         <FlexGrid.Col xs={12} md={3}>
           <ToggleSwitch
-            id="toggle-accessibility"
+            id="toggle-autofocus"
             label="Enable data"
             tooltipCopy="en"
             tooltipText="Tool Tip Text"
@@ -179,7 +182,7 @@ const App = () => {
         <FlexGrid.Col xs={12} md={3}>
           <Box between={3}>
             <ToggleSwitch
-              id="sup"
+              id="toggle-complete"
               ref={toggleSwitchRef}
               label="Mobile data"
               tooltipCopy="en"

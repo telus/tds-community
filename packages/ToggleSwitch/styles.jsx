@@ -24,9 +24,12 @@ export const Button = styled.button(props => ({
   borderRadius: '24px',
   backgroundColor: props['aria-checked'] ? colorAccessibleGreen : colorGainsboro,
   '&:focus': {
-    outline: props.isLoading ? 'none' : 'auto',
+    outlineStyle: props.isLoading ? 'none' : 'solid',
     outlineColor: 'rgb(59, 153, 252)',
     outlineWidth: '5px',
+  },
+  '&:focus::-moz-focus-inner': {
+    border: 0,
   },
 }))
 

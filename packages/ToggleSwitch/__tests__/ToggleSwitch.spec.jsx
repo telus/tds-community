@@ -16,6 +16,7 @@ describe('ToggleSwitch', () => {
   }
 
   const doShallow = props => shallow(<ToggleSwitch {...defaultProps} {...props} />)
+  const doMount = props => mount(<ToggleSwitch {...defaultProps} {...props} />)
 
   it('renders', () => {
     const toggleSwitch = mount(<ToggleSwitch {...defaultProps} />)
@@ -86,47 +87,10 @@ describe('ToggleSwitch', () => {
     ).toEqual(true)
   })
 
-  it('internal state should toggle checked when the input is changed by default', () => {
-    const toggleSwitch = doShallow({ checked: true, onClick: mockOnClick })
-
-    const mockEvent = { persist: () => {} }
-
-    toggleSwitch
-      .find(`#${defaultProps.id}`)
-      .at(0)
-      .simulate('click', mockEvent)
-
-    expect(
-      toggleSwitch
-        .find(`#${defaultProps.id}`)
-        .at(0)
-        .prop('aria-checked')
-    ).toEqual(true)
-
-    expect(
-      toggleSwitch
-        .find(`[data-testid="${defaultProps.id}-switch"]`)
-        .at(0)
-        .prop('aria-checked')
-    ).toEqual(true)
-  })
-
-  it('should override internal state change when onClick handler is provided ', () => {
-    const mockEvent = { persist: () => {} }
-    const toggleSwitch = doShallow({ checked: false, onClick: mockOnClick })
-
-    toggleSwitch
-      .find(`#${defaultProps.id}`)
-      .at(0)
-      .simulate('click', mockEvent)
-
-    // Checked state should remain false instead of toggling
-    expect(
-      toggleSwitch
-        .find(`#${defaultProps.id}`)
-        .at(0)
-        .prop('aria-checked')
-    ).toEqual(false)
+  it('aria-checked state should match checked prop', () => {
+    const toggleSwitch = doMount({
+      checked: false,
+    })
 
     expect(
       toggleSwitch
@@ -135,8 +99,13 @@ describe('ToggleSwitch', () => {
         .prop('aria-checked')
     ).toEqual(false)
 
-    // Custom onChange handler should get event delgated to it instead
-    expect(mockOnClick).toHaveBeenCalledWith(mockEvent)
+    toggleSwitch.setProps({ checked: true })
+    expect(
+      toggleSwitch
+        .find(`[data-testid="${defaultProps.id}-switch"]`)
+        .at(0)
+        .prop('aria-checked')
+    ).toEqual(true)
   })
 
   it('should call onFocus handler when provided ', () => {

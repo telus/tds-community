@@ -53,21 +53,22 @@ const App = () => {
 ;<App />
 ```
 
-**Asynchoronous usage with autofocus back on toggle after checked prop transition**
+**Asynchoronous usage**
 
 ```jsx
 const App = () => {
   const [isChecked, setIsChecked] = React.useState(false)
   const [isLoading, setIsLoading] = React.useState(false)
-  const [isAutoFocusable, setIsAutoFocusable] = React.useState(false)
+  const toggleRef = React.useRef()
+
   const handleClick = event => {
     setIsLoading(true)
-    setIsAutoFocusable(false)
+
     // NOTE: setTimeout does not allow proper focus management. Use promises in production
     setTimeout(() => {
-      setIsAutoFocusable(true)
       setIsChecked(!isChecked)
       setIsLoading(false)
+      toggleRef.current.focus()
     }, 2000)
   }
 
@@ -76,6 +77,7 @@ const App = () => {
       <FlexGrid.Row>
         <FlexGrid.Col xs={12} md={3}>
           <ToggleSwitch
+            ref={toggleRef}
             id="toggle-autofocus"
             label="Enable data"
             tooltipCopy="en"
@@ -84,7 +86,6 @@ const App = () => {
             checked={isChecked}
             onClick={handleClick}
             isLoading={isLoading}
-            autofocus={isAutoFocusable}
           />
         </FlexGrid.Col>
       </FlexGrid.Row>
@@ -140,8 +141,9 @@ const App = () => {
   const handleToggleError = event => {
     setIsLoading(true)
     setShowFeedbackText(false)
+
+    // NOTE: setTimeout does not allow proper focus management. Use promises in production
     setTimeout(() => {
-      // NOTE: setTimeout does not allow proper focus management. Use promises in production
       setIsChecked(!isChecked)
       setIsLoading(false)
       setShowFeedbackText(true)

@@ -16,18 +16,7 @@ import warn from '../../shared/utils/warn'
 
 const ToggleSwitch = React.forwardRef(
   (
-    {
-      id,
-      label,
-      tooltipText,
-      checked,
-      onClick,
-      tooltipCopy,
-      spinnerLabel,
-      autofocus,
-      isLoading,
-      ...rest
-    },
+    { id, label, tooltipText, checked, onClick, tooltipCopy, spinnerLabel, isLoading, ...rest },
     ref
   ) => {
     if (tooltipText && !tooltipCopy) {
@@ -62,15 +51,6 @@ const ToggleSwitch = React.forwardRef(
         buttonRef.current.focus()
       },
     }))
-
-    useEffect(() => {
-      if (autofocus) {
-        buttonRef.current.focus()
-      }
-      /* If either checked or isLoading changes we need
-      to focus on buttonRef ONLY when autofocus is set
-    */
-    }, [checked, isLoading])
 
     const handleTooltipClick = event => {
       event.preventDefault()
@@ -134,9 +114,6 @@ ToggleSwitch.propTypes = {
    @param {SyntheticEvent} event The React `SyntheticEvent` */
   onClick: PropTypes.func.isRequired,
 
-  /** Boolean to automatically focus on ToggleSwitch after interacting with it */
-  autofocus: PropTypes.bool,
-
   /** Boolean to show or hide spinner */
   isLoading: PropTypes.bool,
 }
@@ -145,7 +122,6 @@ ToggleSwitch.defaultProps = {
   checked: false,
   tooltipText: undefined,
   tooltipCopy: undefined,
-  autofocus: false,
   isLoading: false,
 }
 

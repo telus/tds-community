@@ -172,7 +172,7 @@ exports[`ToggleSwitch renders 1`] = `
                   data-testid="my-id-123-switch"
                   id="my-id-123"
                   name="name"
-                  onClick={[MockFunction]}
+                  onClick={[Function]}
                   role="switch"
                   toolTipCopy="en"
                   value="value"
@@ -257,7 +257,7 @@ exports[`ToggleSwitch renders 1`] = `
                     }
                     id="my-id-123"
                     name="name"
-                    onClick={[MockFunction]}
+                    onClick={[Function]}
                     role="switch"
                     toolTipCopy="en"
                     value="value"
@@ -269,7 +269,7 @@ exports[`ToggleSwitch renders 1`] = `
                       data-testid="my-id-123-switch"
                       id="my-id-123"
                       name="name"
-                      onClick={[MockFunction]}
+                      onClick={[Function]}
                       role="switch"
                       value="value"
                     >

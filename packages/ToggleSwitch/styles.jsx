@@ -8,6 +8,10 @@ export const StyledLabel = styled.label({
 
 StyledLabel.displayName = 'StyledLabel'
 
+/**
+ * Button background should only turn green when the `checked` prop is `true`
+ */
+
 export const Button = styled.button(props => ({
   appearance: 'none',
   background: 'none',

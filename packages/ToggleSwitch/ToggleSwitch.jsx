@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef, useImperativeHandle, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import { safeRest } from '@tds/util-helpers'
@@ -35,12 +35,12 @@ const ToggleSwitch = React.forwardRef(
     }
 
     const labelledById = `${id}-label`
-    const buttonRef = React.useRef()
+    const buttonRef = useRef()
 
     // Internal state to manage visual appearance of toggle while the user supplies the true checked status
-    const [_isChecked, _setIsChecked] = React.useState(checked)
+    const [_isChecked, _setIsChecked] = useState(checked)
 
-    React.useEffect(() => {
+    useEffect(() => {
       if (_setIsChecked) {
         _setIsChecked(checked)
       }
@@ -57,13 +57,13 @@ const ToggleSwitch = React.forwardRef(
     to focus on the ToggleSwitch at will by forwarding
     a ref to parent and exposing ONLY a single `focus` method
   */
-    React.useImperativeHandle(ref, () => ({
+    useImperativeHandle(ref, () => ({
       focus: () => {
         buttonRef.current.focus()
       },
     }))
 
-    React.useEffect(() => {
+    useEffect(() => {
       if (autofocus) {
         buttonRef.current.focus()
       }

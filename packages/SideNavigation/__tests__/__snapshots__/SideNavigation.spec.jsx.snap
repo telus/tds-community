@@ -1,48 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNavigation renders 1`] = `
-.c9 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.c9 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c15 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c15 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c6 {
   margin-left: 0;
   border-left: none;
@@ -52,12 +10,12 @@ exports[`SideNavigation renders 1`] = `
   background-color: #f2eff4;
 }
 
-.c13 {
+.c12 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c13:hover {
+.c12:hover {
   background-color: #f2eff4;
 }
 
@@ -70,7 +28,7 @@ exports[`SideNavigation renders 1`] = `
   margin-left: 0px;
 }
 
-.c14 {
+.c13 {
   border-left: none;
   margin-left: -0.25rem;
 }
@@ -88,11 +46,11 @@ exports[`SideNavigation renders 1`] = `
   text-decoration: none;
 }
 
-.c12 {
+.c11 {
   margin-bottom: 1rem;
 }
 
-.c10 {
+.c9 {
   background-color: white;
   border: none;
   width: 100%;
@@ -101,13 +59,13 @@ exports[`SideNavigation renders 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.c10:hover {
+.c9:hover {
   background-color: #f2eff4;
   color: #4b286d;
   cursor: pointer;
 }
 
-.c11 {
+.c10 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -222,49 +180,7 @@ exports[`SideNavigation renders 1`] = `
             }
             forwardedRef={
               Object {
-                "current": .c8 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.c8 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c14 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c14 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c5 {
+                "current": .c5 {
   margin-left: 0;
   border-left: none;
 }
@@ -273,12 +189,12 @@ exports[`SideNavigation renders 1`] = `
   background-color: #f2eff4;
 }
 
-.c12 {
+.c11 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c12:hover {
+.c11:hover {
   background-color: #f2eff4;
 }
 
@@ -291,7 +207,7 @@ exports[`SideNavigation renders 1`] = `
   margin-left: 0px;
 }
 
-.c13 {
+.c12 {
   border-left: none;
   margin-left: -0.25rem;
 }
@@ -309,11 +225,11 @@ exports[`SideNavigation renders 1`] = `
   text-decoration: none;
 }
 
-.c11 {
+.c10 {
   margin-bottom: 1rem;
 }
 
-.c9 {
+.c8 {
   background-color: white;
   border: none;
   width: 100%;
@@ -322,13 +238,13 @@ exports[`SideNavigation renders 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.c9:hover {
+.c8:hover {
   background-color: #f2eff4;
   color: #4b286d;
   cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -412,7 +328,7 @@ exports[`SideNavigation renders 1`] = `
                                   class="c7"
                                 >
                                   <span
-                                    class="c8"
+                                    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                   >
                                     Home
                                   </span>
@@ -447,7 +363,7 @@ exports[`SideNavigation renders 1`] = `
                                   class="c7"
                                 >
                                   <span
-                                    class="c8"
+                                    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                   >
                                     One
                                   </span>
@@ -482,7 +398,7 @@ exports[`SideNavigation renders 1`] = `
                                   class="c7"
                                 >
                                   <span
-                                    class="c8"
+                                    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                   >
                                     Two
                                   </span>
@@ -497,15 +413,15 @@ exports[`SideNavigation renders 1`] = `
                       >
                         <button
                           aria-expanded="false"
-                          class="c9"
+                          class="c8"
                           id="TDS-SideNavigation-3"
                         >
                           <div
-                            class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c10"
+                            class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c9"
                           >
                             <div>
                               <span
-                                class="c8"
+                                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                               >
                                 Threefdsfdsfds
                               </span>
@@ -522,7 +438,7 @@ exports[`SideNavigation renders 1`] = `
                           style="transition: height 500ms; height: 0px; overflow: hidden; visibility: hidden;"
                         >
                           <ul
-                            class="c11"
+                            class="c10"
                           >
                             <li>
                               <a
@@ -535,19 +451,19 @@ exports[`SideNavigation renders 1`] = `
                                 >
                                   <div
                                     active="0"
-                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
+                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c11"
                                     submenulink="1"
                                   >
                                     <div
                                       active="0"
-                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
+                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c12"
                                       submenulink="1"
                                     >
                                       <div
                                         class="c7"
                                       >
                                         <span
-                                          class="c14"
+                                          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                         >
                                           Option 1
                                         </span>
@@ -568,19 +484,19 @@ exports[`SideNavigation renders 1`] = `
                                 >
                                   <div
                                     active="0"
-                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
+                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c11"
                                     submenulink="1"
                                   >
                                     <div
                                       active="0"
-                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
+                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c12"
                                       submenulink="1"
                                     >
                                       <div
                                         class="c7"
                                       >
                                         <span
-                                          class="c14"
+                                          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                         >
                                           Option 2
                                         </span>
@@ -601,19 +517,19 @@ exports[`SideNavigation renders 1`] = `
                                 >
                                   <div
                                     active="0"
-                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
+                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c11"
                                     submenulink="1"
                                   >
                                     <div
                                       active="0"
-                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
+                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c12"
                                       submenulink="1"
                                     >
                                       <div
                                         class="c7"
                                       >
                                         <span
-                                          class="c14"
+                                          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                         >
                                           Option 3
                                         </span>
@@ -800,7 +716,7 @@ exports[`SideNavigation renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c13",
+                                                        "lastClassName": "c12",
                                                         "rules": Array [
                                                           [Function],
                                                         ],
@@ -846,7 +762,7 @@ exports[`SideNavigation renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c14",
+                                                                "lastClassName": "c13",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -920,58 +836,11 @@ exports[`SideNavigation renders 1`] = `
                                                                         invert={false}
                                                                         size="medium"
                                                                       >
-                                                                        <Text__StyledText
-                                                                          block={false}
-                                                                          bold={false}
-                                                                          inheritColor={true}
-                                                                          invert={false}
-                                                                          size="medium"
+                                                                        <span
+                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                                                         >
-                                                                          <StyledComponent
-                                                                            block={false}
-                                                                            bold={false}
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c15",
-                                                                                  "rules": Array [
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Text__StyledText",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            inheritColor={true}
-                                                                            invert={false}
-                                                                            size="medium"
-                                                                          >
-                                                                            <span
-                                                                              className="c9"
-                                                                              size="medium"
-                                                                            >
-                                                                              Home
-                                                                            </span>
-                                                                          </StyledComponent>
-                                                                        </Text__StyledText>
+                                                                          Home
+                                                                        </span>
                                                                       </Text>
                                                                     </div>
                                                                   </ColoredTextProvider>
@@ -1123,7 +992,7 @@ exports[`SideNavigation renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c13",
+                                                        "lastClassName": "c12",
                                                         "rules": Array [
                                                           [Function],
                                                         ],
@@ -1169,7 +1038,7 @@ exports[`SideNavigation renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c14",
+                                                                "lastClassName": "c13",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -1243,58 +1112,11 @@ exports[`SideNavigation renders 1`] = `
                                                                         invert={false}
                                                                         size="medium"
                                                                       >
-                                                                        <Text__StyledText
-                                                                          block={false}
-                                                                          bold={false}
-                                                                          inheritColor={true}
-                                                                          invert={false}
-                                                                          size="medium"
+                                                                        <span
+                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                                                         >
-                                                                          <StyledComponent
-                                                                            block={false}
-                                                                            bold={false}
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c15",
-                                                                                  "rules": Array [
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Text__StyledText",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            inheritColor={true}
-                                                                            invert={false}
-                                                                            size="medium"
-                                                                          >
-                                                                            <span
-                                                                              className="c9"
-                                                                              size="medium"
-                                                                            >
-                                                                              One
-                                                                            </span>
-                                                                          </StyledComponent>
-                                                                        </Text__StyledText>
+                                                                          One
+                                                                        </span>
                                                                       </Text>
                                                                     </div>
                                                                   </ColoredTextProvider>
@@ -1446,7 +1268,7 @@ exports[`SideNavigation renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c13",
+                                                        "lastClassName": "c12",
                                                         "rules": Array [
                                                           [Function],
                                                         ],
@@ -1492,7 +1314,7 @@ exports[`SideNavigation renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c14",
+                                                                "lastClassName": "c13",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -1566,58 +1388,11 @@ exports[`SideNavigation renders 1`] = `
                                                                         invert={false}
                                                                         size="medium"
                                                                       >
-                                                                        <Text__StyledText
-                                                                          block={false}
-                                                                          bold={false}
-                                                                          inheritColor={true}
-                                                                          invert={false}
-                                                                          size="medium"
+                                                                        <span
+                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                                                         >
-                                                                          <StyledComponent
-                                                                            block={false}
-                                                                            bold={false}
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c15",
-                                                                                  "rules": Array [
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Text__StyledText",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            inheritColor={true}
-                                                                            invert={false}
-                                                                            size="medium"
-                                                                          >
-                                                                            <span
-                                                                              className="c9"
-                                                                              size="medium"
-                                                                            >
-                                                                              Two
-                                                                            </span>
-                                                                          </StyledComponent>
-                                                                        </Text__StyledText>
+                                                                          Two
+                                                                        </span>
                                                                       </Text>
                                                                     </div>
                                                                   </ColoredTextProvider>
@@ -1696,7 +1471,7 @@ exports[`SideNavigation renders 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "SubMenu__ButtonSubMenu-sc-1p1ex8g-1",
                                           "isStatic": false,
-                                          "lastClassName": "c10",
+                                          "lastClassName": "c9",
                                           "rules": Array [
                                             [Function],
                                           ],
@@ -1719,7 +1494,7 @@ exports[`SideNavigation renders 1`] = `
                                   >
                                     <button
                                       aria-expanded={false}
-                                      className="c10"
+                                      className="c9"
                                       id="TDS-SideNavigation-3"
                                       onClick={[Function]}
                                     >
@@ -1736,7 +1511,7 @@ exports[`SideNavigation renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "SubMenu__SpaceBox-sc-1p1ex8g-2",
                                                 "isStatic": true,
-                                                "lastClassName": "c11",
+                                                "lastClassName": "c10",
                                                 "rules": Array [
                                                   "justify-content: space-between; align-items: center; text-align: left; display: flex;",
                                                 ],
@@ -1757,14 +1532,14 @@ exports[`SideNavigation renders 1`] = `
                                           vertical={3}
                                         >
                                           <Box
-                                            className="c11"
+                                            className="c10"
                                             horizontal={2}
                                             inline={true}
                                             tag="div"
                                             vertical={3}
                                           >
                                             <div
-                                              className="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c11"
+                                              className="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c10"
                                             >
                                               <ColoredTextProvider
                                                 className={null}
@@ -1776,58 +1551,11 @@ exports[`SideNavigation renders 1`] = `
                                                     invert={false}
                                                     size="medium"
                                                   >
-                                                    <Text__StyledText
-                                                      block={false}
-                                                      bold={false}
-                                                      inheritColor={true}
-                                                      invert={false}
-                                                      size="medium"
+                                                    <span
+                                                      className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                                     >
-                                                      <StyledComponent
-                                                        block={false}
-                                                        bold={false}
-                                                        forwardedComponent={
-                                                          Object {
-                                                            "$$typeof": Symbol(react.forward_ref),
-                                                            "attrs": Array [],
-                                                            "componentStyle": ComponentStyle {
-                                                              "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                              "isStatic": false,
-                                                              "lastClassName": "c15",
-                                                              "rules": Array [
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                                "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                              ],
-                                                            },
-                                                            "displayName": "Text__StyledText",
-                                                            "foldedComponentIds": Array [],
-                                                            "render": [Function],
-                                                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                            "target": "span",
-                                                            "toString": [Function],
-                                                            "warnTooManyClasses": [Function],
-                                                            "withComponent": [Function],
-                                                          }
-                                                        }
-                                                        forwardedRef={null}
-                                                        inheritColor={true}
-                                                        invert={false}
-                                                        size="medium"
-                                                      >
-                                                        <span
-                                                          className="c9"
-                                                          size="medium"
-                                                        >
-                                                          Threefdsfdsfds
-                                                        </span>
-                                                      </StyledComponent>
-                                                    </Text__StyledText>
+                                                      Threefdsfdsfds
+                                                    </span>
                                                   </Text>
                                                 </div>
                                               </ColoredTextProvider>
@@ -1898,7 +1626,7 @@ exports[`SideNavigation renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "SubMenu__SubMenuContainer-sc-1p1ex8g-0",
                                                 "isStatic": true,
-                                                "lastClassName": "c12",
+                                                "lastClassName": "c11",
                                                 "rules": Array [
                                                   "margin-bottom: 1rem;",
                                                 ],
@@ -1916,7 +1644,7 @@ exports[`SideNavigation renders 1`] = `
                                           forwardedRef={[Function]}
                                         >
                                           <ul
-                                            className="c12"
+                                            className="c11"
                                           >
                                             <li
                                               key=".0"
@@ -2017,7 +1745,7 @@ exports[`SideNavigation renders 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c13",
+                                                                        "lastClassName": "c12",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -2038,7 +1766,7 @@ exports[`SideNavigation renders 1`] = `
                                                                 >
                                                                   <Box
                                                                     active={0}
-                                                                    className="c13"
+                                                                    className="c12"
                                                                     inline={false}
                                                                     submenulink={1}
                                                                     tag="div"
@@ -2046,7 +1774,7 @@ exports[`SideNavigation renders 1`] = `
                                                                   >
                                                                     <div
                                                                       active={0}
-                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c13"
+                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
                                                                       submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
@@ -2063,7 +1791,7 @@ exports[`SideNavigation renders 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c14",
+                                                                                "lastClassName": "c13",
                                                                                 "rules": Array [
                                                                                   [Function],
                                                                                 ],
@@ -2084,7 +1812,7 @@ exports[`SideNavigation renders 1`] = `
                                                                         >
                                                                           <Box
                                                                             active={0}
-                                                                            className="c14"
+                                                                            className="c13"
                                                                             horizontal={3}
                                                                             inline={false}
                                                                             submenulink={1}
@@ -2092,7 +1820,7 @@ exports[`SideNavigation renders 1`] = `
                                                                           >
                                                                             <div
                                                                               active={0}
-                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c14"
+                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
                                                                               submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
@@ -2137,58 +1865,11 @@ exports[`SideNavigation renders 1`] = `
                                                                                         invert={false}
                                                                                         size="small"
                                                                                       >
-                                                                                        <Text__StyledText
-                                                                                          block={false}
-                                                                                          bold={false}
-                                                                                          inheritColor={true}
-                                                                                          invert={false}
-                                                                                          size="small"
+                                                                                        <span
+                                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                                                                         >
-                                                                                          <StyledComponent
-                                                                                            block={false}
-                                                                                            bold={false}
-                                                                                            forwardedComponent={
-                                                                                              Object {
-                                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                                "attrs": Array [],
-                                                                                                "componentStyle": ComponentStyle {
-                                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                  "isStatic": false,
-                                                                                                  "lastClassName": "c15",
-                                                                                                  "rules": Array [
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                                  ],
-                                                                                                },
-                                                                                                "displayName": "Text__StyledText",
-                                                                                                "foldedComponentIds": Array [],
-                                                                                                "render": [Function],
-                                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                "target": "span",
-                                                                                                "toString": [Function],
-                                                                                                "warnTooManyClasses": [Function],
-                                                                                                "withComponent": [Function],
-                                                                                              }
-                                                                                            }
-                                                                                            forwardedRef={null}
-                                                                                            inheritColor={true}
-                                                                                            invert={false}
-                                                                                            size="small"
-                                                                                          >
-                                                                                            <span
-                                                                                              className="c15"
-                                                                                              size="small"
-                                                                                            >
-                                                                                              Option 1
-                                                                                            </span>
-                                                                                          </StyledComponent>
-                                                                                        </Text__StyledText>
+                                                                                          Option 1
+                                                                                        </span>
                                                                                       </Text>
                                                                                     </div>
                                                                                   </ColoredTextProvider>
@@ -2310,7 +1991,7 @@ exports[`SideNavigation renders 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c13",
+                                                                        "lastClassName": "c12",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -2331,7 +2012,7 @@ exports[`SideNavigation renders 1`] = `
                                                                 >
                                                                   <Box
                                                                     active={0}
-                                                                    className="c13"
+                                                                    className="c12"
                                                                     inline={false}
                                                                     submenulink={1}
                                                                     tag="div"
@@ -2339,7 +2020,7 @@ exports[`SideNavigation renders 1`] = `
                                                                   >
                                                                     <div
                                                                       active={0}
-                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c13"
+                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
                                                                       submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
@@ -2356,7 +2037,7 @@ exports[`SideNavigation renders 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c14",
+                                                                                "lastClassName": "c13",
                                                                                 "rules": Array [
                                                                                   [Function],
                                                                                 ],
@@ -2377,7 +2058,7 @@ exports[`SideNavigation renders 1`] = `
                                                                         >
                                                                           <Box
                                                                             active={0}
-                                                                            className="c14"
+                                                                            className="c13"
                                                                             horizontal={3}
                                                                             inline={false}
                                                                             submenulink={1}
@@ -2385,7 +2066,7 @@ exports[`SideNavigation renders 1`] = `
                                                                           >
                                                                             <div
                                                                               active={0}
-                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c14"
+                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
                                                                               submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
@@ -2430,58 +2111,11 @@ exports[`SideNavigation renders 1`] = `
                                                                                         invert={false}
                                                                                         size="small"
                                                                                       >
-                                                                                        <Text__StyledText
-                                                                                          block={false}
-                                                                                          bold={false}
-                                                                                          inheritColor={true}
-                                                                                          invert={false}
-                                                                                          size="small"
+                                                                                        <span
+                                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                                                                         >
-                                                                                          <StyledComponent
-                                                                                            block={false}
-                                                                                            bold={false}
-                                                                                            forwardedComponent={
-                                                                                              Object {
-                                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                                "attrs": Array [],
-                                                                                                "componentStyle": ComponentStyle {
-                                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                  "isStatic": false,
-                                                                                                  "lastClassName": "c15",
-                                                                                                  "rules": Array [
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                                  ],
-                                                                                                },
-                                                                                                "displayName": "Text__StyledText",
-                                                                                                "foldedComponentIds": Array [],
-                                                                                                "render": [Function],
-                                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                "target": "span",
-                                                                                                "toString": [Function],
-                                                                                                "warnTooManyClasses": [Function],
-                                                                                                "withComponent": [Function],
-                                                                                              }
-                                                                                            }
-                                                                                            forwardedRef={null}
-                                                                                            inheritColor={true}
-                                                                                            invert={false}
-                                                                                            size="small"
-                                                                                          >
-                                                                                            <span
-                                                                                              className="c15"
-                                                                                              size="small"
-                                                                                            >
-                                                                                              Option 2
-                                                                                            </span>
-                                                                                          </StyledComponent>
-                                                                                        </Text__StyledText>
+                                                                                          Option 2
+                                                                                        </span>
                                                                                       </Text>
                                                                                     </div>
                                                                                   </ColoredTextProvider>
@@ -2603,7 +2237,7 @@ exports[`SideNavigation renders 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c13",
+                                                                        "lastClassName": "c12",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -2624,7 +2258,7 @@ exports[`SideNavigation renders 1`] = `
                                                                 >
                                                                   <Box
                                                                     active={0}
-                                                                    className="c13"
+                                                                    className="c12"
                                                                     inline={false}
                                                                     submenulink={1}
                                                                     tag="div"
@@ -2632,7 +2266,7 @@ exports[`SideNavigation renders 1`] = `
                                                                   >
                                                                     <div
                                                                       active={0}
-                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c13"
+                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
                                                                       submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
@@ -2649,7 +2283,7 @@ exports[`SideNavigation renders 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c14",
+                                                                                "lastClassName": "c13",
                                                                                 "rules": Array [
                                                                                   [Function],
                                                                                 ],
@@ -2670,7 +2304,7 @@ exports[`SideNavigation renders 1`] = `
                                                                         >
                                                                           <Box
                                                                             active={0}
-                                                                            className="c14"
+                                                                            className="c13"
                                                                             horizontal={3}
                                                                             inline={false}
                                                                             submenulink={1}
@@ -2678,7 +2312,7 @@ exports[`SideNavigation renders 1`] = `
                                                                           >
                                                                             <div
                                                                               active={0}
-                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c14"
+                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
                                                                               submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
@@ -2723,58 +2357,11 @@ exports[`SideNavigation renders 1`] = `
                                                                                         invert={false}
                                                                                         size="small"
                                                                                       >
-                                                                                        <Text__StyledText
-                                                                                          block={false}
-                                                                                          bold={false}
-                                                                                          inheritColor={true}
-                                                                                          invert={false}
-                                                                                          size="small"
+                                                                                        <span
+                                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                                                                         >
-                                                                                          <StyledComponent
-                                                                                            block={false}
-                                                                                            bold={false}
-                                                                                            forwardedComponent={
-                                                                                              Object {
-                                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                                "attrs": Array [],
-                                                                                                "componentStyle": ComponentStyle {
-                                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                  "isStatic": false,
-                                                                                                  "lastClassName": "c15",
-                                                                                                  "rules": Array [
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                                  ],
-                                                                                                },
-                                                                                                "displayName": "Text__StyledText",
-                                                                                                "foldedComponentIds": Array [],
-                                                                                                "render": [Function],
-                                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                "target": "span",
-                                                                                                "toString": [Function],
-                                                                                                "warnTooManyClasses": [Function],
-                                                                                                "withComponent": [Function],
-                                                                                              }
-                                                                                            }
-                                                                                            forwardedRef={null}
-                                                                                            inheritColor={true}
-                                                                                            invert={false}
-                                                                                            size="small"
-                                                                                          >
-                                                                                            <span
-                                                                                              className="c15"
-                                                                                              size="small"
-                                                                                            >
-                                                                                              Option 3
-                                                                                            </span>
-                                                                                          </StyledComponent>
-                                                                                        </Text__StyledText>
+                                                                                          Option 3
+                                                                                        </span>
                                                                                       </Text>
                                                                                     </div>
                                                                                   </ColoredTextProvider>
@@ -2822,71 +2409,6 @@ exports[`SideNavigation renders 1`] = `
 `;
 
 exports[`SideNavigation renders without vertical spacing 1`] = `
-.c9 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.c9 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c18 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c18 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c12 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c12 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c6 {
   margin-left: 0;
   border-left: none;
@@ -2896,12 +2418,12 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
-.c15 {
+.c13 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c15:hover {
+.c13:hover {
   background-color: #f2eff4;
 }
 
@@ -2909,7 +2431,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: none;
 }
 
-.c14 {
+.c12 {
   background-color: #f2eff4;
 }
 
@@ -2918,7 +2440,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   margin-left: 0px;
 }
 
-.c16 {
+.c14 {
   border-left: 4px solid #4b286d;
   margin-left: -0.25rem;
 }
@@ -2931,7 +2453,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   color: #4b286d;
 }
 
-.c17 {
+.c15 {
   font-weight: bold;
   color: #4b286d;
 }
@@ -2941,11 +2463,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   text-decoration: none;
 }
 
-.c13 {
+.c11 {
   margin-bottom: 1rem;
 }
 
-.c10 {
+.c9 {
   background-color: white;
   border: none;
   width: 100%;
@@ -2954,13 +2476,13 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.c10:hover {
+.c9:hover {
   background-color: #f2eff4;
   color: #4b286d;
   cursor: pointer;
 }
 
-.c11 {
+.c10 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -3074,72 +2596,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
             }
             forwardedRef={
               Object {
-                "current": .c8 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.c8 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c17 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c17 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c11 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c11 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c5 {
+                "current": .c5 {
   margin-left: 0;
   border-left: none;
 }
@@ -3148,12 +2605,12 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
-.c14 {
+.c12 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c14:hover {
+.c12:hover {
   background-color: #f2eff4;
 }
 
@@ -3161,7 +2618,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: none;
 }
 
-.c13 {
+.c11 {
   background-color: #f2eff4;
 }
 
@@ -3170,7 +2627,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   margin-left: 0px;
 }
 
-.c15 {
+.c13 {
   border-left: 4px solid #4b286d;
   margin-left: -0.25rem;
 }
@@ -3183,7 +2640,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   color: #4b286d;
 }
 
-.c16 {
+.c14 {
   font-weight: bold;
   color: #4b286d;
 }
@@ -3193,11 +2650,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   text-decoration: none;
 }
 
-.c12 {
+.c10 {
   margin-bottom: 1rem;
 }
 
-.c9 {
+.c8 {
   background-color: white;
   border: none;
   width: 100%;
@@ -3206,13 +2663,13 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.c9:hover {
+.c8:hover {
   background-color: #f2eff4;
   color: #4b286d;
   cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -3296,7 +2753,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                   class="c7"
                                 >
                                   <span
-                                    class="c8"
+                                    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                   >
                                     Home
                                   </span>
@@ -3311,15 +2768,15 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                       >
                         <button
                           aria-expanded="true"
-                          class="c9"
+                          class="c8"
                           id="TDS-SideNavigation-1"
                         >
                           <div
-                            class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c10"
+                            class="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c9"
                           >
                             <div>
                               <span
-                                class="c11"
+                                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
                               >
                                 Threefdsfdsfds
                               </span>
@@ -3336,7 +2793,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                           style="transition: height 500ms; height: 0px; overflow: hidden;"
                         >
                           <ul
-                            class="c12"
+                            class="c10"
                           >
                             <li>
                               <a
@@ -3345,23 +2802,23 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                               >
                                 <div
                                   active="1"
-                                  class="c13"
+                                  class="c11"
                                 >
                                   <div
                                     active="1"
-                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c14"
+                                    class="TDS_Box-modules__verticalPadding-3___Fsv37 c12"
                                     submenulink="1"
                                   >
                                     <div
                                       active="1"
-                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c15"
+                                      class="TDS_Box-modules__horizontalPadding-3___2uoUp c13"
                                       submenulink="1"
                                     >
                                       <div
-                                        class="c16"
+                                        class="c14"
                                       >
                                         <span
-                                          class="c17"
+                                          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
                                         >
                                           Option 1
                                         </span>
@@ -3506,7 +2963,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "Link__BoxWrapper-gur8v7-1",
                                                 "isStatic": false,
-                                                "lastClassName": "c14",
+                                                "lastClassName": "c12",
                                                 "rules": Array [
                                                   [Function],
                                                 ],
@@ -3547,7 +3004,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c15",
+                                                        "lastClassName": "c13",
                                                         "rules": Array [
                                                           [Function],
                                                         ],
@@ -3593,7 +3050,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c16",
+                                                                "lastClassName": "c14",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -3637,7 +3094,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c17",
+                                                                        "lastClassName": "c15",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -3667,58 +3124,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                         invert={false}
                                                                         size="medium"
                                                                       >
-                                                                        <Text__StyledText
-                                                                          block={false}
-                                                                          bold={false}
-                                                                          inheritColor={true}
-                                                                          invert={false}
-                                                                          size="medium"
+                                                                        <span
+                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                                                                         >
-                                                                          <StyledComponent
-                                                                            block={false}
-                                                                            bold={false}
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c18",
-                                                                                  "rules": Array [
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Text__StyledText",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            inheritColor={true}
-                                                                            invert={false}
-                                                                            size="medium"
-                                                                          >
-                                                                            <span
-                                                                              className="c9"
-                                                                              size="medium"
-                                                                            >
-                                                                              Home
-                                                                            </span>
-                                                                          </StyledComponent>
-                                                                        </Text__StyledText>
+                                                                          Home
+                                                                        </span>
                                                                       </Text>
                                                                     </div>
                                                                   </ColoredTextProvider>
@@ -3799,7 +3209,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "SubMenu__ButtonSubMenu-sc-1p1ex8g-1",
                                           "isStatic": false,
-                                          "lastClassName": "c10",
+                                          "lastClassName": "c9",
                                           "rules": Array [
                                             [Function],
                                           ],
@@ -3822,7 +3232,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                   >
                                     <button
                                       aria-expanded={true}
-                                      className="c10"
+                                      className="c9"
                                       id="TDS-SideNavigation-1"
                                       onClick={[Function]}
                                     >
@@ -3839,7 +3249,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "SubMenu__SpaceBox-sc-1p1ex8g-2",
                                                 "isStatic": true,
-                                                "lastClassName": "c11",
+                                                "lastClassName": "c10",
                                                 "rules": Array [
                                                   "justify-content: space-between; align-items: center; text-align: left; display: flex;",
                                                 ],
@@ -3860,14 +3270,14 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                           vertical={3}
                                         >
                                           <Box
-                                            className="c11"
+                                            className="c10"
                                             horizontal={2}
                                             inline={true}
                                             tag="div"
                                             vertical={3}
                                           >
                                             <div
-                                              className="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c11"
+                                              className="TDS_Box-modules__horizontalPadding-2___3hmwJ TDS_Box-modules__verticalPadding-3___Fsv37 c10"
                                             >
                                               <ColoredTextProvider
                                                 className={null}
@@ -3879,58 +3289,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                     invert={false}
                                                     size="medium"
                                                   >
-                                                    <Text__StyledText
-                                                      block={false}
-                                                      bold={true}
-                                                      inheritColor={true}
-                                                      invert={false}
-                                                      size="medium"
+                                                    <span
+                                                      className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
                                                     >
-                                                      <StyledComponent
-                                                        block={false}
-                                                        bold={true}
-                                                        forwardedComponent={
-                                                          Object {
-                                                            "$$typeof": Symbol(react.forward_ref),
-                                                            "attrs": Array [],
-                                                            "componentStyle": ComponentStyle {
-                                                              "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                              "isStatic": false,
-                                                              "lastClassName": "c18",
-                                                              "rules": Array [
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                                "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                              ],
-                                                            },
-                                                            "displayName": "Text__StyledText",
-                                                            "foldedComponentIds": Array [],
-                                                            "render": [Function],
-                                                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                            "target": "span",
-                                                            "toString": [Function],
-                                                            "warnTooManyClasses": [Function],
-                                                            "withComponent": [Function],
-                                                          }
-                                                        }
-                                                        forwardedRef={null}
-                                                        inheritColor={true}
-                                                        invert={false}
-                                                        size="medium"
-                                                      >
-                                                        <span
-                                                          className="c12"
-                                                          size="medium"
-                                                        >
-                                                          Threefdsfdsfds
-                                                        </span>
-                                                      </StyledComponent>
-                                                    </Text__StyledText>
+                                                      Threefdsfdsfds
+                                                    </span>
                                                   </Text>
                                                 </div>
                                               </ColoredTextProvider>
@@ -4000,7 +3363,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "SubMenu__SubMenuContainer-sc-1p1ex8g-0",
                                                 "isStatic": true,
-                                                "lastClassName": "c13",
+                                                "lastClassName": "c11",
                                                 "rules": Array [
                                                   "margin-bottom: 1rem;",
                                                 ],
@@ -4018,7 +3381,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                           forwardedRef={[Function]}
                                         >
                                           <ul
-                                            className="c13"
+                                            className="c11"
                                           >
                                             <li
                                               key=".0"
@@ -4078,7 +3441,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxWrapper-gur8v7-1",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c14",
+                                                                "lastClassName": "c12",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -4097,13 +3460,13 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                         >
                                                           <Box
                                                             active={1}
-                                                            className="c14"
+                                                            className="c12"
                                                             inline={false}
                                                             tag="div"
                                                           >
                                                             <div
                                                               active={1}
-                                                              className="c14"
+                                                              className="c12"
                                                             >
                                                               <Link__BoxContainer
                                                                 active={1}
@@ -4119,7 +3482,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__BoxContainer-gur8v7-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c15",
+                                                                        "lastClassName": "c13",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -4140,7 +3503,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                 >
                                                                   <Box
                                                                     active={1}
-                                                                    className="c15"
+                                                                    className="c13"
                                                                     inline={false}
                                                                     submenulink={1}
                                                                     tag="div"
@@ -4148,7 +3511,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                   >
                                                                     <div
                                                                       active={1}
-                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c15"
+                                                                      className="TDS_Box-modules__verticalPadding-3___Fsv37 c13"
                                                                       submenulink={1}
                                                                     >
                                                                       <Link__BoxActive
@@ -4165,7 +3528,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c16",
+                                                                                "lastClassName": "c14",
                                                                                 "rules": Array [
                                                                                   [Function],
                                                                                 ],
@@ -4186,7 +3549,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                         >
                                                                           <Box
                                                                             active={1}
-                                                                            className="c16"
+                                                                            className="c14"
                                                                             horizontal={3}
                                                                             inline={false}
                                                                             submenulink={1}
@@ -4194,7 +3557,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                           >
                                                                             <div
                                                                               active={1}
-                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c16"
+                                                                              className="TDS_Box-modules__horizontalPadding-3___2uoUp c14"
                                                                               submenulink={1}
                                                                             >
                                                                               <Link__StyledTextProvider
@@ -4209,7 +3572,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                       "componentStyle": ComponentStyle {
                                                                                         "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                                         "isStatic": false,
-                                                                                        "lastClassName": "c17",
+                                                                                        "lastClassName": "c15",
                                                                                         "rules": Array [
                                                                                           [Function],
                                                                                         ],
@@ -4228,10 +3591,10 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                 >
                                                                                   <ColoredTextProvider
                                                                                     active={true}
-                                                                                    className="c17"
+                                                                                    className="c15"
                                                                                   >
                                                                                     <div
-                                                                                      className="c17"
+                                                                                      className="c15"
                                                                                     >
                                                                                       <Text
                                                                                         block={false}
@@ -4239,58 +3602,11 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                         invert={false}
                                                                                         size="small"
                                                                                       >
-                                                                                        <Text__StyledText
-                                                                                          block={false}
-                                                                                          bold={true}
-                                                                                          inheritColor={true}
-                                                                                          invert={false}
-                                                                                          size="small"
+                                                                                        <span
+                                                                                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__inheritColor___SREX0"
                                                                                         >
-                                                                                          <StyledComponent
-                                                                                            block={false}
-                                                                                            bold={true}
-                                                                                            forwardedComponent={
-                                                                                              Object {
-                                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                                "attrs": Array [],
-                                                                                                "componentStyle": ComponentStyle {
-                                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                  "isStatic": false,
-                                                                                                  "lastClassName": "c18",
-                                                                                                  "rules": Array [
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    [Function],
-                                                                                                    "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                                                  ],
-                                                                                                },
-                                                                                                "displayName": "Text__StyledText",
-                                                                                                "foldedComponentIds": Array [],
-                                                                                                "render": [Function],
-                                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                                                "target": "span",
-                                                                                                "toString": [Function],
-                                                                                                "warnTooManyClasses": [Function],
-                                                                                                "withComponent": [Function],
-                                                                                              }
-                                                                                            }
-                                                                                            forwardedRef={null}
-                                                                                            inheritColor={true}
-                                                                                            invert={false}
-                                                                                            size="small"
-                                                                                          >
-                                                                                            <span
-                                                                                              className="c18"
-                                                                                              size="small"
-                                                                                            >
-                                                                                              Option 1
-                                                                                            </span>
-                                                                                          </StyledComponent>
-                                                                                        </Text__StyledText>
+                                                                                          Option 1
+                                                                                        </span>
                                                                                       </Text>
                                                                                     </div>
                                                                                   </ColoredTextProvider>

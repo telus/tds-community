@@ -1,80 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNavigation.SubMenu renders 1`] = `
-.c2 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.c2 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c9 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c9 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c6 {
+.c5 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c6:hover {
+.c5:hover {
   background-color: #f2eff4;
 }
 
-.c5 {
+.c4 {
   background-color: none;
 }
 
-.c7 {
+.c6 {
   border-left: none;
   margin-left: -0.25rem;
 }
 
-.c8 {
+.c7 {
   color: #54595f;
 }
 
-.c8:hover {
+.c7:hover {
   color: #4b286d;
 }
 
-.c4 {
+.c3 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 1rem;
 }
 
@@ -210,58 +168,11 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                       invert={false}
                       size="medium"
                     >
-                      <Text__StyledText
-                        block={false}
-                        bold={false}
-                        inheritColor={true}
-                        invert={false}
-                        size="medium"
+                      <span
+                        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__inheritColor___SREX0"
                       >
-                        <StyledComponent
-                          block={false}
-                          bold={false}
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                "isStatic": false,
-                                "lastClassName": "c9",
-                                "rules": Array [
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                ],
-                              },
-                              "displayName": "Text__StyledText",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                              "target": "span",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          inheritColor={true}
-                          invert={false}
-                          size="medium"
-                        >
-                          <span
-                            className="c2"
-                            size="medium"
-                          >
-                            Threefdsfdsfds
-                          </span>
-                        </StyledComponent>
-                      </Text__StyledText>
+                        Threefdsfdsfds
+                      </span>
                     </Text>
                   </div>
                 </ColoredTextProvider>
@@ -332,7 +243,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "SubMenu__SubMenuContainer-sc-1p1ex8g-0",
                   "isStatic": true,
-                  "lastClassName": "c3",
+                  "lastClassName": "c2",
                   "rules": Array [
                     "margin-bottom: 1rem;",
                   ],
@@ -350,7 +261,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
             forwardedRef={[Function]}
           >
             <ul
-              className="c3"
+              className="c2"
             >
               <li
                 key=".0"
@@ -374,7 +285,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "Link__StyledAnchor-gur8v7-4",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c3",
                             "rules": Array [
                               "text-decoration: none;",
                             ],
@@ -394,7 +305,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                       to={null}
                     >
                       <a
-                        className="c4"
+                        className="c3"
                         href="#"
                         to={null}
                       >
@@ -410,7 +321,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Link__BoxWrapper-gur8v7-1",
                                   "isStatic": false,
-                                  "lastClassName": "c5",
+                                  "lastClassName": "c4",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -429,13 +340,13 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           >
                             <Box
                               active={0}
-                              className="c5"
+                              className="c4"
                               inline={false}
                               tag="div"
                             >
                               <div
                                 active={0}
-                                className="c5"
+                                className="c4"
                               >
                                 <Link__BoxContainer
                                   active={0}
@@ -451,7 +362,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "Link__BoxContainer-gur8v7-0",
                                           "isStatic": false,
-                                          "lastClassName": "c6",
+                                          "lastClassName": "c5",
                                           "rules": Array [
                                             [Function],
                                           ],
@@ -472,7 +383,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                   >
                                     <Box
                                       active={0}
-                                      className="c6"
+                                      className="c5"
                                       inline={false}
                                       submenulink={1}
                                       tag="div"
@@ -480,7 +391,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                     >
                                       <div
                                         active={0}
-                                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
+                                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c5"
                                         submenulink={1}
                                       >
                                         <Link__BoxActive
@@ -497,7 +408,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Link__BoxActive-gur8v7-2",
                                                   "isStatic": false,
-                                                  "lastClassName": "c7",
+                                                  "lastClassName": "c6",
                                                   "rules": Array [
                                                     [Function],
                                                   ],
@@ -518,7 +429,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           >
                                             <Box
                                               active={0}
-                                              className="c7"
+                                              className="c6"
                                               horizontal={3}
                                               inline={false}
                                               submenulink={1}
@@ -526,7 +437,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                             >
                                               <div
                                                 active={0}
-                                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
+                                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c6"
                                                 submenulink={1}
                                               >
                                                 <Link__StyledTextProvider
@@ -541,7 +452,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                           "isStatic": false,
-                                                          "lastClassName": "c8",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             [Function],
                                                           ],
@@ -560,10 +471,10 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                   >
                                                     <ColoredTextProvider
                                                       active={false}
-                                                      className="c8"
+                                                      className="c7"
                                                     >
                                                       <div
-                                                        className="c8"
+                                                        className="c7"
                                                       >
                                                         <Text
                                                           block={false}
@@ -571,58 +482,11 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                           invert={false}
                                                           size="small"
                                                         >
-                                                          <Text__StyledText
-                                                            block={false}
-                                                            bold={false}
-                                                            inheritColor={true}
-                                                            invert={false}
-                                                            size="small"
+                                                          <span
+                                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                                           >
-                                                            <StyledComponent
-                                                              block={false}
-                                                              bold={false}
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c9",
-                                                                    "rules": Array [
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Text__StyledText",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                  "target": "span",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
-                                                              inheritColor={true}
-                                                              invert={false}
-                                                              size="small"
-                                                            >
-                                                              <span
-                                                                className="c9"
-                                                                size="small"
-                                                              >
-                                                                Option 1
-                                                              </span>
-                                                            </StyledComponent>
-                                                          </Text__StyledText>
+                                                            Option 1
+                                                          </span>
                                                         </Text>
                                                       </div>
                                                     </ColoredTextProvider>
@@ -667,7 +531,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "Link__StyledAnchor-gur8v7-4",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c3",
                             "rules": Array [
                               "text-decoration: none;",
                             ],
@@ -687,7 +551,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                       to={null}
                     >
                       <a
-                        className="c4"
+                        className="c3"
                         href="#"
                         to={null}
                       >
@@ -703,7 +567,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Link__BoxWrapper-gur8v7-1",
                                   "isStatic": false,
-                                  "lastClassName": "c5",
+                                  "lastClassName": "c4",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -722,13 +586,13 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           >
                             <Box
                               active={0}
-                              className="c5"
+                              className="c4"
                               inline={false}
                               tag="div"
                             >
                               <div
                                 active={0}
-                                className="c5"
+                                className="c4"
                               >
                                 <Link__BoxContainer
                                   active={0}
@@ -744,7 +608,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "Link__BoxContainer-gur8v7-0",
                                           "isStatic": false,
-                                          "lastClassName": "c6",
+                                          "lastClassName": "c5",
                                           "rules": Array [
                                             [Function],
                                           ],
@@ -765,7 +629,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                   >
                                     <Box
                                       active={0}
-                                      className="c6"
+                                      className="c5"
                                       inline={false}
                                       submenulink={1}
                                       tag="div"
@@ -773,7 +637,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                     >
                                       <div
                                         active={0}
-                                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
+                                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c5"
                                         submenulink={1}
                                       >
                                         <Link__BoxActive
@@ -790,7 +654,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Link__BoxActive-gur8v7-2",
                                                   "isStatic": false,
-                                                  "lastClassName": "c7",
+                                                  "lastClassName": "c6",
                                                   "rules": Array [
                                                     [Function],
                                                   ],
@@ -811,7 +675,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           >
                                             <Box
                                               active={0}
-                                              className="c7"
+                                              className="c6"
                                               horizontal={3}
                                               inline={false}
                                               submenulink={1}
@@ -819,7 +683,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                             >
                                               <div
                                                 active={0}
-                                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
+                                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c6"
                                                 submenulink={1}
                                               >
                                                 <Link__StyledTextProvider
@@ -834,7 +698,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                           "isStatic": false,
-                                                          "lastClassName": "c8",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             [Function],
                                                           ],
@@ -853,10 +717,10 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                   >
                                                     <ColoredTextProvider
                                                       active={false}
-                                                      className="c8"
+                                                      className="c7"
                                                     >
                                                       <div
-                                                        className="c8"
+                                                        className="c7"
                                                       >
                                                         <Text
                                                           block={false}
@@ -864,58 +728,11 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                           invert={false}
                                                           size="small"
                                                         >
-                                                          <Text__StyledText
-                                                            block={false}
-                                                            bold={false}
-                                                            inheritColor={true}
-                                                            invert={false}
-                                                            size="small"
+                                                          <span
+                                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                                           >
-                                                            <StyledComponent
-                                                              block={false}
-                                                              bold={false}
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c9",
-                                                                    "rules": Array [
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Text__StyledText",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                  "target": "span",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
-                                                              inheritColor={true}
-                                                              invert={false}
-                                                              size="small"
-                                                            >
-                                                              <span
-                                                                className="c9"
-                                                                size="small"
-                                                              >
-                                                                Option 2
-                                                              </span>
-                                                            </StyledComponent>
-                                                          </Text__StyledText>
+                                                            Option 2
+                                                          </span>
                                                         </Text>
                                                       </div>
                                                     </ColoredTextProvider>
@@ -960,7 +777,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "Link__StyledAnchor-gur8v7-4",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c3",
                             "rules": Array [
                               "text-decoration: none;",
                             ],
@@ -980,7 +797,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                       to={null}
                     >
                       <a
-                        className="c4"
+                        className="c3"
                         href="#"
                         to={null}
                       >
@@ -996,7 +813,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Link__BoxWrapper-gur8v7-1",
                                   "isStatic": false,
-                                  "lastClassName": "c5",
+                                  "lastClassName": "c4",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1015,13 +832,13 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           >
                             <Box
                               active={0}
-                              className="c5"
+                              className="c4"
                               inline={false}
                               tag="div"
                             >
                               <div
                                 active={0}
-                                className="c5"
+                                className="c4"
                               >
                                 <Link__BoxContainer
                                   active={0}
@@ -1037,7 +854,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "Link__BoxContainer-gur8v7-0",
                                           "isStatic": false,
-                                          "lastClassName": "c6",
+                                          "lastClassName": "c5",
                                           "rules": Array [
                                             [Function],
                                           ],
@@ -1058,7 +875,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                   >
                                     <Box
                                       active={0}
-                                      className="c6"
+                                      className="c5"
                                       inline={false}
                                       submenulink={1}
                                       tag="div"
@@ -1066,7 +883,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                     >
                                       <div
                                         active={0}
-                                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c6"
+                                        className="TDS_Box-modules__verticalPadding-3___Fsv37 c5"
                                         submenulink={1}
                                       >
                                         <Link__BoxActive
@@ -1083,7 +900,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Link__BoxActive-gur8v7-2",
                                                   "isStatic": false,
-                                                  "lastClassName": "c7",
+                                                  "lastClassName": "c6",
                                                   "rules": Array [
                                                     [Function],
                                                   ],
@@ -1104,7 +921,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           >
                                             <Box
                                               active={0}
-                                              className="c7"
+                                              className="c6"
                                               horizontal={3}
                                               inline={false}
                                               submenulink={1}
@@ -1112,7 +929,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                             >
                                               <div
                                                 active={0}
-                                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c7"
+                                                className="TDS_Box-modules__horizontalPadding-3___2uoUp c6"
                                                 submenulink={1}
                                               >
                                                 <Link__StyledTextProvider
@@ -1127,7 +944,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                           "isStatic": false,
-                                                          "lastClassName": "c8",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             [Function],
                                                           ],
@@ -1146,10 +963,10 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                   >
                                                     <ColoredTextProvider
                                                       active={false}
-                                                      className="c8"
+                                                      className="c7"
                                                     >
                                                       <div
-                                                        className="c8"
+                                                        className="c7"
                                                       >
                                                         <Text
                                                           block={false}
@@ -1157,58 +974,11 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                           invert={false}
                                                           size="small"
                                                         >
-                                                          <Text__StyledText
-                                                            block={false}
-                                                            bold={false}
-                                                            inheritColor={true}
-                                                            invert={false}
-                                                            size="small"
+                                                          <span
+                                                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__inheritColor___SREX0"
                                                           >
-                                                            <StyledComponent
-                                                              block={false}
-                                                              bold={false}
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c9",
-                                                                    "rules": Array [
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      "sup {
-  top: -0.5em; font-size: 0.875rem; position: relative; vertical-align: baseline; padding-left: 0.1em;
-}",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Text__StyledText",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                  "target": "span",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
-                                                              inheritColor={true}
-                                                              invert={false}
-                                                              size="small"
-                                                            >
-                                                              <span
-                                                                className="c9"
-                                                                size="small"
-                                                              >
-                                                                Option 3
-                                                              </span>
-                                                            </StyledComponent>
-                                                          </Text__StyledText>
+                                                            Option 3
+                                                          </span>
                                                         </Text>
                                                       </div>
                                                     </ColoredTextProvider>

@@ -62,7 +62,6 @@ exports[`ToggleSwitch renders 1`] = `
 }
 
 <ToggleSwitch
-  autofocus={false}
   checked={false}
   id="my-id-123"
   isLoading={false}

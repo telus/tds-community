@@ -37,9 +37,14 @@ const ToggleSwitch = React.forwardRef(
 
     const _onClick = event => {
       _setIsChecked(!_isChecked)
-      setTimeout(() => {
+
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
         onClick(event)
-      }, 250)
+      } else {
+        setTimeout(() => {
+          onClick(event)
+        }, 250)
+      }
     }
 
     /* The purpose of this hook is to allow the parent

@@ -19,14 +19,15 @@ export const Button = styled.button(props => ({
   position: 'relative',
   border: 'none',
   padding: '0',
-  width: '40px',
-  height: '24px',
-  borderRadius: '24px',
+  width: '2.5rem',
+  height: '1.5rem',
+  borderRadius: '1.5rem',
   backgroundColor: props['aria-checked'] ? colorAccessibleGreen : colorGainsboro,
   '&:focus': {
+    // this is explicitly defined as 'solid' for IE11 compatibility
     outlineStyle: props.isLoading ? 'none' : 'solid',
     outlineColor: 'rgb(59, 153, 252)',
-    outlineWidth: '5px',
+    outlineWidth: '0.3125rem',
   },
   '&:focus::-moz-focus-inner': {
     border: 0,
@@ -35,14 +36,18 @@ export const Button = styled.button(props => ({
 
 export const Slider = styled.span(props => ({
   position: 'absolute',
-  width: '18px',
-  height: '18px',
-  top: '3px',
-  left: props.pressed ? '20px' : '3px',
-  borderRadius: '18px',
+  width: '1.125rem',
+  height: '1.125rem',
+  top: '0.1875rem',
+  left: props.pressed ? '1.25rem' : '0.1875rem',
+  borderRadius: '1.125rem',
   backgroundColor: 'white',
   transition: 'left 0.25s',
   boxShadow: '0 0 2px 0 #000',
+
+  '@media (prefers-reduced-motion: reduce)': {
+    transition: 'none !important',
+  },
 }))
 
 export const InputSwitchWrapper = styled.div({

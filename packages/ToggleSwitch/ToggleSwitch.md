@@ -22,7 +22,7 @@ Toggle switches are digital on/off switches. They prompt users to choose between
 **Basic usage**
 
 ```jsx
-const App = () => {
+const BasicApp = () => {
   const [isChecked, setIsChecked] = React.useState(false)
   const toggleRef = React.useRef()
 
@@ -50,13 +50,13 @@ const App = () => {
   )
 }
 
-;<App />
+;<BasicApp />
 ```
 
 **Asynchoronous usage**
 
 ```jsx
-const App = () => {
+const AsyncApp = () => {
   const [isChecked, setIsChecked] = React.useState(false)
   const [isLoading, setIsLoading] = React.useState(false)
   const toggleRef = React.useRef()
@@ -93,7 +93,7 @@ const App = () => {
   )
 }
 
-;<App />
+;<AsyncApp />
 ```
 
 **Complete example with async first-time load, async toggle, and error handling**
@@ -110,7 +110,7 @@ A typical example with the following steps:
 Note: you can focus on most HTML elements by providing a `tabIndex="-1"` attribute, setting a `ref` value, and then calling `yourRef.current.focus()`. You can learn more about refs and forwarding refs on the [React documentation](https://reactjs.org/docs/refs-and-the-dom.html).
 
 ```jsx
-const App = () => {
+const CompleteApp = () => {
   const [isRouted, setIsRouted] = React.useState(false)
   const [appIsLoaded, setAppIsLoaded] = React.useState(false)
   const [showFeedbackText, setShowFeedbackText] = React.useState(false)
@@ -208,5 +208,5 @@ const App = () => {
   )
 }
 
-;<App />
+;<CompleteApp />
 ```

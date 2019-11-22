@@ -21,16 +21,16 @@ exports[`ToggleSwitch renders 1`] = `
   position: relative;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 24px;
-  border-radius: 24px;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
   background-color: #d8d8d8;
 }
 
 .c2:focus {
   outline-style: solid;
   outline-color: rgb(59,153,252);
-  outline-width: 5px;
+  outline-width: 0.3125rem;
 }
 
 .c2:focus::-moz-focus-inner {
@@ -39,11 +39,11 @@ exports[`ToggleSwitch renders 1`] = `
 
 .c3 {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 3px;
-  left: 3px;
-  border-radius: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  border-radius: 1.125rem;
   background-color: white;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
@@ -59,6 +59,13 @@ exports[`ToggleSwitch renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c3 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
 }
 
 <ToggleSwitch
@@ -217,16 +224,16 @@ exports[`ToggleSwitch renders 1`] = `
   position: relative;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 24px;
-  border-radius: 24px;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
   background-color: #d8d8d8;
 }
 
 .c0:focus {
   outline-style: solid;
   outline-color: rgb(59,153,252);
-  outline-width: 5px;
+  outline-width: 0.3125rem;
 }
 
 .c0:focus::-moz-focus-inner {
@@ -235,15 +242,22 @@ exports[`ToggleSwitch renders 1`] = `
 
 .c1 {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 3px;
-  left: 3px;
-  border-radius: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  border-radius: 1.125rem;
   background-color: white;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
   box-shadow: 0 0 2px 0 #000;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c1 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
 }
 
 <button

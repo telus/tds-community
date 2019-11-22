@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds-community/compare/@tds/community-toggle-switch@2.0.0...@tds/community-toggle-switch@3.0.0) (2019-11-22)
+
+
+### Features
+
+* **community-toggle-switch:** idd sLoading and ref props ([affec8e](https://github.com/telus/tds-community/commit/affec8e))
+
+
+### BREAKING CHANGES
+
+* **community-toggle-switch:** Toggle no longer automatically sets focus to itself. Manually control focus using ref.
+
+
+
+
+
 # [2.0.0](https://github.com/telus/tds-community/compare/@tds/community-toggle-switch@1.0.4...@tds/community-toggle-switch@2.0.0) (2019-09-30)
 
 

@@ -533,7 +533,7 @@ exports[`SideNavigation renders 1`] = `
                         <div
                           aria-hidden="true"
                           class="c11"
-                          style="transition: height 500ms, opacity 500ms ease-in-out; opacity: 0; height: 0px; overflow: hidden;"
+                          style="transition: height 500ms, opacity 500ms ease-in-out; opacity: 0; height: 0px; overflow: hidden; visibility: hidden;"
                         >
                           <ul
                             class="c12"
@@ -1904,6 +1904,7 @@ exports[`SideNavigation renders 1`] = `
                                           "opacity": 0,
                                           "overflow": "hidden",
                                           "transition": "height 500ms, opacity 500ms ease-in-out",
+                                          "visibility": "hidden",
                                         }
                                       }
                                     >
@@ -1940,6 +1941,7 @@ exports[`SideNavigation renders 1`] = `
                                             "opacity": 0,
                                             "overflow": "hidden",
                                             "transition": "height 500ms, opacity 500ms ease-in-out",
+                                            "visibility": "hidden",
                                           }
                                         }
                                       >
@@ -1952,6 +1954,7 @@ exports[`SideNavigation renders 1`] = `
                                               "opacity": 0,
                                               "overflow": "hidden",
                                               "transition": "height 500ms, opacity 500ms ease-in-out",
+                                              "visibility": "hidden",
                                             }
                                           }
                                         >
@@ -3415,7 +3418,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                         <div
                           aria-hidden="false"
                           class="c12"
-                          style="transition: height 500ms, opacity 500ms ease-in-out; opacity: 1; height: 0px; overflow: hidden;"
+                          style="transition: height 500ms, opacity 500ms ease-in-out; opacity: 1; height: 0px; overflow: hidden; visibility: visible;"
                         >
                           <ul
                             class="c13"
@@ -4075,6 +4078,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                           "opacity": 1,
                                           "overflow": "hidden",
                                           "transition": "height 500ms, opacity 500ms ease-in-out",
+                                          "visibility": "visible",
                                         }
                                       }
                                     >
@@ -4111,6 +4115,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                             "opacity": 1,
                                             "overflow": "hidden",
                                             "transition": "height 500ms, opacity 500ms ease-in-out",
+                                            "visibility": "visible",
                                           }
                                         }
                                       >
@@ -4123,6 +4128,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                               "opacity": 1,
                                               "overflow": "hidden",
                                               "transition": "height 500ms, opacity 500ms ease-in-out",
+                                              "visibility": "visible",
                                             }
                                           }
                                         >

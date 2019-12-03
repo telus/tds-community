@@ -327,6 +327,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
             "opacity": 0,
             "overflow": "hidden",
             "transition": "height 500ms, opacity 500ms ease-in-out",
+            "visibility": "hidden",
           }
         }
       >
@@ -363,6 +364,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
               "opacity": 0,
               "overflow": "hidden",
               "transition": "height 500ms, opacity 500ms ease-in-out",
+              "visibility": "hidden",
             }
           }
         >
@@ -375,6 +377,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                 "opacity": 0,
                 "overflow": "hidden",
                 "transition": "height 500ms, opacity 500ms ease-in-out",
+                "visibility": "hidden",
               }
             }
           >

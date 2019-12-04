@@ -13,7 +13,6 @@ import Strong from '@tds/core-strong'
 import Text from '@tds/core-text'
 import UnorderedList from '@tds/core-unordered-list'
 import Image from '@tds/core-image'
-import Button from '@tds/core-button'
 
 Object.assign(global, {
   Box,

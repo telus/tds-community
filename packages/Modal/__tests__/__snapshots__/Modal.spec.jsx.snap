@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders 1`] = `
+<styles__FullScreenOverlay
+  modalOpen={false}
+>
+  <styles__StyledModal>
+    <styles__CloseButtonWrapper>
+      <Close
+        a11yText="Close"
+        onClick={[Function]}
+      />
+    </styles__CloseButtonWrapper>
+    <styles__ModalWrapper>
+      <Box
+        between={3}
+        inline={false}
+        tag="div"
+      >
+        <styles__Header
+          tabIndex="-1"
+        />
+        <Paragraph
+          align="left"
+          bold={false}
+          invert={false}
+          size="medium"
+        />
+      </Box>
+      <styles__CTAWrapper>
+        <Button
+          type="button"
+          variant="primary"
+        />
+      </styles__CTAWrapper>
+    </styles__ModalWrapper>
+  </styles__StyledModal>
+</styles__FullScreenOverlay>
+`;

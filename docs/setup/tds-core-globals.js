@@ -1,4 +1,5 @@
 import Box from '@tds/core-box'
+import Button from '@tds/core-button'
 import Card from '@tds/core-card'
 import ChevronLink from '@tds/core-chevron-link'
 import FlexGrid from '@tds/core-flex-grid'
@@ -16,6 +17,7 @@ import Button from '@tds/core-button'
 
 Object.assign(global, {
   Box,
+  Button,
   Card,
   ChevronLink,
   FlexGrid,

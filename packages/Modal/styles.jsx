@@ -36,8 +36,8 @@ export const StyledModal = styled.div({
   ...media.from('md').css({
     margin: '0 auto',
     maxWidth: '570px',
-    maxHeight: '36vh',
-    minHeight: '34vh',
+    maxHeight: '330px',
+    minHeight: '330px',
     borderRadius: '0.25rem',
     boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
     zIndex: '2000',

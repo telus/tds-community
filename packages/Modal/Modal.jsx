@@ -37,6 +37,7 @@ const Modal = ({
   modalOpen,
   closeModalHandler,
   proceedModalHandler,
+  focusElement,
   children,
   ...rest
 }) => {
@@ -62,12 +63,17 @@ const Modal = ({
 
   const handleKeyDown = e => {
     if (e.key === 'Escape') {
-      return closeModalHandler()
+      return closingModal()
     }
     if ((e.shiftKey && e.key === 'Tab') || e.key === 'Tab') {
       return tabbingHandling(e)
     }
     return null
+  }
+
+  const closingModal = () => {
+    if (focusElement) focusElement.focus()
+    return closeModalHandler()
   }
 
   const preventScroll = e => {
@@ -91,7 +97,7 @@ const Modal = ({
       removeEventScrolling()
       document.body.removeEventListener('keydown', handleKeyDown)
     }
-    return function cleanup() {
+    return () => {
       removeEventScrolling()
       document.body.removeEventListener('keydown', handleKeyDown)
     }
@@ -114,7 +120,7 @@ const Modal = ({
       <StyledModal cancelCTAExists={cancelCTA}>
         {!cancelCTA && (
           <CloseButtonWrapper>
-            <Close onClick={closeModalHandler} ref={closeButton} a11yText="Close" />
+            <Close onClick={closingModal} ref={closeButton} a11yText="Close" />
           </CloseButtonWrapper>
         )}
         <ModalWrapper>
@@ -129,7 +135,7 @@ const Modal = ({
               {cta}
             </Button>
             {cancelCTA && (
-              <Button ref={closeButton} onClick={closeModalHandler}>
+              <Button ref={closeButton} onClick={closingModal}>
                 {cancelCTA}
               </Button>
             )}

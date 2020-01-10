@@ -1,1 +1,1 @@
-# TDS Community: PreviewCard
+# TDS Community: Tabs

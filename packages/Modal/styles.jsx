@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
-import { colorWhite, colorShark } from '@tds/core-colours'
+import { colorWhite, colorShark, colorAccessibleGreen, colorPrimary } from '@tds/core-colours'
 
 export const FullScreenOverlay = styled.div(props => {
   if (props && props.modalOpen) {
@@ -13,7 +13,7 @@ export const FullScreenOverlay = styled.div(props => {
       left: '0',
       zIndex: '1400',
       ...media.from('md').css({
-        backgroundColor: 'rgba(255, 255, 255, 0.94)',
+        backgroundColor: 'rgb(247,247,248, 0.94)',
       }),
     }
   }
@@ -39,7 +39,7 @@ export const StyledModal = styled.div({
     maxHeight: '330px',
     minHeight: '330px',
     borderRadius: '0.25rem',
-    boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
+    boxShadow: '0 0 16px 0 rgba(0,0,0,0.1)',
     zIndex: '2000',
     backgroundColor: colorWhite,
     top: '29%',
@@ -80,6 +80,31 @@ export const CTAWrapper = styled.div(props => {
   }
 })
 
+export const InvertedPrimaryButton = styled.button({
+  height: '3.25rem',
+  width: '100%',
+  border: '1px solid #248700',
+  borderRadius: '0.25rem',
+  backgroundColor: colorWhite,
+  color: colorAccessibleGreen,
+  fontWeight: '700',
+  fontSize: '1rem',
+  lineHeight: '1.5',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  cursor: 'pointer',
+  transition: 'background 0.2s',
+  ...media.from('md').css({
+    width: '180px',
+  }),
+  '&:hover': {
+    color: colorWhite,
+    backgroundColor: colorPrimary,
+    boxShadow: '0 0 0 1px',
+  },
+})
+
 export const CloseButtonWrapper = styled.div({
   float: 'right',
   padding: '1rem 1rem 0 0',
@@ -93,5 +118,5 @@ export const ModalWrapper = styled.div({
   display: 'flex',
   flexFlow: 'column',
   justifyContent: 'space-between',
-  padding: '3rem',
+  padding: '3rem 4rem 3rem 3rem',
 })

@@ -13,6 +13,7 @@ import {
   FullScreenOverlay,
   Header,
   ModalWrapper,
+  InvertedPrimaryButton,
 } from './styles'
 
 const recursiveMap = (children, customFunction) =>
@@ -132,9 +133,9 @@ const Modal = ({
               {cta}
             </Button>
             {cancelCTA && (
-              <Button ref={closeButton} onClick={closingModal}>
+              <InvertedPrimaryButton ref={closeButton} onClick={closingModal}>
                 {cancelCTA}
-              </Button>
+              </InvertedPrimaryButton>
             )}
           </CTAWrapper>
         </ModalWrapper>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
-import { colorTelusPurple, colorWhiteLilac } from '@tds/core-colours'
+import { colorTelusPurple, colorWhiteLilac, colorWhite, colorShark } from '@tds/core-colours'
 
 export const TabsContainer = styled.div({ opacity: '1' })
 
@@ -78,23 +78,23 @@ export const GeneralTabsButton = styled.button({
   margin: '0',
   width: '100%',
   height: '100%',
+  '&:hover': {
+    textDecoration: 'underline',
+    fontWeight: 'bold',
+  },
 })
 
 export const GeneralTabs = styled.li({
   display: 'inline-block',
-  color: colorTelusPurple,
+  color: colorShark,
   backgroundColor: colorWhiteLilac,
   height: '44px',
   lineHeight: '41px',
   width: '140px',
   minWidth: '64px',
-  '&:hover': {
-    border: `1px solid ${colorTelusPurple}`,
-  },
   listStyle: 'none',
-  marginRight: '0.5rem',
   textAlign: 'center',
-  borderRadius: '4px',
+  borderRadius: '0',
   '&:first-child': {
     marginLeft: '0.5rem',
   },
@@ -103,6 +103,7 @@ export const GeneralTabs = styled.li({
     lineHeight: '44px',
     border: `1px solid ${colorWhiteLilac}`,
     minWidth: '22px',
+    borderBottom: `1px solid ${colorTelusPurple}`,
   }),
 })
 
@@ -123,15 +124,19 @@ export const TabsEllipsis = styled(GeneralTabs)({
 })
 
 export const TabsCurrent = styled(GeneralTabs)({
-  color: colorWhiteLilac,
+  color: colorTelusPurple,
   lineHeight: '46px',
   verticalAlign: 'bottom',
-  padding: '0 5px',
+  padding: '0 0',
   border: 'none',
-  '&:hover': { border: 'none' },
-  backgroundColor: colorTelusPurple,
+  backgroundColor: colorWhite,
+  fontWeight: 'bold',
+  borderRadius: '8px 8px 0 0',
   ...media.from('md').css({
-    border: `1px solid ${colorTelusPurple}`,
+    borderTop: `1px solid ${colorTelusPurple}`,
+    borderLeft: `1px solid ${colorTelusPurple}`,
+    borderRight: `1px solid ${colorTelusPurple}`,
+    borderBottom: `none`,
     minWidth: '24px',
   }),
 })

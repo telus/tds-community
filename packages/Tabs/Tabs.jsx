@@ -66,10 +66,11 @@ const Tabs = ({ children, copy, ...rest }) => {
     // only show first, current, last, else, in between show ellipsis, only apply these rules under mobile view
     return children.map((item, i) => {
       const index = i + 1
+      const label = item && item.props && item.props.tab
       if (current === index) {
         return (
           <TabsCurrent key={hash(`${i}-1`)}>
-            {item}
+            {label}
             <A11yContent>{getCopy(copyDictionary, copy).currentText}</A11yContent>
           </TabsCurrent>
         )
@@ -82,7 +83,7 @@ const Tabs = ({ children, copy, ...rest }) => {
               onClick={e => handleClick(e)}
               aria-label={`${getCopy(copyDictionary, copy).goToText} ${index}`}
             >
-              {item}
+              {label}
             </GeneralTabsButton>
           </GeneralTabs>
         )

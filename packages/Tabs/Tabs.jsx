@@ -13,9 +13,11 @@ import {
   TabsList,
   TabsListMobile,
   TabsCurrent,
-  GeneralTabs,
+  TabsNotCurrent,
   GeneralTabsButton,
-  TabsEllipsis,
+  BeforeAfterTabs,
+  BeforeTabsFirst,
+  AfterTabsLast,
 } from './styles'
 
 /**
@@ -67,6 +69,9 @@ const Tabs = ({ children, copy, ...rest }) => {
     return children.map((item, i) => {
       const index = i + 1
       const label = item && item.props && item.props.tab
+      const leftSeparator = (index > 1 && index > current + 1) || (index > 1 && index < current)
+      const leftCornerRounded = index === current + 1
+      const rightCornerRounded = index === current - 1
       if (current === index) {
         return (
           <TabsCurrent key={hash(`${i}-1`)}>
@@ -77,7 +82,12 @@ const Tabs = ({ children, copy, ...rest }) => {
       }
       if (checkForRegularTabs(index, isMobile)) {
         return (
-          <GeneralTabs key={hash(`${i}-3`)}>
+          <TabsNotCurrent
+            key={hash(`${i}-3`)}
+            leftSeparator={leftSeparator}
+            leftCornerRounded={leftCornerRounded}
+            rightCornerRounded={rightCornerRounded}
+          >
             <GeneralTabsButton
               value={index}
               onClick={e => handleClick(e)}
@@ -85,20 +95,22 @@ const Tabs = ({ children, copy, ...rest }) => {
             >
               {label}
             </GeneralTabsButton>
-          </GeneralTabs>
+          </TabsNotCurrent>
         )
       }
-      if (this.checkForEllipsis(index, isMobile)) {
-        return <TabsEllipsis key={hash(`${i}-4`)}>...</TabsEllipsis>
-      }
-
       return null
     })
   }
   return (
     <TabsContainer {...safeRest(rest)}>
       <Controls>
-        <TabsList>{mapTabs(false)}</TabsList>
+        <TabsList>
+          {current !== 1 && <BeforeAfterTabs />}
+          {current === 1 && <BeforeTabsFirst />}
+          {mapTabs(false)}
+          {current !== panels && <BeforeAfterTabs />}
+          {current === panels && <AfterTabsLast />}
+        </TabsList>
         <TabsListMobile>{mapTabs(true)}</TabsListMobile>
       </Controls>
       <Panel {...rest}>{children[current - 1]}</Panel>

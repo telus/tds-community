@@ -8,5 +8,6 @@
   <Tabs.Panel tab="Tab 1">Content of Tab Panel 1</Tabs.Panel>
   <Tabs.Panel tab="Tab 2">Content of Tab Panel 2</Tabs.Panel>
   <Tabs.Panel tab="Tab 3">Content of Tab Panel 3</Tabs.Panel>
+  <Tabs.Panel tab="Tab 4">Content of Tab Panel 4</Tabs.Panel>
 </Tabs>
 ```

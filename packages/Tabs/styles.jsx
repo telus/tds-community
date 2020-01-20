@@ -77,11 +77,22 @@ export const GeneralTabs = styled.li({
 export const TabsNotCurrent = styled(GeneralTabs)(props => ({
   ...media.from('md').css({
     borderTop: `none`,
-    borderLeft: props.leftSeparator && `1px solid ${colorTelusPurple}`,
+    position: 'relative',
+    // borderLeft: props.leftSeparator && `1px solid ${colorTelusPurple}`,
     lineHeight: '5px',
     borderRight: `none`,
     borderBottomLeftRadius: props.leftCornerRounded && '8px',
     borderBottomRightRadius: props.rightCornerRounded && '8px',
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      right: '0',
+      display: 'block',
+      height: '50%',
+      width: '1px',
+      backgroundColor: `${colorTelusPurple}`,
+      top: '25%',
+    },
   }),
 }))
 

@@ -69,7 +69,8 @@ const Tabs = ({ children, copy, ...rest }) => {
     return children.map((item, i) => {
       const index = i + 1
       const label = item && item.props && item.props.tab
-      const leftSeparator = (index > 1 && index > current + 1) || (index > 1 && index < current)
+      // const leftSeparator = (index > 1 && index > current + 1) || (index > 1 && index < current)
+      const rightSeparator = index !== current && index !== panels
       const leftCornerRounded = index === current + 1
       const rightCornerRounded = index === current - 1
       if (current === index) {
@@ -84,7 +85,7 @@ const Tabs = ({ children, copy, ...rest }) => {
         return (
           <TabsNotCurrent
             key={hash(`${i}-3`)}
-            leftSeparator={leftSeparator}
+            rightSeparator={rightSeparator}
             leftCornerRounded={leftCornerRounded}
             rightCornerRounded={rightCornerRounded}
           >

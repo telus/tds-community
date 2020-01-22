@@ -83,16 +83,18 @@ export const TabsNotCurrent = styled(GeneralTabs)(props => ({
     borderRight: `none`,
     borderBottomLeftRadius: props.leftCornerRounded && '8px',
     borderBottomRightRadius: props.rightCornerRounded && '8px',
-    '&::after': {
-      content: '""',
-      position: 'absolute',
-      right: '0',
-      display: 'block',
-      height: '50%',
-      width: '1px',
-      backgroundColor: `${colorTelusPurple}`,
-      top: '25%',
-    },
+    ...(props.rightSeparator && {
+      '&::after': {
+        content: '""',
+        position: 'absolute',
+        right: '0',
+        display: 'block',
+        height: '50%',
+        width: '1px',
+        backgroundColor: `${colorTelusPurple}`,
+        top: '25%',
+      },
+    }),
   }),
 }))
 

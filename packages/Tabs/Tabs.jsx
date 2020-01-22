@@ -70,7 +70,7 @@ const Tabs = ({ children, copy, ...rest }) => {
       const index = i + 1
       const label = item && item.props && item.props.tab
       // const leftSeparator = (index > 1 && index > current + 1) || (index > 1 && index < current)
-      const rightSeparator = index !== current && index !== panels
+      const rightSeparator = index !== current - 1 && index !== panels
       const leftCornerRounded = index === current + 1
       const rightCornerRounded = index === current - 1
       if (current === index) {

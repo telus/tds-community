@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders 1`] = `
+<styles__TabsContainer>
+  <styles__Controls>
+    <styles__TabsList>
+      <styles__BeforeCurrentTab />
+      <styles__TabsCurrent
+        key="193359721"
+      >
+        Tab 1
+        <A11yContent />
+      </styles__TabsCurrent>
+      <styles__TabsNotCurrent
+        key="193361898"
+        leftCornerRounded={true}
+        rightCornerRounded={false}
+        rightSeparator={false}
+      >
+        <styles__GeneralTabsButton
+          aria-label="undefined 2"
+          onClick={[Function]}
+          value={2}
+        >
+          Tab 2
+        </styles__GeneralTabsButton>
+      </styles__TabsNotCurrent>
+      <styles__BeforeAfterTabs />
+    </styles__TabsList>
+    <styles__TabsListMobile>
+      <styles__TabsCurrent
+        key="193359721"
+      >
+        Tab 1
+        <A11yContent />
+      </styles__TabsCurrent>
+      <styles__TabsNotCurrent
+        key="193361898"
+        leftCornerRounded={true}
+        rightCornerRounded={false}
+        rightSeparator={false}
+      >
+        <styles__GeneralTabsButton
+          aria-label="undefined 2"
+          onClick={[Function]}
+          value={2}
+        >
+          Tab 2
+        </styles__GeneralTabsButton>
+      </styles__TabsNotCurrent>
+    </styles__TabsListMobile>
+  </styles__Controls>
+  <Panel>
+    <Panel
+      tab="Tab 1"
+    >
+      Content of Tab Panel 1
+    </Panel>
+  </Panel>
+</styles__TabsContainer>
+`;

@@ -4,7 +4,13 @@ import { shallow } from 'enzyme'
 import Tabs from '../Tabs'
 
 describe('Tabs', () => {
-  const doShallow = (props = {}) => shallow(<Tabs {...props} />)
+  const doShallow = (props = {}) =>
+    shallow(
+      <Tabs {...props}>
+        <Tabs.Panel tab="Tab 1">Content of Tab Panel 1</Tabs.Panel>
+        <Tabs.Panel tab="Tab 2">Content of Tab Panel 2</Tabs.Panel>
+      </Tabs>
+    )
 
   it('renders', () => {
     const tabs = doShallow()

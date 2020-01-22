@@ -16,8 +16,8 @@ import {
   TabsNotCurrent,
   GeneralTabsButton,
   BeforeAfterTabs,
-  BeforeTabsFirst,
-  AfterTabsLast,
+  BeforeCurrentTab,
+  AfterCurrentTab,
 } from './styles'
 
 /**
@@ -107,10 +107,10 @@ const Tabs = ({ children, copy, ...rest }) => {
       <Controls>
         <TabsList>
           {current !== 1 && <BeforeAfterTabs />}
-          {current === 1 && <BeforeTabsFirst />}
+          {current === 1 && <BeforeCurrentTab />}
           {mapTabs(false)}
           {current !== panels && <BeforeAfterTabs />}
-          {current === panels && <AfterTabsLast />}
+          {current === panels && <AfterCurrentTab />}
         </TabsList>
         <TabsListMobile>{mapTabs(true)}</TabsListMobile>
       </Controls>

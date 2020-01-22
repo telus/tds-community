@@ -1,13 +1,6 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
-import {
-  colorTelusPurple,
-  colorWhiteLilac,
-  colorWhite,
-  colorShark,
-  colorGreyRaven,
-  colorTelusGreen,
-} from '@tds/core-colours'
+import { colorTelusPurple, colorWhiteLilac, colorWhite, colorShark } from '@tds/core-colours'
 
 export const TabsContainer = styled.div({ opacity: '1' })
 
@@ -99,26 +92,41 @@ export const TabsNotCurrent = styled(GeneralTabs)(props => ({
 }))
 
 export const TabsCurrent = styled(GeneralTabs)({
-  color: colorTelusPurple,
-  lineHeight: '46px',
-  verticalAlign: 'bottom',
-  padding: '0 0',
-  border: 'none',
-  backgroundColor: colorWhite,
-  fontWeight: 'bold',
+  backgroundColor: `${colorWhite}`,
+  color: `${colorTelusPurple}`,
+  border: `1px solid ${colorTelusPurple}`,
+  position: 'relative',
+  // borderBottom: `0`,
   borderRadius: '8px 8px 0 0',
+  paddingTop: '10px',
+  lineHeight: '46px',
+  // verticalAlign: 'top',
+  padding: '0 0',
+  fontWeight: 'bold',
   ...media.from('md').css({
     borderTop: `1px solid ${colorTelusPurple}`,
-    borderLeft: `1px solid ${colorTelusPurple}`,
-    borderRight: `1px solid ${colorTelusPurple}`,
+    // borderLeft: `1px solid ${colorTelusPurple}`,
+    // borderRight: `1px solid ${colorTelusPurple}`,
     borderBottom: `none`,
     minWidth: '24px',
+    '&::before': {
+      content: '',
+      width: 'auto',
+      height: '100 %',
+      borderBottom: `1px solid ${colorTelusPurple}`,
+    },
+    '&::after': {
+      content: '',
+      width: 'auto',
+      height: '100 %',
+      borderBottom: `1px solid ${colorTelusPurple}`,
+    },
   }),
 })
 
 export const BeforeAfterTabs = styled.li({
   display: 'inline-block',
-  backgroundColor: colorWhite,
+  backgroundColor: `${colorWhite}`,
   height: '44px',
   lineHeight: '41px',
   width: '64px',
@@ -131,10 +139,38 @@ export const BeforeAfterTabs = styled.li({
   }),
 })
 
-export const BeforeTabsFirst = styled(BeforeAfterTabs)({
-  borderRadius: '0 0 8px 0',
+export const BeforeCurrentTab = styled(BeforeAfterTabs)({
+  // borderRadius: '0 0 8px 0',
+  '&::after': {
+    content: '""',
+    width: '100%',
+    height: '8px',
+    position: 'absolute',
+    right: '-1px',
+    top: '100%',
+    pointerEvents: 'none' /* this allows you to click through elements */,
+    backgroundColor: `${colorWhite}`,
+    display: 'inline - block',
+    borderRight: `1px solid ${colorTelusPurple}`,
+    borderBottom: `1px solid ${colorTelusPurple}`,
+    borderRadius: '0 0 8px 0',
+  },
 })
 
-export const AfterTabsLast = styled(BeforeAfterTabs)({
-  borderRadius: '0 0 0 8px',
+export const AfterCurrentTab = styled(BeforeAfterTabs)({
+  // borderRadius: '0 0 0 8px',
+  '&::before': {
+    content: '""',
+    width: '100%',
+    height: '8px',
+    position: 'absolute',
+    left: '-1px',
+    top: '100%',
+    pointerEvents: 'none' /* this allows you to click through elements */,
+    backgroundColor: `${colorWhite}`,
+    display: 'inline - block',
+    borderLeft: `1px solid ${colorTelusPurple}`,
+    borderBottom: `1px solid ${colorTelusPurple}`,
+    borderRadius: '0 0 8px 0',
+  },
 })

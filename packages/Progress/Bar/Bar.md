@@ -5,22 +5,14 @@ By default, Progress.Bar will be displayed in the **primary** variant. Use prima
 
 ```jsx
 <Progress>
-  <Progress.Bar percentage={40} />
+  <Progress.Bar percentage={40} a11yLabel="Data Used" />
 </Progress>
 ```
 
-Specify a **variant** to create a progress bar for non-primary data
+You can use the **negative** variant to indicate a level of failure or warning
 
 ```jsx
 <Progress>
-  <Progress.Bar percentage={40} variant="secondary" />
-</Progress>
-```
-
-You can use the **error** variant to indicate a level of failure or warning
-
-```jsx
-<Progress>
-  <Progress.Bar percentage={40} variant="error" />
+  <Progress.Bar percentage={40} variant="negative" a11yLabel="Data Used" />
 </Progress>
 ```

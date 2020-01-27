@@ -1,12 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+import { colorAccessibleGreen, colorCardinal, colorGainsboro } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
-import styles from '../Progress.scss'
+import Negative from './textures/Negative'
+import Disabled from './textures/Disabled'
 
 const MIN_NON_ZERO_PROGRESS_PERCENTAGE = 5
 const MAX_PROGRESS_PERCENTAGE = 100
+
+const ProgressBar = styled.div(({ progress, zIndex, variant }) => ({
+  width: `${progress}%`,
+  height: '100%',
+  zIndex,
+  display: 'block',
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  overflow: 'hidden',
+  boxShadow: 'inset 0 -1px 1px rgba(255,255,255,0.3)',
+
+  ...(variant === 'positive' && { backgroundColor: colorAccessibleGreen }),
+  ...(variant === 'negative' && { backgroundColor: colorCardinal }),
+  ...(variant === 'disabled' && { backgroundColor: colorGainsboro }),
+}))
 
 const constrainNonZeroPercentage = (minNonZeroPercentage, maxPercentage, percentage) => {
   if (percentage <= 0) return 0
@@ -15,7 +34,7 @@ const constrainNonZeroPercentage = (minNonZeroPercentage, maxPercentage, percent
   return percentage
 }
 
-const Bar = ({ percentage, variant, ...rest }) => {
+const Bar = ({ percentage, variant, a11yLabel, ...rest }) => {
   const percent = constrainNonZeroPercentage(
     MIN_NON_ZERO_PROGRESS_PERCENTAGE,
     MAX_PROGRESS_PERCENTAGE,
@@ -23,24 +42,40 @@ const Bar = ({ percentage, variant, ...rest }) => {
   )
   const zIndex = 100 - percent // z-index order is inverse of percentage
   return (
-    <div
+    <ProgressBar
       {...safeRest(rest)}
-      className={[styles.progressBar, styles[variant]].join(' ')}
-      style={{ width: `${percent}%`, zIndex }}
-    />
+      variant={variant}
+      progress={percent}
+      zIndex={zIndex}
+      role="progressbar"
+      aria-valuenow={percentage}
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuetext={a11yLabel}
+    >
+      {variant === 'negative' && <Negative />}
+      {variant === 'disabled' && <Disabled />}
+    </ProgressBar>
   )
 }
 
 Bar.propTypes = {
   /**
-   * Specifies how much of the task has been completed
+   * A number from 0 to 100 that specifies amount of progress.
    */
   percentage: PropTypes.number.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'error', 'disabled']),
+  /**
+   * The style of the `Progress.Bar`.
+   */
+  variant: PropTypes.oneOf(['positive', 'negative', 'disabled']),
+  /**
+   * A label to be read by assistive technology. Meant to give context about the `Progress.Bar`.
+   */
+  a11yLabel: PropTypes.string.isRequired,
 }
 
 Bar.defaultProps = {
-  variant: 'primary',
+  variant: 'positive',
 }
 
 export default Bar

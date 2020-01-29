@@ -11,7 +11,6 @@ describe('ToggleSwitch', () => {
     name: 'name',
     value: 'value',
     toolTipCopy: 'en',
-    spinnerLabel: 'Request is processing.',
     onClick: mockOnClick,
   }
 
@@ -150,7 +149,10 @@ describe('ToggleSwitch', () => {
   })
 
   it('show spinner when isLoading=true', () => {
-    const toggleSwitch = doShallow({ isLoading: true })
+    const toggleSwitch = doShallow({
+      isLoading: true,
+      spinnerLabel: 'Request is processing.',
+    })
     const spinner = toggleSwitch.find('Spinner')
     expect(spinner.prop('spinning')).toEqual(true)
   })

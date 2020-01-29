@@ -75,7 +75,6 @@ exports[`ToggleSwitch renders 1`] = `
   label="label"
   name="name"
   onClick={[MockFunction]}
-  spinnerLabel="Request is processing."
   toolTipCopy="en"
   value="value"
 >
@@ -170,7 +169,6 @@ exports[`ToggleSwitch renders 1`] = `
                 dangerouslyHideVisibleLabel={false}
                 fullScreen={false}
                 inline={true}
-                label="Request is processing."
                 size="small"
                 spinning={false}
                 tag="span"

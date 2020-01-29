@@ -113,7 +113,7 @@ ToggleSwitch.propTypes = {
   tooltipCopy: PropTypes.string,
 
   /** Communicates a message to assistive technology while spinner is visible. */
-  spinnerLabel: PropTypes.string.isRequired,
+  spinnerLabel: PropTypes.string,
 
   /** A callback function to be invoked when the ToggleSwitch button is clicked on.
    @param {SyntheticEvent} event The React `SyntheticEvent` */
@@ -127,6 +127,7 @@ ToggleSwitch.defaultProps = {
   checked: false,
   tooltipText: undefined,
   tooltipCopy: undefined,
+  spinnerLabel: undefined,
   isLoading: false,
 }
 

@@ -95,6 +95,7 @@ export const TabBeforeCurrent = styled(GeneralTabs)({
     borderBottom: 'none',
     position: 'relative',
     lineHeight: '5px',
+    paddingTop: '6px',
     '&::after': {
       content: '""',
       width: '102%',
@@ -118,6 +119,7 @@ export const TabAfterCurrent = styled(GeneralTabs)(props => ({
     borderBottom: 'none',
     position: 'relative',
     lineHeight: '5px',
+    paddingTop: '6px',
     ...(props.separator && {
       '&::after': {
         content: '""',
@@ -152,9 +154,9 @@ export const TabCurrent = styled(GeneralTabs)({
   color: `${colorTelusPurple}`,
   border: `1px solid ${colorTelusPurple}`,
   borderRadius: '8px 8px 0 0',
-  paddingTop: '10px',
   lineHeight: '46px',
   padding: '0 0',
+  paddingTop: '3px',
   fontWeight: 'bold',
   ...media.from('md').css({
     borderTop: `1px solid ${colorTelusPurple}`,

@@ -72,19 +72,15 @@ export const TabNotCurrent = styled(GeneralTabs)(props => ({
   ...media.from('md').css({
     borderTop: `none`,
     position: 'relative',
-    // borderLeft: props.leftToCurrent && `1px solid ${colorTelusPurple}`,
-    // borderRight: props.rightToCurrent && `1px solid ${colorTelusPurple}`,
     lineHeight: '5px',
-    // borderRight: `none`,
-    // borderBottomLeftRadius: props.rightToCurrent && '8px',
-    // borderBottomRightRadius: props.leftToCurrent && '8px',
+    height: '52px',
     ...(props.separator && {
       '&::after': {
         content: '""',
         position: 'absolute',
         right: '0',
         display: 'block',
-        height: '50%',
+        height: '55%',
         width: '1px',
         backgroundColor: `${colorTelusPurple}`,
         top: '25%',
@@ -95,14 +91,10 @@ export const TabNotCurrent = styled(GeneralTabs)(props => ({
 
 export const TabBeforeCurrent = styled(GeneralTabs)({
   ...media.from('md').css({
-    borderTop: `none`,
+    borderTop: 'none',
+    borderBottom: 'none',
     position: 'relative',
-    // borderLeft: props.leftToCurrent && `1px solid ${colorTelusPurple}`,
-    // borderRight: props.rightToCurrent && `1px solid ${colorTelusPurple}`,
     lineHeight: '5px',
-    // borderRight: `none`,
-    // borderBottomLeftRadius: props.rightToCurrent && '8px',
-    // borderBottomRightRadius: props.leftToCurrent && '8px',
     '&::after': {
       content: '""',
       width: '100%',
@@ -120,26 +112,24 @@ export const TabBeforeCurrent = styled(GeneralTabs)({
   }),
 })
 
-export const TabAfterCurrent = styled(GeneralTabs)({
+export const TabAfterCurrent = styled(GeneralTabs)(props => ({
   ...media.from('md').css({
-    borderTop: `none`,
+    borderTop: 'none',
+    borderBottom: 'none',
     position: 'relative',
-    // borderLeft: props.leftToCurrent && `1px solid ${colorTelusPurple}`,
-    // borderRight: props.rightToCurrent && `1px solid ${colorTelusPurple}`,
     lineHeight: '5px',
-    // borderRight: `none`,
-    // borderBottomLeftRadius: props.rightToCurrent && '8px',
-    // borderBottomRightRadius: props.leftToCurrent && '8px',
-    '&::after': {
-      content: '""',
-      position: 'absolute',
-      right: '0',
-      display: 'block',
-      height: '50%',
-      width: '1px',
-      backgroundColor: `${colorTelusPurple}`,
-      top: '25%',
-    },
+    ...(props.separator && {
+      '&::after': {
+        content: '""',
+        position: 'absolute',
+        right: '0',
+        display: 'block',
+        height: '65%',
+        width: '1px',
+        backgroundColor: `${colorTelusPurple}`,
+        top: '25%',
+      },
+    }),
     '&::before': {
       content: '""',
       width: '100%',
@@ -155,17 +145,15 @@ export const TabAfterCurrent = styled(GeneralTabs)({
       borderRadius: '0 0 0 8px',
     },
   }),
-})
+}))
 
 export const TabCurrent = styled(GeneralTabs)({
   backgroundColor: `${colorWhite}`,
   color: `${colorTelusPurple}`,
   border: `1px solid ${colorTelusPurple}`,
-  // borderBottom: `0`,
   borderRadius: '8px 8px 0 0',
   paddingTop: '10px',
   lineHeight: '46px',
-  // verticalAlign: 'top',
   padding: '0 0',
   fontWeight: 'bold',
   ...media.from('md').css({
@@ -192,7 +180,7 @@ export const TabCurrent = styled(GeneralTabs)({
 export const SpaceBeforeAfterTabs = styled.li({
   display: 'inline-block',
   backgroundColor: `${colorWhite}`,
-  height: '44px',
+  height: '52px',
   lineHeight: '41px',
   width: '64px',
   minWidth: '32px',
@@ -205,7 +193,8 @@ export const SpaceBeforeAfterTabs = styled.li({
 })
 
 export const SpaceBeforeCurrentTab = styled(SpaceBeforeAfterTabs)({
-  // borderRadius: '0 0 8px 0',
+  position: 'relative',
+  height: '44px',
   '&::after': {
     content: '""',
     width: '100%',
@@ -223,7 +212,8 @@ export const SpaceBeforeCurrentTab = styled(SpaceBeforeAfterTabs)({
 })
 
 export const SpaceAfterCurrentTab = styled(SpaceBeforeAfterTabs)({
-  // borderRadius: '0 0 0 8px',
+  position: 'relative',
+  height: '44px',
   '&::before': {
     content: '""',
     width: '100%',
@@ -236,6 +226,6 @@ export const SpaceAfterCurrentTab = styled(SpaceBeforeAfterTabs)({
     display: 'inline - block',
     borderLeft: `1px solid ${colorTelusPurple}`,
     borderBottom: `1px solid ${colorTelusPurple}`,
-    borderRadius: '0 0 8px 0',
+    borderRadius: '0 0 0 8px',
   },
 })

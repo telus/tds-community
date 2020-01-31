@@ -13,6 +13,7 @@ exports[`Tabs renders 1`] = `
       </styles__TabCurrent>
       <styles__TabAfterCurrent
         key="193361898"
+        separator={false}
       >
         <styles__GeneralTabsButton
           aria-label="undefined 2"
@@ -33,6 +34,7 @@ exports[`Tabs renders 1`] = `
       </styles__TabCurrent>
       <styles__TabAfterCurrent
         key="193361898"
+        separator={false}
       >
         <styles__GeneralTabsButton
           aria-label="undefined 2"

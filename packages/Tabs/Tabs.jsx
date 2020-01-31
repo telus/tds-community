@@ -98,7 +98,7 @@ const Tabs = ({ children, copy, ...rest }) => {
       }
       if (afterCurrent) {
         return (
-          <TabAfterCurrent key={hash(`${i}-3`)}>
+          <TabAfterCurrent key={hash(`${i}-3`)} separator={separator}>
             <GeneralTabsButton
               value={index}
               onClick={e => handleClick(e)}

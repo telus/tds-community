@@ -22,7 +22,9 @@ const ToggleSwitch = React.forwardRef(
     if (tooltipText && !tooltipCopy) {
       warn('@tds/community-toggle-switch', 'You must provide tooltipCopy when using tooltipText')
     }
-
+    if (isLoading && !spinnerLabel) {
+      warn('@tds/community-toggle-switch', 'You must provide spinnerLabel when using isLoading')
+    }
     const labelledById = `${id}-label`
     const buttonRef = useRef()
 

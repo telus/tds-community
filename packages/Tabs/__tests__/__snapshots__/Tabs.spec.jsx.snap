@@ -4,18 +4,15 @@ exports[`Tabs renders 1`] = `
 <styles__TabsContainer>
   <styles__Controls>
     <styles__TabsList>
-      <styles__BeforeCurrentTab />
-      <styles__TabsCurrent
+      <styles__SpaceBeforeCurrentTab />
+      <styles__TabCurrent
         key="193359721"
       >
         Tab 1
         <A11yContent />
-      </styles__TabsCurrent>
-      <styles__TabsNotCurrent
+      </styles__TabCurrent>
+      <styles__TabAfterCurrent
         key="193361898"
-        leftCornerRounded={true}
-        rightCornerRounded={false}
-        rightSeparator={false}
       >
         <styles__GeneralTabsButton
           aria-label="undefined 2"
@@ -24,21 +21,18 @@ exports[`Tabs renders 1`] = `
         >
           Tab 2
         </styles__GeneralTabsButton>
-      </styles__TabsNotCurrent>
-      <styles__BeforeAfterTabs />
+      </styles__TabAfterCurrent>
+      <styles__SpaceBeforeAfterTabs />
     </styles__TabsList>
     <styles__TabsListMobile>
-      <styles__TabsCurrent
+      <styles__TabCurrent
         key="193359721"
       >
         Tab 1
         <A11yContent />
-      </styles__TabsCurrent>
-      <styles__TabsNotCurrent
+      </styles__TabCurrent>
+      <styles__TabAfterCurrent
         key="193361898"
-        leftCornerRounded={true}
-        rightCornerRounded={false}
-        rightSeparator={false}
       >
         <styles__GeneralTabsButton
           aria-label="undefined 2"
@@ -47,7 +41,7 @@ exports[`Tabs renders 1`] = `
         >
           Tab 2
         </styles__GeneralTabsButton>
-      </styles__TabsNotCurrent>
+      </styles__TabAfterCurrent>
     </styles__TabsListMobile>
   </styles__Controls>
   <Panel>

@@ -12,12 +12,14 @@ import {
   Controls,
   TabsList,
   TabsListMobile,
-  TabsCurrent,
-  TabsNotCurrent,
+  TabCurrent,
+  TabNotCurrent,
+  TabBeforeCurrent,
+  TabAfterCurrent,
   GeneralTabsButton,
-  BeforeAfterTabs,
-  BeforeCurrentTab,
-  AfterCurrentTab,
+  SpaceBeforeAfterTabs,
+  SpaceBeforeCurrentTab,
+  SpaceAfterCurrentTab,
 } from './styles'
 
 /**
@@ -70,25 +72,20 @@ const Tabs = ({ children, copy, ...rest }) => {
       const index = i + 1
       const label = item && item.props && item.props.tab
       // const leftSeparator = (index > 1 && index > current + 1) || (index > 1 && index < current)
-      const rightSeparator = index !== current - 1 && index !== panels
-      const leftCornerRounded = index === current + 1
-      const rightCornerRounded = index === current - 1
+      const separator = index !== current - 1 && index !== panels
+      const beforeCurrent = index === current - 1
+      const afterCurrent = index === current + 1
       if (current === index) {
         return (
-          <TabsCurrent key={hash(`${i}-1`)}>
+          <TabCurrent key={hash(`${i}-1`)}>
             {label}
             <A11yContent>{getCopy(copyDictionary, copy).currentText}</A11yContent>
-          </TabsCurrent>
+          </TabCurrent>
         )
       }
-      if (checkForRegularTabs(index, isMobile)) {
+      if (beforeCurrent) {
         return (
-          <TabsNotCurrent
-            key={hash(`${i}-3`)}
-            rightSeparator={rightSeparator}
-            leftCornerRounded={leftCornerRounded}
-            rightCornerRounded={rightCornerRounded}
-          >
+          <TabBeforeCurrent key={hash(`${i}-3`)}>
             <GeneralTabsButton
               value={index}
               onClick={e => handleClick(e)}
@@ -96,7 +93,33 @@ const Tabs = ({ children, copy, ...rest }) => {
             >
               {label}
             </GeneralTabsButton>
-          </TabsNotCurrent>
+          </TabBeforeCurrent>
+        )
+      }
+      if (afterCurrent) {
+        return (
+          <TabAfterCurrent key={hash(`${i}-3`)}>
+            <GeneralTabsButton
+              value={index}
+              onClick={e => handleClick(e)}
+              aria-label={`${getCopy(copyDictionary, copy).goToText} ${index}`}
+            >
+              {label}
+            </GeneralTabsButton>
+          </TabAfterCurrent>
+        )
+      }
+      if (!beforeCurrent && !afterCurrent && checkForRegularTabs(index, isMobile)) {
+        return (
+          <TabNotCurrent key={hash(`${i}-3`)} separator={separator}>
+            <GeneralTabsButton
+              value={index}
+              onClick={e => handleClick(e)}
+              aria-label={`${getCopy(copyDictionary, copy).goToText} ${index}`}
+            >
+              {label}
+            </GeneralTabsButton>
+          </TabNotCurrent>
         )
       }
       return null
@@ -106,11 +129,11 @@ const Tabs = ({ children, copy, ...rest }) => {
     <TabsContainer {...safeRest(rest)}>
       <Controls>
         <TabsList>
-          {current !== 1 && <BeforeAfterTabs />}
-          {current === 1 && <BeforeCurrentTab />}
+          {current !== 1 && <SpaceBeforeAfterTabs />}
+          {current === 1 && <SpaceBeforeCurrentTab />}
           {mapTabs(false)}
-          {current !== panels && <BeforeAfterTabs />}
-          {current === panels && <AfterCurrentTab />}
+          {current !== panels && <SpaceBeforeAfterTabs />}
+          {current === panels && <SpaceAfterCurrentTab />}
         </TabsList>
         <TabsListMobile>{mapTabs(true)}</TabsListMobile>
       </Controls>

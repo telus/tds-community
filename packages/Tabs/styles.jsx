@@ -97,7 +97,7 @@ export const TabBeforeCurrent = styled(GeneralTabs)({
     lineHeight: '5px',
     '&::after': {
       content: '""',
-      width: '100%',
+      width: '102%',
       height: '8px',
       position: 'absolute',
       right: '-1px',
@@ -132,7 +132,7 @@ export const TabAfterCurrent = styled(GeneralTabs)(props => ({
     }),
     '&::before': {
       content: '""',
-      width: '100%',
+      width: '102%',
       height: '8px',
       position: 'absolute',
       left: '-1px',

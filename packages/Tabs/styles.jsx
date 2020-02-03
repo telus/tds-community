@@ -42,6 +42,18 @@ export const GeneralTabsButton = styled.button({
     textDecoration: 'underline',
     fontWeight: 'bold',
   },
+  '&:focus': {
+    zIndex: '10',
+    borderRadius: '8px',
+    border: '2px solid black',
+    outline: 0,
+    height: 'calc(100% + 10px)',
+    backgroundColor: '#fff',
+    '& + *': {
+      // do this on the next element
+      borderLeft: 0,
+    },
+  },
 })
 
 export const GeneralTabs = styled.li({
@@ -71,6 +83,8 @@ export const GeneralTabs = styled.li({
 export const TabNotCurrent = styled(GeneralTabs)(props => ({
   ...media.from('md').css({
     borderTop: `none`,
+    borderLeft: '0',
+    borderRight: '0',
     position: 'relative',
     lineHeight: '5px',
     height: '52px',
@@ -93,19 +107,20 @@ export const TabBeforeCurrent = styled(GeneralTabs)({
   ...media.from('md').css({
     borderTop: 'none',
     borderBottom: 'none',
+    borderLeft: '0',
     position: 'relative',
     lineHeight: '5px',
     paddingTop: '6px',
     '&::after': {
       content: '""',
-      width: '102%',
+      width: 'calc(100% + 0.125rem)',
       height: '8px',
       position: 'absolute',
-      right: '-1px',
+      right: '-0.125rem',
       top: '100%',
       pointerEvents: 'none' /* this allows you to click through elements */,
       backgroundColor: colorWhiteLilac,
-      display: 'inline - block',
+      display: 'inline-block',
       borderRight: `1px solid ${colorTelusPurple}`,
       borderBottom: `1px solid ${colorTelusPurple}`,
       borderRadius: '0 0 8px 0',
@@ -117,6 +132,7 @@ export const TabAfterCurrent = styled(GeneralTabs)(props => ({
   ...media.from('md').css({
     borderTop: 'none',
     borderBottom: 'none',
+    borderRight: '0',
     position: 'relative',
     lineHeight: '5px',
     paddingTop: '6px',
@@ -134,14 +150,14 @@ export const TabAfterCurrent = styled(GeneralTabs)(props => ({
     }),
     '&::before': {
       content: '""',
-      width: '102%',
+      width: 'calc(100% + 2px)',
       height: '8px',
       position: 'absolute',
-      left: '-1px',
+      left: '-2px',
       top: '100%',
       pointerEvents: 'none' /* this allows you to click through elements */,
       backgroundColor: colorWhiteLilac,
-      display: 'inline - block',
+      display: 'inline-block',
       borderLeft: `1px solid ${colorTelusPurple}`,
       borderBottom: `1px solid ${colorTelusPurple}`,
       borderRadius: '0 0 0 8px',
@@ -207,7 +223,7 @@ export const SpaceBeforeCurrentTab = styled(SpaceBeforeAfterTabs)({
     top: '100%',
     pointerEvents: 'none' /* this allows you to click through elements */,
     backgroundColor: `${colorWhite}`,
-    display: 'inline - block',
+    display: 'inline-block',
     borderRight: `1px solid ${colorTelusPurple}`,
     borderBottom: `1px solid ${colorTelusPurple}`,
     borderRadius: '0 0 8px 0',
@@ -227,7 +243,7 @@ export const SpaceAfterCurrentTab = styled(SpaceBeforeAfterTabs)({
     top: '100%',
     pointerEvents: 'none' /* this allows you to click through elements */,
     backgroundColor: `${colorWhite}`,
-    display: 'inline - block',
+    display: 'inline-block',
     borderLeft: `1px solid ${colorTelusPurple}`,
     borderBottom: `1px solid ${colorTelusPurple}`,
     borderRadius: '0 0 0 8px',

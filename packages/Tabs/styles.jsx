@@ -197,6 +197,7 @@ export const SpaceBeforeAfterTabs = styled.li({
 export const SpaceBeforeCurrentTab = styled(SpaceBeforeAfterTabs)({
   position: 'relative',
   height: '44px',
+  borderBottom: 'none',
   '&::after': {
     content: '""',
     width: '100%',
@@ -216,6 +217,7 @@ export const SpaceBeforeCurrentTab = styled(SpaceBeforeAfterTabs)({
 export const SpaceAfterCurrentTab = styled(SpaceBeforeAfterTabs)({
   position: 'relative',
   height: '44px',
+  borderBottom: 'none',
   '&::before': {
     content: '""',
     width: '100%',

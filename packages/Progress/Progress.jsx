@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorGainsboro, colorWhite } from '@tds/core-colours'
+import { colorGreyRaven, colorWhite } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
 import Bar from './Bar/Bar'
@@ -16,7 +16,7 @@ const ProgressBarContainer = styled.div(({ size }) => ({
   borderRadius: size === 'mini' ? '12px' : '24px',
   borderWidth: 'thin',
   borderStyle: 'solid',
-  borderColor: colorGainsboro,
+  borderColor: colorGreyRaven,
   overflow: 'hidden',
   transform: 'translateZ(-99999999px)', // Fix for safari overflow bug
 }))

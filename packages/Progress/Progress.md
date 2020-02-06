@@ -1,5 +1,4 @@
-The Progress component is a wrapper-container for an number of Progress.Bar components.
-The Progress Bar is a visual representation of linear progression. They provide simple but important information at a quick glance.
+The Progress Bar is a visual representation of linear progression. They provide simple but important information at a quick glance. The Progress component is a wrapper-container for an number of Progress.Bar components.
 
 ### Usage Criteria
 
@@ -20,22 +19,27 @@ The Progress Bar is a visual representation of linear progression. They provide 
 
 ```jsx
 <Box between={3}>
-  <Heading level="h2">Data Usage</Heading>
   <Progress>
     <Progress.Bar percentage={25} variant="positive" a11yLabel="Data Usage" />
   </Progress>
-  <Heading level="h2">Data Usage</Heading>
   <Progress>
     <Progress.Bar percentage={50} variant="negative" a11yLabel="Data Usage" />
   </Progress>
-  <Heading level="h2">Data Usage</Heading>
   <Progress>
     <Progress.Bar percentage={100} variant="disabled" a11yLabel="Data Usage" />
   </Progress>
-  <Heading level="h2">Data Usage</Heading>
   <Progress>
     <Progress.Bar percentage={30} variant="negative" a11yLabel="Data Used" />
     <Progress.Bar percentage={75} variant="disabled" a11yLabel="Data Unavailable" />
+  </Progress>
+</Box>
+```
+
+```jsx
+<Box between={2}>
+  <Text>2 GB used of 10 GB shared</Text>
+  <Progress>
+    <Progress.Bar percentage={20} variant="negative" a11yLabel="Data Usage" />
   </Progress>
 </Box>
 ```
@@ -44,19 +48,15 @@ The Progress Bar is a visual representation of linear progression. They provide 
 
 ```jsx
 <Box between={3}>
-  <Heading level="h2">Data Usage</Heading>
   <Progress size="mini">
     <Progress.Bar percentage={25} variant="positive" a11yLabel="Data Usage" />
   </Progress>
-  <Heading level="h2">Data Usage</Heading>
   <Progress size="mini">
     <Progress.Bar percentage={50} variant="negative" a11yLabel="Data Usage" />
   </Progress>
-  <Heading level="h2">Data Usage</Heading>
   <Progress size="mini">
     <Progress.Bar percentage={100} variant="disabled" a11yLabel="Data Usage" />
   </Progress>
-  <Heading level="h2">Data Usage</Heading>
   <Progress size="mini">
     <Progress.Bar percentage={30} variant="negative" a11yLabel="Data Used" />
     <Progress.Bar percentage={75} variant="disabled" a11yLabel="Data Unavailable" />

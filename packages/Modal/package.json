@@ -28,6 +28,7 @@
   "dependencies": {
     "@tds/core-box": "^2.0.2",
     "@tds/core-button": "^2.1.10",
+    "@tds/core-heading": "^3.0.4",
     "@tds/core-interactive-icon": "^1.2.1",
     "@tds/core-paragraph": "^2.0.8",
     "@tds/util-helpers": "^1.2.0",

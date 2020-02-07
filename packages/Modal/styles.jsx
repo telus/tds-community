@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
-import { colorWhite, colorShark } from '@tds/core-colours'
+import { colorWhite } from '@tds/core-colours'
 
 export const FullScreenOverlay = styled.div(props => {
   if (props && props.modalOpen) {
     return {
+      overflow: 'scroll',
       backgroundColor: colorWhite,
       width: '100%',
       height: '100%',
@@ -44,12 +45,6 @@ export const StyledModal = styled.div({
     backgroundColor: colorWhite,
     top: '29%',
   }),
-})
-
-export const Header = styled.span({
-  fontSize: '1rem',
-  fontWeight: 'bold',
-  color: colorShark,
 })
 
 export const CTAWrapper = styled.div(props => {
@@ -94,4 +89,5 @@ export const ModalWrapper = styled.div({
   flexFlow: 'column',
   justifyContent: 'space-between',
   padding: '3rem',
+  overflow: 'scroll',
 })

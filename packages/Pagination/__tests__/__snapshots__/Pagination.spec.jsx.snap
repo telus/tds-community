@@ -198,7 +198,7 @@ exports[`Pagination renders 1`] = `
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
   .c5 {
     display: none;
   }
@@ -265,7 +265,7 @@ exports[`Pagination renders 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "styles__PaginationContainer-sc-1afeh49-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "opacity: 1;",
@@ -303,12 +303,18 @@ exports[`Pagination renders 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "styles__Controls-sc-1afeh49-1",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "clear: both; display: flex; margin-top: 20px; position: relative; justify-content: center; @media (min-width: 768px) {
-  justify-content: flex-start;
-} width: 100%;",
+                    "clear: both;",
+                    "display: flex;",
+                    "margin-top: 20px;",
+                    "position: relative;",
+                    "justify-content: center;",
+                    "@media (min-width: 768px) {",
+                    "justify-content: flex-start;",
+                    "}",
+                    "width: 100%;",
                   ],
                 },
                 "displayName": "styles__Controls",
@@ -339,9 +345,13 @@ exports[`Pagination renders 1`] = `
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
-                          "color: #4b286d; font-size: 1rem; line-height: 42px; @media (min-width: 768px) {
-  line-height: 42px; padding: 0 8px 0 4px;
-}",
+                          "color: #4b286d;",
+                          "font-size: 1rem;",
+                          "line-height: 42px;",
+                          "@media (min-width: 768px) {",
+                          "line-height: 42px;",
+                          "padding: 0 8px 0 4px;",
+                          "}",
                           [Function],
                         ],
                       },
@@ -376,12 +386,23 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationButtonStyle-sc-1afeh49-5",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c3",
                               "rules": Array [
-                                "color: #4b286d; background-color: #f2eff4; border: none; width: 44px; height: 44px; margin: 0; text-align: center; padding: 0; border-radius: 4px; @media (min-width: 768px) {
-  background: none; width: auto; height: auto;
-}",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "border: none;",
+                                "width: 44px;",
+                                "height: 44px;",
+                                "margin: 0;",
+                                "text-align: center;",
+                                "padding: 0;",
+                                "border-radius: 4px;",
+                                "@media (min-width: 768px) {",
+                                "background: none;",
+                                "width: auto;",
+                                "height: auto;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__PaginationButtonStyle",
@@ -428,12 +449,13 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__ButtonLabel-sc-1afeh49-6",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c4",
                                     "rules": Array [
-                                      "display: none; @media (min-width: 768px) {
-  display: inline-block;
-}",
+                                      "display: none;",
+                                      "@media (min-width: 768px) {",
+                                      "display: inline-block;",
+                                      "}",
                                     ],
                                   },
                                   "displayName": "styles__ButtonLabel",
@@ -469,12 +491,13 @@ exports[`Pagination renders 1`] = `
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "styles__PaginationList-sc-1afeh49-7",
-                        "isStatic": true,
+                        "isStatic": false,
                         "lastClassName": "c5",
                         "rules": Array [
-                          "@media (max-width: 768px) {
-  display: none;
-} display: flex;",
+                          "@media (max-width: 767px) {",
+                          "display: none;",
+                          "}",
+                          "display: flex;",
                         ],
                       },
                       "displayName": "styles__PaginationList",
@@ -502,21 +525,45 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationCurrent-sc-1afeh49-12",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
-                                "color: #f2eff4; line-height: 46px; vertical-align: bottom; padding: 0 5px; border: none; &:hover {
-  border: none;
-} background-color: #4b286d; @media (min-width: 768px) {
-  border: 1px solid #4b286d; min-width: 24px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
+                                "color: #f2eff4;",
+                                "line-height: 46px;",
+                                "vertical-align: bottom;",
+                                "padding: 0 5px;",
+                                "border: none;",
+                                "&:hover {",
+                                "border: none;",
+                                "}",
+                                "background-color: #4b286d;",
+                                "@media (min-width: 768px) {",
+                                "border: 1px solid #4b286d;",
+                                "min-width: 24px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__PaginationCurrent",
@@ -546,10 +593,14 @@ exports[`Pagination renders 1`] = `
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
                                       "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                      "isStatic": true,
+                                      "isStatic": false,
                                       "lastClassName": "c7",
                                       "rules": Array [
-                                        "position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);",
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
                                       ],
                                     },
                                     "displayName": "A11yContent__StyledA11yContent",
@@ -585,16 +636,32 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__GeneralPagination",
@@ -625,10 +692,17 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                      "background: none;",
+                                      "border: none;",
+                                      "color: #4b286d;",
+                                      "padding: 0 5px;",
+                                      "min-width: 32px;",
+                                      "margin: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -668,16 +742,32 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__GeneralPagination",
@@ -708,10 +798,17 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                      "background: none;",
+                                      "border: none;",
+                                      "color: #4b286d;",
+                                      "padding: 0 5px;",
+                                      "min-width: 32px;",
+                                      "margin: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -751,16 +848,32 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__GeneralPagination",
@@ -791,10 +904,17 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                      "background: none;",
+                                      "border: none;",
+                                      "color: #4b286d;",
+                                      "padding: 0 5px;",
+                                      "min-width: 32px;",
+                                      "margin: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -834,21 +954,47 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationEllipsis-sc-1afeh49-11",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c10",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
-                                "display: inline-block; width: 16px; height: 32px; min-width: 16px; background-color: inherit; line-height: 28px; margin-right: 0.25rem; margin-left: -0.25rem; border: none; @media (min-width: 768px) {
-  border: none; &:hover {
-  border: none;
-}
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
+                                "display: inline-block;",
+                                "width: 16px;",
+                                "height: 32px;",
+                                "min-width: 16px;",
+                                "background-color: inherit;",
+                                "line-height: 28px;",
+                                "margin-right: 0.25rem;",
+                                "margin-left: -0.25rem;",
+                                "border: none;",
+                                "@media (min-width: 768px) {",
+                                "border: none;",
+                                "&:hover {",
+                                "border: none;",
+                                "}",
+                                "}",
                               ],
                             },
                             "displayName": "styles__PaginationEllipsis",
@@ -882,16 +1028,32 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__GeneralPagination",
@@ -922,10 +1084,17 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                      "background: none;",
+                                      "border: none;",
+                                      "color: #4b286d;",
+                                      "padding: 0 5px;",
+                                      "min-width: 32px;",
+                                      "margin: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -966,12 +1135,12 @@ exports[`Pagination renders 1`] = `
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "styles__PaginationListMobile-sc-1afeh49-8",
-                        "isStatic": true,
+                        "isStatic": false,
                         "lastClassName": "c11",
                         "rules": Array [
-                          "@media (min-width: 768px) {
-  display: none;
-}",
+                          "@media (min-width: 768px) {",
+                          "display: none;",
+                          "}",
                         ],
                       },
                       "displayName": "styles__PaginationListMobile",
@@ -999,21 +1168,45 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationCurrent-sc-1afeh49-12",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
-                                "color: #f2eff4; line-height: 46px; vertical-align: bottom; padding: 0 5px; border: none; &:hover {
-  border: none;
-} background-color: #4b286d; @media (min-width: 768px) {
-  border: 1px solid #4b286d; min-width: 24px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
+                                "color: #f2eff4;",
+                                "line-height: 46px;",
+                                "vertical-align: bottom;",
+                                "padding: 0 5px;",
+                                "border: none;",
+                                "&:hover {",
+                                "border: none;",
+                                "}",
+                                "background-color: #4b286d;",
+                                "@media (min-width: 768px) {",
+                                "border: 1px solid #4b286d;",
+                                "min-width: 24px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__PaginationCurrent",
@@ -1043,10 +1236,14 @@ exports[`Pagination renders 1`] = `
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
                                       "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                      "isStatic": true,
+                                      "isStatic": false,
                                       "lastClassName": "c7",
                                       "rules": Array [
-                                        "position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);",
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
                                       ],
                                     },
                                     "displayName": "A11yContent__StyledA11yContent",
@@ -1082,16 +1279,32 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__GeneralPagination",
@@ -1122,10 +1335,17 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                      "background: none;",
+                                      "border: none;",
+                                      "color: #4b286d;",
+                                      "padding: 0 5px;",
+                                      "min-width: 32px;",
+                                      "margin: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -1165,21 +1385,47 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationEllipsis-sc-1afeh49-11",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c10",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
-                                "display: inline-block; width: 16px; height: 32px; min-width: 16px; background-color: inherit; line-height: 28px; margin-right: 0.25rem; margin-left: -0.25rem; border: none; @media (min-width: 768px) {
-  border: none; &:hover {
-  border: none;
-}
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
+                                "display: inline-block;",
+                                "width: 16px;",
+                                "height: 32px;",
+                                "min-width: 16px;",
+                                "background-color: inherit;",
+                                "line-height: 28px;",
+                                "margin-right: 0.25rem;",
+                                "margin-left: -0.25rem;",
+                                "border: none;",
+                                "@media (min-width: 768px) {",
+                                "border: none;",
+                                "&:hover {",
+                                "border: none;",
+                                "}",
+                                "}",
                               ],
                             },
                             "displayName": "styles__PaginationEllipsis",
@@ -1213,16 +1459,32 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c8",
                               "rules": Array [
-                                "display: inline-block; color: #4b286d; background-color: #f2eff4; height: 44px; line-height: 41px; width: 44px; min-width: 32px; &:hover {
-  border: 1px solid #4b286d;
-} list-style: none; margin-right: 0.5rem; text-align: center; border-radius: 4px; &:first-child {
-  margin-left: 0.5rem;
-} @media (min-width: 768px) {
-  display: inline-block; line-height: 44px; border: 1px solid #f2eff4; min-width: 22px;
-}",
+                                "display: inline-block;",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "height: 44px;",
+                                "line-height: 41px;",
+                                "width: 44px;",
+                                "min-width: 32px;",
+                                "&:hover {",
+                                "border: 1px solid #4b286d;",
+                                "}",
+                                "list-style: none;",
+                                "margin-right: 0.5rem;",
+                                "text-align: center;",
+                                "border-radius: 4px;",
+                                "&:first-child {",
+                                "margin-left: 0.5rem;",
+                                "}",
+                                "@media (min-width: 768px) {",
+                                "display: inline-block;",
+                                "line-height: 44px;",
+                                "border: 1px solid #f2eff4;",
+                                "min-width: 22px;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__GeneralPagination",
@@ -1253,10 +1515,17 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c9",
                                     "rules": Array [
-                                      "background: none; border: none; color: #4b286d; padding: 0 5px; min-width: 32px; margin: 0; width: 100%; height: 100%;",
+                                      "background: none;",
+                                      "border: none;",
+                                      "color: #4b286d;",
+                                      "padding: 0 5px;",
+                                      "min-width: 32px;",
+                                      "margin: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
                                     ],
                                   },
                                   "displayName": "styles__GeneralPaginationButton",
@@ -1302,9 +1571,13 @@ exports[`Pagination renders 1`] = `
                         "isStatic": false,
                         "lastClassName": "c12",
                         "rules": Array [
-                          "color: #4b286d; font-size: 1rem; line-height: 42px; @media (min-width: 768px) {
-  line-height: 42px; padding: 0 8px 0 4px;
-}",
+                          "color: #4b286d;",
+                          "font-size: 1rem;",
+                          "line-height: 42px;",
+                          "@media (min-width: 768px) {",
+                          "line-height: 42px;",
+                          "padding: 0 8px 0 4px;",
+                          "}",
                           [Function],
                         ],
                       },
@@ -1339,12 +1612,23 @@ exports[`Pagination renders 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationButtonStyle-sc-1afeh49-5",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c3",
                               "rules": Array [
-                                "color: #4b286d; background-color: #f2eff4; border: none; width: 44px; height: 44px; margin: 0; text-align: center; padding: 0; border-radius: 4px; @media (min-width: 768px) {
-  background: none; width: auto; height: auto;
-}",
+                                "color: #4b286d;",
+                                "background-color: #f2eff4;",
+                                "border: none;",
+                                "width: 44px;",
+                                "height: 44px;",
+                                "margin: 0;",
+                                "text-align: center;",
+                                "padding: 0;",
+                                "border-radius: 4px;",
+                                "@media (min-width: 768px) {",
+                                "background: none;",
+                                "width: auto;",
+                                "height: auto;",
+                                "}",
                               ],
                             },
                             "displayName": "styles__PaginationButtonStyle",
@@ -1375,12 +1659,13 @@ exports[`Pagination renders 1`] = `
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__ButtonLabel-sc-1afeh49-6",
-                                    "isStatic": true,
+                                    "isStatic": false,
                                     "lastClassName": "c4",
                                     "rules": Array [
-                                      "display: none; @media (min-width: 768px) {
-  display: inline-block;
-}",
+                                      "display: none;",
+                                      "@media (min-width: 768px) {",
+                                      "display: inline-block;",
+                                      "}",
                                     ],
                                   },
                                   "displayName": "styles__ButtonLabel",

@@ -1,11 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Blockquote renders 1`] = `
+.c2 {
+  word-wrap: break-word;
+  color: #4b286d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  -webkit-letter-spacing: -0.7px;
+  -moz-letter-spacing: -0.7px;
+  -ms-letter-spacing: -0.7px;
+  letter-spacing: -0.7px;
+}
+
+.c2 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 1rem;
+  top: -0.8em;
+}
+
+.c2 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c0 {
   border-left: 4px solid purple;
 }
 
-@media (max-width:768px) {
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1.75rem;
+    line-height: 1.29;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 sup {
+    font-size: 1rem;
+    top: -0.7em;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width:767px) {
   .c0 {
     padding-left: 2rem;
   }
@@ -26,14 +92,16 @@ exports[`Blockquote renders 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "Blockquote__Wrapper-gnvw5h-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "border-left: 4px solid purple; @media (max-width: 768px) {
-  padding-left: 2rem;
-} @media (min-width: 768px) {
-  padding-left: 3rem;
-}",
+              "border-left: 4px solid purple;",
+              "@media (max-width: 767px) {",
+              "padding-left: 2rem;",
+              "}",
+              "@media (min-width: 768px) {",
+              "padding-left: 3rem;",
+              "}",
             ],
           },
           "displayName": "Blockquote__Wrapper",
@@ -56,27 +124,107 @@ exports[`Blockquote renders 1`] = `
           tag="div"
           vertical={4}
         >
-          <div
-            className="TDS_Box-modules__verticalPadding-4___QMNNa"
+          <styled.div
+            inline={false}
+            tag="div"
+            vertical={4}
           >
-            <Heading
-              invert={false}
-              level="h2"
-              tag="span"
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={false}
+              tag="div"
+              vertical={4}
             >
-              <span
-                className="TDS_Heading-modules__h2___l3LmI TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
+              <div
+                className="c1"
               >
-                <ColoredTextProvider
-                  className={null}
+                <Heading
+                  invert={false}
+                  level="h2"
+                  tag="span"
                 >
-                  <div>
-                    This is an example of Blockquote
-                  </div>
-                </ColoredTextProvider>
-              </span>
-            </Heading>
-          </div>
+                  <Heading__StyledHeading
+                    as="span"
+                    data-testid="heading"
+                    invert={false}
+                    level="h2"
+                  >
+                    <StyledComponent
+                      as="span"
+                      data-testid="heading"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Heading__StyledHeading-mpz92r-0",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "word-wrap: break-word;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Heading__StyledHeading",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Heading__StyledHeading-mpz92r-0",
+                          "target": "h1",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      invert={false}
+                      level="h2"
+                    >
+                      <span
+                        className="c2"
+                        data-testid="heading"
+                      >
+                        <ColoredTextProvider
+                          className={null}
+                        >
+                          <div>
+                            This is an example of Blockquote
+                          </div>
+                        </ColoredTextProvider>
+                      </span>
+                    </StyledComponent>
+                  </Heading__StyledHeading>
+                </Heading>
+              </div>
+            </StyledComponent>
+          </styled.div>
         </Box>
       </blockquote>
     </StyledComponent>

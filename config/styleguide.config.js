@@ -117,12 +117,9 @@ module.exports = {
   template: styleguidistEnv === 'production' ? productionTemplate : devTemplate,
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
-  require: [
-    'babel-polyfill',
-    '@tds/core-css-reset/dist/index.css',
-    path.resolve('docs/scss/styleguide.scss'),
-    path.resolve('docs/setup/tds-core-globals.js'),
-  ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
+  require: ['babel-polyfill', path.resolve('docs/setup/tds-core-globals.js')].concat(
+    styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []
+  ),
   context: {
     moment: 'moment',
   },

@@ -37,7 +37,7 @@ export const StyledModal = styled.div({
   ...media.from('md').css({
     margin: '0 auto',
     maxWidth: '570px',
-    maxHeight: '330px',
+    height: 'auto',
     minHeight: '330px',
     borderRadius: '0.25rem',
     boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
@@ -55,6 +55,7 @@ export const CTAWrapper = styled.div(props => {
         flexFlow: 'row',
         '> button:first-child': {
           marginRight: '1rem',
+          marginTop: '2rem',
         },
       }),
     }
@@ -67,6 +68,7 @@ export const CTAWrapper = styled.div(props => {
     },
     ...media.from('md').css({
       flexFlow: 'row',
+      marginTop: '2rem',
       '> button:first-child': {
         marginRight: '1rem',
         marginBottom: '0rem',
@@ -84,7 +86,6 @@ export const CloseButtonWrapper = styled.div({
 })
 
 export const ModalWrapper = styled.div({
-  height: '100%',
   display: 'flex',
   flexFlow: 'column',
   justifyContent: 'space-between',

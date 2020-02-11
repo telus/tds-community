@@ -112,18 +112,16 @@ const Modal = ({
                 </div>
                 <Paragraph>{bodyText}</Paragraph>
               </Box>
-              <Box between={5}>
-                <CTAWrapper cancelCTAExists={cancelCTAText}>
-                  <Button ref={firstCTA} onClick={proceedModalHandler}>
-                    {confirmCTAText}
+              <CTAWrapper cancelCTAExists={cancelCTAText}>
+                <Button ref={firstCTA} onClick={proceedModalHandler}>
+                  {confirmCTAText}
+                </Button>
+                {cancelCTAText && (
+                  <Button ref={closeButton} onClick={closingModal}>
+                    {cancelCTAText}
                   </Button>
-                  {cancelCTAText && (
-                    <Button ref={closeButton} onClick={closingModal}>
-                      {cancelCTAText}
-                    </Button>
-                  )}
-                </CTAWrapper>
-              </Box>
+                )}
+              </CTAWrapper>
             </ModalWrapper>
           </StyledModal>
         </FullScreenOverlay>

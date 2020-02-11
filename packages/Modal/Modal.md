@@ -19,7 +19,7 @@ const ExampleComponent = () => {
     <div>
       <Modal
         heading="Are you sure you want to disable internet?"
-        bodyText="dummy text of the printing and typesetting industry. This is a test. This is a test"
+        bodyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         cancelCTAText="Cancel"
         confirmCTAText="Confirm"
         proceedModalHandler={proceed}

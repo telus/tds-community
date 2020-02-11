@@ -45,11 +45,17 @@
     "test:u": "npm run test -- -u",
     "test:watch": "npm run test -- --watch",
     "test:quick": "jest -o --config config/jest.config.js",
-    "test": "jest --config config/jest.config.js"
+    "test": "jest --config config/jest.config.js",
+    "preinstall": "npx npm-force-resolutions"
   },
   "engines": {
     "node": ">=12",
     "npm": ">=6"
+  },
+  "resolutions": {
+    "lodash": "^4.17.15",
+    "mem": "^6.0.1",
+    "serialize-javascript": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

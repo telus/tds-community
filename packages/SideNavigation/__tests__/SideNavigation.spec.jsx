@@ -133,9 +133,8 @@ describe('SideNavigation', () => {
     window.removeEventListener = jest.fn()
 
     sideNavigation.instance().removeEventListeners()
-    expect(window.removeEventListener).toHaveBeenCalledTimes(3)
+    expect(window.removeEventListener).toHaveBeenCalledTimes(2)
     expect(window.removeEventListener.mock.calls[0]).toContain('scroll')
-    expect(window.removeEventListener.mock.calls[1]).toContain('click')
-    expect(window.removeEventListener.mock.calls[2]).toContain('resize')
+    expect(window.removeEventListener.mock.calls[1]).toContain('resize')
   })
 })

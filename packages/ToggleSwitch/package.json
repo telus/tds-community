@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-toggle-switch",
-  "version": "2.0.0",
+  "version": "3.0.1",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,10 +26,10 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.1",
-    "@tds/core-colours": "^1.1.2",
+    "@tds/core-box": "^2.1.2",
+    "@tds/core-colours": "^2.2.1",
     "@tds/core-spinner": "^3.0.2",
-    "@tds/core-text": "^1.1.0",
+    "@tds/core-text": "^3.0.4",
     "@tds/core-tooltip": "^4.0.8",
     "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.6.2"

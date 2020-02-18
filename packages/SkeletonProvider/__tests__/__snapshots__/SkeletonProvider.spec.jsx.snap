@@ -1,21 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SkeletonProvider should render children as is if the show prop == false 1`] = `
+.c0 {
+  word-wrap: break-word;
+  color: #4b286d;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.29;
+  -webkit-letter-spacing: -1.6px;
+  -moz-letter-spacing: -1.6px;
+  -ms-letter-spacing: -1.6px;
+  letter-spacing: -1.6px;
+}
+
+.c0 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 1.25rem;
+  top: -1em;
+}
+
+.c0 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-weight: 300;
+    font-size: 2.75rem;
+    line-height: 1.18;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 sup {
+    font-size: 1.25rem;
+    top: -1.3em;
+  }
+}
+
 <div>
   <h1
-    class="TDS_Heading-modules__h1___1iaO2 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
+    class="c0"
+    data-testid="heading"
   >
     Hello
   </h1>
   <img
     alt="image"
-    class="TDS_Image-modules__fluid___1qw3M TDS_Borders-modules__rounded___3df1Q"
+    class="c1"
     height="60"
     src=""
     width="60"
   />
   <span
-    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
+    class="c2"
   >
     Hello
   </span>

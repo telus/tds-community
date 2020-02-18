@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.3...@tds/community-side-navigation@3.0.4) (2019-12-06)
+
+
+### Bug Fixes
+
+* **community-side-navigation:** fix overlap when sidenav expands ([30b8bed](https://github.com/telus/tds-community/commit/30b8bed))
+* **community-side-navigation:** updated animation and fixed other bugs ([4c99177](https://github.com/telus/tds-community/commit/4c99177))
+
+
+
+
+
+## [3.0.3](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.2...@tds/community-side-navigation@3.0.3) (2019-11-22)
+
+**Note:** Version bump only for package @tds/community-side-navigation
+
+
+
+
+
 ## [3.0.2](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.1...@tds/community-side-navigation@3.0.2) (2019-10-10)
 
 **Note:** Version bump only for package @tds/community-side-navigation

@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 import Bar from '../Bar'
 
 describe('Progress', () => {
-  const defaultProps = { percentage: 3 }
+  const defaultProps = { percentage: 3, a11yLabel: 'Data Usage' }
   const doShallow = (overrides = {}) => shallow(<Bar {...defaultProps} {...overrides} />)
 
   it('renders', () => {
@@ -37,12 +37,12 @@ describe('Progress', () => {
   })
 
   it('has a width that is a percentage proportional to its value', () => {
-    const progressBar = doShallow({ percentage: 50 }).find('.progressBar')
-    expect(progressBar).toHaveStyle({ width: '50%' })
+    const progressBar = doShallow({ percentage: 50 })
+    expect(progressBar).toMatchSnapshot()
   })
 
   it('has a width of 5% if value is equal or less than 5', () => {
-    const progressBar = doShallow({ percentage: 5 }).find('.progressBar')
-    expect(progressBar).toHaveStyle({ width: '5%' })
+    const progressBar = doShallow({ percentage: 5 })
+    expect(progressBar).toMatchSnapshot()
   })
 })

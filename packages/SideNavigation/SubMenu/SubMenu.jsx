@@ -6,7 +6,7 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import { safeRest } from '@tds/util-helpers'
-import { Reveal } from '@tds/shared-animation'
+import { FadeAndReveal } from '@tds/shared-animation'
 import { componentWithName } from '@tds/util-prop-types'
 import { colorTelusPurple, colorWhiteLilac, colorShuttleGrey } from '@tds/core-colours'
 import { fontTelus } from '@tds/shared-typography'
@@ -90,7 +90,7 @@ class SubMenu extends React.Component {
   }
 
   render() {
-    const { children, label, isOpen, ...rest } = this.props
+    const { children, label, isOpen, onOpen, onExit, ...rest } = this.props
 
     const activeChild = this.state.active
     return (
@@ -115,11 +115,13 @@ class SubMenu extends React.Component {
             />
           </SpaceBox>
         </ButtonSubMenu>
-        <Reveal
+        <FadeAndReveal
           timeout={isOpen ? 500 : 0}
           duration={500}
           in={isOpen}
           height={this.state.subMenuHeight}
+          onEntered={onOpen}
+          onExited={onExit}
         >
           {() => (
             <SubMenuContainer
@@ -132,7 +134,7 @@ class SubMenu extends React.Component {
               ))}
             </SubMenuContainer>
           )}
-        </Reveal>
+        </FadeAndReveal>
       </React.Fragment>
     )
   }
@@ -170,6 +172,18 @@ SubMenu.propTypes = {
    * @ignore
    */
   onClick: PropTypes.func,
+  /**
+   * Callback.
+   *
+   * @ignore
+   */
+  onOpen: PropTypes.func,
+  /**
+   * Callback.
+   *
+   * @ignore
+   */
+  onExit: PropTypes.func,
 }
 
 SubMenu.defaultProps = {
@@ -178,6 +192,8 @@ SubMenu.defaultProps = {
   children: undefined,
   id: undefined,
   onClick: undefined,
+  onOpen: undefined,
+  onExit: undefined,
 }
 
 export default SubMenu

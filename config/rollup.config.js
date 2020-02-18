@@ -17,9 +17,7 @@ export default opts => {
     opts
   )
 
-  const tdsExternals = Object.keys(options.dependencies).filter(dependency =>
-    dependency.startsWith('@tds')
-  )
+  const dependencies = Object.keys(options.dependencies)
 
   return {
     input: options.input,
@@ -28,7 +26,7 @@ export default opts => {
       { format: 'es', file: './dist/index.es.js', sourcemap: false, exports: 'named' },
     ],
 
-    external: ['react', 'react-dom', 'prop-types', 'styled-components'].concat(tdsExternals),
+    external: ['react', 'react-dom', 'prop-types', 'styled-components'].concat(dependencies),
 
     plugins: [
       cleaner({
@@ -54,6 +52,7 @@ export default opts => {
         exclude: '../../node_modules/**',
         configFile: '../../babel.config.js',
       }),
+      ...(options.plugins ? options.plugins : []),
     ],
   }
 }

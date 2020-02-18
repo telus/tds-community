@@ -1,6 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToggleSwitch renders 1`] = `
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12,7 +46,7 @@ exports[`ToggleSwitch renders 1`] = `
   justify-content: space-between;
 }
 
-.c2 {
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -21,32 +55,36 @@ exports[`ToggleSwitch renders 1`] = `
   position: relative;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 24px;
-  border-radius: 24px;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
   background-color: #d8d8d8;
 }
 
-.c2:focus {
-  outline: auto;
+.c4:focus {
+  outline-style: solid;
   outline-color: rgb(59,153,252);
-  outline-width: 5px;
+  outline-width: 0.3125rem;
 }
 
-.c3 {
+.c4:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.c5 {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 3px;
-  left: 3px;
-  border-radius: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  border-radius: 1.125rem;
   background-color: white;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
   box-shadow: 0 0 2px 0 #000;
 }
 
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -57,13 +95,20 @@ exports[`ToggleSwitch renders 1`] = `
   justify-content: center;
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c5 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
 <ToggleSwitch
   checked={false}
   id="my-id-123"
+  isLoading={false}
   label="label"
   name="name"
   onClick={[MockFunction]}
-  spinnerLabel="Request is processing."
   toolTipCopy="en"
   value="value"
 >
@@ -77,10 +122,11 @@ exports[`ToggleSwitch renders 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "styles__StyledLabel-i9h5g3-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display: flex; justify-content: space-between;",
+              "display: flex;",
+              "justify-content: space-between;",
             ],
           },
           "displayName": "StyledLabel",
@@ -105,24 +151,116 @@ exports[`ToggleSwitch renders 1`] = `
           inline={true}
           tag="div"
         >
-          <div
-            className="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+          <styled.div
+            between={2}
+            inline={true}
+            tag="div"
           >
-            <Text
-              block={false}
-              bold={false}
-              id="my-id-123-label"
-              invert={false}
-              size="medium"
+            <StyledComponent
+              between={2}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={true}
+              tag="div"
             >
-              <span
-                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-                id="my-id-123-label"
+              <div
+                className="c1"
               >
-                label
-              </span>
-            </Text>
-          </div>
+                <Text
+                  block={false}
+                  bold={false}
+                  id="my-id-123-label"
+                  invert={false}
+                  size="medium"
+                >
+                  <Text__StyledText
+                    block={false}
+                    bold={false}
+                    id="my-id-123-label"
+                    invert={false}
+                    size="medium"
+                  >
+                    <StyledComponent
+                      block={false}
+                      bold={false}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Text__StyledText-sc-1m0rr67-0",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              "sup {",
+                              "top: -0.5em;",
+                              "font-size: 0.875rem;",
+                              "position: relative;",
+                              "vertical-align: baseline;",
+                              "padding-left: 0.1em;",
+                              "}",
+                            ],
+                          },
+                          "displayName": "Text__StyledText",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      id="my-id-123-label"
+                      invert={false}
+                      size="medium"
+                    >
+                      <span
+                        className="c2"
+                        id="my-id-123-label"
+                        size="medium"
+                      >
+                        label
+                      </span>
+                    </StyledComponent>
+                  </Text__StyledText>
+                </Text>
+              </div>
+            </StyledComponent>
+          </styled.div>
         </Box>
         <styles__InputSwitchWrapper>
           <StyledComponent
@@ -132,10 +270,11 @@ exports[`ToggleSwitch renders 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "styles__InputSwitchWrapper-i9h5g3-3",
-                  "isStatic": true,
-                  "lastClassName": "c1",
+                  "isStatic": false,
+                  "lastClassName": "c3",
                   "rules": Array [
-                    "display: flex; justify-content: center;",
+                    "display: flex;",
+                    "justify-content: center;",
                   ],
                 },
                 "displayName": "styles__InputSwitchWrapper",
@@ -151,14 +290,13 @@ exports[`ToggleSwitch renders 1`] = `
             forwardedRef={null}
           >
             <div
-              className="c1"
+              className="c3"
             >
               <Spinner
                 a11yLabel="A spinner is active. Please wait while the page completes a task."
                 dangerouslyHideVisibleLabel={false}
                 fullScreen={false}
                 inline={true}
-                label="Request is processing."
                 size="small"
                 spinning={false}
                 tag="span"
@@ -186,7 +324,7 @@ exports[`ToggleSwitch renders 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "styles__Button-i9h5g3-1",
                           "isStatic": false,
-                          "lastClassName": "c2",
+                          "lastClassName": "c4",
                           "rules": Array [
                             [Function],
                           ],
@@ -212,29 +350,40 @@ exports[`ToggleSwitch renders 1`] = `
   position: relative;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 24px;
-  border-radius: 24px;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
   background-color: #d8d8d8;
 }
 
 .c0:focus {
-  outline: auto;
+  outline-style: solid;
   outline-color: rgb(59,153,252);
-  outline-width: 5px;
+  outline-width: 0.3125rem;
+}
+
+.c0:focus::-moz-focus-inner {
+  border: 0;
 }
 
 .c1 {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 3px;
-  left: 3px;
-  border-radius: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  border-radius: 1.125rem;
   background-color: white;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
   box-shadow: 0 0 2px 0 #000;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c1 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
 }
 
 <button
@@ -263,7 +412,7 @@ exports[`ToggleSwitch renders 1`] = `
                     <button
                       aria-checked={false}
                       aria-labelledby="my-id-123-label"
-                      className="c2"
+                      className="c4"
                       data-testid="my-id-123-switch"
                       id="my-id-123"
                       name="name"
@@ -282,7 +431,7 @@ exports[`ToggleSwitch renders 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__Slider-i9h5g3-2",
                                 "isStatic": false,
-                                "lastClassName": "c3",
+                                "lastClassName": "c5",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -301,7 +450,7 @@ exports[`ToggleSwitch renders 1`] = `
                           pressed={false}
                         >
                           <span
-                            className="c3"
+                            className="c5"
                           />
                         </StyledComponent>
                       </styles__Slider>

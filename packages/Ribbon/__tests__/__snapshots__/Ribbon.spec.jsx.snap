@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Ribbon renders 1`] = `
+.c1 {
+  color: #fff;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   background-color: #4b286d;
   padding: 0px 1.5rem 0px 1rem;
@@ -37,14 +58,31 @@ exports[`Ribbon renders 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "Ribbon__StyledRibbon-sc-1qcqwhs-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "background-color: #4b286d; padding: 0px 1.5rem 0px 1rem; position: relative; display: inline-block; max-width: 100%; min-width: 7.875rem; height: 1.5rem; font-weight: 500; &:after {
-  content: \\"\\"; position: absolute; right: -0.3125rem; bottom: -0.5rem; width: 0; height: 0; border-right: 0.8125rem solid white; border-top: 1.25rem solid transparent; border-bottom: 1.25rem solid transparent;
-} > span {
-  line-height: 1 !important;
-}",
+              "background-color: #4b286d;",
+              "padding: 0px 1.5rem 0px 1rem;",
+              "position: relative;",
+              "display: inline-block;",
+              "max-width: 100%;",
+              "min-width: 7.875rem;",
+              "height: 1.5rem;",
+              "font-weight: 500;",
+              "&:after {",
+              "content: \\"\\";",
+              "position: absolute;",
+              "right: -0.3125rem;",
+              "bottom: -0.5rem;",
+              "width: 0;",
+              "height: 0;",
+              "border-right: 0.8125rem solid white;",
+              "border-top: 1.25rem solid transparent;",
+              "border-bottom: 1.25rem solid transparent;",
+              "}",
+              "> span {",
+              "line-height: 1 !important;",
+              "}",
             ],
           },
           "displayName": "Ribbon__StyledRibbon",
@@ -68,11 +106,60 @@ exports[`Ribbon renders 1`] = `
           invert={true}
           size="small"
         >
-          <span
-            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__invertedColor___2tTa_"
+          <Text__StyledText
+            block={false}
+            bold={true}
+            invert={true}
+            size="small"
           >
-            2 year plan
-          </span>
+            <StyledComponent
+              block={false}
+              bold={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Text__StyledText-sc-1m0rr67-0",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      "sup {",
+                      "top: -0.5em;",
+                      "font-size: 0.875rem;",
+                      "position: relative;",
+                      "vertical-align: baseline;",
+                      "padding-left: 0.1em;",
+                      "}",
+                    ],
+                  },
+                  "displayName": "Text__StyledText",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              invert={true}
+              size="small"
+            >
+              <span
+                className="c1"
+                size="small"
+              >
+                2 year plan
+              </span>
+            </StyledComponent>
+          </Text__StyledText>
         </Text>
       </div>
     </StyledComponent>

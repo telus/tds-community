@@ -1,51 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs renders 1`] = `
-<styles__TabsContainer>
-  <styles__Controls>
-    <styles__TabsList>
-      <styles__SpaceBeforeCurrentTab />
-      <styles__TabCurrent
+<TabsContainer>
+  <Controls>
+    <TabsList>
+      <SpaceBeforeCurrentTab />
+      <TabCurrent
         key="193359721"
       >
         Tab 1
         <A11yContent />
-      </styles__TabCurrent>
-      <styles__TabAfterCurrent
+      </TabCurrent>
+      <TabAfterCurrent
         key="193361898"
         separator={false}
       >
-        <styles__GeneralTabsButton
+        <GeneralTabsButton
           aria-label="undefined 2"
           onClick={[Function]}
           value={2}
         >
           Tab 2
-        </styles__GeneralTabsButton>
-      </styles__TabAfterCurrent>
-      <styles__SpaceBeforeAfterTabs />
-    </styles__TabsList>
-    <styles__TabsListMobile>
-      <styles__TabCurrent
+        </GeneralTabsButton>
+      </TabAfterCurrent>
+      <SpaceAroundTabs__SpaceBeforeAfterTabs />
+    </TabsList>
+    <TabsListMobile>
+      <TabCurrent
         key="193359721"
       >
         Tab 1
         <A11yContent />
-      </styles__TabCurrent>
-      <styles__TabAfterCurrent
+      </TabCurrent>
+      <TabAfterCurrent
         key="193361898"
         separator={false}
       >
-        <styles__GeneralTabsButton
+        <GeneralTabsButton
           aria-label="undefined 2"
           onClick={[Function]}
           value={2}
         >
           Tab 2
-        </styles__GeneralTabsButton>
-      </styles__TabAfterCurrent>
-    </styles__TabsListMobile>
-  </styles__Controls>
+        </GeneralTabsButton>
+      </TabAfterCurrent>
+    </TabsListMobile>
+  </Controls>
   <Panel>
     <Panel
       tab="Tab 1"
@@ -53,5 +53,5 @@ exports[`Tabs renders 1`] = `
       Content of Tab Panel 1
     </Panel>
   </Panel>
-</styles__TabsContainer>
+</TabsContainer>
 `;

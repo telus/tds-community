@@ -6,21 +6,18 @@ import A11yContent from '@tds/core-a11y-content'
 import Panel from './Panel/Panel'
 import hash from './hash'
 import copyDictionary from './tabsText'
-
-import {
-  TabsContainer,
-  Controls,
-  TabsList,
-  TabsListMobile,
-  TabCurrent,
-  TabNotCurrent,
-  TabBeforeCurrent,
-  TabAfterCurrent,
-  GeneralTabsButton,
-  SpaceBeforeAfterTabs,
-  SpaceBeforeCurrentTab,
-  SpaceAfterCurrentTab,
-} from './styles'
+import TabsContainer from './components/TabsContainer'
+import Controls from './components/Controls'
+import TabsList from './components/TabsList'
+import TabsListMobile from './components/TabsListMobile'
+import TabCurrent from './components/TabCurrent'
+import TabNotCurrent from './components/TabNotCurrent'
+import TabBeforeCurrent from './components/TabBeforeCurrent'
+import TabAfterCurrent from './components/TabAfterCurrent'
+import GeneralTabsButton from './components/GeneralTabsButton'
+import SpaceAroundTabs from './components/SpaceAroundTabs'
+import SpaceBeforeCurrentTab from './components/SpaceBeforeCurrentTab'
+import SpaceAfterCurrentTab from './components/SpaceAfterCurrentTab'
 
 /**
  * @version ./package.json
@@ -129,10 +126,10 @@ const Tabs = ({ children, copy, ...rest }) => {
     <TabsContainer {...safeRest(rest)}>
       <Controls>
         <TabsList>
-          {current !== 1 && <SpaceBeforeAfterTabs />}
+          {current !== 1 && <SpaceAroundTabs />}
           {current === 1 && <SpaceBeforeCurrentTab />}
           {mapTabs(false)}
-          {current !== panels && <SpaceBeforeAfterTabs />}
+          {current !== panels && <SpaceAroundTabs />}
           {current === panels && <SpaceAfterCurrentTab />}
         </TabsList>
         <TabsListMobile>{mapTabs(true)}</TabsListMobile>

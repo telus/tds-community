@@ -15,6 +15,7 @@ import { InputGroupStyle, LabelStyle } from './style'
 const InputGroup = ({
   id,
   className,
+  closeA11yText,
   placeholder,
   defaultValue,
   buttonText,
@@ -60,7 +61,7 @@ const InputGroup = ({
         />
         {!!inputValue && (
           <Close
-            a11yText="Close"
+            a11yText={closeA11yText}
             onClick={e => {
               setInputValue('')
               inputRef.current.focus()
@@ -86,6 +87,10 @@ InputGroup.propTypes = {
    * The class name
    */
   className: PropTypes.string,
+  /**
+   * The close a11y test
+   */
+  closeA11yText: PropTypes.string,
   /**
    * The textbox placeholder
    */
@@ -127,6 +132,7 @@ InputGroup.propTypes = {
 InputGroup.defaultProps = {
   id: '',
   className: '',
+  closeA11yText: 'Close',
   placeholder: '',
   defaultValue: '',
   buttonText: '',

@@ -13,6 +13,8 @@ export const InputGroupStyle = styled.div(({ hasValue }) => ({
   flexWrap: 'nowrap',
   height: '52px',
   width: '100%',
+  maxWidth: '768px',
+  minWidth: '384px',
   borderRadius: '5px',
   '&:hover': {
     boxShadow: '0 0 0 1px #4B286D',

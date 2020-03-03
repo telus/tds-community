@@ -67,5 +67,6 @@ export const InputGroupStyle = styled.div(({ hasValue }) => ({
     outlineStyle: 'solid',
     outlineColor: 'rgba(75, 40, 109, 0.5)',
     outlineOffset: '1px',
+    '-moz-outline-radius': '8px',
   },
 }))

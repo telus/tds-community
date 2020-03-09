@@ -1,4 +1,5 @@
 import Box from '@tds/core-box'
+import Button from '@tds/core-button'
 import Card from '@tds/core-card'
 import ChevronLink from '@tds/core-chevron-link'
 import FlexGrid from '@tds/core-flex-grid'
@@ -12,7 +13,6 @@ import Strong from '@tds/core-strong'
 import Text from '@tds/core-text'
 import UnorderedList from '@tds/core-unordered-list'
 import Image from '@tds/core-image'
-import Button from '@tds/core-button'
 import Spinner from '@tds/core-spinner'
 
 Object.assign(global, {

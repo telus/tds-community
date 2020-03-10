@@ -78,6 +78,7 @@
     "@tds/core-ordered-list": "^3.0.17",
     "@tds/core-paragraph": "^2.0.12",
     "@tds/core-responsive": "^1.3.3",
+    "@tds/core-spinner": "^3.1.11",
     "@tds/core-strong": "^2.1.10",
     "@tds/core-text": "^3.0.4",
     "@tds/core-unordered-list": "^3.0.21",

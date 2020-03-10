@@ -1,0 +1,2321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags renders 1`] = `
+.c0 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c6 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  margin-top: 1rem;
+  overflow: visible;
+  color: #4b286d;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #4b286d;
+  border-radius: 20px;
+  height: 2.5rem;
+}
+
+.c3:hover {
+  background: #fff;
+}
+
+.c3:hover:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #33204C;
+  border-radius: 22px;
+}
+
+.c3:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.c3:focus:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  bottom: -11px;
+  right: -11px;
+  border: 3px solid #7557A0;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.c3:active {
+  background-color: #F1EFF4;
+}
+
+.c3:after {
+  content: '';
+}
+
+.c5 {
+  margin-left: 0.5rem;
+}
+
+.c1 {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+}
+
+<Tags
+  copy="en"
+  onClick={[Function]}
+  tags={
+    Array [
+      Object {
+        "children": "Android",
+        "isLoading": false,
+        "isSelected": false,
+      },
+      Object {
+        "children": "iOS",
+        "isLoading": false,
+        "isSelected": false,
+      },
+    ]
+  }
+>
+  <div>
+    <A11yContent
+      aria-live="assertive"
+      id="tags1"
+    >
+      <A11yContent__StyledA11yContent
+        aria-live="assertive"
+        id="tags1"
+      >
+        <StyledComponent
+          aria-live="assertive"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "position: absolute;",
+                  "height: 1px;",
+                  "width: 1px;",
+                  "overflow: hidden;",
+                  "clip: rect(1px, 1px, 1px, 1px);",
+                ],
+              },
+              "displayName": "A11yContent__StyledA11yContent",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="tags1"
+        >
+          <span
+            aria-live="assertive"
+            className="c0"
+            id="tags1"
+          >
+            No product filters currently applied
+          </span>
+        </StyledComponent>
+      </A11yContent__StyledA11yContent>
+    </A11yContent>
+    <Tags__StyledTagsContainer
+      between={3}
+      inline={true}
+    >
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Tags__StyledTagsContainer-sc-17pk8ma-0",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                "flex-wrap: wrap;",
+                "margin-top: -1rem;",
+              ],
+            },
+            "displayName": "Tags__StyledTagsContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Tags__StyledTagsContainer-sc-17pk8ma-0",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={true}
+      >
+        <Box
+          between={3}
+          className="c1"
+          inline={true}
+          tag="div"
+        >
+          <styled.div
+            between={3}
+            className="c1"
+            inline={true}
+            tag="div"
+          >
+            <StyledComponent
+              between={3}
+              className="c1"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={true}
+              tag="div"
+            >
+              <div
+                className="c2 c1 Tags__StyledTagsContainer-sc-17pk8ma-0 c1"
+              >
+                <TagItem
+                  aria-describedby="tags1"
+                  aria-label="Filter products by Android"
+                  isLoading={false}
+                  isSelected={false}
+                  key="Android"
+                  onClick={[Function]}
+                >
+                  <TagItem__StyledTagButton
+                    aria-checked={false}
+                    aria-describedby="tags1"
+                    aria-label="Filter products by Android"
+                    between={2}
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <StyledComponent
+                      aria-checked={false}
+                      aria-describedby="tags1"
+                      aria-label="Filter products by Android"
+                      between={2}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "margin-top: 1rem;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "TagItem__StyledTagButton",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={true}
+                      isLoading={false}
+                      isSelected={false}
+                      onClick={[Function]}
+                      role="switch"
+                      tag="button"
+                    >
+                      <Box
+                        aria-checked={false}
+                        aria-describedby="tags1"
+                        aria-label="Filter products by Android"
+                        between={2}
+                        className="c3"
+                        inline={true}
+                        isLoading={false}
+                        isSelected={false}
+                        onClick={[Function]}
+                        role="switch"
+                        tag="button"
+                      >
+                        <styled.div
+                          aria-checked={false}
+                          aria-describedby="tags1"
+                          aria-label="Filter products by Android"
+                          between={2}
+                          className="c3"
+                          inline={true}
+                          isLoading={false}
+                          isSelected={false}
+                          onClick={[Function]}
+                          role="switch"
+                          tag="button"
+                        >
+                          <StyledComponent
+                            aria-checked={false}
+                            aria-describedby="tags1"
+                            aria-label="Filter products by Android"
+                            between={2}
+                            className="c3"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            inline={true}
+                            isLoading={false}
+                            isSelected={false}
+                            onClick={[Function]}
+                            role="switch"
+                            tag="button"
+                          >
+                            <button
+                              aria-checked={false}
+                              aria-describedby="tags1"
+                              aria-label="Filter products by Android"
+                              className="c4 c3 TagItem__StyledTagButton-u8wmmz-0 c3"
+                              onClick={[Function]}
+                              role="switch"
+                            >
+                              <TagItem__StyledText>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "margin-left: 0.5rem;",
+                                        ],
+                                      },
+                                      "displayName": "TagItem__StyledText",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="c5"
+                                  >
+                                    Android
+                                  </span>
+                                </StyledComponent>
+                              </TagItem__StyledText>
+                              <Dependent
+                                invert={false}
+                              >
+                                <Dependent
+                                  invert={false}
+                                >
+                                  <styled.svg
+                                    data-testid="dependentSvg"
+                                    height="24"
+                                    invert={false}
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <StyledComponent
+                                      data-testid="dependentSvg"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [
+                                            Object {
+                                              "aria-hidden": true,
+                                              "focusable": false,
+                                            },
+                                          ],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.svg",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "svg",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      height="24"
+                                      invert={false}
+                                      viewBox="0 0 24 24"
+                                      width="24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="c6"
+                                        data-testid="dependentSvg"
+                                        focusable={false}
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <path
+                                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                                          fillRule="evenodd"
+                                        />
+                                      </svg>
+                                    </StyledComponent>
+                                  </styled.svg>
+                                </Dependent>
+                              </Dependent>
+                            </button>
+                          </StyledComponent>
+                        </styled.div>
+                      </Box>
+                    </StyledComponent>
+                  </TagItem__StyledTagButton>
+                </TagItem>
+                <TagItem
+                  aria-describedby="tags1"
+                  aria-label="Filter products by iOS"
+                  isLoading={false}
+                  isSelected={false}
+                  key="iOS"
+                  onClick={[Function]}
+                >
+                  <TagItem__StyledTagButton
+                    aria-checked={false}
+                    aria-describedby="tags1"
+                    aria-label="Filter products by iOS"
+                    between={2}
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <StyledComponent
+                      aria-checked={false}
+                      aria-describedby="tags1"
+                      aria-label="Filter products by iOS"
+                      between={2}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "margin-top: 1rem;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "TagItem__StyledTagButton",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={true}
+                      isLoading={false}
+                      isSelected={false}
+                      onClick={[Function]}
+                      role="switch"
+                      tag="button"
+                    >
+                      <Box
+                        aria-checked={false}
+                        aria-describedby="tags1"
+                        aria-label="Filter products by iOS"
+                        between={2}
+                        className="c3"
+                        inline={true}
+                        isLoading={false}
+                        isSelected={false}
+                        onClick={[Function]}
+                        role="switch"
+                        tag="button"
+                      >
+                        <styled.div
+                          aria-checked={false}
+                          aria-describedby="tags1"
+                          aria-label="Filter products by iOS"
+                          between={2}
+                          className="c3"
+                          inline={true}
+                          isLoading={false}
+                          isSelected={false}
+                          onClick={[Function]}
+                          role="switch"
+                          tag="button"
+                        >
+                          <StyledComponent
+                            aria-checked={false}
+                            aria-describedby="tags1"
+                            aria-label="Filter products by iOS"
+                            between={2}
+                            className="c3"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            inline={true}
+                            isLoading={false}
+                            isSelected={false}
+                            onClick={[Function]}
+                            role="switch"
+                            tag="button"
+                          >
+                            <button
+                              aria-checked={false}
+                              aria-describedby="tags1"
+                              aria-label="Filter products by iOS"
+                              className="c4 c3 TagItem__StyledTagButton-u8wmmz-0 c3"
+                              onClick={[Function]}
+                              role="switch"
+                            >
+                              <TagItem__StyledText>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "margin-left: 0.5rem;",
+                                        ],
+                                      },
+                                      "displayName": "TagItem__StyledText",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="c5"
+                                  >
+                                    iOS
+                                  </span>
+                                </StyledComponent>
+                              </TagItem__StyledText>
+                              <Dependent
+                                invert={false}
+                              >
+                                <Dependent
+                                  invert={false}
+                                >
+                                  <styled.svg
+                                    data-testid="dependentSvg"
+                                    height="24"
+                                    invert={false}
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <StyledComponent
+                                      data-testid="dependentSvg"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [
+                                            Object {
+                                              "aria-hidden": true,
+                                              "focusable": false,
+                                            },
+                                          ],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.svg",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "svg",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      height="24"
+                                      invert={false}
+                                      viewBox="0 0 24 24"
+                                      width="24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="c6"
+                                        data-testid="dependentSvg"
+                                        focusable={false}
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <path
+                                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                                          fillRule="evenodd"
+                                        />
+                                      </svg>
+                                    </StyledComponent>
+                                  </styled.svg>
+                                </Dependent>
+                              </Dependent>
+                            </button>
+                          </StyledComponent>
+                        </styled.div>
+                      </Box>
+                    </StyledComponent>
+                  </TagItem__StyledTagButton>
+                </TagItem>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </StyledComponent>
+    </Tags__StyledTagsContainer>
+  </div>
+</Tags>
+`;
+
+exports[`Tags renders isSelected 1`] = `
+.c0 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c6 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  margin-top: 1rem;
+  overflow: visible;
+  color: #4b286d;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #4b286d;
+  border-radius: 20px;
+  height: 2.5rem;
+}
+
+.c3:hover {
+  background: #fff;
+}
+
+.c3:hover:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #33204C;
+  border-radius: 22px;
+}
+
+.c3:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.c3:focus:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  bottom: -11px;
+  right: -11px;
+  border: 3px solid #7557A0;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.c3:active {
+  background-color: #F1EFF4;
+}
+
+.c3:after {
+  content: '';
+}
+
+.c7 {
+  margin-top: 1rem;
+  overflow: visible;
+  color: #fff;
+  background: #4b286d;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #4b286d;
+  border-radius: 20px;
+  height: 2.5rem;
+}
+
+.c7:hover {
+  background: #33204C;
+  border: 1px solid #33204C;
+}
+
+.c7:hover:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #33204C;
+  border-radius: 22px;
+}
+
+.c7:focus {
+  outline: none;
+  background-color: #33204C;
+}
+
+.c7:focus:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  border: 2px solid #7557A0;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.c7:active {
+  background-color: #201430;
+  border: 1px solid #201430;
+}
+
+.c7:after {
+  content: '';
+}
+
+.c5 {
+  margin-left: 0.5rem;
+}
+
+.c1 {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+}
+
+<Tags
+  copy="en"
+  onClick={[Function]}
+  tags={
+    Array [
+      Object {
+        "children": "Android",
+        "isLoading": false,
+        "isSelected": false,
+      },
+      Object {
+        "children": "iOS",
+        "isLoading": false,
+        "isSelected": true,
+      },
+    ]
+  }
+>
+  <div>
+    <A11yContent
+      aria-live="assertive"
+      id="tags3"
+    >
+      <A11yContent__StyledA11yContent
+        aria-live="assertive"
+        id="tags3"
+      >
+        <StyledComponent
+          aria-live="assertive"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "position: absolute;",
+                  "height: 1px;",
+                  "width: 1px;",
+                  "overflow: hidden;",
+                  "clip: rect(1px, 1px, 1px, 1px);",
+                ],
+              },
+              "displayName": "A11yContent__StyledA11yContent",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="tags3"
+        >
+          <span
+            aria-live="assertive"
+            className="c0"
+            id="tags3"
+          >
+            Products currently filtered by iOS
+          </span>
+        </StyledComponent>
+      </A11yContent__StyledA11yContent>
+    </A11yContent>
+    <Tags__StyledTagsContainer
+      between={3}
+      inline={true}
+    >
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Tags__StyledTagsContainer-sc-17pk8ma-0",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                "flex-wrap: wrap;",
+                "margin-top: -1rem;",
+              ],
+            },
+            "displayName": "Tags__StyledTagsContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Tags__StyledTagsContainer-sc-17pk8ma-0",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={true}
+      >
+        <Box
+          between={3}
+          className="c1"
+          inline={true}
+          tag="div"
+        >
+          <styled.div
+            between={3}
+            className="c1"
+            inline={true}
+            tag="div"
+          >
+            <StyledComponent
+              between={3}
+              className="c1"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={true}
+              tag="div"
+            >
+              <div
+                className="c2 c1 Tags__StyledTagsContainer-sc-17pk8ma-0 c1"
+              >
+                <TagItem
+                  aria-describedby="tags3"
+                  aria-label="Filter products by Android"
+                  isLoading={false}
+                  isSelected={false}
+                  key="Android"
+                  onClick={[Function]}
+                >
+                  <TagItem__StyledTagButton
+                    aria-checked={false}
+                    aria-describedby="tags3"
+                    aria-label="Filter products by Android"
+                    between={2}
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <StyledComponent
+                      aria-checked={false}
+                      aria-describedby="tags3"
+                      aria-label="Filter products by Android"
+                      between={2}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+                            "isStatic": false,
+                            "lastClassName": "c7",
+                            "rules": Array [
+                              "margin-top: 1rem;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "TagItem__StyledTagButton",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={true}
+                      isLoading={false}
+                      isSelected={false}
+                      onClick={[Function]}
+                      role="switch"
+                      tag="button"
+                    >
+                      <Box
+                        aria-checked={false}
+                        aria-describedby="tags3"
+                        aria-label="Filter products by Android"
+                        between={2}
+                        className="c3"
+                        inline={true}
+                        isLoading={false}
+                        isSelected={false}
+                        onClick={[Function]}
+                        role="switch"
+                        tag="button"
+                      >
+                        <styled.div
+                          aria-checked={false}
+                          aria-describedby="tags3"
+                          aria-label="Filter products by Android"
+                          between={2}
+                          className="c3"
+                          inline={true}
+                          isLoading={false}
+                          isSelected={false}
+                          onClick={[Function]}
+                          role="switch"
+                          tag="button"
+                        >
+                          <StyledComponent
+                            aria-checked={false}
+                            aria-describedby="tags3"
+                            aria-label="Filter products by Android"
+                            between={2}
+                            className="c3"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            inline={true}
+                            isLoading={false}
+                            isSelected={false}
+                            onClick={[Function]}
+                            role="switch"
+                            tag="button"
+                          >
+                            <button
+                              aria-checked={false}
+                              aria-describedby="tags3"
+                              aria-label="Filter products by Android"
+                              className="c4 c3 TagItem__StyledTagButton-u8wmmz-0 c3"
+                              onClick={[Function]}
+                              role="switch"
+                            >
+                              <TagItem__StyledText>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "margin-left: 0.5rem;",
+                                        ],
+                                      },
+                                      "displayName": "TagItem__StyledText",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="c5"
+                                  >
+                                    Android
+                                  </span>
+                                </StyledComponent>
+                              </TagItem__StyledText>
+                              <Dependent
+                                invert={false}
+                              >
+                                <Dependent
+                                  invert={false}
+                                >
+                                  <styled.svg
+                                    data-testid="dependentSvg"
+                                    height="24"
+                                    invert={false}
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <StyledComponent
+                                      data-testid="dependentSvg"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [
+                                            Object {
+                                              "aria-hidden": true,
+                                              "focusable": false,
+                                            },
+                                          ],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": false,
+                                            "lastClassName": "c8",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.svg",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "svg",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      height="24"
+                                      invert={false}
+                                      viewBox="0 0 24 24"
+                                      width="24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="c6"
+                                        data-testid="dependentSvg"
+                                        focusable={false}
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <path
+                                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                                          fillRule="evenodd"
+                                        />
+                                      </svg>
+                                    </StyledComponent>
+                                  </styled.svg>
+                                </Dependent>
+                              </Dependent>
+                            </button>
+                          </StyledComponent>
+                        </styled.div>
+                      </Box>
+                    </StyledComponent>
+                  </TagItem__StyledTagButton>
+                </TagItem>
+                <TagItem
+                  aria-describedby="tags3"
+                  aria-label="Filter products by iOS"
+                  isLoading={false}
+                  isSelected={true}
+                  key="iOS"
+                  onClick={[Function]}
+                >
+                  <TagItem__StyledTagButton
+                    aria-checked={true}
+                    aria-describedby="tags3"
+                    aria-label="Filter products by iOS"
+                    between={2}
+                    inline={true}
+                    isLoading={false}
+                    isSelected={true}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <StyledComponent
+                      aria-checked={true}
+                      aria-describedby="tags3"
+                      aria-label="Filter products by iOS"
+                      between={2}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+                            "isStatic": false,
+                            "lastClassName": "c7",
+                            "rules": Array [
+                              "margin-top: 1rem;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "TagItem__StyledTagButton",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={true}
+                      isLoading={false}
+                      isSelected={true}
+                      onClick={[Function]}
+                      role="switch"
+                      tag="button"
+                    >
+                      <Box
+                        aria-checked={true}
+                        aria-describedby="tags3"
+                        aria-label="Filter products by iOS"
+                        between={2}
+                        className="c7"
+                        inline={true}
+                        isLoading={false}
+                        isSelected={true}
+                        onClick={[Function]}
+                        role="switch"
+                        tag="button"
+                      >
+                        <styled.div
+                          aria-checked={true}
+                          aria-describedby="tags3"
+                          aria-label="Filter products by iOS"
+                          between={2}
+                          className="c7"
+                          inline={true}
+                          isLoading={false}
+                          isSelected={true}
+                          onClick={[Function]}
+                          role="switch"
+                          tag="button"
+                        >
+                          <StyledComponent
+                            aria-checked={true}
+                            aria-describedby="tags3"
+                            aria-label="Filter products by iOS"
+                            between={2}
+                            className="c7"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            inline={true}
+                            isLoading={false}
+                            isSelected={true}
+                            onClick={[Function]}
+                            role="switch"
+                            tag="button"
+                          >
+                            <button
+                              aria-checked={true}
+                              aria-describedby="tags3"
+                              aria-label="Filter products by iOS"
+                              className="c4 c7 TagItem__StyledTagButton-u8wmmz-0 c7"
+                              onClick={[Function]}
+                              role="switch"
+                            >
+                              <TagItem__StyledText>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "margin-left: 0.5rem;",
+                                        ],
+                                      },
+                                      "displayName": "TagItem__StyledText",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="c5"
+                                  >
+                                    iOS
+                                  </span>
+                                </StyledComponent>
+                              </TagItem__StyledText>
+                              <Dependent
+                                invert={true}
+                              >
+                                <Dependent
+                                  invert={true}
+                                >
+                                  <styled.svg
+                                    data-testid="dependentSvg"
+                                    height="24"
+                                    invert={true}
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <StyledComponent
+                                      data-testid="dependentSvg"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [
+                                            Object {
+                                              "aria-hidden": true,
+                                              "focusable": false,
+                                            },
+                                          ],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": false,
+                                            "lastClassName": "c8",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.svg",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "svg",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      height="24"
+                                      invert={true}
+                                      viewBox="0 0 24 24"
+                                      width="24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="c8"
+                                        data-testid="dependentSvg"
+                                        focusable={false}
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <path
+                                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                                          fillRule="evenodd"
+                                        />
+                                      </svg>
+                                    </StyledComponent>
+                                  </styled.svg>
+                                </Dependent>
+                              </Dependent>
+                            </button>
+                          </StyledComponent>
+                        </styled.div>
+                      </Box>
+                    </StyledComponent>
+                  </TagItem__StyledTagButton>
+                </TagItem>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </StyledComponent>
+    </Tags__StyledTagsContainer>
+  </div>
+</Tags>
+`;
+
+exports[`Tags renders when using the children prop 1`] = `
+.c0 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c6 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  margin-top: 1rem;
+  overflow: visible;
+  color: #4b286d;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #4b286d;
+  border-radius: 20px;
+  height: 2.5rem;
+}
+
+.c3:hover {
+  background: #fff;
+}
+
+.c3:hover:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #33204C;
+  border-radius: 22px;
+}
+
+.c3:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.c3:focus:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  bottom: -11px;
+  right: -11px;
+  border: 3px solid #7557A0;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.c3:active {
+  background-color: #F1EFF4;
+}
+
+.c3:after {
+  content: '';
+}
+
+.c5 {
+  margin-left: 0.5rem;
+}
+
+.c1 {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+}
+
+<Tags
+  copy="en"
+  onClick={[Function]}
+>
+  <div>
+    <A11yContent
+      aria-live="assertive"
+      id="tags2"
+    >
+      <A11yContent__StyledA11yContent
+        aria-live="assertive"
+        id="tags2"
+      >
+        <StyledComponent
+          aria-live="assertive"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "position: absolute;",
+                  "height: 1px;",
+                  "width: 1px;",
+                  "overflow: hidden;",
+                  "clip: rect(1px, 1px, 1px, 1px);",
+                ],
+              },
+              "displayName": "A11yContent__StyledA11yContent",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="tags2"
+        >
+          <span
+            aria-live="assertive"
+            className="c0"
+            id="tags2"
+          >
+            No product filters currently applied
+          </span>
+        </StyledComponent>
+      </A11yContent__StyledA11yContent>
+    </A11yContent>
+    <Tags__StyledTagsContainer
+      between={3}
+      inline={true}
+    >
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Tags__StyledTagsContainer-sc-17pk8ma-0",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                "flex-wrap: wrap;",
+                "margin-top: -1rem;",
+              ],
+            },
+            "displayName": "Tags__StyledTagsContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Tags__StyledTagsContainer-sc-17pk8ma-0",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={true}
+      >
+        <Box
+          between={3}
+          className="c1"
+          inline={true}
+          tag="div"
+        >
+          <styled.div
+            between={3}
+            className="c1"
+            inline={true}
+            tag="div"
+          >
+            <StyledComponent
+              between={3}
+              className="c1"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={true}
+              tag="div"
+            >
+              <div
+                className="c2 c1 Tags__StyledTagsContainer-sc-17pk8ma-0 c1"
+              >
+                <TagItem
+                  aria-describedby="tags2"
+                  aria-label="Filter products by Android"
+                  isLoading={false}
+                  isSelected={false}
+                  key=".$android"
+                  onClick={[Function]}
+                >
+                  <TagItem__StyledTagButton
+                    aria-checked={false}
+                    aria-describedby="tags2"
+                    aria-label="Filter products by Android"
+                    between={2}
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <StyledComponent
+                      aria-checked={false}
+                      aria-describedby="tags2"
+                      aria-label="Filter products by Android"
+                      between={2}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "margin-top: 1rem;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "TagItem__StyledTagButton",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={true}
+                      isLoading={false}
+                      isSelected={false}
+                      onClick={[Function]}
+                      role="switch"
+                      tag="button"
+                    >
+                      <Box
+                        aria-checked={false}
+                        aria-describedby="tags2"
+                        aria-label="Filter products by Android"
+                        between={2}
+                        className="c3"
+                        inline={true}
+                        isLoading={false}
+                        isSelected={false}
+                        onClick={[Function]}
+                        role="switch"
+                        tag="button"
+                      >
+                        <styled.div
+                          aria-checked={false}
+                          aria-describedby="tags2"
+                          aria-label="Filter products by Android"
+                          between={2}
+                          className="c3"
+                          inline={true}
+                          isLoading={false}
+                          isSelected={false}
+                          onClick={[Function]}
+                          role="switch"
+                          tag="button"
+                        >
+                          <StyledComponent
+                            aria-checked={false}
+                            aria-describedby="tags2"
+                            aria-label="Filter products by Android"
+                            between={2}
+                            className="c3"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            inline={true}
+                            isLoading={false}
+                            isSelected={false}
+                            onClick={[Function]}
+                            role="switch"
+                            tag="button"
+                          >
+                            <button
+                              aria-checked={false}
+                              aria-describedby="tags2"
+                              aria-label="Filter products by Android"
+                              className="c4 c3 TagItem__StyledTagButton-u8wmmz-0 c3"
+                              onClick={[Function]}
+                              role="switch"
+                            >
+                              <TagItem__StyledText>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "margin-left: 0.5rem;",
+                                        ],
+                                      },
+                                      "displayName": "TagItem__StyledText",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="c5"
+                                  >
+                                    Android
+                                  </span>
+                                </StyledComponent>
+                              </TagItem__StyledText>
+                              <Dependent
+                                invert={false}
+                              >
+                                <Dependent
+                                  invert={false}
+                                >
+                                  <styled.svg
+                                    data-testid="dependentSvg"
+                                    height="24"
+                                    invert={false}
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <StyledComponent
+                                      data-testid="dependentSvg"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [
+                                            Object {
+                                              "aria-hidden": true,
+                                              "focusable": false,
+                                            },
+                                          ],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.svg",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "svg",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      height="24"
+                                      invert={false}
+                                      viewBox="0 0 24 24"
+                                      width="24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="c6"
+                                        data-testid="dependentSvg"
+                                        focusable={false}
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <path
+                                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                                          fillRule="evenodd"
+                                        />
+                                      </svg>
+                                    </StyledComponent>
+                                  </styled.svg>
+                                </Dependent>
+                              </Dependent>
+                            </button>
+                          </StyledComponent>
+                        </styled.div>
+                      </Box>
+                    </StyledComponent>
+                  </TagItem__StyledTagButton>
+                </TagItem>
+                <TagItem
+                  aria-describedby="tags2"
+                  aria-label="Filter products by iOS"
+                  isLoading={false}
+                  isSelected={false}
+                  key=".$ios"
+                  onClick={[Function]}
+                >
+                  <TagItem__StyledTagButton
+                    aria-checked={false}
+                    aria-describedby="tags2"
+                    aria-label="Filter products by iOS"
+                    between={2}
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <StyledComponent
+                      aria-checked={false}
+                      aria-describedby="tags2"
+                      aria-label="Filter products by iOS"
+                      between={2}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "margin-top: 1rem;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "TagItem__StyledTagButton",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={true}
+                      isLoading={false}
+                      isSelected={false}
+                      onClick={[Function]}
+                      role="switch"
+                      tag="button"
+                    >
+                      <Box
+                        aria-checked={false}
+                        aria-describedby="tags2"
+                        aria-label="Filter products by iOS"
+                        between={2}
+                        className="c3"
+                        inline={true}
+                        isLoading={false}
+                        isSelected={false}
+                        onClick={[Function]}
+                        role="switch"
+                        tag="button"
+                      >
+                        <styled.div
+                          aria-checked={false}
+                          aria-describedby="tags2"
+                          aria-label="Filter products by iOS"
+                          between={2}
+                          className="c3"
+                          inline={true}
+                          isLoading={false}
+                          isSelected={false}
+                          onClick={[Function]}
+                          role="switch"
+                          tag="button"
+                        >
+                          <StyledComponent
+                            aria-checked={false}
+                            aria-describedby="tags2"
+                            aria-label="Filter products by iOS"
+                            between={2}
+                            className="c3"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            inline={true}
+                            isLoading={false}
+                            isSelected={false}
+                            onClick={[Function]}
+                            role="switch"
+                            tag="button"
+                          >
+                            <button
+                              aria-checked={false}
+                              aria-describedby="tags2"
+                              aria-label="Filter products by iOS"
+                              className="c4 c3 TagItem__StyledTagButton-u8wmmz-0 c3"
+                              onClick={[Function]}
+                              role="switch"
+                            >
+                              <TagItem__StyledText>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "margin-left: 0.5rem;",
+                                        ],
+                                      },
+                                      "displayName": "TagItem__StyledText",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="c5"
+                                  >
+                                    iOS
+                                  </span>
+                                </StyledComponent>
+                              </TagItem__StyledText>
+                              <Dependent
+                                invert={false}
+                              >
+                                <Dependent
+                                  invert={false}
+                                >
+                                  <styled.svg
+                                    data-testid="dependentSvg"
+                                    height="24"
+                                    invert={false}
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <StyledComponent
+                                      data-testid="dependentSvg"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [
+                                            Object {
+                                              "aria-hidden": true,
+                                              "focusable": false,
+                                            },
+                                          ],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.svg",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "svg",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      height="24"
+                                      invert={false}
+                                      viewBox="0 0 24 24"
+                                      width="24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="c6"
+                                        data-testid="dependentSvg"
+                                        focusable={false}
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <path
+                                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                                          fillRule="evenodd"
+                                        />
+                                      </svg>
+                                    </StyledComponent>
+                                  </styled.svg>
+                                </Dependent>
+                              </Dependent>
+                            </button>
+                          </StyledComponent>
+                        </styled.div>
+                      </Box>
+                    </StyledComponent>
+                  </TagItem__StyledTagButton>
+                </TagItem>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </StyledComponent>
+    </Tags__StyledTagsContainer>
+  </div>
+</Tags>
+`;

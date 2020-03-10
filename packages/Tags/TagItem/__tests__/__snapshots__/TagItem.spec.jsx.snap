@@ -1,0 +1,625 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagItem renders 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c3 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  margin-top: 1rem;
+  overflow: visible;
+  color: #4b286d;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #4b286d;
+  border-radius: 20px;
+  height: 2.5rem;
+}
+
+.c0:hover {
+  background: #fff;
+}
+
+.c0:hover:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #33204C;
+  border-radius: 22px;
+}
+
+.c0:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.c0:focus:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  bottom: -11px;
+  right: -11px;
+  border: 3px solid #7557A0;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.c0:active {
+  background-color: #F1EFF4;
+}
+
+.c0:after {
+  content: '';
+}
+
+.c2 {
+  margin-left: 0.5rem;
+}
+
+<TagItem
+  isLoading={false}
+  isSelected={false}
+  onClick={[Function]}
+>
+  <TagItem__StyledTagButton
+    aria-checked={false}
+    between={2}
+    inline={true}
+    isLoading={false}
+    isSelected={false}
+    onClick={[Function]}
+    role="switch"
+    tag="button"
+  >
+    <StyledComponent
+      aria-checked={false}
+      between={2}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "margin-top: 1rem;",
+              [Function],
+            ],
+          },
+          "displayName": "TagItem__StyledTagButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
+      isLoading={false}
+      isSelected={false}
+      onClick={[Function]}
+      role="switch"
+      tag="button"
+    >
+      <Box
+        aria-checked={false}
+        between={2}
+        className="c0"
+        inline={true}
+        isLoading={false}
+        isSelected={false}
+        onClick={[Function]}
+        role="switch"
+        tag="button"
+      >
+        <styled.div
+          aria-checked={false}
+          between={2}
+          className="c0"
+          inline={true}
+          isLoading={false}
+          isSelected={false}
+          onClick={[Function]}
+          role="switch"
+          tag="button"
+        >
+          <StyledComponent
+            aria-checked={false}
+            between={2}
+            className="c0"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inline={true}
+            isLoading={false}
+            isSelected={false}
+            onClick={[Function]}
+            role="switch"
+            tag="button"
+          >
+            <button
+              aria-checked={false}
+              className="c1 c0 TagItem__StyledTagButton-u8wmmz-0 c0"
+              onClick={[Function]}
+              role="switch"
+            >
+              <TagItem__StyledText>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "margin-left: 0.5rem;",
+                        ],
+                      },
+                      "displayName": "TagItem__StyledText",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <span
+                    className="c2"
+                  >
+                    Android
+                  </span>
+                </StyledComponent>
+              </TagItem__StyledText>
+              <Dependent
+                invert={false}
+              >
+                <Dependent
+                  invert={false}
+                >
+                  <styled.svg
+                    data-testid="dependentSvg"
+                    height="24"
+                    invert={false}
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <StyledComponent
+                      data-testid="dependentSvg"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "aria-hidden": true,
+                              "focusable": false,
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bZQynM",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.svg",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bZQynM",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="24"
+                      invert={false}
+                      viewBox="0 0 24 24"
+                      width="24"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        data-testid="dependentSvg"
+                        focusable={false}
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </styled.svg>
+                </Dependent>
+              </Dependent>
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </Box>
+    </StyledComponent>
+  </TagItem__StyledTagButton>
+</TagItem>
+`;
+
+exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c3 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  margin-top: 1rem;
+  overflow: visible;
+  color: #4b286d;
+  background: #F1EFF4;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #4b286d;
+  border-radius: 20px;
+  height: 2.5rem;
+}
+
+.c0:hover {
+  background: #fff;
+}
+
+.c0:hover:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #33204C;
+  border-radius: 22px;
+}
+
+.c0:focus {
+  outline: none;
+  background-color: #F1EFF4;
+}
+
+.c0:focus:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  bottom: -11px;
+  right: -11px;
+  border: 3px solid #7557A0;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.c0:active {
+  background-color: #F1EFF4;
+}
+
+.c0:after {
+  content: '';
+}
+
+.c2 {
+  margin-left: 0.5rem;
+}
+
+<TagItem
+  isLoading={true}
+  isSelected={false}
+  onClick={[Function]}
+>
+  <TagItem__StyledTagButton
+    aria-checked={false}
+    between={2}
+    inline={true}
+    isLoading={true}
+    isSelected={false}
+    onClick={[Function]}
+    role="switch"
+    tag="button"
+  >
+    <StyledComponent
+      aria-checked={false}
+      between={2}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "TagItem__StyledTagButton-u8wmmz-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "margin-top: 1rem;",
+              [Function],
+            ],
+          },
+          "displayName": "TagItem__StyledTagButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "TagItem__StyledTagButton-u8wmmz-0",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
+      isLoading={true}
+      isSelected={false}
+      onClick={[Function]}
+      role="switch"
+      tag="button"
+    >
+      <Box
+        aria-checked={false}
+        between={2}
+        className="c0"
+        inline={true}
+        isLoading={true}
+        isSelected={false}
+        onClick={[Function]}
+        role="switch"
+        tag="button"
+      >
+        <styled.div
+          aria-checked={false}
+          between={2}
+          className="c0"
+          inline={true}
+          isLoading={true}
+          isSelected={false}
+          onClick={[Function]}
+          role="switch"
+          tag="button"
+        >
+          <StyledComponent
+            aria-checked={false}
+            between={2}
+            className="c0"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inline={true}
+            isLoading={true}
+            isSelected={false}
+            onClick={[Function]}
+            role="switch"
+            tag="button"
+          >
+            <button
+              aria-checked={false}
+              className="c1 c0 TagItem__StyledTagButton-u8wmmz-0 c0"
+              onClick={[Function]}
+              role="switch"
+            >
+              <TagItem__StyledText>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "TagItem__StyledText-u8wmmz-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "margin-left: 0.5rem;",
+                        ],
+                      },
+                      "displayName": "TagItem__StyledText",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "TagItem__StyledText-u8wmmz-1",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <span
+                    className="c2"
+                  >
+                    Android
+                  </span>
+                </StyledComponent>
+              </TagItem__StyledText>
+              <Dependent
+                invert={false}
+              >
+                <Dependent
+                  invert={false}
+                >
+                  <styled.svg
+                    data-testid="dependentSvg"
+                    height="24"
+                    invert={false}
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <StyledComponent
+                      data-testid="dependentSvg"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "aria-hidden": true,
+                              "focusable": false,
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bZQynM",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.svg",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bZQynM",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="24"
+                      invert={false}
+                      viewBox="0 0 24 24"
+                      width="24"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        data-testid="dependentSvg"
+                        focusable={false}
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          d="M6.042 1h11.917c.225 0 .412.163.45.377l.008.082v6.875h1.375a3.211 3.211 0 013.203 3.026l.005.182v5.5c0 .713-.546 1.302-1.243 1.369l-.132.006h-3.208v4.125a.458.458 0 01-.376.45L17.96 23H6.042a.458.458 0 01-.45-.376l-.008-.082v-4.125H2.375a1.377 1.377 0 01-1.369-1.243L1 17.042v-5.5a3.212 3.212 0 013.027-3.203l.182-.005h1.375V1.459a.46.46 0 01.376-.452L6.042 1zM17.5 14.751h-11v7.333h11v-7.333zm-9.625 4.583h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007zM19.792 9.25H4.209a2.295 2.295 0 00-2.287 2.135l-.005.157v5.5c0 .225.162.412.376.45l.082.008h3.209v-3.208c0-.225.162-.412.376-.45l.082-.008h11.917c.225 0 .412.162.45.376l.008.082V17.5h3.208a.46.46 0 00.452-.376l.007-.082v-5.5a2.296 2.296 0 00-2.292-2.292zM7.875 16.584h8.25a.46.46 0 01.082.91l-.082.007h-8.25a.459.459 0 01-.082-.91l.082-.007h8.25-8.25zM17.5 1.917h-11v6.417h11V1.917z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </styled.svg>
+                </Dependent>
+              </Dependent>
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </Box>
+    </StyledComponent>
+  </TagItem__StyledTagButton>
+</TagItem>
+`;

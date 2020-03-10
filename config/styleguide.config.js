@@ -55,6 +55,7 @@ module.exports = {
     const namespacedComponents = {
       Progress: 'Progress',
       SideNavigation: 'SideNavigation',
+      Tags: 'Tags',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -89,6 +90,7 @@ module.exports = {
       ignore: [
         path.resolve('packages/Progress/**/*.jsx'),
         path.resolve('packages/SideNavigation/**/*.jsx'),
+        path.resolve('packages/Tags/**/*.jsx'),
       ],
       sections: [
         {
@@ -107,6 +109,15 @@ module.exports = {
               path.resolve('packages/SideNavigation/SideNavigation.jsx'),
               path.resolve('packages/SideNavigation/Link/Link.jsx'),
               path.resolve('packages/SideNavigation/SubMenu/SubMenu.jsx'),
+            ]
+          },
+        },
+        {
+          name: 'Tags',
+          components() {
+            return [
+              path.resolve('packages/Tags/Tags.jsx'),
+              path.resolve('packages/Tags/TagItem/TagItem.jsx'),
             ]
           },
         },

@@ -23,7 +23,7 @@
   "peerDependencies": {
     "@tds/core-heading": "^2.2.5",
     "@tds/core-image": "^2.0.12",
-    "@tds/core-text": "^2.0.3",
+    "@tds/core-text": "^3.0.4",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "styled-components": "^4.1.3"

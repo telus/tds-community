@@ -28,7 +28,7 @@
   "dependencies": {
     "@tds/core-box": "^2.1.2",
     "@tds/core-colours": "^2.2.1",
-    "@tds/core-spinner": "^3.0.2",
+    "@tds/core-spinner": "^3.1.11",
     "@tds/core-text": "^3.0.4",
     "@tds/core-tooltip": "^4.0.8",
     "@tds/util-helpers": "^1.2.0",

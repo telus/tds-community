@@ -6,7 +6,7 @@ import A11yContent from '@tds/core-a11y-content'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Strong from '@tds/core-strong'
-import { uniqueId } from '@tds/util-helpers'
+import { uniqueId, safeRest } from '@tds/util-helpers'
 import { InputGroupStyle, LabelStyle } from './style'
 
 /**
@@ -14,17 +14,15 @@ import { InputGroupStyle, LabelStyle } from './style'
  */
 const InputGroup = ({
   id,
-  className,
   closeA11yText,
-  placeholder,
   defaultValue,
   buttonText,
   label,
   hint,
   onChange,
-  onKeyDown,
   onButtonClick,
   onClearButtonClick,
+  ...rest
 }) => {
   const inputRef = createRef()
   const [inputValue, setInputValue] = useState('')
@@ -37,7 +35,7 @@ const InputGroup = ({
   }, [defaultValue])
 
   return (
-    <Box className={className} between={1}>
+    <Box between={1}>
       {label && (
         <LabelStyle htmlFor={inputId}>
           <Text>
@@ -48,15 +46,13 @@ const InputGroup = ({
       )}
       <InputGroupStyle hasValue={!!inputValue}>
         <input
+          {...safeRest(rest)}
           id={inputId}
-          type="text"
           value={inputValue}
-          placeholder={placeholder}
           onChange={e => {
             setInputValue(e.target.value)
             if (onChange) onChange(e)
           }}
-          onKeyDown={onKeyDown}
           ref={inputRef}
         />
         {!!inputValue && (
@@ -84,17 +80,9 @@ InputGroup.propTypes = {
    */
   id: PropTypes.string,
   /**
-   * The class name
-   */
-  className: PropTypes.string,
-  /**
    * The close a11y test
    */
   closeA11yText: PropTypes.string,
-  /**
-   * The textbox placeholder
-   */
-  placeholder: PropTypes.string,
   /**
    * The textbox default value
    */
@@ -116,10 +104,6 @@ InputGroup.propTypes = {
    */
   onChange: PropTypes.func,
   /**
-   * The event triggered every time when pressing any keyboard key
-   */
-  onKeyDown: PropTypes.func,
-  /**
    * The event triggered every time a user click the button
    */
   onButtonClick: PropTypes.func,
@@ -131,15 +115,12 @@ InputGroup.propTypes = {
 
 InputGroup.defaultProps = {
   id: '',
-  className: '',
   closeA11yText: 'Close',
-  placeholder: '',
   defaultValue: '',
   buttonText: '',
   label: '',
   hint: '',
   onChange: undefined,
-  onKeyDown: undefined,
   onButtonClick: undefined,
   onClearButtonClick: undefined,
 }

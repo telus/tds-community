@@ -115,9 +115,21 @@ const TagItem = forwardRef(({ children, isSelected, isLoading, onClick, ...rest 
 })
 
 TagItem.propTypes = {
+  /**
+   * The button text
+   */
   children: PropTypes.node.isRequired,
+  /**
+   * The selected state
+   */
   isSelected: PropTypes.bool,
+  /**
+   * The loading state
+   */
   isLoading: PropTypes.bool,
+  /**
+   * @param {node} name The `children` prop of the `Tags.Item`
+   */
   onClick: PropTypes.func,
 }
 

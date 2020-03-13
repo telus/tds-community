@@ -26,10 +26,6 @@ const Tags = ({ children, tags, copy, onClick, ...rest }) => {
     return undefined
   }
 
-  const handleClick = name => {
-    onClick(name)
-  }
-
   const descriptionBoxId = uniqueId('tags')
 
   const requiredProps = tag => ({
@@ -41,13 +37,18 @@ const Tags = ({ children, tags, copy, onClick, ...rest }) => {
     items = React.Children.map(children, child => (
       <child.type
         {...child.props}
-        onClick={child.props.onClick || handleClick}
+        onClick={child.props.onClick || onClick}
         {...requiredProps(child.props)}
       />
     ))
   } else {
     items = tags.map(tag => (
-      <TagItem key={tag.children} onClick={handleClick} {...tag} {...requiredProps(tag)} />
+      <TagItem
+        key={tag.children}
+        {...tag}
+        onClick={tag.onClick || onClick}
+        {...requiredProps(tag)}
+      />
     ))
   }
 
@@ -71,7 +72,16 @@ const Tags = ({ children, tags, copy, onClick, ...rest }) => {
 }
 
 Tags.propTypes = {
+  /**
+   * The `Tags.Item`, can be used as an alternative to the `tags` prop.
+   */
   children: PropTypes.node,
+  /**
+   * Use the copy prop to either select provided English or French copy
+   * by passing `'en'` or `'fr'` respectively.
+   *
+   * To provide your own copy, pass an object with the keys `a11yLabel`, `a11yDescriptionSet`, `a11yDescriptionUnset`
+   */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),
     PropTypes.shape({
@@ -80,6 +90,9 @@ Tags.propTypes = {
       a11yDescriptionUnset: PropTypes.string.isRequired,
     }),
   ]).isRequired,
+  /**
+   * The tags, can be used as an alternative to the `children` prop.
+   */
   tags: PropTypes.arrayOf(
     PropTypes.shape({
       children: PropTypes.string.isRequired,
@@ -88,6 +101,9 @@ Tags.propTypes = {
       ref: PropTypes.node,
     })
   ),
+  /**
+   * @param {node} name The `children` prop of the `Tags.Item`
+   */
   onClick: PropTypes.func.isRequired,
 }
 

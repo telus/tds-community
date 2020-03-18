@@ -1,17 +1,27 @@
+`Tags` are displayed to help customers filter data.
+
 ### Usage criteria
 
-- Tags are displayed to help customers filter data
-- Tags are self-described and are meant to filter only one criterion or category of data per Tag
+- `Tags` are self-described and are meant to filter only one criterion or category of data per Tag
 - Application must control toggled state
-- Must use level 3 Box spacing between Tags (inline and vertical)
-- May use multiple tags
+- Must use level 3 Box spacing between `Tags` (inline and vertical)
+- May use multiple `Tags`
+
+**Minimal example**
+
+```jsx
+<Tags copy="en">
+  <Tags.Item>Jolla</Tags.Item>
+  <Tags.Item isSelected>Blackberry</Tags.Item>
+</Tags>
+```
 
 ### Accessibility features
 
-- Tags use HTML buttons to indicate they're interactive and perform an immediate action, they use the 'switch' role
-- Tags make use of aria-label to display their label to assistive technology. See [Content Guidelines](#tds-tags-content-guidelines) below for more information
-- Tags make use of `aria-checked` to represent its toggled state to assisstive technology
-- Tags forwards React refs, allowing you to set focus to it
+- `Tags` use HTML buttons to indicate they're interactive and perform an immediate action, they use the 'switch' role
+- Each Tag button makes use of `aria-label` to display their label to assistive technology. See [Content Guidelines](#tds-tags-content-guidelines) below for more information
+- `aria-checked` to represent its toggled state to assisstive technology
+- `Tags` forwards React refs, allowing you to set focus to it
 
 ### Accessibility guide
 
@@ -19,7 +29,7 @@ The following must be fulfilled in order to ensure an accessible experience is d
 
 - Provide an accessible label to Tag in order for assisstive technology to read a label with each individual option
 - Provide a visual label above your group of Tags, either as a heading or using medium bold text
-- For asynchronous content, follow the example below
+- For asynchronous content, follow the [Using Tags with asynchronous content](#using-tags-with-async-content) example below
 
 ### <a id="tds-tags-content-guidelines">Content guidelines</a>
 
@@ -84,7 +94,9 @@ To override these values for a different language or intent, you may pass in an 
 </Tags>
 ```
 
-### Usage
+### React consumption options
+
+The `Tags` component provides two React interfaces to build a list of Tags: as a set of child components, or as a JS collection passed to the `tags` prop.
 
 #### Using the `children` prop
 
@@ -167,13 +179,14 @@ const handleClick = name => {
 ;<Tags copy="fr" tags={state.tags} onClick={handleClick} />
 ```
 
+<div id="using-tags-with-async-content"></div>
 ### Using Tags with asynchronous content
 
 When `Tags` are used to perform asynchronous tasks, customers should experience the following flow:
 
 1. Customer focuses on a Tag, the Tag’s label and description is read by assisstive technology
 2. Customer clicks Tag
-   1. A Spinner appears, covering the content to be loaded. The Spinner’s loading copy gets announced
+   1. A Spinner appears, covering the content to be loaded. The Spinner’s loading copy is announced to assistive technology
    2. The initiating Tag appears in a loading state
 3. After content has loaded
    1. The Spinner disappears

@@ -6,7 +6,7 @@ import Box from '@tds/core-box'
 
 import { safeRest } from '@tds/util-helpers'
 import { colorWhite, colorTelusPurple } from '@tds/core-colours'
-import { Print } from '@tds/core-interactive-icon'
+import { Add, Close } from '@tds/core-interactive-icon'
 
 const tagColors = {
   selected: {
@@ -95,6 +95,8 @@ const TagItem = forwardRef(({ children, isSelected, isLoading, onClick, ...rest 
     onClick(children)
   }
 
+  const Icon = isSelected ? Close : Add
+
   return (
     <StyledTagButton
       {...safeRest(rest)}
@@ -109,7 +111,7 @@ const TagItem = forwardRef(({ children, isSelected, isLoading, onClick, ...rest 
       onClick={handleClick}
     >
       <StyledText>{children}</StyledText>
-      <Print invert={isSelected} />
+      <Icon color={isSelected ? 'white' : 'telusPurple'} />
     </StyledTagButton>
   )
 })

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { safeRest, getCopy, uniqueId } from '@tds/util-helpers'
 import A11yContent from '@tds/core-a11y-content'
 import Box from '@tds/core-box'
+import { componentWithName } from '@tds/util-prop-types'
 
 import TagItem from './TagItem/TagItem'
 
@@ -75,12 +76,13 @@ Tags.propTypes = {
   /**
    * The `Tags.Item`, can be used as an alternative to the `tags` prop.
    */
-  children: PropTypes.node,
+  children: componentWithName('TagItem', true),
   /**
-   * Use the copy prop to either select provided English or French copy
-   * by passing `'en'` or `'fr'` respectively.
+   * Use the copy prop to either select provided English or French copy by passing `'en'` or `'fr'` respectively.
    *
-   * To provide your own copy, pass an object with the keys `a11yLabel`, `a11yDescriptionSet`, `a11yDescriptionUnset`
+   * To provide your own copy, pass an object with the keys `a11yLabel`, `a11yDescriptionSet`, `a11yDescriptionUnset`.
+   *
+   * See documentation for more details.
    */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),
@@ -102,7 +104,7 @@ Tags.propTypes = {
     })
   ),
   /**
-   * @param {node} name The `children` prop of the `Tags.Item`
+   * @param {node} name The `children` prop of the `Tags.Item`.
    */
   onClick: PropTypes.func.isRequired,
 }

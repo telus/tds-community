@@ -124,7 +124,7 @@ const handleClick = name => {
 
 ;<Tags copy="en" onClick={handleClick}>
   {state.tags.map(tag => (
-    <Tags.Item {...tag} />
+    <Tags.Item key={tag.children} {...tag} />
   ))}
 </Tags>
 ```

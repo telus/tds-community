@@ -38,7 +38,7 @@ exports[`TagItem renders 1`] = `
   align-items: center;
   position: relative;
   border: 1px solid #4b286d;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   height: 2.5rem;
 }
 
@@ -54,7 +54,11 @@ exports[`TagItem renders 1`] = `
   bottom: -2px;
   right: -2px;
   border: 1px solid #33204C;
-  border-radius: 22px;
+  border-radius: 1.375rem;
+}
+
+.c0::-moz-focus-inner {
+  border: 0;
 }
 
 .c0:focus {
@@ -71,7 +75,7 @@ exports[`TagItem renders 1`] = `
   right: -11px;
   border: 3px solid #7557A0;
   margin: 5px;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
 }
 
 .c0:active {
@@ -352,7 +356,7 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
   align-items: center;
   position: relative;
   border: 1px solid #4b286d;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   height: 2.5rem;
 }
 
@@ -368,7 +372,11 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
   bottom: -2px;
   right: -2px;
   border: 1px solid #33204C;
-  border-radius: 22px;
+  border-radius: 1.375rem;
+}
+
+.c0::-moz-focus-inner {
+  border: 0;
 }
 
 .c0:focus {
@@ -385,7 +393,7 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
   right: -11px;
   border: 3px solid #7557A0;
   margin: 5px;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
 }
 
 .c0:active {

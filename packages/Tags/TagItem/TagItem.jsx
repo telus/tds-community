@@ -44,7 +44,7 @@ const StyledTagButton = styled(Box)(
       alignItems: 'center',
       position: 'relative',
       border: `1px solid ${colorTelusPurple}`,
-      borderRadius: '20px',
+      borderRadius: '1.25rem',
       height: '2.5rem',
       '&:hover': {
         background: colors.hover,
@@ -58,7 +58,10 @@ const StyledTagButton = styled(Box)(
         bottom: '-2px',
         right: '-2px',
         border: `1px solid ${colors.border}`,
-        borderRadius: '22px',
+        borderRadius: '1.375rem',
+      },
+      '::-moz-focus-inner': {
+        border: 0,
       },
       '&:focus': {
         outline: 'none',
@@ -72,7 +75,7 @@ const StyledTagButton = styled(Box)(
           right: isSelected ? '-10px' : '-11px',
           border: `${isSelected ? '2px' : '3px'} solid ${colors.outline}`,
           margin: '5px',
-          borderRadius: '25px',
+          borderRadius: '1.5625rem',
         },
       },
       '&:active': {

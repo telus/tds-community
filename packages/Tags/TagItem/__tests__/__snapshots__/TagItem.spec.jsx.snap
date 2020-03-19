@@ -15,12 +15,97 @@ exports[`TagItem renders 1`] = `
   margin-right: 0.5rem;
 }
 
-.c3 {
-  position: relative;
+.c5 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  background-color: #d8d8d8;
+  position: absolute;
   top: 0;
-  width: 24px;
-  height: 24px;
-  fill: #4b286d;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  -webkit-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+}
+
+.c3:focus .c6,
+.c3:active .c6 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c7 {
+  fill: #2a2c2e;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c4 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c4:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.c4:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c4:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c0 {
@@ -88,6 +173,27 @@ exports[`TagItem renders 1`] = `
 
 .c2 {
   margin-left: 0.5rem;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c6 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c7 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <TagItem
@@ -240,75 +346,231 @@ exports[`TagItem renders 1`] = `
                   </span>
                 </StyledComponent>
               </TagItem__StyledText>
-              <Dependent
+              <Add
                 color="telusPurple"
               >
-                <Dependent
+                <Button
                   color="telusPurple"
+                  tag="button"
+                  variant="default"
                 >
-                  <styled.svg
-                    color="telusPurple"
-                    data-testid="dependentSvg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <StyledComponent
-                      color="telusPurple"
-                      data-testid="dependentSvg"
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            Object {
-                              "aria-hidden": true,
-                              "focusable": false,
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
-                            "isStatic": false,
-                            "lastClassName": "c3",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.svg",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
-                          "target": "svg",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
+                  <ThemeProvider
+                    theme={
+                      Object {
+                        "hoverBackgroundColor": "#d8d8d8",
+                        "iconColor": "#2a2c2e",
                       }
-                      forwardedRef={null}
-                      height="24"
-                      viewBox="0 0 24 24"
-                      width="24"
+                    }
+                  >
+                    <Styled(StyledInteractiveIconButton)
+                      as="button"
+                      color="telusPurple"
+                      variant="default"
                     >
-                      <svg
-                        aria-hidden={true}
-                        className="c3"
+                      <StyledComponent
+                        as="button"
                         color="telusPurple"
-                        data-testid="dependentSvg"
-                        focusable={false}
-                        height="24"
-                        viewBox="0 0 24 24"
-                        width="24"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htpNat",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "padding: 0;",
+                                "margin: 0;",
+                                "border-width: 0;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "color: #2a2c2e;",
+                                "appearance: none;",
+                                "background: none;",
+                                "box-shadow: none;",
+                                "cursor: pointer;",
+                                [Function],
+                                "width: 2.5rem;",
+                                "height: 2.5rem;",
+                                "display: inline-flex;",
+                                "justify-content: center;",
+                                "align-items: center;",
+                                "position: relative;",
+                                "-webkit-tap-highlight-color: transparent;",
+                                "transition: transform 150ms ease-in-out;",
+                                "&:hover svg {",
+                                "transform: scale(1.1, 1.1);",
+                                "}",
+                                "&:active svg {",
+                                "transform: scale(1, 1);",
+                                "}",
+                                "@media (prefers-reduced-motion: reduce) {",
+                                "transition: none;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "Styled(StyledInteractiveIconButton)",
+                            "foldedComponentIds": Array [
+                              "c3",
+                            ],
+                            "render": [Function],
+                            "styledComponentId": "sc-htpNat",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        variant="default"
                       >
-                        <path
-                          d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
-                          fillRule="nonzero"
-                        />
-                      </svg>
-                    </StyledComponent>
-                  </styled.svg>
-                </Dependent>
-              </Dependent>
+                        <button
+                          className="c3 c4"
+                          color="telusPurple"
+                        >
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": false,
+                                      "lastClassName": "c5",
+                                      "rules": Array [
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
+                                      ],
+                                    },
+                                    "displayName": "A11yContent__StyledA11yContent",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c5"
+                                />
+                              </StyledComponent>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                          <StyledInteractiveIconHover>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c6",
+                                    "rules": Array [
+                                      [Function],
+                                      "@media (prefers-reduced-motion: reduce) {",
+                                      "transition: none;",
+                                      "}",
+                                      "position: absolute;",
+                                      "top: 0;",
+                                      "left: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
+                                      "z-index: 1;",
+                                      "border-radius: 50%;",
+                                      "transition: transform 200ms ease-in-out;",
+                                      "transform: scale(0,0);",
+                                      ".c3:focus &, .c3:active & {",
+                                      "transform: scale(1,1);",
+                                      "}",
+                                    ],
+                                  },
+                                  "displayName": "StyledInteractiveIconHover",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c6"
+                              />
+                            </StyledComponent>
+                          </StyledInteractiveIconHover>
+                          <Styled(StyledInteractiveIconSVG)
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "c7",
+                                    "rules": Array [
+                                      [Function],
+                                      "width: 1.5rem;",
+                                      "height: 1.5rem;",
+                                      "z-index: 2;",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "@media (prefers-reduced-motion: reduce) {",
+                                      "transition: none;",
+                                      "}",
+                                    ],
+                                  },
+                                  "displayName": "Styled(StyledInteractiveIconSVG)",
+                                  "foldedComponentIds": Array [
+                                    "StyledInteractiveIconSVG-ix2erv-0",
+                                  ],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "svg",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <svg
+                                className="c7"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <path
+                                  d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                  fillRule="nonzero"
+                                />
+                              </svg>
+                            </StyledComponent>
+                          </Styled(StyledInteractiveIconSVG)>
+                        </button>
+                      </StyledComponent>
+                    </Styled(StyledInteractiveIconButton)>
+                  </ThemeProvider>
+                </Button>
+              </Add>
             </button>
           </StyledComponent>
         </styled.div>
@@ -333,12 +595,97 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
   margin-right: 0.5rem;
 }
 
-.c3 {
-  position: relative;
+.c5 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  background-color: #d8d8d8;
+  position: absolute;
   top: 0;
-  width: 24px;
-  height: 24px;
-  fill: #4b286d;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  -webkit-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+}
+
+.c3:focus .c6,
+.c3:active .c6 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c7 {
+  fill: #2a2c2e;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c4 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c4:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.c4:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c4:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c0 {
@@ -406,6 +753,27 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
 
 .c2 {
   margin-left: 0.5rem;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c6 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c7 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <TagItem
@@ -558,75 +926,231 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
                   </span>
                 </StyledComponent>
               </TagItem__StyledText>
-              <Dependent
+              <Add
                 color="telusPurple"
               >
-                <Dependent
+                <Button
                   color="telusPurple"
+                  tag="button"
+                  variant="default"
                 >
-                  <styled.svg
-                    color="telusPurple"
-                    data-testid="dependentSvg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <StyledComponent
-                      color="telusPurple"
-                      data-testid="dependentSvg"
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            Object {
-                              "aria-hidden": true,
-                              "focusable": false,
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
-                            "isStatic": false,
-                            "lastClassName": "c3",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.svg",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
-                          "target": "svg",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
+                  <ThemeProvider
+                    theme={
+                      Object {
+                        "hoverBackgroundColor": "#d8d8d8",
+                        "iconColor": "#2a2c2e",
                       }
-                      forwardedRef={null}
-                      height="24"
-                      viewBox="0 0 24 24"
-                      width="24"
+                    }
+                  >
+                    <Styled(StyledInteractiveIconButton)
+                      as="button"
+                      color="telusPurple"
+                      variant="default"
                     >
-                      <svg
-                        aria-hidden={true}
-                        className="c3"
+                      <StyledComponent
+                        as="button"
                         color="telusPurple"
-                        data-testid="dependentSvg"
-                        focusable={false}
-                        height="24"
-                        viewBox="0 0 24 24"
-                        width="24"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htpNat",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "padding: 0;",
+                                "margin: 0;",
+                                "border-width: 0;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "color: #2a2c2e;",
+                                "appearance: none;",
+                                "background: none;",
+                                "box-shadow: none;",
+                                "cursor: pointer;",
+                                [Function],
+                                "width: 2.5rem;",
+                                "height: 2.5rem;",
+                                "display: inline-flex;",
+                                "justify-content: center;",
+                                "align-items: center;",
+                                "position: relative;",
+                                "-webkit-tap-highlight-color: transparent;",
+                                "transition: transform 150ms ease-in-out;",
+                                "&:hover svg {",
+                                "transform: scale(1.1, 1.1);",
+                                "}",
+                                "&:active svg {",
+                                "transform: scale(1, 1);",
+                                "}",
+                                "@media (prefers-reduced-motion: reduce) {",
+                                "transition: none;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "Styled(StyledInteractiveIconButton)",
+                            "foldedComponentIds": Array [
+                              "c3",
+                            ],
+                            "render": [Function],
+                            "styledComponentId": "sc-htpNat",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        variant="default"
                       >
-                        <path
-                          d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
-                          fillRule="nonzero"
-                        />
-                      </svg>
-                    </StyledComponent>
-                  </styled.svg>
-                </Dependent>
-              </Dependent>
+                        <button
+                          className="c3 c4"
+                          color="telusPurple"
+                        >
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": false,
+                                      "lastClassName": "c5",
+                                      "rules": Array [
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
+                                      ],
+                                    },
+                                    "displayName": "A11yContent__StyledA11yContent",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c5"
+                                />
+                              </StyledComponent>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                          <StyledInteractiveIconHover>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c6",
+                                    "rules": Array [
+                                      [Function],
+                                      "@media (prefers-reduced-motion: reduce) {",
+                                      "transition: none;",
+                                      "}",
+                                      "position: absolute;",
+                                      "top: 0;",
+                                      "left: 0;",
+                                      "width: 100%;",
+                                      "height: 100%;",
+                                      "z-index: 1;",
+                                      "border-radius: 50%;",
+                                      "transition: transform 200ms ease-in-out;",
+                                      "transform: scale(0,0);",
+                                      ".c3:focus &, .c3:active & {",
+                                      "transform: scale(1,1);",
+                                      "}",
+                                    ],
+                                  },
+                                  "displayName": "StyledInteractiveIconHover",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c6"
+                              />
+                            </StyledComponent>
+                          </StyledInteractiveIconHover>
+                          <Styled(StyledInteractiveIconSVG)
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "c7",
+                                    "rules": Array [
+                                      [Function],
+                                      "width: 1.5rem;",
+                                      "height: 1.5rem;",
+                                      "z-index: 2;",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "@media (prefers-reduced-motion: reduce) {",
+                                      "transition: none;",
+                                      "}",
+                                    ],
+                                  },
+                                  "displayName": "Styled(StyledInteractiveIconSVG)",
+                                  "foldedComponentIds": Array [
+                                    "StyledInteractiveIconSVG-ix2erv-0",
+                                  ],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "svg",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <svg
+                                className="c7"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <path
+                                  d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                  fillRule="nonzero"
+                                />
+                              </svg>
+                            </StyledComponent>
+                          </Styled(StyledInteractiveIconSVG)>
+                        </button>
+                      </StyledComponent>
+                    </Styled(StyledInteractiveIconButton)>
+                  </ThemeProvider>
+                </Button>
+              </Add>
             </button>
           </StyledComponent>
         </styled.div>

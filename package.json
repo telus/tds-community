@@ -74,6 +74,7 @@
     "@tds/core-heading": "^3.0.4",
     "@tds/core-image": "^2.0.20",
     "@tds/core-input": "^3.0.34",
+    "@tds/core-interactive-icon": "^1.4.7",
     "@tds/core-link": "^2.2.3",
     "@tds/core-ordered-list": "^3.0.17",
     "@tds/core-paragraph": "^2.0.12",

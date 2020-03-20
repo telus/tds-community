@@ -58,7 +58,7 @@ exports[`SideNavigation renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c20 {
+.c21 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -71,7 +71,7 @@ exports[`SideNavigation renders 1`] = `
   font-weight: 500;
 }
 
-.c20 sup {
+.c21 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -88,12 +88,12 @@ exports[`SideNavigation renders 1`] = `
   background-color: #f2eff4;
 }
 
-.c18 {
+.c19 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c18:hover {
+.c19:hover {
   background-color: #f2eff4;
 }
 
@@ -106,7 +106,7 @@ exports[`SideNavigation renders 1`] = `
   margin-left: 0px;
 }
 
-.c19 {
+.c20 {
   border-left: none;
   margin-left: -0.25rem;
 }
@@ -124,7 +124,29 @@ exports[`SideNavigation renders 1`] = `
   text-decoration: none;
 }
 
-.c17 {
+.c16 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #4b286d;
+  font-size: 1rem;
+}
+
+.c16::before {
+  content: '\\f105';
+}
+
+.c18 {
   margin-bottom: 1rem;
 }
 
@@ -198,7 +220,7 @@ exports[`SideNavigation renders 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c16 {
+  .c17 {
     -webkit-transition: none !important;
     transition: none !important;
   }
@@ -323,7 +345,7 @@ exports[`SideNavigation renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c19 {
+.c20 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -336,7 +358,7 @@ exports[`SideNavigation renders 1`] = `
   font-weight: 500;
 }
 
-.c19 sup {
+.c20 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -353,12 +375,12 @@ exports[`SideNavigation renders 1`] = `
   background-color: #f2eff4;
 }
 
-.c17 {
+.c18 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c17:hover {
+.c18:hover {
   background-color: #f2eff4;
 }
 
@@ -371,7 +393,7 @@ exports[`SideNavigation renders 1`] = `
   margin-left: 0px;
 }
 
-.c18 {
+.c19 {
   border-left: none;
   margin-left: -0.25rem;
 }
@@ -389,7 +411,29 @@ exports[`SideNavigation renders 1`] = `
   text-decoration: none;
 }
 
-.c16 {
+.c15 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #4b286d;
+  font-size: 1rem;
+}
+
+.c15::before {
+  content: '\\f105';
+}
+
+.c17 {
   margin-bottom: 1rem;
 }
 
@@ -458,7 +502,7 @@ exports[`SideNavigation renders 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c15 {
+  .c16 {
     -webkit-transition: none !important;
     transition: none !important;
   }
@@ -584,17 +628,17 @@ exports[`SideNavigation renders 1`] = `
                             </div>
                             <i
                               aria-hidden="true"
-                              class="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
+                              class="c15"
                             />
                           </div>
                         </button>
                         <div
                           aria-hidden="true"
-                          class="c15"
+                          class="c16"
                           style="transition: height 500ms, opacity 500ms ease-in-out; opacity: 0; height: 0px; overflow: hidden; visibility: hidden;"
                         >
                           <ul
-                            class="c16"
+                            class="c17"
                           >
                             <li>
                               <a
@@ -605,16 +649,16 @@ exports[`SideNavigation renders 1`] = `
                                   class="c5 c6 c6"
                                 >
                                   <div
-                                    class="c1 c17 c17"
+                                    class="c1 c18 c18"
                                   >
                                     <div
-                                      class="c8 c18 c18"
+                                      class="c8 c19 c19"
                                     >
                                       <div
                                         class="c10"
                                       >
                                         <span
-                                          class="c19"
+                                          class="c20"
                                         >
                                           Option 1
                                         </span>
@@ -633,16 +677,16 @@ exports[`SideNavigation renders 1`] = `
                                   class="c5 c6 c6"
                                 >
                                   <div
-                                    class="c1 c17 c17"
+                                    class="c1 c18 c18"
                                   >
                                     <div
-                                      class="c8 c18 c18"
+                                      class="c8 c19 c19"
                                     >
                                       <div
                                         class="c10"
                                       >
                                         <span
-                                          class="c19"
+                                          class="c20"
                                         >
                                           Option 2
                                         </span>
@@ -661,16 +705,16 @@ exports[`SideNavigation renders 1`] = `
                                   class="c5 c6 c6"
                                 >
                                   <div
-                                    class="c1 c17 c17"
+                                    class="c1 c18 c18"
                                   >
                                     <div
-                                      class="c8 c18 c18"
+                                      class="c8 c19 c19"
                                     >
                                       <div
                                         class="c10"
                                       >
                                         <span
-                                          class="c19"
+                                          class="c20"
                                         >
                                           Option 3
                                         </span>
@@ -943,7 +987,7 @@ exports[`SideNavigation renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxContainer-gur8v7-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c18",
+                                                                "lastClassName": "c19",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -1032,7 +1076,7 @@ exports[`SideNavigation renders 1`] = `
                                                                           "componentStyle": ComponentStyle {
                                                                             "componentId": "Link__BoxActive-gur8v7-2",
                                                                             "isStatic": false,
-                                                                            "lastClassName": "c19",
+                                                                            "lastClassName": "c20",
                                                                             "rules": Array [
                                                                               [Function],
                                                                             ],
@@ -1166,7 +1210,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                 "componentStyle": ComponentStyle {
                                                                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                   "isStatic": false,
-                                                                                                  "lastClassName": "c20",
+                                                                                                  "lastClassName": "c21",
                                                                                                   "rules": Array [
                                                                                                     [Function],
                                                                                                     [Function],
@@ -1404,7 +1448,7 @@ exports[`SideNavigation renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxContainer-gur8v7-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c18",
+                                                                "lastClassName": "c19",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -1493,7 +1537,7 @@ exports[`SideNavigation renders 1`] = `
                                                                           "componentStyle": ComponentStyle {
                                                                             "componentId": "Link__BoxActive-gur8v7-2",
                                                                             "isStatic": false,
-                                                                            "lastClassName": "c19",
+                                                                            "lastClassName": "c20",
                                                                             "rules": Array [
                                                                               [Function],
                                                                             ],
@@ -1627,7 +1671,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                 "componentStyle": ComponentStyle {
                                                                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                   "isStatic": false,
-                                                                                                  "lastClassName": "c20",
+                                                                                                  "lastClassName": "c21",
                                                                                                   "rules": Array [
                                                                                                     [Function],
                                                                                                     [Function],
@@ -1865,7 +1909,7 @@ exports[`SideNavigation renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxContainer-gur8v7-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c18",
+                                                                "lastClassName": "c19",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -1954,7 +1998,7 @@ exports[`SideNavigation renders 1`] = `
                                                                           "componentStyle": ComponentStyle {
                                                                             "componentId": "Link__BoxActive-gur8v7-2",
                                                                             "isStatic": false,
-                                                                            "lastClassName": "c19",
+                                                                            "lastClassName": "c20",
                                                                             "rules": Array [
                                                                               [Function],
                                                                             ],
@@ -2088,7 +2132,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                 "componentStyle": ComponentStyle {
                                                                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                   "isStatic": false,
-                                                                                                  "lastClassName": "c20",
+                                                                                                  "lastClassName": "c21",
                                                                                                   "rules": Array [
                                                                                                     [Function],
                                                                                                     [Function],
@@ -2358,7 +2402,7 @@ exports[`SideNavigation renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c20",
+                                                                      "lastClassName": "c21",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -2411,10 +2455,49 @@ exports[`SideNavigation renders 1`] = `
                                                           symbol="caretDown"
                                                           variant="secondary"
                                                         >
-                                                          <i
+                                                          <Icon__StyledIcon
                                                             aria-hidden="true"
-                                                            className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
-                                                          />
+                                                            iSize={16}
+                                                            symbol="caretDown"
+                                                            variant="secondary"
+                                                          >
+                                                            <StyledComponent
+                                                              aria-hidden="true"
+                                                              forwardedComponent={
+                                                                Object {
+                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                  "attrs": Array [],
+                                                                  "componentStyle": ComponentStyle {
+                                                                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                    "isStatic": false,
+                                                                    "lastClassName": "c16",
+                                                                    "rules": Array [
+                                                                      [Function],
+                                                                      [Function],
+                                                                      [Function],
+                                                                    ],
+                                                                  },
+                                                                  "displayName": "Icon__StyledIcon",
+                                                                  "foldedComponentIds": Array [],
+                                                                  "render": [Function],
+                                                                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                  "target": "i",
+                                                                  "toString": [Function],
+                                                                  "warnTooManyClasses": [Function],
+                                                                  "withComponent": [Function],
+                                                                }
+                                                              }
+                                                              forwardedRef={null}
+                                                              iSize={16}
+                                                              symbol="caretDown"
+                                                              variant="secondary"
+                                                            >
+                                                              <i
+                                                                aria-hidden="true"
+                                                                className="c16"
+                                                              />
+                                                            </StyledComponent>
+                                                          </Icon__StyledIcon>
                                                         </Icon>
                                                       </DecorativeIcon>
                                                     </div>
@@ -2472,7 +2555,7 @@ exports[`SideNavigation renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c16",
+                                                  "lastClassName": "c17",
                                                   "rules": Array [
                                                     "@media (prefers-reduced-motion: reduce) {",
                                                     "transition: none !important;",
@@ -2502,7 +2585,7 @@ exports[`SideNavigation renders 1`] = `
                                           >
                                             <div
                                               aria-hidden={true}
-                                              className="c16"
+                                              className="c17"
                                               style={
                                                 Object {
                                                   "height": 0,
@@ -2522,7 +2605,7 @@ exports[`SideNavigation renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "SubMenu__SubMenuContainer-sc-1p1ex8g-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c17",
+                                                        "lastClassName": "c18",
                                                         "rules": Array [
                                                           "margin-bottom: 1rem;",
                                                         ],
@@ -2540,7 +2623,7 @@ exports[`SideNavigation renders 1`] = `
                                                   forwardedRef={[Function]}
                                                 >
                                                   <ul
-                                                    className="c17"
+                                                    className="c18"
                                                   >
                                                     <li
                                                       key=".0"
@@ -2681,7 +2764,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Link__BoxContainer-gur8v7-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c18",
+                                                                                    "lastClassName": "c19",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                     ],
@@ -2702,7 +2785,7 @@ exports[`SideNavigation renders 1`] = `
                                                                             >
                                                                               <Box
                                                                                 active={0}
-                                                                                className="c18"
+                                                                                className="c19"
                                                                                 inline={false}
                                                                                 submenulink={1}
                                                                                 tag="div"
@@ -2710,7 +2793,7 @@ exports[`SideNavigation renders 1`] = `
                                                                               >
                                                                                 <styled.div
                                                                                   active={0}
-                                                                                  className="c18"
+                                                                                  className="c19"
                                                                                   inline={false}
                                                                                   submenulink={1}
                                                                                   tag="div"
@@ -2718,7 +2801,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                 >
                                                                                   <StyledComponent
                                                                                     active={0}
-                                                                                    className="c18"
+                                                                                    className="c19"
                                                                                     forwardedComponent={
                                                                                       Object {
                                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -2754,7 +2837,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                     vertical={3}
                                                                                   >
                                                                                     <div
-                                                                                      className="c2 c18 Link__BoxContainer-gur8v7-0 c18"
+                                                                                      className="c2 c19 Link__BoxContainer-gur8v7-0 c19"
                                                                                     >
                                                                                       <Link__BoxActive
                                                                                         active={0}
@@ -2770,7 +2853,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                               "componentStyle": ComponentStyle {
                                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                                 "isStatic": false,
-                                                                                                "lastClassName": "c19",
+                                                                                                "lastClassName": "c20",
                                                                                                 "rules": Array [
                                                                                                   [Function],
                                                                                                 ],
@@ -2791,7 +2874,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                         >
                                                                                           <Box
                                                                                             active={0}
-                                                                                            className="c19"
+                                                                                            className="c20"
                                                                                             horizontal={3}
                                                                                             inline={false}
                                                                                             submenulink={1}
@@ -2799,7 +2882,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                           >
                                                                                             <styled.div
                                                                                               active={0}
-                                                                                              className="c19"
+                                                                                              className="c20"
                                                                                               horizontal={3}
                                                                                               inline={false}
                                                                                               submenulink={1}
@@ -2807,7 +2890,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                             >
                                                                                               <StyledComponent
                                                                                                 active={0}
-                                                                                                className="c19"
+                                                                                                className="c20"
                                                                                                 forwardedComponent={
                                                                                                   Object {
                                                                                                     "$$typeof": Symbol(react.forward_ref),
@@ -2843,7 +2926,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                 tag="div"
                                                                                               >
                                                                                                 <div
-                                                                                                  className="c10 c19 Link__BoxActive-gur8v7-2 c19"
+                                                                                                  className="c10 c20 Link__BoxActive-gur8v7-2 c20"
                                                                                                 >
                                                                                                   <Link__StyledTextProvider
                                                                                                     active={false}
@@ -2904,7 +2987,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                                     "componentStyle": ComponentStyle {
                                                                                                                       "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                                       "isStatic": false,
-                                                                                                                      "lastClassName": "c20",
+                                                                                                                      "lastClassName": "c21",
                                                                                                                       "rules": Array [
                                                                                                                         [Function],
                                                                                                                         [Function],
@@ -2936,7 +3019,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                                 size="small"
                                                                                                               >
                                                                                                                 <span
-                                                                                                                  className="c20"
+                                                                                                                  className="c21"
                                                                                                                   size="small"
                                                                                                                 >
                                                                                                                   Option 1
@@ -3110,7 +3193,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Link__BoxContainer-gur8v7-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c18",
+                                                                                    "lastClassName": "c19",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                     ],
@@ -3131,7 +3214,7 @@ exports[`SideNavigation renders 1`] = `
                                                                             >
                                                                               <Box
                                                                                 active={0}
-                                                                                className="c18"
+                                                                                className="c19"
                                                                                 inline={false}
                                                                                 submenulink={1}
                                                                                 tag="div"
@@ -3139,7 +3222,7 @@ exports[`SideNavigation renders 1`] = `
                                                                               >
                                                                                 <styled.div
                                                                                   active={0}
-                                                                                  className="c18"
+                                                                                  className="c19"
                                                                                   inline={false}
                                                                                   submenulink={1}
                                                                                   tag="div"
@@ -3147,7 +3230,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                 >
                                                                                   <StyledComponent
                                                                                     active={0}
-                                                                                    className="c18"
+                                                                                    className="c19"
                                                                                     forwardedComponent={
                                                                                       Object {
                                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -3183,7 +3266,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                     vertical={3}
                                                                                   >
                                                                                     <div
-                                                                                      className="c2 c18 Link__BoxContainer-gur8v7-0 c18"
+                                                                                      className="c2 c19 Link__BoxContainer-gur8v7-0 c19"
                                                                                     >
                                                                                       <Link__BoxActive
                                                                                         active={0}
@@ -3199,7 +3282,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                               "componentStyle": ComponentStyle {
                                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                                 "isStatic": false,
-                                                                                                "lastClassName": "c19",
+                                                                                                "lastClassName": "c20",
                                                                                                 "rules": Array [
                                                                                                   [Function],
                                                                                                 ],
@@ -3220,7 +3303,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                         >
                                                                                           <Box
                                                                                             active={0}
-                                                                                            className="c19"
+                                                                                            className="c20"
                                                                                             horizontal={3}
                                                                                             inline={false}
                                                                                             submenulink={1}
@@ -3228,7 +3311,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                           >
                                                                                             <styled.div
                                                                                               active={0}
-                                                                                              className="c19"
+                                                                                              className="c20"
                                                                                               horizontal={3}
                                                                                               inline={false}
                                                                                               submenulink={1}
@@ -3236,7 +3319,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                             >
                                                                                               <StyledComponent
                                                                                                 active={0}
-                                                                                                className="c19"
+                                                                                                className="c20"
                                                                                                 forwardedComponent={
                                                                                                   Object {
                                                                                                     "$$typeof": Symbol(react.forward_ref),
@@ -3272,7 +3355,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                 tag="div"
                                                                                               >
                                                                                                 <div
-                                                                                                  className="c10 c19 Link__BoxActive-gur8v7-2 c19"
+                                                                                                  className="c10 c20 Link__BoxActive-gur8v7-2 c20"
                                                                                                 >
                                                                                                   <Link__StyledTextProvider
                                                                                                     active={false}
@@ -3333,7 +3416,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                                     "componentStyle": ComponentStyle {
                                                                                                                       "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                                       "isStatic": false,
-                                                                                                                      "lastClassName": "c20",
+                                                                                                                      "lastClassName": "c21",
                                                                                                                       "rules": Array [
                                                                                                                         [Function],
                                                                                                                         [Function],
@@ -3365,7 +3448,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                                 size="small"
                                                                                                               >
                                                                                                                 <span
-                                                                                                                  className="c20"
+                                                                                                                  className="c21"
                                                                                                                   size="small"
                                                                                                                 >
                                                                                                                   Option 2
@@ -3539,7 +3622,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Link__BoxContainer-gur8v7-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c18",
+                                                                                    "lastClassName": "c19",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                     ],
@@ -3560,7 +3643,7 @@ exports[`SideNavigation renders 1`] = `
                                                                             >
                                                                               <Box
                                                                                 active={0}
-                                                                                className="c18"
+                                                                                className="c19"
                                                                                 inline={false}
                                                                                 submenulink={1}
                                                                                 tag="div"
@@ -3568,7 +3651,7 @@ exports[`SideNavigation renders 1`] = `
                                                                               >
                                                                                 <styled.div
                                                                                   active={0}
-                                                                                  className="c18"
+                                                                                  className="c19"
                                                                                   inline={false}
                                                                                   submenulink={1}
                                                                                   tag="div"
@@ -3576,7 +3659,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                 >
                                                                                   <StyledComponent
                                                                                     active={0}
-                                                                                    className="c18"
+                                                                                    className="c19"
                                                                                     forwardedComponent={
                                                                                       Object {
                                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -3612,7 +3695,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                     vertical={3}
                                                                                   >
                                                                                     <div
-                                                                                      className="c2 c18 Link__BoxContainer-gur8v7-0 c18"
+                                                                                      className="c2 c19 Link__BoxContainer-gur8v7-0 c19"
                                                                                     >
                                                                                       <Link__BoxActive
                                                                                         active={0}
@@ -3628,7 +3711,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                               "componentStyle": ComponentStyle {
                                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                                 "isStatic": false,
-                                                                                                "lastClassName": "c19",
+                                                                                                "lastClassName": "c20",
                                                                                                 "rules": Array [
                                                                                                   [Function],
                                                                                                 ],
@@ -3649,7 +3732,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                         >
                                                                                           <Box
                                                                                             active={0}
-                                                                                            className="c19"
+                                                                                            className="c20"
                                                                                             horizontal={3}
                                                                                             inline={false}
                                                                                             submenulink={1}
@@ -3657,7 +3740,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                           >
                                                                                             <styled.div
                                                                                               active={0}
-                                                                                              className="c19"
+                                                                                              className="c20"
                                                                                               horizontal={3}
                                                                                               inline={false}
                                                                                               submenulink={1}
@@ -3665,7 +3748,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                             >
                                                                                               <StyledComponent
                                                                                                 active={0}
-                                                                                                className="c19"
+                                                                                                className="c20"
                                                                                                 forwardedComponent={
                                                                                                   Object {
                                                                                                     "$$typeof": Symbol(react.forward_ref),
@@ -3701,7 +3784,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                 tag="div"
                                                                                               >
                                                                                                 <div
-                                                                                                  className="c10 c19 Link__BoxActive-gur8v7-2 c19"
+                                                                                                  className="c10 c20 Link__BoxActive-gur8v7-2 c20"
                                                                                                 >
                                                                                                   <Link__StyledTextProvider
                                                                                                     active={false}
@@ -3762,7 +3845,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                                     "componentStyle": ComponentStyle {
                                                                                                                       "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                                       "isStatic": false,
-                                                                                                                      "lastClassName": "c20",
+                                                                                                                      "lastClassName": "c21",
                                                                                                                       "rules": Array [
                                                                                                                         [Function],
                                                                                                                         [Function],
@@ -3794,7 +3877,7 @@ exports[`SideNavigation renders 1`] = `
                                                                                                                 size="small"
                                                                                                               >
                                                                                                                 <span
-                                                                                                                  className="c20"
+                                                                                                                  className="c21"
                                                                                                                   size="small"
                                                                                                                 >
                                                                                                                   Option 3
@@ -3915,7 +3998,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   padding-left: 0.1em;
 }
 
-.c23 {
+.c24 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -3929,7 +4012,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   font-weight: 700;
 }
 
-.c23 sup {
+.c24 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -3968,12 +4051,12 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
-.c20 {
+.c21 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c20:hover {
+.c21:hover {
   background-color: #f2eff4;
 }
 
@@ -3981,7 +4064,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: none;
 }
 
-.c19 {
+.c20 {
   background-color: #f2eff4;
 }
 
@@ -3990,7 +4073,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   margin-left: 0px;
 }
 
-.c21 {
+.c22 {
   border-left: 4px solid #4b286d;
   margin-left: -0.25rem;
 }
@@ -4003,7 +4086,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   color: #4b286d;
 }
 
-.c22 {
+.c23 {
   font-weight: bold;
   color: #4b286d;
 }
@@ -4013,7 +4096,29 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   text-decoration: none;
 }
 
-.c18 {
+.c17 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #4b286d;
+  font-size: 1rem;
+}
+
+.c17::before {
+  content: '\\f106';
+}
+
+.c19 {
   margin-bottom: 1rem;
 }
 
@@ -4087,7 +4192,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c17 {
+  .c18 {
     -webkit-transition: none !important;
     transition: none !important;
   }
@@ -4211,7 +4316,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   padding-left: 0.1em;
 }
 
-.c22 {
+.c23 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -4225,7 +4330,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   font-weight: 700;
 }
 
-.c22 sup {
+.c23 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -4264,12 +4369,12 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: #f2eff4;
 }
 
-.c19 {
+.c20 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c19:hover {
+.c20:hover {
   background-color: #f2eff4;
 }
 
@@ -4277,7 +4382,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   background-color: none;
 }
 
-.c18 {
+.c19 {
   background-color: #f2eff4;
 }
 
@@ -4286,7 +4391,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   margin-left: 0px;
 }
 
-.c20 {
+.c21 {
   border-left: 4px solid #4b286d;
   margin-left: -0.25rem;
 }
@@ -4299,7 +4404,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   color: #4b286d;
 }
 
-.c21 {
+.c22 {
   font-weight: bold;
   color: #4b286d;
 }
@@ -4309,7 +4414,29 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   text-decoration: none;
 }
 
-.c17 {
+.c16 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #4b286d;
+  font-size: 1rem;
+}
+
+.c16::before {
+  content: '\\f106';
+}
+
+.c18 {
   margin-bottom: 1rem;
 }
 
@@ -4378,7 +4505,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c16 {
+  .c17 {
     -webkit-transition: none !important;
     transition: none !important;
   }
@@ -4444,17 +4571,17 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                             </div>
                             <i
                               aria-hidden="true"
-                              class="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
+                              class="c16"
                             />
                           </div>
                         </button>
                         <div
                           aria-hidden="false"
-                          class="c16"
+                          class="c17"
                           style="transition: height 500ms, opacity 500ms ease-in-out; opacity: 1; height: 0px; overflow: hidden; visibility: visible;"
                         >
                           <ul
-                            class="c17"
+                            class="c18"
                           >
                             <li>
                               <a
@@ -4462,19 +4589,19 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                 href="#"
                               >
                                 <div
-                                  class="c1 c18 c18"
+                                  class="c1 c19 c19"
                                 >
                                   <div
-                                    class="c6 c19 c19"
+                                    class="c6 c20 c20"
                                   >
                                     <div
-                                      class="c8 c20 c20"
+                                      class="c8 c21 c21"
                                     >
                                       <div
-                                        class="c21"
+                                        class="c22"
                                       >
                                         <span
-                                          class="c22"
+                                          class="c23"
                                         >
                                           Option 1
                                         </span>
@@ -4663,7 +4790,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "Link__BoxWrapper-gur8v7-1",
                                                     "isStatic": false,
-                                                    "lastClassName": "c19",
+                                                    "lastClassName": "c20",
                                                     "rules": Array [
                                                       [Function],
                                                     ],
@@ -4744,7 +4871,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "Link__BoxContainer-gur8v7-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c20",
+                                                                "lastClassName": "c21",
                                                                 "rules": Array [
                                                                   [Function],
                                                                 ],
@@ -4833,7 +4960,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                           "componentStyle": ComponentStyle {
                                                                             "componentId": "Link__BoxActive-gur8v7-2",
                                                                             "isStatic": false,
-                                                                            "lastClassName": "c21",
+                                                                            "lastClassName": "c22",
                                                                             "rules": Array [
                                                                               [Function],
                                                                             ],
@@ -4920,7 +5047,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                       "componentStyle": ComponentStyle {
                                                                                         "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                                         "isStatic": false,
-                                                                                        "lastClassName": "c22",
+                                                                                        "lastClassName": "c23",
                                                                                         "rules": Array [
                                                                                           [Function],
                                                                                         ],
@@ -4967,7 +5094,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                                 "componentStyle": ComponentStyle {
                                                                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                   "isStatic": false,
-                                                                                                  "lastClassName": "c23",
+                                                                                                  "lastClassName": "c24",
                                                                                                   "rules": Array [
                                                                                                     [Function],
                                                                                                     [Function],
@@ -5239,7 +5366,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c23",
+                                                                      "lastClassName": "c24",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -5292,10 +5419,49 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                           symbol="caretUp"
                                                           variant="secondary"
                                                         >
-                                                          <i
+                                                          <Icon__StyledIcon
                                                             aria-hidden="true"
-                                                            className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
-                                                          />
+                                                            iSize={16}
+                                                            symbol="caretUp"
+                                                            variant="secondary"
+                                                          >
+                                                            <StyledComponent
+                                                              aria-hidden="true"
+                                                              forwardedComponent={
+                                                                Object {
+                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                  "attrs": Array [],
+                                                                  "componentStyle": ComponentStyle {
+                                                                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                    "isStatic": false,
+                                                                    "lastClassName": "c17",
+                                                                    "rules": Array [
+                                                                      [Function],
+                                                                      [Function],
+                                                                      [Function],
+                                                                    ],
+                                                                  },
+                                                                  "displayName": "Icon__StyledIcon",
+                                                                  "foldedComponentIds": Array [],
+                                                                  "render": [Function],
+                                                                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                  "target": "i",
+                                                                  "toString": [Function],
+                                                                  "warnTooManyClasses": [Function],
+                                                                  "withComponent": [Function],
+                                                                }
+                                                              }
+                                                              forwardedRef={null}
+                                                              iSize={16}
+                                                              symbol="caretUp"
+                                                              variant="secondary"
+                                                            >
+                                                              <i
+                                                                aria-hidden="true"
+                                                                className="c17"
+                                                              />
+                                                            </StyledComponent>
+                                                          </Icon__StyledIcon>
                                                         </Icon>
                                                       </DecorativeIcon>
                                                     </div>
@@ -5353,7 +5519,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c17",
+                                                  "lastClassName": "c18",
                                                   "rules": Array [
                                                     "@media (prefers-reduced-motion: reduce) {",
                                                     "transition: none !important;",
@@ -5383,7 +5549,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                           >
                                             <div
                                               aria-hidden={false}
-                                              className="c17"
+                                              className="c18"
                                               style={
                                                 Object {
                                                   "height": 0,
@@ -5403,7 +5569,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "SubMenu__SubMenuContainer-sc-1p1ex8g-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c18",
+                                                        "lastClassName": "c19",
                                                         "rules": Array [
                                                           "margin-bottom: 1rem;",
                                                         ],
@@ -5421,7 +5587,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                   forwardedRef={[Function]}
                                                 >
                                                   <ul
-                                                    className="c18"
+                                                    className="c19"
                                                   >
                                                     <li
                                                       key=".0"
@@ -5481,7 +5647,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Link__BoxWrapper-gur8v7-1",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c19",
+                                                                        "lastClassName": "c20",
                                                                         "rules": Array [
                                                                           [Function],
                                                                         ],
@@ -5500,19 +5666,19 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                 >
                                                                   <Box
                                                                     active={1}
-                                                                    className="c19"
+                                                                    className="c20"
                                                                     inline={false}
                                                                     tag="div"
                                                                   >
                                                                     <styled.div
                                                                       active={1}
-                                                                      className="c19"
+                                                                      className="c20"
                                                                       inline={false}
                                                                       tag="div"
                                                                     >
                                                                       <StyledComponent
                                                                         active={1}
-                                                                        className="c19"
+                                                                        className="c20"
                                                                         forwardedComponent={
                                                                           Object {
                                                                             "$$typeof": Symbol(react.forward_ref),
@@ -5546,7 +5712,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                         tag="div"
                                                                       >
                                                                         <div
-                                                                          className="c2 c19 Link__BoxWrapper-gur8v7-1 c19"
+                                                                          className="c2 c20 Link__BoxWrapper-gur8v7-1 c20"
                                                                         >
                                                                           <Link__BoxContainer
                                                                             active={1}
@@ -5562,7 +5728,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Link__BoxContainer-gur8v7-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c20",
+                                                                                    "lastClassName": "c21",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                     ],
@@ -5583,7 +5749,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                             >
                                                                               <Box
                                                                                 active={1}
-                                                                                className="c20"
+                                                                                className="c21"
                                                                                 inline={false}
                                                                                 submenulink={1}
                                                                                 tag="div"
@@ -5591,7 +5757,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                               >
                                                                                 <styled.div
                                                                                   active={1}
-                                                                                  className="c20"
+                                                                                  className="c21"
                                                                                   inline={false}
                                                                                   submenulink={1}
                                                                                   tag="div"
@@ -5599,7 +5765,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                 >
                                                                                   <StyledComponent
                                                                                     active={1}
-                                                                                    className="c20"
+                                                                                    className="c21"
                                                                                     forwardedComponent={
                                                                                       Object {
                                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -5635,7 +5801,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                     vertical={3}
                                                                                   >
                                                                                     <div
-                                                                                      className="c8 c20 Link__BoxContainer-gur8v7-0 c20"
+                                                                                      className="c8 c21 Link__BoxContainer-gur8v7-0 c21"
                                                                                     >
                                                                                       <Link__BoxActive
                                                                                         active={1}
@@ -5651,7 +5817,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                               "componentStyle": ComponentStyle {
                                                                                                 "componentId": "Link__BoxActive-gur8v7-2",
                                                                                                 "isStatic": false,
-                                                                                                "lastClassName": "c21",
+                                                                                                "lastClassName": "c22",
                                                                                                 "rules": Array [
                                                                                                   [Function],
                                                                                                 ],
@@ -5672,7 +5838,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                         >
                                                                                           <Box
                                                                                             active={1}
-                                                                                            className="c21"
+                                                                                            className="c22"
                                                                                             horizontal={3}
                                                                                             inline={false}
                                                                                             submenulink={1}
@@ -5680,7 +5846,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                           >
                                                                                             <styled.div
                                                                                               active={1}
-                                                                                              className="c21"
+                                                                                              className="c22"
                                                                                               horizontal={3}
                                                                                               inline={false}
                                                                                               submenulink={1}
@@ -5688,7 +5854,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                             >
                                                                                               <StyledComponent
                                                                                                 active={1}
-                                                                                                className="c21"
+                                                                                                className="c22"
                                                                                                 forwardedComponent={
                                                                                                   Object {
                                                                                                     "$$typeof": Symbol(react.forward_ref),
@@ -5724,7 +5890,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                                 tag="div"
                                                                                               >
                                                                                                 <div
-                                                                                                  className="c10 c21 Link__BoxActive-gur8v7-2 c21"
+                                                                                                  className="c10 c22 Link__BoxActive-gur8v7-2 c22"
                                                                                                 >
                                                                                                   <Link__StyledTextProvider
                                                                                                     active={true}
@@ -5738,7 +5904,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                                           "componentStyle": ComponentStyle {
                                                                                                             "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                                                             "isStatic": false,
-                                                                                                            "lastClassName": "c22",
+                                                                                                            "lastClassName": "c23",
                                                                                                             "rules": Array [
                                                                                                               [Function],
                                                                                                             ],
@@ -5757,10 +5923,10 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                                     >
                                                                                                       <ColoredTextProvider
                                                                                                         active={true}
-                                                                                                        className="c22"
+                                                                                                        className="c23"
                                                                                                       >
                                                                                                         <div
-                                                                                                          className="c22"
+                                                                                                          className="c23"
                                                                                                         >
                                                                                                           <Text
                                                                                                             block={false}
@@ -5785,7 +5951,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                                                     "componentStyle": ComponentStyle {
                                                                                                                       "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                                                       "isStatic": false,
-                                                                                                                      "lastClassName": "c23",
+                                                                                                                      "lastClassName": "c24",
                                                                                                                       "rules": Array [
                                                                                                                         [Function],
                                                                                                                         [Function],
@@ -5817,7 +5983,7 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                                                                                 size="small"
                                                                                                               >
                                                                                                                 <span
-                                                                                                                  className="c23"
+                                                                                                                  className="c24"
                                                                                                                   size="small"
                                                                                                                 >
                                                                                                                   Option 1

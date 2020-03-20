@@ -12,14 +12,14 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   padding-bottom: 1rem;
 }
 
-.c8 {
+.c9 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c10 {
+.c11 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -28,7 +28,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   padding-bottom: 1rem;
 }
 
-.c12 {
+.c13 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -58,7 +58,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c14 {
+.c15 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -71,7 +71,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   font-weight: 500;
 }
 
-.c14 sup {
+.c15 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -79,38 +79,60 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c9 {
+.c10 {
   margin-left: 1rem;
   border-left: 4px solid #f2eff4;
 }
 
-.c9:hover {
+.c10:hover {
   background-color: #f2eff4;
 }
 
-.c7 {
+.c8 {
   background-color: none;
 }
 
-.c11 {
+.c12 {
   border-left: none;
   margin-left: -0.25rem;
 }
 
-.c13 {
+.c14 {
   color: #54595f;
 }
 
-.c13:hover {
+.c14:hover {
   color: #4b286d;
 }
 
-.c6 {
+.c7 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c5 {
+.c4 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #4b286d;
+  font-size: 1rem;
+}
+
+.c4::before {
+  content: '\\f105';
+}
+
+.c6 {
   margin-bottom: 1rem;
 }
 
@@ -146,7 +168,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c4 {
+  .c5 {
     -webkit-transition: none !important;
     transition: none !important;
   }
@@ -261,7 +283,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bdVaJa",
                         "isStatic": false,
-                        "lastClassName": "c12",
+                        "lastClassName": "c13",
                         "rules": Array [
                           [Function],
                           [Function],
@@ -316,7 +338,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                     "isStatic": false,
-                                    "lastClassName": "c14",
+                                    "lastClassName": "c15",
                                     "rules": Array [
                                       [Function],
                                       [Function],
@@ -369,10 +391,49 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                         symbol="caretDown"
                         variant="secondary"
                       >
-                        <i
+                        <Icon__StyledIcon
                           aria-hidden="true"
-                          className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size16___1pm12"
-                        />
+                          iSize={16}
+                          symbol="caretDown"
+                          variant="secondary"
+                        >
+                          <StyledComponent
+                            aria-hidden="true"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "Icon__StyledIcon",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                "target": "i",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            iSize={16}
+                            symbol="caretDown"
+                            variant="secondary"
+                          >
+                            <i
+                              aria-hidden="true"
+                              className="c4"
+                            />
+                          </StyledComponent>
+                        </Icon__StyledIcon>
                       </Icon>
                     </DecorativeIcon>
                   </div>
@@ -428,7 +489,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
               "componentStyle": ComponentStyle {
                 "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
                 "isStatic": false,
-                "lastClassName": "c4",
+                "lastClassName": "c5",
                 "rules": Array [
                   "@media (prefers-reduced-motion: reduce) {",
                   "transition: none !important;",
@@ -458,7 +519,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
         >
           <div
             aria-hidden={true}
-            className="c4"
+            className="c5"
             style={
               Object {
                 "height": 0,
@@ -478,7 +539,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "SubMenu__SubMenuContainer-sc-1p1ex8g-0",
                       "isStatic": false,
-                      "lastClassName": "c5",
+                      "lastClassName": "c6",
                       "rules": Array [
                         "margin-bottom: 1rem;",
                       ],
@@ -496,7 +557,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                 forwardedRef={[Function]}
               >
                 <ul
-                  className="c5"
+                  className="c6"
                 >
                   <li
                     key=".0"
@@ -520,7 +581,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "Link__StyledAnchor-gur8v7-4",
                                 "isStatic": false,
-                                "lastClassName": "c6",
+                                "lastClassName": "c7",
                                 "rules": Array [
                                   "text-decoration: none;",
                                 ],
@@ -540,7 +601,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           to={null}
                         >
                           <a
-                            className="c6"
+                            className="c7"
                             href="#"
                             to={null}
                           >
@@ -556,7 +617,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "Link__BoxWrapper-gur8v7-1",
                                       "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "lastClassName": "c8",
                                       "rules": Array [
                                         [Function],
                                       ],
@@ -575,19 +636,19 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                               >
                                 <Box
                                   active={0}
-                                  className="c7"
+                                  className="c8"
                                   inline={false}
                                   tag="div"
                                 >
                                   <styled.div
                                     active={0}
-                                    className="c7"
+                                    className="c8"
                                     inline={false}
                                     tag="div"
                                   >
                                     <StyledComponent
                                       active={0}
-                                      className="c7"
+                                      className="c8"
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
@@ -597,7 +658,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-bdVaJa",
                                             "isStatic": false,
-                                            "lastClassName": "c12",
+                                            "lastClassName": "c13",
                                             "rules": Array [
                                               [Function],
                                               [Function],
@@ -621,7 +682,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                       tag="div"
                                     >
                                       <div
-                                        className="c8 c7 Link__BoxWrapper-gur8v7-1 c7"
+                                        className="c9 c8 Link__BoxWrapper-gur8v7-1 c8"
                                       >
                                         <Link__BoxContainer
                                           active={0}
@@ -637,7 +698,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Link__BoxContainer-gur8v7-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c9",
+                                                  "lastClassName": "c10",
                                                   "rules": Array [
                                                     [Function],
                                                   ],
@@ -658,7 +719,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           >
                                             <Box
                                               active={0}
-                                              className="c9"
+                                              className="c10"
                                               inline={false}
                                               submenulink={1}
                                               tag="div"
@@ -666,7 +727,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                             >
                                               <styled.div
                                                 active={0}
-                                                className="c9"
+                                                className="c10"
                                                 inline={false}
                                                 submenulink={1}
                                                 tag="div"
@@ -674,7 +735,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                               >
                                                 <StyledComponent
                                                   active={0}
-                                                  className="c9"
+                                                  className="c10"
                                                   forwardedComponent={
                                                     Object {
                                                       "$$typeof": Symbol(react.forward_ref),
@@ -684,7 +745,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "sc-bdVaJa",
                                                         "isStatic": false,
-                                                        "lastClassName": "c12",
+                                                        "lastClassName": "c13",
                                                         "rules": Array [
                                                           [Function],
                                                           [Function],
@@ -710,7 +771,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                   vertical={3}
                                                 >
                                                   <div
-                                                    className="c10 c9 Link__BoxContainer-gur8v7-0 c9"
+                                                    className="c11 c10 Link__BoxContainer-gur8v7-0 c10"
                                                   >
                                                     <Link__BoxActive
                                                       active={0}
@@ -726,7 +787,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "Link__BoxActive-gur8v7-2",
                                                               "isStatic": false,
-                                                              "lastClassName": "c11",
+                                                              "lastClassName": "c12",
                                                               "rules": Array [
                                                                 [Function],
                                                               ],
@@ -747,7 +808,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                       >
                                                         <Box
                                                           active={0}
-                                                          className="c11"
+                                                          className="c12"
                                                           horizontal={3}
                                                           inline={false}
                                                           submenulink={1}
@@ -755,7 +816,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                         >
                                                           <styled.div
                                                             active={0}
-                                                            className="c11"
+                                                            className="c12"
                                                             horizontal={3}
                                                             inline={false}
                                                             submenulink={1}
@@ -763,7 +824,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                           >
                                                             <StyledComponent
                                                               active={0}
-                                                              className="c11"
+                                                              className="c12"
                                                               forwardedComponent={
                                                                 Object {
                                                                   "$$typeof": Symbol(react.forward_ref),
@@ -773,7 +834,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "sc-bdVaJa",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c12",
+                                                                    "lastClassName": "c13",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -799,7 +860,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                               tag="div"
                                                             >
                                                               <div
-                                                                className="c12 c11 Link__BoxActive-gur8v7-2 c11"
+                                                                className="c13 c12 Link__BoxActive-gur8v7-2 c12"
                                                               >
                                                                 <Link__StyledTextProvider
                                                                   active={false}
@@ -813,7 +874,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c13",
+                                                                          "lastClassName": "c14",
                                                                           "rules": Array [
                                                                             [Function],
                                                                           ],
@@ -832,10 +893,10 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                   >
                                                                     <ColoredTextProvider
                                                                       active={false}
-                                                                      className="c13"
+                                                                      className="c14"
                                                                     >
                                                                       <div
-                                                                        className="c13"
+                                                                        className="c14"
                                                                       >
                                                                         <Text
                                                                           block={false}
@@ -860,7 +921,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c14",
+                                                                                    "lastClassName": "c15",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                       [Function],
@@ -892,7 +953,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                               size="small"
                                                                             >
                                                                               <span
-                                                                                className="c14"
+                                                                                className="c15"
                                                                                 size="small"
                                                                               >
                                                                                 Option 1
@@ -949,7 +1010,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "Link__StyledAnchor-gur8v7-4",
                                 "isStatic": false,
-                                "lastClassName": "c6",
+                                "lastClassName": "c7",
                                 "rules": Array [
                                   "text-decoration: none;",
                                 ],
@@ -969,7 +1030,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           to={null}
                         >
                           <a
-                            className="c6"
+                            className="c7"
                             href="#"
                             to={null}
                           >
@@ -985,7 +1046,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "Link__BoxWrapper-gur8v7-1",
                                       "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "lastClassName": "c8",
                                       "rules": Array [
                                         [Function],
                                       ],
@@ -1004,19 +1065,19 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                               >
                                 <Box
                                   active={0}
-                                  className="c7"
+                                  className="c8"
                                   inline={false}
                                   tag="div"
                                 >
                                   <styled.div
                                     active={0}
-                                    className="c7"
+                                    className="c8"
                                     inline={false}
                                     tag="div"
                                   >
                                     <StyledComponent
                                       active={0}
-                                      className="c7"
+                                      className="c8"
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
@@ -1026,7 +1087,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-bdVaJa",
                                             "isStatic": false,
-                                            "lastClassName": "c12",
+                                            "lastClassName": "c13",
                                             "rules": Array [
                                               [Function],
                                               [Function],
@@ -1050,7 +1111,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                       tag="div"
                                     >
                                       <div
-                                        className="c8 c7 Link__BoxWrapper-gur8v7-1 c7"
+                                        className="c9 c8 Link__BoxWrapper-gur8v7-1 c8"
                                       >
                                         <Link__BoxContainer
                                           active={0}
@@ -1066,7 +1127,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Link__BoxContainer-gur8v7-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c9",
+                                                  "lastClassName": "c10",
                                                   "rules": Array [
                                                     [Function],
                                                   ],
@@ -1087,7 +1148,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           >
                                             <Box
                                               active={0}
-                                              className="c9"
+                                              className="c10"
                                               inline={false}
                                               submenulink={1}
                                               tag="div"
@@ -1095,7 +1156,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                             >
                                               <styled.div
                                                 active={0}
-                                                className="c9"
+                                                className="c10"
                                                 inline={false}
                                                 submenulink={1}
                                                 tag="div"
@@ -1103,7 +1164,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                               >
                                                 <StyledComponent
                                                   active={0}
-                                                  className="c9"
+                                                  className="c10"
                                                   forwardedComponent={
                                                     Object {
                                                       "$$typeof": Symbol(react.forward_ref),
@@ -1113,7 +1174,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "sc-bdVaJa",
                                                         "isStatic": false,
-                                                        "lastClassName": "c12",
+                                                        "lastClassName": "c13",
                                                         "rules": Array [
                                                           [Function],
                                                           [Function],
@@ -1139,7 +1200,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                   vertical={3}
                                                 >
                                                   <div
-                                                    className="c10 c9 Link__BoxContainer-gur8v7-0 c9"
+                                                    className="c11 c10 Link__BoxContainer-gur8v7-0 c10"
                                                   >
                                                     <Link__BoxActive
                                                       active={0}
@@ -1155,7 +1216,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "Link__BoxActive-gur8v7-2",
                                                               "isStatic": false,
-                                                              "lastClassName": "c11",
+                                                              "lastClassName": "c12",
                                                               "rules": Array [
                                                                 [Function],
                                                               ],
@@ -1176,7 +1237,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                       >
                                                         <Box
                                                           active={0}
-                                                          className="c11"
+                                                          className="c12"
                                                           horizontal={3}
                                                           inline={false}
                                                           submenulink={1}
@@ -1184,7 +1245,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                         >
                                                           <styled.div
                                                             active={0}
-                                                            className="c11"
+                                                            className="c12"
                                                             horizontal={3}
                                                             inline={false}
                                                             submenulink={1}
@@ -1192,7 +1253,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                           >
                                                             <StyledComponent
                                                               active={0}
-                                                              className="c11"
+                                                              className="c12"
                                                               forwardedComponent={
                                                                 Object {
                                                                   "$$typeof": Symbol(react.forward_ref),
@@ -1202,7 +1263,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "sc-bdVaJa",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c12",
+                                                                    "lastClassName": "c13",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -1228,7 +1289,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                               tag="div"
                                                             >
                                                               <div
-                                                                className="c12 c11 Link__BoxActive-gur8v7-2 c11"
+                                                                className="c13 c12 Link__BoxActive-gur8v7-2 c12"
                                                               >
                                                                 <Link__StyledTextProvider
                                                                   active={false}
@@ -1242,7 +1303,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c13",
+                                                                          "lastClassName": "c14",
                                                                           "rules": Array [
                                                                             [Function],
                                                                           ],
@@ -1261,10 +1322,10 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                   >
                                                                     <ColoredTextProvider
                                                                       active={false}
-                                                                      className="c13"
+                                                                      className="c14"
                                                                     >
                                                                       <div
-                                                                        className="c13"
+                                                                        className="c14"
                                                                       >
                                                                         <Text
                                                                           block={false}
@@ -1289,7 +1350,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c14",
+                                                                                    "lastClassName": "c15",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                       [Function],
@@ -1321,7 +1382,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                               size="small"
                                                                             >
                                                                               <span
-                                                                                className="c14"
+                                                                                className="c15"
                                                                                 size="small"
                                                                               >
                                                                                 Option 2
@@ -1378,7 +1439,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "Link__StyledAnchor-gur8v7-4",
                                 "isStatic": false,
-                                "lastClassName": "c6",
+                                "lastClassName": "c7",
                                 "rules": Array [
                                   "text-decoration: none;",
                                 ],
@@ -1398,7 +1459,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                           to={null}
                         >
                           <a
-                            className="c6"
+                            className="c7"
                             href="#"
                             to={null}
                           >
@@ -1414,7 +1475,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "Link__BoxWrapper-gur8v7-1",
                                       "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "lastClassName": "c8",
                                       "rules": Array [
                                         [Function],
                                       ],
@@ -1433,19 +1494,19 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                               >
                                 <Box
                                   active={0}
-                                  className="c7"
+                                  className="c8"
                                   inline={false}
                                   tag="div"
                                 >
                                   <styled.div
                                     active={0}
-                                    className="c7"
+                                    className="c8"
                                     inline={false}
                                     tag="div"
                                   >
                                     <StyledComponent
                                       active={0}
-                                      className="c7"
+                                      className="c8"
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
@@ -1455,7 +1516,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-bdVaJa",
                                             "isStatic": false,
-                                            "lastClassName": "c12",
+                                            "lastClassName": "c13",
                                             "rules": Array [
                                               [Function],
                                               [Function],
@@ -1479,7 +1540,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                       tag="div"
                                     >
                                       <div
-                                        className="c8 c7 Link__BoxWrapper-gur8v7-1 c7"
+                                        className="c9 c8 Link__BoxWrapper-gur8v7-1 c8"
                                       >
                                         <Link__BoxContainer
                                           active={0}
@@ -1495,7 +1556,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Link__BoxContainer-gur8v7-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c9",
+                                                  "lastClassName": "c10",
                                                   "rules": Array [
                                                     [Function],
                                                   ],
@@ -1516,7 +1577,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                           >
                                             <Box
                                               active={0}
-                                              className="c9"
+                                              className="c10"
                                               inline={false}
                                               submenulink={1}
                                               tag="div"
@@ -1524,7 +1585,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                             >
                                               <styled.div
                                                 active={0}
-                                                className="c9"
+                                                className="c10"
                                                 inline={false}
                                                 submenulink={1}
                                                 tag="div"
@@ -1532,7 +1593,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                               >
                                                 <StyledComponent
                                                   active={0}
-                                                  className="c9"
+                                                  className="c10"
                                                   forwardedComponent={
                                                     Object {
                                                       "$$typeof": Symbol(react.forward_ref),
@@ -1542,7 +1603,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "sc-bdVaJa",
                                                         "isStatic": false,
-                                                        "lastClassName": "c12",
+                                                        "lastClassName": "c13",
                                                         "rules": Array [
                                                           [Function],
                                                           [Function],
@@ -1568,7 +1629,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                   vertical={3}
                                                 >
                                                   <div
-                                                    className="c10 c9 Link__BoxContainer-gur8v7-0 c9"
+                                                    className="c11 c10 Link__BoxContainer-gur8v7-0 c10"
                                                   >
                                                     <Link__BoxActive
                                                       active={0}
@@ -1584,7 +1645,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "Link__BoxActive-gur8v7-2",
                                                               "isStatic": false,
-                                                              "lastClassName": "c11",
+                                                              "lastClassName": "c12",
                                                               "rules": Array [
                                                                 [Function],
                                                               ],
@@ -1605,7 +1666,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                       >
                                                         <Box
                                                           active={0}
-                                                          className="c11"
+                                                          className="c12"
                                                           horizontal={3}
                                                           inline={false}
                                                           submenulink={1}
@@ -1613,7 +1674,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                         >
                                                           <styled.div
                                                             active={0}
-                                                            className="c11"
+                                                            className="c12"
                                                             horizontal={3}
                                                             inline={false}
                                                             submenulink={1}
@@ -1621,7 +1682,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                           >
                                                             <StyledComponent
                                                               active={0}
-                                                              className="c11"
+                                                              className="c12"
                                                               forwardedComponent={
                                                                 Object {
                                                                   "$$typeof": Symbol(react.forward_ref),
@@ -1631,7 +1692,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "sc-bdVaJa",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c12",
+                                                                    "lastClassName": "c13",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -1657,7 +1718,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                               tag="div"
                                                             >
                                                               <div
-                                                                className="c12 c11 Link__BoxActive-gur8v7-2 c11"
+                                                                className="c13 c12 Link__BoxActive-gur8v7-2 c12"
                                                               >
                                                                 <Link__StyledTextProvider
                                                                   active={false}
@@ -1671,7 +1732,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "Link__StyledTextProvider-gur8v7-3",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c13",
+                                                                          "lastClassName": "c14",
                                                                           "rules": Array [
                                                                             [Function],
                                                                           ],
@@ -1690,10 +1751,10 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                   >
                                                                     <ColoredTextProvider
                                                                       active={false}
-                                                                      className="c13"
+                                                                      className="c14"
                                                                     >
                                                                       <div
-                                                                        className="c13"
+                                                                        className="c14"
                                                                       >
                                                                         <Text
                                                                           block={false}
@@ -1718,7 +1779,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c14",
+                                                                                    "lastClassName": "c15",
                                                                                     "rules": Array [
                                                                                       [Function],
                                                                                       [Function],
@@ -1750,7 +1811,7 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                                                                               size="small"
                                                                             >
                                                                               <span
-                                                                                className="c14"
+                                                                                className="c15"
                                                                                 size="small"
                                                                               >
                                                                                 Option 3

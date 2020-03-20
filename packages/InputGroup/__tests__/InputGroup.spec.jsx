@@ -56,9 +56,9 @@ describe('InputGroup', () => {
         props.onChange = undefined
         const inputGroup = doShallow(props)
         const inputWrapper = inputGroup.find('input')
-        expect(inputGroup.find('Close').exists()).toEqual(false)
+        expect(inputGroup.find('IconButton').exists()).toEqual(false)
         inputWrapper.simulate('change', { target: { value: 'input text' } })
-        expect(inputGroup.find('Close').exists()).toEqual(true)
+        expect(inputGroup.find('IconButton').exists()).toEqual(true)
       })
 
       it('calls onChange prop function', () => {
@@ -76,17 +76,17 @@ describe('InputGroup', () => {
         const inputGroup = doMount(props)
         const inputWrapper = inputGroup.find('input')
         inputWrapper.simulate('change', { target: { value: 'input text' } })
-        const closeButtonWrapper = inputGroup.find('Close')
+        const closeButtonWrapper = inputGroup.find('IconButton')
         expect(closeButtonWrapper.exists()).toEqual(true)
         closeButtonWrapper.simulate('click')
-        expect(inputGroup.find('Close').exists()).toEqual(false)
+        expect(inputGroup.find('IconButton').exists()).toEqual(false)
       })
 
       it('calls onClearButtonClick prop function', () => {
         const inputGroup = doMount(props)
         const inputWrapper = inputGroup.find('input')
         inputWrapper.simulate('change', { target: { value: 'input text' } })
-        const closeButtonWrapper = inputGroup.find('Close')
+        const closeButtonWrapper = inputGroup.find('IconButton')
         expect(closeButtonWrapper.exists()).toEqual(true)
         closeButtonWrapper.simulate('click')
         expect(onClearButtonClickMockFn.mock.calls.length).toEqual(1)

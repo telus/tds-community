@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, createRef } from 'react'
 import PropTypes from 'prop-types'
 import DecorativeIcon from '@tds/core-decorative-icon'
-import { Close } from '@tds/core-interactive-icon'
+import { IconButton, Close } from '@tds/core-interactive-icon'
 import A11yContent from '@tds/core-a11y-content'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
@@ -56,7 +56,8 @@ const InputGroup = ({
           ref={inputRef}
         />
         {!!inputValue && (
-          <Close
+          <IconButton
+            icon={Close}
             a11yText={closeA11yText}
             onClick={e => {
               setInputValue('')

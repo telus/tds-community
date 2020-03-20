@@ -1,7 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination renders 1`] = `
-.c7 {
+.c4 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c4::before {
+  content: '\\f107';
+  display: inline-block;
+  -webkit-transform: rotate(-180deg) translateY(1.5px);
+  -ms-transform: rotate(-180deg) translateY(1.5px);
+  transform: rotate(-180deg) translateY(1.5px);
+}
+
+.c14 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c14::before {
+  content: '\\f107';
+}
+
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -36,7 +82,7 @@ exports[`Pagination renders 1`] = `
   display: none;
 }
 
-.c12 {
+.c13 {
   color: #4b286d;
   font-size: 1rem;
   line-height: 42px;
@@ -54,18 +100,18 @@ exports[`Pagination renders 1`] = `
   border-radius: 4px;
 }
 
-.c4 {
+.c5 {
   display: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c9 {
+.c10 {
   background: none;
   border: none;
   color: #4b286d;
@@ -76,7 +122,7 @@ exports[`Pagination renders 1`] = `
   height: 100%;
 }
 
-.c8 {
+.c9 {
   display: inline-block;
   color: #4b286d;
   background-color: #f2eff4;
@@ -90,15 +136,15 @@ exports[`Pagination renders 1`] = `
   border-radius: 4px;
 }
 
-.c8:hover {
+.c9:hover {
   border: 1px solid #4b286d;
 }
 
-.c8:first-child {
+.c9:first-child {
   margin-left: 0.5rem;
 }
 
-.c10 {
+.c11 {
   display: inline-block;
   color: #4b286d;
   background-color: #f2eff4;
@@ -121,15 +167,15 @@ exports[`Pagination renders 1`] = `
   border: none;
 }
 
-.c10:hover {
+.c11:hover {
   border: 1px solid #4b286d;
 }
 
-.c10:first-child {
+.c11:first-child {
   margin-left: 0.5rem;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   color: #4b286d;
   background-color: #f2eff4;
@@ -149,15 +195,15 @@ exports[`Pagination renders 1`] = `
   background-color: #4b286d;
 }
 
-.c6:hover {
+.c7:hover {
   border: 1px solid #4b286d;
 }
 
-.c6:first-child {
+.c7:first-child {
   margin-left: 0.5rem;
 }
 
-.c6:hover {
+.c7:hover {
   border: none;
 }
 
@@ -178,7 +224,7 @@ exports[`Pagination renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     line-height: 42px;
     padding: 0 8px 0 4px;
   }
@@ -193,25 +239,34 @@ exports[`Pagination renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     display: inline-block;
   }
 }
 
 @media (max-width:767px) {
-  .c5 {
+  .c6 {
     display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    display: inline-block;
+    line-height: 44px;
+    border: 1px solid #f2eff4;
+    min-width: 22px;
   }
 }
 
 @media (min-width:768px) {
   .c11 {
-    display: none;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
     display: inline-block;
     line-height: 44px;
     border: 1px solid #f2eff4;
@@ -220,26 +275,17 @@ exports[`Pagination renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
-    display: inline-block;
-    line-height: 44px;
-    border: 1px solid #f2eff4;
-    min-width: 22px;
-  }
-}
-
-@media (min-width:768px) {
-  .c10 {
+  .c11 {
     border: none;
   }
 
-  .c10:hover {
+  .c11:hover {
     border: none;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     display: inline-block;
     line-height: 44px;
     border: 1px solid #f2eff4;
@@ -248,7 +294,7 @@ exports[`Pagination renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     border: 1px solid #4b286d;
     min-width: 24px;
   }
@@ -434,10 +480,47 @@ exports[`Pagination renders 1`] = `
                               size={16}
                               symbol="leftChevron"
                             >
-                              <i
+                              <Icon__StyledIcon
                                 aria-hidden="true"
-                                className="TDS_Icon-modules__iconLeftChevron___37tW0 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
-                              />
+                                iSize={16}
+                                symbol="leftChevron"
+                              >
+                                <StyledComponent
+                                  aria-hidden="true"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                        "isStatic": false,
+                                        "lastClassName": "c14",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Icon__StyledIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                      "target": "i",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  iSize={16}
+                                  symbol="leftChevron"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="c4"
+                                  />
+                                </StyledComponent>
+                              </Icon__StyledIcon>
                             </Icon>
                           </DecorativeIcon>
                            
@@ -450,7 +533,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__ButtonLabel-sc-1afeh49-6",
                                     "isStatic": false,
-                                    "lastClassName": "c4",
+                                    "lastClassName": "c5",
                                     "rules": Array [
                                       "display: none;",
                                       "@media (min-width: 768px) {",
@@ -471,7 +554,7 @@ exports[`Pagination renders 1`] = `
                               forwardedRef={null}
                             >
                               <span
-                                className="c4"
+                                className="c5"
                               >
                                 Prev
                               </span>
@@ -492,7 +575,7 @@ exports[`Pagination renders 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styles__PaginationList-sc-1afeh49-7",
                         "isStatic": false,
-                        "lastClassName": "c5",
+                        "lastClassName": "c6",
                         "rules": Array [
                           "@media (max-width: 767px) {",
                           "display: none;",
@@ -513,7 +596,7 @@ exports[`Pagination renders 1`] = `
                   forwardedRef={null}
                 >
                   <ul
-                    className="c5"
+                    className="c6"
                   >
                     <styles__PaginationCurrent
                       key="193359721"
@@ -526,7 +609,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationCurrent-sc-1afeh49-12",
                               "isStatic": false,
-                              "lastClassName": "c6",
+                              "lastClassName": "c7",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -581,7 +664,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c6"
+                          className="c7"
                         >
                           1
                           <A11yContent>
@@ -594,7 +677,7 @@ exports[`Pagination renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                       "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "lastClassName": "c8",
                                       "rules": Array [
                                         "position: absolute;",
                                         "height: 1px;",
@@ -616,7 +699,7 @@ exports[`Pagination renders 1`] = `
                                 forwardedRef={null}
                               >
                                 <span
-                                  className="c7"
+                                  className="c8"
                                 >
                                   (current)
                                 </span>
@@ -637,7 +720,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
                               "isStatic": false,
-                              "lastClassName": "c8",
+                              "lastClassName": "c9",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -677,7 +760,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c8"
+                          className="c9"
                         >
                           <styles__GeneralPaginationButton
                             aria-label="Go to panel number 2"
@@ -693,7 +776,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       "background: none;",
                                       "border: none;",
@@ -721,7 +804,7 @@ exports[`Pagination renders 1`] = `
                             >
                               <button
                                 aria-label="Go to panel number 2"
-                                className="c9"
+                                className="c10"
                                 onClick={[Function]}
                                 value={2}
                               >
@@ -743,7 +826,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
                               "isStatic": false,
-                              "lastClassName": "c8",
+                              "lastClassName": "c9",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -783,7 +866,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c8"
+                          className="c9"
                         >
                           <styles__GeneralPaginationButton
                             aria-label="Go to panel number 3"
@@ -799,7 +882,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       "background: none;",
                                       "border: none;",
@@ -827,7 +910,7 @@ exports[`Pagination renders 1`] = `
                             >
                               <button
                                 aria-label="Go to panel number 3"
-                                className="c9"
+                                className="c10"
                                 onClick={[Function]}
                                 value={3}
                               >
@@ -849,7 +932,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
                               "isStatic": false,
-                              "lastClassName": "c8",
+                              "lastClassName": "c9",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -889,7 +972,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c8"
+                          className="c9"
                         >
                           <styles__GeneralPaginationButton
                             aria-label="Go to panel number 4"
@@ -905,7 +988,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       "background: none;",
                                       "border: none;",
@@ -933,7 +1016,7 @@ exports[`Pagination renders 1`] = `
                             >
                               <button
                                 aria-label="Go to panel number 4"
-                                className="c9"
+                                className="c10"
                                 onClick={[Function]}
                                 value={4}
                               >
@@ -955,7 +1038,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationEllipsis-sc-1afeh49-11",
                               "isStatic": false,
-                              "lastClassName": "c10",
+                              "lastClassName": "c11",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -1012,7 +1095,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c10"
+                          className="c11"
                         >
                           ...
                         </li>
@@ -1029,7 +1112,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
                               "isStatic": false,
-                              "lastClassName": "c8",
+                              "lastClassName": "c9",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -1069,7 +1152,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c8"
+                          className="c9"
                         >
                           <styles__GeneralPaginationButton
                             aria-label="Go to panel number 9"
@@ -1085,7 +1168,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       "background: none;",
                                       "border: none;",
@@ -1113,7 +1196,7 @@ exports[`Pagination renders 1`] = `
                             >
                               <button
                                 aria-label="Go to panel number 9"
-                                className="c9"
+                                className="c10"
                                 onClick={[Function]}
                                 value={9}
                               >
@@ -1136,7 +1219,7 @@ exports[`Pagination renders 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styles__PaginationListMobile-sc-1afeh49-8",
                         "isStatic": false,
-                        "lastClassName": "c11",
+                        "lastClassName": "c12",
                         "rules": Array [
                           "@media (min-width: 768px) {",
                           "display: none;",
@@ -1156,7 +1239,7 @@ exports[`Pagination renders 1`] = `
                   forwardedRef={null}
                 >
                   <ul
-                    className="c11"
+                    className="c12"
                   >
                     <styles__PaginationCurrent
                       key="193359721"
@@ -1169,7 +1252,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationCurrent-sc-1afeh49-12",
                               "isStatic": false,
-                              "lastClassName": "c6",
+                              "lastClassName": "c7",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -1224,7 +1307,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c6"
+                          className="c7"
                         >
                           1
                           <A11yContent>
@@ -1237,7 +1320,7 @@ exports[`Pagination renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                       "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "lastClassName": "c8",
                                       "rules": Array [
                                         "position: absolute;",
                                         "height: 1px;",
@@ -1259,7 +1342,7 @@ exports[`Pagination renders 1`] = `
                                 forwardedRef={null}
                               >
                                 <span
-                                  className="c7"
+                                  className="c8"
                                 >
                                   (current)
                                 </span>
@@ -1280,7 +1363,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
                               "isStatic": false,
-                              "lastClassName": "c8",
+                              "lastClassName": "c9",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -1320,7 +1403,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c8"
+                          className="c9"
                         >
                           <styles__GeneralPaginationButton
                             aria-label="Go to panel number 2"
@@ -1336,7 +1419,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       "background: none;",
                                       "border: none;",
@@ -1364,7 +1447,7 @@ exports[`Pagination renders 1`] = `
                             >
                               <button
                                 aria-label="Go to panel number 2"
-                                className="c9"
+                                className="c10"
                                 onClick={[Function]}
                                 value={2}
                               >
@@ -1386,7 +1469,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__PaginationEllipsis-sc-1afeh49-11",
                               "isStatic": false,
-                              "lastClassName": "c10",
+                              "lastClassName": "c11",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -1443,7 +1526,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c10"
+                          className="c11"
                         >
                           ...
                         </li>
@@ -1460,7 +1543,7 @@ exports[`Pagination renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styles__GeneralPagination-sc-1afeh49-10",
                               "isStatic": false,
-                              "lastClassName": "c8",
+                              "lastClassName": "c9",
                               "rules": Array [
                                 "display: inline-block;",
                                 "color: #4b286d;",
@@ -1500,7 +1583,7 @@ exports[`Pagination renders 1`] = `
                         forwardedRef={null}
                       >
                         <li
-                          className="c8"
+                          className="c9"
                         >
                           <styles__GeneralPaginationButton
                             aria-label="Go to panel number 9"
@@ -1516,7 +1599,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__GeneralPaginationButton-sc-1afeh49-9",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       "background: none;",
                                       "border: none;",
@@ -1544,7 +1627,7 @@ exports[`Pagination renders 1`] = `
                             >
                               <button
                                 aria-label="Go to panel number 9"
-                                className="c9"
+                                className="c10"
                                 onClick={[Function]}
                                 value={9}
                               >
@@ -1569,7 +1652,7 @@ exports[`Pagination renders 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styles__NextPaginationContainer-sc-1afeh49-4",
                         "isStatic": false,
-                        "lastClassName": "c12",
+                        "lastClassName": "c13",
                         "rules": Array [
                           "color: #4b286d;",
                           "font-size: 1rem;",
@@ -1597,7 +1680,7 @@ exports[`Pagination renders 1`] = `
                   showNext={true}
                 >
                   <p
-                    className="c12"
+                    className="c13"
                   >
                     <styles__PaginationButtonStyle
                       aria-label="Go to next panel"
@@ -1660,7 +1743,7 @@ exports[`Pagination renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "styles__ButtonLabel-sc-1afeh49-6",
                                     "isStatic": false,
-                                    "lastClassName": "c4",
+                                    "lastClassName": "c5",
                                     "rules": Array [
                                       "display: none;",
                                       "@media (min-width: 768px) {",
@@ -1681,7 +1764,7 @@ exports[`Pagination renders 1`] = `
                               forwardedRef={null}
                             >
                               <span
-                                className="c4"
+                                className="c5"
                               >
                                 Next
                               </span>
@@ -1697,10 +1780,47 @@ exports[`Pagination renders 1`] = `
                               size={16}
                               symbol="chevron"
                             >
-                              <i
+                              <Icon__StyledIcon
                                 aria-hidden="true"
-                                className="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
-                              />
+                                iSize={16}
+                                symbol="chevron"
+                              >
+                                <StyledComponent
+                                  aria-hidden="true"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                        "isStatic": false,
+                                        "lastClassName": "c14",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Icon__StyledIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                      "target": "i",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  iSize={16}
+                                  symbol="chevron"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="c14"
+                                  />
+                                </StyledComponent>
+                              </Icon__StyledIcon>
                             </Icon>
                           </DecorativeIcon>
                         </button>

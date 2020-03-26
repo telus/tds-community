@@ -16,6 +16,9 @@ import {
   OutlineButton,
 } from './styles'
 
+/**
+ * @version ./package.json
+ */
 const Modal = ({
   heading,
   confirmCTAText,

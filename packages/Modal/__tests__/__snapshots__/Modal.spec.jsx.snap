@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal renders 1`] = `
-.c9 {
+.c5 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c10 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,18 +18,18 @@ exports[`Modal renders 1`] = `
   flex-direction: column;
 }
 
-.c10 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.c14 {
+.c10 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c16 {
+.c12 {
   border-width: 0;
   border-radius: 4px;
   word-wrap: break-word;
@@ -66,17 +66,17 @@ exports[`Modal renders 1`] = `
   color: #fff;
 }
 
-.c16:hover {
+.c12:hover {
   box-shadow: 0 0 0 1px;
   background-color: #fff;
   color: #2B8000;
 }
 
-.c17 {
+.c13 {
   width: 100%;
 }
 
-.c12 {
+.c8 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -92,7 +92,7 @@ exports[`Modal renders 1`] = `
   text-align: left;
 }
 
-.c12 sup {
+.c8 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -100,100 +100,15 @@ exports[`Modal renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c5 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c6 {
-  background-color: #d8d8d8;
-  position: absolute;
+.c3 {
+  position: relative;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  -webkit-transform: scale(0,0);
-  -ms-transform: scale(0,0);
-  transform: scale(0,0);
-}
-
-.c3:focus .c6,
-.c3:active .c6 {
-  -webkit-transform: scale(1,1);
-  -ms-transform: scale(1,1);
-  transform: scale(1,1);
+  width: 24px;
+  height: 24px;
+  fill: #2a2c2e;
 }
 
 .c7 {
-  fill: #2a2c2e;
-  width: 1.5rem;
-  height: 1.5rem;
-  z-index: 2;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-  -webkit-transition: transform 150ms ease-in-out;
-  transition: transform 150ms ease-in-out;
-}
-
-.c4 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-  outline: none;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-  -webkit-transition: transform 150ms ease-in-out;
-  transition: transform 150ms ease-in-out;
-}
-
-.c4:focus::-moz-focus-inner {
-  border: 0;
-}
-
-.c4:hover svg {
-  -webkit-transform: scale(1.1,1.1);
-  -ms-transform: scale(1.1,1.1);
-  transform: scale(1.1,1.1);
-}
-
-.c4:active svg {
-  -webkit-transform: scale(1,1);
-  -ms-transform: scale(1,1);
-  transform: scale(1,1);
-}
-
-.c11 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -205,7 +120,7 @@ exports[`Modal renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c11 sup {
+.c7 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -213,7 +128,7 @@ exports[`Modal renders 1`] = `
   top: -0.5em;
 }
 
-.c11 > span {
+.c7 > span {
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -252,7 +167,7 @@ exports[`Modal renders 1`] = `
   margin: 1rem 0.5rem;
 }
 
-.c13 > div:first-child {
+.c9 > div:first-child {
   padding-bottom: 0rem;
 }
 
@@ -264,7 +179,7 @@ exports[`Modal renders 1`] = `
   top: 0%;
 }
 
-.c8 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -280,7 +195,7 @@ exports[`Modal renders 1`] = `
   height: 100%;
 }
 
-.c8 > div:first-child {
+.c4 > div:first-child {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -296,7 +211,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c9 {
+  .c5 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -305,7 +220,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c5 {
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
@@ -314,48 +229,27 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c14 {
+  .c10 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c10 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c12 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: auto;
     min-width: 180px;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c6 {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c7 {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c4 {
-    -webkit-transition: none;
-    transition: none;
   }
 }
 
@@ -379,7 +273,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c11 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -389,7 +283,7 @@ exports[`Modal renders 1`] = `
     flex-flow: row;
   }
 
-  .c15 > button:first-child {
+  .c11 > button:first-child {
     margin-right: 1rem;
   }
 }
@@ -438,14 +332,14 @@ exports[`Modal renders 1`] = `
       }
       forwardedRef={
         Object {
-          "current": .c9 {
+          "current": .c5 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c10 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -455,18 +349,18 @@ exports[`Modal renders 1`] = `
   flex-direction: column;
 }
 
-.c10 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.c14 {
+.c10 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c16 {
+.c12 {
   border-width: 0;
   border-radius: 4px;
   word-wrap: break-word;
@@ -503,17 +397,17 @@ exports[`Modal renders 1`] = `
   color: #fff;
 }
 
-.c16:hover {
+.c12:hover {
   box-shadow: 0 0 0 1px;
   background-color: #fff;
   color: #2B8000;
 }
 
-.c17 {
+.c13 {
   width: 100%;
 }
 
-.c12 {
+.c8 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -529,7 +423,7 @@ exports[`Modal renders 1`] = `
   text-align: left;
 }
 
-.c12 sup {
+.c8 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -537,100 +431,15 @@ exports[`Modal renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c5 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c6 {
-  background-color: #d8d8d8;
-  position: absolute;
+.c3 {
+  position: relative;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  -webkit-transform: scale(0,0);
-  -ms-transform: scale(0,0);
-  transform: scale(0,0);
-}
-
-.c3:focus .c6,
-.c3:active .c6 {
-  -webkit-transform: scale(1,1);
-  -ms-transform: scale(1,1);
-  transform: scale(1,1);
+  width: 24px;
+  height: 24px;
+  fill: #2a2c2e;
 }
 
 .c7 {
-  fill: #2a2c2e;
-  width: 1.5rem;
-  height: 1.5rem;
-  z-index: 2;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-  -webkit-transition: transform 150ms ease-in-out;
-  transition: transform 150ms ease-in-out;
-}
-
-.c4 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-  outline: none;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-  -webkit-transition: transform 150ms ease-in-out;
-  transition: transform 150ms ease-in-out;
-}
-
-.c4:focus::-moz-focus-inner {
-  border: 0;
-}
-
-.c4:hover svg {
-  -webkit-transform: scale(1.1,1.1);
-  -ms-transform: scale(1.1,1.1);
-  transform: scale(1.1,1.1);
-}
-
-.c4:active svg {
-  -webkit-transform: scale(1,1);
-  -ms-transform: scale(1,1);
-  transform: scale(1,1);
-}
-
-.c11 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -642,7 +451,7 @@ exports[`Modal renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c11 sup {
+.c7 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -650,7 +459,7 @@ exports[`Modal renders 1`] = `
   top: -0.5em;
 }
 
-.c11 > span {
+.c7 > span {
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -689,7 +498,7 @@ exports[`Modal renders 1`] = `
   margin: 1rem 0.5rem;
 }
 
-.c13 > div:first-child {
+.c9 > div:first-child {
   padding-bottom: 0rem;
 }
 
@@ -701,7 +510,7 @@ exports[`Modal renders 1`] = `
   top: 0%;
 }
 
-.c8 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -717,7 +526,7 @@ exports[`Modal renders 1`] = `
   height: 100%;
 }
 
-.c8 > div:first-child {
+.c4 > div:first-child {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -733,7 +542,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c9 {
+  .c5 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -742,7 +551,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c5 {
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
@@ -751,48 +560,27 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c14 {
+  .c10 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c10 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c12 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: auto;
     min-width: 180px;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c6 {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c7 {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c4 {
-    -webkit-transition: none;
-    transition: none;
   }
 }
 
@@ -816,7 +604,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c11 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -826,7 +614,7 @@ exports[`Modal renders 1`] = `
     flex-flow: row;
   }
 
-  .c15 > button:first-child {
+  .c11 > button:first-child {
     margin-right: 1rem;
   }
 }
@@ -841,70 +629,62 @@ exports[`Modal renders 1`] = `
               <div
                 class="c2"
               >
-                <button
-                  class="c3 c4"
+                <svg
+                  aria-hidden="true"
+                  class="c3"
+                  color="greyShark"
+                  data-testid="dependentSvg"
+                  focusable="false"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
                 >
-                  <span
-                    class="c5"
-                  >
-                    Close
-                  </span>
-                  <span
-                    class="c6"
+                  <path
+                    d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                    fill-rule="nonzero"
                   />
-                  <svg
-                    class="c7"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path
-                      d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </button>
+                </svg>
               </div>
               <div
-                class="c8"
+                class="c4"
               >
                 <div
-                  class="c9"
+                  class="c5"
                 >
                   <div
-                    class="c10"
+                    class="c6"
                   >
                     <div
                       tabindex="-1"
                     >
                       <div
-                        class="c11"
+                        class="c7"
                         data-testid="heading"
                       >
                         A heading
                       </div>
                     </div>
                     <p
-                      class="c12"
+                      class="c8"
                     >
                       Are you sure?
                     </p>
                   </div>
                   <div
-                    class="c13"
+                    class="c9"
                   >
                     <div
-                      class="c14"
+                      class="c10"
                     >
                       <div
-                        class="c15"
+                        class="c11"
                       >
                         <button
-                          class="c16"
+                          class="c12"
                           type="button"
                         >
                           <span
-                            class="c17"
+                            class="c13"
                           >
                             I am sure
                           </span>
@@ -1011,261 +791,83 @@ exports[`Modal renders 1`] = `
                   <div
                     className="c2"
                   >
-                    <Close
+                    <Dependent
                       a11yText="Close"
                       onClick={[Function]}
                     >
-                      <Button
+                      <Dependent
                         a11yText="Close"
+                        color="greyShark"
                         onClick={[Function]}
-                        tag="button"
-                        variant="default"
                       >
-                        <ThemeProvider
-                          theme={
-                            Object {
-                              "hoverBackgroundColor": "#d8d8d8",
-                              "iconColor": "#2a2c2e",
-                            }
-                          }
+                        <styled.svg
+                          a11yText="Close"
+                          color="greyShark"
+                          data-testid="dependentSvg"
+                          height="24"
+                          onClick={[Function]}
+                          viewBox="0 0 24 24"
+                          width="24"
                         >
-                          <Styled(StyledInteractiveIconButton)
-                            as="button"
-                            onClick={[Function]}
-                            variant="default"
-                          >
-                            <StyledComponent
-                              as="button"
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-htpNat",
-                                    "isStatic": false,
-                                    "lastClassName": "c4",
-                                    "rules": Array [
-                                      "padding: 0;",
-                                      "margin: 0;",
-                                      "border-width: 0;",
-                                      "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                      "color: #2a2c2e;",
-                                      "appearance: none;",
-                                      "background: none;",
-                                      "box-shadow: none;",
-                                      "cursor: pointer;",
-                                      [Function],
-                                      "width: 2.5rem;",
-                                      "height: 2.5rem;",
-                                      "display: inline-flex;",
-                                      "justify-content: center;",
-                                      "align-items: center;",
-                                      "position: relative;",
-                                      "-webkit-tap-highlight-color: transparent;",
-                                      "transition: transform 150ms ease-in-out;",
-                                      "&:hover svg {",
-                                      "transform: scale(1.1, 1.1);",
-                                      "}",
-                                      "&:active svg {",
-                                      "transform: scale(1, 1);",
-                                      "}",
-                                      "@media (prefers-reduced-motion: reduce) {",
-                                      "transition: none;",
-                                      "}",
-                                    ],
+                          <StyledComponent
+                            a11yText="Close"
+                            color="greyShark"
+                            data-testid="dependentSvg"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  Object {
+                                    "aria-hidden": true,
+                                    "focusable": false,
                                   },
-                                  "displayName": "Styled(StyledInteractiveIconButton)",
-                                  "foldedComponentIds": Array [
-                                    "c3",
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-ifAKCX",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
                                   ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-htpNat",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
+                                },
+                                "displayName": "styled.svg",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-ifAKCX",
+                                "target": "svg",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
-                              forwardedRef={
-                                Object {
-                                  "current": <button
-                                    class="c3 c4"
-                                  >
-                                    <span
-                                      class="c5"
-                                    >
-                                      Close
-                                    </span>
-                                    <span
-                                      class="c6"
-                                    />
-                                    <svg
-                                      class="c7"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      width="24"
-                                    >
-                                      <path
-                                        d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
-                                        fill-rule="nonzero"
-                                      />
-                                    </svg>
-                                  </button>,
-                                }
-                              }
+                            }
+                            forwardedRef={null}
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="c3"
+                              color="greyShark"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
                               onClick={[Function]}
-                              variant="default"
+                              viewBox="0 0 24 24"
+                              width="24"
                             >
-                              <button
-                                className="c3 c4"
-                                onClick={[Function]}
-                              >
-                                <A11yContent>
-                                  <A11yContent__StyledA11yContent>
-                                    <StyledComponent
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c5",
-                                            "rules": Array [
-                                              "position: absolute;",
-                                              "height: 1px;",
-                                              "width: 1px;",
-                                              "overflow: hidden;",
-                                              "clip: rect(1px, 1px, 1px, 1px);",
-                                            ],
-                                          },
-                                          "displayName": "A11yContent__StyledA11yContent",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
-                                    >
-                                      <span
-                                        className="c5"
-                                      >
-                                        Close
-                                      </span>
-                                    </StyledComponent>
-                                  </A11yContent__StyledA11yContent>
-                                </A11yContent>
-                                <StyledInteractiveIconHover>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
-                                          "isStatic": false,
-                                          "lastClassName": "c6",
-                                          "rules": Array [
-                                            [Function],
-                                            "@media (prefers-reduced-motion: reduce) {",
-                                            "transition: none;",
-                                            "}",
-                                            "position: absolute;",
-                                            "top: 0;",
-                                            "left: 0;",
-                                            "width: 100%;",
-                                            "height: 100%;",
-                                            "z-index: 1;",
-                                            "border-radius: 50%;",
-                                            "transition: transform 200ms ease-in-out;",
-                                            "transform: scale(0,0);",
-                                            ".c3:focus &, .c3:active & {",
-                                            "transform: scale(1,1);",
-                                            "}",
-                                          ],
-                                        },
-                                        "displayName": "StyledInteractiveIconHover",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
-                                        "target": "span",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <span
-                                      className="c6"
-                                    />
-                                  </StyledComponent>
-                                </StyledInteractiveIconHover>
-                                <Styled(StyledInteractiveIconSVG)
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  width="24"
-                                >
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bwzfXH",
-                                          "isStatic": false,
-                                          "lastClassName": "c7",
-                                          "rules": Array [
-                                            [Function],
-                                            "width: 1.5rem;",
-                                            "height: 1.5rem;",
-                                            "z-index: 2;",
-                                            "transition: transform 150ms ease-in-out;",
-                                            "@media (prefers-reduced-motion: reduce) {",
-                                            "transition: none;",
-                                            "}",
-                                          ],
-                                        },
-                                        "displayName": "Styled(StyledInteractiveIconSVG)",
-                                        "foldedComponentIds": Array [
-                                          "StyledInteractiveIconSVG-ix2erv-0",
-                                        ],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bwzfXH",
-                                        "target": "svg",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    width="24"
-                                  >
-                                    <svg
-                                      className="c7"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      width="24"
-                                    >
-                                      <path
-                                        d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
-                                        fillRule="nonzero"
-                                      />
-                                    </svg>
-                                  </StyledComponent>
-                                </Styled(StyledInteractiveIconSVG)>
-                              </button>
-                            </StyledComponent>
-                          </Styled(StyledInteractiveIconButton)>
-                        </ThemeProvider>
-                      </Button>
-                    </Close>
+                              <path
+                                d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </StyledComponent>
+                        </styled.svg>
+                      </Dependent>
+                    </Dependent>
                   </div>
                 </StyledComponent>
               </styles__CloseButtonWrapper>
@@ -1278,7 +880,7 @@ exports[`Modal renders 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styles__ModalWrapper-sc-13jcun6-6",
                         "isStatic": false,
-                        "lastClassName": "c8",
+                        "lastClassName": "c4",
                         "rules": Array [
                           "display: flex;",
                           "flex-flow: column;",
@@ -1306,45 +908,45 @@ exports[`Modal renders 1`] = `
                   forwardedRef={
                     Object {
                       "current": <div
-                        class="c8"
+                        class="c4"
                       >
                         <div
-                          class="c9"
+                          class="c5"
                         >
                           <div
-                            class="c10"
+                            class="c6"
                           >
                             <div
                               tabindex="-1"
                             >
                               <div
-                                class="c11"
+                                class="c7"
                                 data-testid="heading"
                               >
                                 A heading
                               </div>
                             </div>
                             <p
-                              class="c12"
+                              class="c8"
                             >
                               Are you sure?
                             </p>
                           </div>
                           <div
-                            class="c13"
+                            class="c9"
                           >
                             <div
-                              class="c14"
+                              class="c10"
                             >
                               <div
-                                class="c15"
+                                class="c11"
                               >
                                 <button
-                                  class="c16"
+                                  class="c12"
                                   type="button"
                                 >
                                   <span
-                                    class="c17"
+                                    class="c13"
                                   >
                                     I am sure
                                   </span>
@@ -1359,7 +961,7 @@ exports[`Modal renders 1`] = `
                   }
                 >
                   <div
-                    className="c8"
+                    className="c4"
                   >
                     <Box
                       inline={false}
@@ -1381,7 +983,7 @@ exports[`Modal renders 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "sc-bdVaJa",
                                 "isStatic": false,
-                                "lastClassName": "c14",
+                                "lastClassName": "c10",
                                 "rules": Array [
                                   [Function],
                                   [Function],
@@ -1406,7 +1008,7 @@ exports[`Modal renders 1`] = `
                           tag="div"
                         >
                           <div
-                            className="c9"
+                            className="c5"
                           >
                             <Box
                               between={3}
@@ -1429,7 +1031,7 @@ exports[`Modal renders 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-bdVaJa",
                                         "isStatic": false,
-                                        "lastClassName": "c14",
+                                        "lastClassName": "c10",
                                         "rules": Array [
                                           [Function],
                                           [Function],
@@ -1453,7 +1055,7 @@ exports[`Modal renders 1`] = `
                                   tag="div"
                                 >
                                   <div
-                                    className="c10"
+                                    className="c6"
                                   >
                                     <div
                                       tabIndex="-1"
@@ -1479,7 +1081,7 @@ exports[`Modal renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Heading__StyledHeading-mpz92r-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c11",
+                                                  "lastClassName": "c7",
                                                   "rules": Array [
                                                     "word-wrap: break-word;",
                                                     [Function],
@@ -1500,7 +1102,7 @@ exports[`Modal renders 1`] = `
                                             level="h3"
                                           >
                                             <div
-                                              className="c11"
+                                              className="c7"
                                               data-testid="heading"
                                             >
                                               A heading
@@ -1531,7 +1133,7 @@ exports[`Modal renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "Paragraph__StyledParagraph-efl81j-0",
                                                 "isStatic": false,
-                                                "lastClassName": "c12",
+                                                "lastClassName": "c8",
                                                 "rules": Array [
                                                   [Function],
                                                   "word-wrap: break-word;",
@@ -1565,7 +1167,7 @@ exports[`Modal renders 1`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="c12"
+                                            className="c8"
                                             size="medium"
                                           >
                                             Are you sure?
@@ -1586,7 +1188,7 @@ exports[`Modal renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "styles__PaddingOverride-sc-13jcun6-3",
                                       "isStatic": false,
-                                      "lastClassName": "c13",
+                                      "lastClassName": "c9",
                                       "rules": Array [
                                         "> div:first-child {",
                                         "padding-bottom: 0rem;",
@@ -1606,7 +1208,7 @@ exports[`Modal renders 1`] = `
                                 forwardedRef={null}
                               >
                                 <div
-                                  className="c13"
+                                  className="c9"
                                 >
                                   <Box
                                     inline={false}
@@ -1628,7 +1230,7 @@ exports[`Modal renders 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "sc-bdVaJa",
                                               "isStatic": false,
-                                              "lastClassName": "c14",
+                                              "lastClassName": "c10",
                                               "rules": Array [
                                                 [Function],
                                                 [Function],
@@ -1653,7 +1255,7 @@ exports[`Modal renders 1`] = `
                                         vertical={5}
                                       >
                                         <div
-                                          className="c14"
+                                          className="c10"
                                         >
                                           <styles__CTAWrapper
                                             cancelCTAExists=""
@@ -1667,7 +1269,7 @@ exports[`Modal renders 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "styles__CTAWrapper-sc-13jcun6-2",
                                                     "isStatic": false,
-                                                    "lastClassName": "c15",
+                                                    "lastClassName": "c11",
                                                     "rules": Array [
                                                       [Function],
                                                     ],
@@ -1685,7 +1287,7 @@ exports[`Modal renders 1`] = `
                                               forwardedRef={null}
                                             >
                                               <div
-                                                className="c15"
+                                                className="c11"
                                               >
                                                 <Button
                                                   onClick={[Function]}
@@ -1705,7 +1307,7 @@ exports[`Modal renders 1`] = `
                                                           "componentStyle": ComponentStyle {
                                                             "componentId": "Button__StyledButton-sa7xo3-0",
                                                             "isStatic": false,
-                                                            "lastClassName": "c16",
+                                                            "lastClassName": "c12",
                                                             "rules": Array [
                                                               "border-width: 0;",
                                                               "border-radius: 4px;",
@@ -1747,11 +1349,11 @@ exports[`Modal renders 1`] = `
                                                       forwardedRef={
                                                         Object {
                                                           "current": <button
-                                                            class="c16"
+                                                            class="c12"
                                                             type="button"
                                                           >
                                                             <span
-                                                              class="c17"
+                                                              class="c13"
                                                             >
                                                               I am sure
                                                             </span>
@@ -1763,7 +1365,7 @@ exports[`Modal renders 1`] = `
                                                       variant="primary"
                                                     >
                                                       <button
-                                                        className="c16"
+                                                        className="c12"
                                                         onClick={[Function]}
                                                         type="button"
                                                       >
@@ -1776,7 +1378,7 @@ exports[`Modal renders 1`] = `
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "Button__ButtonTextWrapper-sa7xo3-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c17",
+                                                                  "lastClassName": "c13",
                                                                   "rules": Array [
                                                                     "width: 100%;",
                                                                   ],
@@ -1794,7 +1396,7 @@ exports[`Modal renders 1`] = `
                                                             forwardedRef={null}
                                                           >
                                                             <span
-                                                              className="c17"
+                                                              className="c13"
                                                             >
                                                               I am sure
                                                             </span>

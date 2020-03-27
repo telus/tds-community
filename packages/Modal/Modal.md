@@ -33,48 +33,46 @@ There are two kinds of modals, [Content Modal](#tds-content-modal) and [Dialog M
 A content modal provides a way for the customer to access additional information without leaving the current page or view, and maintain context. It’s also an effective technique to catch the customer's attention to something vital, a specific task, or set of information.
 
 ```jsx
-const ExampleComponent = () => {
-  const [showModal, toggleModal] = React.useState('')
+const ExampleContentModal = () => {
+  const [showModal, setShowModal] = React.useState(false)
   const focusElementOnClose = React.useRef(null)
 
   const openModal = () => {
-    toggleModal(true)
+    setShowModal(true)
   }
 
   const closeModal = () => {
-    toggleModal(false)
+    setShowModal(false)
   }
 
   const proceed = () => {
     alert('modal proceed')
+    setShowModal(false)
   }
 
   return (
     <div>
       <Modal
-        heading="Are you sure you want to disable internet?"
-        bodyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        confirmCTAText="Confirm"
-        proceedModalHandler={proceed}
+        heading="Make a statement for a content modal"
+        bodyText="Use a content modal for dismissible content. A content modal provides a way for the user to access additional information without leaving the current page or view, and maintain context"
+        confirmCTAText="Primary action"
         focusElementAfterClose={focusElementOnClose}
-        closeModalHandler={closeModal}
-        modalOpen={showModal}
+        onConfirm={proceed}
+        onClose={closeModal}
+        isOpen={showModal}
       />
-      <Box inset={4}>
-        <Box between={3}>
-          <Heading level="h2">Availability Check</Heading>
-          <Paragraph>Ready to order? Click here to check if the product is available.</Paragraph>
-        </Box>
-      </Box>
-      <Box horizontal={4}>
-        <Button ref={focusElementOnClose} onClick={openModal}>
-          Open Modal
-        </Button>
+      <Box inset={4} between={3}>
+        <Heading level="h2">Content Modal</Heading>
+        <div>
+          <Button ref={focusElementOnClose} onClick={openModal}>
+            Open Modal
+          </Button>
+        </div>
       </Box>
     </div>
   )
 }
-;<ExampleComponent />
+;<ExampleContentModal />
 ```
 
 <div id="tds-dialog-modal"></div>
@@ -84,7 +82,7 @@ A dialog modal provides information to the customer and prompts them for a respo
 
 ### Usage criteria for Dialog Modals
 
-- Use dialog modals as a means for customers to safely make actions that require their full attention, such as confirmatinos of destructive actions
+- Use dialog modals as a means for customers to safely make actions that require their full attention, such as confirmations of destructive actions
 - The copy on the modal should clearly lead to confirm or reject an impending decision and if possible the outcomes
 - Limit content to less than 150 characters for the title, and less than 400 characters for body text
 - Avoid dialog modals:
@@ -93,47 +91,45 @@ A dialog modal provides information to the customer and prompts them for a respo
   - being shown consecutively
 
 ```jsx
-const ExampleDialogComponent = () => {
-  const [showModal, toggleModal] = React.useState('')
+const ExampleDialogModal = () => {
+  const [showModal, setShowModal] = React.useState(false)
   const focusElementOnClose = React.useRef(null)
 
   const openModal = () => {
-    toggleModal(true)
+    setShowModal(true)
   }
 
   const closeModal = () => {
-    toggleModal(false)
+    setShowModal(false)
   }
 
   const proceed = () => {
     alert('modal proceed')
+    setShowModal(false)
   }
 
   return (
     <div>
       <Modal
-        heading="Are you sure you want to disable internet?"
-        bodyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        confirmCTAText="Confirm"
-        cancelCTAText="Cancel"
-        proceedModalHandler={proceed}
+        heading="Ask a question that confirms the customer action which initiated the dialog modal"
+        bodyText="Use a dialog modal to provide information and prompt for a response to customer action, which may lead to a significant impact on account or lead to unrecoverable states."
+        confirmCTAText="Affrimative action"
+        cancelCTAText="Negative action"
         focusElementAfterClose={focusElementOnClose}
-        closeModalHandler={closeModal}
-        modalOpen={showModal}
+        onConfirm={proceed}
+        onClose={closeModal}
+        isOpen={showModal}
       />
-      <Box inset={4}>
-        <Box between={3}>
-          <Heading level="h2">Availability Check</Heading>
-          <Paragraph>Ready to order? Click here to check if the product is available.</Paragraph>
-        </Box>
-      </Box>
-      <Box horizontal={4}>
-        <Button ref={focusElementOnClose} onClick={openModal}>
-          Open Modal
-        </Button>
+      <Box inset={4} between={3}>
+        <Heading level="h2">Dialog Modals</Heading>
+        <div>
+          <Button ref={focusElementOnClose} onClick={openModal}>
+            Open Modal
+          </Button>
+        </div>
       </Box>
     </div>
   )
 }
-;<ExampleDialogComponent />
+;<ExampleDialogModal />
 ```

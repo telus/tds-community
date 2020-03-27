@@ -3,7 +3,7 @@ import { media } from '@tds/core-responsive'
 import { colorWhite, colorAccessibleGreen } from '@tds/core-colours'
 
 export const FullScreenOverlay = styled.div(props => {
-  if (props && props.modalOpen) {
+  if (props && props.isOpen) {
     return {
       overflow: 'scroll',
       backgroundColor: colorWhite,
@@ -114,7 +114,6 @@ export const ModalWrapper = styled.div({
   display: 'flex',
   flexFlow: 'column',
   justifyContent: 'space-between',
-  overflow: 'scroll',
   height: '100%',
   '> div:first-child': {
     height: '100%',

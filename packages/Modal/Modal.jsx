@@ -1,11 +1,14 @@
 import React, { useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
+
 import Box from '@tds/core-box'
 import Button from '@tds/core-button'
 import Paragraph from '@tds/core-paragraph'
 import { safeRest } from '@tds/util-helpers'
-import { Close } from '@tds/core-interactive-icon'
+import { Close, IconButton } from '@tds/core-interactive-icon'
 import Heading from '@tds/core-heading'
+import { withFocusTrap } from '@tds/shared-hocs'
+
 import {
   StyledModal,
   CTAWrapper,
@@ -16,6 +19,8 @@ import {
   OutlineButton,
 } from './styles'
 
+const FocusTrap = withFocusTrap('div')
+
 /**
  * @version ./package.json
  */
@@ -24,9 +29,9 @@ const Modal = ({
   confirmCTAText,
   cancelCTAText,
   bodyText,
-  modalOpen,
-  closeModalHandler,
-  proceedModalHandler,
+  isOpen,
+  onClose,
+  onConfirm,
   focusElementAfterClose,
   ...rest
 }) => {
@@ -36,31 +41,17 @@ const Modal = ({
   const firstCTA = useRef(null)
   const closeButton = useRef(null)
 
-  const tabbingHandling = e => {
-    if (document.activeElement === firstCTA.current) {
-      e.preventDefault()
-      return closeButton.current.focus()
-    }
-    if (document.activeElement === closeButton.current) {
-      e.preventDefault()
-      return firstCTA.current.focus()
-    }
-    return null
-  }
-
-  const closingModal = () => {
+  const handleClose = () => {
     if (focusElementAfterClose && focusElementAfterClose.current) {
       focusElementAfterClose.current.focus()
     }
-    return closeModalHandler()
+    return onClose()
   }
 
   const handleKeyDown = e => {
-    if (e.key === 'Escape') {
-      return closingModal()
-    }
-    if ((e.shiftKey && e.key === 'Tab') || e.key === 'Tab') {
-      return tabbingHandling(e)
+    const key = e.keyCode || e.key
+    if (key === 'Escape' || key === 27) {
+      return handleClose()
     }
     return null
   }
@@ -78,12 +69,12 @@ const Modal = ({
 
   const handleOutSideClick = e => {
     if (!modalRef.current.contains(e.target)) {
-      closingModal()
+      handleClose()
     }
   }
 
   useEffect(() => {
-    if (modalOpen) {
+    if (isOpen) {
       document.body.addEventListener('touchmove', preventScroll, { passive: false })
       document.body.addEventListener('keydown', handleKeyDown, { passive: false })
       document.body.addEventListener('mousedown', handleOutSideClick, { passive: false })
@@ -92,58 +83,59 @@ const Modal = ({
     } else {
       removeEventScrolling()
       document.body.removeEventListener('keydown', handleKeyDown)
+      document.body.removeEventListener('mousedown', handleOutSideClick)
     }
     return () => {
       removeEventScrolling()
       document.body.removeEventListener('keydown', handleKeyDown)
       document.body.removeEventListener('mousedown', handleOutSideClick)
     }
-  })
+  }, [isOpen])
 
   return (
     <React.Fragment>
-      {modalOpen && (
-        <FullScreenOverlay
-          data-testid="tds-modal-overlay"
-          {...safeRest(rest)}
-          modalOpen={modalOpen}
-          ref={ModalOverlayRef}
-        >
-          <StyledModal cancelCTAExists={cancelCTAText}>
-            {!cancelCTAText && (
+      {isOpen && (
+        <FocusTrap>
+          <FullScreenOverlay
+            data-testid="tds-modal-overlay"
+            {...safeRest(rest)}
+            isOpen={isOpen}
+            ref={ModalOverlayRef}
+          >
+            <StyledModal ref={modalRef}>
               <CloseButtonWrapper>
-                <Close onClick={closingModal} ref={closeButton} a11yText="Close" />
+                <IconButton icon={Close} onClick={handleClose} ref={closeButton} a11yText="Close" />
               </CloseButtonWrapper>
-            )}
 
-            <ModalWrapper ref={modalRef}>
-              <Box inset={5}>
-                <Box between={3}>
-                  <div ref={header} tabIndex="-1">
-                    <Heading level="h3" tag="div">
-                      {heading}
-                    </Heading>
-                  </div>
-                  <Paragraph>{bodyText}</Paragraph>
-                </Box>
-                <PaddingOverride>
-                  <Box vertical={5}>
-                    <CTAWrapper cancelCTAExists={cancelCTAText}>
-                      <Button ref={firstCTA} onClick={proceedModalHandler}>
-                        {confirmCTAText}
-                      </Button>
-                      {cancelCTAText && (
-                        <OutlineButton ref={closeButton} onClick={closingModal}>
-                          <Button>{cancelCTAText}</Button>
-                        </OutlineButton>
-                      )}
-                    </CTAWrapper>
+              <ModalWrapper>
+                <Box inset={5}>
+                  <Box between={3}>
+                    <div ref={header} tabIndex="-1">
+                      <Heading level="h3" tag="div">
+                        {heading}
+                      </Heading>
+                    </div>
+                    <Paragraph>{bodyText}</Paragraph>
                   </Box>
-                </PaddingOverride>
-              </Box>
-            </ModalWrapper>
-          </StyledModal>
-        </FullScreenOverlay>
+                  <PaddingOverride>
+                    <Box vertical={5}>
+                      <CTAWrapper cancelCTAExists={cancelCTAText}>
+                        <Button ref={firstCTA} onClick={onConfirm}>
+                          {confirmCTAText}
+                        </Button>
+                        {cancelCTAText && (
+                          <OutlineButton ref={closeButton} onClick={handleClose}>
+                            <Button>{cancelCTAText}</Button>
+                          </OutlineButton>
+                        )}
+                      </CTAWrapper>
+                    </Box>
+                  </PaddingOverride>
+                </Box>
+              </ModalWrapper>
+            </StyledModal>
+          </FullScreenOverlay>
+        </FocusTrap>
       )}
     </React.Fragment>
   )
@@ -173,29 +165,27 @@ Modal.propTypes = {
    *
    * Boolean variable that controls open and closed state of modal.
    */
-  modalOpen: PropTypes.bool,
+  isOpen: PropTypes.bool.isRequired,
   /**
    *
-   * Handler Function used to close modal when cancelCTA is null and the default Icon Close Button is being used.
+   * Use this prop to change the `open` when the customer clicks the cancel button, close button, background, or hits the escape key. Do not use this handler to perform account-related actions for the customer.
    */
-  closeModalHandler: PropTypes.func,
+  onClose: PropTypes.func.isRequired,
   /**
    *
    * Handler Function used to proceed with modal CTA.
    */
-  proceedModalHandler: PropTypes.func.isRequired,
+  onConfirm: PropTypes.func.isRequired,
   /**
    *
    * Accepts a React Element's Ref, in order to focus it after modal closes.
    */
-  focusElementAfterClose: PropTypes.oneOfType([PropTypes.shape({ current: PropTypes.any })]),
+  focusElementAfterClose: PropTypes.oneOfType([PropTypes.shape({ current: PropTypes.any })])
+    .isRequired,
 }
 
 Modal.defaultProps = {
   cancelCTAText: '',
-  modalOpen: false,
-  focusElementAfterClose: { current: null },
-  closeModalHandler: () => {},
 }
 
 export default Modal

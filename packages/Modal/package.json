@@ -33,6 +33,7 @@
     "@tds/core-interactive-icon": "^2.0.0",
     "@tds/core-paragraph": "^2.0.12",
     "@tds/core-responsive": "^1.3.3",
+    "@tds/shared-hocs": "^1.2.0",
     "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.6.2"
   }

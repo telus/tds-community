@@ -7,11 +7,13 @@ describe('Modal', () => {
   const doMount = (props = {}) =>
     mount(
       <Modal
-        modalOpen={true}
+        isOpen={true}
         heading="A heading"
         bodyText="Are you sure?"
         confirmCTAText="I am sure"
-        proceedModalHandler={() => {}}
+        focusElementAfterClose={{}}
+        onConfirm={() => {}}
+        onClose={() => {}}
         {...props}
       />
     )

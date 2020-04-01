@@ -38,8 +38,6 @@ const Modal = ({
   const ModalOverlayRef = useRef(null)
   const modalRef = useRef(null)
   const header = useRef(null)
-  const firstCTA = useRef(null)
-  const closeButton = useRef(null)
 
   const handleClose = () => {
     if (focusElementAfterClose && focusElementAfterClose.current) {
@@ -103,10 +101,6 @@ const Modal = ({
             ref={ModalOverlayRef}
           >
             <StyledModal ref={modalRef}>
-              <CloseButtonWrapper>
-                <IconButton icon={Close} onClick={handleClose} ref={closeButton} a11yText="Close" />
-              </CloseButtonWrapper>
-
               <ModalWrapper>
                 <Box inset={5}>
                   <Box between={3}>
@@ -120,19 +114,18 @@ const Modal = ({
                   <PaddingOverride>
                     <Box vertical={5}>
                       <CTAWrapper cancelCTAExists={cancelCTAText}>
-                        <Button ref={firstCTA} onClick={onConfirm}>
-                          {confirmCTAText}
-                        </Button>
+                        <Button onClick={onConfirm}>{confirmCTAText}</Button>
                         {cancelCTAText && (
-                          <OutlineButton ref={closeButton} onClick={handleClose}>
-                            <Button>{cancelCTAText}</Button>
-                          </OutlineButton>
+                          <OutlineButton onClick={handleClose}>{cancelCTAText}</OutlineButton>
                         )}
                       </CTAWrapper>
                     </Box>
                   </PaddingOverride>
                 </Box>
               </ModalWrapper>
+              <CloseButtonWrapper>
+                <IconButton icon={Close} onClick={handleClose} a11yText="Close" />
+              </CloseButtonWrapper>
             </StyledModal>
           </FullScreenOverlay>
         </FocusTrap>
@@ -168,7 +161,10 @@ Modal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   /**
    *
-   * Use this prop to change the `open` when the customer clicks the cancel button, close button, background, or hits the escape key. Do not use this handler to perform account-related actions for the customer.
+   * Use this prop to change the value of `isOpen` when the customer clicks the cancel button, close button, background, or hits the escape key.
+   * Modal will also call the ref passed to `focusElementAfterClose` to set focus to it, as `ref.current.focus()`.
+   *
+   * Do not use this handler to perform account-related actions for the customer.
    */
   onClose: PropTypes.func.isRequired,
   /**
@@ -178,7 +174,10 @@ Modal.propTypes = {
   onConfirm: PropTypes.func.isRequired,
   /**
    *
-   * Accepts a React Element's Ref, in order to focus it after modal closes.
+   * Accepts a React Element's Ref, in order to focus on it after modal closes. Modal will call your ref as `ref.current.focus()`
+   * when the Modal closes.
+   *
+   * We recommend passing the Ref of the button that was used to open the Modal.
    */
   focusElementAfterClose: PropTypes.oneOfType([PropTypes.shape({ current: PropTypes.any })])
     .isRequired,

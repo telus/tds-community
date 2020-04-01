@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
 import { colorWhite, colorAccessibleGreen } from '@tds/core-colours'
+import { StyledButton } from '@tds/core-button'
 
 export const FullScreenOverlay = styled.div(props => {
   if (props && props.isOpen) {
@@ -81,24 +82,13 @@ export const PaddingOverride = styled.div({
   },
 })
 
-export const OutlineButton = styled.button({
-  background: 'none',
-  border: 'none',
-  padding: '0rem',
-  width: '100%',
-  ...media.from('md').css({
-    width: 'auto',
-    minWidth: '180px',
-  }),
-  '> button: first-child': {
-    color: colorAccessibleGreen,
-    background: colorWhite,
-    border: `1px solid ${colorAccessibleGreen}`,
-    outline: 'none',
-    ':hover': {
-      background: colorAccessibleGreen,
-      color: colorWhite,
-    },
+export const OutlineButton = styled(StyledButton)({
+  border: `1px solid ${colorAccessibleGreen}`,
+  color: colorAccessibleGreen,
+  backgroundColor: colorWhite,
+  ':hover': {
+    background: colorAccessibleGreen,
+    color: colorWhite,
   },
 })
 

@@ -1,12 +1,1841 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal renders 1`] = `
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c8 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  border-width: 0;
+  border-radius: 4px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+  height: 3.25rem;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0 2rem;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #2B8000;
+  color: #fff;
+}
+
+.c10:hover {
+  box-shadow: 0 0 0 1px;
+  background-color: #fff;
+  color: #2B8000;
+}
+
+.c11 {
+  width: 100%;
+}
+
+.c6 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c15 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c16 {
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  -webkit-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+}
+
+.c13:focus .c16,
+.c13:active .c16 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c17 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  fill: #2a2c2e;
+}
+
+.c14 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c14:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.c14:hover svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c14:active svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c5 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c5 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c5 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.c0 {
+  overflow: scroll;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1400;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.c1 > button:first-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+
+.c7 > div:first-child {
+  padding-bottom: 0rem;
+}
+
+.c12 {
+  float: right;
+  padding: 1rem 1rem 0 0;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.c2 > div:first-child {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c16 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c14:hover > svg {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    background-color: rgba(255,255,255,0.94);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    margin: 0 auto;
+    max-width: 570px;
+    height: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
+    z-index: 2000;
+    background-color: #fff;
+    top: 29%;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+  }
+
+  .c9 > button:first-child {
+    margin-right: 1rem;
+  }
+}
+
 <Modal
   bodyText="Are you sure?"
   cancelCTAText=""
   confirmCTAText="I am sure"
+  focusElementAfterClose={Object {}}
   heading="A heading"
-  modalOpen={true}
-  proceedModalHandler={[Function]}
-/>
+  isOpen={true}
+  onClose={[Function]}
+  onConfirm={[Function]}
+>
+  <WithFocusTrap
+    a11yText="modal dialog"
+    autofocus={true}
+  >
+    <div
+      aria-label="modal dialog"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        onFocus={[Function]}
+        tabIndex={0}
+      />
+      <div>
+        <div>
+          <styles__FullScreenOverlay
+            data-testid="tds-modal-overlay"
+            isOpen={true}
+          >
+            <StyledComponent
+              data-testid="tds-modal-overlay"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styles__FullScreenOverlay-sc-13jcun6-0",
+                    "isStatic": false,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styles__FullScreenOverlay",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styles__FullScreenOverlay-sc-13jcun6-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={
+                Object {
+                  "current": .c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c8 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  border-width: 0;
+  border-radius: 4px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+  height: 3.25rem;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0 2rem;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #2B8000;
+  color: #fff;
+}
+
+.c10:hover {
+  box-shadow: 0 0 0 1px;
+  background-color: #fff;
+  color: #2B8000;
+}
+
+.c11 {
+  width: 100%;
+}
+
+.c6 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c15 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c16 {
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  -webkit-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+}
+
+.c13:focus .c16,
+.c13:active .c16 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c17 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  fill: #2a2c2e;
+}
+
+.c14 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c14:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.c14:hover svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c14:active svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c5 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c5 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c5 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.c0 {
+  overflow: scroll;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1400;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.c1 > button:first-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+
+.c7 > div:first-child {
+  padding-bottom: 0rem;
+}
+
+.c12 {
+  float: right;
+  padding: 1rem 1rem 0 0;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.c2 > div:first-child {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c16 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c14:hover > svg {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    background-color: rgba(255,255,255,0.94);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    margin: 0 auto;
+    max-width: 570px;
+    height: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
+    z-index: 2000;
+    background-color: #fff;
+    top: 29%;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+  }
+
+  .c9 > button:first-child {
+    margin-right: 1rem;
+  }
+}
+
+<div
+                    class="c0"
+                    data-testid="tds-modal-overlay"
+                  >
+                    <div
+                      class="c1"
+                    >
+                      <div
+                        class="c2"
+                      >
+                        <div
+                          class="c3"
+                        >
+                          <div
+                            class="c4"
+                          >
+                            <div
+                              tabindex="-1"
+                            >
+                              <div
+                                class="c5"
+                                data-testid="heading"
+                              >
+                                A heading
+                              </div>
+                            </div>
+                            <p
+                              class="c6"
+                            >
+                              Are you sure?
+                            </p>
+                          </div>
+                          <div
+                            class="c7"
+                          >
+                            <div
+                              class="c8"
+                            >
+                              <div
+                                class="c9"
+                              >
+                                <button
+                                  class="c10"
+                                  type="button"
+                                >
+                                  <span
+                                    class="c11"
+                                  >
+                                    I am sure
+                                  </span>
+                                </button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="c12"
+                      >
+                        <button
+                          class="c13 c14"
+                        >
+                          <span
+                            class="c15"
+                          >
+                            Close
+                          </span>
+                          <span
+                            class="c16"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="c17"
+                            color="greyShark"
+                            data-testid="dependentSvg"
+                            focusable="false"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path
+                              d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                              fill-rule="nonzero"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>,
+                }
+              }
+              isOpen={true}
+            >
+              <div
+                className="c0"
+                data-testid="tds-modal-overlay"
+              >
+                <styles__StyledModal>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styles__StyledModal-sc-13jcun6-1",
+                          "isStatic": false,
+                          "lastClassName": "c1",
+                          "rules": Array [
+                            "height: 100%;",
+                            "width: 100%;",
+                            "position: relative;",
+                            "top: 0%;",
+                            "left: 0%;",
+                            "> button:first-child {",
+                            "display: flex;",
+                            "align-self: flex-end;",
+                            "background: none;",
+                            "border: none;",
+                            "margin: 1rem 0.5rem;",
+                            "}",
+                            "@media (min-width: 768px) {",
+                            "margin: 0 auto;",
+                            "max-width: 570px;",
+                            "height: auto;",
+                            "border-radius: 0.25rem;",
+                            "box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);",
+                            "z-index: 2000;",
+                            "background-color: #fff;",
+                            "top: 29%;",
+                            "}",
+                          ],
+                        },
+                        "displayName": "styles__StyledModal",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styles__StyledModal-sc-13jcun6-1",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={
+                      Object {
+                        "current": <div
+                          class="c1"
+                        >
+                          <div
+                            class="c2"
+                          >
+                            <div
+                              class="c3"
+                            >
+                              <div
+                                class="c4"
+                              >
+                                <div
+                                  tabindex="-1"
+                                >
+                                  <div
+                                    class="c5"
+                                    data-testid="heading"
+                                  >
+                                    A heading
+                                  </div>
+                                </div>
+                                <p
+                                  class="c6"
+                                >
+                                  Are you sure?
+                                </p>
+                              </div>
+                              <div
+                                class="c7"
+                              >
+                                <div
+                                  class="c8"
+                                >
+                                  <div
+                                    class="c9"
+                                  >
+                                    <button
+                                      class="c10"
+                                      type="button"
+                                    >
+                                      <span
+                                        class="c11"
+                                      >
+                                        I am sure
+                                      </span>
+                                    </button>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="c12"
+                          >
+                            <button
+                              class="c13 c14"
+                            >
+                              <span
+                                class="c15"
+                              >
+                                Close
+                              </span>
+                              <span
+                                class="c16"
+                              />
+                              <svg
+                                aria-hidden="true"
+                                class="c17"
+                                color="greyShark"
+                                data-testid="dependentSvg"
+                                focusable="false"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <path
+                                  d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                                  fill-rule="nonzero"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <div
+                      className="c1"
+                    >
+                      <styles__ModalWrapper>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styles__ModalWrapper-sc-13jcun6-6",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "display: flex;",
+                                  "flex-flow: column;",
+                                  "justify-content: space-between;",
+                                  "height: 100%;",
+                                  "> div:first-child {",
+                                  "height: 100%;",
+                                  "display: flex;",
+                                  "flex-flow: column;",
+                                  "justify-content: space-between;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "styles__ModalWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styles__ModalWrapper-sc-13jcun6-6",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              inline={false}
+                              inset={5}
+                              tag="div"
+                            >
+                              <styled.div
+                                inline={false}
+                                inset={5}
+                                tag="div"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        [Function],
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bdVaJa",
+                                        "isStatic": false,
+                                        "lastClassName": "c8",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.div",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bdVaJa",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  inline={false}
+                                  inset={5}
+                                  tag="div"
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Box
+                                      between={3}
+                                      inline={false}
+                                      tag="div"
+                                    >
+                                      <styled.div
+                                        between={3}
+                                        inline={false}
+                                        tag="div"
+                                      >
+                                        <StyledComponent
+                                          between={3}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [
+                                                [Function],
+                                              ],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-bdVaJa",
+                                                "isStatic": false,
+                                                "lastClassName": "c8",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                ],
+                                              },
+                                              "displayName": "styled.div",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-bdVaJa",
+                                              "target": "div",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          inline={false}
+                                          tag="div"
+                                        >
+                                          <div
+                                            className="c4"
+                                          >
+                                            <div
+                                              tabIndex="-1"
+                                            >
+                                              <Heading
+                                                invert={false}
+                                                level="h3"
+                                                tag="div"
+                                              >
+                                                <Heading__StyledHeading
+                                                  as="div"
+                                                  data-testid="heading"
+                                                  invert={false}
+                                                  level="h3"
+                                                >
+                                                  <StyledComponent
+                                                    as="div"
+                                                    data-testid="heading"
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "Heading__StyledHeading-mpz92r-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c5",
+                                                          "rules": Array [
+                                                            "word-wrap: break-word;",
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "Heading__StyledHeading",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "Heading__StyledHeading-mpz92r-0",
+                                                        "target": "h1",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={null}
+                                                    invert={false}
+                                                    level="h3"
+                                                  >
+                                                    <div
+                                                      className="c5"
+                                                      data-testid="heading"
+                                                    >
+                                                      A heading
+                                                    </div>
+                                                  </StyledComponent>
+                                                </Heading__StyledHeading>
+                                              </Heading>
+                                            </div>
+                                            <Paragraph
+                                              align="left"
+                                              bold={false}
+                                              invert={false}
+                                              size="medium"
+                                            >
+                                              <Paragraph__StyledParagraph
+                                                align="left"
+                                                bold={false}
+                                                invert={false}
+                                                size="medium"
+                                              >
+                                                <StyledComponent
+                                                  align="left"
+                                                  bold={false}
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c6",
+                                                        "rules": Array [
+                                                          [Function],
+                                                          "word-wrap: break-word;",
+                                                          "padding: 0;",
+                                                          "margin: 0;",
+                                                          [Function],
+                                                          [Function],
+                                                          [Function],
+                                                          [Function],
+                                                          "sup {",
+                                                          "top: -0.5em;",
+                                                          "font-size: 0.875rem;",
+                                                          "position: relative;",
+                                                          "vertical-align: baseline;",
+                                                          "padding-left: 0.1em;",
+                                                          "}",
+                                                        ],
+                                                      },
+                                                      "displayName": "Paragraph__StyledParagraph",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                      "target": "p",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  invert={false}
+                                                  size="medium"
+                                                >
+                                                  <p
+                                                    className="c6"
+                                                    size="medium"
+                                                  >
+                                                    Are you sure?
+                                                  </p>
+                                                </StyledComponent>
+                                              </Paragraph__StyledParagraph>
+                                            </Paragraph>
+                                          </div>
+                                        </StyledComponent>
+                                      </styled.div>
+                                    </Box>
+                                    <styles__PaddingOverride>
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "styles__PaddingOverride-sc-13jcun6-3",
+                                              "isStatic": false,
+                                              "lastClassName": "c7",
+                                              "rules": Array [
+                                                "> div:first-child {",
+                                                "padding-bottom: 0rem;",
+                                                "}",
+                                              ],
+                                            },
+                                            "displayName": "styles__PaddingOverride",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "styles__PaddingOverride-sc-13jcun6-3",
+                                            "target": "div",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                      >
+                                        <div
+                                          className="c7"
+                                        >
+                                          <Box
+                                            inline={false}
+                                            tag="div"
+                                            vertical={5}
+                                          >
+                                            <styled.div
+                                              inline={false}
+                                              tag="div"
+                                              vertical={5}
+                                            >
+                                              <StyledComponent
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [
+                                                      [Function],
+                                                    ],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "sc-bdVaJa",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c8",
+                                                      "rules": Array [
+                                                        [Function],
+                                                        [Function],
+                                                        [Function],
+                                                        [Function],
+                                                        [Function],
+                                                      ],
+                                                    },
+                                                    "displayName": "styled.div",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "sc-bdVaJa",
+                                                    "target": "div",
+                                                    "toString": [Function],
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
+                                                inline={false}
+                                                tag="div"
+                                                vertical={5}
+                                              >
+                                                <div
+                                                  className="c8"
+                                                >
+                                                  <styles__CTAWrapper
+                                                    cancelCTAExists=""
+                                                  >
+                                                    <StyledComponent
+                                                      cancelCTAExists=""
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "styles__CTAWrapper-sc-13jcun6-2",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c9",
+                                                            "rules": Array [
+                                                              [Function],
+                                                            ],
+                                                          },
+                                                          "displayName": "styles__CTAWrapper",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "styles__CTAWrapper-sc-13jcun6-2",
+                                                          "target": "div",
+                                                          "toString": [Function],
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                      forwardedRef={null}
+                                                    >
+                                                      <div
+                                                        className="c9"
+                                                      >
+                                                        <Button
+                                                          onClick={[Function]}
+                                                          type="button"
+                                                          variant="primary"
+                                                        >
+                                                          <Button__StyledButton
+                                                            onClick={[Function]}
+                                                            type="button"
+                                                            variant="primary"
+                                                          >
+                                                            <StyledComponent
+                                                              forwardedComponent={
+                                                                Object {
+                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                  "attrs": Array [],
+                                                                  "componentStyle": ComponentStyle {
+                                                                    "componentId": "Button__StyledButton-sa7xo3-0",
+                                                                    "isStatic": false,
+                                                                    "lastClassName": "c10",
+                                                                    "rules": Array [
+                                                                      "border-width: 0;",
+                                                                      "border-radius: 4px;",
+                                                                      "word-wrap: break-word;",
+                                                                      "font-size: 1rem;",
+                                                                      "letter-spacing: -0.8px;",
+                                                                      "line-height: 1.5;",
+                                                                      "word-wrap: break-word;",
+                                                                      "font-weight: 700;",
+                                                                      "height: 3.25rem;",
+                                                                      "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                                                      "margin: 0;",
+                                                                      "padding: 0 2rem;",
+                                                                      "cursor: pointer;",
+                                                                      "background: none;",
+                                                                      "transition: background 0.2s;",
+                                                                      "display: flex;",
+                                                                      "width: 100%;",
+                                                                      "align-items: center;",
+                                                                      "justify-content: center;",
+                                                                      "@media (min-width: 768px) {",
+                                                                      "display: inline-flex;",
+                                                                      "width: auto;",
+                                                                      "min-width: 180px;",
+                                                                      "}",
+                                                                      [Function],
+                                                                    ],
+                                                                  },
+                                                                  "displayName": "Button__StyledButton",
+                                                                  "foldedComponentIds": Array [],
+                                                                  "render": [Function],
+                                                                  "styledComponentId": "Button__StyledButton-sa7xo3-0",
+                                                                  "target": "button",
+                                                                  "toString": [Function],
+                                                                  "warnTooManyClasses": [Function],
+                                                                  "withComponent": [Function],
+                                                                }
+                                                              }
+                                                              forwardedRef={null}
+                                                              onClick={[Function]}
+                                                              type="button"
+                                                              variant="primary"
+                                                            >
+                                                              <button
+                                                                className="c10"
+                                                                onClick={[Function]}
+                                                                type="button"
+                                                              >
+                                                                <Button__ButtonTextWrapper>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "Button__ButtonTextWrapper-sa7xo3-1",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c11",
+                                                                          "rules": Array [
+                                                                            "width: 100%;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "Button__ButtonTextWrapper",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "Button__ButtonTextWrapper-sa7xo3-1",
+                                                                        "target": "span",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <span
+                                                                      className="c11"
+                                                                    >
+                                                                      I am sure
+                                                                    </span>
+                                                                  </StyledComponent>
+                                                                </Button__ButtonTextWrapper>
+                                                              </button>
+                                                            </StyledComponent>
+                                                          </Button__StyledButton>
+                                                        </Button>
+                                                      </div>
+                                                    </StyledComponent>
+                                                  </styles__CTAWrapper>
+                                                </div>
+                                              </StyledComponent>
+                                            </styled.div>
+                                          </Box>
+                                        </div>
+                                      </StyledComponent>
+                                    </styles__PaddingOverride>
+                                  </div>
+                                </StyledComponent>
+                              </styled.div>
+                            </Box>
+                          </div>
+                        </StyledComponent>
+                      </styles__ModalWrapper>
+                      <styles__CloseButtonWrapper>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styles__CloseButtonWrapper-sc-13jcun6-5",
+                                "isStatic": false,
+                                "lastClassName": "c12",
+                                "rules": Array [
+                                  "float: right;",
+                                  "padding: 1rem 1rem 0 0;",
+                                  "position: absolute;",
+                                  "right: 0%;",
+                                  "top: 0%;",
+                                ],
+                              },
+                              "displayName": "styles__CloseButtonWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styles__CloseButtonWrapper-sc-13jcun6-5",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c12"
+                          >
+                            <IconButton
+                              a11yText="Close"
+                              icon={[Function]}
+                              onClick={[Function]}
+                              tag="button"
+                              variant="default"
+                            >
+                              <ThemeProvider
+                                theme={
+                                  Object {
+                                    "hoverBackgroundColor": "#d8d8d8",
+                                  }
+                                }
+                              >
+                                <Styled(StyledInteractiveIconButton)
+                                  as="button"
+                                  onClick={[Function]}
+                                  variant="default"
+                                >
+                                  <StyledComponent
+                                    as="button"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-EHOje",
+                                          "isStatic": false,
+                                          "lastClassName": "c14",
+                                          "rules": Array [
+                                            "padding: 0;",
+                                            "margin: 0;",
+                                            "border-width: 0;",
+                                            "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                            "color: #2a2c2e;",
+                                            "appearance: none;",
+                                            "background: none;",
+                                            "box-shadow: none;",
+                                            "cursor: pointer;",
+                                            [Function],
+                                            "width: 2.5rem;",
+                                            "height: 2.5rem;",
+                                            "display: inline-flex;",
+                                            "justify-content: center;",
+                                            "align-items: center;",
+                                            "position: relative;",
+                                            "-webkit-tap-highlight-color: transparent;",
+                                            "&:hover svg {",
+                                            "transition: transform 150ms ease-in-out;",
+                                            "transform: scale(1.1, 1.1);",
+                                            "}",
+                                            "&:active svg {",
+                                            "transition: transform 150ms ease-in-out;",
+                                            "transform: scale(1, 1);",
+                                            "}",
+                                            "&:hover > svg {",
+                                            "@media (prefers-reduced-motion: reduce) {",
+                                            "transition: none;",
+                                            "}",
+                                            "}",
+                                          ],
+                                        },
+                                        "displayName": "Styled(StyledInteractiveIconButton)",
+                                        "foldedComponentIds": Array [
+                                          "c13",
+                                        ],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-EHOje",
+                                        "target": "button",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    onClick={[Function]}
+                                    variant="default"
+                                  >
+                                    <button
+                                      className="c13 c14"
+                                      onClick={[Function]}
+                                    >
+                                      <A11yContent>
+                                        <A11yContent__StyledA11yContent>
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c15",
+                                                  "rules": Array [
+                                                    "position: absolute;",
+                                                    "height: 1px;",
+                                                    "width: 1px;",
+                                                    "overflow: hidden;",
+                                                    "clip: rect(1px, 1px, 1px, 1px);",
+                                                  ],
+                                                },
+                                                "displayName": "A11yContent__StyledA11yContent",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                                "target": "span",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                          >
+                                            <span
+                                              className="c15"
+                                            >
+                                              Close
+                                            </span>
+                                          </StyledComponent>
+                                        </A11yContent__StyledA11yContent>
+                                      </A11yContent>
+                                      <StyledInteractiveIconHover>
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c16",
+                                                "rules": Array [
+                                                  [Function],
+                                                  "@media (prefers-reduced-motion: reduce) {",
+                                                  "transition: none;",
+                                                  "}",
+                                                  "position: absolute;",
+                                                  "top: 0;",
+                                                  "left: 0;",
+                                                  "width: 100%;",
+                                                  "height: 100%;",
+                                                  "border-radius: 50%;",
+                                                  "transition: transform 200ms ease-in-out;",
+                                                  "transform: scale(0,0);",
+                                                  ".c13:focus &, .c13:active & {",
+                                                  "transform: scale(1,1);",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "StyledInteractiveIconHover",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <span
+                                            className="c16"
+                                          />
+                                        </StyledComponent>
+                                      </StyledInteractiveIconHover>
+                                      <Dependent
+                                        color="greyShark"
+                                      >
+                                        <Dependent
+                                          color="greyShark"
+                                        >
+                                          <styled.svg
+                                            color="greyShark"
+                                            data-testid="dependentSvg"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                          >
+                                            <StyledComponent
+                                              color="greyShark"
+                                              data-testid="dependentSvg"
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [
+                                                    Object {
+                                                      "aria-hidden": true,
+                                                      "focusable": false,
+                                                    },
+                                                  ],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-ifAKCX",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c17",
+                                                    "rules": Array [
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.svg",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-ifAKCX",
+                                                  "target": "svg",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              width="24"
+                                            >
+                                              <svg
+                                                aria-hidden={true}
+                                                className="c17"
+                                                color="greyShark"
+                                                data-testid="dependentSvg"
+                                                focusable={false}
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                              >
+                                                <path
+                                                  d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                                                  fillRule="nonzero"
+                                                />
+                                              </svg>
+                                            </StyledComponent>
+                                          </styled.svg>
+                                        </Dependent>
+                                      </Dependent>
+                                    </button>
+                                  </StyledComponent>
+                                </Styled(StyledInteractiveIconButton)>
+                              </ThemeProvider>
+                            </IconButton>
+                          </div>
+                        </StyledComponent>
+                      </styles__CloseButtonWrapper>
+                    </div>
+                  </StyledComponent>
+                </styles__StyledModal>
+              </div>
+            </StyledComponent>
+          </styles__FullScreenOverlay>
+        </div>
+      </div>
+      <div
+        onFocus={[Function]}
+        tabIndex={0}
+      />
+    </div>
+  </WithFocusTrap>
+</Modal>
 `;

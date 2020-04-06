@@ -26,7 +26,7 @@ const InputGroup = ({
 }) => {
   const inputRef = createRef()
   const [inputValue, setInputValue] = useState('')
-  const inputId = useMemo(() => (label ? uniqueId(label) : id), [label, id])
+  const inputId = useMemo(() => id || (label && uniqueId(label)) || undefined, [label, id])
 
   useEffect(() => {
     if (defaultValue) {

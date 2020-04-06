@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, createRef } from 'react'
+import React, { useState, useEffect, createRef } from 'react'
 import PropTypes from 'prop-types'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import { IconButton, Close } from '@tds/core-interactive-icon'
@@ -6,7 +6,7 @@ import A11yContent from '@tds/core-a11y-content'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Strong from '@tds/core-strong'
-import { uniqueId, safeRest } from '@tds/util-helpers'
+import { safeRest } from '@tds/util-helpers'
 import { InputGroupStyle, LabelStyle } from './style'
 
 /**
@@ -26,7 +26,6 @@ const InputGroup = ({
 }) => {
   const inputRef = createRef()
   const [inputValue, setInputValue] = useState('')
-  const inputId = useMemo(() => (label ? uniqueId(label) : id), [label, id])
 
   useEffect(() => {
     if (defaultValue) {
@@ -37,7 +36,7 @@ const InputGroup = ({
   return (
     <Box between={1}>
       {label && (
-        <LabelStyle htmlFor={inputId}>
+        <LabelStyle htmlFor={id}>
           <Text>
             <Strong>{label}</Strong>
           </Text>
@@ -47,7 +46,7 @@ const InputGroup = ({
       <InputGroupStyle hasValue={!!inputValue}>
         <input
           {...safeRest(rest)}
-          id={inputId}
+          id={id}
           value={inputValue}
           onChange={e => {
             setInputValue(e.target.value)
@@ -79,7 +78,7 @@ InputGroup.propTypes = {
   /**
    * The unique identifier
    */
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
   /**
    * The close a11y test
    */
@@ -115,7 +114,6 @@ InputGroup.propTypes = {
 }
 
 InputGroup.defaultProps = {
-  id: '',
   closeA11yText: 'Close',
   defaultValue: '',
   buttonText: '',

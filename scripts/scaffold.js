@@ -51,13 +51,16 @@ const startScaffold = async () => {
   const isStableJourney = await getJourney()
   let basePath = ''
   let version = ''
+  let configPath = ''
 
   if (isStableJourney) {
     basePath = `packages/${componentName}`
     version = '1.0.0'
+    configPath = '../../'
   } else {
-    basePath = `packages/private/${componentName}`
+    basePath = `packages/_private/${componentName}`
     version = '0.1.0'
+    configPath = '../../../'
   }
 
   const scaffold = (template, destination) => {
@@ -66,6 +69,7 @@ const startScaffold = async () => {
       .replace(/\$COMPONENT_CAMEL\$/g, camel(componentName))
       .replace(/\$COMPONENT_KEBAB\$/g, kebab(componentName))
       .replace(/\$VERSION_START\$/g, version)
+      .replace(/\$CONFIG_PATH\$/g, configPath)
 
     writeFileSync(resolve(basePath, destination), contents)
 

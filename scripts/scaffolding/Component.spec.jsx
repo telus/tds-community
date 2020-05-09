@@ -12,12 +12,6 @@ describe('$COMPONENT$', () => {
     expect($COMPONENT_CAMEL$).toMatchSnapshot()
   })
 
-  it('does other things', () => {
-    const $COMPONENT_CAMEL$ = doShallow()
-
-    expect($COMPONENT_CAMEL$).toExist()
-  })
-
   it('passes additional attributes to the element', () => {
     const $COMPONENT_CAMEL$ = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 

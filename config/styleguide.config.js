@@ -126,7 +126,7 @@ module.exports = {
     },
     {
       name: 'Private Components',
-      components: path.resolve('packages/private/**/*.jsx'),
+      components: path.resolve('packages/_private/**/*.jsx'),
     },
   ],
 

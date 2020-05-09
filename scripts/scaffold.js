@@ -7,35 +7,84 @@
 const { readFileSync, writeFileSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
 const { camel, kebab } = require('case')
+const readline = require('readline')
 
-const componentName = process.argv[2]
+const read = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+})
 
-if (!componentName) {
-  console.error('Usage: node scaffold.js <componentName>')
-  process.exit(1)
+let componentName = process.argv[2]
+
+const getComponentName = async () => {
+  return new Promise(res => {
+    read.question(
+      "What is the name of your component?\nPlease use PascalCase. (E.g. 'ToggleSwitch' will becomes `@tds/community-toggle-switch` when deployed to npm)\nName: ",
+      answer => {
+        componentName = answer
+        res()
+      }
+    )
+  })
 }
 
-const basePath = `packages/${componentName}`
-
-const scaffold = (template, destination) => {
-  const contents = readFileSync(resolve('scripts', 'scaffolding', template), 'utf8')
-    .replace(/\$COMPONENT\$/g, componentName)
-    .replace(/\$COMPONENT_CAMEL\$/g, camel(componentName))
-    .replace(/\$COMPONENT_KEBAB\$/g, kebab(componentName))
-
-  writeFileSync(resolve(basePath, destination), contents)
-
-  console.log(`Created ${basePath}/${destination}`)
+const getJourney = async () => {
+  return new Promise(res => {
+    read.question(
+      'Are you building a stable component, starting at version 1.0.0?\nEnter "no" to start at version 0.1.0\n(yes/no): ',
+      answer => {
+        const a = answer.toLowerCase()
+        if (a === 'yes' || a === 'y') {
+          res(true)
+        }
+        res(false)
+      }
+    )
+  })
 }
 
-mkdirSync(resolve(basePath))
-mkdirSync(resolve(basePath, '__tests__'))
+const startScaffold = async () => {
+  if (!componentName) {
+    await getComponentName()
+  }
 
-scaffold('Component.jsx', `${componentName}.jsx`)
-scaffold('Component.md', `${componentName}.md`)
-scaffold('Component.spec.jsx', `__tests__/${componentName}.spec.jsx`)
-scaffold('index.cjs.js', 'index.cjs.js')
-scaffold('index.es.js', 'index.es.js')
-scaffold('package.json', 'package.json')
-scaffold('README.md', 'README.md')
-scaffold('rollup.config.js', 'rollup.config.js')
+  const isStableJourney = await getJourney()
+  let basePath = ''
+  let version = ''
+
+  if (isStableJourney) {
+    basePath = `packages/${componentName}`
+    version = '1.0.0'
+  } else {
+    basePath = `packages/private/${componentName}`
+    version = '0.1.0'
+  }
+
+  const scaffold = (template, destination) => {
+    const contents = readFileSync(resolve('scripts', 'scaffolding', template), 'utf8')
+      .replace(/\$COMPONENT\$/g, componentName)
+      .replace(/\$COMPONENT_CAMEL\$/g, camel(componentName))
+      .replace(/\$COMPONENT_KEBAB\$/g, kebab(componentName))
+      .replace(/\$VERSION_START\$/g, version)
+
+    writeFileSync(resolve(basePath, destination), contents)
+
+    console.log(`Created ${basePath}/${destination}`)
+  }
+
+  mkdirSync(resolve(basePath), { recursive: true })
+  mkdirSync(resolve(basePath, '__tests__'), { recursive: true })
+
+  scaffold('Component.jsx', `${componentName}.jsx`)
+  scaffold('Component.md', `${componentName}.md`)
+  scaffold('Component.spec.jsx', `__tests__/${componentName}.spec.jsx`)
+  scaffold('index.cjs.js', 'index.cjs.js')
+  scaffold('index.es.js', 'index.es.js')
+  scaffold('package.json', 'package.json')
+  scaffold('README.md', 'README.md')
+  scaffold('rollup.config.js', 'rollup.config.js')
+
+  read.close()
+}
+
+startScaffold()

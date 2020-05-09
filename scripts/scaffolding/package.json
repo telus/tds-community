@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-$COMPONENT_KEBAB$",
-  "version": "1.0.0-0",
+  "version": "$VERSION_START$-0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

@@ -1,3 +1,4 @@
+import path from 'path'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 
@@ -36,7 +37,7 @@ export default opts => {
         extensions: ['.js', '.jsx'],
       }),
       commonjs({
-        include: '../../node_modules/**',
+        include: path.resolve(process.env.LERNA_ROOT_PATH, 'node_modules/**'),
       }),
       options.css &&
         postcss({
@@ -49,8 +50,8 @@ export default opts => {
         }),
       babel({
         runtimeHelpers: true,
-        exclude: '../../node_modules/**',
-        configFile: '../../babel.config.js',
+        exclude: path.resolve(process.env.LERNA_ROOT_PATH, 'node_modules/**'),
+        configFile: path.resolve(process.env.LERNA_ROOT_PATH, 'babel.config.js'),
       }),
       ...(options.plugins ? options.plugins : []),
     ],

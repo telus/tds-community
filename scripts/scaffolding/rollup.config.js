@@ -1,4 +1,4 @@
-import configure from '../../config/rollup.config'
+import configure from '$CONFIG_PATH$config/rollup.config'
 import { dependencies } from './package.json'
 
 export default configure({

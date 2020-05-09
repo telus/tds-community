@@ -43,7 +43,7 @@ jobs:
       - checkout
       - run:
           name: Bootstrap
-          command: npm run bootstrap:ci
+          command: npm run bootstrap
       - persist
 
   lint:

@@ -91,7 +91,7 @@ module.exports = {
         path.resolve('packages/Progress/**/*.jsx'),
         path.resolve('packages/SideNavigation/**/*.jsx'),
         path.resolve('packages/Tags/**/*.jsx'),
-        path.resolve('packages/private/**/*.jsx'),
+        path.resolve('packages/_private/**/*.jsx'),
       ],
       sections: [
         {

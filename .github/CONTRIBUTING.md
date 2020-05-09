@@ -11,11 +11,11 @@ Thank you for your interest in contributing! There are a few ways you can help:
 
 ## Contents
 
-- [Community component criteria](#community-component-criteria)
 - [TDS contributing standards](#tds-contributing-standards)
 - [Process](#process)
 - [Designer guide](#designer-guide)
 - [Developer guide](#developer-guide)
+  - [Codebase overview](#codebase-overview)
 - [Making pull requests](#making-pull-requests)
 
 ## TDS contributing standards

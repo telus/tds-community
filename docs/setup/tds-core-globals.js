@@ -14,8 +14,11 @@ import Text from '@tds/core-text'
 import UnorderedList from '@tds/core-unordered-list'
 import Image from '@tds/core-image'
 import Spinner from '@tds/core-spinner'
+import { Edit, Print } from '@tds/core-interactive-icon'
+import A11yContent from '@tds/core-a11y-content'
 
 Object.assign(global, {
+  A11yContent,
   Box,
   Card,
   ChevronLink,
@@ -32,4 +35,6 @@ Object.assign(global, {
   Image,
   Button,
   Spinner,
+  Edit,
+  Print,
 })

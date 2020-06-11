@@ -55,10 +55,6 @@ describe('QuietButton', () => {
     expect(button.text()).toEqual('Text')
   })
 
-  it('should throw an error if no children are passed', () => {
-    expect(() => shallow(<QuietButton />)).toThrow()
-  })
-
   it('should do something when clicked', () => {
     const mockCallBack = jest.fn()
     const button = shallow(<QuietButton onClick={mockCallBack}>Text</QuietButton>)

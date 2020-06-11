@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 const baseButton = {
   boxSizing: 'border-box',
-  margin: '2px 0',
+  margin: '2px',
   padding: '0px 16px 0px 16px',
   cursor: 'pointer',
   background: '#FFFFFF',
@@ -23,13 +23,13 @@ const baseButton = {
     midWidth: '72px',
   },
   '&:active': {
-    border: '3px solid #54595F',
+    border: '1px solid #54595F',
+    boxShadow: '0 0 0 2px #54595F',
     background: '#D8D8D8',
   },
   '&:focus': {
     background: '#FFFFFF',
-    border: '2px solid white',
-    boxShadow: '0 0 0 3px #71757B, 0 0 0 1px #54595F inset',
+    boxShadow: '0 0 0 2px #71757B,0 0 0 2px #FFFFFF inset, 0 0 0 3px #54595F inset',
     outline: 'none !important',
   },
   '@media (prefers-reduced-motion: reduce)': {
@@ -51,7 +51,7 @@ const spaceWrapper = {
 
 const StyledQuietButton = styled.button(baseButton, small, borders.rounded)
 const ButtonWrapper = styled.div(btnWrapper)
-export const SpaceWrapper = styled.div(spaceWrapper)
+const SpaceWrapper = styled.div(spaceWrapper)
 
 const spaceFunction = childrenArray => {
   return childrenArray.map((child, index) => {
@@ -61,17 +61,16 @@ const spaceFunction = childrenArray => {
     return <SpaceWrapper key={child || child.type.name}>{child}</SpaceWrapper>
   })
 }
-
 /**
  * The quiet button is used for optional actions, and only comes in one variant and size
  * @version ./package.json
  */
+
 const QuietButton = ({ children, ...rest }) => {
-  if (!children) throw new Error('QuietButton component requires children')
   const childrenArray = Array.isArray(children) ? children : [children]
 
   return (
-    <StyledQuietButton {...safeRest(rest)}>
+    <StyledQuietButton type="button" {...safeRest(rest)}>
       <ButtonWrapper>{spaceFunction(childrenArray)}</ButtonWrapper>
     </StyledQuietButton>
   )
@@ -81,6 +80,7 @@ QuietButton.propTypes = {
   /**
    * Button children.
    */
+
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 }
 

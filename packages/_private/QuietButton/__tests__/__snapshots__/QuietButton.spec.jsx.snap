@@ -3,7 +3,7 @@
 exports[`QuietButton renders 1`] = `
 .c0 {
   box-sizing: border-box;
-  margin: 2px 0;
+  margin: 2px;
   padding: 0px 16px 0px 16px;
   cursor: pointer;
   background: #FFFFFF;
@@ -31,14 +31,14 @@ exports[`QuietButton renders 1`] = `
 }
 
 .c0:active {
-  border: 3px solid #54595F;
+  border: 1px solid #54595F;
+  box-shadow: 0 0 0 2px #54595F;
   background: #D8D8D8;
 }
 
 .c0:focus {
   background: #FFFFFF;
-  border: 2px solid white;
-  box-shadow: 0 0 0 3px #71757B,0 0 0 1px #54595F inset;
+  box-shadow: 0 0 0 2px #71757B,0 0 0 2px #FFFFFF inset,0 0 0 3px #54595F inset;
   outline: none !important;
 }
 
@@ -73,7 +73,9 @@ exports[`QuietButton renders 1`] = `
 }
 
 <QuietButton>
-  <QuietButton__StyledQuietButton>
+  <QuietButton__StyledQuietButton
+    type="button"
+  >
     <StyledComponent
       forwardedComponent={
         Object {
@@ -85,7 +87,7 @@ exports[`QuietButton renders 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "box-sizing: border-box;",
-              "margin: 2px 0;",
+              "margin: 2px;",
               "padding: 0px 16px 0px 16px;",
               "cursor: pointer;",
               "background: #FFFFFF;",
@@ -101,13 +103,13 @@ exports[`QuietButton renders 1`] = `
               "mid-width: 72px;",
               "}",
               "&:active {",
-              "border: 3px solid #54595F;",
+              "border: 1px solid #54595F;",
+              "box-shadow: 0 0 0 2px #54595F;",
               "background: #D8D8D8;",
               "}",
               "&:focus {",
               "background: #FFFFFF;",
-              "border: 2px solid white;",
-              "box-shadow: 0 0 0 3px #71757B, 0 0 0 1px #54595F inset;",
+              "box-shadow: 0 0 0 2px #71757B,0 0 0 2px #FFFFFF inset, 0 0 0 3px #54595F inset;",
               "outline: none !important;",
               "}",
               "@media (prefers-reduced-motion: reduce) {",
@@ -131,9 +133,11 @@ exports[`QuietButton renders 1`] = `
         }
       }
       forwardedRef={null}
+      type="button"
     >
       <button
         className="c0"
+        type="button"
       >
         <QuietButton__ButtonWrapper>
           <StyledComponent

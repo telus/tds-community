@@ -53,11 +53,6 @@ const StyledQuietButton = styled.button(baseButton, small, borders.rounded)
 const ButtonWrapper = styled.div(btnWrapper)
 export const SpaceWrapper = styled.div(spaceWrapper)
 
-/**
- * The quiet button is used for optional actions, and only comes in one variant and size
- * @version ./package.json
- */
-
 const spaceFunction = childrenArray => {
   return childrenArray.map((child, index) => {
     if (child.type && child.type.name !== 'A11yContent' && index === childrenArray.length - 1) {
@@ -67,6 +62,10 @@ const spaceFunction = childrenArray => {
   })
 }
 
+/**
+ * The quiet button is used for optional actions, and only comes in one variant and size
+ * @version ./package.json
+ */
 const QuietButton = ({ children, ...rest }) => {
   if (!children) throw new Error('QuietButton component requires children')
   const childrenArray = Array.isArray(children) ? children : [children]

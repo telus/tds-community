@@ -53,24 +53,23 @@ TDS Community features two **contribution journeys**:
 **What are v1 community components?**
 
 - Components built with the goal of being highly reusable
-- Coded components begin at v1.Y.Z to indicate most customer experience concerns were addressed by the point of release
+- Coded components begin at v1.y.z to indicate most customer experience concerns were addressed by the point of release
 - Follows all the checks and balances as described in the [TDS contributing guide](https://tds.telus.com/contributing/contributing.html)
 
 **How do I contribute v1 components?**
 
 - Follow the [process outlined in tds-community](https://github.com/telus/tds-community/blob/master/.github/CONTRIBUTING.md)
 
-### v0 Private components (new in 2020!)
+### v0 Beta components (new in 2020!)
 
-**What are private components?**
+**What are beta components?**
 
-- Components being used by TELUS teams that were stored in their private repositories or Sketch documents and are not easily discoverable
-- They were built to get to a sharable state as quickly as possible
-- Coded components are versioned at v0.Y.Z to indicate more work needs to be done to address all customer experience concerns
+- Components that were built to get to a sharable state as quickly as possible
+- Coded components are versioned at v0.y.z to indicate more work needs to be done to address all customer experience concerns
 - Follows checks and balances by the respective outcome team contributing the component
 - Built with the intention of iterating to reach a similar state as v1 components
 
-**How do I contribute private components?**
+**How do I contribute beta components?**
 
 In all cases, reach out to the [Digital Platform Ambassadors (DPA)](https://github.com/orgs/telus/teams/digital-platform-ambassadors/members) for any required assistance. They are available in **#dpa-community** on Slack.
 
@@ -80,7 +79,7 @@ Designers should:
 
 Developers must:
 
-1. Contribute private components to tds-community on GitHub
+1. Contribute beta components to tds-community on GitHub
 2. Start by creating a branch, and [scaffold your component](https://tds.telus.com/contributing/developer-guide.html#write-some-code)
 3. Follow [Conventional commits](https://tds.telus.com/contributing/developer-guide.html#make-a-commit)
 4. If you need to add dependencies or work with the monorepo in any capacity, please note these [helpful lerna commands](https://tds.telus.com/contributing/developer-guide.html#helpful-lerna-commands)

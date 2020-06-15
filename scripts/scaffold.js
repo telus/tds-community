@@ -19,7 +19,7 @@ let componentName = process.argv[2]
 const getComponentName = async () => {
   return new Promise(res => {
     read.question(
-      "What is the name of your component?\nPlease use PascalCase. (E.g. 'ToggleSwitch' will becomes `@tds/community-toggle-switch` when deployed to npm)\nName: ",
+      "What is the name of your component?\nPlease use PascalCase. (E.g. 'ToggleSwitch' will become `@tds/community-toggle-switch` when deployed to npm)\nName: ",
       answer => {
         componentName = answer
         res()
@@ -31,7 +31,7 @@ const getComponentName = async () => {
 const getJourney = async () => {
   return new Promise(res => {
     read.question(
-      'Are you building a stable component, starting at version 1.0.0?\nEnter "no" to start at version 0.1.0\n(yes/no): ',
+      'Are you building a stable component, starting at version 1.0.0?\nEnter "no" to start building a beta component, starting at version 0.1.0\n(yes/no): ',
       answer => {
         const a = answer.toLowerCase()
         if (a === 'yes' || a === 'y') {
@@ -49,18 +49,17 @@ const startScaffold = async () => {
   }
 
   const isStableJourney = await getJourney()
-  let basePath = ''
+  const basePath = `packages/${componentName}`
+  let visibleName = ''
   let version = ''
-  let configPath = ''
+  let configPath = '../../'
 
   if (isStableJourney) {
-    basePath = `packages/${componentName}`
     version = '1.0.0'
     configPath = '../../'
   } else {
-    basePath = `packages/_private/${componentName}`
     version = '0.1.0'
-    configPath = '../../../'
+    visibleName = `\n * @visibleName ${componentName} (beta)`
   }
 
   const scaffold = (template, destination) => {
@@ -70,6 +69,7 @@ const startScaffold = async () => {
       .replace(/\$COMPONENT_KEBAB\$/g, kebab(componentName))
       .replace(/\$VERSION_START\$/g, version)
       .replace(/\$CONFIG_PATH\$/g, configPath)
+      .replace(/\$VISIBLE_NAME\$/g, visibleName)
 
     writeFileSync(resolve(basePath, destination), contents)
 

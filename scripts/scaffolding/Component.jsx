@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { safeRest } from '@tds/util-helpers'
 
 /**
- * @version ./package.json
+ * @version ./package.json$VISIBLE_NAME$
  */
 const $COMPONENT$ = ({ prop1, prop2, ...rest }) => <div {...safeRest(rest)} />
 

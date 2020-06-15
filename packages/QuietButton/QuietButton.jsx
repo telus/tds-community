@@ -64,6 +64,7 @@ const spaceFunction = childrenArray => {
 /**
  * The quiet button is used for optional actions, and only comes in one variant and size
  * @version ./package.json
+ * @visibleName QuietButton (beta)
  */
 
 const QuietButton = ({ children, ...rest }) => {

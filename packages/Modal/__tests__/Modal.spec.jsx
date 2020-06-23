@@ -1,4 +1,5 @@
 import React from 'react'
+import Box from '@tds/core-box'
 import { mount } from 'enzyme'
 
 import Modal from '../Modal'
@@ -45,6 +46,27 @@ describe('Modal', () => {
 
     expect(modal).not.toHaveProp('className', 'my-custom-class')
     expect(modal).not.toHaveProp('style')
+  })
+
+  it('mount with a11Content', () => {
+    const A11yContent = <Box>hello World</Box>
+    const doMountWithA11yContent = (props = {}) =>
+      mount(
+        <Modal
+          isOpen={true}
+          heading="A heading"
+          a11yContent={A11yContent}
+          confirmCTAText="I am sure"
+          focusElementAfterClose={{}}
+          onConfirm={() => {}}
+          onClose={() => {}}
+          {...props}
+        />
+      )
+
+    const modalWithA11yContent = doMountWithA11yContent()
+
+    expect(modalWithA11yContent.contains(A11yContent)).toEqual(true)
   })
 
   //   Check if confirm and cancel buttons appear when using Dialogue Modal

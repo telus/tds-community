@@ -33,6 +33,7 @@ const Modal = ({
   onClose,
   onConfirm,
   focusElementAfterClose,
+  a11yContent,
   ...rest
 }) => {
   const ModalOverlayRef = useRef(null)
@@ -90,6 +91,7 @@ const Modal = ({
     }
   }, [isOpen])
 
+  const description = bodyText ? <Paragraph>{bodyText}</Paragraph> : a11yContent
   return (
     <React.Fragment>
       {isOpen && (
@@ -109,7 +111,7 @@ const Modal = ({
                         {heading}
                       </Heading>
                     </div>
-                    <Paragraph>{bodyText}</Paragraph>
+                    {description}
                   </Box>
                   <PaddingOverride>
                     <Box vertical={5}>
@@ -134,6 +136,11 @@ const Modal = ({
   )
 }
 
+Modal.defaultProps = {
+  bodyText: '',
+  a11yContent: null,
+}
+
 Modal.propTypes = {
   /**
    * Text that will appear at the top of the content section.
@@ -143,7 +150,12 @@ Modal.propTypes = {
    *
    * Text that will appear in the middle of the content section.
    */
-  bodyText: PropTypes.string.isRequired,
+  bodyText: PropTypes.string,
+  /**
+   *
+   * Content that will appear in the middle of the content section. Can be used in place of bodyText for providing custom styling.
+   */
+  a11yContent: PropTypes.node,
   /**
    *
    * Text that represents confirm CTA.

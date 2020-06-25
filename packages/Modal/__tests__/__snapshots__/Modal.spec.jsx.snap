@@ -1,6 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal renders 1`] = `
+.c5 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c5 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c5 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
 .c3 {
   display: block;
   -webkit-flex-direction: column;
@@ -191,33 +218,6 @@ exports[`Modal renders 1`] = `
   -webkit-transform: scale(1,1);
   -ms-transform: scale(1,1);
   transform: scale(1,1);
-}
-
-.c5 {
-  word-wrap: break-word;
-  color: #2a2c2e;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-}
-
-.c5 sup {
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-  font-size: 0.875rem;
-  top: -0.5em;
-}
-
-.c5 > span {
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
 }
 
 .c0 {
@@ -441,7 +441,34 @@ exports[`Modal renders 1`] = `
               }
               forwardedRef={
                 Object {
-                  "current": .c3 {
+                  "current": .c5 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c5 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c5 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.c3 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -631,33 +658,6 @@ exports[`Modal renders 1`] = `
   -webkit-transform: scale(1,1);
   -ms-transform: scale(1,1);
   transform: scale(1,1);
-}
-
-.c5 {
-  word-wrap: break-word;
-  color: #2a2c2e;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-}
-
-.c5 sup {
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-  font-size: 0.875rem;
-  top: -0.5em;
-}
-
-.c5 > span {
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
 }
 
 .c0 {

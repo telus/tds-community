@@ -52,7 +52,7 @@ describe('Modal', () => {
   it('mount with custom Component', () => {
     const heading = <Heading level="h4">test heading</Heading>
     const bodyText = <Box>hello World</Box>
-    const doMountWithA11yContent = (props = {}) =>
+    const doMountWithCustomContent = (props = {}) =>
       mount(
         <Modal
           isOpen={true}
@@ -66,9 +66,10 @@ describe('Modal', () => {
         />
       )
 
-    const modalWithA11yContent = doMountWithA11yContent()
+    const modalWithCustomContent = doMountWithCustomContent()
 
-    expect(modalWithA11yContent.contains(bodyText)).toEqual(true)
+    expect(modalWithCustomContent.contains(heading)).toEqual(true)
+    expect(modalWithCustomContent.contains(bodyText)).toEqual(true)
   })
 
   //   Check if confirm and cancel buttons appear when using Dialogue Modal

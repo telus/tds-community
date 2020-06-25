@@ -91,7 +91,7 @@ const Modal = ({
   }, [isOpen])
 
   const modalHeading =
-    typeof bodyText === 'string' ? (
+    typeof heading === 'string' ? (
       <Heading level="h3" tag="div">
         {heading}
       </Heading>

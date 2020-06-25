@@ -1,4 +1,5 @@
 import React from 'react'
+import Heading from '@tds/core-heading'
 import Box from '@tds/core-box'
 import { mount } from 'enzyme'
 
@@ -48,14 +49,15 @@ describe('Modal', () => {
     expect(modal).not.toHaveProp('style')
   })
 
-  it('mount with a11Content', () => {
-    const A11yContent = <Box>hello World</Box>
+  it('mount with custom Component', () => {
+    const heading = <Heading level="h4">test heading</Heading>
+    const bodyText = <Box>hello World</Box>
     const doMountWithA11yContent = (props = {}) =>
       mount(
         <Modal
           isOpen={true}
-          heading="A heading"
-          a11yContent={A11yContent}
+          heading={heading}
+          bodyText={bodyText}
           confirmCTAText="I am sure"
           focusElementAfterClose={{}}
           onConfirm={() => {}}
@@ -66,7 +68,7 @@ describe('Modal', () => {
 
     const modalWithA11yContent = doMountWithA11yContent()
 
-    expect(modalWithA11yContent.contains(A11yContent)).toEqual(true)
+    expect(modalWithA11yContent.contains(bodyText)).toEqual(true)
   })
 
   //   Check if confirm and cancel buttons appear when using Dialogue Modal

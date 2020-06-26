@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WaffleGrid renders 1`] = `
+<Box
+  between={5}
+  inline={false}
+  tag="div"
+>
+  <WaffleGrid__StyledCentre>
+    <WaffleGrid__StyledLogoRow
+      between={0}
+      inline={true}
+    >
+      <WaffleGrid__StyledLogoWrapper
+        key="[object Object]"
+      >
+        <WaffleGrid__StyledCentre>
+          <WithForwardedRef(Link)
+            href="www.image.com"
+          >
+            <Image
+              alt="Cool image"
+              height={56}
+              src="www.image.com/cool.svg"
+              width={56}
+            />
+            <Paragraph
+              align="center"
+              bold={false}
+              invert={false}
+              size="medium"
+            >
+              Cool image
+            </Paragraph>
+          </WithForwardedRef(Link)>
+        </WaffleGrid__StyledCentre>
+      </WaffleGrid__StyledLogoWrapper>
+    </WaffleGrid__StyledLogoRow>
+  </WaffleGrid__StyledCentre>
+</Box>
+`;

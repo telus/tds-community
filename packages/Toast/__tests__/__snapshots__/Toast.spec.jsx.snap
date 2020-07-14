@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast renders 1`] = `
+<Toast__Container
+  data-id="block-toast"
+  variant="default"
+>
+  <Toast__StyledParagraphWrapper
+    variant="default"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      Save $100 when you shop online
+    </Text>
+  </Toast__StyledParagraphWrapper>
+</Toast__Container>
+`;
+
+exports[`Toast should render properly with both copy and link provided 1`] = `
+<Toast__Container
+  data-id="block-toast"
+  href="https://www.telus.com"
+  text="Learn now"
+  variant="default"
+>
+  <Toast__StyledParagraphWrapper
+    variant="default"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      Save $100 when you shop online
+    </Text>
+  </Toast__StyledParagraphWrapper>
+</Toast__Container>
+`;
+
+exports[`Toast should render properly with headline, copy and link provided 1`] = `
+<Toast__Container
+  data-id="block-toast"
+  variant="default"
+>
+  <Toast__StyledParagraphWrapper
+    variant="default"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <Strong>
+        Limited time offer. 
+      </Strong>
+      Save $100 when you shop online
+      <ChevronLink
+        data-id="block-toast-link"
+        direction="right"
+        href="https://www.telus.com"
+        reactRouterLinkComponent={null}
+        to={null}
+        variant="primary"
+      >
+         Learn now
+      </ChevronLink>
+    </Text>
+  </Toast__StyledParagraphWrapper>
+</Toast__Container>
+`;
+
+exports[`Toast should render properly with light variant 1`] = `
+<Toast__Container
+  data-id="block-toast"
+  variant="light"
+>
+  <Toast__StyledParagraphWrapper
+    variant="light"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <Strong>
+        Limited time offer. 
+      </Strong>
+      Save $100 when you shop online
+      <ChevronLink
+        data-id="block-toast-link"
+        direction="right"
+        href="https://www.telus.com"
+        reactRouterLinkComponent={null}
+        to={null}
+        variant="primary"
+      >
+         Learn now
+      </ChevronLink>
+    </Text>
+  </Toast__StyledParagraphWrapper>
+</Toast__Container>
+`;
+
+exports[`Toast should render properly with toast variant 1`] = `
+<Toast__Container
+  data-id="block-toast"
+  variant="toast"
+>
+  <Toast__StyledParagraphWrapper
+    variant="toast"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <Strong>
+        Limited time offer. 
+      </Strong>
+      Save $100 when you shop online
+      <ChevronLink
+        data-id="block-toast-link"
+        direction="right"
+        href="https://www.telus.com"
+        reactRouterLinkComponent={null}
+        to={null}
+        variant="primary"
+      >
+         Learn now
+      </ChevronLink>
+    </Text>
+  </Toast__StyledParagraphWrapper>
+</Toast__Container>
+`;

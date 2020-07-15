@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalloutParagraph renders 1`] = `
+<CalloutParagraph__TextWrapper
+  bgColor={false}
+  textColor={false}
+>
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
+  />
+</CalloutParagraph__TextWrapper>
+`;

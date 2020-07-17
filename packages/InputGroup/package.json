@@ -31,7 +31,7 @@
     "@tds/core-decorative-icon": "^2.6.4",
     "@tds/core-interactive-icon": "^2.0.0",
     "@tds/core-strong": "^2.1.10",
-    "@tds/core-text": "^3.0.4",
+    "@tds/core-text": "^3.1.1",
     "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.6.2"
   }

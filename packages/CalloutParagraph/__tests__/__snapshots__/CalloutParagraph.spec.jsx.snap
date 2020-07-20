@@ -2,8 +2,46 @@
 
 exports[`CalloutParagraph renders 1`] = `
 <CalloutParagraph__TextWrapper
-  bgColor={false}
-  textColor={false}
+  spacing="default"
+>
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
+  />
+</CalloutParagraph__TextWrapper>
+`;
+
+exports[`CalloutParagraph renders with compact 1`] = `
+<CalloutParagraph__TextWrapper
+  spacing="compact"
+>
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
+  />
+</CalloutParagraph__TextWrapper>
+`;
+
+exports[`CalloutParagraph renders with intermediate 1`] = `
+<CalloutParagraph__TextWrapper
+  spacing="intermediate"
+>
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
+  />
+</CalloutParagraph__TextWrapper>
+`;
+
+exports[`CalloutParagraph renders with narrow 1`] = `
+<CalloutParagraph__TextWrapper
+  spacing="narrow"
 >
   <Paragraph
     align="left"

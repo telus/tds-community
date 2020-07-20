@@ -1,11 +1,25 @@
 ### Usage criteria
 
-- Use `bgColor` for background color (optional)
-- Use `textColor` for font color (optional)
+- Use `spacing` prop according to tds-core-card component
 - Use all props of tds-core-paragraph component
 
 ```jsx
-<CalloutParagraph bgColor textColor>
-  Our commitment to service is demonstrated in everything we do.
-</CalloutParagraph>
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={5}>
+      <Card variant="defaultWithBorder">
+        <Box between={3}>
+          <Heading level="h3">Internet 15 - Special Offer</Heading>
+          <CalloutParagraph>
+            Our commitment to service is demonstrated in everything we do.
+          </CalloutParagraph>
+          <HairlineDivider />
+          <Text size="medium">Good for basic browsing, and posting to social media.</Text>
+          <Button>Add to cart</Button>
+          <ChevronLink href="#">Learn more</ChevronLink>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
 ```

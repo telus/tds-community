@@ -10,12 +10,24 @@ describe('CalloutParagraph', () => {
     const calloutParagraph = doShallow()
 
     expect(calloutParagraph).toMatchSnapshot()
+    expect(calloutParagraph).toHaveProp('spacing', 'default')
   })
 
-  it('passes additional attributes to the element', () => {
-    const calloutParagraph = doShallow({ bgColor: true, textColor: true })
+  it('renders with narrow', () => {
+    const calloutParagraph = doShallow({ spacing: 'narrow' })
+    expect(calloutParagraph).toMatchSnapshot()
+    expect(calloutParagraph).toHaveProp('spacing', 'narrow')
+  })
 
-    expect(calloutParagraph).toHaveProp('bgColor', true)
-    expect(calloutParagraph).toHaveProp('textColor', true)
+  it('renders with compact', () => {
+    const calloutParagraph = doShallow({ spacing: 'compact' })
+    expect(calloutParagraph).toMatchSnapshot()
+    expect(calloutParagraph).toHaveProp('spacing', 'compact')
+  })
+
+  it('renders with intermediate', () => {
+    const calloutParagraph = doShallow({ spacing: 'intermediate' })
+    expect(calloutParagraph).toMatchSnapshot()
+    expect(calloutParagraph).toHaveProp('spacing', 'intermediate')
   })
 })

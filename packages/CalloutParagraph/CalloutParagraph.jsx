@@ -45,6 +45,8 @@ const TextWrapper = styled.div`
   p {
     color: #371e47;
     background: #f2eff4;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     padding-left: ${props => paddingValue.desktop[props.spacing]};
     padding-right: ${props => paddingValue.desktop[props.spacing]};
     @media (max-width: 576px) {

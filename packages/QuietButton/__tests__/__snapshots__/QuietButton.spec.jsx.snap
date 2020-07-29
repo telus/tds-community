@@ -1,20 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`QuietButton renders 1`] = `
+.c2 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c1 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.3125rem;
+}
+
 .c0 {
   box-sizing: border-box;
-  margin: 2px;
-  padding: 0px 16px 0px 16px;
+  margin: 0.125rem;
   cursor: pointer;
-  background: #FFFFFF;
+  background: #fff;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  min-width: 44px;
-  height: 28px;
-  border: 1px solid #71757B;
+  min-width: 2.75rem;
+  height: 1.75rem;
+  border: 0.0625rem solid #71757b;
   position: relative;
-  border-radius: 3px;
-  color: #2A2C2E;
+  border-radius: 0.1875rem;
+  color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
   -webkit-letter-spacing: -0.6px;
@@ -26,23 +39,23 @@ exports[`QuietButton renders 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0 0 0 2px #71757B;
-  mid-width: 72px;
+  box-shadow: 0 0 0 0.125rem #71757b;
+  mid-width: 4.5rem;
 }
 
 .c0:active {
-  border: 1px solid #54595F;
-  box-shadow: 0 0 0 2px #54595F;
-  background: #D8D8D8;
+  border: 0.0625rem solid #54595f;
+  box-shadow: 0 0 0 0.125rem #54595f;
+  background: #d8d8d8;
 }
 
 .c0:focus {
-  background: #FFFFFF;
-  box-shadow: 0 0 0 2px #71757B,0 0 0 2px #FFFFFF inset,0 0 0 3px #54595F inset;
+  background: #fff;
+  box-shadow: 0 0 0 0.125rem #71757b,0 0 0 0.125rem #fff inset,0 0 0 0.1875rem #54595f inset;
   outline: none !important;
 }
 
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,15 +67,14 @@ exports[`QuietButton renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 3px 0px 5px 0px;
 }
 
-.c1 svg {
-  margin: -3px 0 -5px 0;
+.c3 svg {
+  margin: -0.125rem 0rem -0.3125rem 0rem;
 }
 
-.c2 {
-  padding-right: 4px;
+.c4 {
+  padding-right: 0.25rem;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -82,34 +94,33 @@ exports[`QuietButton renders 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "QuietButton__StyledQuietButton-sc-1anctzy-0",
+            "componentId": "QuietButton__StyledQuietButton-sc-1anctzy-1",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "box-sizing: border-box;",
-              "margin: 2px;",
-              "padding: 0px 16px 0px 16px;",
+              "margin: 0.125rem;",
               "cursor: pointer;",
-              "background: #FFFFFF;",
+              "background: #fff;",
               "transition: all 0.2s ease-in-out;",
-              "min-width: 44px;",
-              "height: 28px;",
-              "border: 1px solid #71757B;",
+              "min-width: 2.75rem;",
+              "height: 1.75rem;",
+              "border: 0.0625rem solid #71757b;",
               "position: relative;",
-              "border-radius: 3px;",
-              "color: #2A2C2E;",
+              "border-radius: 0.1875rem;",
+              "color: #2a2c2e;",
               "&:hover {",
-              "box-shadow: 0 0 0 2px #71757B;",
-              "mid-width: 72px;",
+              "box-shadow: 0 0 0 0.125rem #71757b;",
+              "mid-width: 4.5rem;",
               "}",
               "&:active {",
-              "border: 1px solid #54595F;",
-              "box-shadow: 0 0 0 2px #54595F;",
-              "background: #D8D8D8;",
+              "border: 0.0625rem solid #54595f;",
+              "box-shadow: 0 0 0 0.125rem #54595f;",
+              "background: #d8d8d8;",
               "}",
               "&:focus {",
-              "background: #FFFFFF;",
-              "box-shadow: 0 0 0 2px #71757B,0 0 0 2px #FFFFFF inset, 0 0 0 3px #54595F inset;",
+              "background: #fff;",
+              "box-shadow: 0 0 0 0.125rem #71757b, 0 0 0 0.125rem #fff inset, 0 0 0 0.1875rem #54595f inset;",
               "outline: none !important;",
               "}",
               "@media (prefers-reduced-motion: reduce) {",
@@ -125,7 +136,7 @@ exports[`QuietButton renders 1`] = `
           "displayName": "QuietButton__StyledQuietButton",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "QuietButton__StyledQuietButton-sc-1anctzy-0",
+          "styledComponentId": "QuietButton__StyledQuietButton-sc-1anctzy-1",
           "target": "button",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -139,61 +150,71 @@ exports[`QuietButton renders 1`] = `
         className="c0"
         type="button"
       >
-        <QuietButton__ButtonWrapper>
+        <QuietButton__StyledBox
+          horizontal={2}
+        >
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "QuietButton__ButtonWrapper-sc-1anctzy-1",
+                  "componentId": "QuietButton__StyledBox-sc-1anctzy-0",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "display: flex;",
-                    "flex-direction: row;",
-                    "align-items: center;",
-                    "padding: 3px 0px 5px 0px;",
-                    "& svg {",
-                    "margin: -3px 0 -5px 0;",
-                    "}",
+                    "padding-top:0.125rem;padding-bottom:0.3125rem;",
                   ],
                 },
-                "displayName": "QuietButton__ButtonWrapper",
+                "displayName": "QuietButton__StyledBox",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "QuietButton__ButtonWrapper-sc-1anctzy-1",
-                "target": "div",
+                "styledComponentId": "QuietButton__StyledBox-sc-1anctzy-0",
+                "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
             }
             forwardedRef={null}
+            horizontal={2}
           >
-            <div
+            <Box
               className="c1"
+              horizontal={2}
+              inline={false}
+              tag="div"
             >
-              <QuietButton__SpaceWrapper
-                key="Words"
+              <styled.div
+                className="c1"
+                horizontal={2}
+                inline={false}
+                tag="div"
               >
                 <StyledComponent
+                  className="c1"
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
+                      "attrs": Array [
+                        [Function],
+                      ],
                       "componentStyle": ComponentStyle {
-                        "componentId": "QuietButton__SpaceWrapper-sc-1anctzy-2",
+                        "componentId": "sc-EHOje",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
-                          "padding-right: 4px;",
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
                         ],
                       },
-                      "displayName": "QuietButton__SpaceWrapper",
+                      "displayName": "styled.div",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "QuietButton__SpaceWrapper-sc-1anctzy-2",
+                      "styledComponentId": "sc-EHOje",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -201,17 +222,91 @@ exports[`QuietButton renders 1`] = `
                     }
                   }
                   forwardedRef={null}
+                  horizontal={2}
+                  inline={false}
+                  tag="div"
                 >
                   <div
-                    className="c2"
+                    className="c2 c1 QuietButton__StyledBox-sc-1anctzy-0 c1"
                   >
-                    Words
+                    <QuietButton__ButtonWrapper>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "QuietButton__ButtonWrapper-sc-1anctzy-2",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "display: flex;",
+                                "flex-direction: row;",
+                                "align-items: center;",
+                                "& svg {",
+                                "margin: -0.125rem 0rem -0.3125rem 0rem;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "QuietButton__ButtonWrapper",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "QuietButton__ButtonWrapper-sc-1anctzy-2",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c3"
+                        >
+                          <QuietButton__SpaceWrapper
+                            key="Words"
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "QuietButton__SpaceWrapper-sc-1anctzy-3",
+                                    "isStatic": false,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      "padding-right: 0.25rem;",
+                                    ],
+                                  },
+                                  "displayName": "QuietButton__SpaceWrapper",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "QuietButton__SpaceWrapper-sc-1anctzy-3",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="c4"
+                              >
+                                Words
+                              </div>
+                            </StyledComponent>
+                          </QuietButton__SpaceWrapper>
+                        </div>
+                      </StyledComponent>
+                    </QuietButton__ButtonWrapper>
                   </div>
                 </StyledComponent>
-              </QuietButton__SpaceWrapper>
-            </div>
+              </styled.div>
+            </Box>
           </StyledComponent>
-        </QuietButton__ButtonWrapper>
+        </QuietButton__StyledBox>
       </button>
     </StyledComponent>
   </QuietButton__StyledQuietButton>

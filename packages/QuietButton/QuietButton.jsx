@@ -1,5 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import Box from '@tds/core-box'
+import {
+  colorGreyRaven,
+  colorWhite,
+  colorGreyShuttle,
+  colorGreyGainsboro,
+  colorGreyShark,
+} from '@tds/core-colours'
+import { componentWithName } from '@tds/util-prop-types'
 import { safeRest } from '@tds/util-helpers'
 import { small } from '@tds/shared-typography'
 import { borders } from '@tds/shared-styles'
@@ -7,29 +16,28 @@ import PropTypes from 'prop-types'
 
 const baseButton = {
   boxSizing: 'border-box',
-  margin: '2px',
-  padding: '0px 16px 0px 16px',
+  margin: '0.125rem',
   cursor: 'pointer',
-  background: '#FFFFFF',
+  background: colorWhite,
   transition: 'all 0.2s ease-in-out',
-  minWidth: '44px',
-  height: '28px',
-  border: '1px solid #71757B',
+  minWidth: '2.75rem',
+  height: '1.75rem',
+  border: `0.0625rem solid ${colorGreyRaven}`,
   position: 'relative',
-  borderRadius: '3px',
-  color: '#2A2C2E',
+  borderRadius: '0.1875rem',
+  color: colorGreyShark,
   '&:hover': {
-    boxShadow: '0 0 0 2px #71757B',
-    midWidth: '72px',
+    boxShadow: `0 0 0 0.125rem ${colorGreyRaven}`,
+    midWidth: '4.5rem',
   },
   '&:active': {
-    border: '1px solid #54595F',
-    boxShadow: '0 0 0 2px #54595F',
-    background: '#D8D8D8',
+    border: `0.0625rem solid ${colorGreyShuttle}`,
+    boxShadow: `0 0 0 0.125rem ${colorGreyShuttle}`,
+    background: colorGreyGainsboro,
   },
   '&:focus': {
-    background: '#FFFFFF',
-    boxShadow: '0 0 0 2px #71757B,0 0 0 2px #FFFFFF inset, 0 0 0 3px #54595F inset',
+    background: colorWhite,
+    boxShadow: `0 0 0 0.125rem ${colorGreyRaven}, 0 0 0 0.125rem ${colorWhite} inset, 0 0 0 0.1875rem ${colorGreyShuttle} inset`,
     outline: 'none !important',
   },
   '@media (prefers-reduced-motion: reduce)': {
@@ -40,14 +48,18 @@ const btnWrapper = {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  padding: '3px 0px 5px 0px',
   '& svg': {
-    margin: '-3px 0 -5px 0',
+    margin: '-0.125rem 0rem -0.3125rem 0rem',
   },
 }
 const spaceWrapper = {
-  paddingRight: '4px',
+  paddingRight: '0.25rem',
 }
+
+const StyledBox = styled(Box)`
+  padding-top: 0.125rem;
+  padding-bottom: 0.3125rem;
+`
 
 const StyledQuietButton = styled.button(baseButton, small, borders.rounded)
 const ButtonWrapper = styled.div(btnWrapper)
@@ -72,7 +84,9 @@ const QuietButton = ({ children, ...rest }) => {
 
   return (
     <StyledQuietButton type="button" {...safeRest(rest)}>
-      <ButtonWrapper>{spaceFunction(childrenArray)}</ButtonWrapper>
+      <StyledBox horizontal={2}>
+        <ButtonWrapper>{spaceFunction(childrenArray)}</ButtonWrapper>
+      </StyledBox>
     </StyledQuietButton>
   )
 }
@@ -82,7 +96,28 @@ QuietButton.propTypes = {
    * Button children.
    */
 
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.string,
+        componentWithName('A11yContent'),
+        componentWithName('Edit'),
+        componentWithName('Print'),
+        componentWithName('Profile'),
+        componentWithName('Add'),
+        componentWithName('Close'),
+        componentWithName('Delete'),
+        componentWithName('PlayVideo'),
+        componentWithName('Subtract'),
+        componentWithName('Download'),
+        componentWithName('DownloadPDF'),
+        componentWithName('DownloadPDFs'),
+        componentWithName('Search'),
+        componentWithName('Settings'),
+      ])
+    ),
+    PropTypes.string,
+  ]).isRequired,
 }
 
 export default QuietButton

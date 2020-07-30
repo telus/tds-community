@@ -8,7 +8,7 @@
   copy="Shopping Smartphones?"
   variant="default"
   link={{
-    href: 'wwww.google.com',
+    href: 'wwww.telus.com',
     text: 'Click here',
   }}
 />

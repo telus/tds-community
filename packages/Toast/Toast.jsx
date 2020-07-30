@@ -138,14 +138,14 @@ Toast.propTypes = {
    */
   dataId: PropTypes.string,
   /**
-   * Optional link details taht will appear after the copy.
+   * Optional link details that will appear after the copy.
    */
   link: PropTypes.shape({
     href: PropTypes.string,
     text: PropTypes.string,
   }),
   /**
-   * Optional variant to decide what kind of compoennt will be loaded.
+   * Optional variant to decide what kind of component will be loaded.
    */
   variant: PropTypes.oneOf([TOAST, DEFAULT, LIGHT]),
 }

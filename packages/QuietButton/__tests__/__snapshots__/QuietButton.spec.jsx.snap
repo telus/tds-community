@@ -23,7 +23,7 @@ exports[`QuietButton renders 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   min-width: 2.75rem;
-  height: 1.75rem;
+  min-height: 1.75rem;
   border: 0.0625rem solid #71757b;
   position: relative;
   border-radius: 0.1875rem;
@@ -63,10 +63,10 @@ exports[`QuietButton renders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c3 svg {
@@ -104,7 +104,7 @@ exports[`QuietButton renders 1`] = `
               "background: #fff;",
               "transition: all 0.2s ease-in-out;",
               "min-width: 2.75rem;",
-              "height: 1.75rem;",
+              "min-height: 1.75rem;",
               "border: 0.0625rem solid #71757b;",
               "position: relative;",
               "border-radius: 0.1875rem;",
@@ -242,7 +242,7 @@ exports[`QuietButton renders 1`] = `
                               "rules": Array [
                                 "display: flex;",
                                 "flex-direction: row;",
-                                "align-items: center;",
+                                "align-items: flex-start;",
                                 "& svg {",
                                 "margin: -0.125rem 0rem -0.3125rem 0rem;",
                                 "}",

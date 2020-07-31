@@ -21,7 +21,7 @@ const baseButton = {
   background: colorWhite,
   transition: 'all 0.2s ease-in-out',
   minWidth: '2.75rem',
-  height: '1.75rem',
+  minHeight: '1.75rem',
   border: `0.0625rem solid ${colorGreyRaven}`,
   position: 'relative',
   borderRadius: '0.1875rem',
@@ -47,7 +47,7 @@ const baseButton = {
 const btnWrapper = {
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center',
+  alignItems: 'flex-start',
   '& svg': {
     margin: '-0.125rem 0rem -0.3125rem 0rem',
   },

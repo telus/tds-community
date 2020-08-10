@@ -9,7 +9,9 @@ exports[`CalloutParagraph renders 1`] = `
     bold={false}
     invert={false}
     size="medium"
-  />
+  >
+    Text
+  </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;
 
@@ -22,7 +24,9 @@ exports[`CalloutParagraph renders with compact 1`] = `
     bold={false}
     invert={false}
     size="medium"
-  />
+  >
+    Text
+  </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;
 
@@ -35,7 +39,9 @@ exports[`CalloutParagraph renders with intermediate 1`] = `
     bold={false}
     invert={false}
     size="medium"
-  />
+  >
+    Text
+  </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;
 
@@ -48,6 +54,8 @@ exports[`CalloutParagraph renders with narrow 1`] = `
     bold={false}
     invert={false}
     size="medium"
-  />
+  >
+    Text
+  </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;

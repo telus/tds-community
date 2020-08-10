@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Below handles responsive props 1`] = `
+<Below__BelowComponent
+  space={
+    Object {
+      "md": 4,
+      "xs": 3,
+    }
+  }
+/>
+`;
+
+exports[`Below renders 1`] = `
+<Below__BelowComponent
+  space={4}
+/>
+`;

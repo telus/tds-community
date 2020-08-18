@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders 1`] = `
+<TabsWrapper
+  dataLayerEventName={true}
+  tabIndex={0}
+  tabsEntries={Array []}
+/>
+`;

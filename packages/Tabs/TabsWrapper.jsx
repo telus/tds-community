@@ -5,12 +5,13 @@ import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { TabsContainer, TabListContainer, TabLabel, TabArrows } from './styles'
 import hash from './hash'
+// import TabsElement from './TabsElement'
 /**
  * @version ./package.json
  * @visibleName Tabs (beta)
  */
 
-const TabsWrapper = ({ dataLayerEventName, tabsEntries, tabIndex }) => {
+const TabsWrapper = ({ tabsEntries, tabIndex }) => {
   const tabsRoot = useRef()
   const [tabsContainerWidth, setTabsContainerWidth] = useState()
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
@@ -18,16 +19,6 @@ const TabsWrapper = ({ dataLayerEventName, tabsEntries, tabIndex }) => {
   const [isLeftArrow, setIsLeftArrow] = useState(false)
   const [isRightArrow, setIsRightArrow] = useState(false)
   const fullWithRef = useRef(0)
-
-  const recordNavigationDataLayer = tabTitle => {
-    if (typeof window !== 'undefined' && dataLayerEventName) {
-      window.dataLayer.event = {
-        name: dataLayerEventName,
-        action: 'click',
-        details: `navigated to tab: ${tabTitle}`,
-      }
-    }
-  }
 
   const getTabsWidth = () => {
     const tabsArray = document.querySelectorAll('.react-tabs__tab')
@@ -48,7 +39,7 @@ const TabsWrapper = ({ dataLayerEventName, tabsEntries, tabIndex }) => {
     if (tabsEntries.length > 0) {
       return tabsEntries.map(tab => {
         return (
-          <Tab key={hash(tab)} onClick={() => recordNavigationDataLayer(tab.tabTitle)}>
+          <Tab key={hash(tab)}>
             <TabLabel>{tab.tabTitle}</TabLabel>
           </Tab>
         )
@@ -131,13 +122,11 @@ const TabsWrapper = ({ dataLayerEventName, tabsEntries, tabIndex }) => {
 TabsWrapper.propTypes = {
   tabsEntries: PropTypes.array,
   tabIndex: PropTypes.number,
-  dataLayerEventName: PropTypes.string,
 }
 
 TabsWrapper.defaultProps = {
   tabsEntries: [],
   tabIndex: PropTypes.any,
-  dataLayerEventName: '',
 }
 
 export default TabsWrapper

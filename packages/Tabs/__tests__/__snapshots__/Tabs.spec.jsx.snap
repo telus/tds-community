@@ -2,7 +2,6 @@
 
 exports[`Tabs renders 1`] = `
 <TabsWrapper
-  dataLayerEventName={true}
   tabIndex={0}
   tabsEntries={Array []}
 />

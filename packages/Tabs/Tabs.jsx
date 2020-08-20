@@ -7,15 +7,8 @@ import TabsWrapper from './TabsWrapper'
  * @version ./package.json
  * @visibleName Tabs (beta)
  */
-const Tabs = ({ dataLayerEventName, tabsEntries, tabIndex, ...rest }) => {
-  return (
-    <TabsWrapper
-      {...safeRest(rest)}
-      dataLayerEventName
-      tabsEntries={tabsEntries}
-      tabIndex={tabIndex}
-    />
-  )
+const Tabs = ({ tabsEntries, tabIndex, ...rest }) => {
+  return <TabsWrapper {...safeRest(rest)} tabsEntries={tabsEntries} tabIndex={tabIndex} />
 }
 
 Tabs.propTypes = {
@@ -27,16 +20,11 @@ Tabs.propTypes = {
    * You can use tabIndex="0" to set first tab is active.
    */
   tabIndex: PropTypes.number,
-  /**
-   * dataLayerEventName.
-   */
-  dataLayerEventName: PropTypes.string,
 }
 
 Tabs.defaultProps = {
   tabsEntries: [],
   tabIndex: 0,
-  dataLayerEventName: '',
 }
 
 export default Tabs

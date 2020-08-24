@@ -5,11 +5,15 @@ import cx from 'classnames'
 import Logo from 'rsg-components/Logo'
 import Markdown from 'rsg-components/Markdown'
 import { createGlobalStyle } from 'styled-components'
+import { colorSecondary} from '@tds/core-colours'
 
 import CSSReset from '@tds/core-css-reset'
 import FlexGrid from '@tds/core-flex-grid'
 
-const GlobalStyleGuide = createGlobalStyle({
+export const GlobalStyleGuide = createGlobalStyle({
+  '[class*=\'rsg--\'].docs_purple-block, .docs_purple-block': {
+    backgroundColor: colorSecondary,
+  },
   // Full width container with limited with parent: https://css-tricks.com/full-width-containers-limited-width-parents/
   // Only activate with there is no sidebar
   '.rsg--root-1:not(*[class*=\'rsg--hasSidebar\']) .docs_full-width-playground': {
@@ -94,6 +98,7 @@ export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc,
   return (
     <>
       <CSSReset />
+      <GlobalStyleGuide />
       <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
         <a id="styleguidist-top">&nbsp;</a>
 

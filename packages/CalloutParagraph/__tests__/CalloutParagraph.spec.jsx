@@ -4,9 +4,7 @@ import { shallow } from 'enzyme'
 import CalloutParagraph from '../CalloutParagraph'
 
 describe('CalloutParagraph', () => {
-  const defaultProps = { children: 'Text' }
-
-  const doShallow = props => shallow(<CalloutParagraph {...defaultProps} {...props} />)
+  const doShallow = (props = {}) => shallow(<CalloutParagraph {...props} />)
 
   it('renders', () => {
     const calloutParagraph = doShallow()

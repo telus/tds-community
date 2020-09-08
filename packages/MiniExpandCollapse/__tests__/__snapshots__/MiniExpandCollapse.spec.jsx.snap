@@ -10,7 +10,6 @@ exports[`MiniExpandCollapse renders correctly 1`] = `
     togglePanel={[Function]}
   />
   <FadeAndReveal
-    delay={0}
     duration={500}
     height={0}
     in={false}

@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@tds/core-paragraph": "^2.0.12",
-    "@tds/util-helpers": "^1.2.0",
+    "@tds/util-helpers": "^1.5.0",
     "prop-types": "^15.6.2"
   }
 }

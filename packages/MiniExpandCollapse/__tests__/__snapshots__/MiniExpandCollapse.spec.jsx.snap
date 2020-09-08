@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniExpandCollapse renders correctly 1`] = `
+<div>
+  <Link
+    collapseTitle="Show details"
+    expandTitle="Hide details"
+    isPanelOpen={false}
+    size="large"
+    togglePanel={[Function]}
+  />
+  <FadeAndReveal
+    delay={0}
+    duration={500}
+    height={0}
+    in={false}
+    timeout={500}
+  >
+    <Component />
+  </FadeAndReveal>
+</div>
+`;

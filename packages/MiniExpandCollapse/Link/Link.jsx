@@ -8,8 +8,6 @@ import { CaretDown, CaretUp } from '@tds/core-interactive-icon'
 import { responsiveProps } from '@tds/util-prop-types'
 import A11yContent from '@tds/core-a11y-content'
 import { handleResponsiveStyles } from '@tds/util-helpers'
-
-// import handleResponsiveStyles from '../handleResponsiveStyles'
 import createIconSizeProp from '../createIconSizeProp'
 
 const states = ({ invert }) => {

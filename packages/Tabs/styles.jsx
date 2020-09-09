@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components'
 
 export const TabsContainer = styled.div`
   position: relative;
-
   .react-tabs {
     overflow-x: hidden;
   }
@@ -56,7 +55,7 @@ export const TabsContainer = styled.div`
 export const TabListContainer = styled.div`
   border-bottom: 1px solid #d8d8d8;
   position: relative;
-
+  margin-bottom: 10px;
   &:after {
     content: '';
     position: absolute;

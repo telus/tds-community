@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import FlexGrid from '@tds/core-flex-grid'
 import { safeRest } from '@tds/util-helpers'
 import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import { Tab, Tabs as ReactTabs, TabList, TabPanel } from 'react-tabs'
 import { TabsContainer, TabListContainer, TabLabel, TabArrows } from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
@@ -12,7 +12,7 @@ import Panel from './Panel/Panel'
  * @visibleName Tabs (beta)
  */
 
-const AddTabs = props => {
+const Tabs = props => {
   const tabsRoot = useRef()
   const [tabsContainerWidth, setTabsContainerWidth] = useState()
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
@@ -115,12 +115,12 @@ const AddTabs = props => {
                 <ChevronLeft variant="basic" />
               </TabArrows>
             )}
-            <Tabs>
+            <ReactTabs>
               <TabListContainer isScrollEnabled={isScrollEnabled}>
                 <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
               </TabListContainer>
               {mapTabContent()}
-            </Tabs>
+            </ReactTabs>
             {isRightArrow && (
               <TabArrows direction="right" onClick={() => scrollTabs('right')}>
                 <ChevronRight variant="basic" />
@@ -133,9 +133,9 @@ const AddTabs = props => {
   )
 }
 
-AddTabs.propTypes = {
+Tabs.propTypes = {
   /**
-   * The tab panels. Must be at least one `<AddTabs.Panel />`.
+   * The tab panels. Must be at least one `<Tabs.Panel />`.
    */
   children: PropTypes.node.isRequired,
   /**
@@ -143,8 +143,8 @@ AddTabs.propTypes = {
    */
   tabs: PropTypes.array,
 }
-AddTabs.defaultProps = {
+Tabs.defaultProps = {
   tabs: [],
 }
-AddTabs.Panel = Panel
-export default AddTabs
+Tabs.Panel = Panel
+export default Tabs

@@ -5,6 +5,7 @@ exports[`MiniExpandCollapse renders correctly 1`] = `
   <Link
     collapseTitle="Show details"
     expandTitle="Hide details"
+    invert={false}
     isPanelOpen={false}
     size="large"
     togglePanel={[Function]}

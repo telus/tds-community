@@ -228,7 +228,7 @@ div.c1 {
   }
 }
 
-<AddTabs
+<Tabs
   copy="en"
   tabs={Array []}
 >
@@ -915,5 +915,5 @@ div.c1 {
       </div>
     </StyledComponent>
   </styles__TabsContainer>
-</AddTabs>
+</Tabs>
 `;

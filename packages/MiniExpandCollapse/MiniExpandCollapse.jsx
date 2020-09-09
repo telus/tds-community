@@ -70,7 +70,7 @@ MiniExpandCollapse.propTypes = {
 
 MiniExpandCollapse.defaultProps = {
   expandTitle: null,
-  invert: undefined,
+  invert: false,
   a11yLabel: undefined,
 }
 

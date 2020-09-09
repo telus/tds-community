@@ -2,11 +2,11 @@ Similar to ExpandCollapse. Clicking on the hyperlink triggers target content to 
 
 ### Usage criteria
 
-- Mainly used to answer a question potentially posed by a user regarding information they could interpret as unclear.
-- Should provide more details than a Tooltip.
-- Expand/collapse titles should be kept short and if possible, sentence case should be used.
-- Titles should be lead by a strong action word.
-- Note: unlike `ExpandCollapse`, the panel housing the target content has no inherent spacing.
+- Mainly used to answer a question potentially posed by a user regarding information they could interpret as unclear
+- Should provide more details than a Tooltip
+- Expand/collapse titles should be kept short and if possible, sentence case should be used
+- Titles should be lead by a strong action word
+- Note: unlike `ExpandCollapse`, the panel housing the target content has no inherent spacing
 
 ```jsx
 <MiniExpandCollapse

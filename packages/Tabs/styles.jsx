@@ -15,7 +15,7 @@ export const TabsContainer = styled.div`
   .react-tabs__tab {
     display: inline-block;
     cursor: pointer;
-    padding: 0 25px;
+    padding: 0 24px;
     min-width: 44px;
     text-align: center;
     position: relative;
@@ -55,7 +55,7 @@ export const TabsContainer = styled.div`
 export const TabListContainer = styled.div`
   border-bottom: 1px solid #d8d8d8;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   &:after {
     content: '';
     position: absolute;
@@ -77,7 +77,7 @@ export const TabListContainer = styled.div`
 export const TabLabel = styled.span`
   height: 100%;
   display: block;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
   border-bottom: 4px solid transparent;
 `
 

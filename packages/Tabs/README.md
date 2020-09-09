@@ -1,1 +1,1 @@
-# TDS Community: Tabs
+# TDS Community: AddTabs

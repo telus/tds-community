@@ -1,3 +1,3 @@
-const Tabs = require('./dist/index.cjs')
+const AddTabs = require('./dist/index.cjs')
 
-module.exports = Tabs
+module.exports = AddTabs

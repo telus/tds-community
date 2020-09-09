@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/telus/tds-community/compare/@tds/community-pagination@2.0.3...@tds/community-pagination@2.0.4) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-pagination:** update util-helpers version ([5608ead](https://github.com/telus/tds-community/commit/5608ead0196621e3114300129c769721cdcbcab6))
+
+
+
+
+
 ## [2.0.3](https://github.com/telus/tds-community/compare/@tds/community-pagination@2.0.2...@tds/community-pagination@2.0.3) (2020-03-20)
 
 **Note:** Version bump only for package @tds/community-pagination

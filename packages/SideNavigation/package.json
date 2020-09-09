@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-side-navigation",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

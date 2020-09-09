@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.2...@tds/community-input-group@1.0.3) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-input-group:** update util-helpers version ([3a73655](https://github.com/telus/tds-community/commit/3a73655fe834d07c982e00147e3f2ea6baa52f05))
+
+
+
+
+
 ## [1.0.2](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.1...@tds/community-input-group@1.0.2) (2020-07-31)
 
 **Note:** Version bump only for package @tds/community-input-group

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.1.0...@tds/community-callout-paragraph@0.1.1) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-callout-paragraph:** update util-helpers version ([8767507](https://github.com/telus/tds-community/commit/8767507941b0fe8b14bc01ef9d8025068fa8da81))
+
+
+
+
+
 # 0.1.0 (2020-07-21)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.10](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.9...@tds/community-side-navigation@3.0.10) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-side-navigation:** update util-helpers version ([7fcc82a](https://github.com/telus/tds-community/commit/7fcc82a87d82895ed6882a7f6677f009f796abf5))
+
+
+
+
+
 ## [3.0.9](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.8...@tds/community-side-navigation@3.0.9) (2020-07-31)
 
 **Note:** Version bump only for package @tds/community-side-navigation

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/telus/tds-community/compare/@tds/community-testimonial@3.0.3...@tds/community-testimonial@3.0.4) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-testimonial:** update util-helpers version ([10b8c5a](https://github.com/telus/tds-community/commit/10b8c5a3461cc916f1a90799eb7ef593835b7421))
+
+
+
+
+
 ## [3.0.3](https://github.com/telus/tds-community/compare/@tds/community-testimonial@3.0.2...@tds/community-testimonial@3.0.3) (2020-04-13)
 
 **Note:** Version bump only for package @tds/community-testimonial

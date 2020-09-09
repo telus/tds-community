@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/telusdigital/tds-community/compare/@tds/community-progress@2.0.0...@tds/community-progress@2.0.1) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-progress:** update util-helpers version ([c87783c](https://github.com/telusdigital/tds-community/commit/c87783cfee95f1774a6afec938af5dc8161ac4f4))
+
+
+
+
+
 # [2.0.0](https://github.com/telusdigital/tds-community/compare/@tds/community-progress@1.0.2...@tds/community-progress@2.0.0) (2020-02-07)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/telus/tds-community/compare/@tds/community-skeleton@3.0.2...@tds/community-skeleton@3.0.3) (2020-09-09)
+
+
+### Bug Fixes
+
+* **community-skeleton:** update util-helpers version ([4d7f67f](https://github.com/telus/tds-community/commit/4d7f67ff65561b0972bd53259c450e8198611697))
+
+
+
+
+
 ## [3.0.2](https://github.com/telus/tds-community/compare/@tds/community-skeleton@3.0.1...@tds/community-skeleton@3.0.2) (2020-03-19)
 
 **Note:** Version bump only for package @tds/community-skeleton

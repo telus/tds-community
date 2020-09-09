@@ -113,7 +113,7 @@ Link.propTypes = {
 
 Link.defaultProps = {
   expandTitle: null,
-  invert: undefined,
+  invert: false,
   a11yLabel: undefined,
 }
 

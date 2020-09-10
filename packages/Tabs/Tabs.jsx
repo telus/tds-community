@@ -48,11 +48,11 @@ const Tabs = props => {
     _nodes[i] = tabRef
   }
   const mapTabs = () => {
-    if (props.tabs.length > 0) {
-      return props.tabs.map((tab, i) => {
+    if (props.children.length > 0) {
+      return props.children.map((tab, i) => {
         return (
-          <Tab ref={tabRef => setRef(tabRef, i)} key={hash(tab)} onClick={() => currentIndex(i)}>
-            <TabLabel>{tab}</TabLabel>
+          <Tab ref={tabRef => setRef(tabRef, i)} key={hash(i)} onClick={() => currentIndex(i)}>
+            <TabLabel>{tab.props.heading}</TabLabel>
           </Tab>
         )
       })
@@ -138,13 +138,6 @@ Tabs.propTypes = {
    * The tab panels. Must be at least one `<Tabs.Panel />`.
    */
   children: PropTypes.node.isRequired,
-  /**
-   * The pagination panels. Must be at least one `<Pagination.Panel />`.
-   */
-  tabs: PropTypes.array,
-}
-Tabs.defaultProps = {
-  tabs: [],
 }
 Tabs.Panel = Panel
 export default Tabs

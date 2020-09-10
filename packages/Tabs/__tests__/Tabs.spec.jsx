@@ -1,15 +1,15 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import AddTabs from '../Tabs'
+import Tabs from '../Tabs'
 
-describe('AddTabs', () => {
+describe('Tabs', () => {
   const children = (
-    <AddTabs copy="en">
-      <AddTabs.Panel>Content 1</AddTabs.Panel>
-      <AddTabs.Panel>Content 2</AddTabs.Panel>
-      <AddTabs.Panel>Content 3</AddTabs.Panel>
-    </AddTabs>
+    <Tabs copy="en">
+      <Tabs.Panel>Content 1</Tabs.Panel>
+      <Tabs.Panel>Content 2</Tabs.Panel>
+      <Tabs.Panel>Content 3</Tabs.Panel>
+    </Tabs>
   )
   const doMount = () => mount(children)
 

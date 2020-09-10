@@ -1,3 +1,3 @@
-import AddTabs from './dist/index.es'
+import Tabs from './dist/index.es'
 
-export default AddTabs
+export default Tabs

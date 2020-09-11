@@ -34,7 +34,7 @@ const MiniExpandCollapse = ({ children, expandTitle, collapseTitle, size, invert
         invert={invert}
         a11yLabel={a11yLabel}
       />
-      <FadeAndReveal timeout={500} in={isPanelOpen} height={contentHeight} duration={500}>
+      <FadeAndReveal delay={0} timeout={500} in={isPanelOpen} height={contentHeight} duration={500}>
         {() => <div ref={contentRef}>{children}</div>}
       </FadeAndReveal>
     </div>

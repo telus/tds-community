@@ -118,16 +118,18 @@ const Modal = ({
                     </div>
                     {description}
                   </Box>
-                  <PaddingOverride>
-                    <Box vertical={5}>
-                      <CTAWrapper cancelCTAExists={cancelCTAText}>
-                        <Button onClick={onConfirm}>{confirmCTAText}</Button>
-                        {cancelCTAText && (
-                          <OutlineButton onClick={handleClose}>{cancelCTAText}</OutlineButton>
-                        )}
-                      </CTAWrapper>
-                    </Box>
-                  </PaddingOverride>
+                  {confirmCTAText && (
+                    <PaddingOverride>
+                      <Box vertical={5}>
+                        <CTAWrapper cancelCTAExists={cancelCTAText}>
+                          <Button onClick={onConfirm}>{confirmCTAText}</Button>
+                          {cancelCTAText && (
+                            <OutlineButton onClick={handleClose}>{cancelCTAText}</OutlineButton>
+                          )}
+                        </CTAWrapper>
+                      </Box>
+                    </PaddingOverride>
+                  )}
                 </Box>
               </ModalWrapper>
               <CloseButtonWrapper>
@@ -155,7 +157,7 @@ Modal.propTypes = {
    *
    * Text that represents confirm CTA.
    */
-  confirmCTAText: PropTypes.string.isRequired,
+  confirmCTAText: PropTypes.string,
   /**
    *
    * Text that represents cancel CTA or closing modal action.
@@ -178,7 +180,7 @@ Modal.propTypes = {
    *
    * Handler Function used to proceed with modal CTA.
    */
-  onConfirm: PropTypes.func.isRequired,
+  onConfirm: PropTypes.func,
   /**
    *
    * Accepts a React Element's Ref, in order to focus on it after modal closes. Modal will call your ref as `ref.current.focus()`
@@ -191,7 +193,9 @@ Modal.propTypes = {
 }
 
 Modal.defaultProps = {
+  confirmCTAText: '',
   cancelCTAText: '',
+  onConfirm: null,
 }
 
 export default Modal

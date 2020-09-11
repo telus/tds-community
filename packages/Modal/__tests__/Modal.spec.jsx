@@ -1,7 +1,8 @@
 import React from 'react'
 import Heading from '@tds/core-heading'
 import Box from '@tds/core-box'
-import { mount } from 'enzyme'
+import Button from '@tds/core-button'
+import { mount, shallow } from 'enzyme'
 
 import Modal from '../Modal'
 
@@ -70,6 +71,26 @@ describe('Modal', () => {
 
     expect(modalWithCustomContent.contains(heading)).toEqual(true)
     expect(modalWithCustomContent.contains(bodyText)).toEqual(true)
+  })
+
+  it('should not show cta when confirmCTAText is empty', () => {
+    const doShallow = (props = {}) =>
+      shallow(
+        <Modal
+          isOpen={true}
+          heading="A heading"
+          bodyText="Text"
+          confirmCTAText=""
+          focusElementAfterClose={{}}
+          onConfirm={() => {}}
+          onClose={() => {}}
+          {...props}
+        />
+      )
+
+    const modalWithNoCta = doShallow()
+
+    expect(modalWithNoCta.find(Button)).toHaveLength(0)
   })
 
   //   Check if confirm and cancel buttons appear when using Dialogue Modal

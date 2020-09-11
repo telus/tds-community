@@ -28,7 +28,7 @@
   "dependencies": {
     "@tds/core-a11y-content": "^2.1.5",
     "@tds/core-colours": "^2.2.1",
-    "@tds/util-helpers": "^1.2.0",
+    "@tds/util-helpers": "^1.5.1",
     "prop-types": "^15.6.2",
     "react-tabs": "^3.1.1",
     "string-hash": "^1.1.3"

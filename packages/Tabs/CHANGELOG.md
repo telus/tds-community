@@ -3,20 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.0...@tds/community-tabs@0.1.1) (2020-09-21)
-
-
-### Bug Fixes
-
-* **community-tabs:** removing unnecessary dep ([e94e7c8](https://github.com/telus/tds-community/commit/e94e7c8f1de7531b039dbff8282fd775c4d4f9c4))
-* **community-tabs:** updating deps ([e8ead25](https://github.com/telus/tds-community/commit/e8ead25326af2283119eab2f5e88a49538e47bf7))
-* **community-tabs:** updating deps ([51b2f11](https://github.com/telus/tds-community/commit/51b2f11282dd3a4b244916800e802e808869c939))
-* **community-tabs:** updating deps ([20a362a](https://github.com/telus/tds-community/commit/20a362a4e0087807f144dd81880cfae3f040ed8e))
-
-
-
-
-
 # 0.1.0 (2020-09-10)
 
 

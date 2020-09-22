@@ -536,6 +536,7 @@ exports[`RadioCard must have a label 1`] = `
 
 .c0:active {
   border: 0.0625rem solid #2B8000;
+  box-shadow: 0 0 0 0.0625rem #2B8000,0 0 0 0.125rem #FFFFFF inset,0 0 0 0.1875rem #2B8000 inset !important;
   background: #f4f9f2;
 }
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.1.0...@tds/community-mini-expand-collapse@0.1.1) (2020-09-22)
+
+
+### Bug Fixes
+
+* **community-mini-expand-collapse:** adding missing prop ([60d6ded](https://github.com/telus/tds-community/commit/60d6dedc2debfb40f2e52737806b7f1170f9c3e4))
+
+
+### Reverts
+
+* **publish:** update packages ([6760c9e](https://github.com/telus/tds-community/commit/6760c9e97ddb564239f4bbd61b249e5f437938ff))
+
+
+
+
+
 # 0.1.0 (2020-09-09)
 
 

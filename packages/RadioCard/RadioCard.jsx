@@ -188,7 +188,7 @@ RadioCard.propTypes = {
    */
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   /**
-   * Associate this radio with a group. Set as the HTML name attribute.
+   * Associate this radio card with a group. Set as the HTML name attribute.
    */
   name: PropTypes.string.isRequired,
   /**
@@ -208,11 +208,11 @@ RadioCard.propTypes = {
    */
   width: PropTypes.number.isRequired,
   /**
-   * Height of the card (in pixels).
+   * Height of the radio card (in pixels).
    */
   height: PropTypes.number.isRequired,
   /**
-   * Additional details regarding the selection to present on the card.
+   * Additional details regarding the selection to present on the radio card.
    */
   children: PropTypes.node,
 }

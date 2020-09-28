@@ -85,37 +85,31 @@ const HiddenInput = styled.input(getStates, {
   },
 })
 
-const StyledLabel = styled.label(
-  getVariant,
-  borders.none,
-  borders.rounded,
-  ({ width, height }) => ({
-    display: 'flex',
-    cursor: 'pointer',
-    height: `${height}px`,
-    width: `${width}px`,
-    border: `0.0625rem solid ${colorGreyGainsboro}`,
-    boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.1)',
-    backgroundColor: colorWhite,
-    transition: 'transform 0.2s ease-in-out, background 0.2s, color 0.2s, border 0.2s ease',
-    '&:hover': {
-      transform: 'scale(1.025)',
+const StyledLabel = styled.label(getVariant, borders.none, borders.rounded, {
+  display: 'flex',
+  cursor: 'pointer',
+  height: '100%',
+  border: `0.0625rem solid ${colorGreyGainsboro}`,
+  boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.1)',
+  backgroundColor: colorWhite,
+  transition: 'transform 0.2s ease-in-out, background 0.2s, color 0.2s, border 0.2s ease',
+  '&:hover': {
+    transform: 'scale(1.025)',
+  },
+  '@media (prefers-reduced-motion: reduce)': {
+    transition: 'none !important',
+  },
+  [`${HiddenInput}:focus ~ & > div > div > ${FakeRadio}`]: {
+    boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,
+    borderColor: colorWhite,
+  },
+  [`${HiddenInput}:checked ~ & > div > div > ${FakeRadio}`]: {
+    '& > span': {
+      display: 'block',
     },
-    '@media (prefers-reduced-motion: reduce)': {
-      transition: 'none !important',
-    },
-    [`${HiddenInput}:focus ~ & > div > div > ${FakeRadio}`]: {
-      boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,
-      borderColor: colorWhite,
-    },
-    [`${HiddenInput}:checked ~ & > div > div > ${FakeRadio}`]: {
-      '& > span': {
-        display: 'block',
-      },
-      borderColor: colorGreyShuttle,
-    },
-  })
-)
+    borderColor: colorGreyShuttle,
+  },
+})
 
 const InnerChecked = styled.span({
   width: '0.75rem',
@@ -138,14 +132,20 @@ const getGeneratedId = (name, value) => {
 
 const StyledLabelBox = styled(Box)(labelBox)
 const StyledChildrenBox = styled(Box)({ marginLeft: '2.25rem' })
+const StyledDiv = styled.div(({ fullHeight }) => {
+  if (fullHeight) {
+    return { height: '100%' }
+  }
+  return {}
+})
 
 /**
  * @version ./package.json
  * @visibleName RadioCard (beta)
  */
 const RadioCard = React.forwardRef(
-  ({ id, name, value, label, width, height, variant, children, ...rest }, ref) => (
-    <div>
+  ({ id, name, value, label, fullHeight, variant, children, ...rest }, ref) => (
+    <StyledDiv fullHeight={fullHeight}>
       <HiddenInput
         type="radio"
         id={id || getGeneratedId(name, value)}
@@ -159,8 +159,6 @@ const RadioCard = React.forwardRef(
 
       <StyledLabel
         htmlFor={id || getGeneratedId(name, value)}
-        width={width}
-        height={height}
         variant={variant}
         data-testid="checkbox-label"
       >
@@ -174,7 +172,7 @@ const RadioCard = React.forwardRef(
           {children && <StyledChildrenBox>{children}</StyledChildrenBox>}
         </StyledLabelBox>
       </StyledLabel>
-    </div>
+    </StyledDiv>
   )
 )
 
@@ -204,13 +202,9 @@ RadioCard.propTypes = {
    */
   id: PropTypes.string,
   /**
-   * Width of the radio card (in pixels).
+   * Sets the `Card`'s `height` equal to its parent.
    */
-  width: PropTypes.number.isRequired,
-  /**
-   * Height of the radio card (in pixels).
-   */
-  height: PropTypes.number.isRequired,
+  fullHeight: PropTypes.bool,
   /**
    * Additional details regarding the selection to present on the radio card.
    */
@@ -222,6 +216,7 @@ RadioCard.defaultProps = {
   variant: 'standard',
   id: undefined,
   children: null,
+  fullHeight: false,
 }
 
 RadioCard.displayName = 'RadioCard'

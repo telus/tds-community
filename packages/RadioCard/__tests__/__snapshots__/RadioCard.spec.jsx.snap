@@ -519,8 +519,7 @@ exports[`RadioCard must have a label 1`] = `
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  height: 200px;
-  width: 200px;
+  height: 100%;
   border: 0.0625rem solid #d8d8d8;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,0.1);
   background-color: #fff;
@@ -606,9 +605,7 @@ exports[`RadioCard must have a label 1`] = `
 <label
   className="c0"
   data-testid="checkbox-label"
-  height={200}
   htmlFor="radiogroup_the-value"
-  width={200}
 >
   <RadioCard__StyledLabelBox
     horizontal={3}
@@ -1092,21 +1089,23 @@ exports[`RadioCard must have a label 1`] = `
 `;
 
 exports[`RadioCard renders 1`] = `
-<div>
+<RadioCard__StyledDiv
+  fullHeight={false}
+>
   <RadioCard__HiddenInput
     data-testid="hidden-input"
+    height={218}
     id="papn_1payment"
     name="papn"
     type="radio"
     value="1payment"
     variant="standard"
+    width={315}
   />
   <RadioCard__StyledLabel
     data-testid="checkbox-label"
-    height={218}
     htmlFor="papn_1payment"
     variant="standard"
-    width={315}
   >
     <RadioCard__StyledLabelBox
       horizontal={3}
@@ -1147,5 +1146,5 @@ exports[`RadioCard renders 1`] = `
       </RadioCard__StyledChildrenBox>
     </RadioCard__StyledLabelBox>
   </RadioCard__StyledLabel>
-</div>
+</RadioCard__StyledDiv>
 `;

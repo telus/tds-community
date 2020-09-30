@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.1.1...@tds/community-modal@1.2.0) (2020-09-30)
+
+
+### Features
+
+* **community-modal:** make confirmCTAText and onConfirm props optional ([7b45040](https://github.com/telus/tds-community/commit/7b45040ece3d70e8fbeff55c3517e2a020a419ee))
+
+
+
+
+
 ## [1.1.1](https://github.com/telus/tds-community/compare/@tds/community-modal@1.1.0...@tds/community-modal@1.1.1) (2020-09-09)
 
 

@@ -593,6 +593,9 @@ exports[`RadioCard must have a label 1`] = `
   .c0 {
     -webkit-transition: none !important;
     transition: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
   }
 }
 

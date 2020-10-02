@@ -5,7 +5,7 @@ Similar to `Radio` buttons, `RadioCards` are used when there is a list of two or
 - All `RadioCards` within a group should have the same height and width
 - Use the `fullHeight` prop to have the bottom edge of the `RadioCards` aligned. This is usually needed when using cards in a `FlexGrid` and will result in the `RadioCards` matching the height of their parent container
 - The state of the RadioCards should be controlled, and as such both a `checked` and an `onChange` prop should be passed to each RadioCard
-- For accessibility, `RadioCards` should be grouped using a `<fieldset>`tag with a `<legend>` tag to define a caption
+- For accessibility, `RadioCards` should be grouped using a `<fieldset>` tag with a `<legend>` tag to define a caption
 - Avoid nesting interactive elements as `children` and additional details provided as `children` to the `RadioCard` should maintain a limit of 150 characters
 
 ```jsx

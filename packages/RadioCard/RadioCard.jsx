@@ -98,6 +98,7 @@ const StyledLabel = styled.label(getVariant, borders.none, borders.rounded, {
   },
   '@media (prefers-reduced-motion: reduce)': {
     transition: 'none !important',
+    transform: 'none !important',
   },
   [`${HiddenInput}:focus ~ & > div > div > ${FakeRadio}`]: {
     boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,

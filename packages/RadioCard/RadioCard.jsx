@@ -203,7 +203,7 @@ RadioCard.propTypes = {
    */
   id: PropTypes.string,
   /**
-   * Sets the `Card`'s `height` equal to its parent.
+   * Sets the radio card `height` equal to its parent.
    */
   fullHeight: PropTypes.bool,
   /**

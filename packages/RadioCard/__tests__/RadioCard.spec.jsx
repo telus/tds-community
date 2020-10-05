@@ -9,18 +9,13 @@ describe('RadioCard', () => {
     label: 'The radio',
     name: 'radio_group',
     value: 'the-value',
-    width: 200,
-    height: 200,
+    fullHeight: true,
+    checked: true,
+    readOnly: true,
   }
   const doShallow = () =>
     shallow(
-      <RadioCard
-        label="1 installment payment"
-        name="papn"
-        value="1payment"
-        width={315}
-        height={218}
-      >
+      <RadioCard {...defaultProps}>
         <Box vertical={3}>
           <Paragraph>$206.50 due August 15, 2020</Paragraph>
         </Box>

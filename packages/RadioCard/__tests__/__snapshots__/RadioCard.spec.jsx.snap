@@ -1093,21 +1093,21 @@ exports[`RadioCard must have a label 1`] = `
 
 exports[`RadioCard renders 1`] = `
 <RadioCard__StyledDiv
-  fullHeight={false}
+  fullHeight={true}
 >
   <RadioCard__HiddenInput
+    checked={true}
     data-testid="hidden-input"
-    height={218}
-    id="papn_1payment"
-    name="papn"
+    id="radiogroup_the-value"
+    name="radio_group"
+    readOnly={true}
     type="radio"
-    value="1payment"
+    value="the-value"
     variant="standard"
-    width={315}
   />
   <RadioCard__StyledLabel
     data-testid="checkbox-label"
-    htmlFor="papn_1payment"
+    htmlFor="radiogroup_the-value"
     variant="standard"
   >
     <RadioCard__StyledLabelBox
@@ -1128,7 +1128,7 @@ exports[`RadioCard renders 1`] = `
           invert={false}
           level="h3"
         >
-          1 installment payment
+          The radio
         </Heading>
       </Box>
       <RadioCard__StyledChildrenBox>

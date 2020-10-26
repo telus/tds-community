@@ -50,9 +50,9 @@ describe('QuietButton', () => {
   })
 
   it('should contain text', () => {
-    const button = shallow(<QuietButton>Text</QuietButton>)
-
-    expect(button.text()).toEqual('Text')
+    const quietButton = doMount()
+    expect(quietButton.text().includes('Words')).toBe(true)
+    quietButton.unmount()
   })
 
   it('should do something when clicked', () => {

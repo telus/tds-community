@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-quiet-button",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

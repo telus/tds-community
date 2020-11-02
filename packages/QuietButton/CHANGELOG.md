@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/telus/tds-community/compare/@tds/community-quiet-button@0.1.2...@tds/community-quiet-button@0.1.3) (2020-11-02)
+
+
+### Bug Fixes
+
+* **community-quiet-button:** address issue [#362](https://github.com/telus/tds-community/issues/362), fix bug ([d09fb28](https://github.com/telus/tds-community/commit/d09fb282a6ecf70a0c05a18fcfccd5efce3395b4))
+
+
+
+
+
 ## [0.1.2](https://github.com/telus/tds-community/compare/@tds/community-quiet-button@0.1.1...@tds/community-quiet-button@0.1.2) (2020-09-09)
 
 

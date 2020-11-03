@@ -30,7 +30,6 @@ const Tabs = props => {
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
   const tabRef = useRef(null)
-  const tabPanelToFocus = useRef(null)
   const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
 
   const getTabsWidth = () => {
@@ -131,7 +130,7 @@ const Tabs = props => {
     if (props.children.length > 0) {
       return props.children.map((tab, i) => {
         return (
-          <TabPanel key={hash(i)} ref={tabPanelToFocus} tabindex="0">
+          <TabPanel key={hash(i)}>
             <FlexGrid>
               <FlexGrid.Row>
                 <FlexGrid.Col xs={12}>

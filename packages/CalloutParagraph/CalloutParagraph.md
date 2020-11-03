@@ -23,3 +23,24 @@
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+### Rounded Corner use case
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={5}>
+      <Card variant="defaultWithBorder">
+        <Box between={3}>
+          <Heading level="h3">Internet 15 - Special Offer</Heading>
+          <CalloutParagraph roundedCorners>Save $70/month.</CalloutParagraph>
+          <HairlineDivider />
+          <Text size="medium">Good for basic browsing, and posting to social media.</Text>
+          <Button>Add to cart</Button>
+          <ChevronLink href="#">Learn more</ChevronLink>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```

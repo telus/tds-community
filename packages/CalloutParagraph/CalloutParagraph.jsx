@@ -36,13 +36,16 @@ const paddingValue = {
 }
 
 const TextWrapper = styled.div`
-  margin-left: ${props => marginValue.desktop[props.spacing]};
-  margin-right: ${props => marginValue.desktop[props.spacing]};
+  margin-left: ${props => (props.roundedCorners ? 'auto' : marginValue.desktop[props.spacing])};
+  margin-right: ${props => (props.roundedCorners ? 'auto' : marginValue.desktop[props.spacing])};
   @media (max-width: 576px) {
     margin-left: ${props => marginValue.mobile[props.spacing]};
     margin-right: ${props => marginValue.mobile[props.spacing]};
   }
+  width: ${props => (props.roundedCorners ? '100%' : undefined)};
   p {
+    text-align: ${props => (props.roundedCorners ? 'center' : undefined)};
+    border-radius: ${props => (props.roundedCorners ? '5px' : undefined)};
     color: #371e47;
     background: #f2eff4;
     padding-top: 0.5rem;
@@ -60,9 +63,9 @@ const TextWrapper = styled.div`
  * @version ./package.json
  * @visibleName CalloutParagraph (beta)
  */
-const CalloutParagraph = ({ children, spacing, ...rest }) => {
+const CalloutParagraph = ({ children, spacing, roundedCorners, ...rest }) => {
   return (
-    <TextWrapper spacing={spacing}>
+    <TextWrapper spacing={spacing} roundedCorners={roundedCorners}>
       <Paragraph {...safeRest(rest)}>{children}</Paragraph>
     </TextWrapper>
   )
@@ -78,10 +81,15 @@ CalloutParagraph.propTypes = {
    * The content. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired,
+  /**
+   * Corners will be slightly rounded, and text will be center-aligned when passed.
+   */
+  roundedCorners: PropTypes.bool,
 }
 
 CalloutParagraph.defaultProps = {
   spacing: 'default',
+  roundedCorners: false,
 }
 
 export default CalloutParagraph

@@ -1075,7 +1075,6 @@ exports[`Tabs renders 1`] = `
                                                   <TabList
                                                     className="react-tabs__tab-list"
                                                     key=".0"
-                                                    scrollEnabled={false}
                                                     style={
                                                       Object {
                                                         "width": undefined,
@@ -1085,7 +1084,6 @@ exports[`Tabs renders 1`] = `
                                                     <ul
                                                       className="react-tabs__tab-list"
                                                       role="tablist"
-                                                      scrollEnabled={false}
                                                       style={
                                                         Object {
                                                           "width": undefined,
@@ -1396,6 +1394,7 @@ exports[`Tabs renders 1`] = `
                                                           className="c2"
                                                         >
                                                           <Col
+                                                            tabindex="0"
                                                             xs={12}
                                                           >
                                                             <Col__StyledCol
@@ -1418,6 +1417,7 @@ exports[`Tabs renders 1`] = `
                                                                   "inherit",
                                                                 ]
                                                               }
+                                                              tabindex="0"
                                                               xs={12}
                                                             >
                                                               <StyledComponent
@@ -1465,6 +1465,7 @@ exports[`Tabs renders 1`] = `
                                                                     "inherit",
                                                                   ]
                                                                 }
+                                                                tabindex="0"
                                                                 xs={12}
                                                               >
                                                                 <div

@@ -20,66 +20,69 @@ import Panel from './Panel/Panel'
  */
 
 const Tabs = props => {
+  // Constants
+  const MARGIN_BUFFER = 28
+  const FIRST_TAB_MARGIN_BUFFER = MARGIN_BUFFER * 3
+  const MOVE_TABS_VALUE = 100
+  const ENTER_KEY = 13
+  const SPACE_BAR_KEY = 32
+
   const tabsRoot = useRef()
+  const tabRef = useRef(null)
   const [tabsContainerWidth, setTabsContainerWidth] = useState()
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
   const [totalTabsWidth, setTotalTabsWidth] = useState(0)
   const [firstTabWidth, setFirstTabWidth] = useState(0)
-  const [isScrollEnabled, setScrollEnabled] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
-  const tabRef = useRef(null)
   const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
 
   const getTabsWidth = () => {
     let tabsWidthValue = 0
-    const marginBuffer = 28
     const tabsArray =
       tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].childNodes
     const firstTab =
       tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].firstChild
     tabsArray.forEach(value => {
       if (value && value.offsetWidth) {
-        tabsWidthValue += value.offsetWidth + marginBuffer
+        tabsWidthValue += value.offsetWidth + MARGIN_BUFFER
       }
     })
-    const firstTabValue = firstTab.offsetWidth - marginBuffer * 3
+    const firstTabValue = firstTab.offsetWidth - FIRST_TAB_MARGIN_BUFFER
     setFirstTabWidth(firstTabValue)
     setTotalTabsWidth(tabsWidthValue)
     if (tabsRoot.current.offsetWidth < totalTabsWidth) {
-      setTabsContainerWidth(`${totalTabsWidth}px`)
-      return setScrollEnabled(true)
+      return setTabsContainerWidth(`${totalTabsWidth}px`)
     }
-    setTabsTranslatePosition(0)
-    return setScrollEnabled(false)
+    return setTabsTranslatePosition(0)
   }
 
   const scrollTabs = direction => {
     let currentPosition = tabsTranslatePosition
     if (direction === 'right') {
-      currentPosition -= 100
+      currentPosition -= MOVE_TABS_VALUE
     }
     if (direction === 'left') {
-      currentPosition += 100
+      currentPosition += MOVE_TABS_VALUE
     }
     setTabsTranslatePosition(currentPosition)
     getTabsWidth()
   }
 
   const handleTabsKeyUp = (e, i) => {
-    if (e.keyCode === 13 || e.keyCode === 32) {
+    if (e.keyCode === ENTER_KEY || e.keyCode === SPACE_BAR_KEY) {
       setCurrent(i)
     }
-    if (e.target.offsetLeft <= 28) {
+    if (e.target.offsetLeft <= MARGIN_BUFFER) {
       return setTabsTranslatePosition(0)
     }
-    setTabsTranslatePosition(-e.target.offsetLeft + 28)
+    setTabsTranslatePosition(-e.target.offsetLeft + MARGIN_BUFFER)
     return getTabsWidth()
   }
 
   const handleArrowKeyUp = (e, value) => {
-    if (e.keyCode === 13 || e.keyCode === 32) {
+    if (e.keyCode === ENTER_KEY || e.keyCode === SPACE_BAR_KEY) {
       scrollTabs(value)
     }
   }
@@ -133,7 +136,7 @@ const Tabs = props => {
           <TabPanel key={hash(i)}>
             <FlexGrid>
               <FlexGrid.Row>
-                <FlexGrid.Col xs={12}>
+                <FlexGrid.Col xs={12} tabindex="0">
                   <Panel {...rest}>{children[current]}</Panel>
                 </FlexGrid.Col>
               </FlexGrid.Row>
@@ -171,9 +174,7 @@ const Tabs = props => {
             <ReactTabs>
               <TabBorder>
                 <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
-                  <TabList scrollEnabled={isScrollEnabled} style={{ width: tabsContainerWidth }}>
-                    {mapTabs()}
-                  </TabList>
+                  <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
                 </TabListContainer>
               </TabBorder>
               {mapTabContent()}

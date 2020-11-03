@@ -208,7 +208,7 @@ Tabs.propTypes = {
   rightArrowLabel: PropTypes.string,
 }
 
-Tabs.defaultPropTypes = {
+Tabs.defaultProps = {
   leftArrowLabel: 'Move menu to the left',
   rightArrowLabel: 'Move menu to the right',
 }

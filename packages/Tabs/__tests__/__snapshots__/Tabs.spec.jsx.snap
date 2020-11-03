@@ -710,7 +710,6 @@ exports[`Tabs renders 1`] = `
                       class="react-tabs__tab-panel react-tabs__tab-panel--selected"
                       id="react-tabs-1"
                       role="tabpanel"
-                      tabindex="0"
                     >
                       <div
                         class="c1"
@@ -737,14 +736,12 @@ exports[`Tabs renders 1`] = `
                       class="react-tabs__tab-panel"
                       id="react-tabs-3"
                       role="tabpanel"
-                      tabindex="0"
                     />
                     <div
                       aria-labelledby="react-tabs-4"
                       class="react-tabs__tab-panel"
                       id="react-tabs-5"
                       role="tabpanel"
-                      tabindex="0"
                     />
                   </div>
                 </div>
@@ -1282,14 +1279,12 @@ exports[`Tabs renders 1`] = `
                                         selected={true}
                                         selectedClassName="react-tabs__tab-panel--selected"
                                         tabId="react-tabs-0"
-                                        tabindex="0"
                                       >
                                         <div
                                           aria-labelledby="react-tabs-0"
                                           className="react-tabs__tab-panel react-tabs__tab-panel--selected"
                                           id="react-tabs-1"
                                           role="tabpanel"
-                                          tabindex="0"
                                         >
                                           <FlexGrid
                                             gutter={true}
@@ -1510,14 +1505,12 @@ exports[`Tabs renders 1`] = `
                                         selected={false}
                                         selectedClassName="react-tabs__tab-panel--selected"
                                         tabId="react-tabs-2"
-                                        tabindex="0"
                                       >
                                         <div
                                           aria-labelledby="react-tabs-2"
                                           className="react-tabs__tab-panel"
                                           id="react-tabs-3"
                                           role="tabpanel"
-                                          tabindex="0"
                                         />
                                       </TabPanel>
                                       <TabPanel
@@ -1528,14 +1521,12 @@ exports[`Tabs renders 1`] = `
                                         selected={false}
                                         selectedClassName="react-tabs__tab-panel--selected"
                                         tabId="react-tabs-4"
-                                        tabindex="0"
                                       >
                                         <div
                                           aria-labelledby="react-tabs-4"
                                           className="react-tabs__tab-panel"
                                           id="react-tabs-5"
                                           role="tabpanel"
-                                          tabindex="0"
                                         />
                                       </TabPanel>
                                     </div>

@@ -17,5 +17,17 @@ Note that the `copy` prop must be provided at all times for the correct accessib
     A great selection of channels from major Canadian and U.S. networks, plus get 72 Stingray music
     channels.
   </Tabs.Panel>
+  <Tabs.Panel heading="More content">
+    Choose from more than 40 options and customize them any time in your online account or on the My
+    TELUS app.
+  </Tabs.Panel>
+  <Tabs.Panel heading="More content again">
+    Choose from more than 15 options and customize them any time in your online account or on the My
+    TELUS app.
+  </Tabs.Panel>
+  <Tabs.Panel heading="Even more content">
+    A great selection of channels from major Canadian and U.S. networks, plus get 72 Stingray music
+    channels.
+  </Tabs.Panel>
 </Tabs>
 ```

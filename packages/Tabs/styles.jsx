@@ -1,34 +1,26 @@
 import styled, { css } from 'styled-components'
 
 export const TabsContainer = styled.div`
+  overflow: hidden;
+  padding-top: 6px;
   position: relative;
-  .react-tabs {
-    overflow-x: hidden;
-  }
-
   .react-tabs__tab-list {
-    transition: 0.9s all ease;
-    transform: translate3d(${props => props.positionToMove}px, 0px, 0px);
-    white-space: nowrap;
+    padding: 1px 0;
   }
-
   .react-tabs__tab {
     display: inline-block;
     cursor: pointer;
-    padding: 0 24px;
+    padding: 8px 10px 0;
+    margin: 0 14px;
     min-width: 44px;
     text-align: center;
     position: relative;
-
     &:first-child {
-      padding-left: 0;
-    }
-    &:last-child {
-      padding-right: 0;
+      margin-left: 2px;
     }
 
     &:hover {
-      span {
+      h4 {
         text-shadow: 0px 0px 1px #2a2c2e;
         border-bottom: 4px solid #d8d8d8;
       }
@@ -36,9 +28,17 @@ export const TabsContainer = styled.div`
 
     &:active,
     &.react-tabs__tab--selected {
-      span {
+      h4 {
         text-shadow: 0px 0px 1px #2a2c2e;
         border-bottom: 4px solid #71747a;
+      }
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px #979797;
+      border-radius: 4px;
+      outline: none;
+      h4 {
+        border-bottom: none;
       }
     }
   }
@@ -48,18 +48,19 @@ export const TabsContainer = styled.div`
 
     &.react-tabs__tab-panel--selected {
       display: block;
+      margin-top: 24px;
     }
   }
 `
 
-export const TabListContainer = styled.div`
+export const TabBorder = styled.div`
   border-bottom: 1px solid #d8d8d8;
-  position: relative;
+  overflow-x: hidden;
   margin-bottom: 8px;
   &:after {
     content: '';
     position: absolute;
-    top: 100%;
+    top: 52px;
     left: 0;
     width: 100%;
     height: 32px;
@@ -74,7 +75,15 @@ export const TabListContainer = styled.div`
   }
 `
 
-export const TabLabel = styled.span`
+export const TabListContainer = styled.div`
+  position: relative;
+  transition: 0.9s all ease;
+  padding-right: 24px;
+  transform: translate(${props => props.positionToMove}px);
+  white-space: nowrap;
+`
+
+export const TabLabel = styled.h4`
   height: 100%;
   display: block;
   padding-bottom: 8px;
@@ -83,32 +92,43 @@ export const TabLabel = styled.span`
 
 export const TabArrows = styled.div`
   position: absolute;
-  top: 0;
-  background: #fff;
+  top: 8px;
   z-index: 10;
+  padding: 5px 0;
   cursor: pointer;
-
+  &:focus {
+    outline: none;
+    div {
+      box-shadow: 0 0 0 2px #979797;
+      border-radius: 4px;
+      margin: 0 2px;
+    }
+  }
   ${props =>
     props.direction === 'left' &&
     css`
       left: 0;
-      border-right: 1px solid #d8d8d8;
+      padding-right: 7px;
     `};
 
   ${props =>
     props.direction === 'right' &&
     css`
       right: 0;
-      border-left: 1px solid #d8d8d8;
+      padding-left: 7px;
+    `};
+`
+export const ArrowInner = styled.div`
+  background: #fff;
+  ${props =>
+    props.direction === 'left' &&
+    css`
+      border-right: 1px solid #d8d8d8;
     `};
 
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 5px;
-    background: #fff;
-  }
+  ${props =>
+    props.direction === 'right' &&
+    css`
+      border-left: 1px solid #d8d8d8;
+    `};
 `

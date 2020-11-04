@@ -33,6 +33,7 @@ const Tabs = props => {
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
   const [totalTabsWidth, setTotalTabsWidth] = useState(0)
   const [firstTabWidth, setFirstTabWidth] = useState(0)
+  const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
@@ -99,17 +100,19 @@ const Tabs = props => {
     if (-tabsTranslatePosition + tabsRoot.current.offsetWidth >= totalTabsWidth) {
       setRightArrowVisible(false)
     }
-  }, [totalTabsWidth, firstTabWidth, tabsTranslatePosition, getTabsWidth])
+    setResizeTriggered(false)
+  }, [totalTabsWidth, firstTabWidth, tabsTranslatePosition, resizeTriggered])
 
   useEffect(() => {
     function handleResize() {
       getTabsWidth()
+      setResizeTriggered(true)
     }
     window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [getTabsWidth])
+  }, [getTabsWidth, resizeTriggered])
 
   const mapTabs = () => {
     if (props.children.length > 0) {

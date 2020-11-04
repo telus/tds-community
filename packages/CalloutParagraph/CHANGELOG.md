@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.1.1...@tds/community-callout-paragraph@0.2.0) (2020-11-04)
+
+
+### Features
+
+* **community-callout-paragraph:** add rounded corner option ([99018af](https://github.com/telus/tds-community/commit/99018afef99d1ac23b6af5e9cee2269fa6ff3037))
+
+
+
+
+
 ## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.1.0...@tds/community-callout-paragraph@0.1.1) (2020-09-09)
 
 

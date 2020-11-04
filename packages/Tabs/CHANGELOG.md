@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.2...@tds/community-tabs@0.1.3) (2020-11-04)
+
+
+### Bug Fixes
+
+* **community-tabs:** accessibility and responsive design ([c76d49d](https://github.com/telus/tds-community/commit/c76d49d817a9e06dd9bdd1acb38dbbb10499b03a))
+* **community-tabs:** fixing typo ([92a88c0](https://github.com/telus/tds-community/commit/92a88c0c1d8db97e5da878cdf3d8855d82185a98))
+* **community-tabs:** making changes as per review ([42f9577](https://github.com/telus/tds-community/commit/42f9577f8cc9b01a57f798e0439180297b1d5799))
+* **community-tabs:** removing unused ref ([d26df49](https://github.com/telus/tds-community/commit/d26df49b4c85d1f145217f5c1557838c6d8e9e28))
+
+
+
+
+
 ## [0.1.2](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.1...@tds/community-tabs@0.1.2) (2020-09-22)
 
 **Note:** Version bump only for package @tds/community-tabs

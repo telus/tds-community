@@ -24,7 +24,7 @@
 </FlexGrid>
 ```
 
-### Rounded Corner use case
+### Rounded Corners
 
 ```jsx
 <FlexGrid>

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.2.0...@tds/community-callout-paragraph@0.2.1) (2020-11-05)
+
+
+### Bug Fixes
+
+* **community-callout-paragraph:** reduce padding amount to 2px ([50ca864](https://github.com/telus/tds-community/commit/50ca864771cbf568233bef73fe89635fa5343b8a))
+* **community-callout-paragraph:** reduce padding to match designs ([c7b8c91](https://github.com/telus/tds-community/commit/c7b8c91bde450f3c82652e897974705d290787e7))
+
+
+
+
+
 # [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.1.1...@tds/community-callout-paragraph@0.2.0) (2020-11-04)
 
 

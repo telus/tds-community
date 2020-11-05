@@ -48,8 +48,8 @@ const TextWrapper = styled.div`
     border-radius: ${props => (props.roundedCorners ? '5px' : undefined)};
     color: #371e47;
     background: #f2eff4;
-    padding-top: ${props => (props.roundedCorners ? '3px' : '0.5rem')};
-    padding-bottom: ${props => (props.roundedCorners ? '3px' : '0.5rem')};
+    padding-top: ${props => (props.roundedCorners ? '2px' : '0.5rem')};
+    padding-bottom: ${props => (props.roundedCorners ? '2px' : '0.5rem')};
     padding-left: ${props => paddingValue.desktop[props.spacing]};
     padding-right: ${props => paddingValue.desktop[props.spacing]};
     @media (max-width: 576px) {

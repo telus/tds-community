@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { safeRest } from '@tds/util-helpers'
 
 import Paragraph from '@tds/core-paragraph'
+import { colorTelusPurple } from '@tds/core-colours'
 
 const marginValue = {
   mobile: {
@@ -45,8 +46,10 @@ const TextWrapper = styled.div`
   width: ${props => (props.roundedCorners ? '100%' : undefined)};
   p {
     text-align: ${props => (props.roundedCorners ? 'center' : undefined)};
+    font-size: ${props => (props.roundedCorners ? '14px' : '1rem')};
+    line-height: ${props => (props.roundedCorners ? '20px' : undefined)};
     border-radius: ${props => (props.roundedCorners ? '5px' : undefined)};
-    color: #371e47;
+    color: ${colorTelusPurple};
     background: #f2eff4;
     padding-top: ${props => (props.roundedCorners ? '2px' : '0.5rem')};
     padding-bottom: ${props => (props.roundedCorners ? '2px' : '0.5rem')};

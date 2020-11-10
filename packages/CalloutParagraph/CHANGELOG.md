@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.2.1...@tds/community-callout-paragraph@0.2.2) (2020-11-10)
+
+
+### Bug Fixes
+
+* **community-callout-paragraph:** reduce font size and add line height ([94f3867](https://github.com/telus/tds-community/commit/94f3867505ec45b675a2237aff6087d169bc6b56))
+
+
+
+
+
 ## [0.2.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.2.0...@tds/community-callout-paragraph@0.2.1) (2020-11-05)
 
 

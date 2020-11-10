@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-callout-paragraph",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,8 +26,8 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@tds/core-paragraph": "^2.0.12",
     "@tds/core-colours": "^2.2.1",
+    "@tds/core-paragraph": "^2.0.12",
     "@tds/util-helpers": "^1.5.0",
     "prop-types": "^15.6.2"
   }

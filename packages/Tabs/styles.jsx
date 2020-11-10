@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components'
 export const TabsContainer = styled.div`
   overflow: hidden;
   padding-top: 6px;
-  position: relative;
+  > div {
+    position: relative;
+  }
   .react-tabs__tab-list {
     padding: 1px 0;
   }

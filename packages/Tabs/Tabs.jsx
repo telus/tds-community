@@ -23,7 +23,7 @@ const Tabs = props => {
   // Constants
   const MARGIN_BUFFER = 28
   const FIRST_TAB_MARGIN_BUFFER = MARGIN_BUFFER * 3
-  const MOVE_TABS_VALUE = 100
+  const MOVE_TABS_VALUE = 300
   const ENTER_KEY = 13
   const SPACE_BAR_KEY = 32
 
@@ -33,6 +33,7 @@ const Tabs = props => {
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
   const [totalTabsWidth, setTotalTabsWidth] = useState(0)
   const [firstTabWidth, setFirstTabWidth] = useState(0)
+  const [lastTabWidth, setLastTabWidth] = useState(0)
   const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
@@ -45,13 +46,19 @@ const Tabs = props => {
       tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].childNodes
     const firstTab =
       tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].firstChild
+    const lastTab =
+      tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].lastChild
+
     tabsArray.forEach(value => {
       if (value && value.offsetWidth) {
         tabsWidthValue += value.offsetWidth + MARGIN_BUFFER
       }
     })
-    const firstTabValue = firstTab.offsetWidth - FIRST_TAB_MARGIN_BUFFER
+    const firstTabValue = firstTab.offsetWidth + FIRST_TAB_MARGIN_BUFFER
+    const lastTabValue = lastTab.offsetWidth + FIRST_TAB_MARGIN_BUFFER
+
     setFirstTabWidth(firstTabValue)
+    setLastTabWidth(lastTabValue)
     setTotalTabsWidth(tabsWidthValue)
     if (tabsRoot.current.offsetWidth < totalTabsWidth) {
       return setTabsContainerWidth(`${totalTabsWidth}px`)
@@ -66,6 +73,12 @@ const Tabs = props => {
     }
     if (direction === 'left') {
       currentPosition += MOVE_TABS_VALUE
+    }
+    if (-currentPosition + lastTabWidth > totalTabsWidth) {
+      currentPosition = -totalTabsWidth + lastTabWidth - MARGIN_BUFFER
+    }
+    if (direction === 'left' && -currentPosition < firstTabWidth) {
+      currentPosition = 0
     }
     setTabsTranslatePosition(currentPosition)
     getTabsWidth()

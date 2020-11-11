@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.4...@tds/community-tabs@0.1.5) (2020-11-11)
+
+
+### Bug Fixes
+
+* **community-tabs:** fixes floating arrows issue ([0a469d7](https://github.com/telus/tds-community/commit/0a469d7d7d1c8b6a807b5831aa9d13852c124a37))
+* **community-tabs:** fixes the responsive issues ([6f2c2f7](https://github.com/telus/tds-community/commit/6f2c2f73db4b9d71faa80fb909c2aed7523356fb))
+
+
+
+
+
 ## [0.1.4](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.3...@tds/community-tabs@0.1.4) (2020-11-05)
 
 

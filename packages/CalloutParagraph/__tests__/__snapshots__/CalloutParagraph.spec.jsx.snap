@@ -2,6 +2,7 @@
 
 exports[`CalloutParagraph renders 1`] = `
 <CalloutParagraph__TextWrapper
+  compact={false}
   roundedCorners={false}
   spacing="default"
 >
@@ -18,6 +19,7 @@ exports[`CalloutParagraph renders 1`] = `
 
 exports[`CalloutParagraph renders with compact 1`] = `
 <CalloutParagraph__TextWrapper
+  compact={false}
   roundedCorners={false}
   spacing="compact"
 >
@@ -34,6 +36,7 @@ exports[`CalloutParagraph renders with compact 1`] = `
 
 exports[`CalloutParagraph renders with intermediate 1`] = `
 <CalloutParagraph__TextWrapper
+  compact={false}
   roundedCorners={false}
   spacing="intermediate"
 >
@@ -50,6 +53,7 @@ exports[`CalloutParagraph renders with intermediate 1`] = `
 
 exports[`CalloutParagraph renders with narrow 1`] = `
 <CalloutParagraph__TextWrapper
+  compact={false}
   roundedCorners={false}
   spacing="narrow"
 >

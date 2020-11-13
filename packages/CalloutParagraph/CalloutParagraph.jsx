@@ -46,13 +46,13 @@ const TextWrapper = styled.div`
   width: ${props => (props.roundedCorners ? '100%' : undefined)};
   p {
     text-align: ${props => (props.roundedCorners ? 'center' : undefined)};
-    font-size: ${props => (props.roundedCorners ? '14px' : '1rem')};
-    line-height: ${props => (props.roundedCorners ? '20px' : undefined)};
+    font-size: ${props => (props.compact ? '14px' : '1rem')};
+    line-height: ${props => (props.compact ? '20px' : undefined)};
     border-radius: ${props => (props.roundedCorners ? '5px' : undefined)};
     color: ${colorTelusPurple};
     background: #f2eff4;
-    padding-top: ${props => (props.roundedCorners ? '2px' : '0.5rem')};
-    padding-bottom: ${props => (props.roundedCorners ? '2px' : '0.5rem')};
+    padding-top: ${props => (props.compact ? '2px' : '0.5rem')};
+    padding-bottom: ${props => (props.compact ? '2px' : '0.5rem')};
     padding-left: ${props => paddingValue.desktop[props.spacing]};
     padding-right: ${props => paddingValue.desktop[props.spacing]};
     @media (max-width: 576px) {
@@ -66,9 +66,9 @@ const TextWrapper = styled.div`
  * @version ./package.json
  * @visibleName CalloutParagraph (beta)
  */
-const CalloutParagraph = ({ children, spacing, roundedCorners, ...rest }) => {
+const CalloutParagraph = ({ children, spacing, roundedCorners, compact, ...rest }) => {
   return (
-    <TextWrapper spacing={spacing} roundedCorners={roundedCorners}>
+    <TextWrapper spacing={spacing} roundedCorners={roundedCorners} compact={compact}>
       <Paragraph {...safeRest(rest)}>{children}</Paragraph>
     </TextWrapper>
   )
@@ -88,11 +88,16 @@ CalloutParagraph.propTypes = {
    * Corners will be slightly rounded, and text will be center-aligned when passed.
    */
   roundedCorners: PropTypes.bool,
+  /**
+   * Font size and padding around text will be smaller.
+   */
+  compact: PropTypes.bool,
 }
 
 CalloutParagraph.defaultProps = {
   spacing: 'default',
   roundedCorners: false,
+  compact: false,
 }
 
 export default CalloutParagraph

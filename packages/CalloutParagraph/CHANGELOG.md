@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.2.2...@tds/community-callout-paragraph@0.3.0) (2020-11-17)
+
+
+### Features
+
+* **community-callout-paragraph:** add compact prop ([4e7105a](https://github.com/telus/tds-community/commit/4e7105a6d6e5fe8325694d077ff9cbbb2b261c7f))
+
+
+
+
+
 ## [0.2.2](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.2.1...@tds/community-callout-paragraph@0.2.2) (2020-11-10)
 
 

@@ -40,8 +40,8 @@ const TextWrapper = styled.div`
   margin-left: ${props => (props.roundedCorners ? 'auto' : marginValue.desktop[props.spacing])};
   margin-right: ${props => (props.roundedCorners ? 'auto' : marginValue.desktop[props.spacing])};
   @media (max-width: 576px) {
-    margin-left: ${props => marginValue.mobile[props.spacing]};
-    margin-right: ${props => marginValue.mobile[props.spacing]};
+    margin-left: ${props => (props.roundedCorners ? 'auto' : marginValue.mobile[props.spacing])};
+    margin-right: ${props => (props.roundedCorners ? 'auto' : marginValue.mobile[props.spacing])};
   }
   width: ${props => (props.roundedCorners ? '100%' : undefined)};
   p {

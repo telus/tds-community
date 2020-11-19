@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.3.0...@tds/community-callout-paragraph@0.3.1) (2020-11-19)
+
+
+### Bug Fixes
+
+* **community-callout-paragraph:** fix margins for mobile width ([17f0155](https://github.com/telus/tds-community/commit/17f01559fceb9102a05fe35829875b70d8427bb1))
+
+
+
+
+
 # [0.3.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.2.2...@tds/community-callout-paragraph@0.3.0) (2020-11-17)
 
 

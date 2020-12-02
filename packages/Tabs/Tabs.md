@@ -31,3 +31,23 @@ Note that the `copy` prop must be provided at all times for the correct accessib
   </Tabs.Panel>
 </Tabs>
 ```
+
+### Controlled Example
+
+Use `selectedIndex` and `onSelect` to control the component externally
+
+```jsx
+<Tabs
+  copy="en"
+  selectedIndex={1}
+  onSelect={(i, p, e) => {
+    console.log('tab clicked', i, 'previous', p, 'event', e)
+    return true // return false to cancel
+  }}
+>
+  <Tabs.Panel heading="Themepacks" />
+  <Tabs.Panel heading="Premium" />
+  <Tabs.Panel heading="A-la-carte" />
+  <Tabs.Panel heading="Essentials" />
+</Tabs>
+```

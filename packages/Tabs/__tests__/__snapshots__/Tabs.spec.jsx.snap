@@ -309,10 +309,14 @@ exports[`Tabs renders 1`] = `
 <Tabs
   copy="en"
   leftArrowLabel="Move menu to the left"
+  onSelect={[Function]}
   rightArrowLabel="Move menu to the right"
+  selectedIndex={0}
 >
   <styles__TabsContainer
     copy="en"
+    onSelect={[Function]}
+    selectedIndex={0}
   >
     <StyledComponent
       copy="en"
@@ -728,6 +732,7 @@ exports[`Tabs renders 1`] = `
                           >
                             <div
                               copy="en"
+                              selectedindex="0"
                             >
                               <div>
                                 Content 1
@@ -756,9 +761,12 @@ exports[`Tabs renders 1`] = `
           </div>,
         }
       }
+      onSelect={[Function]}
+      selectedIndex={0}
     >
       <div
         className="c0"
+        onSelect={[Function]}
       >
         <FlexGrid
           gutter={false}
@@ -948,7 +956,8 @@ exports[`Tabs renders 1`] = `
                                   defaultFocus={false}
                                   defaultIndex={null}
                                   forceRenderTabPanel={false}
-                                  selectedIndex={null}
+                                  onSelect={[Function]}
+                                  selectedIndex={0}
                                 >
                                   <UncontrolledTabs
                                     className="react-tabs"
@@ -1479,9 +1488,13 @@ exports[`Tabs renders 1`] = `
                                                                 >
                                                                   <Panel
                                                                     copy="en"
+                                                                    onSelect={[Function]}
+                                                                    selectedIndex={0}
                                                                   >
                                                                     <div
                                                                       copy="en"
+                                                                      onSelect={[Function]}
+                                                                      selectedIndex={0}
                                                                     >
                                                                       <Panel>
                                                                         <div>

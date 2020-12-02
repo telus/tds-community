@@ -37,8 +37,13 @@ const Tabs = props => {
   const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(props.selectedIndex || 0)
   const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
+
+  useEffect(() => {
+    if (props.selectedIndex === undefined || props.selectedIndex === null) return
+    setCurrent(props.selectedIndex)
+  }, [props.selectedIndex])
 
   const getTabsWidth = () => {
     let tabsWidthValue = 0
@@ -185,9 +190,10 @@ const Tabs = props => {
                 <ArrowInner direction="left">
                   <ChevronLeft variant="basic" />
                 </ArrowInner>
+                s
               </TabArrows>
             )}
-            <ReactTabs>
+            <ReactTabs selectedIndex={current} onSelect={props.onSelect}>
               <TabBorder>
                 <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
                   <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
@@ -222,11 +228,21 @@ Tabs.propTypes = {
   children: PropTypes.node.isRequired,
   leftArrowLabel: PropTypes.string,
   rightArrowLabel: PropTypes.string,
+  /**
+   * Event raised on tab click
+   */
+  onSelect: PropTypes.func,
+  /**
+   * Set the selected tab by index
+   */
+  selectedIndex: PropTypes.number,
 }
 
 Tabs.defaultProps = {
+  selectedIndex: 0,
   leftArrowLabel: 'Move menu to the left',
   rightArrowLabel: 'Move menu to the right',
+  onSelect: () => {},
 }
 
 Tabs.Panel = Panel

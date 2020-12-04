@@ -149,7 +149,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c8 {
-  height: '5px';
+  height: 5px;
 }
 
 .c5 {
@@ -500,7 +500,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c8 {
-  height: '5px';
+  height: 5px;
 }
 
 .c5 {
@@ -1545,7 +1545,7 @@ exports[`Tabs renders 1`] = `
                                                     "isStatic": false,
                                                     "lastClassName": "c8",
                                                     "rules": Array [
-                                                      "height:'5px';",
+                                                      "height:5px;",
                                                     ],
                                                   },
                                                   "displayName": "styles__SandwichFilling",

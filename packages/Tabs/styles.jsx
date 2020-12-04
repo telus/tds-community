@@ -63,7 +63,7 @@ export const TabListContainer = styled.div`
 `
 
 export const SandwichFilling = styled.div`
-  height: '5px';
+  height: 5px;
 `
 
 export const TabLabel = styled.h4`

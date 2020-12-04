@@ -50,30 +50,7 @@ export const TabsContainer = styled.div`
 
     &.react-tabs__tab-panel--selected {
       display: block;
-      margin-top: 24px;
     }
-  }
-`
-
-export const TabBorder = styled.div`
-  border-bottom: 1px solid #d8d8d8;
-  overflow-x: hidden;
-  margin-bottom: 8px;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 52px;
-    left: 0;
-    width: 100%;
-    height: 32px;
-    background-image: radial-gradient(
-      at center top,
-      rgba(150, 150, 150, 0.1) 0%,
-      rgba(0, 0, 0, 0) 70%
-    );
-    padding: 0px;
-    margin: 0px;
-    border-width: 0px;
   }
 `
 

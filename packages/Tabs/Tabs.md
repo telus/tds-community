@@ -35,19 +35,22 @@ Note that the `copy` prop must be provided at all times for the correct accessib
 ### Controlled Example
 
 Use `selectedIndex` and `onSelect` to control the component externally
+Stretch will make the dividers fit the width of the containing node
 
 ```jsx
 <Tabs
   copy="en"
   selectedIndex={1}
-  onSelect={(i, p, e) => {
-    console.log('tab clicked', i, 'previous', p, 'event', e)
+  onSelect={(index, previous, event) => {
+    console.log('tab clicked', index, 'previous', previous, 'event', event)
     return true // return false to cancel
   }}
+  stretch
 >
   <Tabs.Panel heading="Themepacks" />
   <Tabs.Panel heading="Premium" />
   <Tabs.Panel heading="A-la-carte" />
   <Tabs.Panel heading="Essentials" />
+  {/* here you might dynamically show content based on onSelect index */}
 </Tabs>
 ```

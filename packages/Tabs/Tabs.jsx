@@ -1,23 +1,36 @@
 import React, { useRef, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import HairlineDivider from '@tds/core-hairline-divider'
+import DimpleDivider from '@tds/core-dimple-divider'
 import FlexGrid from '@tds/core-flex-grid'
 import { safeRest } from '@tds/util-helpers'
 import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import { Tab, Tabs as ReactTabs, TabList, TabPanel } from 'react-tabs'
-import {
-  TabsContainer,
-  TabBorder,
-  TabListContainer,
-  TabLabel,
-  TabArrows,
-  ArrowInner,
-} from './styles'
+import { TabsContainer, TabListContainer, TabLabel, TabArrows, ArrowInner } from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
 /**
  * @version ./package.json
  * @visibleName Tabs (beta)
  */
+
+const FlexContainer = p => (
+  <FlexGrid gutter={p.gutter}>
+    <FlexGrid.Row>
+      <FlexGrid.Col xs={12} tabIndex={p.tabIndex}>
+        {p.children}
+      </FlexGrid.Col>
+    </FlexGrid.Row>
+  </FlexGrid>
+)
+
+const Divider = () => (
+  <>
+    <HairlineDivider />
+    <div style={{ height: '5px' }} />
+    <DimpleDivider />
+  </>
+)
 
 const Tabs = props => {
   // Constants
@@ -38,7 +51,7 @@ const Tabs = props => {
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(props.selectedIndex || 0)
-  const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
+  const { children, stretch, leftArrowLabel, rightArrowLabel, ...rest } = props
 
   useEffect(() => {
     if (props.selectedIndex === undefined || props.selectedIndex === null) return
@@ -155,13 +168,9 @@ const Tabs = props => {
       return props.children.map((tab, i) => {
         return (
           <TabPanel key={hash(i)}>
-            <FlexGrid>
-              <FlexGrid.Row>
-                <FlexGrid.Col xs={12} tabindex="0">
-                  <Panel {...rest}>{children[current]}</Panel>
-                </FlexGrid.Col>
-              </FlexGrid.Row>
-            </FlexGrid>
+            <FlexContainer tabIndex="0">
+              <Panel {...rest}>{children[current]}</Panel>
+            </FlexContainer>
           </TabPanel>
         )
       })
@@ -174,49 +183,50 @@ const Tabs = props => {
       setTimeout(() => getTabsWidth(), 100)
     }
   }, [])
+
   return (
     <TabsContainer {...safeRest(rest)} ref={tabsRoot}>
-      <FlexGrid gutter={false}>
-        <FlexGrid.Row>
-          <FlexGrid.Col xs={12}>
-            {isLeftArrowVisible && (
-              <TabArrows
-                tabIndex="0"
-                direction="left"
-                aria-label={leftArrowLabel}
-                onKeyUp={e => handleArrowKeyUp(e, 'left')}
-                onClick={() => scrollTabs('left')}
-              >
-                <ArrowInner direction="left">
-                  <ChevronLeft variant="basic" />
-                </ArrowInner>
-                s
-              </TabArrows>
-            )}
-            <ReactTabs selectedIndex={current} onSelect={props.onSelect}>
-              <TabBorder>
-                <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
-                  <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
-                </TabListContainer>
-              </TabBorder>
-              {mapTabContent()}
-            </ReactTabs>
-            {isRightArrowVisible && (
-              <TabArrows
-                tabIndex="0"
-                direction="right"
-                onKeyUp={e => handleArrowKeyUp(e, 'right')}
-                aria-label={rightArrowLabel}
-                onClick={() => scrollTabs('right')}
-              >
-                <ArrowInner direction="right">
-                  <ChevronRight variant="basic" />
-                </ArrowInner>
-              </TabArrows>
-            )}
-          </FlexGrid.Col>
-        </FlexGrid.Row>
-      </FlexGrid>
+      <ReactTabs selectedIndex={current} onSelect={props.onSelect}>
+        <FlexContainer gutter={false}>
+          {isLeftArrowVisible && (
+            <TabArrows
+              tabIndex="0"
+              direction="left"
+              aria-label={leftArrowLabel}
+              onKeyUp={e => handleArrowKeyUp(e, 'left')}
+              onClick={() => scrollTabs('left')}
+            >
+              <ArrowInner direction="left">
+                <ChevronLeft variant="basic" />
+              </ArrowInner>
+            </TabArrows>
+          )}
+          <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
+            <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
+          </TabListContainer>
+          {isRightArrowVisible && (
+            <TabArrows
+              tabIndex="0"
+              direction="right"
+              onKeyUp={e => handleArrowKeyUp(e, 'right')}
+              aria-label={rightArrowLabel}
+              onClick={() => scrollTabs('right')}
+            >
+              <ArrowInner direction="right">
+                <ChevronRight variant="basic" />
+              </ArrowInner>
+            </TabArrows>
+          )}
+        </FlexContainer>
+        {stretch ? (
+          <Divider />
+        ) : (
+          <FlexContainer>
+            <Divider />
+          </FlexContainer>
+        )}
+        {mapTabContent()}
+      </ReactTabs>
     </TabsContainer>
   )
 }
@@ -236,6 +246,10 @@ Tabs.propTypes = {
    * Set the selected tab by index
    */
   selectedIndex: PropTypes.number,
+  /**
+   * Dividers stretch full width of container if true, default=false
+   */
+  stretch: PropTypes.bool,
 }
 
 Tabs.defaultProps = {
@@ -243,6 +257,7 @@ Tabs.defaultProps = {
   leftArrowLabel: 'Move menu to the left',
   rightArrowLabel: 'Move menu to the right',
   onSelect: () => {},
+  stretch: false,
 }
 
 Tabs.Panel = Panel

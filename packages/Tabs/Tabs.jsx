@@ -6,7 +6,14 @@ import FlexGrid from '@tds/core-flex-grid'
 import { safeRest } from '@tds/util-helpers'
 import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import { Tab, Tabs as ReactTabs, TabList, TabPanel } from 'react-tabs'
-import { TabsContainer, TabListContainer, TabLabel, TabArrows, ArrowInner } from './styles'
+import {
+  TabsContainer,
+  TabListContainer,
+  TabLabel,
+  TabArrows,
+  ArrowInner,
+  SandwichFilling,
+} from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
 /**
@@ -14,6 +21,7 @@ import Panel from './Panel/Panel'
  * @visibleName Tabs (beta)
  */
 
+// no need for props validation, internal use only
 const FlexContainer = p => (
   <FlexGrid gutter={p.gutter}>
     <FlexGrid.Row>
@@ -27,7 +35,7 @@ const FlexContainer = p => (
 const Divider = () => (
   <>
     <HairlineDivider />
-    <div style={{ height: '5px' }} />
+    <SandwichFilling />
     <DimpleDivider />
   </>
 )

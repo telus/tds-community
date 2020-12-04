@@ -16,7 +16,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -146,6 +146,10 @@ exports[`Tabs renders 1`] = `
   -ms-transform: translate(0px);
   transform: translate(0px);
   white-space: nowrap;
+}
+
+.c8 {
+  height: '5px';
 }
 
 .c5 {
@@ -363,7 +367,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -493,6 +497,10 @@ exports[`Tabs renders 1`] = `
   -ms-transform: translate(0px);
   transform: translate(0px);
   white-space: nowrap;
+}
+
+.c8 {
+  height: '5px';
 }
 
 .c5 {
@@ -734,10 +742,10 @@ exports[`Tabs renders 1`] = `
                       class="c7"
                     />
                     <div
-                      style="height: 5px;"
+                      class="c8"
                     />
                     <hr
-                      class="c8"
+                      class="c9"
                     />
                   </div>
                 </div>
@@ -1134,7 +1142,7 @@ exports[`Tabs renders 1`] = `
                                                               "$$typeof": Symbol(react.forward_ref),
                                                               "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
-                                                                "componentId": "styles__TabLabel-fcx45d-2",
+                                                                "componentId": "styles__TabLabel-fcx45d-3",
                                                                 "isStatic": false,
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
@@ -1144,7 +1152,7 @@ exports[`Tabs renders 1`] = `
                                                               "displayName": "styles__TabLabel",
                                                               "foldedComponentIds": Array [],
                                                               "render": [Function],
-                                                              "styledComponentId": "styles__TabLabel-fcx45d-2",
+                                                              "styledComponentId": "styles__TabLabel-fcx45d-3",
                                                               "target": "h4",
                                                               "toString": [Function],
                                                               "warnTooManyClasses": [Function],
@@ -1191,7 +1199,7 @@ exports[`Tabs renders 1`] = `
                                                               "$$typeof": Symbol(react.forward_ref),
                                                               "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
-                                                                "componentId": "styles__TabLabel-fcx45d-2",
+                                                                "componentId": "styles__TabLabel-fcx45d-3",
                                                                 "isStatic": false,
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
@@ -1201,7 +1209,7 @@ exports[`Tabs renders 1`] = `
                                                               "displayName": "styles__TabLabel",
                                                               "foldedComponentIds": Array [],
                                                               "render": [Function],
-                                                              "styledComponentId": "styles__TabLabel-fcx45d-2",
+                                                              "styledComponentId": "styles__TabLabel-fcx45d-3",
                                                               "target": "h4",
                                                               "toString": [Function],
                                                               "warnTooManyClasses": [Function],
@@ -1248,7 +1256,7 @@ exports[`Tabs renders 1`] = `
                                                               "$$typeof": Symbol(react.forward_ref),
                                                               "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
-                                                                "componentId": "styles__TabLabel-fcx45d-2",
+                                                                "componentId": "styles__TabLabel-fcx45d-3",
                                                                 "isStatic": false,
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
@@ -1258,7 +1266,7 @@ exports[`Tabs renders 1`] = `
                                                               "displayName": "styles__TabLabel",
                                                               "foldedComponentIds": Array [],
                                                               "render": [Function],
-                                                              "styledComponentId": "styles__TabLabel-fcx45d-2",
+                                                              "styledComponentId": "styles__TabLabel-fcx45d-3",
                                                               "target": "h4",
                                                               "toString": [Function],
                                                               "warnTooManyClasses": [Function],
@@ -1526,13 +1534,37 @@ exports[`Tabs renders 1`] = `
                                               </StyledComponent>
                                             </HairlineDivider__StyledHairlineDivider>
                                           </HairlineDivider>
-                                          <div
-                                            style={
-                                              Object {
-                                                "height": "5px",
+                                          <styles__SandwichFilling>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "styles__SandwichFilling-fcx45d-2",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c8",
+                                                    "rules": Array [
+                                                      "height:'5px';",
+                                                    ],
+                                                  },
+                                                  "displayName": "styles__SandwichFilling",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "styles__SandwichFilling-fcx45d-2",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
                                               }
-                                            }
-                                          />
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c8"
+                                              />
+                                            </StyledComponent>
+                                          </styles__SandwichFilling>
                                           <DimpleDivider>
                                             <DimpleDivider__StyledDimpleDivider>
                                               <StyledComponent
@@ -1543,7 +1575,7 @@ exports[`Tabs renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c8",
+                                                      "lastClassName": "c9",
                                                       "rules": Array [
                                                         "padding: 0;",
                                                         "margin: 0;",
@@ -1565,7 +1597,7 @@ exports[`Tabs renders 1`] = `
                                                 forwardedRef={null}
                                               >
                                                 <hr
-                                                  className="c8"
+                                                  className="c9"
                                                 />
                                               </StyledComponent>
                                             </DimpleDivider__StyledDimpleDivider>

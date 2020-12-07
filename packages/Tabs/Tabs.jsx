@@ -58,13 +58,15 @@ const Tabs = props => {
   const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
-  const [current, setCurrent] = useState(props.selectedIndex || 0)
+  const [current, setCurrent] = useState(0)
   const { children, stretch, leftArrowLabel, rightArrowLabel, ...rest } = props
 
   useEffect(() => {
-    if (props.selectedIndex === undefined || props.selectedIndex === null) return
-    setCurrent(props.selectedIndex)
-  }, [props.selectedIndex])
+    if (props.open === null || props.open === undefined) return
+    if (!props.children.length) return
+    const tabIndex = props.children.findIndex(child => child.props.id === props.open)
+    setCurrent(tabIndex)
+  }, [props.open])
 
   const getTabsWidth = () => {
     let tabsWidthValue = 0
@@ -158,6 +160,7 @@ const Tabs = props => {
       return props.children.map((tab, i) => {
         return (
           <Tab
+            id={tab.props.id}
             key={hash(i)}
             onKeyUp={e => handleTabsKeyUp(e, i)}
             onClick={() => setCurrent(i)}
@@ -192,9 +195,16 @@ const Tabs = props => {
     }
   }, [])
 
+  const handleSelect = (index, previousIndex, event) => {
+    const newTab = props.children[index]
+    const previousTab = props.children[previousIndex]
+
+    return props.onOpen(newTab.props.id, previousTab.props.id, event)
+  }
+
   return (
     <TabsContainer {...safeRest(rest)} ref={tabsRoot}>
-      <ReactTabs selectedIndex={current} onSelect={props.onSelect}>
+      <ReactTabs selectedIndex={current} onSelect={handleSelect}>
         <FlexContainer gutter={false}>
           {isLeftArrowVisible && (
             <TabArrows
@@ -249,11 +259,11 @@ Tabs.propTypes = {
   /**
    * Event raised on tab click
    */
-  onSelect: PropTypes.func,
+  onOpen: PropTypes.func,
   /**
-   * Set the selected tab by index
+   * Set the selected tab by id
    */
-  selectedIndex: PropTypes.number,
+  open: PropTypes.string,
   /**
    * Dividers stretch full width of container if true, default=false
    */
@@ -261,10 +271,10 @@ Tabs.propTypes = {
 }
 
 Tabs.defaultProps = {
-  selectedIndex: 0,
+  open: null,
   leftArrowLabel: 'Move menu to the left',
   rightArrowLabel: 'Move menu to the right',
-  onSelect: () => {},
+  onOpen: () => {},
   stretch: false,
 }
 

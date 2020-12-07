@@ -7,9 +7,9 @@ describe('Tabs', () => {
   const doMount = (props = {}) =>
     mount(
       <Tabs copy="en" {...props}>
-        <Tabs.Panel>Content 1</Tabs.Panel>
-        <Tabs.Panel>Content 2</Tabs.Panel>
-        <Tabs.Panel>Content 3</Tabs.Panel>
+        <Tabs.Panel id="1">Content 1</Tabs.Panel>
+        <Tabs.Panel id="2">Content 2</Tabs.Panel>
+        <Tabs.Panel id="3">Content 3</Tabs.Panel>
       </Tabs>
     )
 
@@ -24,20 +24,29 @@ describe('Tabs', () => {
   })
 
   it('selects a tab', () => {
-    const tabs = doMount({ selectedIndex: 1 })
-    expect(tabs).toHaveProp('selectedIndex', 1)
+    const tabs = doMount({ open: '2' })
+    expect(tabs).toHaveProp('open', '2')
     expect(tabs.text()).toContain('Content 2')
     expect(tabs.text()).not.toContain('Content 1')
   })
 
   it('raises an event when tab clicked', () => {
-    const onSelect = jest.fn()
-    const tabs = doMount({ onSelect })
+    const onOpen = jest.fn()
+    const tabs = doMount({ onOpen })
     tabs
       .find('Tab')
       .at(2)
       .simulate('click')
     expect(tabs.text()).toContain('Content 3')
+    expect(onOpen).toHaveBeenCalledWith('3', '1', expect.any(Object))
+
+    tabs
+      .find('Tab')
+      .at(1)
+      .simulate('click')
+
+    expect(tabs.text()).toContain('Content 2')
+    expect(onOpen).toHaveBeenCalledWith('2', '3', expect.any(Object))
   })
 
   it('stretches', () => {

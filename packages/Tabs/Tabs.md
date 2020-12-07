@@ -40,17 +40,23 @@ Stretch will make the dividers fit the width of the containing node
 ```jsx
 <Tabs
   copy="en"
-  selectedIndex={1}
-  onSelect={(index, previous, event) => {
-    console.log('tab clicked', index, 'previous', previous, 'event', event)
+  open="a-la-carte"
+  onOpen={(id, previousId, event) => {
+    console.log('tab clicked:', id, 'previous tab:', previousId, 'event:', event)
     return true // return false to cancel
   }}
   stretch
 >
-  <Tabs.Panel heading="Themepacks" />
-  <Tabs.Panel heading="Premium" />
-  <Tabs.Panel heading="A-la-carte" />
-  <Tabs.Panel heading="Essentials" />
+  <Tabs.Panel id="themepacks" heading="Themepacks" />
+  <Tabs.Panel id="premium" heading="Premium" />
+  <Tabs.Panel id="a-la-carte" heading="A-la-carte" />
+  <Tabs.Panel id="essentials" heading="Essentials" />
   {/* here you might dynamically show content based on onSelect index */}
 </Tabs>
 ```
+
+### Accessibility
+
+- When using Tabs, the consuming application should allow hashes in the url to automatically load a tab. Eg. `https://t.com#premium` should load the Premium tab.
+
+- The application should also change the page url to include the hash as tabs change

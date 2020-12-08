@@ -23,6 +23,7 @@ export const InputGroupStyle = styled.div(({ hasValue }) => ({
     },
   },
   input: {
+    marginLeft: 0,
     height: '100%',
     borderLeft: '1px solid #D8D8D8',
     borderTop: '1px solid #D8D8D8',

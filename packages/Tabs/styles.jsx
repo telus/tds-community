@@ -62,10 +62,6 @@ export const TabListContainer = styled.div`
   white-space: nowrap;
 `
 
-export const SandwichFilling = styled.div`
-  height: 5px;
-`
-
 export const TabLabel = styled.h4`
   height: 100%;
   display: block;

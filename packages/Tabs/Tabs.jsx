@@ -6,14 +6,7 @@ import FlexGrid from '@tds/core-flex-grid'
 import { safeRest } from '@tds/util-helpers'
 import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import { Tab, Tabs as ReactTabs, TabList, TabPanel } from 'react-tabs'
-import {
-  TabsContainer,
-  TabListContainer,
-  TabLabel,
-  TabArrows,
-  ArrowInner,
-  SandwichFilling,
-} from './styles'
+import { TabsContainer, TabListContainer, TabLabel, TabArrows, ArrowInner } from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
 /**
@@ -35,7 +28,6 @@ const FlexContainer = p => (
 const Divider = () => (
   <>
     <HairlineDivider />
-    <SandwichFilling />
     <DimpleDivider />
   </>
 )
@@ -199,7 +191,7 @@ const Tabs = props => {
     const newTab = props.children[index]
     const previousTab = props.children[previousIndex]
 
-    return props.onOpen(newTab.props.id, previousTab.props.id, event)
+    return props.onOpen(newTab.props.id, previousTab.props ? previousTab.props.id : null, event)
   }
 
   return (
@@ -239,7 +231,7 @@ const Tabs = props => {
         {stretch ? (
           <Divider />
         ) : (
-          <FlexContainer>
+          <FlexContainer gutter={false}>
             <Divider />
           </FlexContainer>
         )}

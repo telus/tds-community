@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs renders 1`] = `
-.c7 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -16,7 +16,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c7 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -36,7 +36,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c6 {
+.c8 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -148,10 +148,6 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c8 {
-  height: 5px;
-}
-
 .c5 {
   height: 100%;
   display: block;
@@ -195,35 +191,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
@@ -352,7 +348,7 @@ exports[`Tabs renders 1`] = `
       }
       forwardedRef={
         Object {
-          "current": .c7 {
+          "current": .c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -367,7 +363,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c7 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -387,7 +383,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c6 {
+.c8 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -499,10 +495,6 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c8 {
-  height: 5px;
-}
-
 .c5 {
   height: 100%;
   display: block;
@@ -546,35 +538,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c6 {
+  .c8 {
     display: block;
     text-align: inherit;
   }
@@ -736,16 +728,13 @@ exports[`Tabs renders 1`] = `
                   class="c2"
                 >
                   <div
-                    class="c6"
+                    class="c3"
                   >
                     <hr
-                      class="c7"
-                    />
-                    <div
-                      class="c8"
+                      class="c6"
                     />
                     <hr
-                      class="c9"
+                      class="c7"
                     />
                   </div>
                 </div>
@@ -763,7 +752,7 @@ exports[`Tabs renders 1`] = `
                     class="c2"
                   >
                     <div
-                      class="c6"
+                      class="c8"
                       tabindex="0"
                     >
                       <div
@@ -969,7 +958,7 @@ exports[`Tabs renders 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                             "isStatic": false,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c8",
                                             "rules": Array [
                                               [Function],
                                               [Function],
@@ -1144,7 +1133,7 @@ exports[`Tabs renders 1`] = `
                                                               "$$typeof": Symbol(react.forward_ref),
                                                               "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
-                                                                "componentId": "styles__TabLabel-fcx45d-3",
+                                                                "componentId": "styles__TabLabel-fcx45d-2",
                                                                 "isStatic": false,
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
@@ -1154,7 +1143,7 @@ exports[`Tabs renders 1`] = `
                                                               "displayName": "styles__TabLabel",
                                                               "foldedComponentIds": Array [],
                                                               "render": [Function],
-                                                              "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                              "styledComponentId": "styles__TabLabel-fcx45d-2",
                                                               "target": "h4",
                                                               "toString": [Function],
                                                               "warnTooManyClasses": [Function],
@@ -1201,7 +1190,7 @@ exports[`Tabs renders 1`] = `
                                                               "$$typeof": Symbol(react.forward_ref),
                                                               "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
-                                                                "componentId": "styles__TabLabel-fcx45d-3",
+                                                                "componentId": "styles__TabLabel-fcx45d-2",
                                                                 "isStatic": false,
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
@@ -1211,7 +1200,7 @@ exports[`Tabs renders 1`] = `
                                                               "displayName": "styles__TabLabel",
                                                               "foldedComponentIds": Array [],
                                                               "render": [Function],
-                                                              "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                              "styledComponentId": "styles__TabLabel-fcx45d-2",
                                                               "target": "h4",
                                                               "toString": [Function],
                                                               "warnTooManyClasses": [Function],
@@ -1258,7 +1247,7 @@ exports[`Tabs renders 1`] = `
                                                               "$$typeof": Symbol(react.forward_ref),
                                                               "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
-                                                                "componentId": "styles__TabLabel-fcx45d-3",
+                                                                "componentId": "styles__TabLabel-fcx45d-2",
                                                                 "isStatic": false,
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
@@ -1268,7 +1257,7 @@ exports[`Tabs renders 1`] = `
                                                               "displayName": "styles__TabLabel",
                                                               "foldedComponentIds": Array [],
                                                               "render": [Function],
-                                                              "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                              "styledComponentId": "styles__TabLabel-fcx45d-2",
                                                               "target": "h4",
                                                               "toString": [Function],
                                                               "warnTooManyClasses": [Function],
@@ -1303,10 +1292,11 @@ exports[`Tabs renders 1`] = `
                 </FlexGrid>
               </FlexContainer>
               <FlexContainer
+                gutter={false}
                 key=".1"
               >
                 <FlexGrid
-                  gutter={true}
+                  gutter={false}
                   limitWidth={true}
                   outsideGutter={true}
                 >
@@ -1418,7 +1408,7 @@ exports[`Tabs renders 1`] = `
                                   xs={12}
                                 >
                                   <Col__StyledCol
-                                    gutter={true}
+                                    gutter={false}
                                     hiddenLevel={
                                       Array [
                                         12,
@@ -1447,7 +1437,7 @@ exports[`Tabs renders 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                             "isStatic": false,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c8",
                                             "rules": Array [
                                               [Function],
                                               [Function],
@@ -1465,7 +1455,7 @@ exports[`Tabs renders 1`] = `
                                         }
                                       }
                                       forwardedRef={null}
-                                      gutter={true}
+                                      gutter={false}
                                       hiddenLevel={
                                         Array [
                                           12,
@@ -1487,7 +1477,7 @@ exports[`Tabs renders 1`] = `
                                       xs={12}
                                     >
                                       <div
-                                        className="c6"
+                                        className="c3"
                                       >
                                         <Divider
                                           key=".0"
@@ -1508,7 +1498,7 @@ exports[`Tabs renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c7",
+                                                      "lastClassName": "c6",
                                                       "rules": Array [
                                                         "padding: 0;",
                                                         "margin: 0;",
@@ -1531,42 +1521,11 @@ exports[`Tabs renders 1`] = `
                                                 vertical={false}
                                               >
                                                 <hr
-                                                  className="c7"
+                                                  className="c6"
                                                 />
                                               </StyledComponent>
                                             </HairlineDivider__StyledHairlineDivider>
                                           </HairlineDivider>
-                                          <styles__SandwichFilling>
-                                            <StyledComponent
-                                              forwardedComponent={
-                                                Object {
-                                                  "$$typeof": Symbol(react.forward_ref),
-                                                  "attrs": Array [],
-                                                  "componentStyle": ComponentStyle {
-                                                    "componentId": "styles__SandwichFilling-fcx45d-2",
-                                                    "isStatic": false,
-                                                    "lastClassName": "c8",
-                                                    "rules": Array [
-                                                      "height:5px;",
-                                                    ],
-                                                  },
-                                                  "displayName": "styles__SandwichFilling",
-                                                  "foldedComponentIds": Array [],
-                                                  "render": [Function],
-                                                  "styledComponentId": "styles__SandwichFilling-fcx45d-2",
-                                                  "target": "div",
-                                                  "toString": [Function],
-                                                  "warnTooManyClasses": [Function],
-                                                  "withComponent": [Function],
-                                                }
-                                              }
-                                              forwardedRef={null}
-                                            >
-                                              <div
-                                                className="c8"
-                                              />
-                                            </StyledComponent>
-                                          </styles__SandwichFilling>
                                           <DimpleDivider>
                                             <DimpleDivider__StyledDimpleDivider>
                                               <StyledComponent
@@ -1577,7 +1536,7 @@ exports[`Tabs renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c9",
+                                                      "lastClassName": "c7",
                                                       "rules": Array [
                                                         "padding: 0;",
                                                         "margin: 0;",
@@ -1599,7 +1558,7 @@ exports[`Tabs renders 1`] = `
                                                 forwardedRef={null}
                                               >
                                                 <hr
-                                                  className="c9"
+                                                  className="c7"
                                                 />
                                               </StyledComponent>
                                             </DimpleDivider__StyledDimpleDivider>
@@ -1780,7 +1739,7 @@ exports[`Tabs renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                                 "isStatic": false,
-                                                "lastClassName": "c6",
+                                                "lastClassName": "c8",
                                                 "rules": Array [
                                                   [Function],
                                                   [Function],
@@ -1821,7 +1780,7 @@ exports[`Tabs renders 1`] = `
                                           xs={12}
                                         >
                                           <div
-                                            className="c6"
+                                            className="c8"
                                             tabIndex="0"
                                           >
                                             <Panel

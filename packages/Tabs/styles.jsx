@@ -7,7 +7,7 @@ export const TabsContainer = styled.div`
     position: relative;
   }
   .react-tabs__tab-list {
-    padding: 1px 0;
+    padding: 0;
   }
   .react-tabs__tab {
     display: inline-block;

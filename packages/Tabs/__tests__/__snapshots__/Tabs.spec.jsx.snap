@@ -91,7 +91,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab-list {
-  padding: 1px 0;
+  padding: 0;
 }
 
 .c0 .react-tabs__tab {
@@ -333,7 +333,7 @@ exports[`Tabs renders 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:1px 0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 0;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{box-shadow:0 0 0 2px #979797;border-radius:4px;outline:none;h4{border-bottom:none;}}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;}}",
+              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 0;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{box-shadow:0 0 0 2px #979797;border-radius:4px;outline:none;h4{border-bottom:none;}}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;}}",
             ],
           },
           "displayName": "styles__TabsContainer",
@@ -438,7 +438,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab-list {
-  padding: 1px 0;
+  padding: 0;
 }
 
 .c0 .react-tabs__tab {

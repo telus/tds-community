@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.3...@tds/community-input-group@1.0.4) (2020-12-08)
+
+
+### Bug Fixes
+
+* **community-input-group:** hr-1605 double border fix for safari ([905b439](https://github.com/telus/tds-community/commit/905b43903073121712f53c2817af4c152fd77de4))
+
+
+
+
+
 ## [1.0.3](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.2...@tds/community-input-group@1.0.3) (2020-09-09)
 
 

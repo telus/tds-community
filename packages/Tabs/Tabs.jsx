@@ -1,9 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import FlexGrid from '@tds/core-flex-grid'
+
 import { safeRest } from '@tds/util-helpers'
 import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import { Tab, Tabs as ReactTabs, TabList, TabPanel } from 'react-tabs'
+import HairlineDivider from '@tds/core-hairline-divider'
+import DimpleDivider from '@tds/core-dimple-divider'
 import {
   TabsContainer,
   TabBorder,
@@ -39,6 +42,53 @@ const Tabs = props => {
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
   const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
+
+  useEffect(() => {
+    // if open is null or undefined it is uncontrolled
+    // empty string may be a valid input to select no tabs (this case is required)
+    if (props.open === null || props.open === undefined) return
+    if (!props.children.length) return
+    const tabIndex = props.children.findIndex(child => child.props.id === props.open)
+
+    if (tabIndex >= 0) {
+      setCurrent(tabIndex)
+      return
+    }
+    // if tabIndex === null set to -1 to keep tabs contolled, but select no tab
+    setCurrent(-1)
+  }, [props.open])
+
+  const handleBlur = () => {
+    // on blur in controlled mode, we set the index back to prop value
+    if (props.open === null || props.open === undefined) return
+    const tabIndex = props.children.findIndex(child => child.props.id === props.open)
+    if (tabIndex !== current) {
+      setCurrent(tabIndex)
+    }
+  }
+
+  const handleClick = index => {
+    if (!props.open) {
+      setCurrent(index) // set internally if not-controlled
+      return
+    }
+    // raise to controlling component to set on click if controlled
+    props.onOpen(props.children[index].props.id)
+  }
+
+  const handleSelect = (index, previousIndex) => {
+    // this is for setting the focus in controlled mode
+    // we need to temporarily set the index (f will undo)
+    // only if both the newTab and previous are the same, was the tab actually clicked
+    // and we can raise up the event.
+    setCurrent(index)
+    const newTab = props.children[index]
+    const previousTab = props.children[previousIndex]
+    if (newTab === previousTab) {
+      // this is on a tab switch
+      props.onOpen(newTab.props.id)
+    }
+  }
 
   const getTabsWidth = () => {
     let tabsWidthValue = 0
@@ -86,12 +136,14 @@ const Tabs = props => {
 
   const handleTabsKeyUp = (e, i) => {
     if (e.keyCode === ENTER_KEY || e.keyCode === SPACE_BAR_KEY) {
-      setCurrent(i)
+      handleClick(i)
     }
     if (e.target.offsetLeft <= MARGIN_BUFFER) {
+      // eslint-disable-next-line consistent-return
       return setTabsTranslatePosition(0)
     }
     setTabsTranslatePosition(-e.target.offsetLeft + MARGIN_BUFFER)
+    // eslint-disable-next-line consistent-return
     return getTabsWidth()
   }
 
@@ -132,10 +184,14 @@ const Tabs = props => {
       return props.children.map((tab, i) => {
         return (
           <Tab
+            id={tab.props.id}
             key={hash(i)}
             onKeyUp={e => handleTabsKeyUp(e, i)}
-            onClick={() => setCurrent(i)}
+            onClick={() => {
+              handleClick(i)
+            }}
             aria-label={tab.props.heading}
+            onBlur={handleBlur}
           >
             <TabLabel>{tab.props.heading}</TabLabel>
           </Tab>
@@ -169,6 +225,7 @@ const Tabs = props => {
       setTimeout(() => getTabsWidth(), 100)
     }
   }, [])
+
   return (
     <TabsContainer {...safeRest(rest)} ref={tabsRoot}>
       <FlexGrid gutter={false}>
@@ -187,12 +244,17 @@ const Tabs = props => {
                 </ArrowInner>
               </TabArrows>
             )}
-            <ReactTabs>
+            <ReactTabs
+              selectedIndex={props.open && current}
+              onSelect={props.onOpen && handleSelect}
+            >
               <TabBorder>
                 <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
                   <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
                 </TabListContainer>
               </TabBorder>
+              <HairlineDivider />
+              <DimpleDivider />
               {mapTabContent()}
             </ReactTabs>
             {isRightArrowVisible && (
@@ -222,11 +284,21 @@ Tabs.propTypes = {
   children: PropTypes.node.isRequired,
   leftArrowLabel: PropTypes.string,
   rightArrowLabel: PropTypes.string,
+  /**
+   * Set the selected tab by id
+   */
+  open: PropTypes.string,
+  /**
+   * Event raised on tab click
+   */
+  onOpen: PropTypes.func,
 }
 
 Tabs.defaultProps = {
   leftArrowLabel: 'Move menu to the left',
   rightArrowLabel: 'Move menu to the right',
+  open: null,
+  onOpen: null,
 }
 
 Tabs.Panel = Panel

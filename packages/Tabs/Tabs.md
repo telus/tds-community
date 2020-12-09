@@ -31,3 +31,58 @@ Note that the `copy` prop must be provided at all times for the correct accessib
   </Tabs.Panel>
 </Tabs>
 ```
+
+### Controlled Example
+
+Use `open` and `onOpen` to control the component externally.
+
+Specify an `id` (string) on each `<Tab.Panel>` and pass the `id` of the panel with you wish to have opened programmatically to the `<Tabs>` component.
+
+On selection of a tab, `onOpen` will be called with the first argument containing the `id` of the tab clicked.
+
+```jsx
+const ControlledTabsExample = () => {
+  const [open, setOpen] = React.useState('a-la-carte')
+
+  const handleOpen = id => {
+    setOpen(id)
+  }
+
+  return (
+    <>
+      <Tabs copy="en" open={open} onOpen={handleOpen}>
+        <Tabs.Panel id="themepacks" heading="Themepacks" />
+        <Tabs.Panel id="premium" heading="Premium" />
+        <Tabs.Panel id="a-la-carte" heading="A-la-carte" />
+        <Tabs.Panel id="essentials" heading="Essentials" />
+        <Tabs.Panel id="more" heading="More Content" />
+        <Tabs.Panel id="more-again" heading="More content again" />
+        <Tabs.Panel id="even-more" heading="Even more content" />
+      </Tabs>
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12}>
+            <Box below={3}>
+              <Text>
+                You selected tab: <Strong>{open}</Strong>
+              </Text>
+            </Box>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12}>
+            <Button onClick={() => handleOpen('no tab')}>Select no tab</Button>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    </>
+  )
+}
+;<ControlledTabsExample />
+```
+
+### Accessibility
+
+- When using Tabs, the consuming application should allow hashes in the url to automatically load a tab. Eg. `https://t.com#premium` should load the Premium tab.
+
+- The application should also change the page url to include the hash as tabs change

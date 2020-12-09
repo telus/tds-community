@@ -34,11 +34,14 @@ Note that the `copy` prop must be provided at all times for the correct accessib
 
 ### Controlled Example
 
-Use `open` and `onOpen` to control the component externally.
+Use the `open` and `onOpen` props to control the component externally.
 
-Specify an `id` (string) on each `<Tab.Panel>` and pass the `id` of the panel with you wish to have opened programmatically to the `<Tabs>` component.
+To use controlled mode, you must specify an `id` (string) on each `<Tab.Panel>`.
+You can then use the `open` prop on `<Tabs>` to pass in the `id` of the tab you want to open.
 
-On selection of a tab, `onOpen` will be called with the first argument containing the `id` of the tab clicked.
+When a user selects a tab, the event `onOpen(id)` will be raised, where `id` is the id of the tab clicked.
+
+**Note**: Control mode is enabled when `open` is not `null`. If set, and no `id` matches the `open` prop, the component will render with no tab selected.
 
 ```jsx
 const ControlledTabsExample = () => {

@@ -7,7 +7,7 @@ export const TabsContainer = styled.div`
     position: relative;
   }
   .react-tabs__tab-list {
-    padding: 1px 0;
+    padding: 2px 0 0 0;
   }
   .react-tabs__tab {
     display: inline-block;
@@ -50,31 +50,13 @@ export const TabsContainer = styled.div`
 
     &.react-tabs__tab-panel--selected {
       display: block;
-      margin-top: 24px;
+      margin-top: 0;
     }
   }
 `
 
 export const TabBorder = styled.div`
-  border-bottom: 1px solid #d8d8d8;
   overflow-x: hidden;
-  margin-bottom: 8px;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 52px;
-    left: 0;
-    width: 100%;
-    height: 32px;
-    background-image: radial-gradient(
-      at center top,
-      rgba(150, 150, 150, 0.1) 0%,
-      rgba(0, 0, 0, 0) 70%
-    );
-    padding: 0px;
-    margin: 0px;
-    border-width: 0px;
-  }
 `
 
 export const TabListContainer = styled.div`

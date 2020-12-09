@@ -13,7 +13,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -58,6 +58,29 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
+.c7 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c8 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  height: 32px;
+  background-image: radial-gradient(ellipse at top,rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+}
+
 .c0 {
   overflow: hidden;
   padding-top: 6px;
@@ -68,7 +91,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab-list {
-  padding: 1px 0;
+  padding: 2px 0 0 0;
 }
 
 .c0 .react-tabs__tab {
@@ -112,26 +135,11 @@ exports[`Tabs renders 1`] = `
 
 .c0 .react-tabs__tab-panel.react-tabs__tab-panel--selected {
   display: block;
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 .c4 {
-  border-bottom: 1px solid #d8d8d8;
   overflow-x: hidden;
-  margin-bottom: 8px;
-}
-
-.c4:after {
-  content: '';
-  position: absolute;
-  top: 52px;
-  left: 0;
-  width: 100%;
-  height: 32px;
-  background-image: radial-gradient( at center top,rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70% );
-  padding: 0px;
-  margin: 0px;
-  border-width: 0px;
 }
 
 .c5 {
@@ -188,35 +196,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
@@ -309,10 +317,14 @@ exports[`Tabs renders 1`] = `
 <Tabs
   copy="en"
   leftArrowLabel="Move menu to the left"
+  onOpen={null}
+  open={null}
   rightArrowLabel="Move menu to the right"
 >
   <styles__TabsContainer
     copy="en"
+    onOpen={null}
+    open={null}
   >
     <StyledComponent
       copy="en"
@@ -325,7 +337,7 @@ exports[`Tabs renders 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:1px 0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 0;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{box-shadow:0 0 0 2px #979797;border-radius:4px;outline:none;h4{border-bottom:none;}}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;margin-top:24px;}}",
+              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:2px 0 0 0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 0;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{box-shadow:0 0 0 2px #979797;border-radius:4px;outline:none;h4{border-bottom:none;}}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;margin-top:0;}}",
             ],
           },
           "displayName": "styles__TabsContainer",
@@ -352,7 +364,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -397,6 +409,29 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
+.c7 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c8 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  height: 32px;
+  background-image: radial-gradient(ellipse at top,rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+}
+
 .c0 {
   overflow: hidden;
   padding-top: 6px;
@@ -407,7 +442,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab-list {
-  padding: 1px 0;
+  padding: 2px 0 0 0;
 }
 
 .c0 .react-tabs__tab {
@@ -451,26 +486,11 @@ exports[`Tabs renders 1`] = `
 
 .c0 .react-tabs__tab-panel.react-tabs__tab-panel--selected {
   display: block;
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 .c4 {
-  border-bottom: 1px solid #d8d8d8;
   overflow-x: hidden;
-  margin-bottom: 8px;
-}
-
-.c4:after {
-  content: '';
-  position: absolute;
-  top: 52px;
-  left: 0;
-  width: 100%;
-  height: 32px;
-  background-image: radial-gradient( at center top,rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70% );
-  padding: 0px;
-  margin: 0px;
-  border-width: 0px;
 }
 
 .c5 {
@@ -527,35 +547,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c7 {
+  .c9 {
     display: block;
     text-align: inherit;
   }
@@ -711,6 +731,12 @@ exports[`Tabs renders 1`] = `
                         </ul>
                       </div>
                     </div>
+                    <hr
+                      class="c7"
+                    />
+                    <hr
+                      class="c8"
+                    />
                     <div
                       aria-labelledby="react-tabs-0"
                       class="react-tabs__tab-panel react-tabs__tab-panel--selected"
@@ -724,7 +750,7 @@ exports[`Tabs renders 1`] = `
                           class="c2"
                         >
                           <div
-                            class="c7"
+                            class="c9"
                           >
                             <div
                               copy="en"
@@ -756,9 +782,13 @@ exports[`Tabs renders 1`] = `
           </div>,
         }
       }
+      onOpen={null}
+      open={null}
     >
       <div
         className="c0"
+        onOpen={null}
+        open={null}
       >
         <FlexGrid
           gutter={false}
@@ -902,7 +932,7 @@ exports[`Tabs renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                     "isStatic": false,
-                                    "lastClassName": "c7",
+                                    "lastClassName": "c9",
                                     "rules": Array [
                                       [Function],
                                       [Function],
@@ -948,6 +978,7 @@ exports[`Tabs renders 1`] = `
                                   defaultFocus={false}
                                   defaultIndex={null}
                                   forceRenderTabPanel={false}
+                                  onSelect={null}
                                   selectedIndex={null}
                                 >
                                   <UncontrolledTabs
@@ -976,7 +1007,7 @@ exports[`Tabs renders 1`] = `
                                                 "isStatic": false,
                                                 "lastClassName": "c4",
                                                 "rules": Array [
-                                                  "border-bottom:1px solid #d8d8d8;overflow-x:hidden;margin-bottom:8px;&:after{content:'';position:absolute;top:52px;left:0;width:100%;height:32px;background-image:radial-gradient( at center top,rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70% );padding:0px;margin:0px;border-width:0px;}",
+                                                  "overflow-x:hidden;",
                                                 ],
                                               },
                                               "displayName": "styles__TabBorder",
@@ -1102,6 +1133,7 @@ exports[`Tabs renders 1`] = `
                                                         focus={false}
                                                         id="react-tabs-0"
                                                         key=".$0"
+                                                        onBlur={[Function]}
                                                         onClick={[Function]}
                                                         onKeyUp={[Function]}
                                                         panelId="react-tabs-1"
@@ -1115,6 +1147,7 @@ exports[`Tabs renders 1`] = `
                                                           aria-selected="true"
                                                           className="react-tabs__tab react-tabs__tab--selected"
                                                           id="react-tabs-0"
+                                                          onBlur={[Function]}
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
                                                           role="tab"
@@ -1159,6 +1192,7 @@ exports[`Tabs renders 1`] = `
                                                         focus={false}
                                                         id="react-tabs-2"
                                                         key=".$177556"
+                                                        onBlur={[Function]}
                                                         onClick={[Function]}
                                                         onKeyUp={[Function]}
                                                         panelId="react-tabs-3"
@@ -1172,6 +1206,7 @@ exports[`Tabs renders 1`] = `
                                                           aria-selected="false"
                                                           className="react-tabs__tab"
                                                           id="react-tabs-2"
+                                                          onBlur={[Function]}
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
                                                           role="tab"
@@ -1216,6 +1251,7 @@ exports[`Tabs renders 1`] = `
                                                         focus={false}
                                                         id="react-tabs-4"
                                                         key=".$177559"
+                                                        onBlur={[Function]}
                                                         onClick={[Function]}
                                                         onKeyUp={[Function]}
                                                         panelId="react-tabs-5"
@@ -1229,6 +1265,7 @@ exports[`Tabs renders 1`] = `
                                                           aria-selected="false"
                                                           className="react-tabs__tab"
                                                           id="react-tabs-4"
+                                                          onBlur={[Function]}
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
                                                           role="tab"
@@ -1275,11 +1312,95 @@ exports[`Tabs renders 1`] = `
                                           </div>
                                         </StyledComponent>
                                       </styles__TabBorder>
+                                      <HairlineDivider
+                                        gradient={false}
+                                        key=".1"
+                                        vertical={false}
+                                      >
+                                        <HairlineDivider__StyledHairlineDivider
+                                          gradient={false}
+                                          vertical={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c7",
+                                                  "rules": Array [
+                                                    "padding: 0;",
+                                                    "margin: 0;",
+                                                    "border-width: 0;",
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "HairlineDivider__StyledHairlineDivider",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                                                "target": "hr",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            gradient={false}
+                                            vertical={false}
+                                          >
+                                            <hr
+                                              className="c7"
+                                            />
+                                          </StyledComponent>
+                                        </HairlineDivider__StyledHairlineDivider>
+                                      </HairlineDivider>
+                                      <DimpleDivider
+                                        key=".2"
+                                      >
+                                        <DimpleDivider__StyledDimpleDivider>
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c8",
+                                                  "rules": Array [
+                                                    "padding: 0;",
+                                                    "margin: 0;",
+                                                    "border-width: 0;",
+                                                    "height: 32px;",
+                                                    "background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, 0.1) 0%, rgba(0, 0, 0, 0) 70%);",
+                                                  ],
+                                                },
+                                                "displayName": "DimpleDivider__StyledDimpleDivider",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
+                                                "target": "hr",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                          >
+                                            <hr
+                                              className="c8"
+                                            />
+                                          </StyledComponent>
+                                        </DimpleDivider__StyledDimpleDivider>
+                                      </DimpleDivider>
                                       <TabPanel
                                         className="react-tabs__tab-panel"
                                         forceRender={false}
                                         id="react-tabs-1"
-                                        key=".1:$0"
+                                        key=".3:$0"
                                         selected={true}
                                         selectedClassName="react-tabs__tab-panel--selected"
                                         tabId="react-tabs-0"
@@ -1434,7 +1555,7 @@ exports[`Tabs renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c7",
+                                                                      "lastClassName": "c9",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -1475,13 +1596,17 @@ exports[`Tabs renders 1`] = `
                                                                 xs={12}
                                                               >
                                                                 <div
-                                                                  className="c7"
+                                                                  className="c9"
                                                                 >
                                                                   <Panel
                                                                     copy="en"
+                                                                    onOpen={null}
+                                                                    open={null}
                                                                   >
                                                                     <div
                                                                       copy="en"
+                                                                      onOpen={null}
+                                                                      open={null}
                                                                     >
                                                                       <Panel>
                                                                         <div>
@@ -1508,7 +1633,7 @@ exports[`Tabs renders 1`] = `
                                         className="react-tabs__tab-panel"
                                         forceRender={false}
                                         id="react-tabs-3"
-                                        key=".1:$177556"
+                                        key=".3:$177556"
                                         selected={false}
                                         selectedClassName="react-tabs__tab-panel--selected"
                                         tabId="react-tabs-2"
@@ -1524,7 +1649,7 @@ exports[`Tabs renders 1`] = `
                                         className="react-tabs__tab-panel"
                                         forceRender={false}
                                         id="react-tabs-5"
-                                        key=".1:$177559"
+                                        key=".3:$177559"
                                         selected={false}
                                         selectedClassName="react-tabs__tab-panel--selected"
                                         tabId="react-tabs-4"

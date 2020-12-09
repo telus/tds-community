@@ -199,6 +199,5 @@
       "pre-commit": "lint-staged && npm run test:quick",
       "pre-push": "npm run ci:build && npm-run-all --parallel test lint build-docs:*"
     }
-  },
-  "dependencies": {}
+  }
 }

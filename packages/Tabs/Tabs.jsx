@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import FlexGrid from '@tds/core-flex-grid'
-
 import { safeRest } from '@tds/util-helpers'
 import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import { Tab, Tabs as ReactTabs, TabList, TabPanel } from 'react-tabs'

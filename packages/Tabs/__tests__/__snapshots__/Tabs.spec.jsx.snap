@@ -755,7 +755,9 @@ exports[`Tabs renders 1`] = `
                             <div
                               copy="en"
                             >
-                              <div>
+                              <div
+                                id="1"
+                              >
                                 Content 1
                               </div>
                             </div>
@@ -1608,8 +1610,12 @@ exports[`Tabs renders 1`] = `
                                                                       onOpen={null}
                                                                       open={null}
                                                                     >
-                                                                      <Panel>
-                                                                        <div>
+                                                                      <Panel
+                                                                        id="1"
+                                                                      >
+                                                                        <div
+                                                                          id="1"
+                                                                        >
                                                                           Content 1
                                                                         </div>
                                                                       </Panel>

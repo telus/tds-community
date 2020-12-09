@@ -4,6 +4,7 @@ import Card from '@tds/core-card'
 import ChevronLink from '@tds/core-chevron-link'
 import FlexGrid from '@tds/core-flex-grid'
 import HairlineDivider from '@tds/core-hairline-divider'
+import DimpleDivider from '@tds/core-dimple-divider'
 import Heading from '@tds/core-heading'
 import Input from '@tds/core-input'
 import TdsLink from '@tds/core-link'
@@ -24,6 +25,7 @@ Object.assign(global, {
   ChevronLink,
   FlexGrid,
   HairlineDivider,
+  DimpleDivider,
   Heading,
   Input,
   TdsLink,

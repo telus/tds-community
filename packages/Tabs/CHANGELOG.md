@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.5...@tds/community-tabs@0.2.0) (2020-12-09)
+
+
+### Features
+
+* **community-tabs:** hr-1595 add tests, update example text ([6321712](https://github.com/telus/tds-community/commit/63217124fd268b36d9cdfcfc8ceddf9a51e7cae2))
+* **community-tabs:** hr-1595 controlled mode ([9752181](https://github.com/telus/tds-community/commit/975218117201ad9d42a0f635df9d8a5f47424eac))
+
+
+
+
+
 ## [0.1.5](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.4...@tds/community-tabs@0.1.5) (2020-11-11)
 
 

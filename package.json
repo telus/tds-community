@@ -64,6 +64,7 @@
     "@tds/core-chevron-link": "^2.1.16",
     "@tds/core-colours": "^2.2.1",
     "@tds/core-css-reset": "^2.0.5",
+    "@tds/core-dimple-divider": "^2.0.16",
     "@tds/core-flex-grid": "^4.0.1",
     "@tds/core-hairline-divider": "^2.0.13",
     "@tds/core-heading": "^3.0.4",
@@ -198,5 +199,6 @@
       "pre-commit": "lint-staged && npm run test:quick",
       "pre-push": "npm run ci:build && npm-run-all --parallel test lint build-docs:*"
     }
-  }
+  },
+  "dependencies": {}
 }

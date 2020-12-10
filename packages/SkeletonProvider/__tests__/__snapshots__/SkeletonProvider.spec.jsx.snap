@@ -169,6 +169,9 @@ exports[`SkeletonProvider should render children as skeletons 1`] = `
   animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
 }
 
 <div>

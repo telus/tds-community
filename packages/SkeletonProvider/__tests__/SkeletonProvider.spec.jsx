@@ -122,4 +122,13 @@ describe('SkeletonProvider', () => {
         .first()
     ).not.toHaveProp('style')
   })
+
+  it('should render Image skeleton with rounded corners', () => {
+    const skeleton = doMount({
+      children: (
+        <Image width={60} height={60} rounded="corners" src="" alt="skeleton image" skeleton />
+      ),
+    })
+    expect(skeleton.find('ImageSkeleton')).toHaveStyleRule('border-radius', '4px')
+  })
 })

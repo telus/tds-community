@@ -4,12 +4,12 @@ When used as a container for other components, it enhances a sub-set of TDS core
 The `skeleton` property will transform the child component into a skeleton. The `skeleton` property can be set to an object
 with options to customize how the skeleton will appear.
 
-| TDS Core    | skeleton options | type   | default   | Description                                       |
-| ----------- | ---------------- | ------ | --------- | ------------------------------------------------- |
-| **Text**    | lines            | number | 1         | Number of lines to appear as a skeleton           |
-|             | characters       | number | undefined | Character width of skeleton (default is full row) |
-| **Heading** | characters       | number | undefined | Character width of skeleton (default is full row) |
-| **Image**   | none             | n/a    | n/a       | Images always appear as a circle in skeleton form |
+| TDS Core    | skeleton options | type   | default   | Description                                                                         |
+| ----------- | ---------------- | ------ | --------- | ----------------------------------------------------------------------------------- |
+| **Text**    | lines            | number | 1         | Number of lines to appear as a skeleton                                             |
+|             | characters       | number | undefined | Character width of skeleton (default is full row)                                   |
+| **Heading** | characters       | number | undefined | Character width of skeleton (default is full row)                                   |
+| **Image**   | none             | n/a    | n/a       | Images appear as a circle in skeleton by default unless rounded prop set to corners |
 
 ### Example
 
@@ -79,5 +79,26 @@ the community contribuited `<Testimonial />` component can be skeletonized like 
       )
     }
   />
+</SkeletonProvider>
+```
+
+### Image skeleton with rounded corners
+
+You can create skeleton with rounded corners by using TDS core component `<Image />` with property `rounded` equal to `corners`. For example:
+
+```jsx
+<SkeletonProvider show={true}>
+  <Card variant="grey">
+    <Box>
+      <Image
+        rounded="corners"
+        src="image-example.jpg"
+        width={190}
+        height={210}
+        alt="Image of co-workers collaborating"
+        skeleton
+      />
+    </Box>
+  </Card>
 </SkeletonProvider>
 ```

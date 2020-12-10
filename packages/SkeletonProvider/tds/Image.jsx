@@ -4,6 +4,7 @@ import Image from '@tds/core-image'
 import styled from 'styled-components'
 import { safeRest } from '@tds/util-helpers'
 import { colorGainsboro, colorAthensGrey } from '@tds/core-colours'
+import { borders } from '@tds/shared-styles'
 
 import withSkeleton from '../withSkeleton'
 
@@ -47,9 +48,21 @@ const StyledImageSkeleton = styled.div`
   animation-iteration-count: infinite;
 `
 
+const StyledRoundedCornersImageSkeleton = styled(StyledImageSkeleton)`
+  ${borders.rounded}
+  width: ${props => props.width}px;
+  height: ${props => props.height}px;
+`
+
 const ImageSkeleton = ({ skeleton, ...rest }) => {
   if (!skeleton) {
     return <Image {...rest} />
+  }
+
+  const { rounded } = rest
+
+  if (rounded === 'corners') {
+    return <StyledRoundedCornersImageSkeleton {...safeRest(rest)} />
   }
 
   return <StyledImageSkeleton {...safeRest(rest)} />

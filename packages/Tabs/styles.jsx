@@ -116,3 +116,8 @@ export const ArrowInner = styled.div`
       border-left: 1px solid #d8d8d8;
     `};
 `
+export const TabContainer = styled.button`
+  border: none;
+  background-color: #fff;
+  z-index: -1;
+`

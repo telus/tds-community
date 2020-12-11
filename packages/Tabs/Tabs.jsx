@@ -13,6 +13,7 @@ import {
   TabLabel,
   TabArrows,
   ArrowInner,
+  TabContainer,
 } from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
@@ -182,18 +183,18 @@ const Tabs = props => {
     if (props.children.length > 0) {
       return props.children.map((tab, i) => {
         return (
-          <Tab
+          <TabContainer
             id={tab.props.id}
             key={hash(i)}
             onKeyUp={e => handleTabsKeyUp(e, i)}
             onClick={() => {
               handleClick(i)
             }}
-            aria-label={tab.props.heading}
-            onBlur={handleBlur}
           >
-            <TabLabel>{tab.props.heading}</TabLabel>
-          </Tab>
+            <Tab aria-label={tab.props.heading} onBlur={handleBlur} tabIndex="-1">
+              <TabLabel>{tab.props.heading}</TabLabel>
+            </Tab>
+          </TabContainer>
         )
       })
     }
@@ -244,8 +245,8 @@ const Tabs = props => {
               </TabArrows>
             )}
             <ReactTabs
-              selectedIndex={props.open && current}
-              onSelect={props.onOpen && handleSelect}
+              selectedIndex={current}
+              onSelect={props.onOpen ? handleSelect : index => setCurrent(index)}
             >
               <TabBorder>
                 <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>

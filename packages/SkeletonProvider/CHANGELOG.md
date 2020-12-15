@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.0.6...@tds/community-skeleton-provider@2.1.0) (2020-12-15)
+
+
+### Features
+
+* **community-skeleton-provider:** add rounded corners to image skeleton ([a0304f2](https://github.com/telus/tds-community/commit/a0304f25dea45aa9ec4cbda91a329123d775355a)), closes [#425](https://github.com/telus/tds-community/issues/425)
+
+
+
+
+
 ## [2.0.6](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.0.5...@tds/community-skeleton-provider@2.0.6) (2020-09-09)
 
 

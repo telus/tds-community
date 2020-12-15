@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.1.0...@tds/community-skeleton-provider@2.1.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* **community-skeleton-provider:** downgrade @tds/shared-styles to 1.5.2 ([1e95652](https://github.com/telus/tds-community/commit/1e95652ef196e5252be91aea9fc2421c33b58319))
+
+
+
+
+
 # [2.1.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.0.6...@tds/community-skeleton-provider@2.1.0) (2020-12-15)
 
 

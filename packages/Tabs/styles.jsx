@@ -39,9 +39,9 @@ export const TabsContainer = styled.div`
       box-shadow: 0 0 0 2px #979797;
       border-radius: 4px;
       outline: none;
-      h4 {
-        border-bottom: none;
-      }
+      // h4 {
+      //   border-bottom: none;
+      // }
     }
   }
 
@@ -115,4 +115,9 @@ export const ArrowInner = styled.div`
     css`
       border-left: 1px solid #d8d8d8;
     `};
+`
+
+export const HeadingLink = styled.a`
+  color: inherit;
+  text-decoration: inherit;
 `

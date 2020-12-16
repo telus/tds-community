@@ -13,6 +13,7 @@ import {
   TabLabel,
   TabArrows,
   ArrowInner,
+  HeadingLink,
 } from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
@@ -191,8 +192,11 @@ const Tabs = props => {
             }}
             aria-label={tab.props.heading}
             onBlur={handleBlur}
+            tabIndex="-1"
           >
-            <TabLabel>{tab.props.heading}</TabLabel>
+            <HeadingLink href={tab.props.id && `#${tab.props.id}`}>
+              <TabLabel>{tab.props.heading}</TabLabel>
+            </HeadingLink>
           </Tab>
         )
       })

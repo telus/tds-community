@@ -76,18 +76,21 @@ const Tabs = props => {
     props.onOpen(props.children[index].props.id)
   }
 
-  const handleSelect = (index, previousIndex) => {
+  const handleSelect = index => {
     // this is for setting the focus in controlled mode
     // we need to temporarily set the index (f will undo)
     // only if both the newTab and previous are the same, was the tab actually clicked
     // and we can raise up the event.
+
     setCurrent(index)
-    const newTab = props.children[index]
-    const previousTab = props.children[previousIndex]
-    if (newTab === previousTab) {
-      // this is on a tab switch
-      props.onOpen(newTab.props.id)
-    }
+    // const newTab = props.children[index]
+    // const previousTab = props.children[previousIndex]
+    // console.log(newTab === previousTab)
+    // if (newTab === previousTab) {
+    //   // this is on a tab switch
+    //   props.onOpen(newTab.props.id)
+    // }
+    props.onOpen(props.children[index].props.id)
   }
 
   const getTabsWidth = () => {
@@ -179,12 +182,19 @@ const Tabs = props => {
     }
   }, [getTabsWidth, resizeTriggered])
 
+  const formatSlug = str => {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .join('-')
+  }
+
   const mapTabs = () => {
     if (props.children.length > 0) {
       return props.children.map((tab, i) => {
         return (
           <TabContainer
-            id={tab.props.id}
+            id={tab.props.id || formatSlug(tab.props.heading)}
             key={hash(i)}
             onKeyUp={e => handleTabsKeyUp(e, i)}
             onClick={() => {
@@ -245,8 +255,8 @@ const Tabs = props => {
               </TabArrows>
             )}
             <ReactTabs
-              selectedIndex={current}
-              onSelect={props.onOpen ? handleSelect : index => setCurrent(index)}
+              selectedIndex={(props.open && current) || current}
+              onSelect={props.onOpen && handleSelect}
             >
               <TabBorder>
                 <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>

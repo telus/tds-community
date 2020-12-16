@@ -13,7 +13,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -58,7 +58,7 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c7 {
+.c8 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -73,7 +73,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -153,13 +153,19 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c6 {
+.c7 {
   height: 100%;
   display: block;
   padding-bottom: 8px;
   border-bottom: 4px solid transparent;
 }
 
+.c6 {
+  border: none;
+  background-color: #fff;
+  z-index: -1;
+}
+
 @media (max-width:575px) {
   .c3 {
     display: block;
@@ -196,35 +202,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
@@ -364,7 +370,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -409,7 +415,7 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c7 {
+.c8 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -424,7 +430,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -504,13 +510,19 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c6 {
+.c7 {
   height: 100%;
   display: block;
   padding-bottom: 8px;
   border-bottom: 4px solid transparent;
 }
 
+.c6 {
+  border: none;
+  background-color: #fff;
+  z-index: -1;
+}
+
 @media (max-width:575px) {
   .c3 {
     display: block;
@@ -547,35 +559,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c9 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
@@ -691,51 +703,68 @@ exports[`Tabs renders 1`] = `
                           class="react-tabs__tab-list"
                           role="tablist"
                         >
-                          <li
-                            aria-controls="react-tabs-1"
-                            aria-disabled="false"
-                            aria-selected="true"
-                            class="react-tabs__tab react-tabs__tab--selected"
-                            id="react-tabs-0"
-                            role="tab"
-                            tabindex="0"
+                          <button
+                            class="c6"
+                            id="1"
                           >
-                            <h4
-                              class="c6"
-                            />
-                          </li>
-                          <li
-                            aria-controls="react-tabs-3"
-                            aria-disabled="false"
-                            aria-selected="false"
-                            class="react-tabs__tab"
-                            id="react-tabs-2"
-                            role="tab"
+                            <li
+                              aria-controls="react-tabs-1"
+                              aria-disabled="false"
+                              aria-selected="true"
+                              class="react-tabs__tab react-tabs__tab--selected"
+                              id="react-tabs-0"
+                              role="tab"
+                              tabindex="-1"
+                            >
+                              <h4
+                                class="c7"
+                              />
+                            </li>
+                          </button>
+                          <button
+                            class="c6"
+                            id="2"
                           >
-                            <h4
-                              class="c6"
-                            />
-                          </li>
-                          <li
-                            aria-controls="react-tabs-5"
-                            aria-disabled="false"
-                            aria-selected="false"
-                            class="react-tabs__tab"
-                            id="react-tabs-4"
-                            role="tab"
+                            <li
+                              aria-controls="react-tabs-3"
+                              aria-disabled="false"
+                              aria-selected="false"
+                              class="react-tabs__tab"
+                              id="react-tabs-2"
+                              role="tab"
+                              tabindex="-1"
+                            >
+                              <h4
+                                class="c7"
+                              />
+                            </li>
+                          </button>
+                          <button
+                            class="c6"
+                            id="3"
                           >
-                            <h4
-                              class="c6"
-                            />
-                          </li>
+                            <li
+                              aria-controls="react-tabs-5"
+                              aria-disabled="false"
+                              aria-selected="false"
+                              class="react-tabs__tab"
+                              id="react-tabs-4"
+                              role="tab"
+                              tabindex="-1"
+                            >
+                              <h4
+                                class="c7"
+                              />
+                            </li>
+                          </button>
                         </ul>
                       </div>
                     </div>
                     <hr
-                      class="c7"
+                      class="c8"
                     />
                     <hr
-                      class="c8"
+                      class="c9"
                     />
                     <div
                       aria-labelledby="react-tabs-0"
@@ -750,7 +779,7 @@ exports[`Tabs renders 1`] = `
                           class="c2"
                         >
                           <div
-                            class="c9"
+                            class="c10"
                           >
                             <div
                               copy="en"
@@ -934,7 +963,7 @@ exports[`Tabs renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       [Function],
                                       [Function],
@@ -980,8 +1009,8 @@ exports[`Tabs renders 1`] = `
                                   defaultFocus={false}
                                   defaultIndex={null}
                                   forceRenderTabPanel={false}
-                                  onSelect={null}
-                                  selectedIndex={null}
+                                  onSelect={[Function]}
+                                  selectedIndex={0}
                                 >
                                   <UncontrolledTabs
                                     className="react-tabs"
@@ -1065,43 +1094,60 @@ exports[`Tabs renders 1`] = `
                                                         class="react-tabs__tab-list"
                                                         role="tablist"
                                                       >
-                                                        <li
-                                                          aria-controls="react-tabs-1"
-                                                          aria-disabled="false"
-                                                          aria-selected="true"
-                                                          class="react-tabs__tab react-tabs__tab--selected"
-                                                          id="react-tabs-0"
-                                                          role="tab"
-                                                          tabindex="0"
+                                                        <button
+                                                          class="c6"
+                                                          id="1"
                                                         >
-                                                          <h4
-                                                            class="c6"
-                                                          />
-                                                        </li>
-                                                        <li
-                                                          aria-controls="react-tabs-3"
-                                                          aria-disabled="false"
-                                                          aria-selected="false"
-                                                          class="react-tabs__tab"
-                                                          id="react-tabs-2"
-                                                          role="tab"
+                                                          <li
+                                                            aria-controls="react-tabs-1"
+                                                            aria-disabled="false"
+                                                            aria-selected="true"
+                                                            class="react-tabs__tab react-tabs__tab--selected"
+                                                            id="react-tabs-0"
+                                                            role="tab"
+                                                            tabindex="-1"
+                                                          >
+                                                            <h4
+                                                              class="c7"
+                                                            />
+                                                          </li>
+                                                        </button>
+                                                        <button
+                                                          class="c6"
+                                                          id="2"
                                                         >
-                                                          <h4
-                                                            class="c6"
-                                                          />
-                                                        </li>
-                                                        <li
-                                                          aria-controls="react-tabs-5"
-                                                          aria-disabled="false"
-                                                          aria-selected="false"
-                                                          class="react-tabs__tab"
-                                                          id="react-tabs-4"
-                                                          role="tab"
+                                                          <li
+                                                            aria-controls="react-tabs-3"
+                                                            aria-disabled="false"
+                                                            aria-selected="false"
+                                                            class="react-tabs__tab"
+                                                            id="react-tabs-2"
+                                                            role="tab"
+                                                            tabindex="-1"
+                                                          >
+                                                            <h4
+                                                              class="c7"
+                                                            />
+                                                          </li>
+                                                        </button>
+                                                        <button
+                                                          class="c6"
+                                                          id="3"
                                                         >
-                                                          <h4
-                                                            class="c6"
-                                                          />
-                                                        </li>
+                                                          <li
+                                                            aria-controls="react-tabs-5"
+                                                            aria-disabled="false"
+                                                            aria-selected="false"
+                                                            class="react-tabs__tab"
+                                                            id="react-tabs-4"
+                                                            role="tab"
+                                                            tabindex="-1"
+                                                          >
+                                                            <h4
+                                                              class="c7"
+                                                            />
+                                                          </li>
+                                                        </button>
                                                       </ul>
                                                     </div>,
                                                   }
@@ -1129,183 +1175,303 @@ exports[`Tabs renders 1`] = `
                                                         }
                                                       }
                                                     >
-                                                      <Tab
-                                                        className="react-tabs__tab"
-                                                        disabledClassName="react-tabs__tab--disabled"
-                                                        focus={false}
-                                                        id="react-tabs-0"
+                                                      <TabContainer
+                                                        id="1"
                                                         key=".$0"
-                                                        onBlur={[Function]}
                                                         onClick={[Function]}
                                                         onKeyUp={[Function]}
-                                                        panelId="react-tabs-1"
-                                                        selected={true}
-                                                        selectedClassName="react-tabs__tab--selected"
-                                                        tabRef={[Function]}
                                                       >
-                                                        <li
-                                                          aria-controls="react-tabs-1"
-                                                          aria-disabled="false"
-                                                          aria-selected="true"
-                                                          className="react-tabs__tab react-tabs__tab--selected"
-                                                          id="react-tabs-0"
-                                                          onBlur={[Function]}
+                                                        <StyledComponent
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "styles__TabContainer-fcx45d-6",
+                                                                "isStatic": false,
+                                                                "lastClassName": "c6",
+                                                                "rules": Array [
+                                                                  "border:none;background-color:#fff;z-index:-1;",
+                                                                ],
+                                                              },
+                                                              "displayName": "TabContainer",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "styles__TabContainer-fcx45d-6",
+                                                              "target": "button",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                          id="1"
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
-                                                          role="tab"
-                                                          tabIndex="0"
                                                         >
-                                                          <styles__TabLabel>
-                                                            <StyledComponent
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "styles__TabLabel-fcx45d-3",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c6",
-                                                                    "rules": Array [
-                                                                      "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "styles__TabLabel",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "styles__TabLabel-fcx45d-3",
-                                                                  "target": "h4",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
+                                                          <button
+                                                            className="c6"
+                                                            id="1"
+                                                            onClick={[Function]}
+                                                            onKeyUp={[Function]}
+                                                          >
+                                                            <Tab
+                                                              className="react-tabs__tab"
+                                                              disabledClassName="react-tabs__tab--disabled"
+                                                              focus={false}
+                                                              id="react-tabs-0"
+                                                              key=".0"
+                                                              onBlur={[Function]}
+                                                              panelId="react-tabs-1"
+                                                              selected={true}
+                                                              selectedClassName="react-tabs__tab--selected"
+                                                              tabIndex="-1"
+                                                              tabRef={[Function]}
                                                             >
-                                                              <h4
-                                                                className="c6"
-                                                              />
-                                                            </StyledComponent>
-                                                          </styles__TabLabel>
-                                                        </li>
-                                                      </Tab>
-                                                      <Tab
-                                                        className="react-tabs__tab"
-                                                        disabledClassName="react-tabs__tab--disabled"
-                                                        focus={false}
-                                                        id="react-tabs-2"
+                                                              <li
+                                                                aria-controls="react-tabs-1"
+                                                                aria-disabled="false"
+                                                                aria-selected="true"
+                                                                className="react-tabs__tab react-tabs__tab--selected"
+                                                                id="react-tabs-0"
+                                                                onBlur={[Function]}
+                                                                role="tab"
+                                                                tabIndex="-1"
+                                                              >
+                                                                <styles__TabLabel>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "styles__TabLabel-fcx45d-3",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c7",
+                                                                          "rules": Array [
+                                                                            "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "styles__TabLabel",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                                        "target": "h4",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <h4
+                                                                      className="c7"
+                                                                    />
+                                                                  </StyledComponent>
+                                                                </styles__TabLabel>
+                                                              </li>
+                                                            </Tab>
+                                                          </button>
+                                                        </StyledComponent>
+                                                      </TabContainer>
+                                                      <TabContainer
+                                                        id="2"
                                                         key=".$177556"
-                                                        onBlur={[Function]}
                                                         onClick={[Function]}
                                                         onKeyUp={[Function]}
-                                                        panelId="react-tabs-3"
-                                                        selected={false}
-                                                        selectedClassName="react-tabs__tab--selected"
-                                                        tabRef={[Function]}
                                                       >
-                                                        <li
-                                                          aria-controls="react-tabs-3"
-                                                          aria-disabled="false"
-                                                          aria-selected="false"
-                                                          className="react-tabs__tab"
-                                                          id="react-tabs-2"
-                                                          onBlur={[Function]}
+                                                        <StyledComponent
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "styles__TabContainer-fcx45d-6",
+                                                                "isStatic": false,
+                                                                "lastClassName": "c6",
+                                                                "rules": Array [
+                                                                  "border:none;background-color:#fff;z-index:-1;",
+                                                                ],
+                                                              },
+                                                              "displayName": "TabContainer",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "styles__TabContainer-fcx45d-6",
+                                                              "target": "button",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                          id="2"
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
-                                                          role="tab"
-                                                          tabIndex={null}
                                                         >
-                                                          <styles__TabLabel>
-                                                            <StyledComponent
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "styles__TabLabel-fcx45d-3",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c6",
-                                                                    "rules": Array [
-                                                                      "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "styles__TabLabel",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "styles__TabLabel-fcx45d-3",
-                                                                  "target": "h4",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
+                                                          <button
+                                                            className="c6"
+                                                            id="2"
+                                                            onClick={[Function]}
+                                                            onKeyUp={[Function]}
+                                                          >
+                                                            <Tab
+                                                              className="react-tabs__tab"
+                                                              disabledClassName="react-tabs__tab--disabled"
+                                                              focus={false}
+                                                              id="react-tabs-2"
+                                                              key=".0"
+                                                              onBlur={[Function]}
+                                                              panelId="react-tabs-3"
+                                                              selected={false}
+                                                              selectedClassName="react-tabs__tab--selected"
+                                                              tabIndex="-1"
+                                                              tabRef={[Function]}
                                                             >
-                                                              <h4
-                                                                className="c6"
-                                                              />
-                                                            </StyledComponent>
-                                                          </styles__TabLabel>
-                                                        </li>
-                                                      </Tab>
-                                                      <Tab
-                                                        className="react-tabs__tab"
-                                                        disabledClassName="react-tabs__tab--disabled"
-                                                        focus={false}
-                                                        id="react-tabs-4"
+                                                              <li
+                                                                aria-controls="react-tabs-3"
+                                                                aria-disabled="false"
+                                                                aria-selected="false"
+                                                                className="react-tabs__tab"
+                                                                id="react-tabs-2"
+                                                                onBlur={[Function]}
+                                                                role="tab"
+                                                                tabIndex="-1"
+                                                              >
+                                                                <styles__TabLabel>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "styles__TabLabel-fcx45d-3",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c7",
+                                                                          "rules": Array [
+                                                                            "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "styles__TabLabel",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                                        "target": "h4",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <h4
+                                                                      className="c7"
+                                                                    />
+                                                                  </StyledComponent>
+                                                                </styles__TabLabel>
+                                                              </li>
+                                                            </Tab>
+                                                          </button>
+                                                        </StyledComponent>
+                                                      </TabContainer>
+                                                      <TabContainer
+                                                        id="3"
                                                         key=".$177559"
-                                                        onBlur={[Function]}
                                                         onClick={[Function]}
                                                         onKeyUp={[Function]}
-                                                        panelId="react-tabs-5"
-                                                        selected={false}
-                                                        selectedClassName="react-tabs__tab--selected"
-                                                        tabRef={[Function]}
                                                       >
-                                                        <li
-                                                          aria-controls="react-tabs-5"
-                                                          aria-disabled="false"
-                                                          aria-selected="false"
-                                                          className="react-tabs__tab"
-                                                          id="react-tabs-4"
-                                                          onBlur={[Function]}
+                                                        <StyledComponent
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "styles__TabContainer-fcx45d-6",
+                                                                "isStatic": false,
+                                                                "lastClassName": "c6",
+                                                                "rules": Array [
+                                                                  "border:none;background-color:#fff;z-index:-1;",
+                                                                ],
+                                                              },
+                                                              "displayName": "TabContainer",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "styles__TabContainer-fcx45d-6",
+                                                              "target": "button",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                          id="3"
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
-                                                          role="tab"
-                                                          tabIndex={null}
                                                         >
-                                                          <styles__TabLabel>
-                                                            <StyledComponent
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "styles__TabLabel-fcx45d-3",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c6",
-                                                                    "rules": Array [
-                                                                      "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "styles__TabLabel",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "styles__TabLabel-fcx45d-3",
-                                                                  "target": "h4",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
+                                                          <button
+                                                            className="c6"
+                                                            id="3"
+                                                            onClick={[Function]}
+                                                            onKeyUp={[Function]}
+                                                          >
+                                                            <Tab
+                                                              className="react-tabs__tab"
+                                                              disabledClassName="react-tabs__tab--disabled"
+                                                              focus={false}
+                                                              id="react-tabs-4"
+                                                              key=".0"
+                                                              onBlur={[Function]}
+                                                              panelId="react-tabs-5"
+                                                              selected={false}
+                                                              selectedClassName="react-tabs__tab--selected"
+                                                              tabIndex="-1"
+                                                              tabRef={[Function]}
                                                             >
-                                                              <h4
-                                                                className="c6"
-                                                              />
-                                                            </StyledComponent>
-                                                          </styles__TabLabel>
-                                                        </li>
-                                                      </Tab>
+                                                              <li
+                                                                aria-controls="react-tabs-5"
+                                                                aria-disabled="false"
+                                                                aria-selected="false"
+                                                                className="react-tabs__tab"
+                                                                id="react-tabs-4"
+                                                                onBlur={[Function]}
+                                                                role="tab"
+                                                                tabIndex="-1"
+                                                              >
+                                                                <styles__TabLabel>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "styles__TabLabel-fcx45d-3",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c7",
+                                                                          "rules": Array [
+                                                                            "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "styles__TabLabel",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                                        "target": "h4",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <h4
+                                                                      className="c7"
+                                                                    />
+                                                                  </StyledComponent>
+                                                                </styles__TabLabel>
+                                                              </li>
+                                                            </Tab>
+                                                          </button>
+                                                        </StyledComponent>
+                                                      </TabContainer>
                                                     </ul>
                                                   </TabList>
                                                 </div>
@@ -1331,7 +1497,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c7",
+                                                  "lastClassName": "c8",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1354,7 +1520,7 @@ exports[`Tabs renders 1`] = `
                                             vertical={false}
                                           >
                                             <hr
-                                              className="c7"
+                                              className="c8"
                                             />
                                           </StyledComponent>
                                         </HairlineDivider__StyledHairlineDivider>
@@ -1371,7 +1537,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c8",
+                                                  "lastClassName": "c9",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1393,7 +1559,7 @@ exports[`Tabs renders 1`] = `
                                             forwardedRef={null}
                                           >
                                             <hr
-                                              className="c8"
+                                              className="c9"
                                             />
                                           </StyledComponent>
                                         </DimpleDivider__StyledDimpleDivider>
@@ -1557,7 +1723,7 @@ exports[`Tabs renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c9",
+                                                                      "lastClassName": "c10",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -1598,7 +1764,7 @@ exports[`Tabs renders 1`] = `
                                                                 xs={12}
                                                               >
                                                                 <div
-                                                                  className="c9"
+                                                                  className="c10"
                                                                 >
                                                                   <Panel
                                                                     copy="en"

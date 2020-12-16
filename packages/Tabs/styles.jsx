@@ -39,9 +39,9 @@ export const TabsContainer = styled.div`
       box-shadow: 0 0 0 2px #979797;
       border-radius: 4px;
       outline: none;
-      h4 {
-        border-bottom: none;
-      }
+      // h4 {
+      //   border-bottom: none;
+      // }
     }
   }
 
@@ -121,3 +121,4 @@ export const TabContainer = styled.button`
   background-color: #fff;
   z-index: -1;
 `
+TabContainer.displayName = 'TabContainer'

@@ -13,6 +13,7 @@ import {
   TabLabel,
   TabArrows,
   ArrowInner,
+  TabLabelContainer,
 } from './styles'
 import hash from './hash'
 import Panel from './Panel/Panel'
@@ -28,9 +29,12 @@ const Tabs = props => {
   const MOVE_TABS_VALUE = 300
   const ENTER_KEY = 13
   const SPACE_BAR_KEY = 32
+  const RIGHT_ARROW = 39
+  const LEFT_ARROW = 37
 
   const tabsRoot = useRef()
   const tabRef = useRef(null)
+  const tabNavRef = useRef(null)
   const [tabsContainerWidth, setTabsContainerWidth] = useState()
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
   const [totalTabsWidth, setTotalTabsWidth] = useState(0)
@@ -40,6 +44,7 @@ const Tabs = props => {
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
+  const [currentFocus, setCurrentFocus] = useState(0)
   const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
 
   useEffect(() => {
@@ -51,6 +56,7 @@ const Tabs = props => {
 
     if (tabIndex >= 0) {
       setCurrent(tabIndex)
+      setCurrentFocus(tabIndex)
       return
     }
     // if tabIndex === null set to -1 to keep tabs contolled, but select no tab
@@ -63,12 +69,15 @@ const Tabs = props => {
     const tabIndex = props.children.findIndex(child => child.props.id === props.open)
     if (tabIndex !== current) {
       setCurrent(tabIndex)
+      setCurrentFocus(tabIndex)
     }
   }
 
-  const handleClick = index => {
+  const handleClick = (e, index) => {
+    e.preventDefault()
     if (!props.open) {
       setCurrent(index) // set internally if not-controlled
+      setCurrentFocus(index)
       return
     }
     // raise to controlling component to set on click if controlled
@@ -80,7 +89,9 @@ const Tabs = props => {
     // we need to temporarily set the index (f will undo)
     // only if both the newTab and previous are the same, was the tab actually clicked
     // and we can raise up the event.
+
     setCurrent(index)
+    setCurrentFocus(index)
     const newTab = props.children[index]
     const previousTab = props.children[previousIndex]
     if (newTab === previousTab) {
@@ -133,9 +144,17 @@ const Tabs = props => {
     getTabsWidth()
   }
 
-  const handleTabsKeyUp = (e, i) => {
-    if (e.keyCode === ENTER_KEY || e.keyCode === SPACE_BAR_KEY) {
-      handleClick(i)
+  const handleTabsKeyUp = e => {
+    if (e.keyCode === RIGHT_ARROW && currentFocus < props.children.length - 1) {
+      setCurrentFocus(currentFocus + 1)
+      tabNavRef.current.node.parentNode.children[currentFocus + 1].children[0].focus()
+    }
+    if (e.keyCode === LEFT_ARROW && currentFocus > 0) {
+      setCurrentFocus(currentFocus - 1)
+      tabNavRef.current.node.parentNode.children[currentFocus - 1].children[0].focus()
+    }
+    if (e.keyCode === SPACE_BAR_KEY) {
+      e.target.click()
     }
     if (e.target.offsetLeft <= MARGIN_BUFFER) {
       // eslint-disable-next-line consistent-return
@@ -181,18 +200,23 @@ const Tabs = props => {
   const mapTabs = () => {
     if (props.children.length > 0) {
       return props.children.map((tab, i) => {
+        const isActive = current === i
         return (
           <Tab
             id={tab.props.id}
-            key={hash(i)}
-            onKeyUp={e => handleTabsKeyUp(e, i)}
-            onClick={() => {
-              handleClick(i)
-            }}
             aria-label={tab.props.heading}
             onBlur={handleBlur}
+            tabIndex="-1"
+            key={hash(i)}
+            onClick={e => {
+              handleClick(e, i)
+            }}
+            onKeyUp={e => handleTabsKeyUp(e)}
+            ref={tabNavRef}
           >
-            <TabLabel>{tab.props.heading}</TabLabel>
+            <TabLabelContainer tabIndex={isActive && '-1'} isActive={isActive}>
+              <TabLabel>{tab.props.heading}</TabLabel>
+            </TabLabelContainer>
           </Tab>
         )
       })

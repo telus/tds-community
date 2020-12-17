@@ -13,7 +13,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c9 {
+.c11 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -58,7 +58,7 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c7 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -73,7 +73,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c10 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -97,7 +97,7 @@ exports[`Tabs renders 1`] = `
 .c0 .react-tabs__tab {
   display: inline-block;
   cursor: pointer;
-  padding: 8px 10px 0;
+  padding: 8px 10px 1px;
   margin: 0 14px;
   min-width: 44px;
   text-align: center;
@@ -120,13 +120,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab:focus {
-  box-shadow: 0 0 0 2px #979797;
-  border-radius: 4px;
   outline: none;
-}
-
-.c0 .react-tabs__tab:focus h4 {
-  border-bottom: none;
 }
 
 .c0 .react-tabs__tab-panel {
@@ -153,13 +147,63 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c6 {
+.c7 {
   height: 100%;
   display: block;
-  padding-bottom: 8px;
+  padding: 8px 0px 4px 0;
   border-bottom: 4px solid transparent;
 }
 
+.c6 {
+  border: none;
+  background-color: #fff;
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 1px 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  outline: none;
+  border: none;
+}
+
+.c6:active {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.c6::-moz-focus-inner {
+  border: 0;
+}
+
+.c8 {
+  border: none;
+  background-color: #fff;
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 1px 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.c8:focus {
+  outline: none;
+  border: 2px solid rgb(151,151,151);
+}
+
+.c8:active {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.c8::-moz-focus-inner {
+  border: 0;
+}
+
 @media (max-width:575px) {
   .c3 {
     display: block;
@@ -196,35 +240,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
@@ -337,7 +381,7 @@ exports[`Tabs renders 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:2px 0 0 0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 0;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{box-shadow:0 0 0 2px #979797;border-radius:4px;outline:none;h4{border-bottom:none;}}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;margin-top:0;}}",
+              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:2px 0 0 0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 1px;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{outline:none;}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;margin-top:0;}}",
             ],
           },
           "displayName": "styles__TabsContainer",
@@ -364,7 +408,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c9 {
+.c11 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -409,7 +453,7 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c7 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -424,7 +468,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c10 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -448,7 +492,7 @@ exports[`Tabs renders 1`] = `
 .c0 .react-tabs__tab {
   display: inline-block;
   cursor: pointer;
-  padding: 8px 10px 0;
+  padding: 8px 10px 1px;
   margin: 0 14px;
   min-width: 44px;
   text-align: center;
@@ -471,13 +515,7 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab:focus {
-  box-shadow: 0 0 0 2px #979797;
-  border-radius: 4px;
   outline: none;
-}
-
-.c0 .react-tabs__tab:focus h4 {
-  border-bottom: none;
 }
 
 .c0 .react-tabs__tab-panel {
@@ -504,13 +542,63 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c6 {
+.c7 {
   height: 100%;
   display: block;
-  padding-bottom: 8px;
+  padding: 8px 0px 4px 0;
   border-bottom: 4px solid transparent;
 }
 
+.c6 {
+  border: none;
+  background-color: #fff;
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 1px 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  outline: none;
+  border: none;
+}
+
+.c6:active {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.c6::-moz-focus-inner {
+  border: 0;
+}
+
+.c8 {
+  border: none;
+  background-color: #fff;
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 1px 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.c8:focus {
+  outline: none;
+  border: 2px solid rgb(151,151,151);
+}
+
+.c8:active {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.c8::-moz-focus-inner {
+  border: 0;
+}
+
 @media (max-width:575px) {
   .c3 {
     display: block;
@@ -547,35 +635,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c9 {
+  .c11 {
     display: block;
     text-align: inherit;
   }
@@ -698,11 +786,16 @@ exports[`Tabs renders 1`] = `
                             class="react-tabs__tab react-tabs__tab--selected"
                             id="react-tabs-0"
                             role="tab"
-                            tabindex="0"
+                            tabindex="-1"
                           >
-                            <h4
+                            <button
                               class="c6"
-                            />
+                              tabindex="-1"
+                            >
+                              <h4
+                                class="c7"
+                              />
+                            </button>
                           </li>
                           <li
                             aria-controls="react-tabs-3"
@@ -711,10 +804,15 @@ exports[`Tabs renders 1`] = `
                             class="react-tabs__tab"
                             id="react-tabs-2"
                             role="tab"
+                            tabindex="-1"
                           >
-                            <h4
-                              class="c6"
-                            />
+                            <button
+                              class="c8"
+                            >
+                              <h4
+                                class="c7"
+                              />
+                            </button>
                           </li>
                           <li
                             aria-controls="react-tabs-5"
@@ -723,19 +821,24 @@ exports[`Tabs renders 1`] = `
                             class="react-tabs__tab"
                             id="react-tabs-4"
                             role="tab"
+                            tabindex="-1"
                           >
-                            <h4
-                              class="c6"
-                            />
+                            <button
+                              class="c8"
+                            >
+                              <h4
+                                class="c7"
+                              />
+                            </button>
                           </li>
                         </ul>
                       </div>
                     </div>
                     <hr
-                      class="c7"
+                      class="c9"
                     />
                     <hr
-                      class="c8"
+                      class="c10"
                     />
                     <div
                       aria-labelledby="react-tabs-0"
@@ -750,7 +853,7 @@ exports[`Tabs renders 1`] = `
                           class="c2"
                         >
                           <div
-                            class="c9"
+                            class="c11"
                           >
                             <div
                               copy="en"
@@ -934,7 +1037,7 @@ exports[`Tabs renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                     "isStatic": false,
-                                    "lastClassName": "c9",
+                                    "lastClassName": "c11",
                                     "rules": Array [
                                       [Function],
                                       [Function],
@@ -1072,11 +1175,16 @@ exports[`Tabs renders 1`] = `
                                                           class="react-tabs__tab react-tabs__tab--selected"
                                                           id="react-tabs-0"
                                                           role="tab"
-                                                          tabindex="0"
+                                                          tabindex="-1"
                                                         >
-                                                          <h4
+                                                          <button
                                                             class="c6"
-                                                          />
+                                                            tabindex="-1"
+                                                          >
+                                                            <h4
+                                                              class="c7"
+                                                            />
+                                                          </button>
                                                         </li>
                                                         <li
                                                           aria-controls="react-tabs-3"
@@ -1085,10 +1193,15 @@ exports[`Tabs renders 1`] = `
                                                           class="react-tabs__tab"
                                                           id="react-tabs-2"
                                                           role="tab"
+                                                          tabindex="-1"
                                                         >
-                                                          <h4
-                                                            class="c6"
-                                                          />
+                                                          <button
+                                                            class="c8"
+                                                          >
+                                                            <h4
+                                                              class="c7"
+                                                            />
+                                                          </button>
                                                         </li>
                                                         <li
                                                           aria-controls="react-tabs-5"
@@ -1097,10 +1210,15 @@ exports[`Tabs renders 1`] = `
                                                           class="react-tabs__tab"
                                                           id="react-tabs-4"
                                                           role="tab"
+                                                          tabindex="-1"
                                                         >
-                                                          <h4
-                                                            class="c6"
-                                                          />
+                                                          <button
+                                                            class="c8"
+                                                          >
+                                                            <h4
+                                                              class="c7"
+                                                            />
+                                                          </button>
                                                         </li>
                                                       </ul>
                                                     </div>,
@@ -1141,6 +1259,7 @@ exports[`Tabs renders 1`] = `
                                                         panelId="react-tabs-1"
                                                         selected={true}
                                                         selectedClassName="react-tabs__tab--selected"
+                                                        tabIndex="-1"
                                                         tabRef={[Function]}
                                                       >
                                                         <li
@@ -1153,39 +1272,79 @@ exports[`Tabs renders 1`] = `
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
                                                           role="tab"
-                                                          tabIndex="0"
+                                                          tabIndex="-1"
                                                         >
-                                                          <styles__TabLabel>
+                                                          <styles__TabLabelContainer
+                                                            isActive={true}
+                                                            tabIndex="-1"
+                                                          >
                                                             <StyledComponent
                                                               forwardedComponent={
                                                                 Object {
                                                                   "$$typeof": Symbol(react.forward_ref),
                                                                   "attrs": Array [],
                                                                   "componentStyle": ComponentStyle {
-                                                                    "componentId": "styles__TabLabel-fcx45d-3",
+                                                                    "componentId": "styles__TabLabelContainer-fcx45d-6",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c6",
+                                                                    "lastClassName": "c8",
                                                                     "rules": Array [
-                                                                      "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
+                                                                      "border:none;background-color:#fff;color:inherit;text-decoration:inherit;padding:1px 8px;border:2px solid transparent;border-radius:5px;&:focus{outline:none;border:",
+                                                                      [Function],
+                                                                      ";}&:active{outline:none;border:2px solid transparent;}::-moz-focus-inner{border:0;}",
                                                                     ],
                                                                   },
-                                                                  "displayName": "styles__TabLabel",
+                                                                  "displayName": "styles__TabLabelContainer",
                                                                   "foldedComponentIds": Array [],
                                                                   "render": [Function],
-                                                                  "styledComponentId": "styles__TabLabel-fcx45d-3",
-                                                                  "target": "h4",
+                                                                  "styledComponentId": "styles__TabLabelContainer-fcx45d-6",
+                                                                  "target": "button",
                                                                   "toString": [Function],
                                                                   "warnTooManyClasses": [Function],
                                                                   "withComponent": [Function],
                                                                 }
                                                               }
                                                               forwardedRef={null}
+                                                              isActive={true}
+                                                              tabIndex="-1"
                                                             >
-                                                              <h4
+                                                              <button
                                                                 className="c6"
-                                                              />
+                                                                tabIndex="-1"
+                                                              >
+                                                                <styles__TabLabel>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "styles__TabLabel-fcx45d-3",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c7",
+                                                                          "rules": Array [
+                                                                            "height:100%;display:block;padding:8px 0px 4px 0;border-bottom:4px solid transparent;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "styles__TabLabel",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                                        "target": "h4",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <h4
+                                                                      className="c7"
+                                                                    />
+                                                                  </StyledComponent>
+                                                                </styles__TabLabel>
+                                                              </button>
                                                             </StyledComponent>
-                                                          </styles__TabLabel>
+                                                          </styles__TabLabelContainer>
                                                         </li>
                                                       </Tab>
                                                       <Tab
@@ -1200,6 +1359,7 @@ exports[`Tabs renders 1`] = `
                                                         panelId="react-tabs-3"
                                                         selected={false}
                                                         selectedClassName="react-tabs__tab--selected"
+                                                        tabIndex="-1"
                                                         tabRef={[Function]}
                                                       >
                                                         <li
@@ -1212,39 +1372,79 @@ exports[`Tabs renders 1`] = `
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
                                                           role="tab"
-                                                          tabIndex={null}
+                                                          tabIndex="-1"
                                                         >
-                                                          <styles__TabLabel>
+                                                          <styles__TabLabelContainer
+                                                            isActive={false}
+                                                            tabIndex={false}
+                                                          >
                                                             <StyledComponent
                                                               forwardedComponent={
                                                                 Object {
                                                                   "$$typeof": Symbol(react.forward_ref),
                                                                   "attrs": Array [],
                                                                   "componentStyle": ComponentStyle {
-                                                                    "componentId": "styles__TabLabel-fcx45d-3",
+                                                                    "componentId": "styles__TabLabelContainer-fcx45d-6",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c6",
+                                                                    "lastClassName": "c8",
                                                                     "rules": Array [
-                                                                      "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
+                                                                      "border:none;background-color:#fff;color:inherit;text-decoration:inherit;padding:1px 8px;border:2px solid transparent;border-radius:5px;&:focus{outline:none;border:",
+                                                                      [Function],
+                                                                      ";}&:active{outline:none;border:2px solid transparent;}::-moz-focus-inner{border:0;}",
                                                                     ],
                                                                   },
-                                                                  "displayName": "styles__TabLabel",
+                                                                  "displayName": "styles__TabLabelContainer",
                                                                   "foldedComponentIds": Array [],
                                                                   "render": [Function],
-                                                                  "styledComponentId": "styles__TabLabel-fcx45d-3",
-                                                                  "target": "h4",
+                                                                  "styledComponentId": "styles__TabLabelContainer-fcx45d-6",
+                                                                  "target": "button",
                                                                   "toString": [Function],
                                                                   "warnTooManyClasses": [Function],
                                                                   "withComponent": [Function],
                                                                 }
                                                               }
                                                               forwardedRef={null}
+                                                              isActive={false}
+                                                              tabIndex={false}
                                                             >
-                                                              <h4
-                                                                className="c6"
-                                                              />
+                                                              <button
+                                                                className="c8"
+                                                                tabIndex={false}
+                                                              >
+                                                                <styles__TabLabel>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "styles__TabLabel-fcx45d-3",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c7",
+                                                                          "rules": Array [
+                                                                            "height:100%;display:block;padding:8px 0px 4px 0;border-bottom:4px solid transparent;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "styles__TabLabel",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                                        "target": "h4",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <h4
+                                                                      className="c7"
+                                                                    />
+                                                                  </StyledComponent>
+                                                                </styles__TabLabel>
+                                                              </button>
                                                             </StyledComponent>
-                                                          </styles__TabLabel>
+                                                          </styles__TabLabelContainer>
                                                         </li>
                                                       </Tab>
                                                       <Tab
@@ -1259,6 +1459,7 @@ exports[`Tabs renders 1`] = `
                                                         panelId="react-tabs-5"
                                                         selected={false}
                                                         selectedClassName="react-tabs__tab--selected"
+                                                        tabIndex="-1"
                                                         tabRef={[Function]}
                                                       >
                                                         <li
@@ -1271,39 +1472,79 @@ exports[`Tabs renders 1`] = `
                                                           onClick={[Function]}
                                                           onKeyUp={[Function]}
                                                           role="tab"
-                                                          tabIndex={null}
+                                                          tabIndex="-1"
                                                         >
-                                                          <styles__TabLabel>
+                                                          <styles__TabLabelContainer
+                                                            isActive={false}
+                                                            tabIndex={false}
+                                                          >
                                                             <StyledComponent
                                                               forwardedComponent={
                                                                 Object {
                                                                   "$$typeof": Symbol(react.forward_ref),
                                                                   "attrs": Array [],
                                                                   "componentStyle": ComponentStyle {
-                                                                    "componentId": "styles__TabLabel-fcx45d-3",
+                                                                    "componentId": "styles__TabLabelContainer-fcx45d-6",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c6",
+                                                                    "lastClassName": "c8",
                                                                     "rules": Array [
-                                                                      "height:100%;display:block;padding-bottom:8px;border-bottom:4px solid transparent;",
+                                                                      "border:none;background-color:#fff;color:inherit;text-decoration:inherit;padding:1px 8px;border:2px solid transparent;border-radius:5px;&:focus{outline:none;border:",
+                                                                      [Function],
+                                                                      ";}&:active{outline:none;border:2px solid transparent;}::-moz-focus-inner{border:0;}",
                                                                     ],
                                                                   },
-                                                                  "displayName": "styles__TabLabel",
+                                                                  "displayName": "styles__TabLabelContainer",
                                                                   "foldedComponentIds": Array [],
                                                                   "render": [Function],
-                                                                  "styledComponentId": "styles__TabLabel-fcx45d-3",
-                                                                  "target": "h4",
+                                                                  "styledComponentId": "styles__TabLabelContainer-fcx45d-6",
+                                                                  "target": "button",
                                                                   "toString": [Function],
                                                                   "warnTooManyClasses": [Function],
                                                                   "withComponent": [Function],
                                                                 }
                                                               }
                                                               forwardedRef={null}
+                                                              isActive={false}
+                                                              tabIndex={false}
                                                             >
-                                                              <h4
-                                                                className="c6"
-                                                              />
+                                                              <button
+                                                                className="c8"
+                                                                tabIndex={false}
+                                                              >
+                                                                <styles__TabLabel>
+                                                                  <StyledComponent
+                                                                    forwardedComponent={
+                                                                      Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "attrs": Array [],
+                                                                        "componentStyle": ComponentStyle {
+                                                                          "componentId": "styles__TabLabel-fcx45d-3",
+                                                                          "isStatic": false,
+                                                                          "lastClassName": "c7",
+                                                                          "rules": Array [
+                                                                            "height:100%;display:block;padding:8px 0px 4px 0;border-bottom:4px solid transparent;",
+                                                                          ],
+                                                                        },
+                                                                        "displayName": "styles__TabLabel",
+                                                                        "foldedComponentIds": Array [],
+                                                                        "render": [Function],
+                                                                        "styledComponentId": "styles__TabLabel-fcx45d-3",
+                                                                        "target": "h4",
+                                                                        "toString": [Function],
+                                                                        "warnTooManyClasses": [Function],
+                                                                        "withComponent": [Function],
+                                                                      }
+                                                                    }
+                                                                    forwardedRef={null}
+                                                                  >
+                                                                    <h4
+                                                                      className="c7"
+                                                                    />
+                                                                  </StyledComponent>
+                                                                </styles__TabLabel>
+                                                              </button>
                                                             </StyledComponent>
-                                                          </styles__TabLabel>
+                                                          </styles__TabLabelContainer>
                                                         </li>
                                                       </Tab>
                                                     </ul>
@@ -1331,7 +1572,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c7",
+                                                  "lastClassName": "c9",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1354,7 +1595,7 @@ exports[`Tabs renders 1`] = `
                                             vertical={false}
                                           >
                                             <hr
-                                              className="c7"
+                                              className="c9"
                                             />
                                           </StyledComponent>
                                         </HairlineDivider__StyledHairlineDivider>
@@ -1371,7 +1612,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c8",
+                                                  "lastClassName": "c10",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1393,7 +1634,7 @@ exports[`Tabs renders 1`] = `
                                             forwardedRef={null}
                                           >
                                             <hr
-                                              className="c8"
+                                              className="c10"
                                             />
                                           </StyledComponent>
                                         </DimpleDivider__StyledDimpleDivider>
@@ -1557,7 +1798,7 @@ exports[`Tabs renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c9",
+                                                                      "lastClassName": "c11",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -1598,7 +1839,7 @@ exports[`Tabs renders 1`] = `
                                                                 xs={12}
                                                               >
                                                                 <div
-                                                                  className="c9"
+                                                                  className="c11"
                                                                 >
                                                                   <Panel
                                                                     copy="en"

@@ -44,7 +44,6 @@ describe('Tabs', () => {
       .find('Tab')
       .at(1)
       .simulate('click')
-
     expect(tabs.text()).toContain('Content 2')
     expect(onOpen).toHaveBeenCalledWith('2')
   })

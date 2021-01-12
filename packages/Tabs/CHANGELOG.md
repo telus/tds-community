@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.2.0...@tds/community-tabs@0.3.0) (2021-01-12)
+
+
+### Features
+
+* **community-tabs:** allow tab button navigation ([b3ee03c](https://github.com/telus/tds-community/commit/b3ee03cbcdd84c01568032a910bba2e0b9f3ed37))
+
+
+
+
+
 # [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.1.5...@tds/community-tabs@0.2.0) (2020-12-09)
 
 

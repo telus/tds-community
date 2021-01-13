@@ -314,15 +314,15 @@ exports[`Modal renders 1`] = `
 
 @media (max-width:767px) {
   .c8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
   .c8 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -754,15 +754,15 @@ exports[`Modal renders 1`] = `
 
 @media (max-width:767px) {
   .c8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
   .c8 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1350,12 +1350,12 @@ exports[`Modal renders 1`] = `
                                           <Box
                                             inline={false}
                                             tag="div"
-                                            vertical={5}
+                                            vertical={4}
                                           >
                                             <styled.div
                                               inline={false}
                                               tag="div"
-                                              vertical={5}
+                                              vertical={4}
                                             >
                                               <StyledComponent
                                                 forwardedComponent={
@@ -1389,7 +1389,7 @@ exports[`Modal renders 1`] = `
                                                 forwardedRef={null}
                                                 inline={false}
                                                 tag="div"
-                                                vertical={5}
+                                                vertical={4}
                                               >
                                                 <div
                                                   className="c8"

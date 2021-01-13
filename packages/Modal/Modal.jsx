@@ -120,7 +120,7 @@ const Modal = ({
                   </Box>
                   {confirmCTAText && (
                     <PaddingOverride>
-                      <Box vertical={5}>
+                      <Box vertical={4}>
                         <CTAWrapper cancelCTAExists={cancelCTAText}>
                           <Button onClick={onConfirm}>{confirmCTAText}</Button>
                           {cancelCTAText && (

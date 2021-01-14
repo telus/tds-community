@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
 import { colorWhite, colorAccessibleGreen } from '@tds/core-colours'
 import { StyledButton } from '@tds/core-button'
+import Box from '@tds/core-box'
 
 export const FullScreenOverlay = styled.div(props => {
   if (props && props.isOpen) {
@@ -111,4 +112,11 @@ export const ModalWrapper = styled.div({
     flexFlow: 'column',
     justifyContent: 'space-between',
   },
+})
+
+export const StyledBox = styled(Box)({
+  marginTop: '1rem',
+  ...media.from('md').css({
+    marginTop: 0,
+  }),
 })

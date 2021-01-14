@@ -17,6 +17,7 @@ import {
   ModalWrapper,
   PaddingOverride,
   OutlineButton,
+  StyledBox,
 } from './styles'
 
 const FocusTrap = withFocusTrap('div')
@@ -112,12 +113,12 @@ const Modal = ({
             <StyledModal ref={modalRef}>
               <ModalWrapper>
                 <Box inset={5}>
-                  <Box between={3}>
+                  <StyledBox between={3}>
                     <div ref={header} tabIndex="-1">
                       {modalHeading}
                     </div>
                     {description}
-                  </Box>
+                  </StyledBox>
                   {confirmCTAText && (
                     <PaddingOverride>
                       <Box vertical={4}>

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/telus/tds-community/compare/@tds/community-modal@1.2.1...@tds/community-modal@1.2.2) (2021-01-15)
+
+
+### Bug Fixes
+
+* **community-modal:** [#403](https://github.com/telus/tds-community/issues/403) fixed heading text overlap with close icon ([0765d0d](https://github.com/telus/tds-community/commit/0765d0d387ee7c7ae7c32ad9b807103d528e02bb))
+
+
+
+
+
 ## [1.2.1](https://github.com/telus/tds-community/compare/@tds/community-modal@1.2.0...@tds/community-modal@1.2.1) (2021-01-15)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/telus/tds-community/compare/@tds/community-modal@1.2.0...@tds/community-modal@1.2.1) (2021-01-15)
+
+
+### Bug Fixes
+
+* **community-modal:** 432 fix for modal bottom cta wrong padding top ([2466a03](https://github.com/telus/tds-community/commit/2466a03c50e0c5bc9a02f2aed8444ee85a4d8836))
+
+
+
+
+
 # [1.2.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.1.1...@tds/community-modal@1.2.0) (2020-09-30)
 
 

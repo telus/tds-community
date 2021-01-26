@@ -9,6 +9,7 @@ import DimpleDivider from '@tds/core-dimple-divider'
 import {
   TabsContainer,
   TabBorder,
+  TabListOuterContainer,
   TabListContainer,
   TabLabel,
   TabArrows,
@@ -45,7 +46,7 @@ const Tabs = props => {
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
   const [currentFocus, setCurrentFocus] = useState(0)
-  const { children, leftArrowLabel, rightArrowLabel, ...rest } = props
+  const { children, leftArrowLabel, rightArrowLabel, wrapLabels, ...rest } = props
 
   useEffect(() => {
     // if open is null or undefined it is uncontrolled
@@ -250,49 +251,51 @@ const Tabs = props => {
   }, [])
 
   return (
-    <TabsContainer {...safeRest(rest)} ref={tabsRoot}>
+    <TabsContainer {...safeRest(rest)} wrapLabels={wrapLabels} ref={tabsRoot}>
       <FlexGrid gutter={false}>
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
-            {isLeftArrowVisible && (
-              <TabArrows
-                tabIndex="0"
-                direction="left"
-                aria-label={leftArrowLabel}
-                onKeyUp={e => handleArrowKeyUp(e, 'left')}
-                onClick={() => scrollTabs('left')}
-              >
-                <ArrowInner direction="left">
-                  <ChevronLeft variant="basic" />
-                </ArrowInner>
-              </TabArrows>
-            )}
             <ReactTabs
               selectedIndex={props.open && current}
               onSelect={props.onOpen && handleSelect}
             >
               <TabBorder>
-                <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
-                  <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
-                </TabListContainer>
+                {isLeftArrowVisible && (
+                  <TabArrows
+                    tabIndex="0"
+                    direction="left"
+                    aria-label={leftArrowLabel}
+                    onKeyUp={e => handleArrowKeyUp(e, 'left')}
+                    onClick={() => scrollTabs('left')}
+                  >
+                    <ArrowInner direction="left">
+                      <ChevronLeft variant="basic" />
+                    </ArrowInner>
+                  </TabArrows>
+                )}
+                <TabListOuterContainer>
+                  <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
+                    <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
+                  </TabListContainer>
+                </TabListOuterContainer>
+                {isRightArrowVisible && (
+                  <TabArrows
+                    tabIndex="0"
+                    direction="right"
+                    onKeyUp={e => handleArrowKeyUp(e, 'right')}
+                    aria-label={rightArrowLabel}
+                    onClick={() => scrollTabs('right')}
+                  >
+                    <ArrowInner direction="right">
+                      <ChevronRight variant="basic" />
+                    </ArrowInner>
+                  </TabArrows>
+                )}
               </TabBorder>
               <HairlineDivider />
               <DimpleDivider />
               {mapTabContent()}
             </ReactTabs>
-            {isRightArrowVisible && (
-              <TabArrows
-                tabIndex="0"
-                direction="right"
-                onKeyUp={e => handleArrowKeyUp(e, 'right')}
-                aria-label={rightArrowLabel}
-                onClick={() => scrollTabs('right')}
-              >
-                <ArrowInner direction="right">
-                  <ChevronRight variant="basic" />
-                </ArrowInner>
-              </TabArrows>
-            )}
           </FlexGrid.Col>
         </FlexGrid.Row>
       </FlexGrid>
@@ -308,6 +311,10 @@ Tabs.propTypes = {
   leftArrowLabel: PropTypes.string,
   rightArrowLabel: PropTypes.string,
   /**
+   * Allow tab labels to wrap to multiple lines
+   */
+  wrapLabels: PropTypes.bool,
+  /**
    * Set the selected tab by id
    */
   open: PropTypes.string,
@@ -320,6 +327,7 @@ Tabs.propTypes = {
 Tabs.defaultProps = {
   leftArrowLabel: 'Move menu to the left',
   rightArrowLabel: 'Move menu to the right',
+  wrapLabels: false,
   open: null,
   onOpen: null,
 }

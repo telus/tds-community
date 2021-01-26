@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import 'jest-styled-components'
 
 import Tabs from '../Tabs'
 
@@ -46,5 +47,11 @@ describe('Tabs', () => {
       .simulate('click')
     expect(tabs.text()).toContain('Content 2')
     expect(onOpen).toHaveBeenCalledWith('2')
+  })
+
+  it('renders with multiline labels', () => {
+    const tabs = doMount({ wrapLabels: true })
+    const tab = tabs.find('.react-tabs__tab').first()
+    expect(tab).toHaveStyleRule({ 'max-width': '180px' })
   })
 })

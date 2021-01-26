@@ -48,10 +48,39 @@ export const TabsContainer = styled.div`
       margin-top: 0;
     }
   }
+
+  ${props =>
+    props.wrapLabels &&
+    css`
+      .react-tabs__tab-list {
+        display: flex;
+        position: relative;
+      }
+
+      .react-tabs__tab {
+        max-width: 180px;
+        flex: 0 0 auto;
+        display: flex;
+        white-space: initial;
+
+        h4 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    `}
 `
 
 export const TabBorder = styled.div`
   overflow-x: hidden;
+  position: relative;
+`
+
+export const TabListOuterContainer = styled.div`
+  display: flex;
+  position: relative;
+  overflow: hidden;
 `
 
 export const TabListContainer = styled.div`
@@ -71,9 +100,12 @@ export const TabLabel = styled.h4`
 
 export const TabArrows = styled.div`
   position: absolute;
-  top: 22px;
+  top: 0;
+  padding: 2px 0;
   z-index: 10;
-  padding: 5px 0;
+  height: calc(100% - 8px);
+  display: flex;
+  align-items: stretch;
   cursor: pointer;
   &:focus {
     outline: none;
@@ -99,6 +131,8 @@ export const TabArrows = styled.div`
 `
 export const ArrowInner = styled.div`
   background: #fff;
+  display: flex;
+  align-items: center;
   ${props =>
     props.direction === 'left' &&
     css`
@@ -122,7 +156,7 @@ export const TabLabelContainer = styled.button`
   border-radius: 5px;
   &:focus {
     outline: none;
-    border: ${props => (props.isActive ? 'none' : '2px solid rgb(151, 151, 151)')};
+    border-color: ${props => (props.isActive ? 'transparent' : 'rgb(151, 151, 151)')};
   }
   &:active {
     outline: none;

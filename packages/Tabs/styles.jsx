@@ -10,29 +10,21 @@ export const TabsContainer = styled.div`
     padding: 2px 0 0 0;
   }
   .react-tabs__tab {
-    display: inline-block;
+    display: inline-flex;
     cursor: pointer;
-    padding: 8px 10px 1px;
-    margin: 0 14px;
+    margin: 0 2px;
+    @media (min-width: 768px) {
+      margin: 0 6px;
+    }
+    min-height: 45px;
     min-width: 44px;
     text-align: center;
     position: relative;
-    &:first-child {
-      margin-left: 2px;
-    }
-
-    &:hover {
-      h4 {
-        text-shadow: 0px 0px 1px #2a2c2e;
-        border-bottom: 4px solid #d8d8d8;
-      }
-    }
 
     &:active,
     &.react-tabs__tab--selected {
       h4 {
         text-shadow: 0px 0px 1px #2a2c2e;
-        border-bottom: 4px solid #71747a;
       }
     }
     &:focus {
@@ -58,16 +50,9 @@ export const TabsContainer = styled.div`
       }
 
       .react-tabs__tab {
-        max-width: 180px;
         flex: 0 0 auto;
         display: flex;
         white-space: initial;
-
-        h4 {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
       }
     `}
 `
@@ -92,10 +77,14 @@ export const TabListContainer = styled.div`
 `
 
 export const TabLabel = styled.h4`
-  height: 100%;
-  display: block;
-  padding: 8px 0px 4px 0;
-  border-bottom: 4px solid transparent;
+  ${props =>
+    props.wrapLabel &&
+    css`
+      max-width: 144px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `}
 `
 
 export const TabArrows = styled.div`
@@ -145,24 +134,61 @@ export const ArrowInner = styled.div`
       border-left: 1px solid #d8d8d8;
     `};
 `
+const pseudoBar = isSelected => `
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px ${isSelected ? '#71757b' : '#d8d8d8'};
+`
 
 export const TabLabelContainer = styled.button`
+  display: flex;
+  align-items: center;
   border: none;
-  background-color: #fff;
+  background: none;
   color: inherit;
   text-decoration: inherit;
-  padding: 1px 8px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+
   &:focus {
     outline: none;
-    border-color: ${props => (props.isActive ? 'transparent' : 'rgb(151, 151, 151)')};
   }
-  &:active {
-    outline: none;
-    border: 2px solid transparent;
-  }
+
   ::-moz-focus-inner {
     border: 0;
+  }
+
+  // not in an active tab
+  .react-tabs__tab:not([aria-selected='true']) & {
+    &:hover::after {
+      ${pseudoBar(false)}
+    }
+
+    &:active::after {
+      ${pseudoBar(true)}
+    }
+
+    &:focus:not(:active)::after {
+      content: '';
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border: solid 2px #979797;
+      border-radius: 6px;
+    }
+  }
+
+  // in an active tab
+  .react-tabs__tab[aria-selected='true'] & {
+    &::after {
+      ${pseudoBar(true)}
+    }
   }
 `

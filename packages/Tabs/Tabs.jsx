@@ -215,8 +215,8 @@ const Tabs = props => {
             onKeyUp={e => handleTabsKeyUp(e)}
             ref={tabNavRef}
           >
-            <TabLabelContainer tabIndex={isActive && '-1'} isActive={isActive}>
-              <TabLabel>{tab.props.heading}</TabLabel>
+            <TabLabelContainer tabIndex={isActive && '-1'}>
+              <TabLabel wrapLabel={wrapLabels}>{tab.props.heading}</TabLabel>
             </TabLabelContainer>
           </Tab>
         )

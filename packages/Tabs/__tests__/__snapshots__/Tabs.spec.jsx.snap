@@ -13,7 +13,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c12 {
+.c10 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -58,7 +58,7 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c10 {
+.c8 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -73,7 +73,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c11 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -95,28 +95,21 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   cursor: pointer;
-  padding: 8px 10px 1px;
-  margin: 0 14px;
+  margin: 0 2px;
+  min-height: 45px;
   min-width: 44px;
   text-align: center;
   position: relative;
 }
 
-.c0 .react-tabs__tab:first-child {
-  margin-left: 2px;
-}
-
-.c0 .react-tabs__tab:hover h4 {
-  text-shadow: 0px 0px 1px #2a2c2e;
-  border-bottom: 4px solid #d8d8d8;
-}
-
 .c0 .react-tabs__tab:active h4,
 .c0 .react-tabs__tab.react-tabs__tab--selected h4 {
   text-shadow: 0px 0px 1px #2a2c2e;
-  border-bottom: 4px solid #71747a;
 }
 
 .c0 .react-tabs__tab:focus {
@@ -157,61 +150,70 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c8 {
-  height: 100%;
-  display: block;
-  padding: 8px 0px 4px 0;
-  border-bottom: 4px solid transparent;
-}
-
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: none;
-  background-color: #fff;
+  background: none;
   color: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 1px 8px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  padding: 10px;
+  position: relative;
 }
 
 .c7:focus {
   outline: none;
-  border-color: transparent;
-}
-
-.c7:active {
-  outline: none;
-  border: 2px solid transparent;
 }
 
 .c7::-moz-focus-inner {
   border: 0;
 }
 
-.c9 {
-  border: none;
-  background-color: #fff;
-  color: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 1px 8px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+.react-tabs__tab:not([aria-selected='true']) .c7:hover::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #d8d8d8;
 }
 
-.c9:focus {
-  outline: none;
-  border-color: rgb(151,151,151);
+.react-tabs__tab:not([aria-selected='true']) .c7:active::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
 }
 
-.c9:active {
-  outline: none;
-  border: 2px solid transparent;
+.react-tabs__tab:not([aria-selected='true']) .c7:focus:not(:active)::after {
+  content: '';
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 2px #979797;
+  border-radius: 6px;
 }
 
-.c9::-moz-focus-inner {
-  border: 0;
+.react-tabs__tab[aria-selected='true'] .c7::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
 }
 
 @media (max-width:575px) {
@@ -250,35 +252,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
@@ -365,6 +367,12 @@ exports[`Tabs renders 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .react-tabs__tab {
+    margin: 0 6px;
   }
 }
 
@@ -393,7 +401,7 @@ exports[`Tabs renders 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:2px 0 0 0;}.react-tabs__tab{display:inline-block;cursor:pointer;padding:8px 10px 1px;margin:0 14px;min-width:44px;text-align:center;position:relative;&:first-child{margin-left:2px;}&:hover{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #d8d8d8;}}&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;border-bottom:4px solid #71747a;}}&:focus{outline:none;}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;margin-top:0;}}",
+              "overflow:hidden;padding-top:6px;> div{position:relative;}.react-tabs__tab-list{padding:2px 0 0 0;}.react-tabs__tab{display:inline-flex;cursor:pointer;margin:0 2px;@media (min-width:768px){margin:0 6px;}min-height:45px;min-width:44px;text-align:center;position:relative;&:active,&.react-tabs__tab--selected{h4{text-shadow:0px 0px 1px #2a2c2e;}}&:focus{outline:none;}}.react-tabs__tab-panel{display:none;&.react-tabs__tab-panel--selected{display:block;margin-top:0;}}",
               [Function],
             ],
           },
@@ -421,7 +429,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c12 {
+.c10 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -466,7 +474,7 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c10 {
+.c8 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -481,7 +489,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c11 {
+.c9 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -503,28 +511,21 @@ exports[`Tabs renders 1`] = `
 }
 
 .c0 .react-tabs__tab {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   cursor: pointer;
-  padding: 8px 10px 1px;
-  margin: 0 14px;
+  margin: 0 2px;
+  min-height: 45px;
   min-width: 44px;
   text-align: center;
   position: relative;
 }
 
-.c0 .react-tabs__tab:first-child {
-  margin-left: 2px;
-}
-
-.c0 .react-tabs__tab:hover h4 {
-  text-shadow: 0px 0px 1px #2a2c2e;
-  border-bottom: 4px solid #d8d8d8;
-}
-
 .c0 .react-tabs__tab:active h4,
 .c0 .react-tabs__tab.react-tabs__tab--selected h4 {
   text-shadow: 0px 0px 1px #2a2c2e;
-  border-bottom: 4px solid #71747a;
 }
 
 .c0 .react-tabs__tab:focus {
@@ -565,61 +566,70 @@ exports[`Tabs renders 1`] = `
   white-space: nowrap;
 }
 
-.c8 {
-  height: 100%;
-  display: block;
-  padding: 8px 0px 4px 0;
-  border-bottom: 4px solid transparent;
-}
-
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: none;
-  background-color: #fff;
+  background: none;
   color: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 1px 8px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  padding: 10px;
+  position: relative;
 }
 
 .c7:focus {
   outline: none;
-  border-color: transparent;
-}
-
-.c7:active {
-  outline: none;
-  border: 2px solid transparent;
 }
 
 .c7::-moz-focus-inner {
   border: 0;
 }
 
-.c9 {
-  border: none;
-  background-color: #fff;
-  color: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 1px 8px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+.react-tabs__tab:not([aria-selected='true']) .c7:hover::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #d8d8d8;
 }
 
-.c9:focus {
-  outline: none;
-  border-color: rgb(151,151,151);
+.react-tabs__tab:not([aria-selected='true']) .c7:active::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
 }
 
-.c9:active {
-  outline: none;
-  border: 2px solid transparent;
+.react-tabs__tab:not([aria-selected='true']) .c7:focus:not(:active)::after {
+  content: '';
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 2px #979797;
+  border-radius: 6px;
 }
 
-.c9::-moz-focus-inner {
-  border: 0;
+.react-tabs__tab[aria-selected='true'] .c7::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
 }
 
 @media (max-width:575px) {
@@ -658,35 +668,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c12 {
+  .c10 {
     display: block;
     text-align: inherit;
   }
@@ -773,6 +783,12 @@ exports[`Tabs renders 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .react-tabs__tab {
+    margin: 0 6px;
   }
 }
 
@@ -819,7 +835,7 @@ exports[`Tabs renders 1`] = `
                                 tabindex="-1"
                               >
                                 <h4
-                                  class="c8"
+                                  class=""
                                 />
                               </button>
                             </li>
@@ -833,10 +849,10 @@ exports[`Tabs renders 1`] = `
                               tabindex="-1"
                             >
                               <button
-                                class="c9"
+                                class="c7"
                               >
                                 <h4
-                                  class="c8"
+                                  class=""
                                 />
                               </button>
                             </li>
@@ -850,10 +866,10 @@ exports[`Tabs renders 1`] = `
                               tabindex="-1"
                             >
                               <button
-                                class="c9"
+                                class="c7"
                               >
                                 <h4
-                                  class="c8"
+                                  class=""
                                 />
                               </button>
                             </li>
@@ -862,10 +878,10 @@ exports[`Tabs renders 1`] = `
                       </div>
                     </div>
                     <hr
-                      class="c10"
+                      class="c8"
                     />
                     <hr
-                      class="c11"
+                      class="c9"
                     />
                     <div
                       aria-labelledby="react-tabs-0"
@@ -880,7 +896,7 @@ exports[`Tabs renders 1`] = `
                           class="c2"
                         >
                           <div
-                            class="c12"
+                            class="c10"
                           >
                             <div
                               copy="en"
@@ -1065,7 +1081,7 @@ exports[`Tabs renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                     "isStatic": false,
-                                    "lastClassName": "c12",
+                                    "lastClassName": "c10",
                                     "rules": Array [
                                       [Function],
                                       [Function],
@@ -1241,7 +1257,7 @@ exports[`Tabs renders 1`] = `
                                                                   tabindex="-1"
                                                                 >
                                                                   <h4
-                                                                    class="c8"
+                                                                    class=""
                                                                   />
                                                                 </button>
                                                               </li>
@@ -1255,10 +1271,10 @@ exports[`Tabs renders 1`] = `
                                                                 tabindex="-1"
                                                               >
                                                                 <button
-                                                                  class="c9"
+                                                                  class="c7"
                                                                 >
                                                                   <h4
-                                                                    class="c8"
+                                                                    class=""
                                                                   />
                                                                 </button>
                                                               </li>
@@ -1272,10 +1288,10 @@ exports[`Tabs renders 1`] = `
                                                                 tabindex="-1"
                                                               >
                                                                 <button
-                                                                  class="c9"
+                                                                  class="c7"
                                                                 >
                                                                   <h4
-                                                                    class="c8"
+                                                                    class=""
                                                                   />
                                                                 </button>
                                                               </li>
@@ -1334,7 +1350,6 @@ exports[`Tabs renders 1`] = `
                                                                 tabIndex="-1"
                                                               >
                                                                 <styles__TabLabelContainer
-                                                                  isActive={true}
                                                                   tabIndex="-1"
                                                                 >
                                                                   <StyledComponent
@@ -1345,11 +1360,36 @@ exports[`Tabs renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "styles__TabLabelContainer-fcx45d-7",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c9",
+                                                                          "lastClassName": "c7",
                                                                           "rules": Array [
-                                                                            "border:none;background-color:#fff;color:inherit;text-decoration:inherit;padding:1px 8px;border:2px solid transparent;border-radius:5px;&:focus{outline:none;border-color:",
-                                                                            [Function],
-                                                                            ";}&:active{outline:none;border:2px solid transparent;}::-moz-focus-inner{border:0;}",
+                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;&:focus{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #d8d8d8;
+",
+                                                                            "}&:active::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+",
+                                                                            "}&:focus:not(:active)::after{content:'';display:block;pointer-events:none;position:absolute;left:0;top:0;right:0;bottom:0;border:solid 2px #979797;border-radius:6px;}}.react-tabs__tab[aria-selected='true'] &{&::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+",
+                                                                            "}}",
                                                                           ],
                                                                         },
                                                                         "displayName": "styles__TabLabelContainer",
@@ -1363,14 +1403,15 @@ exports[`Tabs renders 1`] = `
                                                                       }
                                                                     }
                                                                     forwardedRef={null}
-                                                                    isActive={true}
                                                                     tabIndex="-1"
                                                                   >
                                                                     <button
                                                                       className="c7"
                                                                       tabIndex="-1"
                                                                     >
-                                                                      <styles__TabLabel>
+                                                                      <styles__TabLabel
+                                                                        wrapLabel={false}
+                                                                      >
                                                                         <StyledComponent
                                                                           forwardedComponent={
                                                                             Object {
@@ -1379,9 +1420,9 @@ exports[`Tabs renders 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "styles__TabLabel-fcx45d-4",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c8",
+                                                                                "lastClassName": "gyhTug",
                                                                                 "rules": Array [
-                                                                                  "height:100%;display:block;padding:8px 0px 4px 0;border-bottom:4px solid transparent;",
+                                                                                  [Function],
                                                                                 ],
                                                                               },
                                                                               "displayName": "styles__TabLabel",
@@ -1395,9 +1436,10 @@ exports[`Tabs renders 1`] = `
                                                                             }
                                                                           }
                                                                           forwardedRef={null}
+                                                                          wrapLabel={false}
                                                                         >
                                                                           <h4
-                                                                            className="c8"
+                                                                            className=""
                                                                           />
                                                                         </StyledComponent>
                                                                       </styles__TabLabel>
@@ -1434,7 +1476,6 @@ exports[`Tabs renders 1`] = `
                                                                 tabIndex="-1"
                                                               >
                                                                 <styles__TabLabelContainer
-                                                                  isActive={false}
                                                                   tabIndex={false}
                                                                 >
                                                                   <StyledComponent
@@ -1445,11 +1486,36 @@ exports[`Tabs renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "styles__TabLabelContainer-fcx45d-7",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c9",
+                                                                          "lastClassName": "c7",
                                                                           "rules": Array [
-                                                                            "border:none;background-color:#fff;color:inherit;text-decoration:inherit;padding:1px 8px;border:2px solid transparent;border-radius:5px;&:focus{outline:none;border-color:",
-                                                                            [Function],
-                                                                            ";}&:active{outline:none;border:2px solid transparent;}::-moz-focus-inner{border:0;}",
+                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;&:focus{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #d8d8d8;
+",
+                                                                            "}&:active::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+",
+                                                                            "}&:focus:not(:active)::after{content:'';display:block;pointer-events:none;position:absolute;left:0;top:0;right:0;bottom:0;border:solid 2px #979797;border-radius:6px;}}.react-tabs__tab[aria-selected='true'] &{&::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+",
+                                                                            "}}",
                                                                           ],
                                                                         },
                                                                         "displayName": "styles__TabLabelContainer",
@@ -1463,14 +1529,15 @@ exports[`Tabs renders 1`] = `
                                                                       }
                                                                     }
                                                                     forwardedRef={null}
-                                                                    isActive={false}
                                                                     tabIndex={false}
                                                                   >
                                                                     <button
-                                                                      className="c9"
+                                                                      className="c7"
                                                                       tabIndex={false}
                                                                     >
-                                                                      <styles__TabLabel>
+                                                                      <styles__TabLabel
+                                                                        wrapLabel={false}
+                                                                      >
                                                                         <StyledComponent
                                                                           forwardedComponent={
                                                                             Object {
@@ -1479,9 +1546,9 @@ exports[`Tabs renders 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "styles__TabLabel-fcx45d-4",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c8",
+                                                                                "lastClassName": "gyhTug",
                                                                                 "rules": Array [
-                                                                                  "height:100%;display:block;padding:8px 0px 4px 0;border-bottom:4px solid transparent;",
+                                                                                  [Function],
                                                                                 ],
                                                                               },
                                                                               "displayName": "styles__TabLabel",
@@ -1495,9 +1562,10 @@ exports[`Tabs renders 1`] = `
                                                                             }
                                                                           }
                                                                           forwardedRef={null}
+                                                                          wrapLabel={false}
                                                                         >
                                                                           <h4
-                                                                            className="c8"
+                                                                            className=""
                                                                           />
                                                                         </StyledComponent>
                                                                       </styles__TabLabel>
@@ -1534,7 +1602,6 @@ exports[`Tabs renders 1`] = `
                                                                 tabIndex="-1"
                                                               >
                                                                 <styles__TabLabelContainer
-                                                                  isActive={false}
                                                                   tabIndex={false}
                                                                 >
                                                                   <StyledComponent
@@ -1545,11 +1612,36 @@ exports[`Tabs renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "styles__TabLabelContainer-fcx45d-7",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c9",
+                                                                          "lastClassName": "c7",
                                                                           "rules": Array [
-                                                                            "border:none;background-color:#fff;color:inherit;text-decoration:inherit;padding:1px 8px;border:2px solid transparent;border-radius:5px;&:focus{outline:none;border-color:",
-                                                                            [Function],
-                                                                            ";}&:active{outline:none;border:2px solid transparent;}::-moz-focus-inner{border:0;}",
+                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;&:focus{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #d8d8d8;
+",
+                                                                            "}&:active::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+",
+                                                                            "}&:focus:not(:active)::after{content:'';display:block;pointer-events:none;position:absolute;left:0;top:0;right:0;bottom:0;border:solid 2px #979797;border-radius:6px;}}.react-tabs__tab[aria-selected='true'] &{&::after{",
+                                                                            "
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+",
+                                                                            "}}",
                                                                           ],
                                                                         },
                                                                         "displayName": "styles__TabLabelContainer",
@@ -1563,14 +1655,15 @@ exports[`Tabs renders 1`] = `
                                                                       }
                                                                     }
                                                                     forwardedRef={null}
-                                                                    isActive={false}
                                                                     tabIndex={false}
                                                                   >
                                                                     <button
-                                                                      className="c9"
+                                                                      className="c7"
                                                                       tabIndex={false}
                                                                     >
-                                                                      <styles__TabLabel>
+                                                                      <styles__TabLabel
+                                                                        wrapLabel={false}
+                                                                      >
                                                                         <StyledComponent
                                                                           forwardedComponent={
                                                                             Object {
@@ -1579,9 +1672,9 @@ exports[`Tabs renders 1`] = `
                                                                               "componentStyle": ComponentStyle {
                                                                                 "componentId": "styles__TabLabel-fcx45d-4",
                                                                                 "isStatic": false,
-                                                                                "lastClassName": "c8",
+                                                                                "lastClassName": "gyhTug",
                                                                                 "rules": Array [
-                                                                                  "height:100%;display:block;padding:8px 0px 4px 0;border-bottom:4px solid transparent;",
+                                                                                  [Function],
                                                                                 ],
                                                                               },
                                                                               "displayName": "styles__TabLabel",
@@ -1595,9 +1688,10 @@ exports[`Tabs renders 1`] = `
                                                                             }
                                                                           }
                                                                           forwardedRef={null}
+                                                                          wrapLabel={false}
                                                                         >
                                                                           <h4
-                                                                            className="c8"
+                                                                            className=""
                                                                           />
                                                                         </StyledComponent>
                                                                       </styles__TabLabel>
@@ -1634,7 +1728,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c10",
+                                                  "lastClassName": "c8",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1657,7 +1751,7 @@ exports[`Tabs renders 1`] = `
                                             vertical={false}
                                           >
                                             <hr
-                                              className="c10"
+                                              className="c8"
                                             />
                                           </StyledComponent>
                                         </HairlineDivider__StyledHairlineDivider>
@@ -1674,7 +1768,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c11",
+                                                  "lastClassName": "c9",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1696,7 +1790,7 @@ exports[`Tabs renders 1`] = `
                                             forwardedRef={null}
                                           >
                                             <hr
-                                              className="c11"
+                                              className="c9"
                                             />
                                           </StyledComponent>
                                         </DimpleDivider__StyledDimpleDivider>
@@ -1860,7 +1954,7 @@ exports[`Tabs renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c12",
+                                                                      "lastClassName": "c10",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -1901,7 +1995,7 @@ exports[`Tabs renders 1`] = `
                                                                 xs={12}
                                                               >
                                                                 <div
-                                                                  className="c12"
+                                                                  className="c10"
                                                                 >
                                                                   <Panel
                                                                     copy="en"

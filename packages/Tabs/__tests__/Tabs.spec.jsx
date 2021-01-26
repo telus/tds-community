@@ -3,6 +3,7 @@ import { mount } from 'enzyme'
 import 'jest-styled-components'
 
 import Tabs from '../Tabs'
+import { TabLabel } from '../styles'
 
 describe('Tabs', () => {
   const doMount = (props = {}) =>
@@ -51,7 +52,8 @@ describe('Tabs', () => {
 
   it('renders with multiline labels', () => {
     const tabs = doMount({ wrapLabels: true })
-    const tab = tabs.find('.react-tabs__tab').first()
-    expect(tab).toHaveStyleRule({ 'max-width': '180px' })
+    const tabLabel = tabs.find(TabLabel).first()
+    expect(tabs).toHaveProp('wrapLabels', true)
+    expect(tabLabel).toHaveStyleRule('max-width', '144px')
   })
 })

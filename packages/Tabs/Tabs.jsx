@@ -46,14 +46,14 @@ const Tabs = props => {
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
   const [currentFocus, setCurrentFocus] = useState(0)
-  const { children, leftArrowLabel, rightArrowLabel, wrapLabels, ...rest } = props
+  const { children, leftArrowLabel, rightArrowLabel, wrapLabels, open, onOpen, ...rest } = props
 
   useEffect(() => {
     // if open is null or undefined it is uncontrolled
     // empty string may be a valid input to select no tabs (this case is required)
-    if (props.open === null || props.open === undefined) return
+    if (open === null || open === undefined) return
     if (!props.children.length) return
-    const tabIndex = props.children.findIndex(child => child.props.id === props.open)
+    const tabIndex = props.children.findIndex(child => child.props.id === open)
 
     if (tabIndex >= 0) {
       setCurrent(tabIndex)
@@ -62,12 +62,12 @@ const Tabs = props => {
     }
     // if tabIndex === null set to -1 to keep tabs contolled, but select no tab
     setCurrent(-1)
-  }, [props.open])
+  }, [open])
 
   const handleBlur = () => {
     // on blur in controlled mode, we set the index back to prop value
-    if (props.open === null || props.open === undefined) return
-    const tabIndex = props.children.findIndex(child => child.props.id === props.open)
+    if (open === null || open === undefined) return
+    const tabIndex = props.children.findIndex(child => child.props.id === open)
     if (tabIndex !== current) {
       setCurrent(tabIndex)
       setCurrentFocus(tabIndex)
@@ -76,13 +76,13 @@ const Tabs = props => {
 
   const handleClick = (e, index) => {
     e.preventDefault()
-    if (!props.open) {
+    if (!open) {
       setCurrent(index) // set internally if not-controlled
       setCurrentFocus(index)
       return
     }
     // raise to controlling component to set on click if controlled
-    props.onOpen(props.children[index].props.id)
+    onOpen(props.children[index].props.id)
   }
 
   const handleSelect = (index, previousIndex) => {
@@ -97,7 +97,7 @@ const Tabs = props => {
     const previousTab = props.children[previousIndex]
     if (newTab === previousTab) {
       // this is on a tab switch
-      props.onOpen(newTab.props.id)
+      onOpen(newTab.props.id)
     }
   }
 
@@ -217,7 +217,7 @@ const Tabs = props => {
             onKeyUp={e => handleTabsKeyUp(e)}
             ref={tabNavRef}
           >
-            <TabLabelContainer tabIndex={isActive && '-1'}>
+            <TabLabelContainer tabIndex={isActive ? '-1' : undefined}>
               <TabLabel wrapLabel={wrapLabels}>{tab.props.heading}</TabLabel>
             </TabLabelContainer>
           </Tab>
@@ -234,7 +234,7 @@ const Tabs = props => {
           <TabPanel key={hash(i)}>
             <FlexGrid>
               <FlexGrid.Row>
-                <FlexGrid.Col xs={12} tabindex="0">
+                <FlexGrid.Col xs={12} tabIndex="0">
                   <Panel {...rest}>{children[current]}</Panel>
                 </FlexGrid.Col>
               </FlexGrid.Row>
@@ -258,8 +258,8 @@ const Tabs = props => {
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
             <ReactTabs
-              selectedIndex={props.open && current}
-              onSelect={props.onOpen && handleSelect}
+              selectedIndex={open ? current : undefined}
+              onSelect={onOpen ? handleSelect : undefined}
             >
               <TabBorder>
                 {isLeftArrowVisible && (

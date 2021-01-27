@@ -9,9 +9,15 @@ describe('Tabs', () => {
   const doMount = (props = {}) =>
     mount(
       <Tabs copy="en" {...props}>
-        <Tabs.Panel id="1">Content 1</Tabs.Panel>
-        <Tabs.Panel id="2">Content 2</Tabs.Panel>
-        <Tabs.Panel id="3">Content 3</Tabs.Panel>
+        <Tabs.Panel id="1" heading="Label 1">
+          Content 1
+        </Tabs.Panel>
+        <Tabs.Panel id="2" heading="Label 2">
+          Content 2
+        </Tabs.Panel>
+        <Tabs.Panel id="3" heading="Label 3">
+          Content 3
+        </Tabs.Panel>
       </Tabs>
     )
 
@@ -26,7 +32,8 @@ describe('Tabs', () => {
   })
 
   it('selects a tab', () => {
-    const tabs = doMount({ open: '2' })
+    const onOpen = jest.fn()
+    const tabs = doMount({ open: '2', onOpen })
     expect(tabs).toHaveProp('open', '2')
     expect(tabs.text()).toContain('Content 2')
     expect(tabs.text()).not.toContain('Content 1')

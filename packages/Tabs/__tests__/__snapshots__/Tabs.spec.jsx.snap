@@ -386,8 +386,6 @@ exports[`Tabs renders 1`] = `
 >
   <styles__TabsContainer
     copy="en"
-    onOpen={null}
-    open={null}
     wrapLabels={false}
   >
     <StyledComponent
@@ -824,6 +822,7 @@ exports[`Tabs renders 1`] = `
                             <li
                               aria-controls="react-tabs-1"
                               aria-disabled="false"
+                              aria-label="Label 1"
                               aria-selected="true"
                               class="react-tabs__tab react-tabs__tab--selected"
                               id="react-tabs-0"
@@ -836,12 +835,15 @@ exports[`Tabs renders 1`] = `
                               >
                                 <h4
                                   class=""
-                                />
+                                >
+                                  Label 1
+                                </h4>
                               </button>
                             </li>
                             <li
                               aria-controls="react-tabs-3"
                               aria-disabled="false"
+                              aria-label="Label 2"
                               aria-selected="false"
                               class="react-tabs__tab"
                               id="react-tabs-2"
@@ -853,12 +855,15 @@ exports[`Tabs renders 1`] = `
                               >
                                 <h4
                                   class=""
-                                />
+                                >
+                                  Label 2
+                                </h4>
                               </button>
                             </li>
                             <li
                               aria-controls="react-tabs-5"
                               aria-disabled="false"
+                              aria-label="Label 3"
                               aria-selected="false"
                               class="react-tabs__tab"
                               id="react-tabs-4"
@@ -870,7 +875,9 @@ exports[`Tabs renders 1`] = `
                               >
                                 <h4
                                   class=""
-                                />
+                                >
+                                  Label 3
+                                </h4>
                               </button>
                             </li>
                           </ul>
@@ -897,11 +904,13 @@ exports[`Tabs renders 1`] = `
                         >
                           <div
                             class="c10"
+                            tabindex="0"
                           >
                             <div
                               copy="en"
                             >
                               <div
+                                heading="Label 1"
                                 id="1"
                               >
                                 Content 1
@@ -930,14 +939,10 @@ exports[`Tabs renders 1`] = `
           </div>,
         }
       }
-      onOpen={null}
-      open={null}
       wrapLabels={false}
     >
       <div
         className="c0"
-        onOpen={null}
-        open={null}
       >
         <FlexGrid
           gutter={false}
@@ -1127,7 +1132,6 @@ exports[`Tabs renders 1`] = `
                                   defaultFocus={false}
                                   defaultIndex={null}
                                   forceRenderTabPanel={false}
-                                  onSelect={null}
                                   selectedIndex={null}
                                 >
                                   <UncontrolledTabs
@@ -1249,6 +1253,7 @@ exports[`Tabs renders 1`] = `
                                                               <li
                                                                 aria-controls="react-tabs-1"
                                                                 aria-disabled="false"
+                                                                aria-label="Label 1"
                                                                 aria-selected="true"
                                                                 class="react-tabs__tab react-tabs__tab--selected"
                                                                 id="react-tabs-0"
@@ -1261,12 +1266,15 @@ exports[`Tabs renders 1`] = `
                                                                 >
                                                                   <h4
                                                                     class=""
-                                                                  />
+                                                                  >
+                                                                    Label 1
+                                                                  </h4>
                                                                 </button>
                                                               </li>
                                                               <li
                                                                 aria-controls="react-tabs-3"
                                                                 aria-disabled="false"
+                                                                aria-label="Label 2"
                                                                 aria-selected="false"
                                                                 class="react-tabs__tab"
                                                                 id="react-tabs-2"
@@ -1278,12 +1286,15 @@ exports[`Tabs renders 1`] = `
                                                                 >
                                                                   <h4
                                                                     class=""
-                                                                  />
+                                                                  >
+                                                                    Label 2
+                                                                  </h4>
                                                                 </button>
                                                               </li>
                                                               <li
                                                                 aria-controls="react-tabs-5"
                                                                 aria-disabled="false"
+                                                                aria-label="Label 3"
                                                                 aria-selected="false"
                                                                 class="react-tabs__tab"
                                                                 id="react-tabs-4"
@@ -1295,7 +1306,9 @@ exports[`Tabs renders 1`] = `
                                                                 >
                                                                   <h4
                                                                     class=""
-                                                                  />
+                                                                  >
+                                                                    Label 3
+                                                                  </h4>
                                                                 </button>
                                                               </li>
                                                             </ul>
@@ -1327,6 +1340,7 @@ exports[`Tabs renders 1`] = `
                                                             }
                                                           >
                                                             <Tab
+                                                              aria-label="Label 1"
                                                               className="react-tabs__tab"
                                                               disabledClassName="react-tabs__tab--disabled"
                                                               focus={false}
@@ -1344,6 +1358,7 @@ exports[`Tabs renders 1`] = `
                                                               <li
                                                                 aria-controls="react-tabs-1"
                                                                 aria-disabled="false"
+                                                                aria-label="Label 1"
                                                                 aria-selected="true"
                                                                 className="react-tabs__tab react-tabs__tab--selected"
                                                                 id="react-tabs-0"
@@ -1444,7 +1459,9 @@ exports[`Tabs renders 1`] = `
                                                                         >
                                                                           <h4
                                                                             className=""
-                                                                          />
+                                                                          >
+                                                                            Label 1
+                                                                          </h4>
                                                                         </StyledComponent>
                                                                       </styles__TabLabel>
                                                                     </button>
@@ -1453,6 +1470,7 @@ exports[`Tabs renders 1`] = `
                                                               </li>
                                                             </Tab>
                                                             <Tab
+                                                              aria-label="Label 2"
                                                               className="react-tabs__tab"
                                                               disabledClassName="react-tabs__tab--disabled"
                                                               focus={false}
@@ -1470,6 +1488,7 @@ exports[`Tabs renders 1`] = `
                                                               <li
                                                                 aria-controls="react-tabs-3"
                                                                 aria-disabled="false"
+                                                                aria-label="Label 2"
                                                                 aria-selected="false"
                                                                 className="react-tabs__tab"
                                                                 id="react-tabs-2"
@@ -1479,9 +1498,7 @@ exports[`Tabs renders 1`] = `
                                                                 role="tab"
                                                                 tabIndex="-1"
                                                               >
-                                                                <styles__TabLabelContainer
-                                                                  tabIndex={false}
-                                                                >
+                                                                <styles__TabLabelContainer>
                                                                   <StyledComponent
                                                                     forwardedComponent={
                                                                       Object {
@@ -1533,11 +1550,9 @@ exports[`Tabs renders 1`] = `
                                                                       }
                                                                     }
                                                                     forwardedRef={null}
-                                                                    tabIndex={false}
                                                                   >
                                                                     <button
                                                                       className="c7"
-                                                                      tabIndex={false}
                                                                     >
                                                                       <styles__TabLabel
                                                                         wrapLabel={false}
@@ -1570,7 +1585,9 @@ exports[`Tabs renders 1`] = `
                                                                         >
                                                                           <h4
                                                                             className=""
-                                                                          />
+                                                                          >
+                                                                            Label 2
+                                                                          </h4>
                                                                         </StyledComponent>
                                                                       </styles__TabLabel>
                                                                     </button>
@@ -1579,6 +1596,7 @@ exports[`Tabs renders 1`] = `
                                                               </li>
                                                             </Tab>
                                                             <Tab
+                                                              aria-label="Label 3"
                                                               className="react-tabs__tab"
                                                               disabledClassName="react-tabs__tab--disabled"
                                                               focus={false}
@@ -1596,6 +1614,7 @@ exports[`Tabs renders 1`] = `
                                                               <li
                                                                 aria-controls="react-tabs-5"
                                                                 aria-disabled="false"
+                                                                aria-label="Label 3"
                                                                 aria-selected="false"
                                                                 className="react-tabs__tab"
                                                                 id="react-tabs-4"
@@ -1605,9 +1624,7 @@ exports[`Tabs renders 1`] = `
                                                                 role="tab"
                                                                 tabIndex="-1"
                                                               >
-                                                                <styles__TabLabelContainer
-                                                                  tabIndex={false}
-                                                                >
+                                                                <styles__TabLabelContainer>
                                                                   <StyledComponent
                                                                     forwardedComponent={
                                                                       Object {
@@ -1659,11 +1676,9 @@ exports[`Tabs renders 1`] = `
                                                                       }
                                                                     }
                                                                     forwardedRef={null}
-                                                                    tabIndex={false}
                                                                   >
                                                                     <button
                                                                       className="c7"
-                                                                      tabIndex={false}
                                                                     >
                                                                       <styles__TabLabel
                                                                         wrapLabel={false}
@@ -1696,7 +1711,9 @@ exports[`Tabs renders 1`] = `
                                                                         >
                                                                           <h4
                                                                             className=""
-                                                                          />
+                                                                          >
+                                                                            Label 3
+                                                                          </h4>
                                                                         </StyledComponent>
                                                                       </styles__TabLabel>
                                                                     </button>
@@ -1924,7 +1941,7 @@ exports[`Tabs renders 1`] = `
                                                           className="c2"
                                                         >
                                                           <Col
-                                                            tabindex="0"
+                                                            tabIndex="0"
                                                             xs={12}
                                                           >
                                                             <Col__StyledCol
@@ -1947,7 +1964,7 @@ exports[`Tabs renders 1`] = `
                                                                   "inherit",
                                                                 ]
                                                               }
-                                                              tabindex="0"
+                                                              tabIndex="0"
                                                               xs={12}
                                                             >
                                                               <StyledComponent
@@ -1995,26 +2012,25 @@ exports[`Tabs renders 1`] = `
                                                                     "inherit",
                                                                   ]
                                                                 }
-                                                                tabindex="0"
+                                                                tabIndex="0"
                                                                 xs={12}
                                                               >
                                                                 <div
                                                                   className="c10"
+                                                                  tabIndex="0"
                                                                 >
                                                                   <Panel
                                                                     copy="en"
-                                                                    onOpen={null}
-                                                                    open={null}
                                                                   >
                                                                     <div
                                                                       copy="en"
-                                                                      onOpen={null}
-                                                                      open={null}
                                                                     >
                                                                       <Panel
+                                                                        heading="Label 1"
                                                                         id="1"
                                                                       >
                                                                         <div
+                                                                          heading="Label 1"
                                                                           id="1"
                                                                         >
                                                                           Content 1

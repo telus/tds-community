@@ -104,7 +104,9 @@ const Tabs = props => {
   const getTabsWidth = () => {
     let tabsWidthValue = 0
     const tabsArray =
-      tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].childNodes
+      tabRef.current &&
+      tabRef.current.children[0] &&
+      Array.from(tabRef.current.children[0].childNodes)
     const firstTab =
       tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].firstChild
     const lastTab =
@@ -274,7 +276,11 @@ const Tabs = props => {
                   </TabArrows>
                 )}
                 <TabListOuterContainer>
-                  <TabListContainer ref={tabRef} positionToMove={tabsTranslatePosition}>
+                  <TabListContainer
+                    ref={tabRef}
+                    positionToMove={tabsTranslatePosition}
+                    wrapLabels={wrapLabels}
+                  >
                     <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
                   </TabListContainer>
                 </TabListOuterContainer>

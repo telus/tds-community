@@ -1208,6 +1208,7 @@ exports[`Tabs renders 1`] = `
                                                   <styles__TabListContainer
                                                     key=".0"
                                                     positionToMove={0}
+                                                    wrapLabels={false}
                                                   >
                                                     <StyledComponent
                                                       forwardedComponent={
@@ -1221,7 +1222,9 @@ exports[`Tabs renders 1`] = `
                                                             "rules": Array [
                                                               "position:relative;transition:0.9s all ease;padding-right:24px;transform:translate(",
                                                               [Function],
-                                                              "px);white-space:nowrap;",
+                                                              "px);white-space:",
+                                                              [Function],
+                                                              ";",
                                                             ],
                                                           },
                                                           "displayName": "styles__TabListContainer",
@@ -1300,6 +1303,7 @@ exports[`Tabs renders 1`] = `
                                                         }
                                                       }
                                                       positionToMove={0}
+                                                      wrapLabels={false}
                                                     >
                                                       <div
                                                         className="c6"

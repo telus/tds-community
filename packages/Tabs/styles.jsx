@@ -73,7 +73,7 @@ export const TabListContainer = styled.div`
   transition: 0.9s all ease;
   padding-right: 24px;
   transform: translate(${props => props.positionToMove}px);
-  white-space: nowrap;
+  white-space: ${props => (props.wrapLabels ? 'normal' : 'nowrap')};
 `
 
 export const TabLabel = styled.h4`

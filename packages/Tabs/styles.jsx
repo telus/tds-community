@@ -1,3 +1,4 @@
+import { colorWhite, colorGreyGainsboro, colorGreyShark, colorGreyRaven } from '@tds/core-colours'
 import styled, { css } from 'styled-components'
 
 export const TabsContainer = styled.div`
@@ -24,7 +25,7 @@ export const TabsContainer = styled.div`
     &:active,
     &.react-tabs__tab--selected {
       h4 {
-        text-shadow: 0px 0px 1px #2a2c2e;
+        text-shadow: 0px 0px 1px ${colorGreyShark};
       }
     }
     &:focus {
@@ -119,19 +120,19 @@ export const TabArrows = styled.div`
     `};
 `
 export const ArrowInner = styled.div`
-  background: #fff;
+  background: ${colorWhite};
   display: flex;
   align-items: center;
   ${props =>
     props.direction === 'left' &&
     css`
-      border-right: 1px solid #d8d8d8;
+      border-right: 1px solid ${colorGreyGainsboro};
     `};
 
   ${props =>
     props.direction === 'right' &&
     css`
-      border-left: 1px solid #d8d8d8;
+      border-left: 1px solid ${colorGreyGainsboro};
     `};
 `
 const pseudoBar = isSelected => `
@@ -140,7 +141,7 @@ const pseudoBar = isSelected => `
   left: 10px;
   right: 10px;
   bottom: 0;
-  border-top: solid 4px ${isSelected ? '#71757b' : '#d8d8d8'};
+  border-top: solid 4px ${isSelected ? colorGreyRaven : colorGreyGainsboro};
 `
 
 export const TabLabelContainer = styled.button`

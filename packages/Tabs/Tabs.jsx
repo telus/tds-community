@@ -203,7 +203,6 @@ const Tabs = props => {
   const mapTabs = () => {
     if (props.children.length > 0) {
       return props.children.map((tab, i) => {
-        const isActive = current === i
         return (
           <Tab
             id={tab.props.id}
@@ -217,8 +216,10 @@ const Tabs = props => {
             onKeyUp={e => handleTabsKeyUp(e)}
             ref={tabNavRef}
           >
-            <TabLabelContainer tabIndex={isActive ? '-1' : undefined}>
-              <TabLabel wrapLabel={wrapLabels}>{tab.props.heading}</TabLabel>
+            <TabLabelContainer>
+              <TabLabel tabIndex="-1" wrapLabel={wrapLabels}>
+                {tab.props.heading}
+              </TabLabel>
             </TabLabelContainer>
           </Tab>
         )

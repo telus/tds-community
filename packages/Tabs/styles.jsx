@@ -153,8 +153,30 @@ export const TabLabelContainer = styled.button`
   text-decoration: inherit;
   padding: 10px;
   position: relative;
-
+  border: solid 2px transparent;
+  border-radius: 6px;
+  > h4 {
+    &:focus {
+      outline: none;
+    }
+  }
   &:focus {
+    outline: none;
+    > h4 {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 2px solid #979797;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &:active {
     outline: none;
   }
 
@@ -170,19 +192,6 @@ export const TabLabelContainer = styled.button`
 
     &:active::after {
       ${pseudoBar(true)}
-    }
-
-    &:focus:not(:active)::after {
-      content: '';
-      display: block;
-      pointer-events: none;
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      border: solid 2px #979797;
-      border-radius: 6px;
     }
   }
 

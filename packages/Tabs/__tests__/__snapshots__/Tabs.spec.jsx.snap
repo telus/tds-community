@@ -166,9 +166,16 @@ exports[`Tabs renders 1`] = `
   text-decoration: inherit;
   padding: 10px;
   position: relative;
+  border: solid 2px transparent;
+  border-radius: 6px;
 }
 
 .c7:focus {
+  outline: none;
+  border: solid 2px #979797;
+}
+
+.c7:active {
   outline: none;
 }
 
@@ -192,19 +199,6 @@ exports[`Tabs renders 1`] = `
   right: 10px;
   bottom: 0;
   border-top: solid 4px #71757b;
-}
-
-.react-tabs__tab:not([aria-selected='true']) .c7:focus:not(:active)::after {
-  content: '';
-  display: block;
-  pointer-events: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: solid 2px #979797;
-  border-radius: 6px;
 }
 
 .react-tabs__tab[aria-selected='true'] .c7::after {
@@ -582,9 +576,16 @@ exports[`Tabs renders 1`] = `
   text-decoration: inherit;
   padding: 10px;
   position: relative;
+  border: solid 2px transparent;
+  border-radius: 6px;
 }
 
 .c7:focus {
+  outline: none;
+  border: solid 2px #979797;
+}
+
+.c7:active {
   outline: none;
 }
 
@@ -608,19 +609,6 @@ exports[`Tabs renders 1`] = `
   right: 10px;
   bottom: 0;
   border-top: solid 4px #71757b;
-}
-
-.react-tabs__tab:not([aria-selected='true']) .c7:focus:not(:active)::after {
-  content: '';
-  display: block;
-  pointer-events: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: solid 2px #979797;
-  border-radius: 6px;
 }
 
 .react-tabs__tab[aria-selected='true'] .c7::after {
@@ -833,7 +821,6 @@ exports[`Tabs renders 1`] = `
                             >
                               <button
                                 class="c7"
-                                tabindex="-1"
                               >
                                 <h4
                                   class=""
@@ -1264,7 +1251,6 @@ exports[`Tabs renders 1`] = `
                                                               >
                                                                 <button
                                                                   class="c7"
-                                                                  tabindex="-1"
                                                                 >
                                                                   <h4
                                                                     class=""
@@ -1370,9 +1356,7 @@ exports[`Tabs renders 1`] = `
                                                                 role="tab"
                                                                 tabIndex="-1"
                                                               >
-                                                                <styles__TabLabelContainer
-                                                                  tabIndex="-1"
-                                                                >
+                                                                <styles__TabLabelContainer>
                                                                   <StyledComponent
                                                                     forwardedComponent={
                                                                       Object {
@@ -1383,7 +1367,7 @@ exports[`Tabs renders 1`] = `
                                                                           "isStatic": false,
                                                                           "lastClassName": "c7",
                                                                           "rules": Array [
-                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;&:focus{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
+                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;border:solid 2px transparent;border-radius:6px;&:focus{outline:none;border:solid 2px #979797;}&:active{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
                                                                             "
   content: '';
   position: absolute;
@@ -1401,7 +1385,7 @@ exports[`Tabs renders 1`] = `
   bottom: 0;
   border-top: solid 4px #71757b;
 ",
-                                                                            "}&:focus:not(:active)::after{content:'';display:block;pointer-events:none;position:absolute;left:0;top:0;right:0;bottom:0;border:solid 2px #979797;border-radius:6px;}}.react-tabs__tab[aria-selected='true'] &{&::after{",
+                                                                            "}}.react-tabs__tab[aria-selected='true'] &{&::after{",
                                                                             "
   content: '';
   position: absolute;
@@ -1424,11 +1408,9 @@ exports[`Tabs renders 1`] = `
                                                                       }
                                                                     }
                                                                     forwardedRef={null}
-                                                                    tabIndex="-1"
                                                                   >
                                                                     <button
                                                                       className="c7"
-                                                                      tabIndex="-1"
                                                                     >
                                                                       <styles__TabLabel
                                                                         wrapLabel={false}
@@ -1511,7 +1493,7 @@ exports[`Tabs renders 1`] = `
                                                                           "isStatic": false,
                                                                           "lastClassName": "c7",
                                                                           "rules": Array [
-                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;&:focus{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
+                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;border:solid 2px transparent;border-radius:6px;&:focus{outline:none;border:solid 2px #979797;}&:active{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
                                                                             "
   content: '';
   position: absolute;
@@ -1529,7 +1511,7 @@ exports[`Tabs renders 1`] = `
   bottom: 0;
   border-top: solid 4px #71757b;
 ",
-                                                                            "}&:focus:not(:active)::after{content:'';display:block;pointer-events:none;position:absolute;left:0;top:0;right:0;bottom:0;border:solid 2px #979797;border-radius:6px;}}.react-tabs__tab[aria-selected='true'] &{&::after{",
+                                                                            "}}.react-tabs__tab[aria-selected='true'] &{&::after{",
                                                                             "
   content: '';
   position: absolute;
@@ -1637,7 +1619,7 @@ exports[`Tabs renders 1`] = `
                                                                           "isStatic": false,
                                                                           "lastClassName": "c7",
                                                                           "rules": Array [
-                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;&:focus{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
+                                                                            "display:flex;align-items:center;border:none;background:none;color:inherit;text-decoration:inherit;padding:10px;position:relative;border:solid 2px transparent;border-radius:6px;&:focus{outline:none;border:solid 2px #979797;}&:active{outline:none;}::-moz-focus-inner{border:0;}.react-tabs__tab:not([aria-selected='true']) &{&:hover::after{",
                                                                             "
   content: '';
   position: absolute;
@@ -1655,7 +1637,7 @@ exports[`Tabs renders 1`] = `
   bottom: 0;
   border-top: solid 4px #71757b;
 ",
-                                                                            "}&:focus:not(:active)::after{content:'';display:block;pointer-events:none;position:absolute;left:0;top:0;right:0;bottom:0;border:solid 2px #979797;border-radius:6px;}}.react-tabs__tab[aria-selected='true'] &{&::after{",
+                                                                            "}}.react-tabs__tab[aria-selected='true'] &{&::after{",
                                                                             "
   content: '';
   position: absolute;

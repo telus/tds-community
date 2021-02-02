@@ -32,11 +32,34 @@ Note that the `copy` prop must be provided at all times for the correct accessib
 </Tabs>
 ```
 
+#### Multiline Labels
+
+If the labels are long, particularly in French, you can use the optional `wrapLabels` prop to limit the maximum width of labels to 144px, wrapping as necessary. It is recommended that labels are 35 characters or fewer.
+
+```jsx
+const longLabels = [
+  'Cliniques et médecins',
+  'Pharmacies',
+  'Professionnels de la santé affiliés',
+  'Régime collectif d’assurance santé',
+  'Régies de la santé et hôpitaux',
+  'Solutions de santé personnelle',
+];
+
+<Tabs copy="fr" wrapLabels>
+  {longLabels.map(label => (
+    <Tabs.Panel heading={label} key={label}>
+      {label}
+    </Tabs.Panel>
+  ))}
+</Tabs>
+```
+
 ### Controlled Example
 
 Use the `open` and `onOpen` props to control the component externally.
 
-To use controlled mode, you must specify an `id` (string) on each `<Tab.Panel>`.
+To use controlled mode, you must specify an `id` (string) on each `<Tabs.Panel>`.
 You can then use the `open` prop on `<Tabs>` to pass in the `id` of the tab you want to open.
 
 When a user selects a tab, the event `onOpen(id)` will be raised, where `id` is the id of the tab clicked.

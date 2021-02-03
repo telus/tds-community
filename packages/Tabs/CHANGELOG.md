@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.3.0...@tds/community-tabs@0.4.0) (2021-02-03)
+
+
+### Bug Fixes
+
+* **community-tabs:** add IE11 support for scrolling & wrapping labels ([d2d3b43](https://github.com/telus/tds-community/commit/d2d3b43b9f4a042d4b44b37f4743ba70e0e30dd3))
+* **community-tabs:** address various prop/attr warnings ([2e2dd91](https://github.com/telus/tds-community/commit/2e2dd911afb122b84953425a91f7e0e0507ffa2e))
+
+
+### Features
+
+* **community-tabs:** add support for wrapping labels ([680fb74](https://github.com/telus/tds-community/commit/680fb74c594316320daf801f52942600d54b84fe))
+* **community-tabs:** match layout to designs ([027bec6](https://github.com/telus/tds-community/commit/027bec6291f07dd14218797021a89553f788fa4d))
+
+
+
+
+
 # [0.3.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.2.0...@tds/community-tabs@0.3.0) (2021-01-12)
 
 

@@ -1,11 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PreviewCard renders with all props 1`] = `
-<PreviewCard__Anchor
-  href="#"
+exports[`PreviewCard renders deprecated image 1`] = `
+<PreviewCard__BoxContainer
+  isLarge=""
 >
-  <PreviewCard__BoxContainer
-    isLarge="development · April 1st, 2019"
+  <PreviewCard__ImageContainer
+    isLarge=""
+  >
+    <Image
+      alt="Image of co-workers collaborating"
+      height={300}
+      src="blog-example.jpg"
+      width={300}
+    />
+  </PreviewCard__ImageContainer>
+  <PreviewCard__Anchor>
+    <Box
+      horizontal={3}
+      inline={false}
+      tag="div"
+      vertical={3}
+    >
+      <PreviewCard__ContentContainer
+        data-testid="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <PreviewCard__P
+            alt=""
+          />
+        </Box>
+      </PreviewCard__ContentContainer>
+    </Box>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
+`;
+
+exports[`PreviewCard renders media when type is image 1`] = `
+<PreviewCard__BoxContainer
+  isLarge=""
+  isVideo={false}
+>
+  <PreviewCard__Anchor>
+    <PreviewCard__ImageContainer
+      isLarge=""
+    >
+      <Image
+        alt="Image of co-workers collaborating"
+        height={300}
+        src="blog-example.jpg"
+        width={300}
+      />
+    </PreviewCard__ImageContainer>
+  </PreviewCard__Anchor>
+  <PreviewCard__Anchor>
+    <Box
+      horizontal={3}
+      inline={false}
+      tag="div"
+      vertical={3}
+    >
+      <PreviewCard__ContentContainer
+        data-testid="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <PreviewCard__P
+            alt=""
+          />
+        </Box>
+      </PreviewCard__ContentContainer>
+    </Box>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
+`;
+
+exports[`PreviewCard renders media when type is video 1`] = `
+<PreviewCard__BoxContainer
+  isLarge=""
+  isVideo={true}
+>
+  <PreviewCard__VideoContainer
+    isLarge=""
+  >
+    <WebVideo
+      aspectRatio="4:3"
+      beginMuted={false}
+      copy="en"
+      defaultVolume={70}
+      onStart={[Function]}
+      videoId="video-id"
+      videoLength={30}
+    />
+  </PreviewCard__VideoContainer>
+  <PreviewCard__Anchor>
+    <Box
+      horizontal={3}
+      inline={false}
+      tag="div"
+      vertical={3}
+    >
+      <PreviewCard__ContentContainer
+        data-testid="contentContainer"
+      >
+        <Box
+          inline={false}
+          tag="div"
+        >
+          <PreviewCard__P
+            alt=""
+          />
+        </Box>
+      </PreviewCard__ContentContainer>
+    </Box>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
+`;
+
+exports[`PreviewCard renders with all props 1`] = `
+<PreviewCard__BoxContainer
+  isLarge="development · April 1st, 2019"
+  isVideo={false}
+>
+  <PreviewCard__Anchor
+    href="#"
   >
     <PreviewCard__ImageContainer
       isLarge="development · April 1st, 2019"
@@ -17,6 +139,10 @@ exports[`PreviewCard renders with all props 1`] = `
         width={300}
       />
     </PreviewCard__ImageContainer>
+  </PreviewCard__Anchor>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <Box
       horizontal={4}
       inline={false}
@@ -67,16 +193,17 @@ exports[`PreviewCard renders with all props 1`] = `
         </Box>
       </PreviewCard__ContentContainer>
     </Box>
-  </PreviewCard__BoxContainer>
-</PreviewCard__Anchor>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
 `;
 
 exports[`PreviewCard renders with footer 1`] = `
-<PreviewCard__Anchor
-  href="#"
+<PreviewCard__BoxContainer
+  isLarge="By Halo"
+  isVideo={false}
 >
-  <PreviewCard__BoxContainer
-    isLarge="By Halo"
+  <PreviewCard__Anchor
+    href="#"
   >
     <PreviewCard__ImageContainer
       isLarge="By Halo"
@@ -88,6 +215,10 @@ exports[`PreviewCard renders with footer 1`] = `
         width={300}
       />
     </PreviewCard__ImageContainer>
+  </PreviewCard__Anchor>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <Box
       horizontal={4}
       inline={false}
@@ -124,16 +255,17 @@ exports[`PreviewCard renders with footer 1`] = `
         </Box>
       </PreviewCard__ContentContainer>
     </Box>
-  </PreviewCard__BoxContainer>
-</PreviewCard__Anchor>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
 `;
 
 exports[`PreviewCard renders with header 1`] = `
-<PreviewCard__Anchor
-  href="#"
+<PreviewCard__BoxContainer
+  isLarge="development · April 1st, 2019"
+  isVideo={false}
 >
-  <PreviewCard__BoxContainer
-    isLarge="development · April 1st, 2019"
+  <PreviewCard__Anchor
+    href="#"
   >
     <PreviewCard__ImageContainer
       isLarge="development · April 1st, 2019"
@@ -145,6 +277,10 @@ exports[`PreviewCard renders with header 1`] = `
         width={300}
       />
     </PreviewCard__ImageContainer>
+  </PreviewCard__Anchor>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <Box
       horizontal={4}
       inline={false}
@@ -181,15 +317,17 @@ exports[`PreviewCard renders with header 1`] = `
         </Box>
       </PreviewCard__ContentContainer>
     </Box>
-  </PreviewCard__BoxContainer>
-</PreviewCard__Anchor>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
 `;
 
 exports[`PreviewCard renders with long body text 1`] = `
-<PreviewCard__Anchor
-  href="#"
+<PreviewCard__BoxContainer
+  isVideo={false}
 >
-  <PreviewCard__BoxContainer>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <PreviewCard__ImageContainer>
       <Image
         alt="Image of co-workers collaborating"
@@ -198,6 +336,10 @@ exports[`PreviewCard renders with long body text 1`] = `
         width={300}
       />
     </PreviewCard__ImageContainer>
+  </PreviewCard__Anchor>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <Box
       horizontal={3}
       inline={false}
@@ -219,15 +361,17 @@ exports[`PreviewCard renders with long body text 1`] = `
         </Box>
       </PreviewCard__ContentContainer>
     </Box>
-  </PreviewCard__BoxContainer>
-</PreviewCard__Anchor>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
 `;
 
 exports[`PreviewCard renders with only Required props 1`] = `
-<PreviewCard__Anchor
-  href="#"
+<PreviewCard__BoxContainer
+  isVideo={false}
 >
-  <PreviewCard__BoxContainer>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <PreviewCard__ImageContainer>
       <Image
         alt="Image of co-workers collaborating"
@@ -236,6 +380,10 @@ exports[`PreviewCard renders with only Required props 1`] = `
         width={300}
       />
     </PreviewCard__ImageContainer>
+  </PreviewCard__Anchor>
+  <PreviewCard__Anchor
+    href="#"
+  >
     <Box
       horizontal={3}
       inline={false}
@@ -257,6 +405,6 @@ exports[`PreviewCard renders with only Required props 1`] = `
         </Box>
       </PreviewCard__ContentContainer>
     </Box>
-  </PreviewCard__BoxContainer>
-</PreviewCard__Anchor>
+  </PreviewCard__Anchor>
+</PreviewCard__BoxContainer>
 `;

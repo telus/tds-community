@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-community/compare/@tds/community-preview-card@1.1.7...@tds/community-preview-card@1.2.0) (2021-02-04)
+
+
+### Features
+
+* **community-preview-card:** add support for videos ([3d0f6bd](https://github.com/telus/tds-community/commit/3d0f6bdfd2c6dd6744edaf74e0a2e79ab03d97b7))
+
+
+
+
+
 ## [1.1.7](https://github.com/telus/tds-community/compare/@tds/community-preview-card@1.1.6...@tds/community-preview-card@1.1.7) (2020-09-09)
 
 **Note:** Version bump only for package @tds/community-preview-card

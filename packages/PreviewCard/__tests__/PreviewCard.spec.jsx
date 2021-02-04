@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme'
 import 'jest-styled-components'
 
 import Image from '@tds/core-image'
+import WebVideo from '@tds/core-web-video'
 
 import PreviewCard from '../PreviewCard'
 
@@ -11,14 +12,17 @@ describe('PreviewCard', () => {
 
   const requiredProps = {
     body: 'Hello world!',
-    image: (
-      <Image
-        src="blog-example.jpg"
-        alt="Image of co-workers collaborating"
-        width={300}
-        height={300}
-      />
-    ),
+    media: {
+      type: 'image',
+      content: (
+        <Image
+          src="blog-example.jpg"
+          alt="Image of co-workers collaborating"
+          width={300}
+          height={300}
+        />
+      ),
+    },
     href: '#',
   }
 
@@ -53,7 +57,7 @@ describe('PreviewCard', () => {
     expect(previewCard).toMatchSnapshot()
   })
 
-  it('renders with long body text', () => {
+  it('renders deprecated image', () => {
     const previewCard = shallow(
       <PreviewCard
         image={
@@ -64,6 +68,67 @@ describe('PreviewCard', () => {
             height={300}
           />
         }
+      />
+    )
+
+    expect(previewCard).toMatchSnapshot()
+  })
+
+  it('renders media when type is image', () => {
+    const previewCard = shallow(
+      <PreviewCard
+        media={{
+          type: 'image',
+          content: (
+            <Image
+              src="blog-example.jpg"
+              alt="Image of co-workers collaborating"
+              width={300}
+              height={300}
+            />
+          ),
+        }}
+      />
+    )
+
+    expect(previewCard).toMatchSnapshot()
+  })
+
+  it('renders media when type is video', () => {
+    const previewCard = shallow(
+      <PreviewCard
+        media={{
+          type: 'video',
+          content: (
+            <WebVideo
+              videoId="video-id"
+              videoLength={30}
+              aspectRatio="4:3"
+              defaultVolume={70}
+              copy="en"
+            />
+          ),
+        }}
+      />
+    )
+
+    expect(previewCard).toMatchSnapshot()
+  })
+
+  it('renders with long body text', () => {
+    const previewCard = shallow(
+      <PreviewCard
+        media={{
+          type: 'image',
+          content: (
+            <Image
+              src="blog-example.jpg"
+              alt="Image of co-workers collaborating"
+              width={300}
+              height={300}
+            />
+          ),
+        }}
         body="Hello world, this preview card has all the props and has text that is over 70 characters in length"
         href="#"
       />
@@ -73,11 +138,12 @@ describe('PreviewCard', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const previewCard = doShallow({
+    const props = {
       ...requiredProps,
       id: 'the-id',
       'data-some-attr': 'some value',
-    })
+    }
+    const previewCard = mount(<PreviewCard {...props} />)
 
     expect(previewCard).toHaveProp('id', 'the-id')
     expect(previewCard).toHaveProp('data-some-attr', 'some value')

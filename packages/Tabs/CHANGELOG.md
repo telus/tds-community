@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.4.0...@tds/community-tabs@0.4.1) (2021-02-04)
+
+
+### Bug Fixes
+
+* **community-tabs:** fix focus state on active tab ([de9b784](https://github.com/telus/tds-community/commit/de9b7842fb3eddbdc56e22fd59d34a19b91fcd79))
+
+
+
+
+
 # [0.4.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.3.0...@tds/community-tabs@0.4.0) (2021-02-03)
 
 

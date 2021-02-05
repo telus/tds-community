@@ -156,9 +156,26 @@ export const TabLabelContainer = styled.button`
   border: solid 2px transparent;
   border-radius: 6px;
 
+  > h4 {
+    &:focus {
+      outline: none;
+    }
+  }
   &:focus {
     outline: none;
-    border: solid 2px #979797;
+    > h4 {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 2px solid #979797;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
   &:active {
     outline: none;

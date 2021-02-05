@@ -217,7 +217,9 @@ const Tabs = props => {
             ref={tabNavRef}
           >
             <TabLabelContainer>
-              <TabLabel wrapLabel={wrapLabels}>{tab.props.heading}</TabLabel>
+              <TabLabel tabIndex="-1" wrapLabel={wrapLabels}>
+                {tab.props.heading}
+              </TabLabel>
             </TabLabelContainer>
           </Tab>
         )

@@ -17,6 +17,7 @@ import Image from '@tds/core-image'
 import Spinner from '@tds/core-spinner'
 import { Edit, Print } from '@tds/core-interactive-icon'
 import A11yContent from '@tds/core-a11y-content'
+import WebVideo from '@tds/core-web-video'
 
 Object.assign(global, {
   A11yContent,
@@ -39,4 +40,5 @@ Object.assign(global, {
   Spinner,
   Edit,
   Print,
+  WebVideo,
 })

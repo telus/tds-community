@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import DecorativeIcon from '@tds/core-decorative-icon'
+import { CaretUp, CaretDown } from '@tds/core-interactive-icon'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import { safeRest } from '@tds/util-helpers'
@@ -108,11 +108,7 @@ class SubMenu extends React.Component {
                 {label}
               </Text>
             </ColoredTextProvider>
-            <DecorativeIcon
-              symbol={isOpen ? 'caretUp' : 'caretDown'}
-              variant="secondary"
-              size={16}
-            />
+            {isOpen ? <CaretUp variant="alternative" /> : <CaretDown variant="alternative" />}
           </SpaceBox>
         </ButtonSubMenu>
         <FadeAndReveal

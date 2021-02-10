@@ -125,25 +125,21 @@ exports[`SideNavigation renders 1`] = `
 }
 
 .c16 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #4b286d;
-  font-size: 1rem;
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c16::before {
-  content: '\\f105';
+.c16:hover,
+.c16:focus,
+.c16:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c18 {
@@ -217,6 +213,20 @@ exports[`SideNavigation renders 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 0;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c16 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c16 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -412,25 +422,21 @@ exports[`SideNavigation renders 1`] = `
 }
 
 .c15 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #4b286d;
-  font-size: 1rem;
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c15::before {
-  content: '\\f105';
+.c15:hover,
+.c15:focus,
+.c15:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c17 {
@@ -499,6 +505,20 @@ exports[`SideNavigation renders 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 0;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c15 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c15 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -626,10 +646,14 @@ exports[`SideNavigation renders 1`] = `
                                 Threefdsfdsfds
                               </span>
                             </div>
-                            <i
-                              aria-hidden="true"
+                            <svg
                               class="c15"
-                            />
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                              />
+                            </svg>
                           </div>
                         </button>
                         <div
@@ -2444,62 +2468,78 @@ exports[`SideNavigation renders 1`] = `
                                                           </Text>
                                                         </div>
                                                       </ColoredTextProvider>
-                                                      <DecorativeIcon
-                                                        size={16}
-                                                        symbol="caretDown"
-                                                        variant="secondary"
+                                                      <CaretDown
+                                                        variant="alternative"
                                                       >
-                                                        <Icon
-                                                          aria-hidden="true"
-                                                          size={16}
-                                                          symbol="caretDown"
-                                                          variant="secondary"
+                                                        <Limited
+                                                          size={24}
+                                                          variant="alternative"
                                                         >
-                                                          <Icon__StyledIcon
-                                                            aria-hidden="true"
-                                                            iSize={16}
-                                                            symbol="caretDown"
-                                                            variant="secondary"
-                                                          >
-                                                            <StyledComponent
-                                                              aria-hidden="true"
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c16",
-                                                                    "rules": Array [
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Icon__StyledIcon",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                  "target": "i",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
+                                                          <ThemeProvider
+                                                            size={24}
+                                                            theme={
+                                                              Object {
+                                                                "backgroundColor": "transparent",
+                                                                "iconColor": "#4b286d",
                                                               }
-                                                              forwardedRef={null}
-                                                              iSize={16}
-                                                              symbol="caretDown"
-                                                              variant="secondary"
+                                                            }
+                                                          >
+                                                            <Styled(StyledInteractiveIconSVG)
+                                                              animationDirection="down"
+                                                              variant="alternative"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                className="c16"
-                                                              />
-                                                            </StyledComponent>
-                                                          </Icon__StyledIcon>
-                                                        </Icon>
-                                                      </DecorativeIcon>
+                                                              <StyledComponent
+                                                                animationDirection="down"
+                                                                forwardedComponent={
+                                                                  Object {
+                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                    "attrs": Array [],
+                                                                    "componentStyle": ComponentStyle {
+                                                                      "componentId": "sc-bwzfXH",
+                                                                      "isStatic": false,
+                                                                      "lastClassName": "c16",
+                                                                      "rules": Array [
+                                                                        [Function],
+                                                                        "width: 1.5rem;",
+                                                                        "height: 1.5rem;",
+                                                                        "z-index: 2;",
+                                                                        [Function],
+                                                                        "@media (prefers-reduced-motion: reduce) {",
+                                                                        "transition: none;",
+                                                                        "}",
+                                                                        [Function],
+                                                                      ],
+                                                                    },
+                                                                    "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                                    "foldedComponentIds": Array [
+                                                                      "StyledInteractiveIconSVG-ix2erv-0",
+                                                                    ],
+                                                                    "render": [Function],
+                                                                    "styledComponentId": "sc-bwzfXH",
+                                                                    "target": "svg",
+                                                                    "toString": [Function],
+                                                                    "warnTooManyClasses": [Function],
+                                                                    "withComponent": [Function],
+                                                                  }
+                                                                }
+                                                                forwardedRef={null}
+                                                                variant="alternative"
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <svg
+                                                                  className="c16"
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                                                  />
+                                                                </svg>
+                                                              </StyledComponent>
+                                                            </Styled(StyledInteractiveIconSVG)>
+                                                          </ThemeProvider>
+                                                        </Limited>
+                                                      </CaretDown>
                                                     </div>
                                                   </StyledComponent>
                                                 </styled.div>
@@ -4097,25 +4137,21 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 .c17 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #4b286d;
-  font-size: 1rem;
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c17::before {
-  content: '\\f106';
+.c17:hover,
+.c17:focus,
+.c17:active {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .c19 {
@@ -4189,6 +4225,20 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 0;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c17 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c17 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -4415,25 +4465,21 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 .c16 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #4b286d;
-  font-size: 1rem;
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c16::before {
-  content: '\\f106';
+.c16:hover,
+.c16:focus,
+.c16:active {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .c18 {
@@ -4505,6 +4551,20 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
+  .c16 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c16 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
   .c17 {
     -webkit-transition: none !important;
     transition: none !important;
@@ -4569,10 +4629,14 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                 Threefdsfdsfds
                               </span>
                             </div>
-                            <i
-                              aria-hidden="true"
+                            <svg
                               class="c16"
-                            />
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M17.7940812,14.8167698 C17.4424627,15.1174894 17.0896181,14.9549557 16.8868854,14.7547243 L11.9968161,10.259447 L7.11722187,14.7547243 C6.93839231,14.9185479 6.49053328,15.1800328 6.16524043,14.8167698 C5.83994757,14.4535067 6.06520964,14.0838947 6.24327169,13.9200711 L11.6348225,8.12339734 C11.8136521,7.95886755 12.1060729,7.95886755 12.2849025,8.12339734 C12.2849025,8.12410347 17.7940809,13.920071 17.7940809,13.920071 C17.9792355,14.0649573 18.1456996,14.5160501 17.7940812,14.8167698 Z"
+                              />
+                            </svg>
                           </div>
                         </button>
                         <div
@@ -5408,62 +5472,79 @@ exports[`SideNavigation renders without vertical spacing 1`] = `
                                                           </Text>
                                                         </div>
                                                       </ColoredTextProvider>
-                                                      <DecorativeIcon
-                                                        size={16}
-                                                        symbol="caretUp"
-                                                        variant="secondary"
+                                                      <CaretUp
+                                                        variant="alternative"
                                                       >
-                                                        <Icon
-                                                          aria-hidden="true"
-                                                          size={16}
-                                                          symbol="caretUp"
-                                                          variant="secondary"
+                                                        <Limited
+                                                          animationDirection="up"
+                                                          size={24}
+                                                          variant="alternative"
                                                         >
-                                                          <Icon__StyledIcon
-                                                            aria-hidden="true"
-                                                            iSize={16}
-                                                            symbol="caretUp"
-                                                            variant="secondary"
-                                                          >
-                                                            <StyledComponent
-                                                              aria-hidden="true"
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c17",
-                                                                    "rules": Array [
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Icon__StyledIcon",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                  "target": "i",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
+                                                          <ThemeProvider
+                                                            size={24}
+                                                            theme={
+                                                              Object {
+                                                                "backgroundColor": "transparent",
+                                                                "iconColor": "#4b286d",
                                                               }
-                                                              forwardedRef={null}
-                                                              iSize={16}
-                                                              symbol="caretUp"
-                                                              variant="secondary"
+                                                            }
+                                                          >
+                                                            <Styled(StyledInteractiveIconSVG)
+                                                              animationDirection="up"
+                                                              variant="alternative"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                className="c17"
-                                                              />
-                                                            </StyledComponent>
-                                                          </Icon__StyledIcon>
-                                                        </Icon>
-                                                      </DecorativeIcon>
+                                                              <StyledComponent
+                                                                animationDirection="up"
+                                                                forwardedComponent={
+                                                                  Object {
+                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                    "attrs": Array [],
+                                                                    "componentStyle": ComponentStyle {
+                                                                      "componentId": "sc-bwzfXH",
+                                                                      "isStatic": false,
+                                                                      "lastClassName": "c17",
+                                                                      "rules": Array [
+                                                                        [Function],
+                                                                        "width: 1.5rem;",
+                                                                        "height: 1.5rem;",
+                                                                        "z-index: 2;",
+                                                                        [Function],
+                                                                        "@media (prefers-reduced-motion: reduce) {",
+                                                                        "transition: none;",
+                                                                        "}",
+                                                                        [Function],
+                                                                      ],
+                                                                    },
+                                                                    "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                                    "foldedComponentIds": Array [
+                                                                      "StyledInteractiveIconSVG-ix2erv-0",
+                                                                    ],
+                                                                    "render": [Function],
+                                                                    "styledComponentId": "sc-bwzfXH",
+                                                                    "target": "svg",
+                                                                    "toString": [Function],
+                                                                    "warnTooManyClasses": [Function],
+                                                                    "withComponent": [Function],
+                                                                  }
+                                                                }
+                                                                forwardedRef={null}
+                                                                variant="alternative"
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <svg
+                                                                  className="c17"
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M17.7940812,14.8167698 C17.4424627,15.1174894 17.0896181,14.9549557 16.8868854,14.7547243 L11.9968161,10.259447 L7.11722187,14.7547243 C6.93839231,14.9185479 6.49053328,15.1800328 6.16524043,14.8167698 C5.83994757,14.4535067 6.06520964,14.0838947 6.24327169,13.9200711 L11.6348225,8.12339734 C11.8136521,7.95886755 12.1060729,7.95886755 12.2849025,8.12339734 C12.2849025,8.12410347 17.7940809,13.920071 17.7940809,13.920071 C17.9792355,14.0649573 18.1456996,14.5160501 17.7940812,14.8167698 Z"
+                                                                  />
+                                                                </svg>
+                                                              </StyledComponent>
+                                                            </Styled(StyledInteractiveIconSVG)>
+                                                          </ThemeProvider>
+                                                        </Limited>
+                                                      </CaretUp>
                                                     </div>
                                                   </StyledComponent>
                                                 </styled.div>

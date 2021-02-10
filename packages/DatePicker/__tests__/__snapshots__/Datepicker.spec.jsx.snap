@@ -39,19 +39,9 @@ exports[`Datepicker renders 1`] = `
       keepFocusOnInput={false}
       keepOpenOnDateSelect={false}
       monthFormat="MMMM YYYY"
-      navNext={
-        <DecorativeIcon
-          size={16}
-          symbol="chevron"
-        />
-      }
+      navNext={<ForwardRef />}
       navPosition="navPositionTop"
-      navPrev={
-        <DecorativeIcon
-          size={16}
-          symbol="leftChevron"
-        />
-      }
+      navPrev={<ForwardRef />}
       noBorder={false}
       numberOfMonths={1}
       onClose={[Function]}

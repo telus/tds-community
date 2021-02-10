@@ -41,8 +41,8 @@ exports[`Tags renders 1`] = `
 .c6 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #4b286d;
 }
 
@@ -803,16 +803,16 @@ exports[`Tags renders isSelected 1`] = `
 .c6 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #4b286d;
 }
 
 .c8 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #fff;
 }
 
@@ -1638,8 +1638,8 @@ exports[`Tags renders when using the children prop 1`] = `
 .c6 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #4b286d;
 }
 

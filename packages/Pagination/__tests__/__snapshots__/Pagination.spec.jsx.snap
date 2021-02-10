@@ -1,52 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination renders 1`] = `
-.c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c4::before {
-  content: '\\f107';
-  display: inline-block;
-  -webkit-transform: rotate(-180deg) translateY(1.5px);
-  -ms-transform: rotate(-180deg) translateY(1.5px);
-  transform: rotate(-180deg) translateY(1.5px);
-}
-
-.c14 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c14::before {
-  content: '\\f107';
-}
-
 .c8 {
   position: absolute;
   height: 1px;
@@ -54,6 +8,42 @@ exports[`Pagination renders 1`] = `
   overflow: hidden;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateX(-4px);
+  -ms-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.c14 {
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c14:hover,
+.c14:focus,
+.c14:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .c0 {
@@ -98,6 +88,14 @@ exports[`Pagination renders 1`] = `
   text-align: center;
   padding: 0;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -205,6 +203,62 @@ exports[`Pagination renders 1`] = `
 
 .c7:hover {
   border: none;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c14 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c14 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c14 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -449,6 +503,8 @@ exports[`Pagination renders 1`] = `
                                 "width: auto;",
                                 "height: auto;",
                                 "}",
+                                "display: flex;",
+                                "align-items: center;",
                               ],
                             },
                             "displayName": "styles__PaginationButtonStyle",
@@ -471,58 +527,82 @@ exports[`Pagination renders 1`] = `
                           onClick={[Function]}
                           value={0}
                         >
-                          <DecorativeIcon
+                          <ChevronLeft
                             size={16}
-                            symbol="leftChevron"
+                            variant="alternative"
                           >
-                            <Icon
-                              aria-hidden="true"
+                            <Limited
                               size={16}
-                              symbol="leftChevron"
+                              variant="alternative"
                             >
-                              <Icon__StyledIcon
-                                aria-hidden="true"
-                                iSize={16}
-                                symbol="leftChevron"
-                              >
-                                <StyledComponent
-                                  aria-hidden="true"
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                        "isStatic": false,
-                                        "lastClassName": "c14",
-                                        "rules": Array [
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                        ],
-                                      },
-                                      "displayName": "Icon__StyledIcon",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                      "target": "i",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
+                              <ThemeProvider
+                                size={16}
+                                theme={
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "iconColor": "#4b286d",
                                   }
-                                  forwardedRef={null}
-                                  iSize={16}
-                                  symbol="leftChevron"
+                                }
+                              >
+                                <Styled(StyledInteractiveIconSVG)
+                                  animationDirection="left"
+                                  size={16}
+                                  variant="alternative"
+                                  viewBox="0 0 24 24"
                                 >
-                                  <i
-                                    aria-hidden="true"
-                                    className="c4"
-                                  />
-                                </StyledComponent>
-                              </Icon__StyledIcon>
-                            </Icon>
-                          </DecorativeIcon>
+                                  <StyledComponent
+                                    animationDirection="left"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": false,
+                                          "lastClassName": "c14",
+                                          "rules": Array [
+                                            [Function],
+                                            "width: 1.5rem;",
+                                            "height: 1.5rem;",
+                                            "z-index: 2;",
+                                            [Function],
+                                            "@media (prefers-reduced-motion: reduce) {",
+                                            "transition: none;",
+                                            "}",
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Styled(StyledInteractiveIconSVG)",
+                                        "foldedComponentIds": Array [
+                                          "StyledInteractiveIconSVG-ix2erv-0",
+                                        ],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "svg",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    size={16}
+                                    variant="alternative"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <svg
+                                      className="c4"
+                                      size={16}
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M14.8167698,17.7940812 C14.5160501,18.1456996 14.0649573,17.9792355 13.920071,17.7940809 C13.920071,17.7940809 8.12410347,12.2849025 8.12339734,12.2849025 C7.95886755,12.1060729 7.95886755,11.8136521 8.12339734,11.6348225 L13.9200711,6.24327169 C14.0838947,6.06520964 14.4535067,5.83994757 14.8167698,6.16524043 C15.1800328,6.49053328 14.9185479,6.93839231 14.7547243,7.11722187 L10.259447,11.9968161 L14.7547243,16.8868854 C14.9549557,17.0896181 15.1174894,17.4424627 14.8167698,17.7940812 Z"
+                                      />
+                                    </svg>
+                                  </StyledComponent>
+                                </Styled(StyledInteractiveIconSVG)>
+                              </ThemeProvider>
+                            </Limited>
+                          </ChevronLeft>
                            
                           <styles__ButtonLabel>
                             <StyledComponent
@@ -1712,6 +1792,8 @@ exports[`Pagination renders 1`] = `
                                 "width: auto;",
                                 "height: auto;",
                                 "}",
+                                "display: flex;",
+                                "align-items: center;",
                               ],
                             },
                             "displayName": "styles__PaginationButtonStyle",
@@ -1771,58 +1853,82 @@ exports[`Pagination renders 1`] = `
                             </StyledComponent>
                           </styles__ButtonLabel>
                            
-                          <DecorativeIcon
+                          <ChevronRight
                             size={16}
-                            symbol="chevron"
+                            variant="alternative"
                           >
-                            <Icon
-                              aria-hidden="true"
+                            <Limited
                               size={16}
-                              symbol="chevron"
+                              variant="alternative"
                             >
-                              <Icon__StyledIcon
-                                aria-hidden="true"
-                                iSize={16}
-                                symbol="chevron"
-                              >
-                                <StyledComponent
-                                  aria-hidden="true"
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                        "isStatic": false,
-                                        "lastClassName": "c14",
-                                        "rules": Array [
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                        ],
-                                      },
-                                      "displayName": "Icon__StyledIcon",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                      "target": "i",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
+                              <ThemeProvider
+                                size={16}
+                                theme={
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "iconColor": "#4b286d",
                                   }
-                                  forwardedRef={null}
-                                  iSize={16}
-                                  symbol="chevron"
+                                }
+                              >
+                                <Styled(StyledInteractiveIconSVG)
+                                  animationDirection="right"
+                                  size={16}
+                                  variant="alternative"
+                                  viewBox="0 0 24 24"
                                 >
-                                  <i
-                                    aria-hidden="true"
-                                    className="c14"
-                                  />
-                                </StyledComponent>
-                              </Icon__StyledIcon>
-                            </Icon>
-                          </DecorativeIcon>
+                                  <StyledComponent
+                                    animationDirection="right"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": false,
+                                          "lastClassName": "c14",
+                                          "rules": Array [
+                                            [Function],
+                                            "width: 1.5rem;",
+                                            "height: 1.5rem;",
+                                            "z-index: 2;",
+                                            [Function],
+                                            "@media (prefers-reduced-motion: reduce) {",
+                                            "transition: none;",
+                                            "}",
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Styled(StyledInteractiveIconSVG)",
+                                        "foldedComponentIds": Array [
+                                          "StyledInteractiveIconSVG-ix2erv-0",
+                                        ],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "svg",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    size={16}
+                                    variant="alternative"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <svg
+                                      className="c14"
+                                      size={16}
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+                                      />
+                                    </svg>
+                                  </StyledComponent>
+                                </Styled(StyledInteractiveIconSVG)>
+                              </ThemeProvider>
+                            </Limited>
+                          </ChevronRight>
                         </button>
                       </StyledComponent>
                     </styles__PaginationButtonStyle>

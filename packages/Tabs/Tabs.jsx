@@ -138,7 +138,7 @@ const Tabs = props => {
       currentPosition += MOVE_TABS_VALUE
     }
     if (-currentPosition + lastTabWidth > totalTabsWidth) {
-      currentPosition = -totalTabsWidth + lastTabWidth - MARGIN_BUFFER
+      currentPosition = -totalTabsWidth + lastTabWidth + MARGIN_BUFFER
     }
     if (direction === 'left' && -currentPosition < firstTabWidth) {
       currentPosition = 0
@@ -179,6 +179,9 @@ const Tabs = props => {
     if (-tabsTranslatePosition <= firstTabWidth) {
       setLeftArrowVisible(false)
       setRightArrowVisible(true)
+      if (-tabsTranslatePosition > 1) {
+        setLeftArrowVisible(true)
+      }
     } else if (-tabsTranslatePosition < totalTabsWidth) {
       setLeftArrowVisible(true)
       setRightArrowVisible(true)

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.4.2...@tds/community-tabs@0.4.3) (2021-02-16)
+
+
+### Bug Fixes
+
+* **community-tabs:** fix scroll issue ([e2708f0](https://github.com/telus/tds-community/commit/e2708f01aa8ed09183b6abb6e8524e0afb7dae95))
+
+
+
+
+
 ## [0.4.2](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.4.1...@tds/community-tabs@0.4.2) (2021-02-08)
 
 

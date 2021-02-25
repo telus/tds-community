@@ -45,6 +45,27 @@
 </FlexGrid>
 ```
 
+### Icons
+
+- Icon will be displayed before text
+- Must be valid TDS SVGIcon name. Refer to TDS documentation for full list
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={7} lg={6} xl={5}>
+      <FlexGrid.Row>
+        <FlexGrid.Col xl={11}>
+          <CalloutParagraph bold spacing="compact" icon={Deals}>
+            Order online for a $300 bill credit.
+          </CalloutParagraph>
+        </FlexGrid.Col>
+      </FlexGrid.Row>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
 ### Compact
 
 ```jsx

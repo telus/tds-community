@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { safeRest } from '@tds/util-helpers'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Paragraph from '@tds/core-paragraph'
 import { colorTelusPurple } from '@tds/core-colours'
@@ -45,6 +46,7 @@ const TextWrapper = styled.div`
   }
   width: ${props => (props.roundedCorners ? '100%' : undefined)};
   p {
+    position: relative;
     text-align: ${props => (props.roundedCorners ? 'center' : undefined)};
     font-size: ${props => (props.compact ? '14px' : '1rem')};
     line-height: ${props => (props.compact ? '20px' : undefined)};
@@ -59,17 +61,44 @@ const TextWrapper = styled.div`
       padding-left: ${props => paddingValue.mobile[props.spacing]};
       padding-right: ${props => paddingValue.mobile[props.spacing]};
     }
+    > i {
+      margin-right: 1rem;
+      position: absolute;
+      left: 10px;
+    }
+    > span {
+      display: inline-block;
+      margin-left: ${props => props.margin};
+    }
   }
 `
+
+const iconMargin = (spacingLevel, hasIcon) => {
+  if (hasIcon) {
+    if (spacingLevel === 'compact') {
+      return '1.5rem'
+    }
+    return '1rem'
+  }
+  return undefined
+}
 
 /**
  * @version ./package.json
  * @visibleName CalloutParagraph (beta)
  */
-const CalloutParagraph = ({ children, spacing, roundedCorners, compact, ...rest }) => {
+const CalloutParagraph = ({ children, spacing, roundedCorners, compact, icon: Icon, ...rest }) => {
   return (
-    <TextWrapper spacing={spacing} roundedCorners={roundedCorners} compact={compact}>
-      <Paragraph {...safeRest(rest)}>{children}</Paragraph>
+    <TextWrapper
+      spacing={spacing}
+      roundedCorners={roundedCorners}
+      compact={compact}
+      margin={iconMargin(spacing, Icon)}
+    >
+      <Paragraph {...safeRest(rest)}>
+        {Icon && <Icon />}
+        <span>{children}</span>
+      </Paragraph>
     </TextWrapper>
   )
 }
@@ -92,12 +121,17 @@ CalloutParagraph.propTypes = {
    * Font size and padding around text will be smaller.
    */
   compact: PropTypes.bool,
+  /**
+   * Provide an icon from the Dependent icon group in `@tds/core-interactive-icon`.
+   */
+  icon: componentWithName('Decorative', true),
 }
 
 CalloutParagraph.defaultProps = {
   spacing: 'default',
   roundedCorners: false,
   compact: false,
+  icon: undefined,
 }
 
 export default CalloutParagraph

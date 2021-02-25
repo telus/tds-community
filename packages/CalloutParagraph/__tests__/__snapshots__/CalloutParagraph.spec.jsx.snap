@@ -12,7 +12,30 @@ exports[`CalloutParagraph renders 1`] = `
     invert={false}
     size="medium"
   >
-    Text
+    <span>
+      Text
+    </span>
+  </Paragraph>
+</CalloutParagraph__TextWrapper>
+`;
+
+exports[`CalloutParagraph renders an icon 1`] = `
+<CalloutParagraph__TextWrapper
+  compact={false}
+  margin="1rem"
+  roundedCorners={false}
+  spacing="default"
+>
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
+  >
+    <DecorativeIcon />
+    <span>
+      Text
+    </span>
   </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;
@@ -29,7 +52,9 @@ exports[`CalloutParagraph renders with compact 1`] = `
     invert={false}
     size="medium"
   >
-    Text
+    <span>
+      Text
+    </span>
   </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;
@@ -46,7 +71,9 @@ exports[`CalloutParagraph renders with intermediate 1`] = `
     invert={false}
     size="medium"
   >
-    Text
+    <span>
+      Text
+    </span>
   </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;
@@ -63,7 +90,9 @@ exports[`CalloutParagraph renders with narrow 1`] = `
     invert={false}
     size="medium"
   >
-    Text
+    <span>
+      Text
+    </span>
   </Paragraph>
 </CalloutParagraph__TextWrapper>
 `;

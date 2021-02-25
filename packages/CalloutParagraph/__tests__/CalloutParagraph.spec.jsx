@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import { Deals } from '@tds/core-decorative-icon'
 
 import CalloutParagraph from '../CalloutParagraph'
 
@@ -31,5 +32,11 @@ describe('CalloutParagraph', () => {
     const calloutParagraph = doShallow({ spacing: 'intermediate' })
     expect(calloutParagraph).toMatchSnapshot()
     expect(calloutParagraph).toHaveProp('spacing', 'intermediate')
+  })
+
+  it('renders an icon', () => {
+    const calloutParagraph = doShallow({ icon: Deals })
+    expect(calloutParagraph).toMatchSnapshot()
+    expect(calloutParagraph.find('DecorativeIcon')).toExist()
   })
 })

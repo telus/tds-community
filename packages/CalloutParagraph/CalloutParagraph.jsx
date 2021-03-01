@@ -47,7 +47,7 @@ const TextWrapper = styled.div`
   width: ${props => (props.roundedCorners ? '100%' : undefined)};
   p {
     position: relative;
-    text-align: ${props => (props.roundedCorners ? 'center' : undefined)};
+    text-align: ${props => props.textAlign};
     font-size: ${props => (props.compact ? '14px' : '1rem')};
     line-height: ${props => (props.compact ? '20px' : undefined)};
     border-radius: ${props => (props.roundedCorners ? '5px' : undefined)};
@@ -78,22 +78,41 @@ const iconMargin = (spacingLevel, hasIcon) => {
     if (spacingLevel === 'compact') {
       return '1.5rem'
     }
-    return '1rem'
+    return '0.75rem'
   }
   return undefined
+}
+
+// Format text align to be backwards compatible.
+const formatTextAlign = (textAlignProp, hasRoundedCorners) => {
+  if (textAlignProp) {
+    return textAlignProp
+  } else if (hasRoundedCorners) {
+    return 'center'
+  }
+  return 'left'
 }
 
 /**
  * @version ./package.json
  * @visibleName CalloutParagraph (beta)
  */
-const CalloutParagraph = ({ children, spacing, roundedCorners, compact, icon: Icon, ...rest }) => {
+const CalloutParagraph = ({
+  children,
+  spacing,
+  roundedCorners,
+  compact,
+  icon: Icon,
+  textAlign,
+  ...rest
+}) => {
   return (
     <TextWrapper
       spacing={spacing}
       roundedCorners={roundedCorners}
       compact={compact}
       margin={iconMargin(spacing, Icon)}
+      textAlign={formatTextAlign(textAlign, roundedCorners)}
     >
       <Paragraph {...safeRest(rest)}>
         {Icon && <Icon />}
@@ -125,6 +144,11 @@ CalloutParagraph.propTypes = {
    * Provide an icon from the Dependent icon group in `@tds/core-interactive-icon`.
    */
   icon: componentWithName('Decorative', true),
+  /**
+   * Set explicit text-align property. If not set, default text-align is 'center' for
+   * `roundedCorners` and 'left' otherwise.
+   */
+  textAlign: PropTypes.oneOf(['center', 'left', 'right']),
 }
 
 CalloutParagraph.defaultProps = {
@@ -132,6 +156,7 @@ CalloutParagraph.defaultProps = {
   roundedCorners: false,
   compact: false,
   icon: undefined,
+  textAlign: undefined,
 }
 
 export default CalloutParagraph

@@ -53,10 +53,10 @@
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={12} md={7} lg={6} xl={5}>
+    <FlexGrid.Col xs={12} md={7} lg={6}>
       <FlexGrid.Row>
         <FlexGrid.Col xl={11}>
-          <CalloutParagraph bold spacing="compact" icon={Deals}>
+          <CalloutParagraph bold roundedCorners textAlign="left" icon={Deals}>
             Order online for a $300 bill credit.
           </CalloutParagraph>
         </FlexGrid.Col>

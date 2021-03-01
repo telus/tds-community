@@ -5,6 +5,7 @@ exports[`CalloutParagraph renders 1`] = `
   compact={false}
   roundedCorners={false}
   spacing="default"
+  textAlign="left"
 >
   <Paragraph
     align="left"
@@ -22,9 +23,10 @@ exports[`CalloutParagraph renders 1`] = `
 exports[`CalloutParagraph renders an icon 1`] = `
 <CalloutParagraph__TextWrapper
   compact={false}
-  margin="1rem"
+  margin="0.75rem"
   roundedCorners={false}
   spacing="default"
+  textAlign="left"
 >
   <Paragraph
     align="left"
@@ -45,6 +47,7 @@ exports[`CalloutParagraph renders with compact 1`] = `
   compact={false}
   roundedCorners={false}
   spacing="compact"
+  textAlign="left"
 >
   <Paragraph
     align="left"
@@ -64,6 +67,7 @@ exports[`CalloutParagraph renders with intermediate 1`] = `
   compact={false}
   roundedCorners={false}
   spacing="intermediate"
+  textAlign="left"
 >
   <Paragraph
     align="left"
@@ -83,6 +87,27 @@ exports[`CalloutParagraph renders with narrow 1`] = `
   compact={false}
   roundedCorners={false}
   spacing="narrow"
+  textAlign="left"
+>
+  <Paragraph
+    align="left"
+    bold={false}
+    invert={false}
+    size="medium"
+  >
+    <span>
+      Text
+    </span>
+  </Paragraph>
+</CalloutParagraph__TextWrapper>
+`;
+
+exports[`CalloutParagraph specifies text align 1`] = `
+<CalloutParagraph__TextWrapper
+  compact={false}
+  roundedCorners={false}
+  spacing="default"
+  textAlign="center"
 >
   <Paragraph
     align="left"

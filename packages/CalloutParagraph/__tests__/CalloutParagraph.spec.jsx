@@ -39,4 +39,10 @@ describe('CalloutParagraph', () => {
     expect(calloutParagraph).toMatchSnapshot()
     expect(calloutParagraph.find('DecorativeIcon')).toExist()
   })
+
+  it('specifies text align', () => {
+    const calloutParagraph = doShallow({ textAlign: 'center' })
+    expect(calloutParagraph).toMatchSnapshot()
+    expect(calloutParagraph).toHaveProp('textAlign', 'center')
+  })
 })

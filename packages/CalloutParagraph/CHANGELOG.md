@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.5.0...@tds/community-callout-paragraph@0.5.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* **community-callout-paragraph:** increase icon margin ([e0cc1cb](https://github.com/telus/tds-community/commit/e0cc1cb4684feb9865dc3956104177f74cdec277))
+
+
+
+
+
 # [0.5.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.4.0...@tds/community-callout-paragraph@0.5.0) (2021-03-02)
 
 

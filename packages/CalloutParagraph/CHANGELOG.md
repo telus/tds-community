@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.4.0...@tds/community-callout-paragraph@0.5.0) (2021-03-02)
+
+
+### Features
+
+* **community-callout-paragraph:** add textAlign prop ([43cfb72](https://github.com/telus/tds-community/commit/43cfb72bfd2e05db43d1ba4a1a1b59a32738d931))
+
+
+
+
+
 # [0.4.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.3.1...@tds/community-callout-paragraph@0.4.0) (2021-03-01)
 
 

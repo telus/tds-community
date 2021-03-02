@@ -76,7 +76,7 @@ const TextWrapper = styled.div`
 const iconMargin = (spacingLevel, hasIcon) => {
   if (hasIcon) {
     if (spacingLevel === 'compact') {
-      return '1.5rem'
+      return '1.75rem'
     }
     return '0.75rem'
   }

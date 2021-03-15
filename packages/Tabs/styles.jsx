@@ -2,7 +2,6 @@ import { colorWhite, colorGreyGainsboro, colorGreyShark, colorGreyRaven } from '
 import styled, { css } from 'styled-components'
 
 export const TabsContainer = styled.div`
-  overflow: hidden;
   padding-top: 6px;
   > div {
     position: relative;

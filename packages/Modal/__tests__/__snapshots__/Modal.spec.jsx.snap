@@ -364,7 +364,9 @@ exports[`Modal renders 1`] = `
 @media (min-width:768px) {
   .c1 {
     margin: 0 auto;
-    max-width: 570px;
+    max-width: 736px;
+    width: 570px;
+    min-width: 570px;
     height: auto;
     border-radius: 0.25rem;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
@@ -405,6 +407,7 @@ exports[`Modal renders 1`] = `
   isOpen={true}
   onClose={[Function]}
   onConfirm={[Function]}
+  width={570}
 >
   <WithFocusTrap
     a11yText="modal dialog"
@@ -814,7 +817,9 @@ exports[`Modal renders 1`] = `
 @media (min-width:768px) {
   .c1 {
     margin: 0 auto;
-    max-width: 570px;
+    max-width: 736px;
+    width: 570px;
+    min-width: 570px;
     height: auto;
     border-radius: 0.25rem;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
@@ -852,6 +857,7 @@ exports[`Modal renders 1`] = `
                   >
                     <div
                       class="c1"
+                      width="570"
                     >
                       <div
                         class="c2"
@@ -944,7 +950,9 @@ exports[`Modal renders 1`] = `
                 className="c0"
                 data-testid="tds-modal-overlay"
               >
-                <styles__StyledModal>
+                <styles__StyledModal
+                  width={570}
+                >
                   <StyledComponent
                     forwardedComponent={
                       Object {
@@ -955,28 +963,7 @@ exports[`Modal renders 1`] = `
                           "isStatic": false,
                           "lastClassName": "c1",
                           "rules": Array [
-                            "height: 100%;",
-                            "width: 100%;",
-                            "position: relative;",
-                            "top: 0%;",
-                            "left: 0%;",
-                            "> button:first-child {",
-                            "display: flex;",
-                            "align-self: flex-end;",
-                            "background: none;",
-                            "border: none;",
-                            "margin: 1rem 0.5rem;",
-                            "}",
-                            "@media (min-width: 768px) {",
-                            "margin: 0 auto;",
-                            "max-width: 570px;",
-                            "height: auto;",
-                            "border-radius: 0.25rem;",
-                            "box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);",
-                            "z-index: 2000;",
-                            "background-color: #fff;",
-                            "top: 29%;",
-                            "}",
+                            [Function],
                           ],
                         },
                         "displayName": "styles__StyledModal",
@@ -993,6 +980,7 @@ exports[`Modal renders 1`] = `
                       Object {
                         "current": <div
                           class="c1"
+                          width="570"
                         >
                           <div
                             class="c2"
@@ -1078,9 +1066,11 @@ exports[`Modal renders 1`] = `
                         </div>,
                       }
                     }
+                    width={570}
                   >
                     <div
                       className="c1"
+                      width={570}
                     >
                       <styles__ModalWrapper>
                         <StyledComponent

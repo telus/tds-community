@@ -34,6 +34,7 @@ const Modal = ({
   onClose,
   onConfirm,
   focusElementAfterClose,
+  width,
   ...rest
 }) => {
   const ModalOverlayRef = useRef(null)
@@ -110,7 +111,7 @@ const Modal = ({
             isOpen={isOpen}
             ref={ModalOverlayRef}
           >
-            <StyledModal ref={modalRef}>
+            <StyledModal ref={modalRef} width={width}>
               <ModalWrapper>
                 <Box inset={5}>
                   <StyledBox between={3}>
@@ -191,11 +192,18 @@ Modal.propTypes = {
    */
   focusElementAfterClose: PropTypes.oneOfType([PropTypes.shape({ current: PropTypes.any })])
     .isRequired,
+
+  /**
+   * Set the width of Modal
+   * Accepts a numeric value that lies in the range between minWidth(570px) - maxWidth(736px).
+   */
+  width: PropTypes.number,
 }
 
 Modal.defaultProps = {
   confirmCTAText: '',
   cancelCTAText: '',
+  width: 570,
   onConfirm: null,
 }
 

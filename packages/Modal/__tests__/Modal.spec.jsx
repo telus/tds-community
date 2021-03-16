@@ -40,6 +40,16 @@ describe('Modal', () => {
     expect(modal).toHaveProp('data-some-attr', 'some value')
   })
 
+  it('should set default width(570px) when "width" props not provided', () => {
+    const modal = doMount()
+    expect(modal).toHaveProp('width', 570)
+  })
+
+  it('should set width based on "width" size provided', () => {
+    const modal = doMount({ width: 630 })
+    expect(modal).toHaveProp('width', 630)
+  })
+
   it('does not allow custom CSS', () => {
     const modal = doMount({
       className: 'my-custom-class',

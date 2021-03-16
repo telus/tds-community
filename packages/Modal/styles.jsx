@@ -23,29 +23,34 @@ export const FullScreenOverlay = styled.div(props => {
   return null
 })
 
-export const StyledModal = styled.div({
-  height: '100%',
-  width: '100%',
-  position: 'relative',
-  top: '0%',
-  left: '0%',
-  '> button:first-child': {
-    display: 'flex',
-    alignSelf: 'flex-end',
-    background: 'none',
-    border: 'none',
-    margin: '1rem 0.5rem',
-  },
-  ...media.from('md').css({
-    margin: '0 auto',
-    maxWidth: '570px',
-    height: 'auto',
-    borderRadius: '0.25rem',
-    boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
-    zIndex: '2000',
-    backgroundColor: colorWhite,
-    top: '29%',
-  }),
+export const StyledModal = styled.div(props => {
+  const { width } = props
+  return {
+    height: '100%',
+    width: '100%',
+    position: 'relative',
+    top: '0%',
+    left: '0%',
+    '> button:first-child': {
+      display: 'flex',
+      alignSelf: 'flex-end',
+      background: 'none',
+      border: 'none',
+      margin: '1rem 0.5rem',
+    },
+    ...media.from('md').css({
+      margin: '0 auto',
+      maxWidth: '736px',
+      width: `${width}px`,
+      minWidth: '570px',
+      height: 'auto',
+      borderRadius: '0.25rem',
+      boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
+      zIndex: '2000',
+      backgroundColor: colorWhite,
+      top: '29%',
+    }),
+  }
 })
 
 export const CTAWrapper = styled.div(props => {

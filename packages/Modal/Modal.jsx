@@ -194,8 +194,8 @@ Modal.propTypes = {
     .isRequired,
 
   /**
-   * Set the width of Modal
-   * Accepts a numeric value that lies in the range between minWidth(570px) - maxWidth(736px).
+   * Set the width of `Modal`.
+   * Accepts a numeric value that lies in the range between minWidth(570) - maxWidth(736).
    */
   width: PropTypes.number,
 }

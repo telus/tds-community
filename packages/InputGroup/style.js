@@ -14,7 +14,7 @@ export const InputGroupStyle = styled.div(({ hasValue }) => ({
   height: '52px',
   width: '100%',
   maxWidth: '768px',
-  minWidth: '384px',
+  minWidth: '200px',
   borderRadius: '5px',
   '&:hover': {
     boxShadow: '0 0 0 1px #4B286D',

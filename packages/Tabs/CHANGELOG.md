@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.4.3...@tds/community-tabs@0.4.4) (2021-03-17)
+
+
+### Bug Fixes
+
+* **community-tabs:** remove overlow-hidden ([d8e0e0d](https://github.com/telus/tds-community/commit/d8e0e0d100bf88bbfe145be60e8ade1b43d822bd))
+
+
+
+
+
 ## [0.4.3](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.4.2...@tds/community-tabs@0.4.3) (2021-02-16)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-tabs",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

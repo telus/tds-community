@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.2.2...@tds/community-modal@1.3.0) (2021-03-18)
+
+
+### Bug Fixes
+
+* **community-modal:** update docs ([7d36e81](https://github.com/telus/tds-community/commit/7d36e81d971d33c4180d24d89dab5eced1f16939))
+
+
+### Features
+
+* **community-modal:** update modal max-width ([4186943](https://github.com/telus/tds-community/commit/41869438f4026e515f6b1bc58ca99644d894e5e9))
+
+
+
+
+
 ## [1.2.2](https://github.com/telus/tds-community/compare/@tds/community-modal@1.2.1...@tds/community-modal@1.2.2) (2021-01-15)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.4...@tds/community-input-group@1.0.5) (2021-03-23)
+
+
+### Bug Fixes
+
+* **community-input-group:** input group min width ([9d92e67](https://github.com/telus/tds-community/commit/9d92e67aa5741dbbcb8c037a68d5303bd9b70569))
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.3...@tds/community-input-group@1.0.4) (2020-12-08)
 
 

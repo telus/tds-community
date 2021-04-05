@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import ResponsiveImage from '@tds/core-responsive-image'
-import { breakpoints } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 import checkWebpFeature from './checkWebpFeature'
 
 /**
  * @version ./package.json
  */
-const OptimizeImage = ({ contentfulAssetUrl, alt, quality, ...rest }) => {
+const OptimizeImage = ({ contentfulAssetUrl, alt, quality, xs, sm, md, lg, xl, ...rest }) => {
   // states used to ensure images are downloaded only once
   const [hasLoaded, setHasLoaded] = useState(false)
   const [imgUrls, setImgUrls] = useState({})
@@ -25,12 +24,12 @@ const OptimizeImage = ({ contentfulAssetUrl, alt, quality, ...rest }) => {
         }
 
         setImgUrls({
-          xsSrc: `${contentfulAssetUrl}?w=320&q=${quality}&${format}`,
-          smSrc: `${contentfulAssetUrl}?w=${breakpoints.sm}&q=${quality}&${format}`,
-          mdSrc: `${contentfulAssetUrl}?w=${breakpoints.md}&q=${quality}&${format}`,
-          lgSrc: `${contentfulAssetUrl}?w=${breakpoints.lg}&q=${quality}&${format}`,
-          xlSrc: `${contentfulAssetUrl}?w=${breakpoints.xl}&q=${quality}&${format}`,
-          fallbackSrc: `${contentfulAssetUrl}?w=${breakpoints.xl}&q=${quality}`,
+          xsSrc: `${contentfulAssetUrl}?w=${xs}&q=${quality}&${format}`,
+          smSrc: `${contentfulAssetUrl}?w=${sm}&q=${quality}&${format}`,
+          mdSrc: `${contentfulAssetUrl}?w=${md}&q=${quality}&${format}`,
+          lgSrc: `${contentfulAssetUrl}?w=${lg}&q=${quality}&${format}`,
+          xlSrc: `${contentfulAssetUrl}?w=${xl}&q=${quality}&${format}`,
+          fallbackSrc: `${contentfulAssetUrl}?w=${xl}&q=${quality}`,
         })
         setHasLoaded(true)
       })
@@ -65,10 +64,35 @@ OptimizeImage.propTypes = {
    * Customize quality as a percentage between 1 and 100.
    */
   quality: PropTypes.number,
+  /**
+   * Customize width for xs screen size in px, this may affect the quality of the image.
+   */
+  xs: PropTypes.number,
+  /**
+   * Customize width for sm screen size in px, this may affect the quality of the image.
+   */
+  sm: PropTypes.number,
+  /**
+   * Customize width for md screen size in px, this may affect the quality of the image.
+   */
+  md: PropTypes.number,
+  /**
+   * Customize width for lg screen size in px, this may affect the quality of the image.
+   */
+  lg: PropTypes.number,
+  /**
+   * Customize width for xl screen size in px, this may affect the quality of the image.
+   */
+  xl: PropTypes.number,
 }
 
 OptimizeImage.defaultProps = {
   quality: 80,
+  xs: 320,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
 }
 
 export default OptimizeImage

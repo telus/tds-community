@@ -1,3 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OptimizeImage renders 1`] = `""`;
+exports[`OptimizeImage renders 1`] = `
+<OptimizeImage
+  alt="test-image"
+  contentfulAssetUrl="https://images.ctfassets.net/Alpaca.jpg"
+  lg={992}
+  md={768}
+  quality={80}
+  sm={576}
+  xl={1200}
+  xs={320}
+>
+  <ResponsiveImage
+    alt="test-image"
+    fallbackSrc="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80"
+    lgSrc="https://images.ctfassets.net/Alpaca.jpg?w=992&q=80&fm=webp"
+    mdSrc="https://images.ctfassets.net/Alpaca.jpg?w=768&q=80&fm=webp"
+    smSrc="https://images.ctfassets.net/Alpaca.jpg?w=576&q=80&fm=webp"
+    xlSrc="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80&fm=webp"
+    xsSrc="https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp"
+  >
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80&fm=webp"
+      />
+      <source
+        media="(min-width: 992px)"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=992&q=80&fm=webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=768&q=80&fm=webp"
+      />
+      <source
+        media="(min-width: 576px)"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=576&q=80&fm=webp"
+      />
+      <source
+        media="(max-width: 575px)"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp"
+      />
+      <img
+        alt="test-image"
+        src="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+      />
+    </picture>
+  </ResponsiveImage>
+</OptimizeImage>
+`;

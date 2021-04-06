@@ -8,7 +8,7 @@ OptimizeImage is used to optimize image files based on screen size
 ```jsx
 <OptimizeImage
   contentfulAssetUrl="https://images.ctfassets.net/3cqlnin176yn/1GfIHDOb3n3uO3wVnKjHZ2/3a3c59c5caa91a315da1b3804cdf0b1b/Alpaca-lets-make-the-future-friendly-Hero-Banner-Tile.jpg"
-  alt="test-image"
+  alt="alpacas"
   lg={500}
 />
 ```

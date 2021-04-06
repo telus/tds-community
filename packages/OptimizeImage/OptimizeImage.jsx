@@ -13,7 +13,7 @@ const OptimizeImage = ({ contentfulAssetUrl, alt, quality, xs, sm, md, lg, xl, .
   const [imgUrls, setImgUrls] = useState({})
 
   useEffect(() => {
-    if (contentfulAssetUrl && !contentfulAssetUrl.match(/.svg/g)) {
+    if (!contentfulAssetUrl.match(/.svg/g)) {
       // Currently not all browsers support webP
       checkWebpFeature(result => {
         let format = ''
@@ -33,6 +33,16 @@ const OptimizeImage = ({ contentfulAssetUrl, alt, quality, xs, sm, md, lg, xl, .
         })
         setHasLoaded(true)
       })
+    } else {
+      setImgUrls({
+        xsSrc: contentfulAssetUrl,
+        smSrc: contentfulAssetUrl,
+        mdSrc: contentfulAssetUrl,
+        lgSrc: contentfulAssetUrl,
+        xlSrc: contentfulAssetUrl,
+        fallbackSrc: contentfulAssetUrl,
+      })
+      setHasLoaded(true)
     }
   }, [])
 

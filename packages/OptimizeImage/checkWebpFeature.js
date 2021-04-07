@@ -1,14 +1,8 @@
 // taken directly from Google developers guide on how to detect browser support for WebP
 export default async callback => {
-  // basic support
+  // basic support. other test forms exist for lossless, alpha, and animation types.
+  // check google guide if data strings are needed
   const lossy = 'UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA'
-  // other test forms
-  // var kTestImages = {
-  //   lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
-  //   lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
-  //   alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
-  //   animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
-  // };
 
   const img = document.createElement('img')
   img.onload = function onLoad() {

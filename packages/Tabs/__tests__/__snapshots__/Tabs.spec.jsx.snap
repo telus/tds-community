@@ -1151,11 +1151,15 @@ exports[`Tabs renders 1`] = `
                                 <Tabs
                                   defaultFocus={false}
                                   defaultIndex={null}
+                                  disableUpDownKeys={false}
+                                  environment={null}
                                   forceRenderTabPanel={false}
                                   selectedIndex={null}
                                 >
                                   <UncontrolledTabs
                                     className="react-tabs"
+                                    disableUpDownKeys={false}
+                                    environment={null}
                                     focus={false}
                                     forceRenderTabPanel={false}
                                     onSelect={[Function]}

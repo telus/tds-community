@@ -18,8 +18,8 @@ exports[`TagItem renders 1`] = `
 .c3 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #4b286d;
 }
 
@@ -336,8 +336,8 @@ exports[`TagItem renders with a pressed state when isLoading is true 1`] = `
 .c3 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #4b286d;
 }
 

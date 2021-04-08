@@ -3,7 +3,7 @@ OptimizeImage is used to optimize image files based on screen size
 ### Usage criteria
 
 - Must use a contentful asset url as the component adapts the url to convert the image file
-- May customize quality and screen width sizes. Note: increasing quality and width may affect page performance.
+- May customize quality and screen width sizes. Note: increasing quality and width may affect page performance
 
 ```jsx
 <OptimizeImage

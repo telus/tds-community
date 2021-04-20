@@ -56,17 +56,6 @@ const Modal = ({
     return null
   }
 
-  const preventScroll = e => {
-    if (ModalOverlayRef.current.contains(e.targetTouches[0].target)) {
-      e.preventDefault()
-    }
-  }
-
-  const removeEventScrolling = () => {
-    document.body.removeEventListener('touchmove', preventScroll)
-    document.body.style.overflow = 'visible'
-  }
-
   const handleOutSideClick = e => {
     if (!modalRef.current.contains(e.target)) {
       handleClose()
@@ -75,18 +64,15 @@ const Modal = ({
 
   useEffect(() => {
     if (isOpen) {
-      document.body.addEventListener('touchmove', preventScroll, { passive: false })
       document.body.addEventListener('keydown', handleKeyDown, { passive: false })
       document.body.addEventListener('mousedown', handleOutSideClick, { passive: false })
       document.body.style.overflow = 'hidden'
       header.current.focus()
     } else {
-      removeEventScrolling()
       document.body.removeEventListener('keydown', handleKeyDown)
       document.body.removeEventListener('mousedown', handleOutSideClick)
     }
     return () => {
-      removeEventScrolling()
       document.body.removeEventListener('keydown', handleKeyDown)
       document.body.removeEventListener('mousedown', handleOutSideClick)
     }

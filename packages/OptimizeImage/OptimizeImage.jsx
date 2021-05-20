@@ -7,10 +7,23 @@ import checkWebpFeature from './checkWebpFeature'
 /**
  * @version ./package.json
  */
-const OptimizeImage = ({ contentfulAssetUrl, alt, quality, xs, sm, md, lg, xl, ...rest }) => {
+const OptimizeImage = ({
+  contentfulAssetUrl,
+  alt,
+  quality,
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+  useHeight,
+  disableRetina,
+  ...rest
+}) => {
   // states used to ensure images are downloaded only once
   const [hasLoaded, setHasLoaded] = useState(false)
   const [imgUrls, setImgUrls] = useState({})
+  const dimension = useHeight ? 'h' : 'w'
 
   useEffect(() => {
     if (!contentfulAssetUrl.match(/.svg/g)) {
@@ -23,12 +36,26 @@ const OptimizeImage = ({ contentfulAssetUrl, alt, quality, xs, sm, md, lg, xl, .
           format = 'fm=jpg&fl=progressive'
         }
 
+        let xsSrcRetina = ''
+        let smSrcRetina = ''
+        let mdSrcRetina = ''
+        let lgSrcRetina = ''
+        let xlSrcRetina = ''
+
+        if (disableRetina === false) {
+          xsSrcRetina = `, ${contentfulAssetUrl}?${dimension}=${xs * 2}&q=${quality}&${format} 2x`
+          smSrcRetina = `, ${contentfulAssetUrl}?${dimension}=${sm * 2}&q=${quality}&${format} 2x`
+          mdSrcRetina = `, ${contentfulAssetUrl}?${dimension}=${md * 2}&q=${quality}&${format} 2x`
+          lgSrcRetina = `, ${contentfulAssetUrl}?${dimension}=${lg * 2}&q=${quality}&${format} 2x`
+          xlSrcRetina = `, ${contentfulAssetUrl}?${dimension}=${xl * 2}&q=${quality}&${format} 2x`
+        }
+
         setImgUrls({
-          xsSrc: `${contentfulAssetUrl}?w=${xs}&q=${quality}&${format}`,
-          smSrc: `${contentfulAssetUrl}?w=${sm}&q=${quality}&${format}`,
-          mdSrc: `${contentfulAssetUrl}?w=${md}&q=${quality}&${format}`,
-          lgSrc: `${contentfulAssetUrl}?w=${lg}&q=${quality}&${format}`,
-          xlSrc: `${contentfulAssetUrl}?w=${xl}&q=${quality}&${format}`,
+          xsSrc: `${contentfulAssetUrl}?${dimension}=${xs}&q=${quality}&${format}${xsSrcRetina}`,
+          smSrc: `${contentfulAssetUrl}?${dimension}=${sm}&q=${quality}&${format}${smSrcRetina}`,
+          mdSrc: `${contentfulAssetUrl}?${dimension}=${md}&q=${quality}&${format}${mdSrcRetina}`,
+          lgSrc: `${contentfulAssetUrl}?${dimension}=${lg}&q=${quality}&${format}${lgSrcRetina}`,
+          xlSrc: `${contentfulAssetUrl}?${dimension}=${xl}&q=${quality}&${format}${xlSrcRetina}`,
           fallbackSrc: `${contentfulAssetUrl}?w=${xl}&q=${quality}`,
         })
         setHasLoaded(true)
@@ -94,6 +121,14 @@ OptimizeImage.propTypes = {
    * Customize width for xl screen size in px, this may affect the quality of the image.
    */
   xl: PropTypes.number,
+  /**
+   * Switches size dimension to height, default is false
+   */
+  useHeight: PropTypes.bool,
+  /**
+   * Turns off retina display functionality
+   */
+  disableRetina: PropTypes.bool,
 }
 
 OptimizeImage.defaultProps = {
@@ -103,6 +138,8 @@ OptimizeImage.defaultProps = {
   md: 768,
   lg: 992,
   xl: 1200,
+  useHeight: false,
+  disableRetina: false,
 }
 
 export default OptimizeImage

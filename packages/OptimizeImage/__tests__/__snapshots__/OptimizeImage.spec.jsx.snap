@@ -4,42 +4,44 @@ exports[`OptimizeImage renders 1`] = `
 <OptimizeImage
   alt="test-image"
   contentfulAssetUrl="https://images.ctfassets.net/Alpaca.jpg"
+  disableRetina={false}
   lg={992}
   md={768}
   quality={80}
   sm={576}
+  useHeight={false}
   xl={1200}
   xs={320}
 >
   <ResponsiveImage
     alt="test-image"
     fallbackSrc="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80"
-    lgSrc="https://images.ctfassets.net/Alpaca.jpg?w=992&q=80&fm=webp"
-    mdSrc="https://images.ctfassets.net/Alpaca.jpg?w=768&q=80&fm=webp"
-    smSrc="https://images.ctfassets.net/Alpaca.jpg?w=576&q=80&fm=webp"
-    xlSrc="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80&fm=webp"
-    xsSrc="https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp"
+    lgSrc="https://images.ctfassets.net/Alpaca.jpg?w=992&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=1984&q=80&fm=webp 2x"
+    mdSrc="https://images.ctfassets.net/Alpaca.jpg?w=768&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=1536&q=80&fm=webp 2x"
+    smSrc="https://images.ctfassets.net/Alpaca.jpg?w=576&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=1152&q=80&fm=webp 2x"
+    xlSrc="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=2400&q=80&fm=webp 2x"
+    xsSrc="https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=640&q=80&fm=webp 2x"
   >
     <picture>
       <source
         media="(min-width: 1200px)"
-        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80&fm=webp"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=1200&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=2400&q=80&fm=webp 2x"
       />
       <source
         media="(min-width: 992px)"
-        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=992&q=80&fm=webp"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=992&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=1984&q=80&fm=webp 2x"
       />
       <source
         media="(min-width: 768px)"
-        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=768&q=80&fm=webp"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=768&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=1536&q=80&fm=webp 2x"
       />
       <source
         media="(min-width: 576px)"
-        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=576&q=80&fm=webp"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=576&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=1152&q=80&fm=webp 2x"
       />
       <source
         media="(max-width: 575px)"
-        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp"
+        srcSet="https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=640&q=80&fm=webp 2x"
       />
       <img
         alt="test-image"

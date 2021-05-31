@@ -57,7 +57,7 @@ describe('OptimizeImage', () => {
 
     expect(optimizeImage).toHaveProp(
       'xsSrc',
-      'https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp'
+      'https://images.ctfassets.net/Alpaca.jpg?w=320&q=80&fm=webp, https://images.ctfassets.net/Alpaca.jpg?w=640&q=80&fm=webp 2x'
     )
   })
 
@@ -70,7 +70,7 @@ describe('OptimizeImage', () => {
 
     expect(optimizeImage).toHaveProp(
       'xsSrc',
-      'https://images.ctfassets.net/Alpaca.jpeg?w=320&q=80&fm=jpg&fl=progressive'
+      'https://images.ctfassets.net/Alpaca.jpeg?w=320&q=80&fm=jpg&fl=progressive, https://images.ctfassets.net/Alpaca.jpeg?w=640&q=80&fm=jpg&fl=progressive 2x'
     )
   })
 })

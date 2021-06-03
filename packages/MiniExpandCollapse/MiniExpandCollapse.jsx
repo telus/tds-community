@@ -24,7 +24,7 @@ const MiniExpandCollapse = ({
   const [contentHeight, setContentHeight] = useState(0)
   const togglePanel = () => {
     setPanel(!isPanelOpen)
-    onToggle()
+    onToggle(isPanelOpen)
   }
   useEffect(() => {
     if (contentRef.current.offsetHeight !== contentHeight) {
@@ -60,7 +60,7 @@ MiniExpandCollapse.propTypes = {
    */
   expandTitle: PropTypes.string,
   /**
-   * Function to add any extra logic required for onToggle event
+   * Function to add any extra logic required for onToggle event. Pass isPanelOpen prop if function needs it for logic.
    */
   onToggle: PropTypes.func,
   /**
@@ -83,10 +83,7 @@ MiniExpandCollapse.propTypes = {
 
 MiniExpandCollapse.defaultProps = {
   expandTitle: null,
-  onToggle: () => {
-    // eslint-disable-next-line no-console
-    console.log('Hello World')
-  },
+  onToggle: () => {},
   invert: false,
   a11yLabel: undefined,
 }

@@ -114,3 +114,50 @@ Similar to ExpandCollapse. Clicking on the hyperlink triggers target content to 
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+```jsx { "props": { "className": "docs_purple-block" } }
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={4}>
+      <MiniExpandCollapse
+        expandTitle="Hide details"
+        collapseTitle="Show details"
+        size={{ xs: 'medium', md: 'small' }}
+        onToggle={isPanelOpen => {
+          return isPanelOpen ? 'open' : 'closed'
+        }}
+      >
+        <Box vertical={3}>
+          <HairlineDivider />
+          <Box between={2}>
+            <Box between="space-between" inline>
+              <Paragraph size="medium" invert>
+                Buries Drop Wire
+              </Paragraph>
+              <Paragraph size="medium" invert>
+                $2.00
+              </Paragraph>
+            </Box>
+            <Box between="space-between" inline>
+              <Paragraph size="medium" invert>
+                Jacks/Outlet
+              </Paragraph>
+              <Paragraph size="medium" invert>
+                $75.00
+              </Paragraph>
+            </Box>
+            <Box between="space-between" inline>
+              <Paragraph size="medium" invert>
+                UPS Battery
+              </Paragraph>
+              <Paragraph size="medium" invert>
+                $30.00
+              </Paragraph>
+            </Box>
+          </Box>
+        </Box>
+      </MiniExpandCollapse>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```

@@ -64,4 +64,29 @@ describe('MiniExpandCollapse', () => {
     )
     expect(miniExpandCollapse.find('A11yContent').exists()).toBeTruthy()
   })
+
+  it('activates the onToggle event when clicked', () => {
+    const props = {
+      expandTitle: 'Hide details',
+      collapseTitle: 'Show details',
+      size: 'large',
+      a11yLabel: 'detailed description',
+      onToggle: jest.fn(),
+    }
+
+    const miniExpandCollapse = mount(
+      <MiniExpandCollapse {...props}>
+        <Box vertical={4}>
+          <Paragraph>The content to be expanded.</Paragraph>
+        </Box>
+      </MiniExpandCollapse>
+    )
+
+    miniExpandCollapse
+      .find('Link')
+      .children()
+      .simulate('click')
+
+    expect(props.onToggle).toHaveBeenCalled()
+  })
 })

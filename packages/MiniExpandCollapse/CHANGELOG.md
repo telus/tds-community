@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.1.1...@tds/community-mini-expand-collapse@0.2.0) (2021-06-04)
+
+
+### Features
+
+* **community-mini-expand-collapse:** add mini-expand-collapse onclick ([a241e0c](https://github.com/telus/tds-community/commit/a241e0c431ee2c39ff6d35b8546b93b92636b104)), closes [#495](https://github.com/telus/tds-community/issues/495)
+* **community-mini-expand-collapse:** removed console.log statement ([b348aa0](https://github.com/telus/tds-community/commit/b348aa0b83b4bba9d79ecca0689f86d2333b6e56)), closes [#495](https://github.com/telus/tds-community/issues/495)
+
+
+
+
+
 ## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.1.0...@tds/community-mini-expand-collapse@0.1.1) (2020-09-22)
 
 

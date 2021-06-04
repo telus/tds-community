@@ -115,7 +115,7 @@ Similar to ExpandCollapse. Clicking on the hyperlink triggers target content to 
 </FlexGrid>
 ```
 
-```jsx { "props": { "className": "docs_purple-block" } }
+```jsx
 <FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col xs={12} md={4}>

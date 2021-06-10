@@ -111,25 +111,21 @@ exports[`SideNavigation.SubMenu renders 1`] = `
 }
 
 .c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #4b286d;
-  font-size: 1rem;
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c4::before {
-  content: '\\f105';
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c6 {
@@ -165,6 +161,20 @@ exports[`SideNavigation.SubMenu renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -380,62 +390,78 @@ exports[`SideNavigation.SubMenu renders 1`] = `
                         </Text>
                       </div>
                     </ColoredTextProvider>
-                    <DecorativeIcon
-                      size={16}
-                      symbol="caretDown"
-                      variant="secondary"
+                    <CaretDown
+                      variant="alternative"
                     >
-                      <Icon
-                        aria-hidden="true"
-                        size={16}
-                        symbol="caretDown"
-                        variant="secondary"
+                      <Limited
+                        size={24}
+                        variant="alternative"
                       >
-                        <Icon__StyledIcon
-                          aria-hidden="true"
-                          iSize={16}
-                          symbol="caretDown"
-                          variant="secondary"
-                        >
-                          <StyledComponent
-                            aria-hidden="true"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                  "isStatic": false,
-                                  "lastClassName": "c4",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "Icon__StyledIcon",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                "target": "i",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
+                        <ThemeProvider
+                          size={24}
+                          theme={
+                            Object {
+                              "backgroundColor": "transparent",
+                              "iconColor": "#4b286d",
                             }
-                            forwardedRef={null}
-                            iSize={16}
-                            symbol="caretDown"
-                            variant="secondary"
+                          }
+                        >
+                          <Styled(StyledInteractiveIconSVG)
+                            animationDirection="down"
+                            variant="alternative"
+                            viewBox="0 0 24 24"
                           >
-                            <i
-                              aria-hidden="true"
-                              className="c4"
-                            />
-                          </StyledComponent>
-                        </Icon__StyledIcon>
-                      </Icon>
-                    </DecorativeIcon>
+                            <StyledComponent
+                              animationDirection="down"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      [Function],
+                                      "width: 1.5rem;",
+                                      "height: 1.5rem;",
+                                      "z-index: 2;",
+                                      [Function],
+                                      "@media (prefers-reduced-motion: reduce) {",
+                                      "transition: none;",
+                                      "}",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Styled(StyledInteractiveIconSVG)",
+                                  "foldedComponentIds": Array [
+                                    "StyledInteractiveIconSVG-ix2erv-0",
+                                  ],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "svg",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              variant="alternative"
+                              viewBox="0 0 24 24"
+                            >
+                              <svg
+                                className="c4"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                />
+                              </svg>
+                            </StyledComponent>
+                          </Styled(StyledInteractiveIconSVG)>
+                        </ThemeProvider>
+                      </Limited>
+                    </CaretDown>
                   </div>
                 </StyledComponent>
               </styled.div>

@@ -11,7 +11,7 @@ import 'react-dates/lib/css/_datepicker.css'
 
 import { safeRest, getCopy } from '@tds/util-helpers'
 
-import DecorativeIcon from '@tds/core-decorative-icon'
+import { ChevronLeft, ChevronRight } from '@tds/core-interactive-icon'
 
 import { CalendarContainer, LabelText, HiddenInputFieldContainer } from './styles'
 
@@ -37,8 +37,6 @@ const getResponsiveDaySize = inline => () => {
   }
   return responsiveDaySize
 }
-
-const getIcon = type => <DecorativeIcon symbol={type} size={16} />
 
 const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label, ...props }) => {
   const [isFocused, setIsFocused] = useState(false)
@@ -78,8 +76,8 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
               hideKeyboardShortcutsPanel={true}
               keepOpenOnDateSelect={false}
               daySize={daySize}
-              navPrev={getIcon('leftChevron')}
-              navNext={getIcon('chevron')}
+              navPrev={<ChevronLeft variant="alternative" />}
+              navNext={<ChevronRight variant="alternative" />}
               isOutsideRange={day => isBeforeDay(day, moment())}
               phrases={getCopy(copyDictionary, copy)}
             />
@@ -98,8 +96,8 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
             placeholder="DD / MM / YYYY"
             keepOpenOnDateSelect={false}
             daySize={daySize}
-            navPrev={getIcon('leftChevron')}
-            navNext={getIcon('chevron')}
+            navPrev={<ChevronLeft />}
+            navNext={<ChevronRight />}
             isOutsideRange={day => isBeforeDay(day, moment())}
             phrases={getCopy(copyDictionary, copy)}
           />

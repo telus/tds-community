@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import DecorativeIcon from '@tds/core-decorative-icon'
+import { ChevronLeft, ChevronRight } from '@tds/core-interactive-icon'
 import A11yContent from '@tds/core-a11y-content'
 import { getCopy, safeRest } from '@tds/util-helpers'
 
@@ -170,7 +170,7 @@ class Pagination extends Component {
               onClick={e => this.handleClick(e)}
               aria-label={previousLabel}
             >
-              <DecorativeIcon symbol="leftChevron" size={16} />{' '}
+              <ChevronLeft variant="alternative" size={16} />{' '}
               <ButtonLabel>{previousText}</ButtonLabel>
             </PaginationButtonStyle>
           </PrevPaginationContainer>
@@ -182,7 +182,7 @@ class Pagination extends Component {
               onClick={e => this.handleClick(e)}
               aria-label={NextLabel}
             >
-              <ButtonLabel>{nextText}</ButtonLabel> <DecorativeIcon symbol="chevron" size={16} />
+              <ButtonLabel>{nextText}</ButtonLabel> <ChevronRight variant="alternative" size={16} />
             </PaginationButtonStyle>
           </NextPaginationContainer>
         </Controls>

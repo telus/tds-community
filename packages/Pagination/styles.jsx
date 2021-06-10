@@ -49,6 +49,8 @@ export const PaginationButtonStyle = styled.button({
     width: 'auto',
     height: 'auto',
   }),
+  display: 'flex',
+  alignItems: 'center',
 })
 
 export const ButtonLabel = styled.span({

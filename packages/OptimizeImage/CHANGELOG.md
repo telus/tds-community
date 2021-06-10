@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-optimize-image@1.0.1...@tds/community-optimize-image@1.1.0) (2021-06-10)
+
+
+### Features
+
+* **community-optimize-image:** adding backwards compatibility ([c6603ac](https://github.com/telus/tds-community/commit/c6603ac0b0c80bee99f6040d04fe4294774bf766))
+
+
+
+
+
 ## [1.0.1](https://github.com/telus/tds-community/compare/@tds/community-optimize-image@1.0.0...@tds/community-optimize-image@1.0.1) (2021-04-16)
 
 **Note:** Version bump only for package @tds/community-optimize-image

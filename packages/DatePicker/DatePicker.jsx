@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import momentPropTypes from 'react-moment-proptypes'
-import moment from 'moment'
-import isBeforeDay from 'react-dates/lib/utils/isBeforeDay'
 
 import 'react-dates/initialize'
 import SingleDatePicker from 'react-dates/lib/components/SingleDatePicker'
@@ -80,7 +78,7 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
               daySize={daySize}
               navPrev={getIcon('leftChevron')}
               navNext={getIcon('chevron')}
-              isOutsideRange={day => isBeforeDay(day, moment())}
+              isOutsideRange={isDayDisabled}
               phrases={getCopy(copyDictionary, copy)}
             />
           </React.Fragment>
@@ -100,7 +98,7 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
             daySize={daySize}
             navPrev={getIcon('leftChevron')}
             navNext={getIcon('chevron')}
-            isOutsideRange={day => isBeforeDay(day, moment())}
+            isOutsideRange={isDayDisabled}
             phrases={getCopy(copyDictionary, copy)}
           />
         )}

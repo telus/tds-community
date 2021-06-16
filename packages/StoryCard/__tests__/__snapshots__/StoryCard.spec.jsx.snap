@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryCard renders 1`] = `
+<style__StyledCard>
+  <style__StyledLink
+    href="kids-help-line"
+  >
+    <style__StyledTextBox>
+      <style__StyledInfoBox>
+        <style__StyledIconTypeBox>
+          <style__StyledIconBox>
+            <DecorativeIcon
+              size="20"
+            />
+          </style__StyledIconBox>
+          <style__StyledType>
+            Article
+          </style__StyledType>
+        </style__StyledIconTypeBox>
+        <style__StyledDate>
+          May 11th, 2021
+        </style__StyledDate>
+      </style__StyledInfoBox>
+      <style__StyledHeadingBox>
+        <style__StyledHeading>
+          Crisis Text Line provides mental health support for youth during lockdown
+        </style__StyledHeading>
+      </style__StyledHeadingBox>
+      <style__StyledDescription>
+        With the help of a Foundation grant
+      </style__StyledDescription>
+    </style__StyledTextBox>
+    <style__StyledImageContainer>
+      <style__StyledImage
+        alt="With the help of a Foundation grant"
+        src="blog-example.jpg"
+        width="100%"
+      />
+    </style__StyledImageContainer>
+  </style__StyledLink>
+</style__StyledCard>
+`;

@@ -106,22 +106,6 @@ def build(Map attrs) {
       returnStatus: true,
       script: "oc get istag ${attrs.name}:${attrs.buildVersion}"
     ) == 0
-
-    if (!imageTagExists) {
-      openshiftBuild(
-        buildConfig: attrs.name,
-        commitID: attrs.gitCommitId,
-        waitTime: '3600000'
-      )
-
-      openshiftTag(
-        sourceStream: attrs.name,
-        destinationStream: attrs.name,
-        sourceTag: 'latest',
-        destinationTag: attrs.buildVersion,
-        namespace: env.PROJECT_NAME
-      )
-    }
   }
 }
 

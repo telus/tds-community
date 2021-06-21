@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import Text from '@tds/core-text'
 import { safeRest } from '@tds/util-helpers'
 
-import { colorTelusPurple } from '@tds/core-colours'
+import { colorTelusPurple, colorGreyAthens, colorWhite } from '@tds/core-colours'
 
-const StyledRibbon = styled.div({
+const StyledRibbon = styled.div(({ variant }) => ({
   backgroundColor: colorTelusPurple,
   padding: '0px 1.5rem 0px 1rem',
   position: 'relative',
@@ -22,23 +22,24 @@ const StyledRibbon = styled.div({
     bottom: '-0.5rem',
     width: 0,
     height: 0,
-    borderRight: '0.8125rem solid white',
+    borderRight:
+      variant === 'alt' ? `0.8125rem solid ${colorGreyAthens}` : `0.8125rem solid ${colorWhite}`,
     borderTop: '1.25rem solid transparent',
     borderBottom: '1.25rem solid transparent',
   },
   '> span': {
     lineHeight: '1 !important',
   },
-})
+}))
 
 /**
  * Ribbon component for focusing attention onto a sale or special feature.
  *
  * @version ./package.json
  */
-const Ribbon = ({ children, ...rest }) => {
+const Ribbon = ({ children, variant, ...rest }) => {
   return (
-    <StyledRibbon {...safeRest(rest)}>
+    <StyledRibbon {...safeRest(rest)} variant={variant}>
       <Text bold invert size="small">
         {children}
       </Text>
@@ -51,6 +52,7 @@ Ribbon.propTypes = {
    * Ribbon text.
    */
   children: PropTypes.string.isRequired,
+  variant: PropTypes.string.isRequired,
 }
 
 export default Ribbon

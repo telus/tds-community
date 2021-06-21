@@ -89,6 +89,7 @@ const Link = (
       invert={invert}
       context={context}
       a11yLabel={a11yLabel}
+      aria-expanded={isPanelOpen}
     >
       {isPanelOpen && expandTitle ? expandTitle : collapseTitle}
       {a11yLabel && <A11yContent>{a11yLabel}</A11yContent>}

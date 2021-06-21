@@ -40,7 +40,7 @@ exports[`Ribbon renders 1`] = `
   bottom: -0.5rem;
   width: 0;
   height: 0;
-  border-right: 0.8125rem solid white;
+  border-right: 0.8125rem solid #fff;
   border-top: 1.25rem solid transparent;
   border-bottom: 1.25rem solid transparent;
 }
@@ -61,28 +61,7 @@ exports[`Ribbon renders 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "background-color: #4b286d;",
-              "padding: 0px 1.5rem 0px 1rem;",
-              "position: relative;",
-              "display: inline-block;",
-              "max-width: 100%;",
-              "min-width: 7.875rem;",
-              "height: 1.5rem;",
-              "font-weight: 500;",
-              "&:after {",
-              "content: \\"\\";",
-              "position: absolute;",
-              "right: -0.3125rem;",
-              "bottom: -0.5rem;",
-              "width: 0;",
-              "height: 0;",
-              "border-right: 0.8125rem solid white;",
-              "border-top: 1.25rem solid transparent;",
-              "border-bottom: 1.25rem solid transparent;",
-              "}",
-              "> span {",
-              "line-height: 1 !important;",
-              "}",
+              [Function],
             ],
           },
           "displayName": "Ribbon__StyledRibbon",

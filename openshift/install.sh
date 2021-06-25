@@ -10,15 +10,15 @@ cd `dirname $0`
 
 # Github Token
 vault read -field=ssh-key secret/common/github > id_rsa
-oc create secret generic github-secret --from-file=ssh-privatekey=id_rsa --dry-run -o yaml | oc apply -f -
+oc create secret generic github-secret --from-file=ssh-privatekey=id_rsa --dry-run=client -o yaml | oc apply -f -
 rm id_rsa
 
 # NPM Read and Publish Token
-oc create secret generic npmrc-secret --from-literal=.npmrc=$(vault read -field=npmrc secret/projects/npm-libraries/npm) --dry-run -o yaml | oc apply -f -
+oc create secret generic npmrc-secret --from-literal=.npmrc=$(vault read -field=npmrc secret/projects/npm-libraries/npm) --dry-run=client -o yaml | oc apply -f -
 
 # AWS
-oc create secret generic aws-client-secret --from-literal=aws.client=$(vault read -field=client secret/projects/o-design-outcomes/tds-s3) --dry-run -o yaml | oc apply -f -
-oc create secret generic aws-secret-key-secret --from-literal=aws.secret=$(vault read -field=secret secret/projects/o-design-outcomes/tds-s3) --dry-run -o yaml | oc apply -f -
+oc create secret generic aws-client-secret --from-literal=aws.client=$(vault read -field=client secret/projects/o-design-outcomes/tds-s3) --dry-run=client -o yaml | oc apply -f -
+oc create secret generic aws-secret-key-secret --from-literal=aws.secret=$(vault read -field=secret secret/projects/o-design-outcomes/tds-s3) --dry-run=client -o yaml | oc apply -f -
 
 # Install templates
 oc apply -f openshift-template.yml

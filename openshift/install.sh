@@ -27,4 +27,4 @@ oc apply -f openshift-template.yml
 oc process tds-community-pipeline BRANCH=${BRANCH} | oc apply -f -
 
 # Trigger initial build
-oc start-build tds-community-pipeline
+oc start-build tds-community-pipeline --follow --commit=${COMMIT} --wait=true

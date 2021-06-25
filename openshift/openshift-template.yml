@@ -17,7 +17,7 @@ items:
 
   # Configure our build pipeline template
   # https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
-  - apiVersion: image.openshift.io/v1
+  - apiVersion: template.openshift.io/v1
     kind: Template
     metadata:
       name: tds-community-pipeline
@@ -28,7 +28,7 @@ items:
     objects:
       # Configures the OpenShift/Jenkins build pipeline
       # https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#defining-a-buildconfig
-      - apiVersion: image.openshift.io/v1
+      - apiVersion: build.openshift.io/v1
         kind: BuildConfig
         metadata:
           name: tds-community-pipeline
@@ -62,7 +62,7 @@ items:
       # Configure our Docker container build
       # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
       - kind: BuildConfig
-        apiVersion: image.openshift.io/v1
+        apiVersion: build.openshift.io/v1
         metadata:
           name: tds-community
           labels:

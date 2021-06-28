@@ -16,6 +16,14 @@ export const StyledCard = styled.div`
     transform: scale(103%);
     border: 0.125rem solid ${colorTelusPurple};
   }
+  @media (max-width: 414px) {
+    max-width: 20rem;
+    min-height: 33rem;
+  }
+  @media (max-width: 320px) {
+    max-width: 18rem;
+    min-height: 32rem;
+  }
 `
 
 export const StyledLink = styled.a`
@@ -24,12 +32,19 @@ export const StyledLink = styled.a`
 `
 
 export const StyledTextBox = styled.div`
-  padding: 1.5rem 1rem;
+  padding: 0 1rem;
 `
 
 export const StyledInfoBox = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 2rem 0;
+  @media (max-width: 414px) {
+    padding: 1.5rem 0 2rem 0;
+  }
+  @media (max-width: 320px) {
+    padding: 1.5rem 0 1rem 0;
+  }
 `
 
 export const StyledType = styled.p`
@@ -48,7 +63,10 @@ export const StyledHeading = styled.h2`
 `
 
 export const StyledHeadingBox = styled.div`
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
+  @media (max-width: 320px) {
+    padding-bottom: 1rem;
+  }
 `
 
 export const StyledIconBox = styled.div`
@@ -59,15 +77,23 @@ export const StyledImageContainer = styled.div``
 
 export const StyledDescription = styled.p`
   font-size: 0.875rem;
+  padding-bottom: 1.5rem;
+  @media (max-width: 414px) {
+    padding-bottom: 1rem;
+  }
 `
 
 export const StyledIconTypeBox = styled.div`
   display: flex;
   border-bottom: 1px solid ${colorTelusPurple};
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
+  @media (max-width: 414px) {
+    padding-bottom: 0.5rem;
+  }
 `
 
 export const StyledImage = styled.img`
   display: block;
   border-radius: 0 0 2px 2px;
+  width: 100%;
 `

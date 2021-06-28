@@ -41,17 +41,17 @@ const Modal = ({
   const modalRef = useRef(null)
   const header = useRef(null)
 
-  const handleClose = () => {
+  const handleClose = (e) => {
     if (focusElementAfterClose && focusElementAfterClose.current) {
       focusElementAfterClose.current.focus()
     }
-    return onClose()
+    return onClose(e)
   }
 
   const handleKeyDown = e => {
     const key = e.keyCode || e.key
     if (key === 'Escape' || key === 27) {
-      return handleClose()
+      return handleClose(e)
     }
     return null
   }
@@ -69,7 +69,7 @@ const Modal = ({
 
   const handleOutSideClick = e => {
     if (!modalRef.current.contains(e.target)) {
-      handleClose()
+      handleClose(e)
     }
   }
 

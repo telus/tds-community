@@ -31,7 +31,7 @@ const StoryCard = ({ storyType, date, title, description, imgUrl, href }) => {
         return <Clipboard size={20} />
       }
     }
-    return undefined
+    return <News size={20} />
   }
 
   return (
@@ -53,7 +53,7 @@ const StoryCard = ({ storyType, date, title, description, imgUrl, href }) => {
           <StyledDescription>{description}</StyledDescription>
         </StyledTextBox>
         <StyledImageContainer>
-          <StyledImage src={imgUrl} alt={description} width="100%" />
+          <StyledImage src={imgUrl} alt={description} />
         </StyledImageContainer>
       </StyledCard>
     </StyledLink>
@@ -78,7 +78,7 @@ StoryCard.propTypes = {
    */
   href: PropTypes.string.isRequired,
   /**
-   * The type of story, if it is one of Article, Podcast or Video, an icon will render beside it. If it is something else, there will be no icon.
+   * The type of story, one of Article, Podcast or Video. Default is Article
    */
   storyType: PropTypes.string,
   /**
@@ -88,7 +88,7 @@ StoryCard.propTypes = {
 }
 
 StoryCard.defaultProps = {
-  storyType: undefined,
+  storyType: 'Article',
   date: undefined,
 }
 

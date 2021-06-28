@@ -35,7 +35,6 @@ exports[`StoryCard renders with all props 1`] = `
       <style__StyledImage
         alt="With the help of a Foundation grant"
         src="blog-example.jpg"
-        width="100%"
       />
     </style__StyledImageContainer>
   </style__StyledCard>
@@ -51,7 +50,14 @@ exports[`StoryCard renders without required prop 1`] = `
     <style__StyledTextBox>
       <style__StyledInfoBox>
         <style__StyledIconTypeBox>
-          <style__StyledType />
+          <style__StyledIconBox>
+            <DecorativeIcon
+              size={20}
+            />
+          </style__StyledIconBox>
+          <style__StyledType>
+            Article
+          </style__StyledType>
         </style__StyledIconTypeBox>
         <style__StyledDate />
       </style__StyledInfoBox>
@@ -68,7 +74,6 @@ exports[`StoryCard renders without required prop 1`] = `
       <style__StyledImage
         alt="With the help of a Foundation grant"
         src="blog-example.jpg"
-        width="100%"
       />
     </style__StyledImageContainer>
   </style__StyledCard>

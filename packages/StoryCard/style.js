@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-import { colorGreyGainsboro, colorTelusPurple, colorWhite } from '@tds/core-colours'
+import { colorGreyGainsboro, colorTelusPurple, colorWhite, colorShark } from '@tds/core-colours'
 
 export const StyledCard = styled.div`
+  margin: 0;
   max-width: 29.188rem;
-  min-height: 38.875rem;
+  min-height: 625.75px;
   background: ${colorWhite};
   border-radius: 3px;
   border: 1px solid ${colorGreyGainsboro};
@@ -27,15 +28,18 @@ export const StyledCard = styled.div`
 `
 
 export const StyledLink = styled.a`
+  margin: 0;
   text-decoration: none;
   color: inherit;
 `
 
 export const StyledTextBox = styled.div`
+  margin: 0;
   padding: 0 1rem;
 `
 
 export const StyledInfoBox = styled.div`
+  margin: 0;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
@@ -48,21 +52,26 @@ export const StyledInfoBox = styled.div`
 `
 
 export const StyledType = styled.p`
+  margin: 0;
   color: ${colorTelusPurple};
   font-size: 0.875rem;
 `
 
 export const StyledDate = styled.p`
+  margin: 0;
   font-size: 0.875rem;
 `
 
 export const StyledHeading = styled.h2`
+  margin: 0;
   font-size: 1.219rem;
   font-weight: 400;
   line-height: 1.4;
+  color: ${colorShark};
 `
 
 export const StyledHeadingBox = styled.div`
+  margin: 0;
   padding-bottom: 1.5rem;
   @media (max-width: 320px) {
     padding-bottom: 1rem;
@@ -70,12 +79,14 @@ export const StyledHeadingBox = styled.div`
 `
 
 export const StyledIconBox = styled.div`
+  margin: 0;
   padding-right: 0.5rem;
 `
 
 export const StyledImageContainer = styled.div``
 
 export const StyledDescription = styled.p`
+  margin: 0;
   font-size: 0.875rem;
   padding-bottom: 1.5rem;
   @media (max-width: 414px) {
@@ -84,6 +95,7 @@ export const StyledDescription = styled.p`
 `
 
 export const StyledIconTypeBox = styled.div`
+  margin: 0;
   display: flex;
   border-bottom: 1px solid ${colorTelusPurple};
   padding-bottom: 1rem;
@@ -93,6 +105,7 @@ export const StyledIconTypeBox = styled.div`
 `
 
 export const StyledImage = styled.img`
+  margin: 0;
   display: block;
   border-radius: 0 0 2px 2px;
   width: 100%;

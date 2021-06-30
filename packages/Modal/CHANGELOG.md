@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.3.0...@tds/community-modal@1.4.0) (2021-06-30)
+
+
+### Features
+
+* **Modal:** pass event to onClose ([8f74286](https://github.com/telus/tds-community/commit/8f742865352a67e47c1feb350f9a1d3e0e89418c))
+
+
+
+
+
 # [1.3.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.2.2...@tds/community-modal@1.3.0) (2021-03-18)
 
 

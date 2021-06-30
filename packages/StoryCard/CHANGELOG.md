@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/telus/tds-community/compare/@tds/community-story-card@1.0.1...@tds/community-story-card@1.0.2) (2021-06-30)
+
+
+### Bug Fixes
+
+* **community-story-card:** update util helper version ([9cdbfa9](https://github.com/telus/tds-community/commit/9cdbfa98b6c6174690a93ec058ab61d74857ed29))
+
+
+
+
+
 ## [1.0.1](https://github.com/telus/tds-community/compare/@tds/community-story-card@1.0.0...@tds/community-story-card@1.0.1) (2021-06-29)
 
 

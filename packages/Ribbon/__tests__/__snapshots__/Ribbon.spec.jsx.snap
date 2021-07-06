@@ -23,26 +23,28 @@ exports[`Ribbon renders 1`] = `
 }
 
 .c0 {
-  background-color: #4b286d;
-  padding: 0px 1.5rem 0px 1rem;
-  position: relative;
-  display: inline-block;
   max-width: 100%;
-  min-width: 7.875rem;
+  min-width: 7rem;
   height: 1.5rem;
   font-weight: 500;
+  background-color: #4b286d;
+  padding: 0rem 1rem;
+  display: inline-block;
+  position: relative;
+  left: 0px;
 }
 
 .c0:after {
   content: "";
   position: absolute;
-  right: -0.3125rem;
-  bottom: -0.5rem;
-  width: 0;
-  height: 0;
-  border-right: 0.8125rem solid white;
-  border-top: 1.25rem solid transparent;
-  border-bottom: 1.25rem solid transparent;
+  width: 0px;
+  height: 0px;
+  right: -0.75rem;
+  top: 0px;
+  border-style: solid;
+  border-color: #4b286d transparent;
+  border-radius: 0.0625rem;
+  border-width: .75rem;
 }
 
 .c0 > span {
@@ -61,24 +63,26 @@ exports[`Ribbon renders 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "background-color: #4b286d;",
-              "padding: 0px 1.5rem 0px 1rem;",
-              "position: relative;",
-              "display: inline-block;",
               "max-width: 100%;",
-              "min-width: 7.875rem;",
+              "min-width: 7rem;",
               "height: 1.5rem;",
               "font-weight: 500;",
+              "background-color: #4b286d;",
+              "padding: 0rem 1rem;",
+              "display: inline-block;",
+              "position: relative;",
+              "left: 0px;",
               "&:after {",
               "content: \\"\\";",
               "position: absolute;",
-              "right: -0.3125rem;",
-              "bottom: -0.5rem;",
-              "width: 0;",
-              "height: 0;",
-              "border-right: 0.8125rem solid white;",
-              "border-top: 1.25rem solid transparent;",
-              "border-bottom: 1.25rem solid transparent;",
+              "width: 0px;",
+              "height: 0px;",
+              "right: -0.75rem;",
+              "top: 0px;",
+              "border-style: solid;",
+              "border-color: #4b286d transparent;",
+              "border-radius: 0.0625rem;",
+              "border-width: .75rem;",
               "}",
               "> span {",
               "line-height: 1 !important;",

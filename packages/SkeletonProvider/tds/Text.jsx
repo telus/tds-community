@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Text from '@tds/core-text'
-import uuid from 'uuid/v1'
 import styled from 'styled-components'
 import Skeleton from '../../Skeleton/Skeleton'
 import withSkeleton from '../withSkeleton'
@@ -44,8 +43,9 @@ const TextSkeleton = ({ skeleton, ...rest }) => {
 
   return (
     <StyledTextSkeleton>
-      {[...Array(lines)].map(() => (
-        <div key={uuid()}>
+      {[...Array(lines)].map((_, idx) => (
+        // eslint-disable-next-line react/no-array-index-key
+        <div key={idx}>
           <Skeleton size={skSize} characters={characters} />
         </div>
       ))}

@@ -13,7 +13,6 @@ exports[`Footer renders 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -34,18 +33,38 @@ exports[`Footer renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #fff;
-  color: #2a2c2e;
+  text-align: center;
+  min-height: 3.25rem;
+  background-color: #2B8000;
+  color: #fff;
+  -webkit-transition: background 0.2s,color 0.2s,border 0.2s ease;
+  transition: background 0.2s,color 0.2s,border 0.2s ease;
+}
+
+.c1:after {
+  content: "";
+  min-height: inherit;
+  font-size: 0;
 }
 
 .c1:hover {
-  box-shadow: 0 0 0 1px;
-  background-color: transparent;
-  color: #fff;
+  background-color: #1F5C09;
+  box-shadow: 0 0 0 0.125rem #1F5C09;
+}
+
+.c1:active {
+  background-color: #163E06 !important;
+}
+
+.c1:focus {
+  outline: none !important;
+  background-color: #1F5C09;
+  box-shadow: 0 0 0 0.1875rem #509F33,0 0 0 0.125rem #fff inset;
 }
 
 .c2 {
   width: 100%;
+  margin-top: -1px;
 }
 
 @media (min-width:768px) {
@@ -56,6 +75,21 @@ exports[`Footer renders 1`] = `
     display: inline-flex;
     width: auto;
     min-width: 180px;
+  }
+}
+
+@media (hover:none) {
+  .c1:hover {
+    box-shadow: none;
+    background-color: #2B8000;
+    color: #fff;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c1 {
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 
@@ -92,6 +126,9 @@ exports[`Footer renders 1`] = `
 }
 
 <Footer
+  cancelButtonText=""
+  cancelButtonType="linkWithoutIcon"
+  confirmButtonVariant="standard"
   footerContent={
     Object {
       "cancelCTAContent": Object {
@@ -201,7 +238,6 @@ exports[`Footer renders 1`] = `
                         "line-height: 1.5;",
                         "word-wrap: break-word;",
                         "font-weight: 700;",
-                        "height: 3.25rem;",
                         "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                         "margin: 0;",
                         "padding: 0 2rem;",
@@ -212,10 +248,17 @@ exports[`Footer renders 1`] = `
                         "width: 100%;",
                         "align-items: center;",
                         "justify-content: center;",
+                        "text-align: center;",
+                        "min-height: 3.25rem;",
                         "@media (min-width: 768px) {",
                         "display: inline-flex;",
                         "width: auto;",
                         "min-width: 180px;",
+                        "}",
+                        "&:after {",
+                        "content: \\"\\";",
+                        "min-height: inherit;",
+                        "font-size: 0;",
                         "}",
                         [Function],
                       ],
@@ -240,7 +283,9 @@ exports[`Footer renders 1`] = `
                   data-testid="confirm-button"
                   type="button"
                 >
-                  <Button__ButtonTextWrapper>
+                  <Button__ButtonTextWrapper
+                    isOldButton={false}
+                  >
                     <StyledComponent
                       forwardedComponent={
                         Object {
@@ -251,7 +296,7 @@ exports[`Footer renders 1`] = `
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "width: 100%;",
+                              [Function],
                             ],
                           },
                           "displayName": "Button__ButtonTextWrapper",
@@ -265,116 +310,11 @@ exports[`Footer renders 1`] = `
                         }
                       }
                       forwardedRef={null}
+                      isOldButton={false}
                     >
                       <span
                         className="c2"
-                      >
-                        Confirm
-                      </span>
-                    </StyledComponent>
-                  </Button__ButtonTextWrapper>
-                </button>
-              </StyledComponent>
-            </Button__StyledButton>
-          </Button>
-          <Button
-            data-testid="cancel-button"
-            type="button"
-            variant="danger"
-          >
-            <Button__StyledButton
-              data-testid="cancel-button"
-              type="button"
-              variant="danger"
-            >
-              <StyledComponent
-                data-testid="cancel-button"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Button__StyledButton-sa7xo3-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "border-width: 0;",
-                        "border-radius: 4px;",
-                        "word-wrap: break-word;",
-                        "font-size: 1rem;",
-                        "letter-spacing: -0.8px;",
-                        "line-height: 1.5;",
-                        "word-wrap: break-word;",
-                        "font-weight: 700;",
-                        "height: 3.25rem;",
-                        "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                        "margin: 0;",
-                        "padding: 0 2rem;",
-                        "cursor: pointer;",
-                        "background: none;",
-                        "transition: background 0.2s;",
-                        "display: flex;",
-                        "width: 100%;",
-                        "align-items: center;",
-                        "justify-content: center;",
-                        "@media (min-width: 768px) {",
-                        "display: inline-flex;",
-                        "width: auto;",
-                        "min-width: 180px;",
-                        "}",
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Button__StyledButton",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Button__StyledButton-sa7xo3-0",
-                    "target": "button",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                type="button"
-                variant="danger"
-              >
-                <button
-                  className="c1"
-                  data-testid="cancel-button"
-                  type="button"
-                >
-                  <Button__ButtonTextWrapper>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Button__ButtonTextWrapper-sa7xo3-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              "width: 100%;",
-                            ],
-                          },
-                          "displayName": "Button__ButtonTextWrapper",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "Button__ButtonTextWrapper-sa7xo3-1",
-                          "target": "span",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <span
-                        className="c2"
-                      >
-                        Cancel
-                      </span>
+                      />
                     </StyledComponent>
                   </Button__ButtonTextWrapper>
                 </button>

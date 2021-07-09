@@ -1,23 +1,35 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import Box from '@tds/core-box'
-import Button from '@tds/core-button'
+import HairlineDivider from '@tds/core-hairline-divider'
+import DimpleDivider from '@tds/core-dimple-divider'
 import Paragraph from '@tds/core-paragraph'
 import { safeRest } from '@tds/util-helpers'
 import { Close, IconButton } from '@tds/core-interactive-icon'
-import Heading from '@tds/core-heading'
 import { withFocusTrap } from '@tds/shared-hocs'
 
 import {
+  TEXT_SIZES,
+  HEADER_LEVELS,
+  CANCELLATION_BUTTON_TYPES,
+  BUTTON_VARIANTS,
+  NOTIFICATION_VARIANTS,
+  NOTIFICATION_COPY,
+} from './configs'
+import Footer from './Footer/Footer'
+import Header from './Header/Header'
+
+import {
   StyledModal,
-  CTAWrapper,
   CloseButtonWrapper,
   FullScreenOverlay,
   ModalWrapper,
-  PaddingOverride,
-  OutlineButton,
   StyledBox,
+  HeaderWrapper,
+  FooterWrapper,
+  HairlineDividerWrapper,
+  ContentWrapper,
 } from './styles'
 
 const FocusTrap = withFocusTrap('div')
@@ -27,7 +39,16 @@ const FocusTrap = withFocusTrap('div')
  */
 const Modal = ({
   heading,
+  headingLevel,
+  subHeading,
+  subHeadingSize,
+  notification,
+  notificationTextSize,
+  notificationVariant,
+  notificationCopy,
+  confirmButtonVariant,
   confirmCTAText,
+  cancelButtonType,
   cancelCTAText,
   bodyText,
   isOpen,
@@ -35,13 +56,18 @@ const Modal = ({
   onConfirm,
   focusElementAfterClose,
   width,
+  showHeaderHairlineDivider,
+  showHeaderDimpleDivider,
+  showFooterHairlineDivider,
   ...rest
 }) => {
+  const [offsetHeight, setOffsetHeight] = useState(0)
+
   const ModalOverlayRef = useRef(null)
   const modalRef = useRef(null)
   const header = useRef(null)
 
-  const handleClose = (e) => {
+  const handleClose = e => {
     if (focusElementAfterClose && focusElementAfterClose.current) {
       focusElementAfterClose.current.focus()
     }
@@ -92,15 +118,35 @@ const Modal = ({
     }
   }, [isOpen])
 
+  useEffect(() => {
+    const headerHeight = document.querySelector('#header-wrapper')
+      ? document.querySelector('#header-wrapper').offsetHeight
+      : 0
+    const footerHeight = document.querySelector('#footer-wrapper')
+      ? document.querySelector('#footer-wrapper').offsetHeight
+      : 0
+    setOffsetHeight(headerHeight + footerHeight)
+  }, [isOpen])
+
   const modalHeading =
     typeof heading === 'string' ? (
-      <Heading level="h3" tag="div">
-        {heading}
-      </Heading>
+      <Header
+        heading={heading}
+        headingLevel={headingLevel}
+        subHeading={subHeading}
+        subHeadingSize={subHeadingSize}
+        notification={notification}
+        notificationTextSize={notificationTextSize}
+        notificationVariant={notificationVariant}
+        notificationCopy={notificationCopy}
+      />
     ) : (
       heading
     )
+
+  const showHeaderDivider = showHeaderHairlineDivider || showHeaderDimpleDivider
   const description = typeof bodyText === 'string' ? <Paragraph>{bodyText}</Paragraph> : bodyText
+
   return (
     <React.Fragment>
       {isOpen && (
@@ -113,30 +159,47 @@ const Modal = ({
           >
             <StyledModal ref={modalRef} width={width}>
               <ModalWrapper>
-                <Box inset={5}>
+                <Box inset={4}>
                   <StyledBox between={3}>
                     <div ref={header} tabIndex="-1">
-                      {modalHeading}
+                      <HeaderWrapper id="header-wrapper">
+                        <Box between={3} below={showHeaderDivider ? 4 : 3}>
+                          {modalHeading}
+                          {showHeaderHairlineDivider && <HairlineDivider />}
+                          {showHeaderDimpleDivider && <DimpleDivider />}
+                        </Box>
+                      </HeaderWrapper>
                     </div>
-                    {description}
                   </StyledBox>
+                  <ContentWrapper
+                    offsetHeight={offsetHeight}
+                    showHeaderDivider={showHeaderDivider}
+                    showFooter={Boolean(confirmCTAText)}
+                  >
+                    {description}
+                  </ContentWrapper>
                   {confirmCTAText && (
-                    <PaddingOverride>
-                      <Box vertical={4}>
-                        <CTAWrapper cancelCTAExists={cancelCTAText}>
-                          <Button onClick={onConfirm}>{confirmCTAText}</Button>
-                          {cancelCTAText && (
-                            <OutlineButton onClick={handleClose}>{cancelCTAText}</OutlineButton>
-                          )}
-                        </CTAWrapper>
+                    <FooterWrapper id="footer-wrapper">
+                      <Box between={3}>
+                        <HairlineDividerWrapper decreaseMargin={showFooterHairlineDivider}>
+                          {showFooterHairlineDivider && <HairlineDivider />}
+                        </HairlineDividerWrapper>
+                        <Footer
+                          cancelButtonText={cancelCTAText}
+                          cancelButtonType={cancelButtonType}
+                          confirmButtonText={confirmCTAText}
+                          confirmButtonVariant={confirmButtonVariant}
+                          handleClose={handleClose}
+                          handleConfirm={onConfirm}
+                        />
                       </Box>
-                    </PaddingOverride>
+                    </FooterWrapper>
                   )}
                 </Box>
+                <CloseButtonWrapper>
+                  <IconButton icon={Close} onClick={handleClose} a11yText="Close" />
+                </CloseButtonWrapper>
               </ModalWrapper>
-              <CloseButtonWrapper>
-                <IconButton icon={Close} onClick={handleClose} a11yText="Close" />
-              </CloseButtonWrapper>
             </StyledModal>
           </FullScreenOverlay>
         </FocusTrap>
@@ -151,15 +214,61 @@ Modal.propTypes = {
    */
   heading: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   /**
+   * The visual level of the heading.
+   */
+  headingLevel: PropTypes.oneOf(Object.values(HEADER_LEVELS)),
+  /**
+   * Text that will appear underneath the heading.
+   */
+  subHeading: PropTypes.string,
+  /**
+   * Size of the subheading text.
+   */
+  subHeadingSize: PropTypes.oneOf(Object.values(TEXT_SIZES)),
+  /**
+   *
+   * Text that will appear in the notification inside the heading.
+   */
+  notification: PropTypes.string,
+  /**
+   * Size of the notification text.
+   */
+  notificationTextSize: PropTypes.oneOf(Object.values(TEXT_SIZES)),
+  /**
+   * Appearance of the notification text.
+   */
+  notificationVariant: PropTypes.oneOf(Object.values(NOTIFICATION_VARIANTS)),
+  /**
+   * Use this prop to select provided English or French copy by passing in 'en'
+   * or 'fr' respectively
+   */
+  notificationCopy: PropTypes.oneOfType([
+    PropTypes.oneOf(Object.values(NOTIFICATION_COPY)),
+    PropTypes.shape({
+      feedback: PropTypes.string.isRequired,
+      close: PropTypes.string.isRequired,
+    }),
+  ]),
+  /**
    *
    * Text that will appear in the middle of the content section.
    */
   bodyText: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   /**
    *
+   * Set the variant of the confirm button
+   */
+  confirmButtonVariant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
+  /**
+   *
    * Text that represents confirm CTA.
    */
   confirmCTAText: PropTypes.string,
+  /**
+   *
+   * Text that represents cancel CTA or closing modal action.
+   */
+  cancelButtonType: PropTypes.oneOf(Object.values(CANCELLATION_BUTTON_TYPES)),
   /**
    *
    * Text that represents cancel CTA or closing modal action.
@@ -198,13 +307,40 @@ Modal.propTypes = {
    * Accepts a numeric value that lies in the range between minWidth(570) - maxWidth(736).
    */
   width: PropTypes.number,
+  /**
+   *
+   * Show the hairline divider underneath the heading.
+   */
+  showHeaderHairlineDivider: PropTypes.bool,
+  /**
+   *
+   * Show the hairline divider underneath the heading.
+   */
+  showHeaderDimpleDivider: PropTypes.bool,
+  /**
+   *
+   * Show the hairline divider above the footer.
+   */
+  showFooterHairlineDivider: PropTypes.bool,
 }
 
 Modal.defaultProps = {
+  headingLevel: HEADER_LEVELS.H3,
+  subHeading: 'Hello World',
+  subHeadingSize: TEXT_SIZES.MEDIUM,
+  notification: 'Hello World',
+  notificationTextSize: TEXT_SIZES.MEDIUM,
+  notificationVariant: NOTIFICATION_VARIANTS.INSTRUCTIONAL,
+  confirmButtonVariant: BUTTON_VARIANTS.STANDARD,
+  notificationCopy: NOTIFICATION_COPY.EN,
   confirmCTAText: '',
+  cancelButtonType: CANCELLATION_BUTTON_TYPES.LINK_WITHOUT_ICON,
   cancelCTAText: '',
   width: 570,
   onConfirm: null,
+  showHeaderHairlineDivider: true,
+  showHeaderDimpleDivider: false,
+  showFooterHairlineDivider: true,
 }
 
 export default Modal

@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders 1`] = `
+.c2 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c2 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c2 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+<Header
+  heading={
+    Object {
+      "level": "h3",
+      "text": "Mock text",
+    }
+  }
+  subHeading={
+    Object {
+      "size": "medium",
+      "text": "",
+    }
+  }
+>
+  <Box
+    between={3}
+    inline={false}
+    tabIndex="0"
+    tag="div"
+  >
+    <styled.div
+      between={3}
+      inline={false}
+      tabIndex="0"
+      tag="div"
+    >
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={false}
+        tabIndex="0"
+        tag="div"
+      >
+        <div
+          className="c0"
+          tabIndex="0"
+        >
+          <Box
+            between={3}
+            inline={
+              Object {
+                "md": true,
+                "xs": false,
+              }
+            }
+            tag="div"
+          >
+            <styled.div
+              between={3}
+              inline={
+                Object {
+                  "md": true,
+                  "xs": false,
+                }
+              }
+              tag="div"
+            >
+              <StyledComponent
+                between={3}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                inline={
+                  Object {
+                    "md": true,
+                    "xs": false,
+                  }
+                }
+                tag="div"
+              >
+                <div
+                  className="c1"
+                >
+                  <Heading
+                    invert={false}
+                    level="h3"
+                  >
+                    <Heading__StyledHeading
+                      as="h3"
+                      data-testid="heading"
+                      invert={false}
+                      level="h3"
+                    >
+                      <StyledComponent
+                        as="h3"
+                        data-testid="heading"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Heading__StyledHeading-mpz92r-0",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "word-wrap: break-word;",
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Heading__StyledHeading",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Heading__StyledHeading-mpz92r-0",
+                            "target": "h1",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        invert={false}
+                        level="h3"
+                      >
+                        <h3
+                          className="c2"
+                          data-testid="heading"
+                        >
+                          Mock text
+                        </h3>
+                      </StyledComponent>
+                    </Heading__StyledHeading>
+                  </Heading>
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </Box>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Box>
+</Header>
+`;

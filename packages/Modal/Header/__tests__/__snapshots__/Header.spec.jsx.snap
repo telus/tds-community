@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders 1`] = `
-.c2 {
+.c1 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,7 +13,7 @@ exports[`Header renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c2 sup {
+.c1 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -21,7 +21,7 @@ exports[`Header renders 1`] = `
   top: -0.5em;
 }
 
-.c2 > span {
+.c1 > span {
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -42,51 +42,15 @@ exports[`Header renders 1`] = `
   margin-bottom: 1rem;
 }
 
-@media (max-width:767px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c1 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c1 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
 <Header
-  heading={
-    Object {
-      "level": "h3",
-      "text": "Mock text",
-    }
-  }
-  subHeading={
-    Object {
-      "size": "medium",
-      "text": "",
-    }
-  }
+  heading="Mock text"
+  headingLevel="h3"
+  notification=""
+  notificationCopy="en"
+  notificationTextSize="medium"
+  notificationVariant="instructional"
+  subHeading=""
+  subHeadingSize="medium"
 >
   <Box
     between={3}
@@ -111,7 +75,7 @@ exports[`Header renders 1`] = `
             "componentStyle": ComponentStyle {
               "componentId": "sc-bdVaJa",
               "isStatic": false,
-              "lastClassName": "c1",
+              "lastClassName": "c0",
               "rules": Array [
                 [Function],
                 [Function],
@@ -141,22 +105,12 @@ exports[`Header renders 1`] = `
         >
           <Box
             between={3}
-            inline={
-              Object {
-                "md": true,
-                "xs": false,
-              }
-            }
+            inline={false}
             tag="div"
           >
             <styled.div
               between={3}
-              inline={
-                Object {
-                  "md": true,
-                  "xs": false,
-                }
-              }
+              inline={false}
               tag="div"
             >
               <StyledComponent
@@ -170,7 +124,7 @@ exports[`Header renders 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bdVaJa",
                       "isStatic": false,
-                      "lastClassName": "c1",
+                      "lastClassName": "c0",
                       "rules": Array [
                         [Function],
                         [Function],
@@ -190,16 +144,11 @@ exports[`Header renders 1`] = `
                   }
                 }
                 forwardedRef={null}
-                inline={
-                  Object {
-                    "md": true,
-                    "xs": false,
-                  }
-                }
+                inline={false}
                 tag="div"
               >
                 <div
-                  className="c1"
+                  className="c0"
                 >
                   <Heading
                     invert={false}
@@ -221,7 +170,7 @@ exports[`Header renders 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "Heading__StyledHeading-mpz92r-0",
                               "isStatic": false,
-                              "lastClassName": "c2",
+                              "lastClassName": "c1",
                               "rules": Array [
                                 "word-wrap: break-word;",
                                 [Function],
@@ -242,7 +191,7 @@ exports[`Header renders 1`] = `
                         level="h3"
                       >
                         <h3
-                          className="c2"
+                          className="c1"
                           data-testid="heading"
                         >
                           Mock text

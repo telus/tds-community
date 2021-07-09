@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders 1`] = `
+.c1 {
+  border-width: 0;
+  border-radius: 4px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+  height: 3.25rem;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0 2rem;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #2a2c2e;
+}
+
+.c1:hover {
+  box-shadow: 0 0 0 1px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.c2 {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+<Footer
+  footerContent={
+    Object {
+      "cancelCTAContent": Object {
+        "showIcon": true,
+        "text": "Cancel",
+        "type": "button",
+        "variant": "danger",
+      },
+      "confirmCTAContent": Object {
+        "rank": "main",
+        "text": "Confirm",
+        "variant": "standard",
+      },
+    }
+  }
+>
+  <Box
+    between={3}
+    inline={
+      Object {
+        "md": true,
+        "xs": false,
+      }
+    }
+    tag="div"
+  >
+    <styled.div
+      between={3}
+      inline={
+        Object {
+          "md": true,
+          "xs": false,
+        }
+      }
+      tag="div"
+    >
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={
+          Object {
+            "md": true,
+            "xs": false,
+          }
+        }
+        tag="div"
+      >
+        <div
+          className="c0"
+        >
+          <Button
+            data-testid="confirm-button"
+            rank="main"
+            type="button"
+            variant="standard"
+          >
+            <Button__StyledButton
+              data-testid="confirm-button"
+              rank="main"
+              type="button"
+              variant="standard"
+            >
+              <StyledComponent
+                data-testid="confirm-button"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Button__StyledButton-sa7xo3-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "border-width: 0;",
+                        "border-radius: 4px;",
+                        "word-wrap: break-word;",
+                        "font-size: 1rem;",
+                        "letter-spacing: -0.8px;",
+                        "line-height: 1.5;",
+                        "word-wrap: break-word;",
+                        "font-weight: 700;",
+                        "height: 3.25rem;",
+                        "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                        "margin: 0;",
+                        "padding: 0 2rem;",
+                        "cursor: pointer;",
+                        "background: none;",
+                        "transition: background 0.2s;",
+                        "display: flex;",
+                        "width: 100%;",
+                        "align-items: center;",
+                        "justify-content: center;",
+                        "@media (min-width: 768px) {",
+                        "display: inline-flex;",
+                        "width: auto;",
+                        "min-width: 180px;",
+                        "}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Button__StyledButton",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Button__StyledButton-sa7xo3-0",
+                    "target": "button",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                rank="main"
+                type="button"
+                variant="standard"
+              >
+                <button
+                  className="c1"
+                  data-testid="confirm-button"
+                  type="button"
+                >
+                  <Button__ButtonTextWrapper>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Button__ButtonTextWrapper-sa7xo3-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "width: 100%;",
+                            ],
+                          },
+                          "displayName": "Button__ButtonTextWrapper",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Button__ButtonTextWrapper-sa7xo3-1",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <span
+                        className="c2"
+                      >
+                        Confirm
+                      </span>
+                    </StyledComponent>
+                  </Button__ButtonTextWrapper>
+                </button>
+              </StyledComponent>
+            </Button__StyledButton>
+          </Button>
+          <Button
+            data-testid="cancel-button"
+            type="button"
+            variant="danger"
+          >
+            <Button__StyledButton
+              data-testid="cancel-button"
+              type="button"
+              variant="danger"
+            >
+              <StyledComponent
+                data-testid="cancel-button"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Button__StyledButton-sa7xo3-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "border-width: 0;",
+                        "border-radius: 4px;",
+                        "word-wrap: break-word;",
+                        "font-size: 1rem;",
+                        "letter-spacing: -0.8px;",
+                        "line-height: 1.5;",
+                        "word-wrap: break-word;",
+                        "font-weight: 700;",
+                        "height: 3.25rem;",
+                        "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                        "margin: 0;",
+                        "padding: 0 2rem;",
+                        "cursor: pointer;",
+                        "background: none;",
+                        "transition: background 0.2s;",
+                        "display: flex;",
+                        "width: 100%;",
+                        "align-items: center;",
+                        "justify-content: center;",
+                        "@media (min-width: 768px) {",
+                        "display: inline-flex;",
+                        "width: auto;",
+                        "min-width: 180px;",
+                        "}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Button__StyledButton",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Button__StyledButton-sa7xo3-0",
+                    "target": "button",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                type="button"
+                variant="danger"
+              >
+                <button
+                  className="c1"
+                  data-testid="cancel-button"
+                  type="button"
+                >
+                  <Button__ButtonTextWrapper>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Button__ButtonTextWrapper-sa7xo3-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "width: 100%;",
+                            ],
+                          },
+                          "displayName": "Button__ButtonTextWrapper",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Button__ButtonTextWrapper-sa7xo3-1",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <span
+                        className="c2"
+                      >
+                        Cancel
+                      </span>
+                    </StyledComponent>
+                  </Button__ButtonTextWrapper>
+                </button>
+              </StyledComponent>
+            </Button__StyledButton>
+          </Button>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Box>
+</Footer>
+`;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
-import { colorWhite, colorAccessibleGreen } from '@tds/core-colours'
+import { colorWhite, colorAccessibleGreen, colorGreyRaven } from '@tds/core-colours'
 import { StyledButton } from '@tds/core-button'
 import Box from '@tds/core-box'
 
@@ -124,4 +124,66 @@ export const StyledBox = styled(Box)({
   ...media.from('md').css({
     marginTop: 0,
   }),
+})
+
+export const HeaderWrapper = styled.div({
+  paddingTop: '1rem',
+})
+
+export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, showFooter }) => {
+  const updatedHeight = showHeaderDivider ? offsetHeight : offsetHeight - 16
+
+  return {
+    margin: '0 -2rem',
+    padding: '0 2rem',
+    overflowY: 'scroll',
+    overflowX: 'hidden',
+    maxHeight: `calc(100vh - ${updatedHeight}px - 10rem)`,
+    marginTop: 0,
+    ...media
+      .from('xs')
+      .until('md')
+      .css({
+        maxHeight: `calc(100vh - ${updatedHeight}px - ${showFooter ? 6 : 5}rem)`,
+      }),
+  }
+})
+
+export const LinkWrapper = styled.div({
+  cursor: 'pointer',
+  marginTop: '1rem',
+  '> a': {
+    textDecoration: 'underline',
+  },
+  ...media
+    .from('xs')
+    .until('md')
+    .css({
+      marginTop: 0,
+      position: 'relative',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    }),
+})
+
+export const FooterWrapper = styled.div({
+  marginTop: '1rem',
+  ...media.from('md').css({
+    marginBottom: '-1rem',
+  }),
+})
+
+export const HairlineDividerWrapper = styled.div({
+  margin: '0 -2rem',
+})
+
+export const NotificationWrapper = styled.div({
+  backgroundColor: colorGreyRaven,
+  borderRadius: '4px',
+  padding: '0 0.5rem',
+  height: '1.5rem',
+  span: {
+    color: colorWhite,
+    fontWeight: 'bold',
+  },
 })

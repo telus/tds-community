@@ -45,10 +45,6 @@ exports[`Header renders 1`] = `
 <Header
   heading="Mock text"
   headingLevel="h3"
-  notification=""
-  notificationCopy="en"
-  notificationTextSize="medium"
-  notificationVariant="instructional"
   subHeading=""
   subHeadingSize="medium"
 >

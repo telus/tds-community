@@ -9,14 +9,7 @@ import { safeRest } from '@tds/util-helpers'
 import { Close, IconButton } from '@tds/core-interactive-icon'
 import { withFocusTrap } from '@tds/shared-hocs'
 
-import {
-  TEXT_SIZES,
-  HEADER_LEVELS,
-  CANCELLATION_BUTTON_TYPES,
-  BUTTON_VARIANTS,
-  NOTIFICATION_VARIANTS,
-  NOTIFICATION_COPY,
-} from './configs'
+import { TEXT_SIZES, HEADER_LEVELS, CANCELLATION_BUTTON_TYPES, BUTTON_VARIANTS } from './configs'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
 
@@ -25,7 +18,6 @@ import {
   CloseButtonWrapper,
   FullScreenOverlay,
   ModalWrapper,
-  StyledBox,
   HeaderWrapper,
   FooterWrapper,
   HairlineDividerWrapper,
@@ -42,10 +34,6 @@ const Modal = ({
   headingLevel,
   subHeading,
   subHeadingSize,
-  notification,
-  notificationTextSize,
-  notificationVariant,
-  notificationCopy,
   confirmButtonVariant,
   confirmCTAText,
   cancelButtonType,
@@ -135,10 +123,6 @@ const Modal = ({
         headingLevel={headingLevel}
         subHeading={subHeading}
         subHeadingSize={subHeadingSize}
-        notification={notification}
-        notificationTextSize={notificationTextSize}
-        notificationVariant={notificationVariant}
-        notificationCopy={notificationCopy}
       />
     ) : (
       heading
@@ -159,18 +143,16 @@ const Modal = ({
           >
             <StyledModal ref={modalRef} width={width}>
               <ModalWrapper>
-                <Box inset={4}>
-                  <StyledBox between={3}>
-                    <div ref={header} tabIndex="-1">
-                      <HeaderWrapper id="header-wrapper">
-                        <Box between={3} below={showHeaderDivider ? 4 : 3}>
-                          {modalHeading}
-                          {showHeaderHairlineDivider && <HairlineDivider />}
-                          {showHeaderDimpleDivider && <DimpleDivider />}
-                        </Box>
-                      </HeaderWrapper>
-                    </div>
-                  </StyledBox>
+                <Box inset={4} between={4}>
+                  <div ref={header} tabIndex="-1">
+                    <HeaderWrapper id="header-wrapper">
+                      <Box between={3}>
+                        {modalHeading}
+                        {showHeaderHairlineDivider && <HairlineDivider />}
+                        {showHeaderDimpleDivider && <DimpleDivider />}
+                      </Box>
+                    </HeaderWrapper>
+                  </div>
                   <ContentWrapper
                     offsetHeight={offsetHeight}
                     showHeaderDivider={showHeaderDivider}
@@ -225,30 +207,6 @@ Modal.propTypes = {
    * Size of the subheading text.
    */
   subHeadingSize: PropTypes.oneOf(Object.values(TEXT_SIZES)),
-  /**
-   *
-   * Text that will appear in the notification inside the heading.
-   */
-  notification: PropTypes.string,
-  /**
-   * Size of the notification text.
-   */
-  notificationTextSize: PropTypes.oneOf(Object.values(TEXT_SIZES)),
-  /**
-   * Appearance of the notification text.
-   */
-  notificationVariant: PropTypes.oneOf(Object.values(NOTIFICATION_VARIANTS)),
-  /**
-   * Use this prop to select provided English or French copy by passing in 'en'
-   * or 'fr' respectively
-   */
-  notificationCopy: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.values(NOTIFICATION_COPY)),
-    PropTypes.shape({
-      feedback: PropTypes.string.isRequired,
-      close: PropTypes.string.isRequired,
-    }),
-  ]),
   /**
    *
    * Text that will appear in the middle of the content section.
@@ -326,13 +284,9 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   headingLevel: HEADER_LEVELS.H3,
-  subHeading: 'Hello World',
+  subHeading: '',
   subHeadingSize: TEXT_SIZES.MEDIUM,
-  notification: 'Hello World',
-  notificationTextSize: TEXT_SIZES.MEDIUM,
-  notificationVariant: NOTIFICATION_VARIANTS.INSTRUCTIONAL,
   confirmButtonVariant: BUTTON_VARIANTS.STANDARD,
-  notificationCopy: NOTIFICATION_COPY.EN,
   confirmCTAText: '',
   cancelButtonType: CANCELLATION_BUTTON_TYPES.LINK_WITHOUT_ICON,
   cancelCTAText: '',

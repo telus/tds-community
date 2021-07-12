@@ -67,6 +67,67 @@ exports[`Footer renders 1`] = `
   margin-top: -1px;
 }
 
+.c4:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c4:link,
+.c4:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c4:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c4:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c4:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.c3 {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.c3 > a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 @media (min-width:768px) {
   .c1 {
     display: -webkit-inline-box;
@@ -125,25 +186,22 @@ exports[`Footer renders 1`] = `
   }
 }
 
-<Footer
-  cancelButtonText=""
-  cancelButtonType="linkWithoutIcon"
-  confirmButtonVariant="standard"
-  footerContent={
-    Object {
-      "cancelCTAContent": Object {
-        "showIcon": true,
-        "text": "Cancel",
-        "type": "button",
-        "variant": "danger",
-      },
-      "confirmCTAContent": Object {
-        "rank": "main",
-        "text": "Confirm",
-        "variant": "standard",
-      },
-    }
+@media (max-width:767px) {
+  .c3 {
+    margin-top: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+<Footer
+  cancelButtonText="Cancel"
+  cancelButtonType="linkWithoutIcon"
+  confirmButtonText="Confirm"
+  confirmButtonVariant="standard"
+  handleClose={[MockFunction]}
+  handleConfirm={[MockFunction]}
 >
   <Box
     between={3}
@@ -209,12 +267,14 @@ exports[`Footer renders 1`] = `
         >
           <Button
             data-testid="confirm-button"
+            onClick={[MockFunction]}
             rank="main"
             type="button"
             variant="standard"
           >
             <Button__StyledButton
               data-testid="confirm-button"
+              onClick={[MockFunction]}
               rank="main"
               type="button"
               variant="standard"
@@ -274,6 +334,7 @@ exports[`Footer renders 1`] = `
                   }
                 }
                 forwardedRef={null}
+                onClick={[MockFunction]}
                 rank="main"
                 type="button"
                 variant="standard"
@@ -281,6 +342,7 @@ exports[`Footer renders 1`] = `
                 <button
                   className="c1"
                   data-testid="confirm-button"
+                  onClick={[MockFunction]}
                   type="button"
                 >
                   <Button__ButtonTextWrapper
@@ -314,13 +376,155 @@ exports[`Footer renders 1`] = `
                     >
                       <span
                         className="c2"
-                      />
+                      >
+                        Confirm
+                      </span>
                     </StyledComponent>
                   </Button__ButtonTextWrapper>
                 </button>
               </StyledComponent>
             </Button__StyledButton>
           </Button>
+          <styles__LinkWrapper>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styles__LinkWrapper-sc-13jcun6-10",
+                    "isStatic": false,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      "cursor: pointer;",
+                      "margin-top: 1rem;",
+                      "> a {",
+                      "text-decoration: underline;",
+                      "}",
+                      "@media (max-width: 767px) {",
+                      "margin-top: 0;",
+                      "position: relative;",
+                      "margin-left: auto;",
+                      "margin-right: auto;",
+                      "}",
+                    ],
+                  },
+                  "displayName": "styles__LinkWrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styles__LinkWrapper-sc-13jcun6-10",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="c3"
+              >
+                <WithForwardedRef(Link)
+                  data-testid="cancel-link"
+                  onClick={[MockFunction]}
+                >
+                  <Link
+                    data-testid="cancel-link"
+                    forwardedRef={null}
+                    href={null}
+                    iconPosition="left"
+                    onClick={[MockFunction]}
+                    reactRouterLinkComponent={null}
+                    to={null}
+                  >
+                    <Link__StyledLink
+                      as="a"
+                      context={
+                        Object {
+                          "inheritColor": undefined,
+                        }
+                      }
+                      data-testid="cancel-link"
+                      hasIcon={false}
+                      href={null}
+                      onClick={[MockFunction]}
+                      to={null}
+                    >
+                      <StyledComponent
+                        as="a"
+                        context={
+                          Object {
+                            "inheritColor": undefined,
+                          }
+                        }
+                        data-testid="cancel-link"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Link__StyledLink-sc-1bokult-0",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                ":focus {",
+                                "outline: auto 5px -webkit-focus-ring-color;",
+                                "}",
+                                "&:link,&:visited {",
+                                "color: #2a2c2e;",
+                                "text-decoration: underline;",
+                                "}",
+                                "&:hover {",
+                                "text-decoration: none;",
+                                "}",
+                                "& svg {",
+                                "}",
+                                "& svg {",
+                                "transition: transform 150ms ease-in-out;",
+                                "}",
+                                "&:hover svg {",
+                                "transform: scale(1.1, 1.1);",
+                                "}",
+                                "&:active svg {",
+                                "transform: scale(1, 1);",
+                                "}",
+                                [Function],
+                                [Function],
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Link__StyledLink",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                            "target": "a",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hasIcon={false}
+                        href={null}
+                        onClick={[MockFunction]}
+                        to={null}
+                      >
+                        <a
+                          className="c4"
+                          data-testid="cancel-link"
+                          href={null}
+                          onClick={[MockFunction]}
+                          to={null}
+                        >
+                          Cancel
+                        </a>
+                      </StyledComponent>
+                    </Link__StyledLink>
+                  </Link>
+                </WithForwardedRef(Link)>
+              </div>
+            </StyledComponent>
+          </styles__LinkWrapper>
         </div>
       </StyledComponent>
     </styled.div>

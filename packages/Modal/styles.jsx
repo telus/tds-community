@@ -127,7 +127,7 @@ export const StyledBox = styled(Box)({
 })
 
 export const HeaderWrapper = styled.div({
-  paddingTop: '1rem',
+  // paddingTop: '1rem',
 })
 
 export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, showFooter }) => {
@@ -167,7 +167,7 @@ export const LinkWrapper = styled.div({
 })
 
 export const FooterWrapper = styled.div({
-  marginTop: '1rem',
+  // marginTop: '1rem',
   ...media.from('md').css({
     marginBottom: '-1rem',
   }),

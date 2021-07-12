@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "clean": "lerna exec -- rm -rf dist && lerna clean --yes && rm -rf node_modules && rm -rf .out",
     "bootstrap": "npm ci && npx lerna bootstrap --hoist && npm run build -- --all",
     "build": "node scripts/build.js",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
@@ -59,7 +60,7 @@
     "@commitlint/prompt": "^8.3.5",
     "@lerna/publish": "^3.14.1",
     "@tds/core-box": "^2.1.3",
-    "@tds/core-button": "^2.1.14",
+    "@tds/core-button": "^3.2.4",
     "@tds/core-card": "^2.3.4",
     "@tds/core-chevron-link": "^2.1.16",
     "@tds/core-colours": "^2.2.1",

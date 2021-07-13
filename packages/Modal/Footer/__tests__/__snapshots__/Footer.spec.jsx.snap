@@ -392,7 +392,7 @@ exports[`Footer renders 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "styles__LinkWrapper-sc-13jcun6-10",
+                    "componentId": "styles__LinkWrapper-sc-13jcun6-6",
                     "isStatic": false,
                     "lastClassName": "c3",
                     "rules": Array [
@@ -412,7 +412,7 @@ exports[`Footer renders 1`] = `
                   "displayName": "styles__LinkWrapper",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "styles__LinkWrapper-sc-13jcun6-10",
+                  "styledComponentId": "styles__LinkWrapper-sc-13jcun6-6",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],

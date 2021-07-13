@@ -1309,7 +1309,7 @@ exports[`Modal renders 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__ModalWrapper-sc-13jcun6-6",
+                                "componentId": "styles__ModalWrapper-sc-13jcun6-3",
                                 "isStatic": false,
                                 "lastClassName": "c2",
                                 "rules": Array [
@@ -1328,7 +1328,7 @@ exports[`Modal renders 1`] = `
                               "displayName": "styles__ModalWrapper",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "styles__ModalWrapper-sc-13jcun6-6",
+                              "styledComponentId": "styles__ModalWrapper-sc-13jcun6-3",
                               "target": "div",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -1402,15 +1402,15 @@ exports[`Modal renders 1`] = `
                                               "$$typeof": Symbol(react.forward_ref),
                                               "attrs": Array [],
                                               "componentStyle": ComponentStyle {
-                                                "componentId": "styles__HeaderWrapper-sc-13jcun6-8",
+                                                "componentId": "styles__HeaderWrapper-sc-13jcun6-4",
                                                 "isStatic": false,
-                                                "lastClassName": "jRlmIK",
+                                                "lastClassName": "YuQVG",
                                                 "rules": Array [],
                                               },
                                               "displayName": "styles__HeaderWrapper",
                                               "foldedComponentIds": Array [],
                                               "render": [Function],
-                                              "styledComponentId": "styles__HeaderWrapper-sc-13jcun6-8",
+                                              "styledComponentId": "styles__HeaderWrapper-sc-13jcun6-4",
                                               "target": "div",
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
@@ -1696,7 +1696,7 @@ exports[`Modal renders 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "styles__ContentWrapper-sc-13jcun6-9",
+                                              "componentId": "styles__ContentWrapper-sc-13jcun6-5",
                                               "isStatic": false,
                                               "lastClassName": "c7",
                                               "rules": Array [
@@ -1706,7 +1706,7 @@ exports[`Modal renders 1`] = `
                                             "displayName": "styles__ContentWrapper",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "styles__ContentWrapper-sc-13jcun6-9",
+                                            "styledComponentId": "styles__ContentWrapper-sc-13jcun6-5",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -1797,7 +1797,7 @@ exports[`Modal renders 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "styles__FooterWrapper-sc-13jcun6-11",
+                                              "componentId": "styles__FooterWrapper-sc-13jcun6-7",
                                               "isStatic": false,
                                               "lastClassName": "c9",
                                               "rules": Array [
@@ -1809,7 +1809,7 @@ exports[`Modal renders 1`] = `
                                             "displayName": "styles__FooterWrapper",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "styles__FooterWrapper-sc-13jcun6-11",
+                                            "styledComponentId": "styles__FooterWrapper-sc-13jcun6-7",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -1880,7 +1880,7 @@ exports[`Modal renders 1`] = `
                                                           "$$typeof": Symbol(react.forward_ref),
                                                           "attrs": Array [],
                                                           "componentStyle": ComponentStyle {
-                                                            "componentId": "styles__HairlineDividerWrapper-sc-13jcun6-12",
+                                                            "componentId": "styles__HairlineDividerWrapper-sc-13jcun6-8",
                                                             "isStatic": false,
                                                             "lastClassName": "c10",
                                                             "rules": Array [
@@ -1890,7 +1890,7 @@ exports[`Modal renders 1`] = `
                                                           "displayName": "styles__HairlineDividerWrapper",
                                                           "foldedComponentIds": Array [],
                                                           "render": [Function],
-                                                          "styledComponentId": "styles__HairlineDividerWrapper-sc-13jcun6-12",
+                                                          "styledComponentId": "styles__HairlineDividerWrapper-sc-13jcun6-8",
                                                           "target": "div",
                                                           "toString": [Function],
                                                           "warnTooManyClasses": [Function],
@@ -2162,7 +2162,7 @@ exports[`Modal renders 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__CloseButtonWrapper-sc-13jcun6-5",
+                                      "componentId": "styles__CloseButtonWrapper-sc-13jcun6-2",
                                       "isStatic": false,
                                       "lastClassName": "c14",
                                       "rules": Array [
@@ -2176,7 +2176,7 @@ exports[`Modal renders 1`] = `
                                     "displayName": "styles__CloseButtonWrapper",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "styles__CloseButtonWrapper-sc-13jcun6-5",
+                                    "styledComponentId": "styles__CloseButtonWrapper-sc-13jcun6-2",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],

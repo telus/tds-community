@@ -51,13 +51,13 @@ exports[`Header renders 1`] = `
   <Box
     between={3}
     inline={false}
-    tabIndex="0"
+    tabIndex={0}
     tag="div"
   >
     <styled.div
       between={3}
       inline={false}
-      tabIndex="0"
+      tabIndex={0}
       tag="div"
     >
       <StyledComponent
@@ -92,12 +92,12 @@ exports[`Header renders 1`] = `
         }
         forwardedRef={null}
         inline={false}
-        tabIndex="0"
+        tabIndex={0}
         tag="div"
       >
         <div
           className="c0"
-          tabIndex="0"
+          tabIndex={0}
         >
           <Box
             between={3}

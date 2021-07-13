@@ -269,6 +269,7 @@ exports[`Footer renders 1`] = `
             data-testid="confirm-button"
             onClick={[MockFunction]}
             rank="main"
+            tabIndex={0}
             type="button"
             variant="standard"
           >
@@ -276,6 +277,7 @@ exports[`Footer renders 1`] = `
               data-testid="confirm-button"
               onClick={[MockFunction]}
               rank="main"
+              tabIndex={0}
               type="button"
               variant="standard"
             >
@@ -336,6 +338,7 @@ exports[`Footer renders 1`] = `
                 forwardedRef={null}
                 onClick={[MockFunction]}
                 rank="main"
+                tabIndex={0}
                 type="button"
                 variant="standard"
               >
@@ -343,6 +346,7 @@ exports[`Footer renders 1`] = `
                   className="c1"
                   data-testid="confirm-button"
                   onClick={[MockFunction]}
+                  tabIndex={0}
                   type="button"
                 >
                   <Button__ButtonTextWrapper
@@ -385,7 +389,9 @@ exports[`Footer renders 1`] = `
               </StyledComponent>
             </Button__StyledButton>
           </Button>
-          <styles__LinkWrapper>
+          <styles__LinkWrapper
+            tabIndex="0"
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -420,9 +426,11 @@ exports[`Footer renders 1`] = `
                 }
               }
               forwardedRef={null}
+              tabIndex="0"
             >
               <div
                 className="c3"
+                tabIndex="0"
               >
                 <WithForwardedRef(Link)
                   data-testid="cancel-link"

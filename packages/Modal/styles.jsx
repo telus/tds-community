@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
-import { colorWhite, colorAccessibleGreen, colorGreyRaven } from '@tds/core-colours'
-import { StyledButton } from '@tds/core-button'
-import Box from '@tds/core-box'
+import { colorWhite } from '@tds/core-colours'
 
 export const FullScreenOverlay = styled.div(props => {
   if (props && props.isOpen) {
@@ -53,51 +51,6 @@ export const StyledModal = styled.div(props => {
   }
 })
 
-export const CTAWrapper = styled.div(props => {
-  if (props && !props.cancelCTAExists) {
-    return {
-      ...media.from('md').css({
-        display: 'flex',
-        flexFlow: 'row',
-        '> button:first-child': {
-          marginRight: '1rem',
-        },
-      }),
-    }
-  }
-  return {
-    display: 'flex',
-    flexFlow: 'column',
-    alignItems: 'baseline',
-    '> button:first-child': {
-      marginBottom: '1rem',
-    },
-    ...media.from('md').css({
-      flexFlow: 'row',
-      '> button:first-child': {
-        marginRight: '1rem',
-        marginBottom: '0rem',
-      },
-    }),
-  }
-})
-
-export const PaddingOverride = styled.div({
-  '> div:first-child': {
-    paddingBottom: '0rem',
-  },
-})
-
-export const OutlineButton = styled(StyledButton)({
-  border: `1px solid ${colorAccessibleGreen}`,
-  color: colorAccessibleGreen,
-  backgroundColor: colorWhite,
-  ':hover': {
-    background: colorAccessibleGreen,
-    color: colorWhite,
-  },
-})
-
 export const CloseButtonWrapper = styled.div({
   float: 'right',
   padding: '1rem 1rem 0 0',
@@ -119,16 +72,7 @@ export const ModalWrapper = styled.div({
   },
 })
 
-export const StyledBox = styled(Box)({
-  marginTop: '1rem',
-  ...media.from('md').css({
-    marginTop: 0,
-  }),
-})
-
-export const HeaderWrapper = styled.div({
-  // paddingTop: '1rem',
-})
+export const HeaderWrapper = styled.div({})
 
 export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, showFooter }) => {
   const updatedHeight = showHeaderDivider ? offsetHeight : offsetHeight - 16
@@ -167,7 +111,6 @@ export const LinkWrapper = styled.div({
 })
 
 export const FooterWrapper = styled.div({
-  // marginTop: '1rem',
   ...media.from('md').css({
     marginBottom: '-1rem',
   }),
@@ -175,15 +118,4 @@ export const FooterWrapper = styled.div({
 
 export const HairlineDividerWrapper = styled.div({
   margin: '0 -2rem',
-})
-
-export const NotificationWrapper = styled.div({
-  backgroundColor: colorGreyRaven,
-  borderRadius: '4px',
-  padding: '0 0.5rem',
-  height: '1.5rem',
-  span: {
-    color: colorWhite,
-    fontWeight: 'bold',
-  },
 })

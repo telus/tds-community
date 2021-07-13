@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/tabindex-no-positive */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Button from '@tds/core-button'
@@ -17,7 +18,7 @@ const CancellationButton = (handleClose, buttonType, text) => {
   switch (buttonType) {
     case CANCELLATION_BUTTON_TYPES.LINK_WITH_ICON:
       return (
-        <LinkWrapper>
+        <LinkWrapper tabIndex="0">
           <Link
             onClick={handleClose}
             icon={Delete}
@@ -30,7 +31,7 @@ const CancellationButton = (handleClose, buttonType, text) => {
       )
     case CANCELLATION_BUTTON_TYPES.LINK_WITHOUT_ICON:
       return (
-        <LinkWrapper>
+        <LinkWrapper tabIndex="0">
           <Link onClick={handleClose} data-testid="cancel-link">
             {text}
           </Link>
@@ -38,7 +39,7 @@ const CancellationButton = (handleClose, buttonType, text) => {
       )
     default:
       return (
-        <Button variant="danger" onClick={handleClose} data-testid="cancel-button">
+        <Button variant="danger" onClick={handleClose} data-testid="cancel-button" tabIndex="0">
           {text}
         </Button>
       )
@@ -60,6 +61,7 @@ const Footer = ({
         rank={BUTTON_RANKS.MAIN}
         onClick={handleConfirm}
         data-testid="confirm-button"
+        tabIndex={0}
       >
         {confirmButtonText}
       </Button>

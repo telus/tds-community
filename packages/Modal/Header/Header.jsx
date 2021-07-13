@@ -8,7 +8,7 @@ import { HEADER_LEVELS, TEXT_SIZES } from '../configs'
 
 const Header = ({ heading, headingLevel, subHeading, subHeadingSize }) => {
   return (
-    <Box between={3} tabIndex="0">
+    <Box between={3} tabIndex={0}>
       <Box between={3}>
         <Heading level={headingLevel}>{heading}</Heading>
         {subHeading && <Text size={subHeadingSize}>{subHeading}</Text>}

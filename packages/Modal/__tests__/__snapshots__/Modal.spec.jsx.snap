@@ -42,7 +42,7 @@ exports[`Modal renders 1`] = `
   margin-bottom: 1rem;
 }
 
-.c12 {
+.c13 {
   border-width: 0;
   border-radius: 4px;
   word-wrap: break-word;
@@ -82,33 +82,33 @@ exports[`Modal renders 1`] = `
   transition: background 0.2s,color 0.2s,border 0.2s ease;
 }
 
-.c12:after {
+.c13:after {
   content: "";
   min-height: inherit;
   font-size: 0;
 }
 
-.c12:hover {
+.c13:hover {
   background-color: #1F5C09;
   box-shadow: 0 0 0 0.125rem #1F5C09;
 }
 
-.c12:active {
+.c13:active {
   background-color: #163E06 !important;
 }
 
-.c12:focus {
+.c13:focus {
   outline: none !important;
   background-color: #1F5C09;
   box-shadow: 0 0 0 0.1875rem #509F33,0 0 0 0.125rem #fff inset;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   margin-top: -1px;
 }
 
-.c6 {
+.c7 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -123,7 +123,7 @@ exports[`Modal renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c9 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -139,7 +139,7 @@ exports[`Modal renders 1`] = `
   text-align: left;
 }
 
-.c8 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -147,7 +147,27 @@ exports[`Modal renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c17 {
+.c6 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -156,7 +176,7 @@ exports[`Modal renders 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c18 {
+.c19 {
   background-color: #d8d8d8;
   position: absolute;
   top: 0;
@@ -172,14 +192,14 @@ exports[`Modal renders 1`] = `
   transform: scale(0,0);
 }
 
-.c15:focus .c18,
-.c15:active .c18 {
+.c16:focus .c19,
+.c16:active .c19 {
   -webkit-transform: scale(1,1);
   -ms-transform: scale(1,1);
   transform: scale(1,1);
 }
 
-.c19 {
+.c20 {
   position: relative;
   top: 0;
   width: 1.5rem;
@@ -187,7 +207,7 @@ exports[`Modal renders 1`] = `
   fill: #2a2c2e;
 }
 
-.c16 {
+.c17 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -218,11 +238,11 @@ exports[`Modal renders 1`] = `
   -webkit-tap-highlight-color: transparent;
 }
 
-.c16:focus::-moz-focus-inner {
+.c17:focus::-moz-focus-inner {
   border: 0;
 }
 
-.c16:hover svg {
+.c17:hover svg {
   -webkit-transition: -webkit-transform 150ms ease-in-out;
   -webkit-transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
@@ -231,7 +251,7 @@ exports[`Modal renders 1`] = `
   transform: scale(1.1,1.1);
 }
 
-.c16:active svg {
+.c17:active svg {
   -webkit-transition: -webkit-transform 150ms ease-in-out;
   -webkit-transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
@@ -272,7 +292,7 @@ exports[`Modal renders 1`] = `
   margin: 1rem 0.5rem;
 }
 
-.c14 {
+.c15 {
   float: right;
   padding: 1rem 1rem 0 0;
   position: absolute;
@@ -310,7 +330,7 @@ exports[`Modal renders 1`] = `
   justify-content: space-between;
 }
 
-.c7 {
+.c8 {
   margin: 0 -2rem;
   padding: 0 2rem;
   overflow-y: scroll;
@@ -319,7 +339,7 @@ exports[`Modal renders 1`] = `
   margin-top: 0;
 }
 
-.c10 {
+.c11 {
   margin: 0 -2rem;
 }
 
@@ -374,7 +394,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c11 {
+  .c12 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -384,13 +404,13 @@ exports[`Modal renders 1`] = `
     flex-direction: column;
   }
 
-  .c11 > *:not(:last-child) {
+  .c12 > *:not(:last-child) {
     margin-bottom: 1rem;
   }
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c12 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -400,13 +420,13 @@ exports[`Modal renders 1`] = `
     flex-direction: row;
   }
 
-  .c11 > *:not(:last-child) {
+  .c12 > *:not(:last-child) {
     margin-right: 1rem;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -417,7 +437,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (hover:none) {
-  .c12:hover {
+  .c13:hover {
     box-shadow: none;
     background-color: #2B8000;
     color: #fff;
@@ -425,21 +445,21 @@ exports[`Modal renders 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c12 {
+  .c13 {
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c18 {
+  .c19 {
     -webkit-transition: none;
     transition: none;
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c16:hover > svg {
+  .c17:hover > svg {
     -webkit-transition: none;
     transition: none;
   }
@@ -467,13 +487,13 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c8 {
     max-height: calc(100vh - 0px - 6rem);
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c10 {
     margin-bottom: -1rem;
   }
 }
@@ -493,7 +513,7 @@ exports[`Modal renders 1`] = `
   showFooterHairlineDivider={true}
   showHeaderDimpleDivider={false}
   showHeaderHairlineDivider={true}
-  subHeading=""
+  subHeading="Hello World"
   subHeadingSize="medium"
   width={570}
 >
@@ -583,7 +603,7 @@ exports[`Modal renders 1`] = `
   margin-bottom: 1rem;
 }
 
-.c12 {
+.c13 {
   border-width: 0;
   border-radius: 4px;
   word-wrap: break-word;
@@ -623,33 +643,33 @@ exports[`Modal renders 1`] = `
   transition: background 0.2s,color 0.2s,border 0.2s ease;
 }
 
-.c12:after {
+.c13:after {
   content: "";
   min-height: inherit;
   font-size: 0;
 }
 
-.c12:hover {
+.c13:hover {
   background-color: #1F5C09;
   box-shadow: 0 0 0 0.125rem #1F5C09;
 }
 
-.c12:active {
+.c13:active {
   background-color: #163E06 !important;
 }
 
-.c12:focus {
+.c13:focus {
   outline: none !important;
   background-color: #1F5C09;
   box-shadow: 0 0 0 0.1875rem #509F33,0 0 0 0.125rem #fff inset;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   margin-top: -1px;
 }
 
-.c6 {
+.c7 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -664,7 +684,7 @@ exports[`Modal renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c8 {
+.c9 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -680,7 +700,7 @@ exports[`Modal renders 1`] = `
   text-align: left;
 }
 
-.c8 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -688,7 +708,27 @@ exports[`Modal renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c17 {
+.c6 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -697,7 +737,7 @@ exports[`Modal renders 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c18 {
+.c19 {
   background-color: #d8d8d8;
   position: absolute;
   top: 0;
@@ -713,14 +753,14 @@ exports[`Modal renders 1`] = `
   transform: scale(0,0);
 }
 
-.c15:focus .c18,
-.c15:active .c18 {
+.c16:focus .c19,
+.c16:active .c19 {
   -webkit-transform: scale(1,1);
   -ms-transform: scale(1,1);
   transform: scale(1,1);
 }
 
-.c19 {
+.c20 {
   position: relative;
   top: 0;
   width: 1.5rem;
@@ -728,7 +768,7 @@ exports[`Modal renders 1`] = `
   fill: #2a2c2e;
 }
 
-.c16 {
+.c17 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -759,11 +799,11 @@ exports[`Modal renders 1`] = `
   -webkit-tap-highlight-color: transparent;
 }
 
-.c16:focus::-moz-focus-inner {
+.c17:focus::-moz-focus-inner {
   border: 0;
 }
 
-.c16:hover svg {
+.c17:hover svg {
   -webkit-transition: -webkit-transform 150ms ease-in-out;
   -webkit-transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
@@ -772,7 +812,7 @@ exports[`Modal renders 1`] = `
   transform: scale(1.1,1.1);
 }
 
-.c16:active svg {
+.c17:active svg {
   -webkit-transition: -webkit-transform 150ms ease-in-out;
   -webkit-transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
@@ -813,7 +853,7 @@ exports[`Modal renders 1`] = `
   margin: 1rem 0.5rem;
 }
 
-.c14 {
+.c15 {
   float: right;
   padding: 1rem 1rem 0 0;
   position: absolute;
@@ -851,7 +891,7 @@ exports[`Modal renders 1`] = `
   justify-content: space-between;
 }
 
-.c7 {
+.c8 {
   margin: 0 -2rem;
   padding: 0 2rem;
   overflow-y: scroll;
@@ -860,7 +900,7 @@ exports[`Modal renders 1`] = `
   margin-top: 0;
 }
 
-.c10 {
+.c11 {
   margin: 0 -2rem;
 }
 
@@ -915,7 +955,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c11 {
+  .c12 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -925,13 +965,13 @@ exports[`Modal renders 1`] = `
     flex-direction: column;
   }
 
-  .c11 > *:not(:last-child) {
+  .c12 > *:not(:last-child) {
     margin-bottom: 1rem;
   }
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c12 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -941,13 +981,13 @@ exports[`Modal renders 1`] = `
     flex-direction: row;
   }
 
-  .c11 > *:not(:last-child) {
+  .c12 > *:not(:last-child) {
     margin-right: 1rem;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -958,7 +998,7 @@ exports[`Modal renders 1`] = `
 }
 
 @media (hover:none) {
-  .c12:hover {
+  .c13:hover {
     box-shadow: none;
     background-color: #2B8000;
     color: #fff;
@@ -966,21 +1006,21 @@ exports[`Modal renders 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c12 {
+  .c13 {
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c18 {
+  .c19 {
     -webkit-transition: none;
     transition: none;
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c16:hover > svg {
+  .c17:hover > svg {
     -webkit-transition: none;
     transition: none;
   }
@@ -1008,13 +1048,13 @@ exports[`Modal renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c8 {
     max-height: calc(100vh - 0px - 6rem);
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c10 {
     margin-bottom: -1rem;
   }
 }
@@ -1034,7 +1074,7 @@ exports[`Modal renders 1`] = `
                           class="c3"
                         >
                           <div
-                            tabindex="-1"
+                            tabindex="0"
                           >
                             <div
                               class=""
@@ -1056,48 +1096,54 @@ exports[`Modal renders 1`] = `
                                     >
                                       A heading
                                     </h3>
-                                    
+                                    <span
+                                      class="c6"
+                                    >
+                                      Hello World
+                                    </span>
                                   </div>
                                 </div>
                                 <hr
-                                  class="c6"
+                                  class="c7"
                                 />
                               </div>
                             </div>
                           </div>
                           <div
-                            class="c7"
+                            class="c8"
+                            tabindex="0"
                           >
                             <p
-                              class="c8"
+                              class="c9"
                             >
                               Are you sure?
                             </p>
                           </div>
                           <div
-                            class="c9"
+                            class="c10"
                             id="footer-wrapper"
                           >
                             <div
                               class="c4"
                             >
                               <div
-                                class="c10"
+                                class="c11"
                               >
                                 <hr
-                                  class="c6"
+                                  class="c7"
                                 />
                               </div>
                               <div
-                                class="c11"
+                                class="c12"
                               >
                                 <button
-                                  class="c12"
+                                  class="c13"
                                   data-testid="confirm-button"
+                                  tabindex="0"
                                   type="button"
                                 >
                                   <span
-                                    class="c13"
+                                    class="c14"
                                   >
                                     I am sure
                                   </span>
@@ -1108,22 +1154,23 @@ exports[`Modal renders 1`] = `
                           </div>
                         </div>
                         <div
-                          class="c14"
+                          class="c15"
                         >
                           <button
-                            class="c15 c16"
+                            class="c16 c17"
+                            tabindex="0"
                           >
                             <span
-                              class="c17"
+                              class="c18"
                             >
                               Close
                             </span>
                             <span
-                              class="c18"
+                              class="c19"
                             />
                             <svg
                               aria-hidden="true"
-                              class="c19"
+                              class="c20"
                               color="greyShark"
                               data-testid="dependentSvg"
                               focusable="false"
@@ -1188,7 +1235,7 @@ exports[`Modal renders 1`] = `
                               class="c3"
                             >
                               <div
-                                tabindex="-1"
+                                tabindex="0"
                               >
                                 <div
                                   class=""
@@ -1210,48 +1257,54 @@ exports[`Modal renders 1`] = `
                                         >
                                           A heading
                                         </h3>
-                                        
+                                        <span
+                                          class="c6"
+                                        >
+                                          Hello World
+                                        </span>
                                       </div>
                                     </div>
                                     <hr
-                                      class="c6"
+                                      class="c7"
                                     />
                                   </div>
                                 </div>
                               </div>
                               <div
-                                class="c7"
+                                class="c8"
+                                tabindex="0"
                               >
                                 <p
-                                  class="c8"
+                                  class="c9"
                                 >
                                   Are you sure?
                                 </p>
                               </div>
                               <div
-                                class="c9"
+                                class="c10"
                                 id="footer-wrapper"
                               >
                                 <div
                                   class="c4"
                                 >
                                   <div
-                                    class="c10"
+                                    class="c11"
                                   >
                                     <hr
-                                      class="c6"
+                                      class="c7"
                                     />
                                   </div>
                                   <div
-                                    class="c11"
+                                    class="c12"
                                   >
                                     <button
-                                      class="c12"
+                                      class="c13"
                                       data-testid="confirm-button"
+                                      tabindex="0"
                                       type="button"
                                     >
                                       <span
-                                        class="c13"
+                                        class="c14"
                                       >
                                         I am sure
                                       </span>
@@ -1262,22 +1315,23 @@ exports[`Modal renders 1`] = `
                               </div>
                             </div>
                             <div
-                              class="c14"
+                              class="c15"
                             >
                               <button
-                                class="c15 c16"
+                                class="c16 c17"
+                                tabindex="0"
                               >
                                 <span
-                                  class="c17"
+                                  class="c18"
                                 >
                                   Close
                                 </span>
                                 <span
-                                  class="c18"
+                                  class="c19"
                                 />
                                 <svg
                                   aria-hidden="true"
-                                  class="c19"
+                                  class="c20"
                                   color="greyShark"
                                   data-testid="dependentSvg"
                                   focusable="false"
@@ -1363,7 +1417,7 @@ exports[`Modal renders 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-bdVaJa",
                                         "isStatic": false,
-                                        "lastClassName": "c11",
+                                        "lastClassName": "c12",
                                         "rules": Array [
                                           [Function],
                                           [Function],
@@ -1391,7 +1445,7 @@ exports[`Modal renders 1`] = `
                                     className="c3"
                                   >
                                     <div
-                                      tabIndex="-1"
+                                      tabIndex="0"
                                     >
                                       <styles__HeaderWrapper
                                         id="header-wrapper"
@@ -1445,7 +1499,7 @@ exports[`Modal renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "sc-bdVaJa",
                                                         "isStatic": false,
-                                                        "lastClassName": "c11",
+                                                        "lastClassName": "c12",
                                                         "rules": Array [
                                                           [Function],
                                                           [Function],
@@ -1474,19 +1528,19 @@ exports[`Modal renders 1`] = `
                                                     <Header
                                                       heading="A heading"
                                                       headingLevel="h3"
-                                                      subHeading=""
+                                                      subHeading="Hello World"
                                                       subHeadingSize="medium"
                                                     >
                                                       <Box
                                                         between={3}
                                                         inline={false}
-                                                        tabIndex="0"
+                                                        tabIndex={0}
                                                         tag="div"
                                                       >
                                                         <styled.div
                                                           between={3}
                                                           inline={false}
-                                                          tabIndex="0"
+                                                          tabIndex={0}
                                                           tag="div"
                                                         >
                                                           <StyledComponent
@@ -1500,7 +1554,7 @@ exports[`Modal renders 1`] = `
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "sc-bdVaJa",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c11",
+                                                                  "lastClassName": "c12",
                                                                   "rules": Array [
                                                                     [Function],
                                                                     [Function],
@@ -1521,12 +1575,12 @@ exports[`Modal renders 1`] = `
                                                             }
                                                             forwardedRef={null}
                                                             inline={false}
-                                                            tabIndex="0"
+                                                            tabIndex={0}
                                                             tag="div"
                                                           >
                                                             <div
                                                               className="c4"
-                                                              tabIndex="0"
+                                                              tabIndex={0}
                                                             >
                                                               <Box
                                                                 between={3}
@@ -1549,7 +1603,7 @@ exports[`Modal renders 1`] = `
                                                                         "componentStyle": ComponentStyle {
                                                                           "componentId": "sc-bdVaJa",
                                                                           "isStatic": false,
-                                                                          "lastClassName": "c11",
+                                                                          "lastClassName": "c12",
                                                                           "rules": Array [
                                                                             [Function],
                                                                             [Function],
@@ -1624,6 +1678,67 @@ exports[`Modal renders 1`] = `
                                                                           </StyledComponent>
                                                                         </Heading__StyledHeading>
                                                                       </Heading>
+                                                                      <Text
+                                                                        block={false}
+                                                                        bold={false}
+                                                                        invert={false}
+                                                                        size="medium"
+                                                                      >
+                                                                        <Text__StyledText
+                                                                          block={false}
+                                                                          bold={false}
+                                                                          invert={false}
+                                                                          size="medium"
+                                                                        >
+                                                                          <StyledComponent
+                                                                            block={false}
+                                                                            bold={false}
+                                                                            forwardedComponent={
+                                                                              Object {
+                                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                                "attrs": Array [],
+                                                                                "componentStyle": ComponentStyle {
+                                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                                                  "isStatic": false,
+                                                                                  "lastClassName": "c6",
+                                                                                  "rules": Array [
+                                                                                    [Function],
+                                                                                    [Function],
+                                                                                    [Function],
+                                                                                    [Function],
+                                                                                    [Function],
+                                                                                    "sup {",
+                                                                                    "top: -0.5em;",
+                                                                                    "font-size: 0.875rem;",
+                                                                                    "position: relative;",
+                                                                                    "vertical-align: baseline;",
+                                                                                    "padding-left: 0.1em;",
+                                                                                    "}",
+                                                                                  ],
+                                                                                },
+                                                                                "displayName": "Text__StyledText",
+                                                                                "foldedComponentIds": Array [],
+                                                                                "render": [Function],
+                                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                                                                "target": "span",
+                                                                                "toString": [Function],
+                                                                                "warnTooManyClasses": [Function],
+                                                                                "withComponent": [Function],
+                                                                              }
+                                                                            }
+                                                                            forwardedRef={null}
+                                                                            invert={false}
+                                                                            size="medium"
+                                                                          >
+                                                                            <span
+                                                                              className="c6"
+                                                                              size="medium"
+                                                                            >
+                                                                              Hello World
+                                                                            </span>
+                                                                          </StyledComponent>
+                                                                        </Text__StyledText>
+                                                                      </Text>
                                                                     </div>
                                                                   </StyledComponent>
                                                                 </styled.div>
@@ -1649,7 +1764,7 @@ exports[`Modal renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c6",
+                                                                "lastClassName": "c7",
                                                                 "rules": Array [
                                                                   "padding: 0;",
                                                                   "margin: 0;",
@@ -1672,7 +1787,7 @@ exports[`Modal renders 1`] = `
                                                           vertical={false}
                                                         >
                                                           <hr
-                                                            className="c6"
+                                                            className="c7"
                                                           />
                                                         </StyledComponent>
                                                       </HairlineDivider__StyledHairlineDivider>
@@ -1689,6 +1804,7 @@ exports[`Modal renders 1`] = `
                                       offsetHeight={0}
                                       showFooter={true}
                                       showHeaderDivider={true}
+                                      tabIndex="0"
                                     >
                                       <StyledComponent
                                         forwardedComponent={
@@ -1698,7 +1814,7 @@ exports[`Modal renders 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "styles__ContentWrapper-sc-13jcun6-5",
                                               "isStatic": false,
-                                              "lastClassName": "c7",
+                                              "lastClassName": "c8",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -1717,9 +1833,11 @@ exports[`Modal renders 1`] = `
                                         offsetHeight={0}
                                         showFooter={true}
                                         showHeaderDivider={true}
+                                        tabIndex="0"
                                       >
                                         <div
-                                          className="c7"
+                                          className="c8"
+                                          tabIndex="0"
                                         >
                                           <Paragraph
                                             align="left"
@@ -1743,7 +1861,7 @@ exports[`Modal renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Paragraph__StyledParagraph-efl81j-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c8",
+                                                      "lastClassName": "c9",
                                                       "rules": Array [
                                                         [Function],
                                                         "word-wrap: break-word;",
@@ -1777,7 +1895,7 @@ exports[`Modal renders 1`] = `
                                                 size="medium"
                                               >
                                                 <p
-                                                  className="c8"
+                                                  className="c9"
                                                   size="medium"
                                                 >
                                                   Are you sure?
@@ -1799,7 +1917,7 @@ exports[`Modal renders 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "styles__FooterWrapper-sc-13jcun6-7",
                                               "isStatic": false,
-                                              "lastClassName": "c9",
+                                              "lastClassName": "c10",
                                               "rules": Array [
                                                 "@media (min-width: 768px) {",
                                                 "margin-bottom: -1rem;",
@@ -1820,7 +1938,7 @@ exports[`Modal renders 1`] = `
                                         id="footer-wrapper"
                                       >
                                         <div
-                                          className="c9"
+                                          className="c10"
                                           id="footer-wrapper"
                                         >
                                           <Box
@@ -1844,7 +1962,7 @@ exports[`Modal renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "sc-bdVaJa",
                                                       "isStatic": false,
-                                                      "lastClassName": "c11",
+                                                      "lastClassName": "c12",
                                                       "rules": Array [
                                                         [Function],
                                                         [Function],
@@ -1882,7 +2000,7 @@ exports[`Modal renders 1`] = `
                                                           "componentStyle": ComponentStyle {
                                                             "componentId": "styles__HairlineDividerWrapper-sc-13jcun6-8",
                                                             "isStatic": false,
-                                                            "lastClassName": "c10",
+                                                            "lastClassName": "c11",
                                                             "rules": Array [
                                                               "margin: 0 -2rem;",
                                                             ],
@@ -1900,7 +2018,7 @@ exports[`Modal renders 1`] = `
                                                       forwardedRef={null}
                                                     >
                                                       <div
-                                                        className="c10"
+                                                        className="c11"
                                                       >
                                                         <HairlineDivider
                                                           gradient={false}
@@ -1918,7 +2036,7 @@ exports[`Modal renders 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c6",
+                                                                    "lastClassName": "c7",
                                                                     "rules": Array [
                                                                       "padding: 0;",
                                                                       "margin: 0;",
@@ -1941,7 +2059,7 @@ exports[`Modal renders 1`] = `
                                                               vertical={false}
                                                             >
                                                               <hr
-                                                                className="c6"
+                                                                className="c7"
                                                               />
                                                             </StyledComponent>
                                                           </HairlineDivider__StyledHairlineDivider>
@@ -1988,7 +2106,7 @@ exports[`Modal renders 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "sc-bdVaJa",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c11",
+                                                                "lastClassName": "c12",
                                                                 "rules": Array [
                                                                   [Function],
                                                                   [Function],
@@ -2017,12 +2135,13 @@ exports[`Modal renders 1`] = `
                                                           tag="div"
                                                         >
                                                           <div
-                                                            className="c11"
+                                                            className="c12"
                                                           >
                                                             <Button
                                                               data-testid="confirm-button"
                                                               onClick={[Function]}
                                                               rank="main"
+                                                              tabIndex={0}
                                                               type="button"
                                                               variant="standard"
                                                             >
@@ -2030,6 +2149,7 @@ exports[`Modal renders 1`] = `
                                                                 data-testid="confirm-button"
                                                                 onClick={[Function]}
                                                                 rank="main"
+                                                                tabIndex={0}
                                                                 type="button"
                                                                 variant="standard"
                                                               >
@@ -2042,7 +2162,7 @@ exports[`Modal renders 1`] = `
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "Button__StyledButton-sa7xo3-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c12",
+                                                                        "lastClassName": "c13",
                                                                         "rules": Array [
                                                                           "border-width: 0;",
                                                                           "border-radius: 4px;",
@@ -2090,13 +2210,15 @@ exports[`Modal renders 1`] = `
                                                                   forwardedRef={null}
                                                                   onClick={[Function]}
                                                                   rank="main"
+                                                                  tabIndex={0}
                                                                   type="button"
                                                                   variant="standard"
                                                                 >
                                                                   <button
-                                                                    className="c12"
+                                                                    className="c13"
                                                                     data-testid="confirm-button"
                                                                     onClick={[Function]}
+                                                                    tabIndex={0}
                                                                     type="button"
                                                                   >
                                                                     <Button__ButtonTextWrapper
@@ -2110,7 +2232,7 @@ exports[`Modal renders 1`] = `
                                                                             "componentStyle": ComponentStyle {
                                                                               "componentId": "Button__ButtonTextWrapper-sa7xo3-1",
                                                                               "isStatic": false,
-                                                                              "lastClassName": "c13",
+                                                                              "lastClassName": "c14",
                                                                               "rules": Array [
                                                                                 [Function],
                                                                               ],
@@ -2129,7 +2251,7 @@ exports[`Modal renders 1`] = `
                                                                         isOldButton={false}
                                                                       >
                                                                         <span
-                                                                          className="c13"
+                                                                          className="c14"
                                                                         >
                                                                           I am sure
                                                                         </span>
@@ -2164,7 +2286,7 @@ exports[`Modal renders 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "styles__CloseButtonWrapper-sc-13jcun6-2",
                                       "isStatic": false,
-                                      "lastClassName": "c14",
+                                      "lastClassName": "c15",
                                       "rules": Array [
                                         "float: right;",
                                         "padding: 1rem 1rem 0 0;",
@@ -2186,12 +2308,13 @@ exports[`Modal renders 1`] = `
                                 forwardedRef={null}
                               >
                                 <div
-                                  className="c14"
+                                  className="c15"
                                 >
                                   <IconButton
                                     a11yText="Close"
                                     icon={[Function]}
                                     onClick={[Function]}
+                                    tabIndex="0"
                                     tag="button"
                                     variant="default"
                                   >
@@ -2205,6 +2328,7 @@ exports[`Modal renders 1`] = `
                                       <Styled(StyledInteractiveIconButton)
                                         as="button"
                                         onClick={[Function]}
+                                        tabIndex="0"
                                         variant="default"
                                       >
                                         <StyledComponent
@@ -2216,7 +2340,7 @@ exports[`Modal renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-EHOje",
                                                 "isStatic": false,
-                                                "lastClassName": "c16",
+                                                "lastClassName": "c17",
                                                 "rules": Array [
                                                   "padding: 0;",
                                                   "margin: 0;",
@@ -2252,7 +2376,7 @@ exports[`Modal renders 1`] = `
                                               },
                                               "displayName": "Styled(StyledInteractiveIconButton)",
                                               "foldedComponentIds": Array [
-                                                "c15",
+                                                "c16",
                                               ],
                                               "render": [Function],
                                               "styledComponentId": "sc-EHOje",
@@ -2264,11 +2388,13 @@ exports[`Modal renders 1`] = `
                                           }
                                           forwardedRef={null}
                                           onClick={[Function]}
+                                          tabIndex="0"
                                           variant="default"
                                         >
                                           <button
-                                            className="c15 c16"
+                                            className="c16 c17"
                                             onClick={[Function]}
+                                            tabIndex="0"
                                           >
                                             <A11yContent>
                                               <A11yContent__StyledA11yContent>
@@ -2280,7 +2406,7 @@ exports[`Modal renders 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                                         "isStatic": false,
-                                                        "lastClassName": "c17",
+                                                        "lastClassName": "c18",
                                                         "rules": Array [
                                                           "position: absolute;",
                                                           "height: 1px;",
@@ -2302,7 +2428,7 @@ exports[`Modal renders 1`] = `
                                                   forwardedRef={null}
                                                 >
                                                   <span
-                                                    className="c17"
+                                                    className="c18"
                                                   >
                                                     Close
                                                   </span>
@@ -2318,7 +2444,7 @@ exports[`Modal renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c18",
+                                                      "lastClassName": "c19",
                                                       "rules": Array [
                                                         [Function],
                                                         "@media (prefers-reduced-motion: reduce) {",
@@ -2332,7 +2458,7 @@ exports[`Modal renders 1`] = `
                                                         "border-radius: 50%;",
                                                         "transition: transform 200ms ease-in-out;",
                                                         "transform: scale(0,0);",
-                                                        ".c15:focus &, .c15:active & {",
+                                                        ".c16:focus &, .c16:active & {",
                                                         "transform: scale(1,1);",
                                                         "}",
                                                       ],
@@ -2350,7 +2476,7 @@ exports[`Modal renders 1`] = `
                                                 forwardedRef={null}
                                               >
                                                 <span
-                                                  className="c18"
+                                                  className="c19"
                                                 />
                                               </StyledComponent>
                                             </StyledInteractiveIconHover>
@@ -2382,7 +2508,7 @@ exports[`Modal renders 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "sc-ifAKCX",
                                                           "isStatic": false,
-                                                          "lastClassName": "c19",
+                                                          "lastClassName": "c20",
                                                           "rules": Array [
                                                             [Function],
                                                             [Function],
@@ -2406,7 +2532,7 @@ exports[`Modal renders 1`] = `
                                                   >
                                                     <svg
                                                       aria-hidden={true}
-                                                      className="c19"
+                                                      className="c20"
                                                       color="greyShark"
                                                       data-testid="dependentSvg"
                                                       focusable={false}

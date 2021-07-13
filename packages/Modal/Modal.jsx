@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/tabindex-no-positive */
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
@@ -144,7 +146,7 @@ const Modal = ({
             <StyledModal ref={modalRef} width={width}>
               <ModalWrapper>
                 <Box inset={4} between={4}>
-                  <div ref={header} tabIndex="-1">
+                  <div ref={header} tabIndex="0">
                     <HeaderWrapper id="header-wrapper">
                       <Box between={3}>
                         {modalHeading}
@@ -157,6 +159,7 @@ const Modal = ({
                     offsetHeight={offsetHeight}
                     showHeaderDivider={showHeaderDivider}
                     showFooter={Boolean(confirmCTAText)}
+                    tabIndex="0"
                   >
                     {description}
                   </ContentWrapper>
@@ -179,7 +182,7 @@ const Modal = ({
                   )}
                 </Box>
                 <CloseButtonWrapper>
-                  <IconButton icon={Close} onClick={handleClose} a11yText="Close" />
+                  <IconButton icon={Close} onClick={handleClose} a11yText="Close" tabIndex="0" />
                 </CloseButtonWrapper>
               </ModalWrapper>
             </StyledModal>
@@ -284,7 +287,7 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   headingLevel: HEADER_LEVELS.H3,
-  subHeading: '',
+  subHeading: 'Hello World',
   subHeadingSize: TEXT_SIZES.MEDIUM,
   confirmButtonVariant: BUTTON_VARIANTS.STANDARD,
   confirmCTAText: '',

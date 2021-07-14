@@ -287,7 +287,7 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   headingLevel: HEADER_LEVELS.H3,
-  subHeading: 'Hello World',
+  subHeading: '',
   subHeadingSize: TEXT_SIZES.MEDIUM,
   confirmButtonVariant: BUTTON_VARIANTS.STANDARD,
   confirmCTAText: '',

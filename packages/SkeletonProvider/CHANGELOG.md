@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.1.1...@tds/community-skeleton-provider@2.2.0) (2021-07-14)
+
+
+### Features
+
+* **community-skeleton-provider:** remove uuid to improve bundle size ([08f478b](https://github.com/telus/tds-community/commit/08f478bbe658c026e9ef5628676af4b242d6b165))
+
+
+
+
+
 ## [2.1.1](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.1.0...@tds/community-skeleton-provider@2.1.1) (2020-12-15)
 
 

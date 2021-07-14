@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-ribbon@1.0.4...@tds/community-ribbon@1.1.0) (2021-07-14)
+
+
+### Features
+
+* **community-ribbon:** ribbon can be place on all background colors ([c39d348](https://github.com/telus/tds-community/commit/c39d348e69a8c17d91e596ff2d0e7f98dbfb6682))
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-ribbon@1.0.3...@tds/community-ribbon@1.0.4) (2020-09-09)
 
 

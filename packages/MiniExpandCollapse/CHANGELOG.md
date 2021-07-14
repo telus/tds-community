@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.2.0...@tds/community-mini-expand-collapse@0.2.1) (2021-07-14)
+
+
+### Bug Fixes
+
+* **community-mini-expand-collapse:** accessible voice over on toggle ([14fdb85](https://github.com/telus/tds-community/commit/14fdb85dd9a5467957b29fdb28c0293610cc3d0d))
+* **community-mini-expand-collapse:** fix markdown issue ([9af6c77](https://github.com/telus/tds-community/commit/9af6c77ace0949531683a7a5be8f606a84239e00)), closes [#495](https://github.com/telus/tds-community/issues/495)
+
+
+
+
+
 # [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.1.1...@tds/community-mini-expand-collapse@0.2.0) (2021-06-04)
 
 

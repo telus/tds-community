@@ -5,6 +5,7 @@ import { colorWhite } from '@tds/core-colours'
 export const FullScreenOverlay = styled.div(props => {
   if (props && props.isOpen) {
     return {
+      display: 'flex',
       overflow: 'scroll',
       backgroundColor: colorWhite,
       width: '100%',
@@ -37,16 +38,16 @@ export const StyledModal = styled.div(props => {
       margin: '1rem 0.5rem',
     },
     ...media.from('md').css({
-      margin: '0 auto',
+      margin: 'auto',
       maxWidth: '736px',
       width: `${width}px`,
       minWidth: '570px',
       height: 'auto',
+      maxHeight: '90%',
       borderRadius: '0.25rem',
       boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
       zIndex: '2000',
       backgroundColor: colorWhite,
-      top: '29%',
     }),
   }
 })
@@ -82,13 +83,13 @@ export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, sho
     padding: '0 2rem',
     overflowY: 'scroll',
     overflowX: 'hidden',
-    maxHeight: `calc(100vh - ${updatedHeight}px - 10rem)`,
+    maxHeight: `calc(95vh - ${updatedHeight}px - 10rem)`,
     marginTop: 0,
     ...media
       .from('xs')
       .until('md')
       .css({
-        maxHeight: `calc(100vh - ${updatedHeight}px - ${showFooter ? 6 : 5}rem)`,
+        maxHeight: `calc(95vh - ${updatedHeight}px - ${showFooter ? 6 : 5}rem)`,
       }),
   }
 })

@@ -31,19 +31,6 @@ export const BUTTON_VARIANTS = {
   DANGER: 'danger',
 }
 
-export const NOTIFICATION_VARIANTS = {
-  INSTRUCTIONAL: 'instructional',
-  BRANDED: 'branded',
-  SUCCESS: 'success',
-  ERROR: 'error',
-  WARNING: 'warning',
-}
-
-export const NOTIFICATION_COPY = {
-  EN: 'en',
-  FR: 'fr',
-}
-
 export const LINK_ICON_POSITIONS = {
   LEFT: 'left',
   RIGHT: 'right',

@@ -11,7 +11,6 @@ import { safeRest } from '@tds/util-helpers'
 import { Close, IconButton } from '@tds/core-interactive-icon'
 import { withFocusTrap } from '@tds/shared-hocs'
 
-import { TEXT_SIZES, HEADER_LEVELS, CANCELLATION_BUTTON_TYPES, BUTTON_VARIANTS } from './configs'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
 
@@ -201,7 +200,7 @@ Modal.propTypes = {
   /**
    * The visual level of the heading.
    */
-  headingLevel: PropTypes.oneOf(Object.values(HEADER_LEVELS)),
+  headingLevel: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   /**
    * Text that will appear underneath the heading.
    */
@@ -209,7 +208,7 @@ Modal.propTypes = {
   /**
    * Size of the subheading text.
    */
-  subHeadingSize: PropTypes.oneOf(Object.values(TEXT_SIZES)),
+  subHeadingSize: PropTypes.oneOf(['small', 'medium', 'large']),
   /**
    *
    * Text that will appear in the middle of the content section.
@@ -219,7 +218,7 @@ Modal.propTypes = {
    *
    * Set the variant of the confirm button
    */
-  confirmButtonVariant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
+  confirmButtonVariant: PropTypes.oneOf(['inverted', 'standard', 'brand', 'danger']),
   /**
    *
    * Text that represents confirm CTA.
@@ -229,7 +228,7 @@ Modal.propTypes = {
    *
    * Text that represents cancel CTA or closing modal action.
    */
-  cancelButtonType: PropTypes.oneOf(Object.values(CANCELLATION_BUTTON_TYPES)),
+  cancelButtonType: PropTypes.oneOf(['button', 'linkWithIcon', 'linkWithoutIcon']),
   /**
    *
    * Text that represents cancel CTA or closing modal action.
@@ -286,12 +285,12 @@ Modal.propTypes = {
 }
 
 Modal.defaultProps = {
-  headingLevel: HEADER_LEVELS.H3,
+  headingLevel: 'h3',
   subHeading: '',
-  subHeadingSize: TEXT_SIZES.MEDIUM,
-  confirmButtonVariant: BUTTON_VARIANTS.STANDARD,
+  subHeadingSize: 'medium',
+  confirmButtonVariant: 'standard',
   confirmCTAText: '',
-  cancelButtonType: CANCELLATION_BUTTON_TYPES.LINK_WITHOUT_ICON,
+  cancelButtonType: 'linkWithoutIcon',
   cancelCTAText: '',
   width: 570,
   onConfirm: null,

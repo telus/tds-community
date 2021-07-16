@@ -9,6 +9,7 @@ describe('Datepicker', () => {
     label: 'Book an appointment',
     date: moment(1608924597000),
     copy: 'en',
+    isDayDisabled: '[Function: isDayDisabled]',
   }
   const doShallow = (props = defaultProps) => shallow(<Datepicker {...props} />)
   const doMount = (props = defaultProps) => mount(<Datepicker {...props} />)

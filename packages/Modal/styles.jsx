@@ -43,7 +43,7 @@ export const StyledModal = styled.div(props => {
       width: `${width}px`,
       minWidth: '570px',
       height: 'auto',
-      maxHeight: '90%',
+      maxHeight: '90vh',
       borderRadius: '0.25rem',
       boxShadow: '0 0 16px 0 rgba(0,0,0,0.2)',
       zIndex: '2000',
@@ -89,7 +89,7 @@ export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, sho
       .from('xs')
       .until('md')
       .css({
-        maxHeight: `calc(95vh - ${updatedHeight}px - ${showFooter ? 6 : 5}rem)`,
+        maxHeight: `calc(175vh - ${updatedHeight}px - ${showFooter ? 6 : 5}rem)`,
       }),
   }
 })

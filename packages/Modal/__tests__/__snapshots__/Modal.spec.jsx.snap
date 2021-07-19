@@ -462,7 +462,7 @@ exports[`Modal renders 1`] = `
     width: 570px;
     min-width: 570px;
     height: auto;
-    max-height: 90%;
+    max-height: 90vh;
     border-radius: 0.25rem;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
     z-index: 2000;
@@ -472,7 +472,7 @@ exports[`Modal renders 1`] = `
 
 @media (max-width:767px) {
   .c7 {
-    max-height: calc(95vh - 0px - 6rem);
+    max-height: calc(175vh - 0px - 6rem);
   }
 }
 
@@ -1007,7 +1007,7 @@ exports[`Modal renders 1`] = `
     width: 570px;
     min-width: 570px;
     height: auto;
-    max-height: 90%;
+    max-height: 90vh;
     border-radius: 0.25rem;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
     z-index: 2000;
@@ -1017,7 +1017,7 @@ exports[`Modal renders 1`] = `
 
 @media (max-width:767px) {
   .c7 {
-    max-height: calc(95vh - 0px - 6rem);
+    max-height: calc(175vh - 0px - 6rem);
   }
 }
 

@@ -120,9 +120,11 @@ DatePicker.propTypes = {
   @param {Moment} date The new date that was selected */
   onDateChange: PropTypes.func,
 
-  /** A function determining whether a given date should be disabled
+  /** A function determining whether a given date should be disabled *(implemented only since 1.0.5)*
   @param {Moment} date The date to optionally disable
-  @returns {bool} */
+  @returns {bool}
+  @since 1.0.5
+  @see See [issue #502](https://https://github.com/telus/tds-community/issues/502) for further information */
   isDayDisabled: PropTypes.func,
 
   /** The field label to be displayed above the calendar */

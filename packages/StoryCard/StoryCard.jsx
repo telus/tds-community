@@ -11,7 +11,6 @@ import {
   StyledHeading,
   StyledDescription,
   StyledIconTypeBox,
-  StyledLink,
   StyledIconBox,
   StyledImageContainer,
   StyledImage,
@@ -35,28 +34,26 @@ const StoryCard = ({ storyType, date, title, description, imgUrl, href }) => {
   }
 
   return (
-    <StyledLink href={href} title={title}>
-      <StyledCard>
-        <StyledTextBox>
-          <StyledInfoBox>
-            <StyledIconTypeBox>
-              {selectIcon(storyType) !== undefined && (
-                <StyledIconBox>{selectIcon(storyType)}</StyledIconBox>
-              )}
-              <StyledType>{storyType}</StyledType>
-            </StyledIconTypeBox>
-            <StyledDate>{date}</StyledDate>
-          </StyledInfoBox>
-          <StyledHeadingBox>
-            <StyledHeading>{title}</StyledHeading>
-          </StyledHeadingBox>
-          <StyledDescription>{description}</StyledDescription>
-        </StyledTextBox>
-        <StyledImageContainer>
-          <StyledImage src={imgUrl} alt={description} />
-        </StyledImageContainer>
-      </StyledCard>
-    </StyledLink>
+    <StyledCard href={href} title={title}>
+      <StyledTextBox>
+        <StyledInfoBox>
+          <StyledIconTypeBox>
+            {selectIcon(storyType) !== undefined && (
+              <StyledIconBox>{selectIcon(storyType)}</StyledIconBox>
+            )}
+            <StyledType>{storyType}</StyledType>
+          </StyledIconTypeBox>
+          <StyledDate>{date}</StyledDate>
+        </StyledInfoBox>
+        <StyledHeadingBox>
+          <StyledHeading>{title}</StyledHeading>
+        </StyledHeadingBox>
+        <StyledDescription>{description}</StyledDescription>
+      </StyledTextBox>
+      <StyledImageContainer>
+        <StyledImage src={imgUrl} alt={description} />
+      </StyledImageContainer>
+    </StyledCard>
   )
 }
 

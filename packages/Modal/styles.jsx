@@ -10,9 +10,12 @@ export const FullScreenOverlay = styled.div(props => {
       backgroundColor: colorWhite,
       width: '100%',
       height: '100%',
+      maxHeight: '100vh',
       position: 'fixed',
       top: '0',
+      bottom: '0',
       left: '0',
+      right: '0',
       zIndex: '1400',
       ...media.from('md').css({
         backgroundColor: 'rgba(255, 255, 255, 0.94)',

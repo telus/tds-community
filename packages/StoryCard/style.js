@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import { colorGreyGainsboro, colorTelusPurple, colorWhite, colorShark } from '@tds/core-colours'
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.a`
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
   margin: 0;
-  max-width: 29.188rem;
-  min-height: 625.75px;
+  max-width: 30rem;
   background: ${colorWhite};
   border-radius: 3px;
   border: 1px solid ${colorGreyGainsboro};
@@ -19,11 +21,9 @@ export const StyledCard = styled.div`
   }
   @media (max-width: 414px) {
     max-width: 20rem;
-    min-height: 33rem;
   }
   @media (max-width: 320px) {
     max-width: 18rem;
-    min-height: 32rem;
   }
 `
 

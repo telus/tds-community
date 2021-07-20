@@ -89,6 +89,7 @@ export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, sho
       .from('xs')
       .until('md')
       .css({
+        height: '100%',
         maxHeight: `calc(175vh - ${updatedHeight}px - ${showFooter ? 6 : 5}rem)`,
       }),
   }

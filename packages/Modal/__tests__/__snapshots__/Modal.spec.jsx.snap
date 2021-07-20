@@ -472,6 +472,7 @@ exports[`Modal renders 1`] = `
 
 @media (max-width:767px) {
   .c7 {
+    height: 100%;
     max-height: calc(175vh - 0px - 6rem);
   }
 }
@@ -1017,6 +1018,7 @@ exports[`Modal renders 1`] = `
 
 @media (max-width:767px) {
   .c7 {
+    height: 100%;
     max-height: calc(175vh - 0px - 6rem);
   }
 }

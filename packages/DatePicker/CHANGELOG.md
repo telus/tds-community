@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/telus/tds-community/compare/@tds/community-date-picker@1.0.4...@tds/community-date-picker@1.0.5) (2021-07-21)
+
+
+### Bug Fixes
+
+* **community-date-picker:** add unit test ([d2a3f4b](https://github.com/telus/tds-community/commit/d2a3f4b7a013f0ca2c8f695c03f6c3e603ba13d0))
+* **community-date-picker:** fix unit test ([e3c6a78](https://github.com/telus/tds-community/commit/e3c6a789f43c378bb865e0914b15b7338eabc0ce))
+* **community-date-picker:** use isDayDisabled fn ([b0d3830](https://github.com/telus/tds-community/commit/b0d38301a8dafe7fba5c75de8b0d25ce05b078dd))
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-date-picker@1.0.3...@tds/community-date-picker@1.0.4) (2020-09-09)
 
 

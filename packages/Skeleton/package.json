@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-skeleton",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-blockquote@1.0.4...@tds/community-blockquote@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-blockquote:** react 17 and styled components 5 ([ff4779e](https://github.com/telus/tds-community/commit/ff4779eb37924707bb35c47f865b7f4d35a71488))
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-blockquote@1.0.3...@tds/community-blockquote@1.0.4) (2020-09-09)
 
 

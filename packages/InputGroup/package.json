@@ -1,6 +1,6 @@
 {
   "name": "@tds/community-input-group",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telus/tds-community/compare/@tds/community-testimonial@3.0.5...@tds/community-testimonial@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-testimonial:** react 17 and styled components 5 ([123ae82](https://github.com/telus/tds-community/commit/123ae82ac86b6f636819091e5a5ed2e8157b512d))
+
+
+
+
+
 ## [3.0.5](https://github.com/telus/tds-community/compare/@tds/community-testimonial@3.0.4...@tds/community-testimonial@3.0.5) (2020-09-09)
 
 **Note:** Version bump only for package @tds/community-testimonial

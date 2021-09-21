@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.11...@tds/community-side-navigation@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-side-navigation:** react 17 and styled components 5 ([f292d94](https://github.com/telus/tds-community/commit/f292d940ab0f214b5b01e733faaa890618f79a93))
+
+
+
+
+
 ## [3.0.11](https://github.com/telus/tds-community/compare/@tds/community-side-navigation@3.0.10...@tds/community-side-navigation@3.0.11) (2020-09-09)
 
 **Note:** Version bump only for package @tds/community-side-navigation

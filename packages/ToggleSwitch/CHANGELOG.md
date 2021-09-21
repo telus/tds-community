@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telus/tds-community/compare/@tds/community-toggle-switch@3.0.5...@tds/community-toggle-switch@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-toggle-switch:** react 17 and styled components 5 ([2874526](https://github.com/telus/tds-community/commit/2874526377eac43c6045d4aabcef91df67aaa8fa))
+
+
+
+
+
 ## [3.0.5](https://github.com/telus/tds-community/compare/@tds/community-toggle-switch@3.0.4...@tds/community-toggle-switch@3.0.5) (2020-09-09)
 
 

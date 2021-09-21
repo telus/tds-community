@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.2.0...@tds/community-skeleton-provider@2.3.0) (2021-09-21)
+
+
+### Features
+
+* **community-skeleton-provider:** react 17 and styled components 5 ([c600354](https://github.com/telus/tds-community/commit/c600354d9fcb885e1781cdb4617ae32b85253cf2))
+
+
+
+
+
 # [2.2.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton-provider@2.1.1...@tds/community-skeleton-provider@2.2.0) (2021-07-14)
 
 

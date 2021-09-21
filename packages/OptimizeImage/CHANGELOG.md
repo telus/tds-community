@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-community/compare/@tds/community-optimize-image@1.1.0...@tds/community-optimize-image@1.2.0) (2021-09-21)
+
+
+### Features
+
+* **community-optimize-image:** react 17 and styled components 5 ([75755b0](https://github.com/telus/tds-community/commit/75755b0eb112986a1f8eadc298b2c4d23b8af300))
+
+
+
+
+
 # [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-optimize-image@1.0.1...@tds/community-optimize-image@1.1.0) (2021-06-10)
 
 

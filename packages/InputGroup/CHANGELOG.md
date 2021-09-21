@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.5...@tds/community-input-group@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-input-group:** react 17 and styled components 5 ([ff9d578](https://github.com/telus/tds-community/commit/ff9d578cd0239afd0e2892033fa4c9932096a0b5))
+
+
+
+
+
 ## [1.0.5](https://github.com/telus/tds-community/compare/@tds/community-input-group@1.0.4...@tds/community-input-group@1.0.5) (2021-03-23)
 
 

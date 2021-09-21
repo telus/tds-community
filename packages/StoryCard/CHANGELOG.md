@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-story-card@1.0.3...@tds/community-story-card@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-story-card:** react 17 and styled components 5 ([a139b9a](https://github.com/telus/tds-community/commit/a139b9a789b1a2d26dcf9ff525380a6b07bd303a))
+
+
+
+
+
 ## [1.0.3](https://github.com/telus/tds-community/compare/@tds/community-story-card@1.0.2...@tds/community-story-card@1.0.3) (2021-07-20)
 
 

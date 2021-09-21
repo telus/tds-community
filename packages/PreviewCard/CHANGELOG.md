@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telus/tds-community/compare/@tds/community-preview-card@1.2.0...@tds/community-preview-card@1.3.0) (2021-09-21)
+
+
+### Features
+
+* **community-preview-card:** react 17 and styled components 5 ([47ceaff](https://github.com/telus/tds-community/commit/47ceaffe00df420e70ecb3ee80a604708ea0fc6c))
+
+
+
+
+
 # [1.2.0](https://github.com/telus/tds-community/compare/@tds/community-preview-card@1.1.7...@tds/community-preview-card@1.2.0) (2021-02-04)
 
 

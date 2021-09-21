@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-tags@1.0.4...@tds/community-tags@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-tags:** react 17 and styled components 5 ([597b4cf](https://github.com/telus/tds-community/commit/597b4cfca0e7e1f6e04b410d6c879f29534a8fd2))
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-community/compare/@tds/community-tags@1.0.3...@tds/community-tags@1.0.4) (2020-09-09)
 
 **Note:** Version bump only for package @tds/community-tags

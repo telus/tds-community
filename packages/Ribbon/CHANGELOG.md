@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-community/compare/@tds/community-ribbon@1.1.0...@tds/community-ribbon@1.2.0) (2021-09-21)
+
+
+### Features
+
+* **community-ribbon:** react 17 and styled components 5 ([3143b5a](https://github.com/telus/tds-community/commit/3143b5a510bbffc3f445913173183bd706a34a29))
+
+
+
+
+
 # [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-ribbon@1.0.4...@tds/community-ribbon@1.1.0) (2021-07-14)
 
 

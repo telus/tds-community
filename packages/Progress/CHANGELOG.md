@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds-community/compare/@tds/community-progress@2.0.1...@tds/community-progress@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-progress:** react 17 and styled components 5 ([d44cfb8](https://github.com/telusdigital/tds-community/commit/d44cfb81a3509f86adeb3271c0d3a1b3918fbf85))
+
+
+
+
+
 ## [2.0.1](https://github.com/telusdigital/tds-community/compare/@tds/community-progress@2.0.0...@tds/community-progress@2.0.1) (2020-09-09)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telus/tds-community/compare/@tds/community-pagination@2.0.4...@tds/community-pagination@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-pagination:** react 17 and styled components 5 ([2ed4afb](https://github.com/telus/tds-community/commit/2ed4afb26f3208ad5b84fe7cc120588eea5e1ec5))
+
+
+
+
+
 ## [2.0.4](https://github.com/telus/tds-community/compare/@tds/community-pagination@2.0.3...@tds/community-pagination@2.0.4) (2020-09-09)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telus/tds-community/compare/@tds/community-skeleton@3.0.3...@tds/community-skeleton@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-skeleton:** react 17 and styled components 5 ([5717b81](https://github.com/telus/tds-community/commit/5717b81e4e5e2673755efe548f2ffe0a1629d826))
+
+
+
+
+
 ## [3.0.3](https://github.com/telus/tds-community/compare/@tds/community-skeleton@3.0.2...@tds/community-skeleton@3.0.3) (2020-09-09)
 
 

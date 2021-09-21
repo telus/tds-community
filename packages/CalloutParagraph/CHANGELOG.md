@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.5.1...@tds/community-callout-paragraph@0.6.0) (2021-09-21)
+
+
+### Features
+
+* **community-callout-paragraph:** react 17 and styled components 5 ([e9cfca7](https://github.com/telus/tds-community/commit/e9cfca7a833f52b90decd2bc3646d886741fcf98))
+
+
+
+
+
 ## [0.5.1](https://github.com/telus/tds-community/compare/@tds/community-callout-paragraph@0.5.0...@tds/community-callout-paragraph@0.5.1) (2021-03-02)
 
 

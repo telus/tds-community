@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-community/compare/@tds/community-date-picker@1.0.5...@tds/community-date-picker@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **community-date-picker:** react 17 and styled components 5 ([ea93104](https://github.com/telus/tds-community/commit/ea931042fdd5c3a16e67a9d694d0ef81a4eacb38))
+
+
+
+
+
 ## [1.0.5](https://github.com/telus/tds-community/compare/@tds/community-date-picker@1.0.4...@tds/community-date-picker@1.0.5) (2021-07-21)
 
 

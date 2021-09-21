@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-toast@0.1.1...@tds/community-toast@0.2.0) (2021-09-21)
+
+
+### Features
+
+* **community-toast:** react 17 and styled components 5 ([6057667](https://github.com/telus/tds-community/commit/605766753ae600803b51a66e30d50382859c1238))
+
+
+
+
+
 ## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-toast@0.1.0...@tds/community-toast@0.1.1) (2020-09-09)
 
 

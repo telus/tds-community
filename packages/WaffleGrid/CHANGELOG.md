@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-waffle-grid@0.1.1...@tds/community-waffle-grid@0.2.0) (2021-09-21)
+
+
+### Features
+
+* **community-waffle-grid:** react 17 and styled components 5 ([59dfd9a](https://github.com/telus/tds-community/commit/59dfd9aefc5046ce5c3400be0658d8bbe465a7fd))
+
+
+
+
+
 ## [0.1.1](https://github.com/telus/tds-community/compare/@tds/community-waffle-grid@0.1.0...@tds/community-waffle-grid@0.1.1) (2020-09-09)
 
 

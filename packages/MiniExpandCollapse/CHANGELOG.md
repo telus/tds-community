@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.2.1...@tds/community-mini-expand-collapse@0.3.0) (2021-09-21)
+
+
+### Features
+
+* **community-mini-expand-collapse:** react 17 and styled components 5 ([f2069cb](https://github.com/telus/tds-community/commit/f2069cb9246891ed7c1e836abc701997e7b6d971))
+
+
+
+
+
 ## [0.2.1](https://github.com/telus/tds-community/compare/@tds/community-mini-expand-collapse@0.2.0...@tds/community-mini-expand-collapse@0.2.1) (2021-07-14)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-radio-card@0.1.0...@tds/community-radio-card@0.2.0) (2021-09-21)
+
+
+### Features
+
+* **community-radio-card:** react 17 and styled components 5 ([92a3061](https://github.com/telus/tds-community/commit/92a3061739f2626cc861891faaeffb10b8ee1e73))
+
+
+
+
+
 # 0.1.0 (2020-10-08)
 
 

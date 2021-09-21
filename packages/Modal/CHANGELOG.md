@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.5.0...@tds/community-modal@1.6.0) (2021-09-21)
+
+
+### Features
+
+* **community-modal:** react 17 and styled components 5 ([17029bb](https://github.com/telus/tds-community/commit/17029bba5ab26265653fc7a00d6f2ff46135f4e7))
+
+
+
+
+
 # [1.5.0](https://github.com/telus/tds-community/compare/@tds/community-modal@1.4.0...@tds/community-modal@1.5.0) (2021-07-21)
 
 

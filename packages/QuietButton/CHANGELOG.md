@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/telus/tds-community/compare/@tds/community-quiet-button@0.1.3...@tds/community-quiet-button@0.2.0) (2021-09-21)
+
+
+### Features
+
+* **community-quiet-button:** react 17 and styled components 5 ([12229ce](https://github.com/telus/tds-community/commit/12229ce5ded1a423f765237b7ac618910752e86e))
+
+
+
+
+
 ## [0.1.3](https://github.com/telus/tds-community/compare/@tds/community-quiet-button@0.1.2...@tds/community-quiet-button@0.1.3) (2020-11-02)
 
 

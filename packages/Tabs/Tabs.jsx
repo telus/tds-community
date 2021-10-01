@@ -25,9 +25,7 @@ import Panel from './Panel/Panel'
 
 const Tabs = props => {
   // Constants
-  const MARGIN_BUFFER = 28
-  const FIRST_TAB_MARGIN_BUFFER = MARGIN_BUFFER * 3
-  const MOVE_TABS_VALUE = 300
+  const MARGIN_BUFFER = 24 // scroll arrow width
   const ENTER_KEY = 13
   const SPACE_BAR_KEY = 32
   const RIGHT_ARROW = 39
@@ -36,11 +34,10 @@ const Tabs = props => {
   const tabsRoot = useRef()
   const tabRef = useRef(null)
   const tabNavRef = useRef(null)
-  const [tabsContainerWidth, setTabsContainerWidth] = useState()
+  const tabScrollIntervals = useRef([])
+  const tabScrollPosition = useRef(0)
+  const tabArrowKeyIntervals = useRef([])
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
-  const [totalTabsWidth, setTotalTabsWidth] = useState(0)
-  const [firstTabWidth, setFirstTabWidth] = useState(0)
-  const [lastTabWidth, setLastTabWidth] = useState(0)
   const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
@@ -64,6 +61,81 @@ const Tabs = props => {
     setCurrent(-1)
   }, [open])
 
+  const initializeScrollIncrements = () => {
+    const tabContainerWidth = tabRef.current.parentElement.clientWidth
+    if (!tabScrollIntervals.current.length) {
+      let tabMargin = null
+      const tabsArray =
+        tabRef.current &&
+        tabRef.current.children[0] &&
+        Array.from(tabRef.current.children[0].childNodes)
+
+      // populates tabScrollIntervals and tabArrowKeyIntervals
+      let currentTabsLength = 0
+      tabsArray.forEach((value, index) => {
+        if (!tabMargin) {
+          tabMargin = value.offsetLeft * 2
+        }
+        const increment = value.offsetWidth + tabMargin
+        if (
+          increment > tabContainerWidth - MARGIN_BUFFER &&
+          tabScrollIntervals.current.length === 0
+        ) {
+          tabScrollIntervals.current.push(increment - MARGIN_BUFFER)
+          tabArrowKeyIntervals.current.push(index)
+          currentTabsLength = 0
+        } else if (
+          increment > tabContainerWidth - MARGIN_BUFFER &&
+          tabScrollIntervals.current.length !== 0
+        ) {
+          tabScrollIntervals.current.push(increment)
+          tabArrowKeyIntervals.current.push(index)
+          currentTabsLength = 0
+        } else if (
+          currentTabsLength + increment > tabContainerWidth - MARGIN_BUFFER &&
+          tabScrollIntervals.current.length === 0
+        ) {
+          tabScrollIntervals.current.push(currentTabsLength - MARGIN_BUFFER)
+          tabArrowKeyIntervals.current.push(index)
+          currentTabsLength = increment
+        } else if (
+          currentTabsLength + increment > tabContainerWidth - MARGIN_BUFFER * 2 &&
+          tabScrollIntervals.current.length !== 0
+        ) {
+          tabScrollIntervals.current.push(currentTabsLength)
+          tabArrowKeyIntervals.current.push(index)
+          currentTabsLength = increment
+        } else {
+          currentTabsLength += increment
+        }
+      })
+    }
+  }
+
+  const setResizeScrollIntervals = () => {
+    tabScrollIntervals.current = []
+    tabArrowKeyIntervals.current = []
+    initializeScrollIncrements()
+    setCurrentFocus(0)
+    if (tabsTranslatePosition !== 0) {
+      let tempTabSum = 0
+
+      // calculates incremental sum of tabScrollIntervals
+      // eslint-disable-next-line no-return-assign
+      const tabSumArr = tabScrollIntervals.current.map(val => (tempTabSum += val))
+      tabSumArr.unshift(0)
+      const diffArr = tabSumArr.map(val => Math.abs(val - Math.abs(tabsTranslatePosition)))
+      const minNumber = Math.min(...diffArr)
+      const index = diffArr.findIndex(val => val === minNumber)
+      if (-tabSumArr[index] === 0) {
+        setTabsTranslatePosition(0)
+      } else {
+        setTabsTranslatePosition(-tabSumArr[index])
+      }
+      tabScrollPosition.current = index
+    }
+  }
+
   const handleBlur = () => {
     // on blur in controlled mode, we set the index back to prop value
     if (open === null || open === undefined) return
@@ -74,8 +146,35 @@ const Tabs = props => {
     }
   }
 
+  const scrollTabs = direction => {
+    let currentPosition = tabsTranslatePosition
+    if (direction === 'right') {
+      if (isRightArrowVisible && !isLeftArrowVisible) {
+        currentPosition -= tabScrollIntervals.current[tabScrollPosition.current]
+      } else {
+        currentPosition -= tabScrollIntervals.current[tabScrollPosition.current]
+      }
+      tabScrollPosition.current += 1
+    }
+    if (direction === 'left') {
+      if (tabScrollPosition.current === 1) {
+        currentPosition = 0
+      } else {
+        currentPosition += tabScrollIntervals.current[tabScrollPosition.current - 1]
+      }
+      tabScrollPosition.current -= 1
+    }
+    setTabsTranslatePosition(currentPosition)
+  }
+
   const handleClick = (e, index) => {
     e.preventDefault()
+
+    // scrolls tabs to the right if tab clicked isn't fully visible
+    if (tabArrowKeyIntervals.current[tabScrollPosition.current] === index) {
+      scrollTabs('right')
+    }
+
     if (!open) {
       setCurrent(index) // set internally if not-controlled
       setCurrentFocus(index)
@@ -90,7 +189,6 @@ const Tabs = props => {
     // we need to temporarily set the index (f will undo)
     // only if both the newTab and previous are the same, was the tab actually clicked
     // and we can raise up the event.
-
     setCurrent(index)
     setCurrentFocus(index)
     const newTab = props.children[index]
@@ -101,107 +199,75 @@ const Tabs = props => {
     }
   }
 
-  const getTabsWidth = () => {
-    let tabsWidthValue = 0
-    const tabsArray =
-      tabRef.current &&
-      tabRef.current.children[0] &&
-      Array.from(tabRef.current.children[0].childNodes)
-    const firstTab =
-      tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].firstChild
-    const lastTab =
-      tabRef.current && tabRef.current.children[0] && tabRef.current.children[0].lastChild
-
-    tabsArray.forEach(value => {
-      if (value && value.offsetWidth) {
-        tabsWidthValue += value.offsetWidth + MARGIN_BUFFER
-      }
-    })
-    const firstTabValue = firstTab.offsetWidth + FIRST_TAB_MARGIN_BUFFER
-    const lastTabValue = lastTab.offsetWidth + FIRST_TAB_MARGIN_BUFFER
-
-    setFirstTabWidth(firstTabValue)
-    setLastTabWidth(lastTabValue)
-    setTotalTabsWidth(tabsWidthValue)
-    if (tabsRoot.current.offsetWidth < totalTabsWidth) {
-      return setTabsContainerWidth(`${totalTabsWidth}px`)
-    }
-    return setTabsTranslatePosition(0)
-  }
-
-  const scrollTabs = direction => {
-    let currentPosition = tabsTranslatePosition
-    if (direction === 'right') {
-      currentPosition -= MOVE_TABS_VALUE
-    }
-    if (direction === 'left') {
-      currentPosition += MOVE_TABS_VALUE
-    }
-    if (-currentPosition + lastTabWidth > totalTabsWidth) {
-      currentPosition = -totalTabsWidth + lastTabWidth + MARGIN_BUFFER
-    }
-    if (direction === 'left' && -currentPosition < firstTabWidth) {
-      currentPosition = 0
-    }
-    setTabsTranslatePosition(currentPosition)
-    getTabsWidth()
-  }
-
   const handleTabsKeyUp = e => {
     if (e.keyCode === RIGHT_ARROW && currentFocus < props.children.length - 1) {
+      tabArrowKeyIntervals.current.forEach(num => {
+        if (currentFocus + 1 === num) {
+          scrollTabs('right')
+        }
+      })
       setCurrentFocus(currentFocus + 1)
       tabNavRef.current.node.parentNode.children[currentFocus + 1].children[0].focus()
     }
     if (e.keyCode === LEFT_ARROW && currentFocus > 0) {
+      tabArrowKeyIntervals.current
+        .slice()
+        .reverse()
+        .forEach(num => {
+          if (currentFocus === num) {
+            scrollTabs('left')
+          }
+        })
       setCurrentFocus(currentFocus - 1)
       tabNavRef.current.node.parentNode.children[currentFocus - 1].children[0].focus()
     }
-    if (e.keyCode === SPACE_BAR_KEY) {
+    if (e.keyCode === SPACE_BAR_KEY || e.keyCode === ENTER_KEY) {
       e.target.click()
     }
-    if (e.target.offsetLeft <= MARGIN_BUFFER) {
-      // eslint-disable-next-line consistent-return
-      return setTabsTranslatePosition(0)
-    }
-    setTabsTranslatePosition(-e.target.offsetLeft + MARGIN_BUFFER)
-    // eslint-disable-next-line consistent-return
-    return getTabsWidth()
-  }
 
-  const handleArrowKeyUp = (e, value) => {
-    if (e.keyCode === ENTER_KEY || e.keyCode === SPACE_BAR_KEY) {
-      scrollTabs(value)
-    }
+    return 0
   }
 
   // handles arrow visibility
   useEffect(() => {
-    if (-tabsTranslatePosition <= firstTabWidth) {
+    initializeScrollIncrements()
+    if (tabScrollPosition.current === 0 && tabScrollIntervals.current.length > 0) {
+      setRightArrowVisible(true)
       setLeftArrowVisible(false)
-      setRightArrowVisible(true)
-      if (-tabsTranslatePosition > 1) {
-        setLeftArrowVisible(true)
-      }
-    } else if (-tabsTranslatePosition < totalTabsWidth) {
-      setLeftArrowVisible(true)
-      setRightArrowVisible(true)
-    }
-    if (-tabsTranslatePosition + tabsRoot.current.offsetWidth >= totalTabsWidth) {
+    } else if (tabScrollPosition.current === 0 && tabScrollIntervals.current.length === 0) {
       setRightArrowVisible(false)
+      setLeftArrowVisible(false)
+    } else if (
+      tabScrollPosition.current === tabScrollIntervals.current.length &&
+      tabsTranslatePosition !== 0
+    ) {
+      setRightArrowVisible(false)
+      setLeftArrowVisible(true)
+    } else {
+      setRightArrowVisible(true)
+      setLeftArrowVisible(true)
     }
+
     setResizeTriggered(false)
-  }, [totalTabsWidth, firstTabWidth, tabsTranslatePosition, resizeTriggered])
+  }, [tabsTranslatePosition, resizeTriggered])
 
   useEffect(() => {
     function handleResize() {
-      getTabsWidth()
+      setCurrentFocus(0)
+      setResizeScrollIntervals()
       setResizeTriggered(true)
     }
     window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [getTabsWidth, resizeTriggered])
+  }, [resizeTriggered])
+
+  const handleArrowKeyUp = (e, value) => {
+    if (e.keyCode === ENTER_KEY || e.keyCode === SPACE_BAR_KEY) {
+      scrollTabs(value)
+    }
+  }
 
   const mapTabs = () => {
     if (props.children.length > 0) {
@@ -250,12 +316,6 @@ const Tabs = props => {
     return ''
   }
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setTimeout(() => getTabsWidth(), 100)
-    }
-  }, [])
-
   return (
     <TabsContainer {...safeRest(rest)} wrapLabels={wrapLabels} ref={tabsRoot}>
       <FlexGrid gutter={false}>
@@ -285,15 +345,15 @@ const Tabs = props => {
                     positionToMove={tabsTranslatePosition}
                     wrapLabels={wrapLabels}
                   >
-                    <TabList style={{ width: tabsContainerWidth }}>{mapTabs()}</TabList>
+                    <TabList>{mapTabs()}</TabList>
                   </TabListContainer>
                 </TabListOuterContainer>
                 {isRightArrowVisible && (
                   <TabArrows
                     tabIndex="0"
                     direction="right"
-                    onKeyUp={e => handleArrowKeyUp(e, 'right')}
                     aria-label={rightArrowLabel}
+                    onKeyUp={e => handleArrowKeyUp(e, 'right')}
                     onClick={() => scrollTabs('right')}
                   >
                     <ArrowInner direction="right">

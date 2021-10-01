@@ -13,7 +13,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c10 {
+.c13 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -58,7 +58,25 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c8 {
+.c10 {
+  fill: #2a2c2e;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c10:hover,
+.c10:focus,
+.c10:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c11 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -73,7 +91,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c12 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -147,6 +165,48 @@ exports[`Tabs renders 1`] = `
   -ms-transform: translate(0px);
   transform: translate(0px);
   white-space: nowrap;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  padding: 2px 0;
+  z-index: 10;
+  height: calc(100% - 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: pointer;
+  right: 0;
+  padding-left: 7px;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8:focus div {
+  box-shadow: 0 0 0 2px #979797;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.c9 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 1px solid #d8d8d8;
 }
 
 .c7 {
@@ -260,35 +320,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
@@ -375,6 +435,20 @@ exports[`Tabs renders 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c10 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c10 {
+    -webkit-transition: none;
+    transition: none;
   }
 }
 
@@ -437,7 +511,7 @@ exports[`Tabs renders 1`] = `
   padding-right: 0;
 }
 
-.c10 {
+.c13 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -482,7 +556,25 @@ exports[`Tabs renders 1`] = `
   width: 100%;
 }
 
-.c8 {
+.c10 {
+  fill: #2a2c2e;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c10:hover,
+.c10:focus,
+.c10:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c11 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -497,7 +589,7 @@ exports[`Tabs renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c12 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -571,6 +663,48 @@ exports[`Tabs renders 1`] = `
   -ms-transform: translate(0px);
   transform: translate(0px);
   white-space: nowrap;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  padding: 2px 0;
+  z-index: 10;
+  height: calc(100% - 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: pointer;
+  right: 0;
+  padding-left: 7px;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8:focus div {
+  box-shadow: 0 0 0 2px #979797;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.c9 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 1px solid #d8d8d8;
 }
 
 .c7 {
@@ -684,35 +818,35 @@ exports[`Tabs renders 1`] = `
 }
 
 @media (max-width:575px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
-  .c10 {
+  .c13 {
     display: block;
     text-align: inherit;
   }
@@ -799,6 +933,20 @@ exports[`Tabs renders 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c10 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c10 {
+    -webkit-transition: none;
+    transition: none;
   }
 }
 
@@ -903,12 +1051,32 @@ exports[`Tabs renders 1`] = `
                           </ul>
                         </div>
                       </div>
+                      <div
+                        aria-label="Move menu to the right"
+                        class="c8"
+                        direction="right"
+                        tabindex="0"
+                      >
+                        <div
+                          class="c9"
+                          direction="right"
+                        >
+                          <svg
+                            class="c10"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                     <hr
-                      class="c8"
+                      class="c11"
                     />
                     <hr
-                      class="c9"
+                      class="c12"
                     />
                     <div
                       aria-labelledby="react-tabs-0"
@@ -923,7 +1091,7 @@ exports[`Tabs renders 1`] = `
                           class="c2"
                         >
                           <div
-                            class="c10"
+                            class="c13"
                             tabindex="0"
                           >
                             <div
@@ -1106,7 +1274,7 @@ exports[`Tabs renders 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                     "isStatic": false,
-                                    "lastClassName": "c10",
+                                    "lastClassName": "c13",
                                     "rules": Array [
                                       [Function],
                                       [Function],
@@ -1350,20 +1518,10 @@ exports[`Tabs renders 1`] = `
                                                         <TabList
                                                           className="react-tabs__tab-list"
                                                           key=".0"
-                                                          style={
-                                                            Object {
-                                                              "width": undefined,
-                                                            }
-                                                          }
                                                         >
                                                           <ul
                                                             className="react-tabs__tab-list"
                                                             role="tablist"
-                                                            style={
-                                                              Object {
-                                                                "width": undefined,
-                                                              }
-                                                            }
                                                           >
                                                             <Tab
                                                               aria-label="Label 1"
@@ -1760,6 +1918,175 @@ exports[`Tabs renders 1`] = `
                                                 </div>
                                               </StyledComponent>
                                             </styles__TabListOuterContainer>
+                                            <styles__TabArrows
+                                              aria-label="Move menu to the right"
+                                              direction="right"
+                                              key=".2"
+                                              onClick={[Function]}
+                                              onKeyUp={[Function]}
+                                              tabIndex="0"
+                                            >
+                                              <StyledComponent
+                                                aria-label="Move menu to the right"
+                                                direction="right"
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "styles__TabArrows-fcx45d-5",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c8",
+                                                      "rules": Array [
+                                                        "position:absolute;top:0;padding:2px 0;z-index:10;height:calc(100% - 8px);display:flex;align-items:stretch;cursor:pointer;&:focus{outline:none;div{box-shadow:0 0 0 2px #979797;border-radius:4px;margin:0 2px;}}",
+                                                        [Function],
+                                                        ";",
+                                                        [Function],
+                                                        ";",
+                                                      ],
+                                                    },
+                                                    "displayName": "styles__TabArrows",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "styles__TabArrows-fcx45d-5",
+                                                    "target": "div",
+                                                    "toString": [Function],
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
+                                                onClick={[Function]}
+                                                onKeyUp={[Function]}
+                                                tabIndex="0"
+                                              >
+                                                <div
+                                                  aria-label="Move menu to the right"
+                                                  className="c8"
+                                                  direction="right"
+                                                  onClick={[Function]}
+                                                  onKeyUp={[Function]}
+                                                  tabIndex="0"
+                                                >
+                                                  <styles__ArrowInner
+                                                    direction="right"
+                                                    key=".0"
+                                                  >
+                                                    <StyledComponent
+                                                      direction="right"
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "styles__ArrowInner-fcx45d-6",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c9",
+                                                            "rules": Array [
+                                                              "background:",
+                                                              "#fff",
+                                                              ";display:flex;align-items:center;",
+                                                              [Function],
+                                                              ";",
+                                                              [Function],
+                                                              ";",
+                                                            ],
+                                                          },
+                                                          "displayName": "styles__ArrowInner",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "styles__ArrowInner-fcx45d-6",
+                                                          "target": "div",
+                                                          "toString": [Function],
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                      forwardedRef={null}
+                                                    >
+                                                      <div
+                                                        className="c9"
+                                                        direction="right"
+                                                      >
+                                                        <ChevronRight
+                                                          key=".0"
+                                                          variant="basic"
+                                                        >
+                                                          <Limited
+                                                            size={24}
+                                                            variant="basic"
+                                                          >
+                                                            <ThemeProvider
+                                                              size={24}
+                                                              theme={
+                                                                Object {
+                                                                  "backgroundColor": "transparent",
+                                                                  "iconColor": "#2a2c2e",
+                                                                }
+                                                              }
+                                                            >
+                                                              <Styled(StyledInteractiveIconSVG)
+                                                                animationDirection="right"
+                                                                variant="basic"
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <StyledComponent
+                                                                  animationDirection="right"
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "sc-bdVaJa",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c10",
+                                                                        "rules": Array [
+                                                                          [Function],
+                                                                          "width: 1.5rem;",
+                                                                          "height: 1.5rem;",
+                                                                          "z-index: 2;",
+                                                                          [Function],
+                                                                          "@media (prefers-reduced-motion: reduce) {",
+                                                                          "transition: none;",
+                                                                          "}",
+                                                                          [Function],
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                                      "foldedComponentIds": Array [
+                                                                        "StyledInteractiveIconSVG-ix2erv-0",
+                                                                      ],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "sc-bdVaJa",
+                                                                      "target": "svg",
+                                                                      "toString": [Function],
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  variant="basic"
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <svg
+                                                                    className="c10"
+                                                                    viewBox="0 0 24 24"
+                                                                  >
+                                                                    <path
+                                                                      d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+                                                                    />
+                                                                  </svg>
+                                                                </StyledComponent>
+                                                              </Styled(StyledInteractiveIconSVG)>
+                                                            </ThemeProvider>
+                                                          </Limited>
+                                                        </ChevronRight>
+                                                      </div>
+                                                    </StyledComponent>
+                                                  </styles__ArrowInner>
+                                                </div>
+                                              </StyledComponent>
+                                            </styles__TabArrows>
                                           </div>
                                         </StyledComponent>
                                       </styles__TabBorder>
@@ -1780,7 +2107,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c8",
+                                                  "lastClassName": "c11",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1803,7 +2130,7 @@ exports[`Tabs renders 1`] = `
                                             vertical={false}
                                           >
                                             <hr
-                                              className="c8"
+                                              className="c11"
                                             />
                                           </StyledComponent>
                                         </HairlineDivider__StyledHairlineDivider>
@@ -1820,7 +2147,7 @@ exports[`Tabs renders 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c9",
+                                                  "lastClassName": "c12",
                                                   "rules": Array [
                                                     "padding: 0;",
                                                     "margin: 0;",
@@ -1842,7 +2169,7 @@ exports[`Tabs renders 1`] = `
                                             forwardedRef={null}
                                           >
                                             <hr
-                                              className="c9"
+                                              className="c12"
                                             />
                                           </StyledComponent>
                                         </DimpleDivider__StyledDimpleDivider>
@@ -2006,7 +2333,7 @@ exports[`Tabs renders 1`] = `
                                                                     "componentStyle": ComponentStyle {
                                                                       "componentId": "Col__StyledCol-sc-15yvjc7-0",
                                                                       "isStatic": false,
-                                                                      "lastClassName": "c10",
+                                                                      "lastClassName": "c13",
                                                                       "rules": Array [
                                                                         [Function],
                                                                         [Function],
@@ -2047,7 +2374,7 @@ exports[`Tabs renders 1`] = `
                                                                 xs={12}
                                                               >
                                                                 <div
-                                                                  className="c10"
+                                                                  className="c13"
                                                                   tabIndex="0"
                                                                 >
                                                                   <Panel

@@ -30,19 +30,24 @@ const Tabs = props => {
   const SPACE_BAR_KEY = 32
   const RIGHT_ARROW = 39
   const LEFT_ARROW = 37
+  const TAB = 9
 
+  const currentFocus = useRef(0)
   const tabsRoot = useRef()
   const tabRef = useRef(null)
   const tabNavRef = useRef(null)
   const tabScrollIntervals = useRef([])
-  const tabScrollPosition = useRef(0)
-  const tabArrowKeyIntervals = useRef([])
+  const tabScrollPosition = useRef(0) // 0,1,2... to keep track of the scroll page
+  const tabArrowKeyIntervals = useRef([]) // list of tab indices where scrolling should happen
+  const tabIsFocused = useRef(false) // checks if any of the tabs are in focus
+  // helper to handle edge case for when only one tab is on the last scroll page
+  // it prevents scrolling back to the left to accomodate accessibility needs
+  const wasTabbedPastTabs = useRef(false)
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
   const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
   const [isRightArrowVisible, setRightArrowVisible] = useState(false)
   const [current, setCurrent] = useState(0)
-  const [currentFocus, setCurrentFocus] = useState(0)
   const { children, leftArrowLabel, rightArrowLabel, wrapLabels, open, onOpen, ...rest } = props
 
   useEffect(() => {
@@ -51,10 +56,9 @@ const Tabs = props => {
     if (open === null || open === undefined) return
     if (!props.children.length) return
     const tabIndex = props.children.findIndex(child => child.props.id === open)
-
     if (tabIndex >= 0) {
       setCurrent(tabIndex)
-      setCurrentFocus(tabIndex)
+      currentFocus.current = tabIndex
       return
     }
     // if tabIndex === null set to -1 to keep tabs contolled, but select no tab
@@ -112,15 +116,17 @@ const Tabs = props => {
     }
   }
 
+  // activates whenever resize occurs
+  // calculates incremental sum of tabScrollIntervals to adjust the tabs translation and autoscrolls
+  // scrolling snaps to the closest value from the incremental sum of tabScrollIntervals and the previous translate position
   const setResizeScrollIntervals = () => {
     tabScrollIntervals.current = []
     tabArrowKeyIntervals.current = []
     initializeScrollIncrements()
-    setCurrentFocus(0)
+    currentFocus.current = 0
     if (tabsTranslatePosition !== 0) {
       let tempTabSum = 0
 
-      // calculates incremental sum of tabScrollIntervals
       // eslint-disable-next-line no-return-assign
       const tabSumArr = tabScrollIntervals.current.map(val => (tempTabSum += val))
       tabSumArr.unshift(0)
@@ -142,7 +148,7 @@ const Tabs = props => {
     const tabIndex = props.children.findIndex(child => child.props.id === open)
     if (tabIndex !== current) {
       setCurrent(tabIndex)
-      setCurrentFocus(tabIndex)
+      currentFocus.current = tabIndex
     }
   }
 
@@ -167,7 +173,7 @@ const Tabs = props => {
     setTabsTranslatePosition(currentPosition)
   }
 
-  const handleClick = (e, index) => {
+  const handleTabClick = (e, index) => {
     e.preventDefault()
 
     // scrolls tabs to the right if tab clicked isn't fully visible
@@ -177,7 +183,7 @@ const Tabs = props => {
 
     if (!open) {
       setCurrent(index) // set internally if not-controlled
-      setCurrentFocus(index)
+      currentFocus.current = index
       return
     }
     // raise to controlling component to set on click if controlled
@@ -190,7 +196,7 @@ const Tabs = props => {
     // only if both the newTab and previous are the same, was the tab actually clicked
     // and we can raise up the event.
     setCurrent(index)
-    setCurrentFocus(index)
+    currentFocus.current = index
     const newTab = props.children[index]
     const previousTab = props.children[previousIndex]
     if (newTab === previousTab) {
@@ -200,26 +206,56 @@ const Tabs = props => {
   }
 
   const handleTabsKeyUp = e => {
-    if (e.keyCode === RIGHT_ARROW && currentFocus < props.children.length - 1) {
+    const numTabs = tabNavRef.current.node.parentNode.children.length
+
+    if (
+      (e.keyCode === RIGHT_ARROW || (!e.shiftKey && e.keyCode === TAB)) &&
+      currentFocus.current < props.children.length - 1
+    ) {
       tabArrowKeyIntervals.current.forEach(num => {
-        if (currentFocus + 1 === num) {
+        if (currentFocus.current + 1 === num) {
           scrollTabs('right')
         }
       })
-      setCurrentFocus(currentFocus + 1)
-      tabNavRef.current.node.parentNode.children[currentFocus + 1].children[0].focus()
+      if (
+        e.keyCode === RIGHT_ARROW ||
+        document.activeElement !== tabNavRef.current.node.parentNode.children[0].children[0]
+      ) {
+        currentFocus.current += 1
+        tabNavRef.current.node.parentNode.children[currentFocus.current].children[0].focus()
+      }
     }
-    if (e.keyCode === LEFT_ARROW && currentFocus > 0) {
+    if (
+      (e.keyCode === LEFT_ARROW || (e.shiftKey && e.keyCode === TAB)) &&
+      currentFocus.current > 0
+    ) {
       tabArrowKeyIntervals.current
         .slice()
         .reverse()
         .forEach(num => {
-          if (currentFocus === num) {
+          if (
+            (e.keyCode === LEFT_ARROW && currentFocus.current === num) ||
+            (!wasTabbedPastTabs.current &&
+              e.shiftKey &&
+              e.keyCode === TAB &&
+              currentFocus.current === num)
+          ) {
             scrollTabs('left')
           }
         })
-      setCurrentFocus(currentFocus - 1)
-      tabNavRef.current.node.parentNode.children[currentFocus - 1].children[0].focus()
+
+      if (wasTabbedPastTabs.current) {
+        wasTabbedPastTabs.current = !wasTabbedPastTabs.current
+      }
+
+      if (
+        e.keyCode === LEFT_ARROW ||
+        document.activeElement !==
+          tabNavRef.current.node.parentNode.children[numTabs - 1].children[0]
+      ) {
+        currentFocus.current -= 1
+        tabNavRef.current.node.parentNode.children[currentFocus.current].children[0].focus()
+      }
     }
     if (e.keyCode === SPACE_BAR_KEY || e.keyCode === ENTER_KEY) {
       e.target.click()
@@ -252,14 +288,36 @@ const Tabs = props => {
   }, [tabsTranslatePosition, resizeTriggered])
 
   useEffect(() => {
-    function handleResize() {
-      setCurrentFocus(0)
+    const handleResize = () => {
+      currentFocus.current = 0
       setResizeScrollIntervals()
       setResizeTriggered(true)
     }
+
+    const handleGlobalTabUpEvent = e => {
+      const numTabs = tabNavRef.current.node.parentNode.children.length
+      tabIsFocused.current = false
+      // checks that a tab is focused if the tab key is pressed
+      if (e.keyCode === TAB) {
+        for (let i = 0; i < numTabs; i += 1) {
+          if (
+            document.activeElement === tabNavRef.current.node.parentNode.children[i].children[0]
+          ) {
+            tabIsFocused.current = true
+          }
+        }
+
+        if (!tabIsFocused.current && currentFocus.current) {
+          wasTabbedPastTabs.current = true
+        }
+      }
+    }
+
     window.addEventListener('resize', handleResize)
+    window.addEventListener('keyup', handleGlobalTabUpEvent)
     return () => {
       window.removeEventListener('resize', handleResize)
+      window.removeEventListener('keyup', handleGlobalTabUpEvent)
     }
   }, [resizeTriggered])
 
@@ -280,7 +338,7 @@ const Tabs = props => {
             tabIndex="-1"
             key={hash(i)}
             onClick={e => {
-              handleClick(e, i)
+              handleTabClick(e, i)
             }}
             onKeyUp={e => handleTabsKeyUp(e)}
             ref={tabNavRef}

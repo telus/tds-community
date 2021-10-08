@@ -984,6 +984,7 @@ exports[`Tabs renders 1`] = `
                           <ul
                             class="react-tabs__tab-list"
                             role="tablist"
+                            style="width: 0px;"
                           >
                             <li
                               aria-controls="react-tabs-1"
@@ -1441,6 +1442,7 @@ exports[`Tabs renders 1`] = `
                                                             <ul
                                                               class="react-tabs__tab-list"
                                                               role="tablist"
+                                                              style="width: 0px;"
                                                             >
                                                               <li
                                                                 aria-controls="react-tabs-1"
@@ -1518,10 +1520,20 @@ exports[`Tabs renders 1`] = `
                                                         <TabList
                                                           className="react-tabs__tab-list"
                                                           key=".0"
+                                                          style={
+                                                            Object {
+                                                              "width": "0px",
+                                                            }
+                                                          }
                                                         >
                                                           <ul
                                                             className="react-tabs__tab-list"
                                                             role="tablist"
+                                                            style={
+                                                              Object {
+                                                                "width": "0px",
+                                                              }
+                                                            }
                                                           >
                                                             <Tab
                                                               aria-label="Label 1"

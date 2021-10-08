@@ -43,6 +43,7 @@ const Tabs = props => {
   // helper to handle edge case for when only one tab is on the last scroll page
   // it prevents scrolling back to the left to accomodate accessibility needs
   const wasTabbedPastTabs = useRef(false)
+  const finalScrollLeftTabPos = useRef(null) // keeps track of the left most visible tab on final scroll
   const [tabsTranslatePosition, setTabsTranslatePosition] = useState(0)
   const [resizeTriggered, setResizeTriggered] = useState(false)
   const [isLeftArrowVisible, setLeftArrowVisible] = useState(false)
@@ -69,11 +70,11 @@ const Tabs = props => {
     const tabContainerWidth = tabRef.current.parentElement.clientWidth
     if (!tabScrollIntervals.current.length) {
       let tabMargin = null
+      let totalTabWidth = 0
       const tabsArray =
         tabRef.current &&
         tabRef.current.children[0] &&
         Array.from(tabRef.current.children[0].childNodes)
-
       // populates tabScrollIntervals and tabArrowKeyIntervals
       let currentTabsLength = 0
       tabsArray.forEach((value, index) => {
@@ -81,6 +82,7 @@ const Tabs = props => {
           tabMargin = value.offsetLeft * 2
         }
         const increment = value.offsetWidth + tabMargin
+        totalTabWidth += increment
         if (
           increment > tabContainerWidth - MARGIN_BUFFER &&
           tabScrollIntervals.current.length === 0
@@ -113,6 +115,33 @@ const Tabs = props => {
           currentTabsLength += increment
         }
       })
+
+      // handles last scroll interval and makes sure the last tab is on the far right
+      if (tabScrollIntervals.current.length > 0) {
+        let tabSumBeforeFinalScroll = 0
+        if (tabArrowKeyIntervals.current.length > 1) {
+          for (let i = 0; i < tabScrollIntervals.current.length - 1; i += 1) {
+            tabSumBeforeFinalScroll += tabScrollIntervals.current[i]
+          }
+          tabScrollIntervals.current[tabScrollIntervals.current.length - 1] =
+            totalTabWidth - tabContainerWidth - tabSumBeforeFinalScroll
+        } else {
+          tabScrollIntervals.current[tabScrollIntervals.current.length - 1] =
+            totalTabWidth - tabContainerWidth
+        }
+
+        // grabs the final visible leftmost tab on the last scroll screen
+        currentTabsLength = 0
+        for (let i = tabsArray.length - 1; i >= 0; i -= 1) {
+          const increment = tabsArray[i].offsetWidth + tabMargin
+          if (currentTabsLength + increment > tabContainerWidth - MARGIN_BUFFER) {
+            finalScrollLeftTabPos.current = i
+            break
+          } else {
+            currentTabsLength += increment
+          }
+        }
+      }
     }
   }
 
@@ -181,6 +210,13 @@ const Tabs = props => {
       scrollTabs('right')
     }
 
+    if (
+      tabScrollPosition.current === tabScrollIntervals.current.length &&
+      index === finalScrollLeftTabPos.current
+    ) {
+      scrollTabs('left')
+    }
+
     if (!open) {
       setCurrent(index) // set internally if not-controlled
       currentFocus.current = index
@@ -213,7 +249,10 @@ const Tabs = props => {
       currentFocus.current < props.children.length - 1
     ) {
       tabArrowKeyIntervals.current.forEach(num => {
-        if (currentFocus.current + 1 === num) {
+        if (
+          currentFocus.current + 1 === num &&
+          tabScrollPosition.current !== tabScrollIntervals.current.length
+        ) {
           scrollTabs('right')
         }
       })
@@ -403,7 +442,7 @@ const Tabs = props => {
                     positionToMove={tabsTranslatePosition}
                     wrapLabels={wrapLabels}
                   >
-                    <TabList>{mapTabs()}</TabList>
+                    <TabList style={{ width: '0px' }}>{mapTabs()}</TabList>
                   </TabListContainer>
                 </TabListOuterContainer>
                 {isRightArrowVisible && (

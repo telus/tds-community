@@ -154,10 +154,9 @@ const Tabs = props => {
     initializeScrollIncrements()
     currentFocus.current = 0
     if (tabsTranslatePosition !== 0) {
-      let tempTabSum = 0
-
-      // eslint-disable-next-line no-return-assign
-      const tabSumArr = tabScrollIntervals.current.map(val => (tempTabSum += val))
+      const tabSumArr = tabScrollIntervals.current.map((_, idx) =>
+        tabScrollIntervals.current.slice(0, idx + 1).reduce((prev, curr) => prev + curr)
+      )
       tabSumArr.unshift(0)
       const diffArr = tabSumArr.map(val => Math.abs(val - Math.abs(tabsTranslatePosition)))
       const minNumber = Math.min(...diffArr)
@@ -442,7 +441,7 @@ const Tabs = props => {
                     positionToMove={tabsTranslatePosition}
                     wrapLabels={wrapLabels}
                   >
-                    <TabList style={{ width: '0px' }}>{mapTabs()}</TabList>
+                    <TabList style={{ width: '0' }}>{mapTabs()}</TabList>
                   </TabListContainer>
                 </TabListOuterContainer>
                 {isRightArrowVisible && (

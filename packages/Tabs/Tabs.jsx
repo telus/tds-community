@@ -69,6 +69,7 @@ const Tabs = props => {
 
   const initializeScrollIncrements = () => {
     const tabContainerWidth = tabRef.current.parentElement.clientWidth
+    const tabContainerWidthWithBuffer = tabContainerWidth - MARGIN_BUFFER
 
     if (!tabScrollIntervals.current.length) {
       let tabMargin = null
@@ -79,6 +80,7 @@ const Tabs = props => {
         Array.from(tabRef.current.children[0].childNodes)
       // populates tabScrollIntervals and tabArrowKeyIntervals
       let currentTabsLength = 0
+
       tabsArray.forEach((value, index) => {
         if (!tabMargin) {
           tabMargin = value.offsetLeft * 2
@@ -86,29 +88,26 @@ const Tabs = props => {
         const increment = value.offsetWidth + tabMargin
         totalTabWidth += increment
 
-        if (
-          increment > tabContainerWidth - MARGIN_BUFFER &&
-          tabScrollIntervals.current.length === 0
-        ) {
+        if (increment > tabContainerWidthWithBuffer && tabScrollIntervals.current.length === 0) {
           tabScrollIntervals.current.push(increment - MARGIN_BUFFER)
           tabArrowKeyIntervals.current.push(index)
           currentTabsLength = 0
         } else if (
-          increment > tabContainerWidth - MARGIN_BUFFER &&
+          increment > tabContainerWidthWithBuffer &&
           tabScrollIntervals.current.length !== 0
         ) {
           tabScrollIntervals.current.push(increment)
           tabArrowKeyIntervals.current.push(index)
           currentTabsLength = 0
         } else if (
-          currentTabsLength + increment > tabContainerWidth - MARGIN_BUFFER &&
+          currentTabsLength + increment > tabContainerWidthWithBuffer &&
           tabScrollIntervals.current.length === 0
         ) {
           tabScrollIntervals.current.push(currentTabsLength - MARGIN_BUFFER)
           tabArrowKeyIntervals.current.push(index)
           currentTabsLength = increment
         } else if (
-          currentTabsLength + increment > tabContainerWidth - MARGIN_BUFFER * 2 &&
+          currentTabsLength + increment > tabContainerWidthWithBuffer - MARGIN_BUFFER &&
           tabScrollIntervals.current.length !== 0
         ) {
           tabScrollIntervals.current.push(currentTabsLength)
@@ -127,6 +126,7 @@ const Tabs = props => {
           for (let i = 0; i < tabScrollIntervals.current.length - 1; i += 1) {
             tabSumBeforeFinalScroll += tabScrollIntervals.current[i]
           }
+
           tabScrollIntervals.current[tabScrollIntervals.current.length - 1] =
             totalTabWidth - tabContainerWidth - tabSumBeforeFinalScroll
         } else {

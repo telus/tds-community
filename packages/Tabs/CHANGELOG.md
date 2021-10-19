@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.5.0...@tds/community-tabs@0.6.0) (2021-10-19)
+
+
+### Features
+
+* **community-tabs:** cd-170 - last tab always rightmost & fixes ([6ff42e9](https://github.com/telus/tds-community/commit/6ff42e926f728adb1667721d57b7e7da6ff51a89))
+* **community-tabs:** cd-170 - refactor component ([ed0ede5](https://github.com/telus/tds-community/commit/ed0ede571c1ea1447c6031b4b25b950851a6f39a))
+* **community-tabs:** cd-91 - accessibility changes + bug fixes ([5df24d1](https://github.com/telus/tds-community/commit/5df24d1f751618111dc63e95392956ab93a3d3a6))
+* **community-tabs:** cd-91 - add dynamic tab scrolling ([c2e5d7e](https://github.com/telus/tds-community/commit/c2e5d7e7f161187116e66a7a276c569a0ed460ae))
+
+
+
+
+
 # [0.5.0](https://github.com/telus/tds-community/compare/@tds/community-tabs@0.4.4...@tds/community-tabs@0.5.0) (2021-09-21)
 
 

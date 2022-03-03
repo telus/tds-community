@@ -22,6 +22,10 @@ if (
 
 const { output } = spawnSync('../prePr.sh')
 
+const formattedVersions = (output[1].toString('utf8').match(/(\s-.*)*/g) || [])
+  .join('')
+  .replace(/\s-\s/g, '\n- ')
+
 const changes = `Packages pending updates:\n${formattedVersions}\n\nIf this is not what you expected, ensure that your commit messages follow the TDS commit types guide on this page: https://tds.telus.com/contributing/developer-guide.html and try again.`
 request.post({
   url: `https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}/issues/${process.env.GITHUB_PULL_REQUEST}/comments`,

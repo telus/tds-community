@@ -25,7 +25,7 @@
     "dev": "styleguidist server --config config/styleguide.config.js",
     "dev:e2e-direct": "npm rebuild node-sass && STYLEGUIDIST_ENV=e2e styleguidist server --config config/styleguide.config.js",
     "lerna:publish": "node scripts/publish.js",
-    "lerna:cipublish": "npx lerna publish --conventional-commits --yes",
+    "lerna:cipublish": "npx lerna publish from-package --conventional-commits --yes",
     "lint:js": "eslint packages shared config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",

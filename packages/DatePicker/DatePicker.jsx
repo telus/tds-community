@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import momentPropTypes from 'react-moment-proptypes'
 
@@ -40,6 +40,7 @@ const getIcon = type => <DecorativeIcon symbol={type} size={16} />
 
 const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label, ...props }) => {
   const [isFocused, setIsFocused] = useState(false)
+  const labelRef = useRef(null)
 
   useEffect(() => {
     window.addEventListener('resize', getResponsiveDaySize(inline))
@@ -48,6 +49,12 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
       window.removeEventListener('resize', getResponsiveDaySize(inline))
     }
   })
+
+  useEffect(() => {
+    if (!isFocused) {
+      labelRef.current.control.blur()
+    }
+  }, [isFocused])
 
   const onFocusChange = ({ focused }) => {
     setIsFocused(focused)
@@ -60,7 +67,7 @@ const DatePicker = ({ id, date, copy, onDateChange, isDayDisabled, inline, label
   const daySize = getResponsiveDaySize(inline)()
   return (
     <CalendarContainer {...safeRest(propsWithoutStyling)} daySize={daySize}>
-      <label htmlFor={id}>
+      <label htmlFor={id} ref={labelRef}>
         <LabelText>{label}</LabelText>
         {inline && (
           <React.Fragment>

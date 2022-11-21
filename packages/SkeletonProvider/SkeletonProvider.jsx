@@ -1,17 +1,22 @@
-import React, { Fragment } from 'react'
+import React, { createContext } from 'react'
 import PropTypes from 'prop-types'
-import { withContext } from 'recompose'
 import AutoSkeletonizer from './AutoSkeletonizer'
 
-const SkeletonProvider = withContext({ show: PropTypes.bool }, props => ({
-  show: props.show,
-}))(props => <Fragment>{AutoSkeletonizer(props.children)}</Fragment>)
-
+export const SkeletonContext = createContext({ show: true })
+function SkeletonProvider({ show, children, ...rest }) {
+  return (
+    <SkeletonContext.Provider value={{ show }} {...rest}>
+      {AutoSkeletonizer(children)}
+    </SkeletonContext.Provider>
+  )
+}
 SkeletonProvider.propTypes = {
   show: PropTypes.bool,
+  children: PropTypes.node,
 }
 SkeletonProvider.defaultProps = {
   show: true,
+  children: null,
 }
 
 export default SkeletonProvider

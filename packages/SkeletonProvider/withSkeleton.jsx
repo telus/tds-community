@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import { getContext } from 'recompose'
 
-export const SkeletonRenderer = getContext({ show: PropTypes.bool })(props =>
-  props.show ? props.skeleton() : props.render()
-)
+import { SkeletonContext } from './SkeletonProvider'
+
+function SkeletonRenderer(props) {
+  const skeleton = useContext(SkeletonContext)
+  return skeleton.show ? props.skeleton() : props.render()
+}
 
 const getName = comp => comp.displayName || comp.name || 'Component'
 

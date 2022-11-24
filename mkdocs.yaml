@@ -1,0 +1,7 @@
+site_name: tds-community
+site_description: Documentation for tds-community
+plugins:
+  - techdocs-core
+nav:
+  - Intro:
+      - Welcome: intro/welcome.md

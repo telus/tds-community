@@ -1,0 +1,47 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tds-community
+  description: TELUS Design System Community Components
+  tags:
+    - module
+    - npm
+    - node
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=tds-community
+    backstage.io/techdocs-ref: dir:docs
+    github.com/project-slug: telus/tds-community
+  links:
+    - url: https://github.com/telus/tds-community
+      title: Website
+      icon: web
+spec:
+  type: service
+  lifecycle: experimental
+  owner: telus
+  system: digital
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: tds-community
+  description: TELUS Design System Community Components
+  tags:
+    - module
+    - npm
+    - node
+  annotations:
+    github.com/project-slug: telus/tds-community
+  links:
+    - url: https://github.com/telus/tds-community
+      title: API Spec
+      icon: code
+    - url: https://github.com/telus/tds-community
+      title: Website
+      icon: web
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: digital
+  definition:
+    $text: https://github.com/telus/tds-community

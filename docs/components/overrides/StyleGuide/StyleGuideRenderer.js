@@ -5,7 +5,7 @@ import cx from 'classnames'
 import Logo from 'rsg-components/Logo'
 import Markdown from 'rsg-components/Markdown'
 import { createGlobalStyle } from 'styled-components'
-import { colorSecondary} from '@tds/core-colours'
+import { colorSecondary } from '@tds/core-colours'
 
 import CSSReset from '@tds/core-css-reset'
 import FlexGrid from '@tds/core-flex-grid'
@@ -85,9 +85,34 @@ const TdsGrid = ({ children }) => (
   </FlexGrid>
 )
 
+const TDSSunsetWarning = () => (
+  <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', padding: '1rem', backgroundColor: 'rgb(255, 248, 230)', marginBottom: '1rem', border: '1px solid rgb(230, 167, 0)', borderRadius: '6px' }}>
+    <div style={{ marginRight: '1rem', height: '100%' }}>
+      <svg style={{ display: 'inline-block', verticalAlign: 'middle' }} width="20" height="20">
+        <path fill="#8C5415" fillRule="evenodd" d="M10.878 1.61l8.315 15.244a1 1 0 0 1-.878 1.48H1.685a1 1 0 0 1-.878-1.48L9.122 1.61a1 1 0 0 1 1.756 0zM10 16.794c.46 0 .833-.402.833-.898 0-.495-.373-.897-.833-.897-.46 0-.833.402-.833.897 0 .496.373.898.833.898zm-.022-2.885c.347 0 .63-.297.64-.67l.179-6.698c.01-.388-.28-.709-.64-.709h-.35c-.361 0-.65.32-.64.708l.171 6.699c.01.373.294.67.64.67z" />
+      </svg>
+    </div>
+    <div>
+      <p>
+        The evolution of the TELUS brand continues! The brand new <a href="https://telus.github.io/universal-design-system/">Universal Design System</a> is now available and all teams are encouraged to transition their applications to UDS components in order to better reflect the latest vision of the TELUS brand.
+      </p>
+      <p>TDS Core and TDS Community will continue with limited support and restrict new feature requests.</p>
+      <p>While diving into this documentation, you’ll notice some new updates:</p>
+      <ul>
+        <li>We’ll provide direct links to corresponding UDS components from either tds-core / tds-community</li>
+        <li>We’ll provide notice about deprecated components (that may not be implemented on UDS in the near future)</li>
+      </ul>
+      <p style={{ marginBottom: '0' }}>
+        <a href="/contact.html">Contact us</a> for more information on how to get support. And <a href="https://telusdigital.slack.com/archives/C2WK9TP5F">join our TELUS Slack channel</a> for updates.
+      </p>
+    </div>
+  </div>
+)
+
 export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc, hasSidebar }) {
   const main = (
     <main className={cx(hasSidebar && classes.content)}>
+      <TDSSunsetWarning />
       {children}
       <footer className={classes.footer}>
         <Markdown text={`Generated with [React Styleguidist](${homepageUrl})`} />

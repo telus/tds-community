@@ -279,7 +279,7 @@ jobs:
         run: npm run ci:build-docs:styleguide-staging
 
       - name: Copy files
-        run: mkdir -p build/staging && cp -R styleguide/staging build/staging
+        run: mkdir -p build/staging && cp -R styleguide/staging build
 
       - name: Get Branch Name
         shell: bash

@@ -84,7 +84,7 @@ export const ContentWrapper = styled.div(({ offsetHeight, showHeaderDivider, sho
   return {
     margin: '0 -2rem',
     padding: '0 2rem',
-    overflowY: 'scroll',
+    overflowY: 'hidden',
     overflowX: 'hidden',
     maxHeight: `calc(95vh - ${updatedHeight}px - 10rem)`,
     marginTop: 0,

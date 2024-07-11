@@ -93,18 +93,8 @@ const TDSSunsetWarning = () => (
       </svg>
     </div>
     <div>
-      <p>
-        The evolution of the TELUS brand continues! The brand new <a href="https://telus.github.io/universal-design-system/">Universal Design System</a> is now available and all teams are encouraged to transition their applications to UDS components in order to better reflect the latest vision of the TELUS brand.
-      </p>
-      <p>TDS Core and TDS Community will continue with limited support and restrict new feature requests.</p>
-      <p>While diving into this documentation, you’ll notice some new updates:</p>
-      <ul>
-        <li>We’ll provide direct links to corresponding UDS components from either tds-core / tds-community</li>
-        <li>We’ll provide notice about deprecated components (that may not be implemented on UDS in the near future)</li>
-      </ul>
-      <p style={{ marginBottom: '0' }}>
-        <a href="/contact.html">Contact us</a> for more information on how to get support. And <a href="https://telusdigital.slack.com/archives/C2WK9TP5F">join our TELUS Slack channel</a> for updates.
-      </p>
+      <p><strong>TDS Core and TDS Community have NOT been supported for nearly 2 years.</strong></p>
+      <p style={{ marginBottom: '0' }}>It is highly recommended that all teams seek support to transition their application to the <a href="https://www.telus.com/universal-design-system/">Universal Design System (UDS) components</a>. This transition will faciliate easier update, such as font changes, and ensure that your applications better reflect the latest vision of the TELUS brand. For more information on how to get support in using UDS, please <a href="https://www.telus.com/universal-design-system/help">contact us</a>. And join our <a href="https://telusdigital.slack.com/archives/C02B9MXKXNH">TELUS Slack channel</a> for the latest updates.</p>
     </div>
   </div>
 )

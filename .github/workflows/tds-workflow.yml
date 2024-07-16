@@ -346,7 +346,9 @@ jobs:
           git fetch origin --tags
 
       - name: Setup .npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_PUBLISH_TOKEN }}" > ~/.npmrc
+        run: |
+          npm set @telus:registry=https://npm.pkg.github.com/telus
+          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
 
       - name: Setup Node
         uses: actions/setup-node@v1

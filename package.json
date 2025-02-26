@@ -89,7 +89,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.0.0",
     "babel-loader": "^8.0.0",
-    "babel-plugin-styled-components": "^1.10.2",
+    "babel-plugin-styled-components": "^2.0.0",
     "babel-polyfill": "^6.26.0",
     "case": "^1.5.4",
     "chromedriver": "^76.0.0",
